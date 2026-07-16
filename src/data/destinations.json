@@ -4,20 +4,22 @@
     "name": "Hakone",
     "prefecture": "Kanagawa",
     "region": "Kanto",
-    "categories": ["Onsen", "Nature", "Museums"],
-    "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop",
-    "gallery": [
-      "https://images.unsplash.com/photo-1616421316438-bb2f7be625ee?q=80&w=2070&auto=format&fit=crop"
+    "categories": [
+      "Onsen",
+      "Nature",
+      "Museums"
     ],
+    "heroImage": "/images/hakone_hero.jpg",
+    "gallery": [],
     "description": "A popular hot spring resort area featuring views of Mt. Fuji, art museums, and a scenic lake.",
     "trainAvailable": true,
     "carRecommended": false,
     "trainTimeMin": 85,
     "carTimeMin": 90,
     "totalTripHours": 24,
-    "budgetMin": 15000,
-    "budgetRecommended": 35000,
-    "budgetMax": 80000,
+    "budgetMin": 7500,
+    "budgetRecommended": 17500,
+    "budgetMax": 40000,
     "walkingMin": 4000,
     "walkingSunMin": 2000,
     "walkingShadeMin": 2000,
@@ -25,11 +27,11 @@
     "ratings": {
       "overall": 9.2,
       "couple": 9.5,
-      "summer": 7.0,
+      "summer": 7,
       "winter": 9.5,
-      "rain": 8.0,
+      "rain": 8,
       "food": 8.5,
-      "photography": 9.0,
+      "photography": 9,
       "relaxation": 9.8,
       "value": 7.5,
       "uniqueness": 8.5
@@ -45,28 +47,120 @@
       "autumn": 10,
       "winter": 9
     },
-    "bestMonths": [10, 11, 12, 1, 2],
+    "bestMonths": [
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
     "reservation": "Required well in advance for ryokans.",
     "parking": "Limited and expensive.",
-    "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
-    "tags": ["Romantic", "Relaxing", "Scenic"],
-    "itinerary": [
-      { "time": "10:00", "activity": "Arrive at Hakone-Yumoto Station" },
-      { "time": "11:00", "activity": "Hakone Open-Air Museum" },
-      { "time": "14:00", "activity": "Owakudani Ropeway" },
-      { "time": "16:00", "activity": "Check-in to Ryokan" }
+    "highlights": [
+      "Hakone Open-Air Museum",
+      "Owakudani",
+      "Lake Ashi Cruise"
     ],
-    "restaurants": ["Hakone Gindofu", "Bakery & Table Hakone"],
-    "cafes": ["Naraya Cafe", "Amazake Chaya"],
-    "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport."
+    "tags": [
+      "Romantic",
+      "Relaxing",
+      "Scenic"
+    ],
+    "itinerary": [
+      {
+        "time": "10:00",
+        "activity": "Arrive at Hakone-Yumoto Station"
+      },
+      {
+        "time": "11:00",
+        "activity": "Hakone Open-Air Museum"
+      },
+      {
+        "time": "14:00",
+        "activity": "Owakudani Ropeway"
+      },
+      {
+        "time": "16:00",
+        "activity": "Check-in to Ryokan"
+      }
+    ],
+    "restaurants": [
+      "Hakone Gindofu",
+      "Bakery & Table Hakone"
+    ],
+    "cafes": [
+      "Naraya Cafe",
+      "Amazake Chaya"
+    ],
+    "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport.",
+    "lat": 35.2324,
+    "lng": 139.1069,
+    "itineraries": [
+      {
+        "name": "Plan A: The Classic Hakone Loop",
+        "description": "Experience all modes of transport and the best views of Mt. Fuji.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Arrive at Hakone-Yumoto and take the scenic Tozan Mountain Railway to Gora."
+          },
+          {
+            "time": "10:30",
+            "activity": "Transfer to the Hakone Ropeway at Sounzan. Enjoy views over the volcanic Owakudani valley."
+          },
+          {
+            "time": "11:30",
+            "activity": "Eat black eggs (Kuro-tamago) boiled in the hot springs at Owakudani."
+          },
+          {
+            "time": "13:00",
+            "activity": "Take the Pirate Ship cruise across Lake Ashi to Motohakone."
+          },
+          {
+            "time": "15:00",
+            "activity": "Walk the old Cedar Avenue and visit Hakone Shrine."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Art & Relaxation",
+        "description": "A laid-back day focusing on world-class museums and high-end hot springs.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Explore the Hakone Open-Air Museum, featuring Picasso and massive outdoor sculptures."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch at a traditional soba restaurant in Gora."
+          },
+          {
+            "time": "14:00",
+            "activity": "Visit the Pola Museum of Art, nestled deep in the forest."
+          },
+          {
+            "time": "16:30",
+            "activity": "Enjoy a premium day-use Onsen (hot spring) with mountain views."
+          },
+          {
+            "time": "18:30",
+            "activity": "Dinner in Hakone-Yumoto before heading back to Yokohama."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kamakura-history",
     "name": "Kamakura",
     "prefecture": "Kanagawa",
     "region": "Kanto",
-    "categories": ["History", "Temples", "Beach"],
-    "heroImage": "https://images.unsplash.com/photo-1542880941-185412fb10d3?q=80&w=2070&auto=format&fit=crop",
+    "categories": [
+      "History",
+      "Temples",
+      "Beach"
+    ],
+    "heroImage": "/images/kamakura_hero.jpg",
     "gallery": [],
     "description": "Coastal town rich in history, known for the Great Buddha, numerous temples, and surfing beaches.",
     "trainAvailable": true,
@@ -74,9 +168,9 @@
     "trainTimeMin": 60,
     "carTimeMin": 70,
     "totalTripHours": 8,
-    "budgetMin": 3000,
-    "budgetRecommended": 8000,
-    "budgetMax": 20000,
+    "budgetMin": 1500,
+    "budgetRecommended": 4000,
+    "budgetMax": 10000,
     "walkingMin": 10000,
     "walkingSunMin": 7000,
     "walkingShadeMin": 3000,
@@ -84,14 +178,14 @@
     "ratings": {
       "overall": 8.8,
       "couple": 8.5,
-      "summer": 9.0,
+      "summer": 9,
       "winter": 6.5,
-      "rain": 4.0,
-      "food": 8.0,
+      "rain": 4,
+      "food": 8,
       "photography": 8.5,
-      "relaxation": 7.0,
-      "value": 9.0,
-      "uniqueness": 8.0
+      "relaxation": 7,
+      "value": 9,
+      "uniqueness": 8
     },
     "crowd": {
       "weekday": 6,
@@ -104,28 +198,120 @@
       "autumn": 8,
       "winter": 5
     },
-    "bestMonths": [5, 6, 7, 8, 9],
+    "bestMonths": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
     "reservation": "Not required for day trips.",
     "parking": "Extremely congested on weekends.",
-    "highlights": ["Great Buddha (Daibutsu)", "Hasedera Temple", "Komachi-dori Street"],
-    "tags": ["Day Trip", "Culture", "Walk-heavy"],
-    "itinerary": [
-      { "time": "09:30", "activity": "Arrive at Kamakura Station" },
-      { "time": "10:00", "activity": "Stroll down Komachi-dori" },
-      { "time": "11:30", "activity": "Tsurugaoka Hachimangu" },
-      { "time": "14:00", "activity": "Great Buddha" }
+    "highlights": [
+      "Great Buddha (Daibutsu)",
+      "Hasedera Temple",
+      "Komachi-dori Street"
     ],
-    "restaurants": ["Kamakura Matsubaraan", "Caraway Curry"],
-    "cafes": ["Iwata Coffee", "Starbucks Kamakura Onarimachi"],
-    "notes": "Wear comfortable walking shoes. Enoden line can be very crowded."
+    "tags": [
+      "Day Trip",
+      "Culture",
+      "Walk-heavy"
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Arrive at Kamakura Station"
+      },
+      {
+        "time": "10:00",
+        "activity": "Stroll down Komachi-dori"
+      },
+      {
+        "time": "11:30",
+        "activity": "Tsurugaoka Hachimangu"
+      },
+      {
+        "time": "14:00",
+        "activity": "Great Buddha"
+      }
+    ],
+    "restaurants": [
+      "Kamakura Matsubaraan",
+      "Caraway Curry"
+    ],
+    "cafes": [
+      "Iwata Coffee",
+      "Starbucks Kamakura Onarimachi"
+    ],
+    "notes": "Wear comfortable walking shoes. Enoden line can be very crowded.",
+    "lat": 35.3192,
+    "lng": 139.5467,
+    "itineraries": [
+      {
+        "name": "Plan A: Samurai Heritage Tour",
+        "description": "The classic Kamakura route focusing on the most famous shrines and the Great Buddha.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive at Kamakura Station and walk up the iconic Wakamiya Oji approach."
+          },
+          {
+            "time": "10:00",
+            "activity": "Visit Tsurugaoka Hachimangu, the most important Shinto shrine in Kamakura."
+          },
+          {
+            "time": "11:30",
+            "activity": "Street food and souvenir shopping along Komachi-dori street."
+          },
+          {
+            "time": "13:30",
+            "activity": "Take the Enoden train to Hase Station. Visit the giant bronze Great Buddha."
+          },
+          {
+            "time": "15:00",
+            "activity": "Explore Hase-dera temple and its beautiful hillside gardens and ocean views."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Bamboo Groves & Ocean Breezes",
+        "description": "Avoid the main crowds by exploring eastern Kamakura and the nearby island of Enoshima.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Take a bus to Hokoku-ji Temple. Enjoy matcha tea in the serene bamboo grove."
+          },
+          {
+            "time": "12:00",
+            "activity": "Lunch at a quiet local cafe in the Jomyoji area."
+          },
+          {
+            "time": "14:00",
+            "activity": "Ride the Enoden train all the way to Enoshima."
+          },
+          {
+            "time": "15:30",
+            "activity": "Walk across the bridge to Enoshima Island and explore the shrine and caves."
+          },
+          {
+            "time": "18:00",
+            "activity": "Watch the sunset over Mt. Fuji from the Enoshima Sea Candle."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kawagoe-edo",
     "name": "Kawagoe",
     "prefecture": "Saitama",
     "region": "Kanto",
-    "categories": ["History", "Food", "Architecture"],
-    "heroImage": "https://images.unsplash.com/photo-1627918451151-5eeab45f65bc?q=80&w=2070&auto=format&fit=crop",
+    "categories": [
+      "History",
+      "Food",
+      "Architecture"
+    ],
+    "heroImage": "/images/kawagoe_hero.jpg",
     "gallery": [],
     "description": "Known as 'Little Edo', featuring preserved clay-walled warehouse district and a charming candy alley.",
     "trainAvailable": true,
@@ -133,22 +319,22 @@
     "trainTimeMin": 45,
     "carTimeMin": 60,
     "totalTripHours": 6,
-    "budgetMin": 2000,
-    "budgetRecommended": 6000,
-    "budgetMax": 15000,
+    "budgetMin": 1000,
+    "budgetRecommended": 3000,
+    "budgetMax": 7500,
     "walkingMin": 8000,
     "walkingSunMin": 6000,
     "walkingShadeMin": 2000,
     "indoorPercent": 20,
     "ratings": {
       "overall": 8.2,
-      "couple": 8.0,
-      "summer": 5.0,
+      "couple": 8,
+      "summer": 5,
       "winter": 7.5,
-      "rain": 6.0,
-      "food": 9.0,
+      "rain": 6,
+      "food": 9,
       "photography": 9.5,
-      "relaxation": 6.0,
+      "relaxation": 6,
       "value": 9.5,
       "uniqueness": 8.5
     },
@@ -163,19 +349,1704 @@
       "autumn": 9,
       "winter": 7
     },
-    "bestMonths": [3, 4, 10, 11],
+    "bestMonths": [
+      3,
+      4,
+      10,
+      11
+    ],
     "reservation": "Not required.",
     "parking": "Available but traffic can be slow in town.",
-    "highlights": ["Kurazukuri Zone", "Toki no Kane (Time Bell Tower)", "Penny Candy Alley"],
-    "tags": ["Foodie", "Photogenic", "Budget-friendly"],
-    "itinerary": [
-      { "time": "10:00", "activity": "Arrive at Hon-Kawagoe Station" },
-      { "time": "10:30", "activity": "Explore Kurazukuri Street" },
-      { "time": "12:00", "activity": "Unagi (Eel) Lunch" },
-      { "time": "14:00", "activity": "Kashiya Yokocho (Candy Alley)" }
+    "highlights": [
+      "Kurazukuri Zone",
+      "Toki no Kane (Time Bell Tower)",
+      "Penny Candy Alley"
     ],
-    "restaurants": ["Ichinoya", "Ogakiku"],
-    "cafes": ["Starbucks Kawagoe Kanetsuki Dori", "Glayt"],
-    "notes": "Famous for sweet potato snacks and traditional unagi."
+    "tags": [
+      "Foodie",
+      "Photogenic",
+      "Budget-friendly"
+    ],
+    "itinerary": [
+      {
+        "time": "10:00",
+        "activity": "Arrive at Hon-Kawagoe Station"
+      },
+      {
+        "time": "10:30",
+        "activity": "Explore Kurazukuri Street"
+      },
+      {
+        "time": "12:00",
+        "activity": "Unagi (Eel) Lunch"
+      },
+      {
+        "time": "14:00",
+        "activity": "Kashiya Yokocho (Candy Alley)"
+      }
+    ],
+    "restaurants": [
+      "Ichinoya",
+      "Ogakiku"
+    ],
+    "cafes": [
+      "Starbucks Kawagoe Kanetsuki Dori",
+      "Glayt"
+    ],
+    "notes": "Famous for sweet potato snacks and traditional unagi.",
+    "lat": 35.9251,
+    "lng": 139.4858,
+    "itineraries": [
+      {
+        "name": "Plan A: Little Edo Walk",
+        "description": "Experience the historic warehouse district and famous candy alley.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Arrive at Kawagoe Station and take the retro loop bus."
+          },
+          {
+            "time": "11:00",
+            "activity": "Stroll the Kurazukuri Zone (Warehouse District) and photograph the Toki no Kane (Time Bell Tower)."
+          },
+          {
+            "time": "12:30",
+            "activity": "Enjoy local sweet potato treats and traditional eel (unagi) for lunch."
+          },
+          {
+            "time": "14:00",
+            "activity": "Explore Kashiya Yokocho (Candy Alley) for retro Japanese sweets."
+          },
+          {
+            "time": "16:00",
+            "activity": "Visit Kitain Temple, featuring the only remaining buildings of the original Edo Castle."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Shrines & Culture",
+        "description": "A deeper dive into local traditions, focusing on the famous Hikawa Shrine.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Visit Hikawa Shrine. Walk through the tunnel of wind chimes (in summer) or ema."
+          },
+          {
+            "time": "12:00",
+            "activity": "Fish for your fortune using a small fishing rod at the shrine."
+          },
+          {
+            "time": "13:30",
+            "activity": "Lunch at a traditional Japanese restaurant near the Honmaru Goten."
+          },
+          {
+            "time": "15:00",
+            "activity": "Tour Kawagoe Castle Honmaru Goten, the former samurai lord's residence."
+          },
+          {
+            "time": "16:30",
+            "activity": "Relax at a retro coffee shop on Taisho-roman Street."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nikko-heritage",
+    "name": "Nikko",
+    "prefecture": "Tochigi",
+    "region": "Kanto",
+    "categories": [
+      "History",
+      "Nature",
+      "Temples"
+    ],
+    "heroImage": "/images/nikko_hero.jpg",
+    "gallery": [],
+    "description": "World Heritage site famous for Toshogu Shrine and stunning autumn colors around Lake Chuzenji.",
+    "trainAvailable": true,
+    "carRecommended": true,
+    "trainTimeMin": 120,
+    "carTimeMin": 130,
+    "totalTripHours": 36,
+    "budgetMin": 7500,
+    "budgetRecommended": 20000,
+    "budgetMax": 45000,
+    "walkingMin": 12000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 7000,
+    "indoorPercent": 30,
+    "ratings": {
+      "overall": 9.4,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 8,
+      "rain": 6.5,
+      "food": 7.5,
+      "photography": 10,
+      "relaxation": 8.5,
+      "value": 8,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 7
+    },
+    "bestMonths": [
+      9,
+      10,
+      11
+    ],
+    "reservation": "Required for limited express trains and ryokans.",
+    "parking": "Extremely crowded during autumn leaves season.",
+    "highlights": [
+      "Toshogu Shrine",
+      "Lake Chuzenji",
+      "Kegon Falls"
+    ],
+    "tags": [
+      "World Heritage",
+      "Nature",
+      "Overnight"
+    ],
+    "itinerary": [
+      {
+        "time": "09:30",
+        "activity": "Arrive at Tobu Nikko Station"
+      },
+      {
+        "time": "10:30",
+        "activity": "Toshogu Shrine Tour"
+      },
+      {
+        "time": "13:30",
+        "activity": "Bus to Lake Chuzenji"
+      },
+      {
+        "time": "15:00",
+        "activity": "Kegon Falls"
+      }
+    ],
+    "restaurants": [
+      "Nikko Yuba Maki",
+      "Meiji no Yakata"
+    ],
+    "cafes": [
+      "Hongu Cafe",
+      "Nikko Coffee"
+    ],
+    "notes": "Traffic jams to Okunikko are severe in October.",
+    "lat": 36.7199,
+    "lng": 139.6982,
+    "itineraries": [
+      {
+        "name": "Plan A: World Heritage Sanctuaries",
+        "description": "A focused tour of the elaborately decorated shrines and temples.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive in Nikko. Photograph the iconic red Shinkyo Bridge."
+          },
+          {
+            "time": "10:30",
+            "activity": "Explore Toshogu Shrine, the incredibly ornate mausoleum of Tokugawa Ieyasu."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch featuring local Nikko Yuba (tofu skin) delicacies."
+          },
+          {
+            "time": "14:30",
+            "activity": "Visit Rinno-ji Temple and the quiet Futarasan Shrine."
+          },
+          {
+            "time": "16:30",
+            "activity": "Stroll along the Kanmangafuchi Abyss to see the row of stone Jizo statues."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Okunikko Nature Escape",
+        "description": "Skip the shrines and head higher up the mountains for waterfalls and lakes.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Take the bus up the winding Irohazaka Route to Okunikko."
+          },
+          {
+            "time": "10:30",
+            "activity": "Ride the elevator down to the base of Kegon Falls, one of Japan's top 3 waterfalls."
+          },
+          {
+            "time": "12:00",
+            "activity": "Lunch overlooking the beautiful Lake Chuzenji."
+          },
+          {
+            "time": "13:30",
+            "activity": "Hike the wooden boardwalks of the Senjogahara Marshland."
+          },
+          {
+            "time": "16:00",
+            "activity": "Soak your feet in the public footbaths at Yumoto Onsen before returning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yokohama-city",
+    "name": "Yokohama",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": [
+      "City",
+      "Food",
+      "Shopping"
+    ],
+    "heroImage": "/images/yokohama_hero.jpg",
+    "gallery": [],
+    "description": "Vibrant port city offering romantic night views, large Chinatown, and modern shopping complexes.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 30,
+    "carTimeMin": 45,
+    "totalTripHours": 8,
+    "budgetMin": 2500,
+    "budgetRecommended": 6000,
+    "budgetMax": 15000,
+    "walkingMin": 8000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 70,
+    "ratings": {
+      "overall": 9,
+      "couple": 9.8,
+      "summer": 7.5,
+      "winter": 8.5,
+      "rain": 8.5,
+      "food": 9.5,
+      "photography": 9,
+      "relaxation": 8,
+      "value": 8.5,
+      "uniqueness": 7.5
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 7,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reservation": "Dinners with night views require booking.",
+    "parking": "Plenty of paid parking in Minatomirai.",
+    "highlights": [
+      "Chinatown",
+      "Red Brick Warehouse",
+      "Cup Noodle Museum"
+    ],
+    "tags": [
+      "Date Spot",
+      "Foodie",
+      "Night View"
+    ],
+    "itinerary": [
+      {
+        "time": "11:00",
+        "activity": "Lunch at Chinatown"
+      },
+      {
+        "time": "13:30",
+        "activity": "Walk through Yamashita Park"
+      },
+      {
+        "time": "15:00",
+        "activity": "Red Brick Warehouse"
+      },
+      {
+        "time": "19:00",
+        "activity": "Dinner with Minatomirai view"
+      }
+    ],
+    "restaurants": [
+      "Manchinro",
+      "Bills Red Brick Warehouse"
+    ],
+    "cafes": [
+      "Zebracoffee",
+      "Koku Kafe"
+    ],
+    "notes": "Extremely easy access from central Tokyo.",
+    "lat": 35.4437,
+    "lng": 139.638,
+    "itineraries": [
+      {
+        "name": "Plan A: Minatomirai Classics",
+        "description": "The ultimate waterfront date or family trip hitting all major landmarks.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Design your own custom cup noodles at the Cup Noodle Museum."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch and shopping at the historic Red Brick Warehouse."
+          },
+          {
+            "time": "15:00",
+            "activity": "Take a ride on the Cosmo Clock 21 Ferris wheel."
+          },
+          {
+            "time": "16:30",
+            "activity": "Take the Yokohama Air Cabin ropeway across the bay."
+          },
+          {
+            "time": "18:00",
+            "activity": "Dinner in Yokohama Chinatown, the largest in Japan."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Gardens & History",
+        "description": "A quieter side of Yokohama, focusing on classic Japanese gardens and port history.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Explore Sankeien Garden, featuring historic buildings relocated from across Japan."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch in the elegant Motomachi Shopping Street."
+          },
+          {
+            "time": "14:00",
+            "activity": "Stroll up to the Yamate Bluffs to see the historic Western-style diplomatic houses."
+          },
+          {
+            "time": "16:00",
+            "activity": "Walk through Yamashita Park and tour the NYK Hikawa Maru ocean liner."
+          },
+          {
+            "time": "18:30",
+            "activity": "Cocktails at a high-rise bar in the Landmark Tower."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "atami-resort",
+    "name": "Atami",
+    "prefecture": "Shizuoka",
+    "region": "Chubu",
+    "categories": [
+      "Onsen",
+      "Beach",
+      "Retro"
+    ],
+    "heroImage": "/images/atami_hero.jpg",
+    "gallery": [],
+    "description": "A retro-chic seaside hot spring town famous for its beaches, fresh seafood, and frequent fireworks.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 45,
+    "carTimeMin": 90,
+    "totalTripHours": 24,
+    "budgetMin": 6000,
+    "budgetRecommended": 12500,
+    "budgetMax": 30000,
+    "walkingMin": 5000,
+    "walkingSunMin": 3000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 8.7,
+      "couple": 9,
+      "summer": 9.5,
+      "winter": 8,
+      "rain": 6,
+      "food": 9.2,
+      "photography": 8.5,
+      "relaxation": 9.5,
+      "value": 8,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 10,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
+    "reservation": "Essential during summer and fireworks days.",
+    "parking": "Limited near the beach.",
+    "highlights": [
+      "Sun Beach",
+      "Atami Castle",
+      "Kiunkaku"
+    ],
+    "tags": [
+      "Seafood",
+      "Onsen",
+      "Beach"
+    ],
+    "itinerary": [
+      {
+        "time": "11:00",
+        "activity": "Arrive at Atami via Shinkansen"
+      },
+      {
+        "time": "12:00",
+        "activity": "Seafood bowl lunch near station"
+      },
+      {
+        "time": "14:00",
+        "activity": "Stroll down Sun Beach"
+      },
+      {
+        "time": "16:00",
+        "activity": "Check-in to seaside Ryokan"
+      }
+    ],
+    "restaurants": [
+      "Atami Osakana Shokudo",
+      "Restaurant Scott"
+    ],
+    "cafes": [
+      "Café RoCA",
+      "Atami Pudding"
+    ],
+    "notes": "Check the schedule for Atami's year-round fireworks displays!",
+    "lat": 35.0956,
+    "lng": 139.0722,
+    "itineraries": [
+      {
+        "name": "Plan A: Seaside & Art",
+        "description": "A mix of ocean views and world-class museums.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Arrive in Atami. Take the bus to the spectacular MOA Museum of Art."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch near Atami Sun Beach, enjoying fresh local seafood."
+          },
+          {
+            "time": "14:30",
+            "activity": "Take the ropeway up to Atami Castle for panoramic bay views."
+          },
+          {
+            "time": "16:00",
+            "activity": "Explore the retro shopping streets near the station and eat onsen manju."
+          },
+          {
+            "time": "17:30",
+            "activity": "Take a quick dip in a public bath before taking the Shinkansen home."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Retro Atami Vibe",
+        "description": "Focus on the nostalgic Showa-era atmosphere of this classic resort town.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Visit Kiunkaku, a gorgeous former ryokan loved by Japanese literary giants."
+          },
+          {
+            "time": "12:30",
+            "activity": "Eat a classic Japanese curry or omurice at a retro Kissaten (coffee shop)."
+          },
+          {
+            "time": "14:00",
+            "activity": "Visit Kinomiya Shrine to see the 2,000-year-old sacred camphor tree."
+          },
+          {
+            "time": "16:00",
+            "activity": "Stroll along the oceanfront and find a quiet day-use hot spring."
+          },
+          {
+            "time": "18:00",
+            "activity": "Dinner at a local izakaya in the old town."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boso-peninsula",
+    "name": "Boso Peninsula",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": [
+      "Coast",
+      "Nature",
+      "Drive"
+    ],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/960px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
+    "gallery": [],
+    "description": "Scenic coastal drives, fresh seafood, and nature spots perfect for a day trip by car.",
+    "trainAvailable": false,
+    "carRecommended": true,
+    "trainTimeMin": 150,
+    "carTimeMin": 90,
+    "totalTripHours": 12,
+    "budgetMin": 9000,
+    "budgetRecommended": 10000,
+    "budgetMax": 11000,
+    "walkingMin": 5000,
+    "walkingSunMin": 3000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 9.7,
+      "couple": 10,
+      "summer": 9.3,
+      "winter": 7,
+      "rain": 4,
+      "food": 9.5,
+      "photography": 10,
+      "relaxation": 9,
+      "value": 9,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 5
+    },
+    "bestMonths": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "reservation": "Not required",
+    "parking": "Plenty of parking",
+    "highlights": [
+      "Coastal Drive",
+      "Seafood",
+      "Nokogiriyama"
+    ],
+    "tags": [
+      "Road Trip",
+      "Ocean"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "",
+    "lat": 35.1584,
+    "lng": 139.8222,
+    "itineraries": [
+      {
+        "name": "Plan A: Mountain & Buddha",
+        "description": "A hiking and cultural adventure on Mt. Nokogiri.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive at Hamakanaya and take the Mt. Nokogiri Ropeway up the mountain."
+          },
+          {
+            "time": "10:30",
+            "activity": "Hike to the Jigoku Nozoki (Hell's Peek) viewpoint."
+          },
+          {
+            "time": "12:00",
+            "activity": "Descend into the quarry to see the massive Nihon-ji Daibutsu (Great Buddha)."
+          },
+          {
+            "time": "14:00",
+            "activity": "Late lunch of fresh caught seafood near the ferry terminal."
+          },
+          {
+            "time": "15:30",
+            "activity": "Relax at the Baya-no-yu oceanfront hot spring."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Coastline Road Trip",
+        "description": "Best done by car. Exploring the scenic drives of Chiba.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Drive the Tokyo Bay Aqua-Line and stop at Umihotaru PA."
+          },
+          {
+            "time": "11:00",
+            "activity": "Visit Mother Farm to see the animals and flower fields."
+          },
+          {
+            "time": "13:30",
+            "activity": "Drive down to Katsuura or Kamogawa for an incredible seafood lunch."
+          },
+          {
+            "time": "15:00",
+            "activity": "Explore the Kamogawa Sea World or take a coastal drive to the lighthouse."
+          },
+          {
+            "time": "17:30",
+            "activity": "Watch the sunset over the Pacific Ocean."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "matsumoto",
+    "name": "Matsumoto",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": [
+      "Castle",
+      "History"
+    ],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/960px-Matsumoto_Castle_Keep_Tower.jpg",
+    "gallery": [],
+    "description": "Historic mountain city famous for Matsumoto Castle, one of Japan's original historic castles.",
+    "trainAvailable": true,
+    "carRecommended": true,
+    "trainTimeMin": 180,
+    "carTimeMin": 210,
+    "totalTripHours": 12,
+    "budgetMin": 10000,
+    "budgetRecommended": 11000,
+    "budgetMax": 12000,
+    "walkingMin": 8000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 30,
+    "ratings": {
+      "overall": 9.6,
+      "couple": 9.5,
+      "summer": 9.8,
+      "winter": 8,
+      "rain": 6,
+      "food": 9,
+      "photography": 10,
+      "relaxation": 8,
+      "value": 8.5,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 10,
+      "autumn": 9,
+      "winter": 6
+    },
+    "bestMonths": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reservation": "",
+    "parking": "Available",
+    "highlights": [
+      "Matsumoto Castle",
+      "Nawate Dori"
+    ],
+    "tags": [
+      "Historic",
+      "Mountains"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Long drive but rewarding",
+    "lat": 36.238,
+    "lng": 137.9711,
+    "itineraries": [
+      {
+        "name": "Plan A: The Black Castle",
+        "description": "Focus on the historic samurai history of Matsumoto.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Arrive in Matsumoto. Head straight to Matsumoto Castle, one of Japan's oldest."
+          },
+          {
+            "time": "13:00",
+            "activity": "Have Shinshu Soba for lunch, a local specialty."
+          },
+          {
+            "time": "14:30",
+            "activity": "Stroll along Nakamachi-dori, known for its historic black-and-white storehouses."
+          },
+          {
+            "time": "16:00",
+            "activity": "Wander Nawate-dori (Frog Street) for quirky shops and street food."
+          },
+          {
+            "time": "17:30",
+            "activity": "Visit a local sake brewery for tasting before dinner."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Art & Alps",
+        "description": "A cultural day featuring famous contemporary art and mountain views.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Visit the Matsumoto City Museum of Art to see the permanent Yayoi Kusama exhibition."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch at a trendy cafe near the museum district."
+          },
+          {
+            "time": "14:30",
+            "activity": "Take a short bus or taxi ride up to Alps Park."
+          },
+          {
+            "time": "16:00",
+            "activity": "Enjoy panoramic views of the Japan Alps and explore the nature trails."
+          },
+          {
+            "time": "18:00",
+            "activity": "Head back to town for a cozy dinner."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "harry-potter-studio",
+    "name": "Harry Potter Studio",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": [
+      "Theme Park",
+      "Indoor"
+    ],
+    "heroImage": "/images/harry-potter-studio.jpg",
+    "gallery": [],
+    "description": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter. A magical indoor experience.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 45,
+    "carTimeMin": 60,
+    "totalTripHours": 8,
+    "budgetMin": 7000,
+    "budgetRecommended": 8000,
+    "budgetMax": 9000,
+    "walkingMin": 6000,
+    "walkingSunMin": 500,
+    "walkingShadeMin": 5500,
+    "indoorPercent": 95,
+    "ratings": {
+      "overall": 9.5,
+      "couple": 10,
+      "summer": 9.8,
+      "winter": 9.8,
+      "rain": 10,
+      "food": 8.5,
+      "photography": 9.5,
+      "relaxation": 7,
+      "value": 8.5,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 7,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 10,
+      "autumn": 10,
+      "winter": 10
+    },
+    "bestMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reservation": "Required well in advance",
+    "parking": "Available but train recommended",
+    "highlights": [
+      "Great Hall",
+      "Diagon Alley"
+    ],
+    "tags": [
+      "Indoor",
+      "Pop Culture"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Book ahead",
+    "lat": 35.7411,
+    "lng": 139.6469,
+    "itineraries": [
+      {
+        "name": "Plan A: The Ultimate Fan Experience",
+        "description": "A comprehensive walk-through prioritizing all major sets and photo ops.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive early and enter the Great Hall."
+          },
+          {
+            "time": "11:00",
+            "activity": "Explore the Hogwarts Express and Platform 9 ¾."
+          },
+          {
+            "time": "12:30",
+            "activity": "Drink Butterbeer in the Backlot Cafe."
+          },
+          {
+            "time": "14:00",
+            "activity": "Walk through Diagon Alley and the Ministry of Magic sets."
+          },
+          {
+            "time": "16:00",
+            "activity": "Spend an hour in the massive studio gift shop."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: The Filmmaker's Focus",
+        "description": "Take your time studying the props, costumes, and behind-the-scenes magic.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Focus heavily on the Art Department and Costume exhibits."
+          },
+          {
+            "time": "12:00",
+            "activity": "Participate in the interactive green-screen broomstick flying."
+          },
+          {
+            "time": "13:30",
+            "activity": "Lunch at the Food Hall."
+          },
+          {
+            "time": "15:00",
+            "activity": "Study the creature effects and animatronics in the Creature Shop."
+          },
+          {
+            "time": "17:00",
+            "activity": "Examine the incredibly detailed Hogwarts Castle miniature."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "karuizawa",
+    "name": "Karuizawa",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": [
+      "Nature",
+      "Shopping",
+      "Resort"
+    ],
+    "heroImage": "/images/karuizawa.jpg",
+    "gallery": [],
+    "description": "An upscale mountain resort town famous for summer retreats, outlet shopping, and nature.",
+    "trainAvailable": true,
+    "carRecommended": true,
+    "trainTimeMin": 70,
+    "carTimeMin": 180,
+    "totalTripHours": 12,
+    "budgetMin": 9000,
+    "budgetRecommended": 10000,
+    "budgetMax": 11000,
+    "walkingMin": 8000,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 6000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 9.4,
+      "couple": 9.5,
+      "summer": 9.7,
+      "winter": 8,
+      "rain": 6,
+      "food": 8.5,
+      "photography": 10,
+      "relaxation": 9,
+      "value": 8,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 10,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "reservation": "",
+    "parking": "Yes",
+    "highlights": [
+      "Kyu-Karuizawa",
+      "Shiraito Falls",
+      "Prince Shopping Plaza"
+    ],
+    "tags": [
+      "Cool Summer",
+      "Upscale"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Cool escape from Tokyo summer",
+    "lat": 36.3426,
+    "lng": 138.636,
+    "itineraries": [
+      {
+        "name": "Plan A: The Classic Resort",
+        "description": "Shopping, dining, and scenic walks in the famous mountain resort.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Rent a bicycle near Karuizawa Station."
+          },
+          {
+            "time": "10:30",
+            "activity": "Cycle to Kumoba Pond (Swan Lake) for a beautiful nature walk."
+          },
+          {
+            "time": "12:00",
+            "activity": "Explore the Kyu-Karuizawa Ginza street. Eat local breads and jams."
+          },
+          {
+            "time": "14:00",
+            "activity": "Cycle to the historic Shaw Memorial Church and the deep forest."
+          },
+          {
+            "time": "16:00",
+            "activity": "Finish the day shopping at the massive Prince Shopping Plaza outlet mall."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Art & Architecture",
+        "description": "Discover the elegant modern architecture and waterfalls of the area.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Take a bus to the breathtaking Shiraito Falls."
+          },
+          {
+            "time": "12:00",
+            "activity": "Head to Harunire Terrace for a stylish lunch in the forest."
+          },
+          {
+            "time": "14:00",
+            "activity": "Walk to the Stone Church and the Karuizawa Kogen Church."
+          },
+          {
+            "time": "15:30",
+            "activity": "Visit the Hiroshi Senju Museum, a stunning piece of modern architecture."
+          },
+          {
+            "time": "17:30",
+            "activity": "Relax at the Tombo-no-yu hot springs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "utsunomiya-oya",
+    "name": "Utsunomiya & Oya",
+    "prefecture": "Tochigi",
+    "region": "Kanto",
+    "categories": [
+      "History",
+      "Food"
+    ],
+    "heroImage": "/images/utsunomiya-oya.jpg",
+    "gallery": [],
+    "description": "Famous for its massive underground Oya stone quarry and delicious local gyoza.",
+    "trainAvailable": true,
+    "carRecommended": true,
+    "trainTimeMin": 100,
+    "carTimeMin": 150,
+    "totalTripHours": 10,
+    "budgetMin": 5000,
+    "budgetRecommended": 6000,
+    "budgetMax": 7000,
+    "walkingMin": 5000,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9,
+      "summer": 9.6,
+      "winter": 8,
+      "rain": 9,
+      "food": 9,
+      "photography": 9,
+      "relaxation": 7,
+      "value": 9.5,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 10,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [
+      6,
+      7,
+      8
+    ],
+    "reservation": "",
+    "parking": "Yes",
+    "highlights": [
+      "Oya History Museum",
+      "Utsunomiya Gyoza"
+    ],
+    "tags": [
+      "Unique",
+      "Foodie",
+      "Underground"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Oya museum is very cool in summer",
+    "lat": 36.5987,
+    "lng": 139.816,
+    "itineraries": [
+      {
+        "name": "Plan A: Stone & Gyoza",
+        "description": "The perfect mix of exploring massive underground caves and eating famous local food.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Take a bus from Utsunomiya Station to the Oya History Museum."
+          },
+          {
+            "time": "10:30",
+            "activity": "Explore the massive, atmospheric underground stone quarry."
+          },
+          {
+            "time": "12:30",
+            "activity": "Visit the nearby Oya-ji Temple and the giant Heiwa Kannon statue."
+          },
+          {
+            "time": "14:00",
+            "activity": "Head back to central Utsunomiya."
+          },
+          {
+            "time": "15:00",
+            "activity": "Go 'Gyoza Hopping' – try 3 different famous gyoza shops for a late lunch/dinner."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Scenic Cycling",
+        "description": "Rent a bike and explore the rural beauty surrounding the stone town.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Rent a bicycle near Utsunomiya Station."
+          },
+          {
+            "time": "11:00",
+            "activity": "Cycle through the scenic countryside towards the Oya district."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch at a stylish cafe built into an old stone warehouse."
+          },
+          {
+            "time": "14:00",
+            "activity": "Explore the ancient cliff carvings at Oya-ji Temple."
+          },
+          {
+            "time": "16:00",
+            "activity": "Cycle back, drop off the bike, and reward yourself with gyoza."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "disneysea",
+    "name": "DisneySea",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": [
+      "Theme Park"
+    ],
+    "heroImage": "/images/disneysea.jpg",
+    "gallery": [],
+    "description": "Unique ocean-themed Disney park with spectacular shows, rides, and adult-friendly atmosphere.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 90,
+    "carTimeMin": 90,
+    "totalTripHours": 13,
+    "budgetMin": 12000,
+    "budgetRecommended": 14000,
+    "budgetMax": 16000,
+    "walkingMin": 20000,
+    "walkingSunMin": 15000,
+    "walkingShadeMin": 5000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 9.1,
+      "couple": 10,
+      "summer": 6,
+      "winter": 7,
+      "rain": 5,
+      "food": 8.5,
+      "photography": 10,
+      "relaxation": 5,
+      "value": 8,
+      "uniqueness": 10
+    },
+    "crowd": {
+      "weekday": 9,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 5,
+      "autumn": 10,
+      "winter": 8
+    },
+    "bestMonths": [
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "reservation": "Required",
+    "parking": "Expensive",
+    "highlights": [
+      "DisneySea Transit Steamer",
+      "Soaring"
+    ],
+    "tags": [
+      "Theme Park",
+      "Walk-heavy"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Avoid hottest days",
+    "lat": 35.6267,
+    "lng": 139.8851,
+    "itineraries": [
+      {
+        "name": "Plan A: The Adrenaline Rush",
+        "description": "Optimize your day to hit the biggest thrill rides.",
+        "steps": [
+          {
+            "time": "08:30",
+            "activity": "Arrive at rope drop. Head straight to Journey to the Center of the Earth."
+          },
+          {
+            "time": "10:00",
+            "activity": "Ride Indiana Jones Adventure and Raging Spirits."
+          },
+          {
+            "time": "12:30",
+            "activity": "Grab a quick bite (smoked turkey leg or spicy chicken) while walking."
+          },
+          {
+            "time": "14:00",
+            "activity": "Use Premier Access for Tower of Terror or Soaring: Fantastic Flight."
+          },
+          {
+            "time": "19:30",
+            "activity": "Secure a spot for the nighttime spectacular show on the Mediterranean Harbor."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Romantic & Immersive",
+        "description": "A slow-paced day focusing on atmosphere, shows, and fine dining.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Arrive and take a relaxing ride on the Venetian Gondolas."
+          },
+          {
+            "time": "11:30",
+            "activity": "Watch the incredible Big Band Beat jazz show."
+          },
+          {
+            "time": "13:00",
+            "activity": "Enjoy a sit-down lunch at the Magellan's fine dining restaurant."
+          },
+          {
+            "time": "15:00",
+            "activity": "Explore the interactive Fortress Explorations and walk through Arabian Coast."
+          },
+          {
+            "time": "18:00",
+            "activity": "Ride the Transit Steamer Line at sunset for beautiful views."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tsukuba",
+    "name": "Mt. Tsukuba",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": [
+      "Mountain",
+      "Nature"
+    ],
+    "heroImage": "/images/tsukuba.jpg",
+    "gallery": [],
+    "description": "A beautiful twin-peaked mountain famous for its cable car, shrines, and sweeping views of the Kanto plain.",
+    "trainAvailable": true,
+    "carRecommended": true,
+    "trainTimeMin": 120,
+    "carTimeMin": 150,
+    "totalTripHours": 11,
+    "budgetMin": 7000,
+    "budgetRecommended": 8000,
+    "budgetMax": 9000,
+    "walkingMin": 10000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 5000,
+    "indoorPercent": 10,
+    "ratings": {
+      "overall": 9.1,
+      "couple": 9,
+      "summer": 8,
+      "winter": 6,
+      "rain": 3,
+      "food": 8.5,
+      "photography": 9.5,
+      "relaxation": 7.5,
+      "value": 8.5,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 5
+    },
+    "bestMonths": [
+      4,
+      5,
+      10,
+      11
+    ],
+    "reservation": "",
+    "parking": "Yes",
+    "highlights": [
+      "Tsukubasan Shrine",
+      "Ropeway"
+    ],
+    "tags": [
+      "Hiking",
+      "Views"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Use ropeway to save time",
+    "lat": 36.2253,
+    "lng": 140.1068,
+    "itineraries": [
+      {
+        "name": "Plan A: The Twin Peak Hike",
+        "description": "A moderately challenging hike to the summits for incredible Kanto Plain views.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Take the Tsukuba Express, then a bus to the Tsukubasan Shrine."
+          },
+          {
+            "time": "10:00",
+            "activity": "Take the Cable Car up to Miyukigahara (the plateau between peaks)."
+          },
+          {
+            "time": "11:00",
+            "activity": "Hike to the summit of Mt. Nantai, then traverse to Mt. Nyotai."
+          },
+          {
+            "time": "13:30",
+            "activity": "Enjoy a bowl of Tsukuba Udon at the mountaintop restaurant."
+          },
+          {
+            "time": "15:00",
+            "activity": "Take the Ropeway down to the Tsutsujigaoka station."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Science & Shrines",
+        "description": "Mix the natural beauty of the shrine with Tsukuba's famous Space Center.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Visit the JAXA Tsukuba Space Center. See the rocket displays."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch in Tsukuba city center."
+          },
+          {
+            "time": "14:00",
+            "activity": "Take the bus to Tsukubasan Shrine and explore the ancient grounds."
+          },
+          {
+            "time": "15:30",
+            "activity": "Take the cable car up for a quick panoramic view without the hiking."
+          },
+          {
+            "time": "17:00",
+            "activity": "Relax at an onsen near the base of the mountain."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "omiya-railway",
+    "name": "Omiya Railway Museum",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": [
+      "Museum",
+      "Indoor"
+    ],
+    "heroImage": "/images/omiya-railway.jpg",
+    "gallery": [],
+    "description": "Massive indoor museum dedicated to Japan's railway history, featuring real historic trains.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 100,
+    "carTimeMin": 120,
+    "totalTripHours": 8,
+    "budgetMin": 4000,
+    "budgetRecommended": 5000,
+    "budgetMax": 6000,
+    "walkingMin": 4000,
+    "walkingSunMin": 500,
+    "walkingShadeMin": 3500,
+    "indoorPercent": 95,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 9.5,
+      "winter": 9.5,
+      "rain": 10,
+      "food": 8,
+      "photography": 8.5,
+      "relaxation": 8,
+      "value": 9,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 10,
+      "autumn": 10,
+      "winter": 10
+    },
+    "bestMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reservation": "",
+    "parking": "Yes",
+    "highlights": [
+      "Train Simulators",
+      "Historic Cars"
+    ],
+    "tags": [
+      "Indoor",
+      "Family-friendly"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Excellent hot-day option",
+    "lat": 35.9211,
+    "lng": 139.6186,
+    "itineraries": [
+      {
+        "name": "Plan A: The Train Otaku",
+        "description": "A deep dive into the history and mechanics of Japan's legendary railway system.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Arrive at the museum and head straight to the massive Rolling Stock Station."
+          },
+          {
+            "time": "11:30",
+            "activity": "Book and experience the Steam Locomotive or Shinkansen Simulator."
+          },
+          {
+            "time": "13:00",
+            "activity": "Eat an authentic 'Ekiben' (station bento) inside a retired train car."
+          },
+          {
+            "time": "14:30",
+            "activity": "Watch the massive Railway Diorama show."
+          },
+          {
+            "time": "16:00",
+            "activity": "Explore the History Zone and learn about the evolution of the Shinkansen."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Family Fun Day",
+        "description": "A relaxed pace focused on interactive exhibits perfect for kids.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Arrive and immediately head to the Mini Driving Train area."
+          },
+          {
+            "time": "12:00",
+            "activity": "Lunch at the Kids Cafe, which has train-themed meals."
+          },
+          {
+            "time": "13:30",
+            "activity": "Let the kids play in the Teppaku Playroom and outdoor park."
+          },
+          {
+            "time": "15:00",
+            "activity": "Take family photos with the historic steam engines."
+          },
+          {
+            "time": "16:30",
+            "activity": "Buy exclusive train toys at the museum shop before leaving."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "joypolis",
+    "name": "Joypolis Odaiba",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": [
+      "Indoor Park",
+      "Gaming"
+    ],
+    "heroImage": "/images/joypolis.jpg",
+    "gallery": [],
+    "description": "Sega's massive indoor amusement park with VR attractions, roller coasters, and arcade games.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 90,
+    "carTimeMin": 90,
+    "totalTripHours": 8,
+    "budgetMin": 6000,
+    "budgetRecommended": 7000,
+    "budgetMax": 8000,
+    "walkingMin": 4000,
+    "walkingSunMin": 0,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 90,
+    "ratings": {
+      "overall": 8.7,
+      "couple": 9,
+      "summer": 9.3,
+      "winter": 9.3,
+      "rain": 9.5,
+      "food": 8,
+      "photography": 8.5,
+      "relaxation": 6,
+      "value": 8,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 10,
+      "autumn": 10,
+      "winter": 10
+    },
+    "bestMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reservation": "",
+    "parking": "Yes",
+    "highlights": [
+      "Halfpipe Tokyo",
+      "VR Attractions"
+    ],
+    "tags": [
+      "Indoor",
+      "Action"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Combine with Odaiba",
+    "lat": 35.6288,
+    "lng": 139.7766,
+    "itineraries": [
+      {
+        "name": "Plan A: Thrills & Coasters",
+        "description": "Tackle the most intense, adrenaline-pumping rides the indoor park has to offer.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Arrive at Decks Tokyo Beach and head into Joypolis."
+          },
+          {
+            "time": "11:30",
+            "activity": "Ride the Gekion Live Coaster, a rhythm game combined with a rollercoaster."
+          },
+          {
+            "time": "13:00",
+            "activity": "Compete against friends on the Halfpipe Tokyo spinning ride."
+          },
+          {
+            "time": "14:30",
+            "activity": "Quick lunch at the Frame Cafe inside the park overlooking the bay."
+          },
+          {
+            "time": "16:00",
+            "activity": "Ride the Transformers 360-degree spinning simulator."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Horror & Virtual Reality",
+        "description": "Focus on the immersive walk-through attractions and cutting-edge VR.",
+        "steps": [
+          {
+            "time": "12:00",
+            "activity": "Start with the Zero Latency VR free-roaming experience (book in advance!)."
+          },
+          {
+            "time": "14:00",
+            "activity": "Grab lunch at a restaurant in Odaiba outside the park."
+          },
+          {
+            "time": "15:30",
+            "activity": "Experience the Room of the Living Doll 3D sound horror attraction."
+          },
+          {
+            "time": "16:30",
+            "activity": "Play the interactive Phoenix Wright: Ace Attorney investigation game."
+          },
+          {
+            "time": "18:00",
+            "activity": "Watch the main stage projection mapping show before leaving."
+          }
+        ]
+      }
+    ]
   }
 ]

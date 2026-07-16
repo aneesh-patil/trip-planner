@@ -100,7 +100,7 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
         <Button 
           variant={comparing ? "default" : "outline"}
           size="sm"
-          className={comparing ? "bg-emerald-600 hover:bg-emerald-700" : "flex-1 hover:bg-slate-100 dark:hover:bg-slate-800"}
+          className={comparing ? "bg-emerald-600 hover:bg-emerald-700 w-1/3" : "w-1/3 hover:bg-slate-100 dark:hover:bg-slate-800"}
           onClick={() => {
             if (!comparing && compareList.length >= 4) {
               alert("You can only compare up to 4 destinations at a time.");
@@ -112,7 +112,18 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
           {comparing ? <CheckSquare className="w-4 h-4 mr-1" /> : <PlusSquare className="w-4 h-4 mr-1" />}
           {comparing ? "Added" : "Compare"}
         </Button>
-        <Link to={`/destinations/${destination.id}`} className="flex-1">
+        <a 
+          href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent("Nakayama Station, Yokohama, Japan")}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-1/3"
+        >
+          <Button variant="outline" size="sm" className="w-full text-blue-600 border-blue-200 hover:bg-blue-50 dark:hover:bg-blue-900/20">
+            <MapPin className="w-4 h-4 mr-1" />
+            Maps
+          </Button>
+        </a>
+        <Link to={`/destinations/${destination.id}`} className="w-1/3">
           <Button variant="default" size="sm" className="w-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-emerald-600 dark:hover:bg-emerald-700">
             Details
           </Button>

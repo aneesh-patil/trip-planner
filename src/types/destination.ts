@@ -1,3 +1,27 @@
+export interface ItineraryStep {
+  time: string;
+  activity: string;
+}
+
+export interface ItineraryPlan {
+  name: string;
+  description: string;
+  steps: ItineraryStep[];
+}
+
+export interface Ratings {
+  overall: number;
+  couple: number;
+  summer: number;
+  winter: number;
+  rain: number;
+  food: number;
+  photography: number;
+  relaxation: number;
+  value: number;
+  uniqueness: number;
+}
+
 export interface Destination {
   id: string;
   name: string;
@@ -7,30 +31,20 @@ export interface Destination {
   heroImage: string;
   gallery: string[];
   description: string;
+  highlights: string[];
+  budgetRecommended: number;
+  budgetMin: number;
+  budgetMax: number;
   trainAvailable: boolean;
   carRecommended: boolean;
   trainTimeMin: number;
   carTimeMin: number;
   totalTripHours: number;
-  budgetMin: number;
-  budgetRecommended: number;
-  budgetMax: number;
   walkingMin: number;
   walkingSunMin: number;
   walkingShadeMin: number;
   indoorPercent: number;
-  ratings: {
-    overall: number;
-    couple: number;
-    summer: number;
-    winter: number;
-    rain: number;
-    food: number;
-    photography: number;
-    relaxation: number;
-    value: number;
-    uniqueness: number;
-  };
+  ratings: Ratings;
   crowd: {
     weekday: number;
     weekend: number;
@@ -43,15 +57,16 @@ export interface Destination {
     winter: number;
   };
   bestMonths: number[];
+  bestSeason?: string;
+  weatherDependence?: string;
+  tags: string[];
   reservation: string;
   parking: string;
-  highlights: string[];
-  tags: string[];
-  itinerary: {
-    time: string;
-    activity: string;
-  }[];
   restaurants: string[];
   cafes: string[];
   notes: string;
+  lat: number;
+  lng: number;
+  itinerary?: ItineraryStep[];
+  itineraries?: ItineraryPlan[];
 }

@@ -1,15 +1,26 @@
 import { useParams, Link } from "react-router-dom";
 import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
-import { ArrowLeft, MapPin, Clock, DollarSign, Footprints, ThermometerSun, Heart, Umbrella, Camera, Coffee, Utensils } from "lucide-react";
+import { ArrowLeft, MapPin, Clock, DollarSign, Footprints, ThermometerSun, Heart, Umbrella, Camera, Coffee, Utensils, Cloud, CloudRain, CloudSnow, CloudLightning, Sun } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
+import { useWeekendWeather, getWeatherDescription } from "@/hooks/useWeather";
+
+function WeatherIcon({ type }: { type: string }) {
+  if (type === "sun") return <Sun className="w-6 h-6 text-amber-500" />;
+  if (type === "cloud") return <Cloud className="w-6 h-6 text-slate-400" />;
+  if (type === "rain") return <CloudRain className="w-6 h-6 text-blue-500" />;
+  if (type === "snow") return <CloudSnow className="w-6 h-6 text-sky-300" />;
+  if (type === "storm") return <CloudLightning className="w-6 h-6 text-indigo-600" />;
+  return <Sun className="w-6 h-6 text-amber-500" />;
+}
 
 export default function DestinationDetails() {
   const { id } = useParams();
   const destination = (destinationsData as Destination[]).find(d => d.id === id);
+  const { forecast, loading } = useWeekendWeather(destination?.lat, destination?.lng);
 
   if (!destination) {
     return (
@@ -39,8 +50,19 @@ export default function DestinationDetails() {
             ))}
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-2">{destination.name}</h1>
-          <div className="flex items-center text-lg text-slate-200">
-            <MapPin className="w-5 h-5 mr-1" /> {destination.prefecture}, Japan
+          <div className="flex flex-wrap items-center gap-4 text-lg text-slate-200 mt-2">
+            <div className="flex items-center">
+              <MapPin className="w-5 h-5 mr-1" /> {destination.prefecture}, Japan
+            </div>
+            <a 
+              href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent("Nakayama Station, Yokohama, Japan")}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-sm font-medium bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg transition-colors"
+            >
+              <MapPin className="w-4 h-4 mr-1.5" />
+              Directions from Nakayama
+            </a>
           </div>
         </div>
       </div>
@@ -122,25 +144,30 @@ export default function DestinationDetails() {
                 </Card>
               </TabsContent>
 
-              <TabsContent value="itinerary" className="mt-4">
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="space-y-6">
-                      {destination.itinerary.map((step, idx) => (
-                        <div key={idx} className="flex gap-4">
-                          <div className="flex flex-col items-center">
-                            <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-                            {idx < destination.itinerary.length - 1 && <div className="w-0.5 h-full bg-slate-200 dark:bg-slate-800 my-1"></div>}
+              <TabsContent value="itinerary" className="mt-6 space-y-8">
+              {destination.itineraries && destination.itineraries.length > 0 ? (
+                destination.itineraries.map((plan, planIdx) => (
+                  <div key={planIdx} className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-6 border border-slate-100 dark:border-slate-800">
+                    <h3 className="text-xl font-bold mb-2 text-emerald-600 dark:text-emerald-400">{plan.name}</h3>
+                    <p className="text-slate-600 dark:text-slate-300 mb-6 text-sm">{plan.description}</p>
+                    <div className="space-y-4 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                      {plan.steps.map((step, idx) => (
+                        <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                          <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-slate-900 bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 font-bold text-xs shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10">
+                            {idx + 1}
                           </div>
-                          <div className="pb-4">
-                            <div className="text-sm font-bold text-emerald-600">{step.time}</div>
-                            <div className="text-slate-700 dark:text-slate-300 mt-1 font-medium">{step.activity}</div>
+                          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm">
+                            <div className="flex items-center justify-between mb-1">
+                              <span className="font-bold text-slate-900 dark:text-slate-100">{step.time}</span>
+                            </div>
+                            <p className="text-sm text-slate-600 dark:text-slate-400">{step.activity}</p>
                           </div>
                         </div>
                       ))}
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                ))
+              ) : null}
               </TabsContent>
 
               <TabsContent value="food" className="mt-4">
@@ -188,6 +215,40 @@ export default function DestinationDetails() {
                     </li>
                   ))}
                 </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-bold mb-4">Upcoming Weekend Weather</h3>
+                {loading || !forecast ? (
+                  <div className="text-sm text-slate-500 animate-pulse flex items-center"><ThermometerSun className="w-4 h-4 mr-2" /> Fetching forecast...</div>
+                ) : (
+                  <div className="space-y-4">
+                    {forecast.map((day, idx) => {
+                      const dateObj = new Date(day.date);
+                      const dayName = dateObj.getDay() === 6 ? "Saturday" : "Sunday";
+                      const desc = getWeatherDescription(day.weatherCode);
+                      return (
+                        <div key={idx} className="flex items-center justify-between">
+                          <div className="flex items-center gap-3">
+                            <div className="bg-slate-100 dark:bg-slate-800 p-2 rounded-lg">
+                              <WeatherIcon type={desc.icon} />
+                            </div>
+                            <div>
+                              <div className="text-sm font-bold">{dayName}</div>
+                              <div className="text-xs text-slate-500">{desc.text}</div>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <div className="text-sm font-bold text-slate-900 dark:text-slate-100">{day.maxTemp}°</div>
+                            <div className="text-xs font-medium text-slate-400">{day.minTemp}°</div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </CardContent>
             </Card>
 
