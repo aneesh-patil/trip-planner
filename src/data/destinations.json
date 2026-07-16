@@ -1,0 +1,181 @@
+[
+  {
+    "id": "hakone-onsen",
+    "name": "Hakone",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": ["Onsen", "Nature", "Museums"],
+    "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1616421316438-bb2f7be625ee?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "description": "A popular hot spring resort area featuring views of Mt. Fuji, art museums, and a scenic lake.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 85,
+    "carTimeMin": 90,
+    "totalTripHours": 24,
+    "budgetMin": 15000,
+    "budgetRecommended": 35000,
+    "budgetMax": 80000,
+    "walkingMin": 4000,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9.5,
+      "summer": 7.0,
+      "winter": 9.5,
+      "rain": 8.0,
+      "food": 8.5,
+      "photography": 9.0,
+      "relaxation": 9.8,
+      "value": 7.5,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 6,
+      "autumn": 10,
+      "winter": 9
+    },
+    "bestMonths": [10, 11, 12, 1, 2],
+    "reservation": "Required well in advance for ryokans.",
+    "parking": "Limited and expensive.",
+    "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
+    "tags": ["Romantic", "Relaxing", "Scenic"],
+    "itinerary": [
+      { "time": "10:00", "activity": "Arrive at Hakone-Yumoto Station" },
+      { "time": "11:00", "activity": "Hakone Open-Air Museum" },
+      { "time": "14:00", "activity": "Owakudani Ropeway" },
+      { "time": "16:00", "activity": "Check-in to Ryokan" }
+    ],
+    "restaurants": ["Hakone Gindofu", "Bakery & Table Hakone"],
+    "cafes": ["Naraya Cafe", "Amazake Chaya"],
+    "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport."
+  },
+  {
+    "id": "kamakura-history",
+    "name": "Kamakura",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": ["History", "Temples", "Beach"],
+    "heroImage": "https://images.unsplash.com/photo-1542880941-185412fb10d3?q=80&w=2070&auto=format&fit=crop",
+    "gallery": [],
+    "description": "Coastal town rich in history, known for the Great Buddha, numerous temples, and surfing beaches.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 60,
+    "carTimeMin": 70,
+    "totalTripHours": 8,
+    "budgetMin": 3000,
+    "budgetRecommended": 8000,
+    "budgetMax": 20000,
+    "walkingMin": 10000,
+    "walkingSunMin": 7000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 15,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 8.5,
+      "summer": 9.0,
+      "winter": 6.5,
+      "rain": 4.0,
+      "food": 8.0,
+      "photography": 8.5,
+      "relaxation": 7.0,
+      "value": 9.0,
+      "uniqueness": 8.0
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 5
+    },
+    "bestMonths": [5, 6, 7, 8, 9],
+    "reservation": "Not required for day trips.",
+    "parking": "Extremely congested on weekends.",
+    "highlights": ["Great Buddha (Daibutsu)", "Hasedera Temple", "Komachi-dori Street"],
+    "tags": ["Day Trip", "Culture", "Walk-heavy"],
+    "itinerary": [
+      { "time": "09:30", "activity": "Arrive at Kamakura Station" },
+      { "time": "10:00", "activity": "Stroll down Komachi-dori" },
+      { "time": "11:30", "activity": "Tsurugaoka Hachimangu" },
+      { "time": "14:00", "activity": "Great Buddha" }
+    ],
+    "restaurants": ["Kamakura Matsubaraan", "Caraway Curry"],
+    "cafes": ["Iwata Coffee", "Starbucks Kamakura Onarimachi"],
+    "notes": "Wear comfortable walking shoes. Enoden line can be very crowded."
+  },
+  {
+    "id": "kawagoe-edo",
+    "name": "Kawagoe",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": ["History", "Food", "Architecture"],
+    "heroImage": "https://images.unsplash.com/photo-1627918451151-5eeab45f65bc?q=80&w=2070&auto=format&fit=crop",
+    "gallery": [],
+    "description": "Known as 'Little Edo', featuring preserved clay-walled warehouse district and a charming candy alley.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 45,
+    "carTimeMin": 60,
+    "totalTripHours": 6,
+    "budgetMin": 2000,
+    "budgetRecommended": 6000,
+    "budgetMax": 15000,
+    "walkingMin": 8000,
+    "walkingSunMin": 6000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 8.2,
+      "couple": 8.0,
+      "summer": 5.0,
+      "winter": 7.5,
+      "rain": 6.0,
+      "food": 9.0,
+      "photography": 9.5,
+      "relaxation": 6.0,
+      "value": 9.5,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 4,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "reservation": "Not required.",
+    "parking": "Available but traffic can be slow in town.",
+    "highlights": ["Kurazukuri Zone", "Toki no Kane (Time Bell Tower)", "Penny Candy Alley"],
+    "tags": ["Foodie", "Photogenic", "Budget-friendly"],
+    "itinerary": [
+      { "time": "10:00", "activity": "Arrive at Hon-Kawagoe Station" },
+      { "time": "10:30", "activity": "Explore Kurazukuri Street" },
+      { "time": "12:00", "activity": "Unagi (Eel) Lunch" },
+      { "time": "14:00", "activity": "Kashiya Yokocho (Candy Alley)" }
+    ],
+    "restaurants": ["Ichinoya", "Ogakiku"],
+    "cafes": ["Starbucks Kawagoe Kanetsuki Dori", "Glayt"],
+    "notes": "Famous for sweet potato snacks and traditional unagi."
+  }
+]
