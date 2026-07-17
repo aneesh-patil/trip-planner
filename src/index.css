@@ -75,3 +75,24 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+/* Custom Leaflet Map Styles */
+.custom-popup .leaflet-popup-content-wrapper {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 0;
+  width: auto !important;
+}
+
+.custom-popup .leaflet-popup-content p {
+  margin: 0;
+}
+
+.custom-popup .leaflet-popup-tip {
+  box-shadow: none;
+}

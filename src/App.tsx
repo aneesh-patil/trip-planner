@@ -8,6 +8,8 @@ import DestinationDetails from "./pages/DestinationDetails";
 import Compare from "./pages/Compare";
 import Favorites from "./pages/Favorites";
 
+import JapanMap from "./pages/JapanMap";
+
 function App() {
   return (
     <TripStoreProvider>
@@ -21,6 +23,7 @@ function App() {
               <Route path="/destinations/:id" element={<DestinationDetails />} />
               <Route path="/compare" element={<Compare />} />
               <Route path="/favorites" element={<Favorites />} />
+              <Route path="/map" element={<JapanMap />} />
             </Routes>
           </main>
           <Footer />

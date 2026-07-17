@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useSearchParams, useNavigate } from "react-router-dom";
-import { Compass, Bookmark, Map, Settings, Share2, Check } from "lucide-react";
+import { Compass, Bookmark, Map, Settings, Share2, Check, MapPinned } from "lucide-react";
 import { useTripStore } from "@/hooks/useTripStore";
 import { Button } from "@/components/ui/button";
 
@@ -38,6 +38,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Explore", path: "/", icon: Compass },
     { name: "Destinations", path: "/destinations", icon: Map },
+    { name: "Full Map", path: "/map", icon: MapPinned },
     { name: "Compare", path: "/compare", icon: Settings },
     { name: "Bucket List", path: "/favorites", icon: Bookmark },
   ];

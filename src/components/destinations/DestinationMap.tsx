@@ -42,7 +42,7 @@ export default function DestinationMap({ destinations }: DestinationMapProps) {
           return (
             <Marker key={dest.id} position={[lat, lng]} icon={customIcon}>
               <Popup className="custom-popup">
-                <div className="font-sans min-w-[200px]">
+                <div className="font-sans min-w-[200px] p-3">
                   <img src={dest.heroImage} alt={dest.name} className="w-full h-28 object-cover rounded-md mb-2" />
                   <h3 className="font-bold text-lg mb-0">{dest.name}</h3>
                   <div className="text-sm font-medium text-emerald-600 mb-2">★ {dest.ratings.overall}/10</div>
