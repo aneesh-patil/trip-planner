@@ -15,6 +15,9 @@ interface TripStoreContextType {
   toggleCompare: (id: string) => void;
   isComparing: (id: string) => boolean;
   clearCompare: () => void;
+
+  exportData: () => string;
+  importData: (encodedData: string) => boolean;
 }
 
 const TripStoreContext = createContext<TripStoreContextType | undefined>(undefined);
@@ -56,11 +59,34 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   
   const clearCompare = () => setCompareList([]);
 
+  const exportData = () => {
+    const data = { favorites, visited };
+    return btoa(JSON.stringify(data)); // Base64 encode
+  };
+
+  const importData = (encodedData: string) => {
+    try {
+      const decoded = atob(encodedData);
+      const data = JSON.parse(decoded);
+      if (data.favorites && Array.isArray(data.favorites)) {
+        setFavorites(data.favorites);
+      }
+      if (data.visited && Array.isArray(data.visited)) {
+        setVisited(data.visited);
+      }
+      return true;
+    } catch (e) {
+      console.error("Failed to import data", e);
+      return false;
+    }
+  };
+
   return (
     <TripStoreContext.Provider value={{
       favorites, toggleFavorite, isFavorite,
       visited, toggleVisited, isVisited,
-      compareList, toggleCompare, isComparing, clearCompare
+      compareList, toggleCompare, isComparing, clearCompare,
+      exportData, importData
     }}>
       {children}
     </TripStoreContext.Provider>
