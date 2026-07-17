@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Sparkles, Search, Heart, Utensils, Trees, Palette, Camera, Car, Train, Sun, CloudRain, ThermometerSun, Map as MapIcon, Navigation } from "lucide-react";
+import { Sparkles, Search, Utensils, Trees, Palette, Camera, Car, Train, Sun, CloudRain, ThermometerSun, Map as MapIcon, Navigation, Waves, Landmark, Snowflake } from "lucide-react";
 import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
 import DestinationCard from "@/components/destinations/DestinationCard";
@@ -21,58 +21,79 @@ export default function Home() {
   const scoredDestinations = useMemo(() => {
     return allDestinations.map(dest => {
       let score = 70; // Base score
+      const reasons: string[] = [];
 
       // Budget Penalty (harsh penalty if over budget)
       if (dest.budgetRecommended > budget) {
         score -= ((dest.budgetRecommended - budget) / 1000) * 3;
       } else {
         score += 5; // Bonus for being under budget
+        if (budget - dest.budgetRecommended > 5000) {
+          reasons.push("Well under your budget limit");
+        }
       }
 
       // Transport Logic
       if (transport === "train") {
         if (!dest.trainAvailable) score -= 100;
-        else score += 10;
+        else { score += 10; reasons.push("Accessible by train"); }
       }
       if (transport === "car") {
         if (!dest.carRecommended && dest.trainAvailable) score -= 10;
-        if (dest.carRecommended) score += 10;
+        if (dest.carRecommended) { score += 10; reasons.push("Great for driving"); }
       }
 
       // Trip Type Boosts
       switch (tripType) {
-        case "couple":
-          score += (dest.ratings.couple - 5) * 4;
-          break;
         case "food":
           score += (dest.ratings.food - 5) * 4;
+          if (dest.ratings.food >= 9) reasons.push("Excellent local food");
           break;
         case "nature":
-          if (dest.tags.includes("Nature") || dest.categories.includes("Mountain") || dest.categories.includes("Coast")) score += 20;
+          if (dest.tags.includes("Nature") || dest.categories.includes("Mountain")) {
+            score += 20; reasons.push("Perfect nature escape");
+          }
           break;
-        case "museum":
-          if (dest.categories.includes("Museum") || dest.categories.includes("Art")) score += 20;
+        case "history":
+          if (dest.categories.includes("History") || dest.categories.includes("Shrine") || dest.tags.includes("Historic")) {
+            score += 20; reasons.push("Rich in history & culture");
+          }
+          break;
+        case "art":
+          if (dest.categories.includes("Museum") || dest.categories.includes("Art")) {
+            score += 20; reasons.push("Great museums & culture");
+          }
+          break;
+        case "sea":
+          if (dest.categories.includes("Coast") || dest.categories.includes("Sea")) {
+            score += 20; reasons.push("Beautiful coastal views");
+          }
+          break;
+        case "cool":
+          if (dest.ratings.summer >= 9) {
+            score += 20; reasons.push("Cool & refreshing climate");
+          }
           break;
         case "photography":
           score += (dest.ratings.photography - 5) * 4;
-          break;
-        case "roadtrip":
-          if (dest.carRecommended) score += 20;
+          if (dest.ratings.photography >= 9) reasons.push("Highly photogenic spots");
           break;
       }
 
       // Weather Boosts
       if (weather === "rainy") {
         score += (dest.indoorPercent * 100) * 0.3; // Up to 30 points for being indoors
+        if (dest.indoorPercent > 0.6) reasons.push("Mostly indoors (Rain-safe)");
       } else if (weather === "summer") {
         score += (dest.ratings.summer - 5) * 4;
+        if (dest.ratings.summer >= 9) reasons.push("Great way to beat the heat");
       }
 
       // Cap the score between 0 and 99 (or 100 if perfectly matched)
       const finalScore = Math.min(100, Math.max(0, Math.round(score)));
 
-      return { ...dest, matchScore: finalScore };
-    }).sort((a, b) => b.matchScore - a.matchScore);
+      return { ...dest, matchScore: finalScore, matchReasons: reasons.slice(0, 3) };
+    }).sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
   }, [allDestinations, tripType, budget, transport, weather]);
 
   const topRecommendations = scoredDestinations.slice(0, 3);
@@ -89,17 +110,17 @@ export default function Home() {
             <div className="flex flex-col items-start text-left">
               <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm font-semibold mb-6 bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 shadow-sm">
                 <Sparkles className="w-4 h-4 mr-2" />
-                Smart Match Algorithm
+                Weekend Decision Engine
               </div>
               <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-2xl mb-6 leading-tight">
-                Stop guessing.<br /> Start <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">experiencing.</span>
+                Where should you <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">escape</span> this weekend?
               </h1>
               <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl mb-10">
-                Tell us what kind of weekend you want, and our decision engine will calculate the perfect day trip from Yokohama.
+                You have one free day. Tell us what you want, and we'll calculate the perfect trip from Yokohama in seconds.
               </p>
               <div className="flex gap-4 w-full md:w-auto">
                 <Link to="/destinations" className="w-full md:w-auto">
-                  <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base rounded-full bg-white/50 backdrop-blur-sm dark:bg-slate-900/50">
+                  <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base rounded-full bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-slate-300 hover:bg-slate-100">
                     Browse All Spots
                   </Button>
                 </Link>
@@ -121,30 +142,33 @@ export default function Home() {
                 <div className="space-y-3">
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">What's the vibe?</label>
                   <Select value={tripType} onValueChange={(val) => { if (val) setTripType(val); }}>
-                    <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors">
+                    <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
                       <SelectValue placeholder="Select vibe..." />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="any">
-                        <div className="flex items-center"><Sparkles className="w-4 h-4 mr-2 text-slate-400" /> Anything goes</div>
+                    <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
+                      <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> <span className="text-base font-medium">Anything goes</span></div>
                       </SelectItem>
-                      <SelectItem value="couple">
-                        <div className="flex items-center"><Heart className="w-4 h-4 mr-2 text-rose-500" /> Romantic Couple Trip</div>
+                      <SelectItem value="sea" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Waves className="w-5 h-5 mr-3 text-blue-500" /> <span className="text-base font-medium">Sea Escape</span></div>
                       </SelectItem>
-                      <SelectItem value="food">
-                        <div className="flex items-center"><Utensils className="w-4 h-4 mr-2 text-orange-500" /> Food & Eating</div>
+                      <SelectItem value="history" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Landmark className="w-5 h-5 mr-3 text-amber-700" /> <span className="text-base font-medium">History & Culture</span></div>
                       </SelectItem>
-                      <SelectItem value="nature">
-                        <div className="flex items-center"><Trees className="w-4 h-4 mr-2 text-emerald-500" /> Nature & Outdoors</div>
+                      <SelectItem value="art" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Palette className="w-5 h-5 mr-3 text-purple-500" /> <span className="text-base font-medium">Art & Museums</span></div>
                       </SelectItem>
-                      <SelectItem value="museum">
-                        <div className="flex items-center"><Palette className="w-4 h-4 mr-2 text-purple-500" /> Museums & Art</div>
+                      <SelectItem value="food" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Utensils className="w-5 h-5 mr-3 text-orange-500" /> <span className="text-base font-medium">Food & Eating</span></div>
                       </SelectItem>
-                      <SelectItem value="photography">
-                        <div className="flex items-center"><Camera className="w-4 h-4 mr-2 text-blue-500" /> Photography</div>
+                      <SelectItem value="nature" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Trees className="w-5 h-5 mr-3 text-emerald-500" /> <span className="text-base font-medium">Nature & Outdoors</span></div>
                       </SelectItem>
-                      <SelectItem value="roadtrip">
-                        <div className="flex items-center"><Car className="w-4 h-4 mr-2 text-slate-500" /> Scenic Road Trip</div>
+                      <SelectItem value="cool" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Snowflake className="w-5 h-5 mr-3 text-sky-400" /> <span className="text-base font-medium">Cool Escape</span></div>
+                      </SelectItem>
+                      <SelectItem value="photography" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Camera className="w-5 h-5 mr-3 text-rose-400" /> <span className="text-base font-medium">Photography</span></div>
                       </SelectItem>
                     </SelectContent>
                   </Select>
@@ -154,18 +178,18 @@ export default function Home() {
                 <div className="space-y-3">
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">Weather condition?</label>
                   <Select value={weather} onValueChange={(val) => { if (val) setWeather(val); }}>
-                    <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors">
+                    <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
                       <SelectValue placeholder="Select weather..." />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="any">
-                        <div className="flex items-center"><Sun className="w-4 h-4 mr-2 text-amber-500" /> Perfect Weather</div>
+                    <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
+                      <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Sun className="w-5 h-5 mr-3 text-amber-500" /> <span className="text-base font-medium">Perfect Weather</span></div>
                       </SelectItem>
-                      <SelectItem value="rainy">
-                        <div className="flex items-center"><CloudRain className="w-4 h-4 mr-2 text-blue-500" /> Looks like Rain (Indoor focus)</div>
+                      <SelectItem value="rainy" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><CloudRain className="w-5 h-5 mr-3 text-blue-500" /> <span className="text-base font-medium">Looks like Rain</span></div>
                       </SelectItem>
-                      <SelectItem value="summer">
-                        <div className="flex items-center"><ThermometerSun className="w-4 h-4 mr-2 text-red-500" /> Scorching Hot (Summer focus)</div>
+                      <SelectItem value="summer" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><ThermometerSun className="w-5 h-5 mr-3 text-red-500" /> <span className="text-base font-medium">Scorching Hot</span></div>
                       </SelectItem>
                     </SelectContent>
                   </Select>
@@ -175,18 +199,18 @@ export default function Home() {
                 <div className="space-y-3">
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">How are you getting there?</label>
                   <Select value={transport} onValueChange={(val) => { if (val) setTransport(val); }}>
-                    <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors">
+                    <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
                       <SelectValue placeholder="Select transport..." />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="any">
-                        <div className="flex items-center"><MapIcon className="w-4 h-4 mr-2 text-slate-400" /> No preference</div>
+                    <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
+                      <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><MapIcon className="w-5 h-5 mr-3 text-slate-400" /> <span className="text-base font-medium">No preference</span></div>
                       </SelectItem>
-                      <SelectItem value="train">
-                        <div className="flex items-center"><Train className="w-4 h-4 mr-2 text-emerald-600" /> Train Only</div>
+                      <SelectItem value="train" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Train className="w-5 h-5 mr-3 text-emerald-600" /> <span className="text-base font-medium">Train Only</span></div>
                       </SelectItem>
-                      <SelectItem value="car">
-                        <div className="flex items-center"><Car className="w-4 h-4 mr-2 text-slate-600" /> Driving a Car</div>
+                      <SelectItem value="car" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Car className="w-5 h-5 mr-3 text-slate-600" /> <span className="text-base font-medium">Driving a Car</span></div>
                       </SelectItem>
                     </SelectContent>
                   </Select>
@@ -237,14 +261,31 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {topRecommendations.map((dest, index) => (
-              <div key={dest.id} className="relative">
+              <div key={dest.id} className="relative flex flex-col h-full">
                 <div className="absolute -top-4 -left-4 w-10 h-10 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full flex items-center justify-center font-black text-xl z-10 shadow-lg border-4 border-white dark:border-background">
                   #{index + 1}
                 </div>
-                <DestinationCard destination={dest} />
-                <div className="mt-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg p-3 text-sm text-emerald-700 dark:text-emerald-400 font-medium flex justify-between items-center">
-                  <span>Smart Match Score</span>
-                  <span className="text-lg font-bold">{Math.max(0, Math.round(dest.matchScore))}%</span>
+                <div className="flex-grow">
+                  <DestinationCard destination={dest} />
+                </div>
+                <div className="mt-4 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800/50 rounded-xl p-4 flex flex-col gap-3">
+                  <div className="flex justify-between items-center pb-3 border-b border-emerald-200/50 dark:border-emerald-800/50">
+                    <span className="font-bold text-slate-800 dark:text-slate-200">Smart Match</span>
+                    <span className="text-xl font-black text-emerald-600 dark:text-emerald-400">
+                      {Math.max(0, Math.round(dest.matchScore || 0))}%
+                    </span>
+                  </div>
+                  {dest.matchReasons && dest.matchReasons.length > 0 && (
+                    <div className="space-y-1.5">
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Why this fits you:</p>
+                      {dest.matchReasons.map((r: string, i: number) => (
+                        <div key={i} className="flex items-start text-sm text-slate-700 dark:text-slate-300">
+                          <Sparkles className="w-4 h-4 mr-2 text-emerald-500 shrink-0 mt-0.5" />
+                          <span>{r}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

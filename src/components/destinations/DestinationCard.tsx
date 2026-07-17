@@ -3,7 +3,7 @@ import type { Destination } from "@/types/destination";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Train, Car, Clock, DollarSign, Heart, ThermometerSun, Footprints, PlusSquare, CheckSquare } from "lucide-react";
+import { MapPin, Train, Car, DollarSign, Heart, ThermometerSun, PlusSquare, CheckSquare, CloudRain, Utensils, Camera, Palette, Trees, Sun } from "lucide-react";
 import { useTripStore } from "@/hooks/useTripStore";
 
 interface DestinationCardProps {
@@ -15,92 +15,97 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
   const favorite = isFavorite(destination.id);
   const comparing = isComparing(destination.id);
 
+  const getPerfectFor = (dest: Destination) => {
+    const perfectFor = [];
+    if (dest.ratings.summer >= 9) perfectFor.push({ icon: ThermometerSun, text: "Hot days", color: "text-amber-500" });
+    if (dest.ratings.couple >= 9) perfectFor.push({ icon: Heart, text: "Couples", color: "text-rose-500" });
+    if (dest.indoorPercent >= 0.7) perfectFor.push({ icon: CloudRain, text: "Rainy days", color: "text-blue-500" });
+    if (dest.ratings.food >= 9) perfectFor.push({ icon: Utensils, text: "Foodies", color: "text-orange-500" });
+    if (dest.ratings.photography >= 9) perfectFor.push({ icon: Camera, text: "Photography", color: "text-purple-500" });
+    
+    // Fill in gaps with categories if needed
+    if (perfectFor.length < 3 && dest.categories.includes("Art")) perfectFor.push({ icon: Palette, text: "Culture", color: "text-indigo-500" });
+    if (perfectFor.length < 3 && (dest.categories.includes("Mountain") || dest.categories.includes("Coast"))) perfectFor.push({ icon: Trees, text: "Nature", color: "text-emerald-500" });
+    
+    return perfectFor.slice(0, 3);
+  };
+
+  const perfectForTags = getPerfectFor(destination);
+
   return (
     <Card className="overflow-hidden flex flex-col h-full group hover:shadow-lg transition-all duration-300 border-slate-200 dark:border-slate-800">
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-56 overflow-hidden">
         <img
           src={destination.heroImage}
           alt={destination.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute top-3 left-3 flex gap-2 flex-wrap">
-          <Badge variant="secondary" className="bg-white/90 text-slate-900 backdrop-blur-sm hover:bg-white/100">
-            {destination.region}
-          </Badge>
           {destination.tags.slice(0, 2).map((tag) => (
-            <Badge key={tag} className="bg-emerald-600/90 hover:bg-emerald-600 text-white backdrop-blur-sm">
+            <Badge key={tag} className="bg-slate-900/70 hover:bg-slate-900 text-white backdrop-blur-md border border-white/20">
               {tag}
             </Badge>
           ))}
         </div>
         <button 
           onClick={() => toggleFavorite(destination.id)}
-          className="absolute top-3 right-3 p-2 bg-white/50 hover:bg-white/90 backdrop-blur-sm rounded-full transition-colors"
+          className="absolute top-3 right-3 p-2 bg-white/50 hover:bg-white/90 backdrop-blur-sm rounded-full transition-colors shadow-sm"
         >
           <Heart className={`w-5 h-5 ${favorite ? "fill-rose-500 text-rose-500" : "text-slate-700"}`} />
         </button>
       </div>
 
-      <CardHeader className="pb-3 pt-4">
+      <CardHeader className="pb-2 pt-5">
         <div className="flex justify-between items-start">
           <div>
-            <h3 className="text-xl font-bold leading-none mb-1">{destination.name}</h3>
-            <div className="flex items-center text-sm text-slate-500 dark:text-slate-400">
-              <MapPin className="w-3 h-3 mr-1" />
+            <h3 className="text-2xl font-extrabold tracking-tight mb-1">{destination.name}</h3>
+            <div className="flex items-center text-sm font-medium text-slate-500 dark:text-slate-400">
+              <MapPin className="w-3.5 h-3.5 mr-1 text-emerald-500" />
               {destination.prefecture}
             </div>
           </div>
-          <div className="flex items-center bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-md">
-            <span className="text-sm font-bold text-slate-900 dark:text-slate-100">{destination.ratings.overall}</span>
+          <div className="flex items-center bg-emerald-50 border border-emerald-100 dark:bg-emerald-900/30 dark:border-emerald-800/50 px-2.5 py-1 rounded-lg">
+            <span className="text-sm font-bold text-emerald-700 dark:text-emerald-400">⭐ {destination.ratings.overall}</span>
           </div>
         </div>
       </CardHeader>
 
-      <CardContent className="pb-4 flex-grow text-sm text-slate-600 dark:text-slate-300">
-        <div className="grid grid-cols-2 gap-y-3 gap-x-2">
-          {/* Transport */}
-          <div className="flex items-center gap-1.5" title="Travel Time">
-            {destination.trainAvailable ? <Train className="w-4 h-4 text-emerald-600" /> : <Car className="w-4 h-4 text-emerald-600" />}
+      <CardContent className="pb-5 flex-grow">
+        {/* Core Metrics */}
+        <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6 text-sm font-medium text-slate-700 dark:text-slate-300">
+          <div className="flex items-center gap-1.5">
+            {destination.trainAvailable ? <Train className="w-4 h-4 text-slate-400" /> : <Car className="w-4 h-4 text-slate-400" />}
             <span>{destination.trainAvailable ? destination.trainTimeMin : destination.carTimeMin} min</span>
           </div>
-          
-          {/* Budget */}
-          <div className="flex items-center gap-1.5" title="Recommended Budget">
-            <DollarSign className="w-4 h-4 text-emerald-600" />
+          <div className="flex items-center gap-1.5">
+            <DollarSign className="w-4 h-4 text-slate-400" />
             <span>¥{(destination.budgetRecommended / 1000).toFixed(0)}k</span>
           </div>
-          
-          {/* Walking */}
-          <div className="flex items-center gap-1.5" title="Walking Required">
-            <Footprints className="w-4 h-4 text-emerald-600" />
-            <span>{(destination.walkingMin / 1000).toFixed(1)}k steps</span>
+          <div className="flex items-center gap-1.5">
+            <Sun className="w-4 h-4 text-amber-500" />
+            <span>{(destination.walkingSunMin / 1000).toFixed(1)}k steps sun</span>
           </div>
-          
-          {/* Summer / Sun */}
-          <div className="flex items-center gap-1.5" title="Summer Comfort">
-            <ThermometerSun className="w-4 h-4 text-amber-500" />
-            <span>{destination.ratings.summer}/10</span>
-          </div>
-          
-          {/* Couple */}
-          <div className="flex items-center gap-1.5" title="Couple Rating">
-            <Heart className="w-4 h-4 text-rose-500" />
-            <span>{destination.ratings.couple}/10</span>
-          </div>
-          
-          {/* Time */}
-          <div className="flex items-center gap-1.5" title="Total Trip Duration">
-            <Clock className="w-4 h-4 text-emerald-600" />
-            <span>{destination.totalTripHours} hrs</span>
+        </div>
+
+        {/* Perfect For Section */}
+        <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 border border-slate-100 dark:border-slate-800/80">
+          <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Perfect for</p>
+          <div className="space-y-2.5">
+            {perfectForTags.map((tag, i) => (
+              <div key={i} className="flex items-center text-sm font-medium text-slate-700 dark:text-slate-200">
+                <tag.icon className={`w-4 h-4 mr-2.5 ${tag.color}`} />
+                {tag.text}
+              </div>
+            ))}
           </div>
         </div>
       </CardContent>
 
-      <CardFooter className="pt-0 border-t border-slate-100 dark:border-slate-800 mt-auto pt-4 flex justify-between items-center gap-2">
+      <CardFooter className="pt-0 flex justify-between items-center gap-2">
         <Button 
           variant={comparing ? "default" : "outline"}
           size="sm"
-          className={comparing ? "bg-emerald-600 hover:bg-emerald-700 w-1/3" : "w-1/3 hover:bg-slate-100 dark:hover:bg-slate-800"}
+          className={comparing ? "bg-slate-900 hover:bg-slate-800 text-white w-1/2" : "w-1/2"}
           onClick={() => {
             if (!comparing && compareList.length >= 4) {
               alert("You can only compare up to 4 destinations at a time.");
@@ -109,23 +114,12 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
             toggleCompare(destination.id);
           }}
         >
-          {comparing ? <CheckSquare className="w-4 h-4 mr-1" /> : <PlusSquare className="w-4 h-4 mr-1" />}
+          {comparing ? <CheckSquare className="w-4 h-4 mr-1.5" /> : <PlusSquare className="w-4 h-4 mr-1.5 text-slate-400" />}
           {comparing ? "Added" : "Compare"}
         </Button>
-        <a 
-          href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent("Nakayama Station, Yokohama, Japan")}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-1/3"
-        >
-          <Button variant="outline" size="sm" className="w-full text-blue-600 border-blue-200 hover:bg-blue-50 dark:hover:bg-blue-900/20">
-            <MapPin className="w-4 h-4 mr-1" />
-            Maps
-          </Button>
-        </a>
-        <Link to={`/destinations/${destination.id}`} className="w-1/3">
-          <Button variant="default" size="sm" className="w-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-emerald-600 dark:hover:bg-emerald-700">
-            Details
+        <Link to={`/destinations/${destination.id}`} className="w-1/2">
+          <Button variant="default" size="sm" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm font-semibold">
+            Explore
           </Button>
         </Link>
       </CardFooter>
