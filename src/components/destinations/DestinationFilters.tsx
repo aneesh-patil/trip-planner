@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
-import { Search } from "lucide-react";
+import { Search, Star, Clock, Coins, Footprints, Heart, ThermometerSun, Sparkles, Train, Car, CloudRain } from "lucide-react";
 
 interface DestinationFiltersProps {
   searchQuery: string;
@@ -43,11 +43,11 @@ export default function DestinationFilters({
             <Search className="w-4 h-4 mr-1.5 text-emerald-500" /> Search
           </label>
           <div className="relative">
-            <Search className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
+            <Search className="absolute left-4 top-3.5 h-5 w-5 text-slate-400" />
             <Input
               type="search"
               placeholder="Name, region, tags..."
-              className="pl-9 h-10 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus-visible:ring-emerald-500"
+              className="pl-12 h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus-visible:ring-emerald-500 rounded-xl text-base font-medium"
               value={searchQuery}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
             />
@@ -58,16 +58,33 @@ export default function DestinationFilters({
         <div className="space-y-3">
           <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">Sort By</label>
           <Select value={sortBy} onValueChange={(val) => { if (val) setSortBy(val as string); }}>
-            <SelectTrigger className="h-10 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus:ring-emerald-500">
-              <SelectValue placeholder="Sort by..." />
+            <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
+              {sortBy === "overall" && <div className="flex items-center"><Star className="w-5 h-5 mr-3 text-amber-500" /> Highest Rated</div>}
+              {sortBy === "travelTime" && <div className="flex items-center"><Clock className="w-5 h-5 mr-3 text-blue-500" /> Fastest Travel</div>}
+              {sortBy === "budget" && <div className="flex items-center"><Coins className="w-5 h-5 mr-3 text-emerald-500" /> Lowest Budget</div>}
+              {sortBy === "walking" && <div className="flex items-center"><Footprints className="w-5 h-5 mr-3 text-slate-500" /> Least Walking</div>}
+              {sortBy === "couple" && <div className="flex items-center"><Heart className="w-5 h-5 mr-3 text-rose-500" /> Best for Couples</div>}
+              {sortBy === "summer" && <div className="flex items-center"><ThermometerSun className="w-5 h-5 mr-3 text-orange-500" /> Best for Summer</div>}
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="overall">Highest Rated</SelectItem>
-              <SelectItem value="travelTime">Fastest Travel</SelectItem>
-              <SelectItem value="budget">Lowest Budget</SelectItem>
-              <SelectItem value="walking">Least Walking</SelectItem>
-              <SelectItem value="couple">Best for Couples</SelectItem>
-              <SelectItem value="summer">Best for Summer</SelectItem>
+            <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
+              <SelectItem value="overall" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Star className="w-4 h-4 mr-3 text-amber-500" /> <span className="font-medium">Highest Rated</span></div>
+              </SelectItem>
+              <SelectItem value="travelTime" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Clock className="w-4 h-4 mr-3 text-blue-500" /> <span className="font-medium">Fastest Travel</span></div>
+              </SelectItem>
+              <SelectItem value="budget" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Coins className="w-4 h-4 mr-3 text-emerald-500" /> <span className="font-medium">Lowest Budget</span></div>
+              </SelectItem>
+              <SelectItem value="walking" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Footprints className="w-4 h-4 mr-3 text-slate-500" /> <span className="font-medium">Least Walking</span></div>
+              </SelectItem>
+              <SelectItem value="couple" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Heart className="w-4 h-4 mr-3 text-rose-500" /> <span className="font-medium">Best for Couples</span></div>
+              </SelectItem>
+              <SelectItem value="summer" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><ThermometerSun className="w-4 h-4 mr-3 text-orange-500" /> <span className="font-medium">Best for Summer</span></div>
+              </SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -76,13 +93,21 @@ export default function DestinationFilters({
         <div className="space-y-3">
           <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">Transport</label>
           <Select value={transportMode} onValueChange={(val) => { if (val) setTransportMode(val as string); }}>
-            <SelectTrigger className="h-10 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus:ring-emerald-500">
-              <SelectValue placeholder="Any Transport" />
+            <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
+              {transportMode === "all" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Any Transport</div>}
+              {transportMode === "train" && <div className="flex items-center"><Train className="w-5 h-5 mr-3 text-blue-500" /> Train Accessible</div>}
+              {transportMode === "car" && <div className="flex items-center"><Car className="w-5 h-5 mr-3 text-emerald-500" /> Car Recommended</div>}
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">Any Transport</SelectItem>
-              <SelectItem value="train">Train Accessible</SelectItem>
-              <SelectItem value="car">Car Recommended</SelectItem>
+            <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
+              <SelectItem value="all" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Sparkles className="w-4 h-4 mr-3 text-slate-400" /> <span className="font-medium">Any Transport</span></div>
+              </SelectItem>
+              <SelectItem value="train" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Train className="w-4 h-4 mr-3 text-blue-500" /> <span className="font-medium">Train Accessible</span></div>
+              </SelectItem>
+              <SelectItem value="car" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Car className="w-4 h-4 mr-3 text-emerald-500" /> <span className="font-medium">Car Recommended</span></div>
+              </SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -91,13 +116,21 @@ export default function DestinationFilters({
         <div className="space-y-3">
           <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">Weather/Season</label>
           <Select value={weather} onValueChange={(val) => { if (val) setWeather(val as string); }}>
-            <SelectTrigger className="h-10 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus:ring-emerald-500">
-              <SelectValue placeholder="Any Weather" />
+            <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
+              {weather === "all" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Any Weather</div>}
+              {weather === "indoor" && <div className="flex items-center"><CloudRain className="w-5 h-5 mr-3 text-blue-400" /> Rainy Day (Indoor)</div>}
+              {weather === "summer" && <div className="flex items-center"><ThermometerSun className="w-5 h-5 mr-3 text-orange-500" /> Beat the Heat</div>}
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">Any Weather</SelectItem>
-              <SelectItem value="indoor">Rainy Day (Indoor)</SelectItem>
-              <SelectItem value="summer">Beat the Heat (Summer)</SelectItem>
+            <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
+              <SelectItem value="all" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><Sparkles className="w-4 h-4 mr-3 text-slate-400" /> <span className="font-medium">Any Weather</span></div>
+              </SelectItem>
+              <SelectItem value="indoor" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><CloudRain className="w-4 h-4 mr-3 text-blue-400" /> <span className="font-medium">Rainy Day (Indoor)</span></div>
+              </SelectItem>
+              <SelectItem value="summer" className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                <div className="flex items-center"><ThermometerSun className="w-4 h-4 mr-3 text-orange-500" /> <span className="font-medium">Beat the Heat</span></div>
+              </SelectItem>
             </SelectContent>
           </Select>
         </div>
