@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Map, PlusSquare, Trash2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import WeatherWidget from "@/components/destinations/WeatherWidget";
 
 export default function Compare() {
   const { compareList, toggleCompare, clearCompare } = useTripStore();
@@ -92,7 +93,12 @@ export default function Compare() {
                   >
                     <Trash2 className="w-4 h-4" />
                   </button>
-                  <img src={dest.heroImage} alt={dest.name} className="w-full h-24 object-cover rounded-lg mb-3" />
+                  <div className="relative">
+                    <img src={dest.heroImage} alt={dest.name} className="w-full h-24 object-cover rounded-lg mb-3" />
+                    <div className="absolute top-2 left-2">
+                      <WeatherWidget destination={dest} />
+                    </div>
+                  </div>
                   <div className="font-bold text-lg text-slate-900 dark:text-white">{dest.name}</div>
                   <div className="text-sm font-normal text-slate-500 mb-2">{dest.prefecture}</div>
                   <Link to={`/destinations/${dest.id}`}>

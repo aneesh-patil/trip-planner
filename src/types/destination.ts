@@ -44,6 +44,7 @@ export interface Destination {
   walkingSunMin: number;
   walkingShadeMin: number;
   indoorPercent: number;
+  coordinates?: { lat: number; lng: number };
   ratings: Ratings;
   crowd: {
     weekday: number;

@@ -3,6 +3,7 @@ import type { Destination } from "@/types/destination";
 import { Link } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import { Button } from "@/components/ui/button";
 
 // Fix Leaflet's default icon path issues in React
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -27,20 +28,33 @@ export default function DestinationMap({ destinations }: DestinationMapProps) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {destinations.map((dest) => (
-          <Marker key={dest.id} position={[dest.lat, dest.lng]}>
-            <Popup>
-              <div className="font-sans">
-                <img src={dest.heroImage} alt={dest.name} className="w-full h-24 object-cover rounded-md mb-2" />
-                <h3 className="font-bold text-base mb-1">{dest.name}</h3>
-                <p className="text-sm text-slate-500 mb-2">{dest.prefecture}</p>
-                <Link to={`/destinations/${dest.id}`} className="text-emerald-600 font-medium text-sm hover:underline">
-                  View Details &rarr;
-                </Link>
-              </div>
-            </Popup>
-          </Marker>
-        ))}
+        {destinations.filter(d => d.coordinates).map((dest) => {
+          const { lat, lng } = dest.coordinates!;
+          
+          const customIcon = L.divIcon({
+            className: "custom-map-marker",
+            html: `<div class="w-8 h-8 rounded-full border-2 border-white bg-emerald-500 shadow-lg flex items-center justify-center transform hover:scale-110 transition-transform"><img src="${dest.heroImage}" class="w-full h-full rounded-full object-cover opacity-80 mix-blend-screen" /></div>`,
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+            popupAnchor: [0, -16],
+          });
+
+          return (
+            <Marker key={dest.id} position={[lat, lng]} icon={customIcon}>
+              <Popup className="custom-popup">
+                <div className="font-sans min-w-[200px]">
+                  <img src={dest.heroImage} alt={dest.name} className="w-full h-28 object-cover rounded-md mb-2" />
+                  <h3 className="font-bold text-lg mb-0">{dest.name}</h3>
+                  <div className="text-sm font-medium text-emerald-600 mb-2">★ {dest.ratings.overall}/10</div>
+                  <p className="text-sm text-slate-500 mb-3">{dest.description.slice(0, 60)}...</p>
+                  <Link to={`/destinations/${dest.id}`}>
+                    <Button size="sm" className="w-full bg-emerald-600 hover:bg-emerald-700">View Guide</Button>
+                  </Link>
+                </div>
+              </Popup>
+            </Marker>
+          );
+        })}
       </MapContainer>
     </div>
   );

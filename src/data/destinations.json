@@ -148,7 +148,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.2323662,
+      "lng": 139.1068849
+    }
   },
   {
     "id": "kamakura-history",
@@ -299,7 +303,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.3192808,
+      "lng": 139.5469627
+    }
   },
   {
     "id": "kawagoe-edo",
@@ -449,7 +457,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.9251145,
+      "lng": 139.4856927
+    }
   },
   {
     "id": "nikko-heritage",
@@ -598,7 +610,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 36.7197576,
+      "lng": 139.698139
+    }
   },
   {
     "id": "yokohama-city",
@@ -751,7 +767,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.4503381,
+      "lng": 139.6343802
+    }
   },
   {
     "id": "atami-resort",
@@ -900,7 +920,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.096471,
+      "lng": 139.0717866
+    }
   },
   {
     "id": "boso-peninsula",
@@ -1028,7 +1052,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 34.900405,
+      "lng": 139.8880854
+    }
   },
   {
     "id": "matsumoto",
@@ -1153,7 +1181,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 36.2382047,
+      "lng": 137.9687141
+    }
   },
   {
     "id": "harry-potter-studio",
@@ -1285,7 +1317,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.74562,
+      "lng": 139.645745
+    }
   },
   {
     "id": "karuizawa",
@@ -1411,7 +1447,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 36.3482938,
+      "lng": 138.5969968
+    }
   },
   {
     "id": "utsunomiya-oya",
@@ -1535,7 +1575,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 36.5955648,
+      "lng": 139.819711
+    }
   },
   {
     "id": "disneysea",
@@ -1659,7 +1703,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.6273011,
+      "lng": 139.8879707
+    }
   },
   {
     "id": "tsukuba",
@@ -1783,7 +1831,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 36.2253952,
+      "lng": 140.1067186
+    }
   },
   {
     "id": "omiya-railway",
@@ -1915,7 +1967,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.6762,
+      "lng": 139.6503
+    }
   },
   {
     "id": "joypolis",
@@ -2047,7 +2103,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.6762,
+      "lng": 139.6503
+    }
   },
   {
     "id": "disneyland",
@@ -2120,7 +2180,11 @@
     "notes": "Book tickets online up to 2 months in advance.",
     "lat": 35.6329,
     "lng": 139.8804,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6326586,
+      "lng": 139.8814172
+    }
   },
   {
     "id": "ghibli-museum",
@@ -2204,7 +2268,11 @@
     "notes": "No photography allowed inside the museum.",
     "lat": 35.6962,
     "lng": 139.5704,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6961731,
+      "lng": 139.5706324
+    }
   },
   {
     "id": "yomiuriland",
@@ -2276,7 +2344,11 @@
     "notes": "Winter Jewellumination is incredibly famous and romantic.",
     "lat": 35.6247,
     "lng": 139.5173,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6762,
+      "lng": 139.6503
+    }
   },
   {
     "id": "teamlab-planets",
@@ -2360,7 +2432,11 @@
     "notes": "You will walk barefoot and water goes up to your knees. Wear shorts or pants that can be rolled up.",
     "lat": 35.6483,
     "lng": 139.7891,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.64938,
+      "lng": 139.789728
+    }
   },
   {
     "id": "ginza-urban",
@@ -2472,7 +2548,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.6720135,
+      "lng": 139.7647202
+    }
   },
   {
     "id": "enoshima-island",
@@ -2579,7 +2659,11 @@
           }
         ]
       }
-    ]
+    ],
+    "coordinates": {
+      "lat": 35.3001052,
+      "lng": 139.4806371
+    }
   },
   {
     "id": "akihabara-chiyoda",
@@ -2665,7 +2749,11 @@
     "notes": "Sunday afternoons have a pedestrian paradise on Chuo-dori.",
     "lat": 35.6983,
     "lng": 139.7731,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6985177,
+      "lng": 139.7754836
+    }
   },
   {
     "id": "imperial-palace-chiyoda",
@@ -2741,7 +2829,11 @@
     "notes": "East Gardens are closed on Mondays and Fridays.",
     "lat": 35.6851,
     "lng": 139.7527,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6838467,
+      "lng": 139.7506859
+    }
   },
   {
     "id": "odaiba-minato",
@@ -2821,7 +2913,11 @@
     "notes": "Take the Yurikamome line for an automated scenic ride across the bay.",
     "lat": 35.6248,
     "lng": 139.7731,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6190032,
+      "lng": 139.7793576
+    }
   },
   {
     "id": "ikebukuro-toshima",
@@ -2907,7 +3003,11 @@
     "notes": "Excellent choice for rainy days due to Sunshine City and massive underground networks.",
     "lat": 35.7295,
     "lng": 139.7109,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.7288374,
+      "lng": 139.7093019
+    }
   },
   {
     "id": "ueno-taito",
@@ -2986,7 +3086,11 @@
     "notes": "In spring, the park is one of Tokyo's most crowded cherry blossom spots.",
     "lat": 35.7111,
     "lng": 139.7745,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.7161484,
+      "lng": 139.777257
+    }
   },
   {
     "id": "shinjuku-ward",
@@ -3065,7 +3169,11 @@
     "notes": "Shinjuku Station is a maze. Meet at the East Exit Studio Alta or South Exit.",
     "lat": 35.6896,
     "lng": 139.7005,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6937632,
+      "lng": 139.7036319
+    }
   },
   {
     "id": "shibuya-ward",
@@ -3144,7 +3252,11 @@
     "notes": "Book Shibuya Sky tickets for sunset at least 2 weeks in advance.",
     "lat": 35.6595,
     "lng": 139.7005,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6637109,
+      "lng": 139.6976941
+    }
   },
   {
     "id": "edogawa-ward",
@@ -3220,7 +3332,11 @@
     "notes": "Great sunset views of Mt. Fuji and Tokyo Disneyland from the park.",
     "lat": 35.6416,
     "lng": 139.8647,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.7066318,
+      "lng": 139.868677
+    }
   },
   {
     "id": "asakusa-taito",
@@ -3301,7 +3417,11 @@
     "notes": "Go early morning (before 9 AM) to photograph Kaminarimon without crowds.",
     "lat": 35.7147,
     "lng": 139.7967,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.7111543,
+      "lng": 139.7954005
+    }
   },
   {
     "id": "akasaka-minato",
@@ -3388,7 +3508,11 @@
     "notes": "Hie Shrine has a beautiful torii gate tunnel similar to Fushimi Inari in Kyoto.",
     "lat": 35.6728,
     "lng": 139.7369,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6734932,
+      "lng": 139.7277088
+    }
   },
   {
     "id": "meguro-ward",
@@ -3465,6 +3589,10 @@
     "notes": "Spring cherry blossoms are incredibly beautiful but completely packed with people.",
     "lat": 35.6339,
     "lng": 139.7156,
-    "itineraries": []
+    "itineraries": [],
+    "coordinates": {
+      "lat": 35.6408352,
+      "lng": 139.6985376
+    }
   }
 ]
