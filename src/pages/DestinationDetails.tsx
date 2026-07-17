@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
-import { ArrowLeft, MapPin, Clock, DollarSign, Footprints, ThermometerSun, Heart, Umbrella, Camera, Coffee, Utensils, Cloud, CloudRain, CloudSnow, CloudLightning, Sun } from "lucide-react";
+import { ArrowLeft, MapPin, Clock, DollarSign, ThermometerSun, Heart, Umbrella, Camera, Coffee, Utensils, Cloud, CloudRain, CloudSnow, CloudLightning, Sun } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -93,39 +93,83 @@ export default function DestinationDetails() {
               </TabsList>
               
               <TabsContent value="logistics" className="mt-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <Card>
-                    <CardContent className="p-5 flex items-start gap-4">
-                      <div className="bg-emerald-100 dark:bg-emerald-900/30 p-3 rounded-full text-emerald-600"><Clock className="w-6 h-6" /></div>
-                      <div>
-                        <h4 className="font-semibold text-slate-900 dark:text-white">Travel Time</h4>
-                        <p className="text-sm text-slate-500 mt-1">Train: {destination.trainAvailable ? `${destination.trainTimeMin} min` : "N/A"}</p>
-                        <p className="text-sm text-slate-500">Car: {destination.carTimeMin} min</p>
+                    <CardContent className="p-5 flex flex-col h-full">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2.5 rounded-full text-emerald-600"><Clock className="w-5 h-5" /></div>
+                        <h4 className="font-bold text-slate-900 dark:text-white">Travel Time</h4>
+                      </div>
+                      <div className="space-y-2 flex-grow">
+                        <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                          <span className="text-slate-500">🚆 Train</span>
+                          <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.trainAvailable ? `${destination.trainTimeMin}m` : "N/A"}</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                          <span className="text-slate-500">🚗 Car</span>
+                          <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.carTimeMin}m</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                          <span className="text-slate-500">👣 Walk</span>
+                          <span className="font-semibold text-slate-700 dark:text-slate-300">~{(destination.walkingMin / 1000).toFixed(1)}k steps</span>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
                   
                   <Card>
-                    <CardContent className="p-5 flex items-start gap-4">
-                      <div className="bg-emerald-100 dark:bg-emerald-900/30 p-3 rounded-full text-emerald-600"><DollarSign className="w-6 h-6" /></div>
-                      <div>
-                        <h4 className="font-semibold text-slate-900 dark:text-white">Budget (per couple)</h4>
-                        <p className="text-sm text-slate-500 mt-1">Min: ¥{destination.budgetMin.toLocaleString()}</p>
-                        <p className="text-sm text-slate-500">Recommended: ¥{destination.budgetRecommended.toLocaleString()}</p>
+                    <CardContent className="p-5 flex flex-col h-full">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2.5 rounded-full text-emerald-600"><DollarSign className="w-5 h-5" /></div>
+                        <div>
+                          <h4 className="font-bold text-slate-900 dark:text-white leading-tight">Couple Budget</h4>
+                          <div className="text-emerald-600 font-black text-lg">¥{destination.budgetRecommended.toLocaleString()}</div>
+                        </div>
                       </div>
+                      
+                      {destination.budgetBreakdown && (
+                        <div className="space-y-2 mt-auto">
+                          <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5">
+                            <span className="text-slate-500">🚆 Transport</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">¥{destination.budgetBreakdown.transport.toLocaleString()}</span>
+                          </div>
+                          <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5">
+                            <span className="text-slate-500">🎟 Tickets</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">¥{destination.budgetBreakdown.tickets.toLocaleString()}</span>
+                          </div>
+                          <div className="flex justify-between text-sm">
+                            <span className="text-slate-500">🍜 Food</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">¥{(destination.budgetBreakdown.food + destination.budgetBreakdown.cafe).toLocaleString()}</span>
+                          </div>
+                        </div>
+                      )}
                     </CardContent>
                   </Card>
 
+                  {destination.comfort && (
                   <Card>
-                    <CardContent className="p-5 flex items-start gap-4">
-                      <div className="bg-emerald-100 dark:bg-emerald-900/30 p-3 rounded-full text-emerald-600"><Footprints className="w-6 h-6" /></div>
-                      <div>
-                        <h4 className="font-semibold text-slate-900 dark:text-white">Walking Estimates</h4>
-                        <p className="text-sm text-slate-500 mt-1">Total: {destination.walkingMin.toLocaleString()} steps</p>
-                        <p className="text-sm text-slate-500">In Direct Sun: {destination.walkingSunMin.toLocaleString()} steps</p>
+                    <CardContent className="p-5 flex flex-col h-full">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2.5 rounded-full text-emerald-600"><ThermometerSun className="w-5 h-5" /></div>
+                        <h4 className="font-bold text-slate-900 dark:text-white">Comfort Metrics</h4>
+                      </div>
+                      <div className="space-y-2 flex-grow">
+                        <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                          <span className="text-slate-500">☀️ Heat Tolerance</span>
+                          <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.comfort.heatTolerance}/10</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                          <span className="text-slate-500">☔ Rain Friendly</span>
+                          <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.comfort.rainFriendly}/10</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                          <span className="text-slate-500">🚶 Walk Intensity</span>
+                          <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.comfort.walkingIntensity}/10</span>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
+                  )}
                 </div>
               </TabsContent>
               

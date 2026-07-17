@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Sparkles, Search, Utensils, Trees, Palette, Camera, Car, Train, Sun, CloudRain, ThermometerSun, Map as MapIcon, Navigation, Waves, Landmark, Snowflake } from "lucide-react";
 import destinationsData from "@/data/destinations.json";
@@ -16,6 +16,50 @@ export default function Home() {
   const [budget, setBudget] = useState<number>(30000);
   const [transport, setTransport] = useState<string>("any");
   const [weather, setWeather] = useState<string>("any");
+
+  // Current Situation State (Yokohama)
+  interface DayContext { temp: number; desc: string; date: string; label: string; }
+  const [forecastDays, setForecastDays] = useState<DayContext[]>([]);
+  const [selectedDayIndex, setSelectedDayIndex] = useState(0);
+
+  useEffect(() => {
+    const fetchContext = async () => {
+      try {
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=35.45&longitude=139.63&daily=weathercode,temperature_2m_max&timezone=Asia%2FTokyo&forecast_days=3`;
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        const days: DayContext[] = [];
+        
+        for (let i = 0; i < 3; i++) {
+          const temp = Math.round(data.daily.temperature_2m_max[i]);
+          const code = data.daily.weathercode[i];
+          
+          let desc = "Clear";
+          if (code >= 1 && code <= 3) desc = "Cloudy";
+          if (code >= 51 && code <= 67) desc = "Rainy";
+          if (code >= 71 && code <= 77) desc = "Snow";
+          if (code >= 80 && code <= 99) desc = "Stormy";
+
+          const dateObj = new Date(data.daily.time[i]);
+          const dateString = dateObj.toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric' });
+          
+          let label = "Today";
+          if (i === 1) label = "Tomorrow";
+          if (i === 2) label = dateObj.toLocaleDateString("en-US", { weekday: 'short' });
+
+          days.push({ temp, desc, date: dateString, label });
+        }
+        
+        setForecastDays(days);
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    fetchContext();
+  }, []);
+
+  const currentSituation = forecastDays[selectedDayIndex] || null;
 
   // Calculate Smart Match Score
   const scoredDestinations = useMemo(() => {
@@ -102,17 +146,27 @@ export default function Home() {
           break;
       }
 
-      // 5. Weather Logic (Granular indoor/outdoor metrics)
-      if (weather === "rainy") {
-        const indoorBonus = (dest.indoorPercent * 25);
-        score += indoorBonus;
-        if (dest.indoorPercent >= 0.7) reasons.push(`${Math.round(dest.indoorPercent * 100)}% indoor activities`);
-        if (dest.indoorPercent < 0.3) score -= 25; // Heavy penalty for outdoor places in rain
-      } else if (weather === "summer") {
-        score += (dest.ratings.summer - 5) * 4;
-        if (dest.ratings.summer >= 8.5) reasons.push("Perfect escape from the heat");
-      } else if (weather === "any") {
-        score += (dest.ratings.photography - 6) * 1.5; // Good weather makes beautiful places better
+      // 5. Automatic Weather & Environmental Logic (Reacts to the selected day's forecast)
+      if (currentSituation) {
+        const isRaining = currentSituation.desc === "Rainy" || currentSituation.desc === "Stormy";
+        const isHot = currentSituation.temp >= 30;
+
+        if (isRaining || weather === "rainy") {
+          const indoorBonus = (dest.indoorPercent * 25);
+          score += indoorBonus;
+          if (dest.indoorPercent >= 0.7) reasons.push(`${Math.round(dest.indoorPercent * 100)}% indoor (perfect for rain)`);
+          if (dest.indoorPercent < 0.3) score -= 30; // Heavy penalty for outdoor places in rain
+        } 
+        
+        if (isHot || weather === "summer") {
+          score += (dest.ratings.summer - 5) * 4;
+          if (dest.ratings.summer >= 8.5) reasons.push(`Cool retreat from ${currentSituation.temp}°C heat`);
+          if (dest.ratings.summer <= 4) score -= 20; // Penalty for hot walking places
+        }
+
+        if (!isRaining && !isHot && weather === "any") {
+          score += (dest.ratings.photography - 6) * 1.5; // Good weather makes beautiful places better
+        }
       }
 
       // Fallback reason
@@ -138,22 +192,47 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
-            {/* Hero Text */}
-            <div className="flex flex-col items-start text-left">
-              <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm font-semibold mb-6 bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 shadow-sm">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Weekend Decision Engine
-              </div>
-              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-2xl mb-6 leading-tight">
-                Where should you <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">escape</span> this weekend?
-              </h1>
-              <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl mb-10">
-                You have one free day. Tell us what you want, and we'll calculate the perfect trip from Yokohama in seconds.
-              </p>
-              <div className="flex gap-4 w-full md:w-auto">
-                <Link to="/destinations" className="w-full md:w-auto">
-                  <Button size="lg" variant="outline" className="w-full h-12 px-8 text-base rounded-full bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-slate-300 hover:bg-slate-100">
-                    Browse All Spots
+            {/* Contextual Hero */}
+            <div className="flex flex-col items-start text-left w-full">
+              {currentSituation ? (
+                <div className="mb-10 w-full">
+                  <div className="flex gap-2 mb-6">
+                    {forecastDays.map((day, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setSelectedDayIndex(idx)}
+                        className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all ${selectedDayIndex === idx ? 'bg-emerald-600 text-white shadow-md' : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700'}`}
+                      >
+                        {day.label}
+                      </button>
+                    ))}
+                  </div>
+                  <p className="text-slate-500 dark:text-slate-400 font-bold mb-2 tracking-widest uppercase text-xs">{currentSituation.date}</p>
+                  <div className="flex items-center text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">
+                    <span>{currentSituation.temp}°C</span>
+                    <span className="mx-4 text-slate-200 dark:text-slate-800">|</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">{currentSituation.desc} in Yokohama</span>
+                  </div>
+                  <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 mt-6 leading-tight">
+                    Based on {selectedDayIndex === 0 ? "today's" : selectedDayIndex === 1 ? "tomorrow's" : "the"} conditions,<br/>you should go to...
+                  </h1>
+                </div>
+              ) : (
+                <div className="h-40 animate-pulse bg-slate-200 dark:bg-slate-800 rounded-2xl w-full max-w-lg mb-10" />
+              )}
+              
+              <div className="flex flex-col sm:flex-row gap-4 w-full">
+                <Button 
+                  size="lg" 
+                  className="w-full sm:w-auto h-14 px-8 text-lg font-bold rounded-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 shadow-xl" 
+                  onClick={() => document.getElementById('recommendations')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <Sparkles className="w-5 h-5 mr-2" />
+                  Reveal Top Match
+                </Button>
+                <Link to="/destinations" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="w-full h-14 px-8 text-lg font-bold rounded-full bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-slate-300 hover:bg-slate-100">
+                    Browse All
                   </Button>
                 </Link>
               </div>
@@ -314,25 +393,6 @@ export default function Home() {
                 </div>
                 <div className="flex-grow">
                   <DestinationCard destination={dest} />
-                </div>
-                <div className="mt-4 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800/50 rounded-xl p-4 flex flex-col gap-3">
-                  <div className="flex justify-between items-center pb-3 border-b border-emerald-200/50 dark:border-emerald-800/50">
-                    <span className="font-bold text-slate-800 dark:text-slate-200">Smart Match</span>
-                    <span className="text-xl font-black text-emerald-600 dark:text-emerald-400">
-                      {Number(dest.matchScore || 0).toFixed(1)}%
-                    </span>
-                  </div>
-                  {dest.matchReasons && dest.matchReasons.length > 0 && (
-                    <div className="space-y-1.5">
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Why this fits you:</p>
-                      {dest.matchReasons.map((r: string, i: number) => (
-                        <div key={i} className="flex items-start text-sm text-slate-700 dark:text-slate-300">
-                          <Sparkles className="w-4 h-4 mr-2 text-emerald-500 shrink-0 mt-0.5" />
-                          <span>{r}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </div>
             ))}

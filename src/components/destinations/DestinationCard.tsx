@@ -3,7 +3,7 @@ import type { Destination } from "@/types/destination";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Train, Car, DollarSign, Bookmark, CheckCircle2, ThermometerSun, PlusSquare, CheckSquare, CloudRain, Utensils, Camera, Palette, Trees, Sun } from "lucide-react";
+import { MapPin, Train, Car, DollarSign, Bookmark, CheckCircle2, PlusSquare, CheckSquare, Sun } from "lucide-react";
 import { useTripStore } from "@/hooks/useTripStore";
 import WeatherWidget from "./WeatherWidget";
 
@@ -16,23 +16,6 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
   const favorite = isFavorite(destination.id);
   const visited = isVisited(destination.id);
   const comparing = isComparing(destination.id);
-
-  const getPerfectFor = (dest: Destination) => {
-    const perfectFor = [];
-    if (dest.ratings.summer >= 9) perfectFor.push({ icon: ThermometerSun, text: "Hot days", color: "text-amber-500" });
-    if (dest.ratings.couple >= 9) perfectFor.push({ icon: Bookmark, text: "Couples", color: "text-rose-500" });
-    if (dest.indoorPercent >= 0.7) perfectFor.push({ icon: CloudRain, text: "Rainy days", color: "text-blue-500" });
-    if (dest.ratings.food >= 9) perfectFor.push({ icon: Utensils, text: "Foodies", color: "text-orange-500" });
-    if (dest.ratings.photography >= 9) perfectFor.push({ icon: Camera, text: "Photography", color: "text-purple-500" });
-    
-    // Fill in gaps with categories if needed
-    if (perfectFor.length < 3 && dest.categories.includes("Art")) perfectFor.push({ icon: Palette, text: "Culture", color: "text-indigo-500" });
-    if (perfectFor.length < 3 && (dest.categories.includes("Mountain") || dest.categories.includes("Coast"))) perfectFor.push({ icon: Trees, text: "Nature", color: "text-emerald-500" });
-    
-    return perfectFor.slice(0, 3);
-  };
-
-  const perfectForTags = getPerfectFor(destination);
 
   return (
     <Card className="overflow-hidden flex flex-col h-full group hover:shadow-lg transition-all duration-300 border-slate-200 dark:border-slate-800">
@@ -92,34 +75,57 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
       </CardHeader>
 
       <CardContent className="pb-5 flex-grow">
-        {/* Core Metrics */}
-        <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6 text-sm font-medium text-slate-700 dark:text-slate-300">
-          <div className="flex items-center gap-1.5">
-            {destination.trainAvailable ? <Train className="w-4 h-4 text-slate-400" /> : <Car className="w-4 h-4 text-slate-400" />}
-            <span>{destination.trainAvailable ? destination.trainTimeMin : destination.carTimeMin} min</span>
+        {destination.matchScore ? (
+          // SMART MATCH VIEW (Homepage Recommendation)
+          <div className="space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+              <span className="font-bold text-slate-700 dark:text-slate-300">Weekend Match</span>
+              <span className="text-2xl font-black text-emerald-500">{Number(destination.matchScore).toFixed(1)}%</span>
+            </div>
+            
+            <div className="space-y-2.5">
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Why you should go:</p>
+              {destination.matchReasons?.map((r, i) => (
+                <div key={i} className="flex items-start text-sm font-medium text-slate-700 dark:text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 mr-2.5 text-emerald-500 shrink-0 mt-0.5" />
+                  <span>{r}</span>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="flex items-center gap-1.5">
-            <DollarSign className="w-4 h-4 text-slate-400" />
-            <span>¥{(destination.budgetRecommended / 1000).toFixed(0)}k</span>
+        ) : (
+          // STANDARD EXPLORE VIEW (Simple, elegant tags instead of raw numbers)
+          <div className="space-y-5">
+             <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
+               <div className="flex items-center">
+                 {destination.trainAvailable ? <Train className="w-4 h-4 mr-2 text-slate-400"/> : <Car className="w-4 h-4 mr-2 text-slate-400"/>}
+                 <span>{destination.trainAvailable ? destination.trainTimeMin : destination.carTimeMin}m trip</span>
+               </div>
+               <div className="flex items-center">
+                 <DollarSign className="w-4 h-4 mr-2 text-slate-400"/>
+                 <span>¥{(destination.budgetRecommended / 1000).toFixed(0)}k est.</span>
+               </div>
+               <div className="flex items-center">
+                 <Sun className="w-4 h-4 mr-2 text-slate-400"/>
+                 <span>{destination.walkingSunMin < 3000 ? 'Low sun' : 'High sun'}</span>
+               </div>
+               <div className="flex items-center">
+                 <Bookmark className="w-4 h-4 mr-2 text-slate-400"/>
+                 <span>Couple {destination.ratings.couple}/10</span>
+               </div>
+             </div>
+             
+             <div className="pt-4 border-t border-slate-100 dark:border-slate-800">
+               <div className="flex flex-wrap gap-2">
+                  {destination.categories.slice(0, 3).map(c => (
+                    <span key={c} className="text-xs font-bold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">
+                      {c}
+                    </span>
+                  ))}
+               </div>
+             </div>
           </div>
-          <div className="flex items-center gap-1.5">
-            <Sun className="w-4 h-4 text-amber-500" />
-            <span>{(destination.walkingSunMin / 1000).toFixed(1)}k steps sun</span>
-          </div>
-        </div>
-
-        {/* Perfect For Section */}
-        <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 border border-slate-100 dark:border-slate-800/80">
-          <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Perfect for</p>
-          <div className="space-y-2.5">
-            {perfectForTags.map((tag, i) => (
-              <div key={i} className="flex items-center text-sm font-medium text-slate-700 dark:text-slate-200">
-                <tag.icon className={`w-4 h-4 mr-2.5 ${tag.color}`} />
-                {tag.text}
-              </div>
-            ))}
-          </div>
-        </div>
+        )}
       </CardContent>
 
       <CardFooter className="pt-0 flex justify-between items-center gap-2">

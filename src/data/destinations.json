@@ -152,6 +152,17 @@
     "coordinates": {
       "lat": 35.2323662,
       "lng": 139.1068849
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 2000,
+      "food": 6300,
+      "cafe": 2700
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 400,
+      "walkingIntensity": 4
     }
   },
   {
@@ -307,6 +318,17 @@
     "coordinates": {
       "lat": 35.3192808,
       "lng": 139.5469627
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 3500,
+      "cafe": 1500
+    },
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 150,
+      "walkingIntensity": 10
     }
   },
   {
@@ -461,6 +483,17 @@
     "coordinates": {
       "lat": 35.9251145,
       "lng": 139.4856927
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 4900,
+      "cafe": 2100
+    },
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 200,
+      "walkingIntensity": 8
     }
   },
   {
@@ -614,6 +647,17 @@
     "coordinates": {
       "lat": 36.7197576,
       "lng": 139.698139
+    },
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 0,
+      "food": 24500,
+      "cafe": 10500
+    },
+    "comfort": {
+      "heatTolerance": 8.5,
+      "rainFriendly": 300,
+      "walkingIntensity": 12
     }
   },
   {
@@ -771,6 +815,17 @@
     "coordinates": {
       "lat": 35.4503381,
       "lng": 139.6343802
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 6300,
+      "cafe": 2700
+    },
+    "comfort": {
+      "heatTolerance": 7.5,
+      "rainFriendly": 700,
+      "walkingIntensity": 8
     }
   },
   {
@@ -924,6 +979,17 @@
     "coordinates": {
       "lat": 35.096471,
       "lng": 139.0717866
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 1500,
+      "food": 7700,
+      "cafe": 3300
+    },
+    "comfort": {
+      "heatTolerance": 9.5,
+      "rainFriendly": 400,
+      "walkingIntensity": 5
     }
   },
   {
@@ -1056,6 +1122,17 @@
     "coordinates": {
       "lat": 34.900405,
       "lng": 139.8880854
+    },
+    "budgetBreakdown": {
+      "transport": 7000,
+      "tickets": 0,
+      "food": 9100,
+      "cafe": 3900
+    },
+    "comfort": {
+      "heatTolerance": 9.3,
+      "rainFriendly": 200,
+      "walkingIntensity": 5
     }
   },
   {
@@ -1185,6 +1262,17 @@
     "coordinates": {
       "lat": 36.2382047,
       "lng": 137.9687141
+    },
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 0,
+      "food": 11900,
+      "cafe": 5100
+    },
+    "comfort": {
+      "heatTolerance": 9.8,
+      "rainFriendly": 300,
+      "walkingIntensity": 8
     }
   },
   {
@@ -1321,6 +1409,17 @@
     "coordinates": {
       "lat": 35.74562,
       "lng": 139.645745
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 8000,
+      "food": 4900,
+      "cafe": 2100
+    },
+    "comfort": {
+      "heatTolerance": 9.8,
+      "rainFriendly": 950,
+      "walkingIntensity": 6
     }
   },
   {
@@ -1451,6 +1550,17 @@
     "coordinates": {
       "lat": 36.3482938,
       "lng": 138.5969968
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 11900,
+      "cafe": 5100
+    },
+    "comfort": {
+      "heatTolerance": 9.7,
+      "rainFriendly": 400,
+      "walkingIntensity": 8
     }
   },
   {
@@ -1579,6 +1689,17 @@
     "coordinates": {
       "lat": 36.5955648,
       "lng": 139.819711
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 6300,
+      "cafe": 2700
+    },
+    "comfort": {
+      "heatTolerance": 9.6,
+      "rainFriendly": 800,
+      "walkingIntensity": 5
     }
   },
   {
@@ -1707,6 +1828,17 @@
     "coordinates": {
       "lat": 35.6273011,
       "lng": 139.8879707
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 8000,
+      "food": 11900,
+      "cafe": 5100
+    },
+    "comfort": {
+      "heatTolerance": 6,
+      "rainFriendly": 400,
+      "walkingIntensity": 20
     }
   },
   {
@@ -1835,6 +1967,17 @@
     "coordinates": {
       "lat": 36.2253952,
       "lng": 140.1067186
+    },
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 0,
+      "food": 7700,
+      "cafe": 3300
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 100,
+      "walkingIntensity": 10
     }
   },
   {
@@ -1971,6 +2114,17 @@
     "coordinates": {
       "lat": 35.6762,
       "lng": 139.6503
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 4900,
+      "cafe": 2100
+    },
+    "comfort": {
+      "heatTolerance": 9.5,
+      "rainFriendly": 950,
+      "walkingIntensity": 4
     }
   },
   {
@@ -2107,6 +2261,17 @@
     "coordinates": {
       "lat": 35.6762,
       "lng": 139.6503
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 9100,
+      "cafe": 3900
+    },
+    "comfort": {
+      "heatTolerance": 9.3,
+      "rainFriendly": 900,
+      "walkingIntensity": 4
     }
   },
   {
@@ -2184,6 +2349,17 @@
     "coordinates": {
       "lat": 35.6326586,
       "lng": 139.8814172
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 8000,
+      "food": 6300,
+      "cafe": 2700
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 400,
+      "walkingIntensity": 12
     }
   },
   {
@@ -2272,6 +2448,17 @@
     "coordinates": {
       "lat": 35.6961731,
       "lng": 139.5706324
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 4900,
+      "cafe": 2100
+    },
+    "comfort": {
+      "heatTolerance": 9.5,
+      "rainFriendly": 900,
+      "walkingIntensity": 5
     }
   },
   {
@@ -2348,6 +2535,17 @@
     "coordinates": {
       "lat": 35.6762,
       "lng": 139.6503
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 8000,
+      "food": 2100,
+      "cafe": 900
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 200,
+      "walkingIntensity": 8
     }
   },
   {
@@ -2436,6 +2634,17 @@
     "coordinates": {
       "lat": 35.64938,
       "lng": 139.789728
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 4200,
+      "cafe": 1800
+    },
+    "comfort": {
+      "heatTolerance": 10,
+      "rainFriendly": 1000,
+      "walkingIntensity": 3
     }
   },
   {
@@ -2552,6 +2761,17 @@
     "coordinates": {
       "lat": 35.6720135,
       "lng": 139.7647202
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 2000,
+      "food": 18900,
+      "cafe": 8100
+    },
+    "comfort": {
+      "heatTolerance": 8.5,
+      "rainFriendly": 800,
+      "walkingIntensity": 7
     }
   },
   {
@@ -2663,6 +2883,17 @@
     "coordinates": {
       "lat": 35.3001052,
       "lng": 139.4806371
+    },
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 3500,
+      "cafe": 1500
+    },
+    "comfort": {
+      "heatTolerance": 9.5,
+      "rainFriendly": 100,
+      "walkingIntensity": 12
     }
   },
   {
@@ -2753,6 +2984,17 @@
     "coordinates": {
       "lat": 35.6985177,
       "lng": 139.7754836
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 9800,
+      "cafe": 4200
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 600,
+      "walkingIntensity": 8
     }
   },
   {
@@ -2833,6 +3075,17 @@
     "coordinates": {
       "lat": 35.6838467,
       "lng": 139.7506859
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 700,
+      "cafe": 300
+    },
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 100,
+      "walkingIntensity": 12
     }
   },
   {
@@ -2917,6 +3170,17 @@
     "coordinates": {
       "lat": 35.6190032,
       "lng": 139.7793576
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 8000,
+      "food": 2100,
+      "cafe": 900
+    },
+    "comfort": {
+      "heatTolerance": 8.5,
+      "rainFriendly": 600,
+      "walkingIntensity": 10
     }
   },
   {
@@ -3007,6 +3271,17 @@
     "coordinates": {
       "lat": 35.7288374,
       "lng": 139.7093019
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 8000,
+      "food": 2100,
+      "cafe": 900
+    },
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 800,
+      "walkingIntensity": 8
     }
   },
   {
@@ -3090,6 +3365,17 @@
     "coordinates": {
       "lat": 35.7161484,
       "lng": 139.777257
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 2000,
+      "food": 3500,
+      "cafe": 1500
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 500,
+      "walkingIntensity": 12
     }
   },
   {
@@ -3173,6 +3459,17 @@
     "coordinates": {
       "lat": 35.6937632,
       "lng": 139.7036319
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 9800,
+      "cafe": 4200
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 600,
+      "walkingIntensity": 10
     }
   },
   {
@@ -3256,6 +3553,17 @@
     "coordinates": {
       "lat": 35.6637109,
       "lng": 139.6976941
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 9800,
+      "cafe": 4200
+    },
+    "comfort": {
+      "heatTolerance": 7.5,
+      "rainFriendly": 500,
+      "walkingIntensity": 10
     }
   },
   {
@@ -3336,6 +3644,17 @@
     "coordinates": {
       "lat": 35.7066318,
       "lng": 139.868677
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 2800,
+      "cafe": 1200
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 300,
+      "walkingIntensity": 10
     }
   },
   {
@@ -3421,6 +3740,17 @@
     "coordinates": {
       "lat": 35.7111543,
       "lng": 139.7954005
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 4900,
+      "cafe": 2100
+    },
+    "comfort": {
+      "heatTolerance": 6.5,
+      "rainFriendly": 200,
+      "walkingIntensity": 7
     }
   },
   {
@@ -3512,6 +3842,17 @@
     "coordinates": {
       "lat": 35.6734932,
       "lng": 139.7277088
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 13300,
+      "cafe": 5700
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 700,
+      "walkingIntensity": 5
     }
   },
   {
@@ -3593,6 +3934,17 @@
     "coordinates": {
       "lat": 35.6408352,
       "lng": 139.6985376
+    },
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 6300,
+      "cafe": 2700
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 400,
+      "walkingIntensity": 8
     }
   }
 ]

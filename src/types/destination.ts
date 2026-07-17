@@ -35,6 +35,12 @@ export interface Destination {
   budgetRecommended: number;
   budgetMin: number;
   budgetMax: number;
+  budgetBreakdown?: {
+    transport: number;
+    tickets: number;
+    food: number;
+    cafe: number;
+  };
   trainAvailable: boolean;
   carRecommended: boolean;
   trainTimeMin: number;
@@ -45,7 +51,14 @@ export interface Destination {
   walkingShadeMin: number;
   indoorPercent: number;
   coordinates?: { lat: number; lng: number };
+  comfort?: {
+    heatTolerance: number;
+    rainFriendly: number;
+    walkingIntensity: number;
+  };
   ratings: Ratings;
+  matchScore?: number;
+  matchReasons?: string[];
   crowd: {
     weekday: number;
     weekend: number;
