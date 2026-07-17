@@ -109,7 +109,7 @@ export default function DestinationDetails() {
                     <CardContent className="p-5 flex items-start gap-4">
                       <div className="bg-emerald-100 dark:bg-emerald-900/30 p-3 rounded-full text-emerald-600"><DollarSign className="w-6 h-6" /></div>
                       <div>
-                        <h4 className="font-semibold text-slate-900 dark:text-white">Budget (per person)</h4>
+                        <h4 className="font-semibold text-slate-900 dark:text-white">Budget (per couple)</h4>
                         <p className="text-sm text-slate-500 mt-1">Min: ¥{destination.budgetMin.toLocaleString()}</p>
                         <p className="text-sm text-slate-500">Recommended: ¥{destination.budgetRecommended.toLocaleString()}</p>
                       </div>
