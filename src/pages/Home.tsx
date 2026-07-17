@@ -20,80 +20,109 @@ export default function Home() {
   // Calculate Smart Match Score
   const scoredDestinations = useMemo(() => {
     return allDestinations.map(dest => {
-      let score = 70; // Base score
+      // 1. Base score derived dynamically from the destination's actual overall rating
+      // e.g., an 8.5 rating -> 20 + 51 = 71 base score. This naturally breaks ties.
+      let score = 20 + (dest.ratings.overall * 6); 
       const reasons: string[] = [];
 
-      // Budget Penalty (harsh penalty if over budget)
+      // 2. Budget Logic (Continuous penalty/bonus)
       if (dest.budgetRecommended > budget) {
-        score -= ((dest.budgetRecommended - budget) / 1000) * 3;
+        score -= ((dest.budgetRecommended - budget) / 1000) * 1.5;
       } else {
-        score += 5; // Bonus for being under budget
-        if (budget - dest.budgetRecommended > 5000) {
-          reasons.push("Well under your budget limit");
+        const budgetBonus = Math.min(8, ((budget - dest.budgetRecommended) / 3000));
+        score += budgetBonus;
+        if (budget - dest.budgetRecommended >= 5000) {
+          reasons.push(`Well under budget (est. ¥${dest.budgetRecommended.toLocaleString()})`);
         }
       }
 
-      // Transport Logic
+      // 3. Transport Logic (Granular distance-based scoring)
       if (transport === "train") {
-        if (!dest.trainAvailable) score -= 100;
-        else { score += 10; reasons.push("Accessible by train"); }
-      }
-      if (transport === "car") {
-        if (!dest.carRecommended && dest.trainAvailable) score -= 10;
-        if (dest.carRecommended) { score += 10; reasons.push("Great for driving"); }
+        if (!dest.trainAvailable) {
+          score -= 50; 
+        } else {
+          const timeBonus = Math.max(0, 12 - (dest.trainTimeMin / 10)); // Faster trains get up to +12
+          score += 4 + timeBonus;
+          if (dest.trainTimeMin <= 60) reasons.push(`Fast train access (${dest.trainTimeMin}m)`);
+        }
+      } else if (transport === "car") {
+        if (!dest.carRecommended && dest.trainAvailable) score -= 15;
+        if (dest.carRecommended) {
+          const timeBonus = Math.max(0, 10 - (dest.carTimeMin / 15));
+          score += 5 + timeBonus; 
+          if (dest.carTimeMin <= 60) reasons.push(`Easy drive (${dest.carTimeMin}m)`);
+        }
+      } else {
+        const minTime = dest.trainAvailable ? Math.min(dest.trainTimeMin, dest.carTimeMin) : dest.carTimeMin;
+        score += Math.max(0, 5 - (minTime / 30)); // Slight bump for closer destinations overall
       }
 
-      // Trip Type Boosts
+      // 4. Trip Type Logic (Using continuous metrics instead of rigid booleans)
       switch (tripType) {
         case "food":
-          if (dest.ratings.food >= 8) { score += 20; reasons.push("Excellent local food"); } else score -= 30;
+          score += (dest.ratings.food - 5) * 4.5; // 9 -> +18, 5 -> 0, 4 -> -4.5
+          if (dest.ratings.food >= 8.5) reasons.push("Top-tier local food scene");
           break;
         case "nature":
           if (dest.tags.includes("Nature") || dest.categories.includes("Mountain")) {
-            score += 20; reasons.push("Perfect nature escape");
-          } else score -= 30;
+            score += 12 + (dest.ratings.photography * 1.5); // proxy for beauty
+            reasons.push("Beautiful nature escape");
+          } else score -= 25;
           break;
         case "history":
           if (dest.categories.includes("History") || dest.categories.includes("Shrine") || dest.tags.includes("Historic")) {
-            score += 20; reasons.push("Rich in history & culture");
-          } else score -= 30;
+            score += 18; reasons.push("Deep historical significance");
+          } else score -= 20;
           break;
         case "art":
           if (dest.categories.includes("Museum") || dest.categories.includes("Art")) {
-            score += 20; reasons.push("Great museums & culture");
-          } else score -= 30;
+            score += 18; reasons.push("Rich in museums & art");
+          } else score -= 20;
           break;
         case "sea":
           if (dest.categories.includes("Coast") || dest.categories.includes("Sea") || dest.categories.includes("Beach")) {
-            score += 20; reasons.push("Beautiful coastal views");
-          } else score -= 40; // Heavy penalty if they want the sea and it's not the sea!
+            score += 18; reasons.push("Gorgeous coastal atmosphere");
+          } else score -= 35; 
           break;
         case "cool":
-          if (dest.ratings.summer >= 9) {
-            score += 20; reasons.push("Cool & refreshing climate");
-          } else score -= 20;
+          score += (dest.ratings.summer - 5) * 4.5;
+          if (dest.ratings.summer >= 8.5) reasons.push("Cool & refreshing climate");
           break;
         case "photography":
-          if (dest.ratings.photography >= 8) { score += 20; reasons.push("Highly photogenic spots"); } else score -= 20;
+          score += (dest.ratings.photography - 5) * 5;
+          if (dest.ratings.photography >= 8.5) reasons.push("Incredibly photogenic spots");
           break;
         case "themepark":
           if (dest.categories.includes("Theme Park")) {
-            score += 30; reasons.push("Incredible theme park experience");
-          } else score -= 50; // Heavy penalty if they want a theme park and it's not one!
+            score += 30; reasons.push("World-class theme park");
+          } else score -= 45;
+          break;
+        case "any":
+          score += (dest.ratings.overall - 7.5) * 3; // Boost places that are just generally amazing
           break;
       }
 
-      // Weather Boosts
+      // 5. Weather Logic (Granular indoor/outdoor metrics)
       if (weather === "rainy") {
-        score += (dest.indoorPercent * 100) * 0.3; // Up to 30 points for being indoors
-        if (dest.indoorPercent > 0.6) reasons.push("Mostly indoors (Rain-safe)");
+        const indoorBonus = (dest.indoorPercent * 25);
+        score += indoorBonus;
+        if (dest.indoorPercent >= 0.7) reasons.push(`${Math.round(dest.indoorPercent * 100)}% indoor activities`);
+        if (dest.indoorPercent < 0.3) score -= 25; // Heavy penalty for outdoor places in rain
       } else if (weather === "summer") {
         score += (dest.ratings.summer - 5) * 4;
-        if (dest.ratings.summer >= 9) reasons.push("Great way to beat the heat");
+        if (dest.ratings.summer >= 8.5) reasons.push("Perfect escape from the heat");
+      } else if (weather === "any") {
+        score += (dest.ratings.photography - 6) * 1.5; // Good weather makes beautiful places better
       }
 
-      // Cap the score between 0 and 99 (or 100 if perfectly matched)
-      const finalScore = Math.min(100, Math.max(0, Math.round(score)));
+      // Fallback reason
+      if (reasons.length === 0) {
+        if (dest.ratings.overall >= 8.5) reasons.push("Highly rated all-around choice");
+        else reasons.push("Solid match for your criteria");
+      }
+
+      // 6. Cap and round score to 1 decimal place to prevent ties
+      const finalScore = Math.min(99.9, Math.max(0.1, score));
 
       return { ...dest, matchScore: finalScore, matchReasons: reasons.slice(0, 3) };
     }).sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
@@ -290,7 +319,7 @@ export default function Home() {
                   <div className="flex justify-between items-center pb-3 border-b border-emerald-200/50 dark:border-emerald-800/50">
                     <span className="font-bold text-slate-800 dark:text-slate-200">Smart Match</span>
                     <span className="text-xl font-black text-emerald-600 dark:text-emerald-400">
-                      {Math.max(0, Math.round(dest.matchScore || 0))}%
+                      {Number(dest.matchScore || 0).toFixed(1)}%
                     </span>
                   </div>
                   {dest.matchReasons && dest.matchReasons.length > 0 && (

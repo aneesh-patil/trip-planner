@@ -36,6 +36,14 @@ export default {
     }
 
     // Serve static assets natively if no API route matched
-    return env.ASSETS.fetch(request);
+    let response = await env.ASSETS.fetch(request);
+    
+    // SPA Routing: If the asset isn't found (e.g., /destinations), return index.html
+    if (response.status === 404) {
+      const indexRequest = new Request(new URL("/", request.url).toString(), request);
+      response = await env.ASSETS.fetch(indexRequest);
+    }
+    
+    return response;
   },
 };
