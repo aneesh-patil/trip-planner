@@ -7,6 +7,10 @@ interface TripStoreContextType {
   toggleFavorite: (id: string) => void;
   isFavorite: (id: string) => boolean;
   
+  visited: string[];
+  toggleVisited: (id: string) => void;
+  isVisited: (id: string) => boolean;
+
   compareList: string[];
   toggleCompare: (id: string) => void;
   isComparing: (id: string) => boolean;
@@ -17,6 +21,7 @@ const TripStoreContext = createContext<TripStoreContextType | undefined>(undefin
 
 export function TripStoreProvider({ children }: { children: ReactNode }) {
   const [favorites, setFavorites] = useLocalStorage<string[]>('trip-planner-favorites', []);
+  const [visited, setVisited] = useLocalStorage<string[]>('trip-planner-visited', []);
   const [compareList, setCompareList] = useLocalStorage<string[]>('trip-planner-compare', []);
 
   const toggleFavorite = (id: string) => {
@@ -27,13 +32,20 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
   const isFavorite = (id: string) => favorites.includes(id);
 
+  const toggleVisited = (id: string) => {
+    setVisited(prev => 
+      prev.includes(id) ? prev.filter(vId => vId !== id) : [...prev, id]
+    );
+  };
+
+  const isVisited = (id: string) => visited.includes(id);
+
   const toggleCompare = (id: string) => {
     setCompareList(prev => {
       if (prev.includes(id)) {
         return prev.filter(cId => cId !== id);
       }
       if (prev.length >= 4) {
-        // Can only compare up to 4, alert or just replace last?
         return [...prev.slice(1), id];
       }
       return [...prev, id];
@@ -47,6 +59,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   return (
     <TripStoreContext.Provider value={{
       favorites, toggleFavorite, isFavorite,
+      visited, toggleVisited, isVisited,
       compareList, toggleCompare, isComparing, clearCompare
     }}>
       {children}

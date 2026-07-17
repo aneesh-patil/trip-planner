@@ -5,7 +5,7 @@ import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
 import DestinationCard from "@/components/destinations/DestinationCard";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 
 export default function Home() {
@@ -46,37 +46,40 @@ export default function Home() {
       // Trip Type Boosts
       switch (tripType) {
         case "food":
-          score += (dest.ratings.food - 5) * 4;
-          if (dest.ratings.food >= 9) reasons.push("Excellent local food");
+          if (dest.ratings.food >= 8) { score += 20; reasons.push("Excellent local food"); } else score -= 30;
           break;
         case "nature":
           if (dest.tags.includes("Nature") || dest.categories.includes("Mountain")) {
             score += 20; reasons.push("Perfect nature escape");
-          }
+          } else score -= 30;
           break;
         case "history":
           if (dest.categories.includes("History") || dest.categories.includes("Shrine") || dest.tags.includes("Historic")) {
             score += 20; reasons.push("Rich in history & culture");
-          }
+          } else score -= 30;
           break;
         case "art":
           if (dest.categories.includes("Museum") || dest.categories.includes("Art")) {
             score += 20; reasons.push("Great museums & culture");
-          }
+          } else score -= 30;
           break;
         case "sea":
-          if (dest.categories.includes("Coast") || dest.categories.includes("Sea")) {
+          if (dest.categories.includes("Coast") || dest.categories.includes("Sea") || dest.categories.includes("Beach")) {
             score += 20; reasons.push("Beautiful coastal views");
-          }
+          } else score -= 40; // Heavy penalty if they want the sea and it's not the sea!
           break;
         case "cool":
           if (dest.ratings.summer >= 9) {
             score += 20; reasons.push("Cool & refreshing climate");
-          }
+          } else score -= 20;
           break;
         case "photography":
-          score += (dest.ratings.photography - 5) * 4;
-          if (dest.ratings.photography >= 9) reasons.push("Highly photogenic spots");
+          if (dest.ratings.photography >= 8) { score += 20; reasons.push("Highly photogenic spots"); } else score -= 20;
+          break;
+        case "themepark":
+          if (dest.categories.includes("Theme Park")) {
+            score += 30; reasons.push("Incredible theme park experience");
+          } else score -= 50; // Heavy penalty if they want a theme park and it's not one!
           break;
       }
 
@@ -143,11 +146,22 @@ export default function Home() {
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">What's the vibe?</label>
                   <Select value={tripType} onValueChange={(val) => { if (val) setTripType(val); }}>
                     <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
-                      <SelectValue placeholder="Select vibe..." />
+                      {tripType === "any" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Anything goes</div>}
+                      {tripType === "themepark" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-pink-500" /> Theme Parks</div>}
+                      {tripType === "sea" && <div className="flex items-center"><Waves className="w-5 h-5 mr-3 text-blue-500" /> Sea Escape</div>}
+                      {tripType === "history" && <div className="flex items-center"><Landmark className="w-5 h-5 mr-3 text-amber-700" /> History & Culture</div>}
+                      {tripType === "art" && <div className="flex items-center"><Palette className="w-5 h-5 mr-3 text-purple-500" /> Art & Museums</div>}
+                      {tripType === "food" && <div className="flex items-center"><Utensils className="w-5 h-5 mr-3 text-orange-500" /> Food & Eating</div>}
+                      {tripType === "nature" && <div className="flex items-center"><Trees className="w-5 h-5 mr-3 text-emerald-500" /> Nature & Outdoors</div>}
+                      {tripType === "cool" && <div className="flex items-center"><Snowflake className="w-5 h-5 mr-3 text-sky-400" /> Cool Escape</div>}
+                      {tripType === "photography" && <div className="flex items-center"><Camera className="w-5 h-5 mr-3 text-rose-400" /> Photography</div>}
                     </SelectTrigger>
                     <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
                       <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
                         <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> <span className="text-base font-medium">Anything goes</span></div>
+                      </SelectItem>
+                      <SelectItem value="themepark" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-pink-500" /> <span className="text-base font-medium">Theme Parks</span></div>
                       </SelectItem>
                       <SelectItem value="sea" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
                         <div className="flex items-center"><Waves className="w-5 h-5 mr-3 text-blue-500" /> <span className="text-base font-medium">Sea Escape</span></div>
@@ -179,7 +193,9 @@ export default function Home() {
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">Weather condition?</label>
                   <Select value={weather} onValueChange={(val) => { if (val) setWeather(val); }}>
                     <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
-                      <SelectValue placeholder="Select weather..." />
+                      {weather === "any" && <div className="flex items-center"><Sun className="w-5 h-5 mr-3 text-amber-500" /> Perfect Weather</div>}
+                      {weather === "rainy" && <div className="flex items-center"><CloudRain className="w-5 h-5 mr-3 text-blue-500" /> Looks like Rain</div>}
+                      {weather === "summer" && <div className="flex items-center"><ThermometerSun className="w-5 h-5 mr-3 text-red-500" /> Scorching Hot</div>}
                     </SelectTrigger>
                     <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
                       <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
@@ -200,7 +216,9 @@ export default function Home() {
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">How are you getting there?</label>
                   <Select value={transport} onValueChange={(val) => { if (val) setTransport(val); }}>
                     <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
-                      <SelectValue placeholder="Select transport..." />
+                      {transport === "any" && <div className="flex items-center"><MapIcon className="w-5 h-5 mr-3 text-slate-400" /> No preference</div>}
+                      {transport === "train" && <div className="flex items-center"><Train className="w-5 h-5 mr-3 text-emerald-600" /> Train Only</div>}
+                      {transport === "car" && <div className="flex items-center"><Car className="w-5 h-5 mr-3 text-slate-600" /> Driving a Car</div>}
                     </SelectTrigger>
                     <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
                       <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">

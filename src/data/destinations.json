@@ -2048,5 +2048,537 @@
         ]
       }
     ]
+  },
+  {
+    "id": "disneyland",
+    "name": "Tokyo Disneyland",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": [
+      "Theme Park"
+    ],
+    "heroImage": "/images/disneyland.jpg",
+    "gallery": [],
+    "description": "The classic Disney theme park experience with iconic parades and attractions.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 45,
+    "carTimeMin": 60,
+    "totalTripHours": 12,
+    "budgetMin": 15000,
+    "budgetRecommended": 20000,
+    "budgetMax": 30000,
+    "walkingMin": 12000,
+    "walkingSunMin": 6000,
+    "walkingShadeMin": 6000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 9.5,
+      "couple": 9.5,
+      "summer": 8,
+      "winter": 8.5,
+      "rain": 6.5,
+      "food": 8.5,
+      "photography": 9.5,
+      "relaxation": 6,
+      "value": 8.5,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 8,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 8
+    },
+    "bestMonths": [
+      3,
+      4,
+      10,
+      11,
+      12
+    ],
+    "reservation": "Required well in advance.",
+    "parking": "Massive parking lots available.",
+    "highlights": [
+      "Cinderella Castle",
+      "Space Mountain",
+      "Electrical Parade"
+    ],
+    "tags": [
+      "Theme Park",
+      "Family",
+      "Date Spot"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Book tickets online up to 2 months in advance.",
+    "lat": 35.6329,
+    "lng": 139.8804,
+    "itineraries": []
+  },
+  {
+    "id": "ghibli-museum",
+    "name": "Ghibli Museum",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": [
+      "Theme Park",
+      "Museum",
+      "Art"
+    ],
+    "heroImage": "/images/ghibli.jpg",
+    "gallery": [],
+    "description": "A whimsical museum dedicated to the art and animation of Studio Ghibli.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 50,
+    "carTimeMin": 60,
+    "totalTripHours": 6,
+    "budgetMin": 5000,
+    "budgetRecommended": 8000,
+    "budgetMax": 12000,
+    "walkingMin": 5000,
+    "walkingSunMin": 1000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 90,
+    "ratings": {
+      "overall": 9.5,
+      "couple": 9,
+      "summer": 9.5,
+      "winter": 9.5,
+      "rain": 9.5,
+      "food": 8,
+      "photography": 8,
+      "relaxation": 8,
+      "value": 9.5,
+      "uniqueness": 10
+    },
+    "crowd": {
+      "weekday": 8,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reservation": "Tickets sell out within hours. Book on the 10th of the previous month.",
+    "parking": "Not recommended, take the train to Mitaka.",
+    "highlights": [
+      "Giant Robot Soldier",
+      "Catbus Room",
+      "Exclusive Short Films"
+    ],
+    "tags": [
+      "Anime",
+      "Indoor",
+      "Art"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [
+      "Straw Hat Cafe"
+    ],
+    "notes": "No photography allowed inside the museum.",
+    "lat": 35.6962,
+    "lng": 139.5704,
+    "itineraries": []
+  },
+  {
+    "id": "yomiuriland",
+    "name": "Yomiuriland",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": [
+      "Theme Park"
+    ],
+    "heroImage": "/images/yomiuriland.jpg",
+    "gallery": [],
+    "description": "A classic amusement park in Tokyo known for thrilling roller coasters and spectacular winter illuminations.",
+    "trainAvailable": true,
+    "carRecommended": true,
+    "trainTimeMin": 60,
+    "carTimeMin": 60,
+    "totalTripHours": 8,
+    "budgetMin": 8000,
+    "budgetRecommended": 12000,
+    "budgetMax": 15000,
+    "walkingMin": 8000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 9,
+      "summer": 7,
+      "winter": 9.5,
+      "rain": 4,
+      "food": 7,
+      "photography": 9,
+      "relaxation": 6,
+      "value": 8.5,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 7,
+      "autumn": 8,
+      "winter": 10
+    },
+    "bestMonths": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "reservation": "Recommended during winter illumination.",
+    "parking": "Available, but crowded in winter.",
+    "highlights": [
+      "Jewellumination (Winter)",
+      "Bandit Roller Coaster",
+      "Goodjoba!! Zone"
+    ],
+    "tags": [
+      "Theme Park",
+      "Illumination",
+      "Thrill Rides"
+    ],
+    "itinerary": [],
+    "restaurants": [],
+    "cafes": [],
+    "notes": "Winter Jewellumination is incredibly famous and romantic.",
+    "lat": 35.6247,
+    "lng": 139.5173,
+    "itineraries": []
+  },
+  {
+    "id": "teamlab-planets",
+    "name": "teamLab Planets",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": [
+      "Art",
+      "Theme Park",
+      "Indoor"
+    ],
+    "heroImage": "/images/teamlab.jpg",
+    "gallery": [],
+    "description": "An immersive digital art museum where you walk barefoot through massive, interactive water and light installations.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 50,
+    "carTimeMin": 50,
+    "totalTripHours": 4,
+    "budgetMin": 5000,
+    "budgetRecommended": 7000,
+    "budgetMax": 10000,
+    "walkingMin": 3000,
+    "walkingSunMin": 0,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 100,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9.8,
+      "summer": 10,
+      "winter": 10,
+      "rain": 10,
+      "food": 8,
+      "photography": 10,
+      "relaxation": 8.5,
+      "value": 8.5,
+      "uniqueness": 10
+    },
+    "crowd": {
+      "weekday": 8,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reservation": "Required well in advance.",
+    "parking": "Not recommended.",
+    "highlights": [
+      "Infinite Crystal Universe",
+      "Floating Flower Garden",
+      "Water Installations"
+    ],
+    "tags": [
+      "Digital Art",
+      "Photogenic",
+      "Date Spot"
+    ],
+    "itinerary": [],
+    "restaurants": [
+      "Vegan Ramen UZU Tokyo"
+    ],
+    "cafes": [],
+    "notes": "You will walk barefoot and water goes up to your knees. Wear shorts or pants that can be rolled up.",
+    "lat": 35.6483,
+    "lng": 139.7891,
+    "itineraries": []
+  },
+  {
+    "id": "ginza-urban",
+    "name": "Ginza",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": [
+      "City",
+      "Shopping",
+      "Art",
+      "History"
+    ],
+    "heroImage": "/images/ginza.jpg",
+    "gallery": [],
+    "description": "Tokyo's most prestigious shopping district, blending high-end fashion, traditional crafts, and world-class dining.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 40,
+    "carTimeMin": 50,
+    "totalTripHours": 6,
+    "budgetMin": 10000,
+    "budgetRecommended": 30000,
+    "budgetMax": 80000,
+    "walkingMin": 7000,
+    "walkingSunMin": 3000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 9,
+      "couple": 9,
+      "summer": 8.5,
+      "winter": 9,
+      "rain": 9,
+      "food": 10,
+      "photography": 8.5,
+      "relaxation": 7,
+      "value": 7,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 7,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12
+    ],
+    "reservation": "Recommended for high-end dining.",
+    "parking": "Expensive.",
+    "highlights": [
+      "Itoya Stationery Store",
+      "Seiko Museum",
+      "Ginza Six",
+      "Pedestrian Paradise (Weekends)"
+    ],
+    "tags": [
+      "Luxury",
+      "Shopping",
+      "Architecture"
+    ],
+    "itinerary": [],
+    "restaurants": [
+      "Kyubey Sushi",
+      "Ginza Ukai-tei"
+    ],
+    "cafes": [
+      "Cafe de L'Ambre",
+      "Shiseido Parlour"
+    ],
+    "notes": "Main street is closed to traffic on weekends (Pedestrian Paradise).",
+    "lat": 35.6712,
+    "lng": 139.7665,
+    "itineraries": [
+      {
+        "name": "Plan A: Cultured Urban Stroll",
+        "description": "Discover high-quality Japanese craftsmanship, from precision watches to perfect paper.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Explore the Seiko Museum Ginza to learn about the history of Japanese timepieces."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch at a traditional tempura or sushi restaurant."
+          },
+          {
+            "time": "14:00",
+            "activity": "Spend an hour wandering the 12 floors of Itoya, the ultimate stationery store."
+          },
+          {
+            "time": "15:30",
+            "activity": "Relax at a classic kissaten (retro cafe) with hand-drip coffee."
+          },
+          {
+            "time": "16:30",
+            "activity": "Walk the Chuo-dori pedestrian paradise (weekends only)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enoshima-island",
+    "name": "Enoshima",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": [
+      "Sea",
+      "Coast",
+      "History",
+      "Nature"
+    ],
+    "heroImage": "/images/enoshima.jpg",
+    "gallery": [],
+    "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
+    "trainAvailable": true,
+    "carRecommended": false,
+    "trainTimeMin": 60,
+    "carTimeMin": 70,
+    "totalTripHours": 8,
+    "budgetMin": 5000,
+    "budgetRecommended": 8000,
+    "budgetMax": 12000,
+    "walkingMin": 12000,
+    "walkingSunMin": 8000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 10,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9.5,
+      "summer": 9.5,
+      "winter": 8,
+      "rain": 4,
+      "food": 8.5,
+      "photography": 9.5,
+      "relaxation": 8,
+      "value": 9,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 10,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reservation": "Not required.",
+    "parking": "Gets full quickly in summer.",
+    "highlights": [
+      "Enoshima Shrine",
+      "Iwaya Caves",
+      "Enoshima Sea Candle"
+    ],
+    "tags": [
+      "Island",
+      "Ocean",
+      "Sunset"
+    ],
+    "itinerary": [],
+    "restaurants": [
+      "Tobiccho (Shirasu Don)"
+    ],
+    "cafes": [
+      "Loncafe"
+    ],
+    "notes": "Try the local specialty: Shirasu (whitebait) bowl.",
+    "lat": 35.3005,
+    "lng": 139.4806,
+    "itineraries": [
+      {
+        "name": "Plan A: Ocean Breeze & Shrines",
+        "description": "Hike over the island from the bustling shrine approach to the dramatic southern cliffs.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Walk across the bridge to Enoshima. Grab a giant senbei cracker on the approach."
+          },
+          {
+            "time": "11:30",
+            "activity": "Visit Enoshima Shrine. Take the escalators up if you want to skip the stairs."
+          },
+          {
+            "time": "12:30",
+            "activity": "Eat fresh Shirasu-don for lunch."
+          },
+          {
+            "time": "14:00",
+            "activity": "Visit the Samuel Cocking Garden and Sea Candle for panoramic views."
+          },
+          {
+            "time": "15:30",
+            "activity": "Walk down to the Iwaya Caves on the rocky southern coast."
+          }
+        ]
+      }
+    ]
   }
 ]

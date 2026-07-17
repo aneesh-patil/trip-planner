@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Compass, Heart, Map, Settings } from "lucide-react";
+import { Compass, Bookmark, Map, Settings } from "lucide-react";
 
 export default function Navbar() {
   const location = useLocation();
@@ -8,7 +8,7 @@ export default function Navbar() {
     { name: "Explore", path: "/", icon: Compass },
     { name: "Destinations", path: "/destinations", icon: Map },
     { name: "Compare", path: "/compare", icon: Settings },
-    { name: "Favorites", path: "/favorites", icon: Heart },
+    { name: "Bucket List", path: "/favorites", icon: Bookmark },
   ];
 
   return (

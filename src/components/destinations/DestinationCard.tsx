@@ -3,7 +3,7 @@ import type { Destination } from "@/types/destination";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Train, Car, DollarSign, Heart, ThermometerSun, PlusSquare, CheckSquare, CloudRain, Utensils, Camera, Palette, Trees, Sun } from "lucide-react";
+import { MapPin, Train, Car, DollarSign, Bookmark, CheckCircle2, ThermometerSun, PlusSquare, CheckSquare, CloudRain, Utensils, Camera, Palette, Trees, Sun } from "lucide-react";
 import { useTripStore } from "@/hooks/useTripStore";
 
 interface DestinationCardProps {
@@ -11,14 +11,15 @@ interface DestinationCardProps {
 }
 
 export default function DestinationCard({ destination }: DestinationCardProps) {
-  const { isFavorite, toggleFavorite, isComparing, toggleCompare, compareList } = useTripStore();
+  const { isFavorite, toggleFavorite, isVisited, toggleVisited, isComparing, toggleCompare, compareList } = useTripStore();
   const favorite = isFavorite(destination.id);
+  const visited = isVisited(destination.id);
   const comparing = isComparing(destination.id);
 
   const getPerfectFor = (dest: Destination) => {
     const perfectFor = [];
     if (dest.ratings.summer >= 9) perfectFor.push({ icon: ThermometerSun, text: "Hot days", color: "text-amber-500" });
-    if (dest.ratings.couple >= 9) perfectFor.push({ icon: Heart, text: "Couples", color: "text-rose-500" });
+    if (dest.ratings.couple >= 9) perfectFor.push({ icon: Bookmark, text: "Couples", color: "text-rose-500" });
     if (dest.indoorPercent >= 0.7) perfectFor.push({ icon: CloudRain, text: "Rainy days", color: "text-blue-500" });
     if (dest.ratings.food >= 9) perfectFor.push({ icon: Utensils, text: "Foodies", color: "text-orange-500" });
     if (dest.ratings.photography >= 9) perfectFor.push({ icon: Camera, text: "Photography", color: "text-purple-500" });
@@ -38,21 +39,39 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
         <img
           src={destination.heroImage}
           alt={destination.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${visited ? "grayscale opacity-80" : ""}`}
         />
-        <div className="absolute top-3 left-3 flex gap-2 flex-wrap">
+        {visited && (
+          <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center">
+            <Badge className="bg-emerald-500/90 text-white text-sm py-1.5 px-3 border-none shadow-lg">
+              <CheckCircle2 className="w-4 h-4 mr-1.5" />
+              Already Visited
+            </Badge>
+          </div>
+        )}
+        <div className="absolute top-3 left-3 flex gap-2 flex-wrap z-10">
           {destination.tags.slice(0, 2).map((tag) => (
             <Badge key={tag} className="bg-slate-900/70 hover:bg-slate-900 text-white backdrop-blur-md border border-white/20">
               {tag}
             </Badge>
           ))}
         </div>
-        <button 
-          onClick={() => toggleFavorite(destination.id)}
-          className="absolute top-3 right-3 p-2 bg-white/50 hover:bg-white/90 backdrop-blur-sm rounded-full transition-colors shadow-sm"
-        >
-          <Heart className={`w-5 h-5 ${favorite ? "fill-rose-500 text-rose-500" : "text-slate-700"}`} />
-        </button>
+        <div className="absolute top-3 right-3 flex flex-col gap-2 z-10">
+          <button 
+            onClick={() => toggleFavorite(destination.id)}
+            className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-colors shadow-sm text-slate-700"
+            title="Want to Visit"
+          >
+            <Bookmark className={`w-5 h-5 ${favorite ? "fill-rose-500 text-rose-500" : ""}`} />
+          </button>
+          <button 
+            onClick={() => toggleVisited(destination.id)}
+            className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-colors shadow-sm text-slate-700"
+            title="Mark as Visited"
+          >
+            <CheckCircle2 className={`w-5 h-5 ${visited ? "fill-emerald-500 text-emerald-500" : ""}`} />
+          </button>
+        </div>
       </div>
 
       <CardHeader className="pb-2 pt-5">
