@@ -115,14 +115,14 @@ export default function DestinationFilters({
             </div>
             <Slider
               value={[maxBudget]}
-              max={40000}
-              step={1000}
+              max={100000}
+              step={5000}
               onValueChange={(val: number | readonly number[]) => setMaxBudget(Array.isArray(val) ? val[0] : val)}
               className="w-full"
             />
             <div className="flex justify-between text-xs text-slate-400 font-medium">
               <span>¥0</span>
-              <span>¥40,000+</span>
+              <span>¥100,000+</span>
             </div>
           </div>
 

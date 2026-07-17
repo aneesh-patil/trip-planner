@@ -10,7 +10,7 @@ import { Frown, Map as MapIcon, Grid } from "lucide-react";
 export default function Destinations() {
   const allDestinations = destinationsData as Destination[];
   const [searchQuery, setSearchQuery] = useState("");
-  const [maxBudget, setMaxBudget] = useState(40000);
+  const [maxBudget, setMaxBudget] = useState(100000);
   const [sortBy, setSortBy] = useState("overall");
   const [transportMode, setTransportMode] = useState("all");
   const [weather, setWeather] = useState("all");
@@ -78,7 +78,7 @@ export default function Destinations() {
 
   const resetFilters = () => {
     setSearchQuery("");
-    setMaxBudget(40000);
+    setMaxBudget(100000);
     setSortBy("overall");
     setTransportMode("all");
     setWeather("all");
