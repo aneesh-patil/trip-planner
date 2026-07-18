@@ -81,8 +81,6 @@ export interface Destination {
   restaurants: string[];
   cafes: string[];
   notes: string;
-  lat: number;
-  lng: number;
   itinerary?: ItineraryStep[];
   itineraries?: ItineraryPlan[];
 }

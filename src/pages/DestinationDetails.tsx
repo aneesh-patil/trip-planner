@@ -21,7 +21,7 @@ function WeatherIcon({ type }: { type: string }) {
 export default function DestinationDetails() {
   const { id } = useParams();
   const destination = (destinationsData as Destination[]).find(d => d.id === id);
-  const { forecast, loading } = useWeekendWeather(destination?.lat, destination?.lng);
+  const { forecast, loading } = useWeekendWeather(destination?.coordinates?.lat, destination?.coordinates?.lng);
 
   if (!destination) {
     return (

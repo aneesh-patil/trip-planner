@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, Train, TrainFront, Bus, Car, DollarSign, Bookmark, CheckCircle2, PlusSquare, CheckSquare, Sun } from "lucide-react";
 import { useTripStore } from "@/hooks/useTripStore";
-import WeatherWidget from "./WeatherWidget";
 import { getAdjustedBudget } from "@/lib/utils";
 
 interface DestinationCardProps {
@@ -36,7 +35,6 @@ export default function DestinationCard({ destination, activeTransportMode = "al
           </div>
         )}
         <div className="absolute top-3 left-3 flex gap-2 flex-wrap z-10">
-          <WeatherWidget destination={destination} />
           {destination.tags.slice(0, 2).map((tag) => (
             <Badge key={tag} className="bg-slate-900/70 hover:bg-slate-900 text-white backdrop-blur-md border border-white/20">
               {tag}

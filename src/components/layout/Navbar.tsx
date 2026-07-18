@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useSearchParams, useNavigate } from "react-router-dom";
-import { Compass, Bookmark, Map, Settings, Share2, Check, MapPinned } from "lucide-react";
+import { Compass, Bookmark, Map, Settings, Share2, Check, MapPinned, Menu, X } from "lucide-react";
 import { useTripStore } from "@/hooks/useTripStore";
 import { Button } from "@/components/ui/button";
 
@@ -10,6 +10,11 @@ export default function Navbar() {
   const [searchParams] = useSearchParams();
   const { exportData, importData } = useTripStore();
   const [copied, setCopied] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
 
   useEffect(() => {
     const syncData = searchParams.get("sync");
@@ -46,7 +51,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-bold text-xl tracking-tight">
+        <Link to="/" className="flex items-center gap-2 font-bold text-xl tracking-tight" onClick={() => setMenuOpen(false)}>
           <span className="text-emerald-600 dark:text-emerald-400">Japan</span>
           <span className="text-slate-800 dark:text-slate-200">Weekend Planner</span>
         </Link>
@@ -80,8 +85,38 @@ export default function Navbar() {
             {copied ? <Check className="w-4 h-4 mr-2" /> : <Share2 className="w-4 h-4 mr-2" />}
             {copied ? "Copied Link!" : "Sync Devices"}
           </Button>
+
+          {/* Hamburger button — mobile only */}
+          <button
+            className="md:hidden p-2 text-slate-700 dark:text-slate-300 ml-2"
+            onClick={() => setMenuOpen(o => !o)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile slide-down menu */}
+      {menuOpen && (
+        <div className="md:hidden fixed inset-x-0 top-16 z-40 bg-background/95 backdrop-blur-md border-b shadow-lg">
+          <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
+            {navItems.map((item) => {
+              const isActive = location.pathname === item.path;
+              const Icon = item.icon;
+              return (
+                <Link key={item.name} to={item.path}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                    isActive ? "bg-emerald-50 text-emerald-600 dark:bg-emerald-900/30" : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800"
+                  }`}
+                >
+                  <Icon className="w-5 h-5" /> {item.name}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
