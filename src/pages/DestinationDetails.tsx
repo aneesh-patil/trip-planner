@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { useWeekendWeather, getWeatherDescription } from "@/hooks/useWeather";
+import { getTransportCost, getAdjustedBudget } from "@/lib/utils";
 
 function WeatherIcon({ type }: { type: string }) {
   if (type === "sun") return <Sun className="w-6 h-6 text-amber-500" />;
@@ -104,25 +105,37 @@ export default function DestinationDetails() {
                         {destination.transportOptions?.train && (
                           <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
                             <span className="text-slate-500 flex items-center"><Train className="w-4 h-4 mr-1.5"/> Train</span>
-                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.train}m</span>
+                            <div className="text-right">
+                              <div className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.train}m</div>
+                              <div className="text-xs text-slate-400">est. ¥{(getTransportCost(destination, 'train') / 1000).toFixed(1)}k</div>
+                            </div>
                           </div>
                         )}
                         {destination.transportOptions?.shinkansen && (
                           <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
                             <span className="text-slate-500 flex items-center"><TrainFront className="w-4 h-4 mr-1.5"/> Shinkansen</span>
-                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.shinkansen}m</span>
+                            <div className="text-right">
+                              <div className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.shinkansen}m</div>
+                              <div className="text-xs text-slate-400">est. ¥{(getTransportCost(destination, 'shinkansen') / 1000).toFixed(1)}k</div>
+                            </div>
                           </div>
                         )}
                         {destination.transportOptions?.bus && (
                           <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
                             <span className="text-slate-500 flex items-center"><Bus className="w-4 h-4 mr-1.5"/> Bus</span>
-                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.bus}m</span>
+                            <div className="text-right">
+                              <div className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.bus}m</div>
+                              <div className="text-xs text-slate-400">est. ¥{(getTransportCost(destination, 'bus') / 1000).toFixed(1)}k</div>
+                            </div>
                           </div>
                         )}
                         {destination.transportOptions?.car && (
                           <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
                             <span className="text-slate-500 flex items-center"><Car className="w-4 h-4 mr-1.5"/> Car</span>
-                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.car}m</span>
+                            <div className="text-right">
+                              <div className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.car}m</div>
+                              <div className="text-xs text-slate-400">est. ¥{(getTransportCost(destination, 'car') / 1000).toFixed(1)}k</div>
+                            </div>
                           </div>
                         )}
                         <div className="flex justify-between items-center text-sm">
@@ -139,15 +152,15 @@ export default function DestinationDetails() {
                         <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2.5 rounded-full text-emerald-600"><DollarSign className="w-5 h-5" /></div>
                         <div>
                           <h4 className="font-bold text-slate-900 dark:text-white leading-tight">Couple Budget</h4>
-                          <div className="text-emerald-600 font-black text-lg">¥{destination.budgetRecommended.toLocaleString()}</div>
+                          <div className="text-emerald-600 font-black text-lg">¥{getAdjustedBudget(destination, "all").toLocaleString()}</div>
                         </div>
                       </div>
                       
                       {destination.budgetBreakdown && (
                         <div className="space-y-2 mt-auto">
                           <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5">
-                            <span className="text-slate-500">🚆 Transport</span>
-                            <span className="font-semibold text-slate-700 dark:text-slate-300">¥{destination.budgetBreakdown.transport.toLocaleString()}</span>
+                            <span className="text-slate-500">🚆 Transport (Fastest)</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">¥{(getAdjustedBudget(destination, "all") - (destination.budgetRecommended - destination.budgetBreakdown.transport)).toLocaleString()}</span>
                           </div>
                           <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5">
                             <span className="text-slate-500">🎟 Tickets</span>

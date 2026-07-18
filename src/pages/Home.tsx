@@ -178,16 +178,23 @@ export default function Home() {
         const isHot = currentSituation.temp >= 30;
 
         if (isRaining || weather === "rainy") {
-          const indoorBonus = (dest.indoorPercent * 25);
+          const indoorBonus = (dest.indoorPercent / 100) * 25;
           score += indoorBonus;
-          if (dest.indoorPercent >= 0.7) reasons.push(`${Math.round(dest.indoorPercent * 100)}% indoor (perfect for rain)`);
-          if (dest.indoorPercent < 0.3) score -= 30; // Heavy penalty for outdoor places in rain
+          if (dest.indoorPercent >= 70) reasons.push(`${Math.round(dest.indoorPercent)}% indoor (perfect for rain)`);
+          if (dest.indoorPercent < 30) score -= 30; // Heavy penalty for outdoor places in rain
         } 
         
         if (isHot || weather === "summer") {
           score += (dest.ratings.summer - 5) * 4;
           if (dest.ratings.summer >= 8.5) reasons.push(`Cool retreat from ${currentSituation.temp}°C heat`);
           if (dest.ratings.summer <= 4) score -= 20; // Penalty for hot walking places
+        }
+
+        const isCold = currentSituation.temp <= 10;
+        if (isCold || weather === "winter") {
+          score += (dest.ratings.winter - 5) * 4;
+          if (dest.ratings.winter >= 8.5) reasons.push("Magical winter atmosphere");
+          if (dest.ratings.winter <= 4) score -= 20; 
         }
 
         if (!isRaining && !isHot && weather === "any") {
@@ -330,6 +337,7 @@ export default function Home() {
                       {weather === "any" && <div className="flex items-center"><Sun className="w-5 h-5 mr-3 text-amber-500" /> Perfect Weather</div>}
                       {weather === "rainy" && <div className="flex items-center"><CloudRain className="w-5 h-5 mr-3 text-blue-500" /> Looks like Rain</div>}
                       {weather === "summer" && <div className="flex items-center"><ThermometerSun className="w-5 h-5 mr-3 text-red-500" /> Scorching Hot</div>}
+                      {weather === "winter" && <div className="flex items-center"><Snowflake className="w-5 h-5 mr-3 text-sky-400" /> Freezing Cold</div>}
                     </SelectTrigger>
                     <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
                       <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
@@ -340,6 +348,9 @@ export default function Home() {
                       </SelectItem>
                       <SelectItem value="summer" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
                         <div className="flex items-center"><ThermometerSun className="w-5 h-5 mr-3 text-red-500" /> <span className="text-base font-medium">Scorching Hot</span></div>
+                      </SelectItem>
+                      <SelectItem value="winter" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Snowflake className="w-5 h-5 mr-3 text-sky-400" /> <span className="text-base font-medium">Freezing Cold</span></div>
                       </SelectItem>
                     </SelectContent>
                   </Select>
