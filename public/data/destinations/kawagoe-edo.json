@@ -1,0 +1,163 @@
+{
+  "id": "kawagoe-edo",
+  "name": "Kawagoe",
+  "prefecture": "Saitama",
+  "region": "Kanto",
+  "categories": [
+    "History",
+    "Food",
+    "Architecture"
+  ],
+  "heroImage": "/images/kawagoe_hero.jpg",
+  "gallery": [],
+  "description": "Known as 'Little Edo', featuring preserved clay-walled warehouse district and a charming candy alley.",
+  "totalTripHours": 6,
+  "budgetMin": 8500,
+  "budgetRecommended": 11500,
+  "budgetMax": 16500,
+  "walkingMin": 8000,
+  "walkingSunMin": 6000,
+  "walkingShadeMin": 2000,
+  "indoorPercent": 20,
+  "ratings": {
+    "overall": 8.2,
+    "couple": 8,
+    "summer": 5,
+    "winter": 7.5,
+    "rain": 6,
+    "food": 9,
+    "photography": 9.5,
+    "relaxation": 6,
+    "value": 9.5,
+    "uniqueness": 8.5
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 8,
+    "summer": 4,
+    "autumn": 9,
+    "winter": 7
+  },
+  "bestMonths": [
+    3,
+    4,
+    10,
+    11
+  ],
+  "reservation": "Not required.",
+  "parking": "Available but traffic can be slow in town.",
+  "highlights": [
+    "Kurazukuri Zone",
+    "Toki no Kane (Time Bell Tower)",
+    "Penny Candy Alley"
+  ],
+  "tags": [
+    "Foodie",
+    "Photogenic",
+    "Budget-friendly"
+  ],
+  "itinerary": [
+    {
+      "time": "10:00",
+      "activity": "Arrive at Hon-Kawagoe Station"
+    },
+    {
+      "time": "10:30",
+      "activity": "Explore Kurazukuri Street"
+    },
+    {
+      "time": "12:00",
+      "activity": "Unagi (Eel) Lunch"
+    },
+    {
+      "time": "14:00",
+      "activity": "Kashiya Yokocho (Candy Alley)"
+    }
+  ],
+  "restaurants": [
+    "Ichinoya",
+    "Ogakiku"
+  ],
+  "cafes": [
+    "Starbucks Kawagoe Kanetsuki Dori",
+    "Glayt"
+  ],
+  "notes": "Famous for sweet potato snacks and traditional unagi.",
+  "itineraries": [
+    {
+      "name": "Plan A: Little Edo Walk",
+      "description": "Experience the historic warehouse district and famous candy alley.",
+      "steps": [
+        {
+          "time": "10:30",
+          "activity": "Arrive at Kawagoe Station and take the retro loop bus."
+        },
+        {
+          "time": "11:00",
+          "activity": "Stroll the Kurazukuri Zone (Warehouse District) and photograph the Toki no Kane (Time Bell Tower)."
+        },
+        {
+          "time": "12:30",
+          "activity": "Enjoy local sweet potato treats and traditional eel (unagi) for lunch."
+        },
+        {
+          "time": "14:00",
+          "activity": "Explore Kashiya Yokocho (Candy Alley) for retro Japanese sweets."
+        },
+        {
+          "time": "16:00",
+          "activity": "Visit Kitain Temple, featuring the only remaining buildings of the original Edo Castle."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Shrines & Culture",
+      "description": "A deeper dive into local traditions, focusing on the famous Hikawa Shrine.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Visit Hikawa Shrine. Walk through the tunnel of wind chimes (in summer) or ema."
+        },
+        {
+          "time": "12:00",
+          "activity": "Fish for your fortune using a small fishing rod at the shrine."
+        },
+        {
+          "time": "13:30",
+          "activity": "Lunch at a traditional Japanese restaurant near the Honmaru Goten."
+        },
+        {
+          "time": "15:00",
+          "activity": "Tour Kawagoe Castle Honmaru Goten, the former samurai lord's residence."
+        },
+        {
+          "time": "16:30",
+          "activity": "Relax at a retro coffee shop on Taisho-roman Street."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.9251145,
+    "lng": 139.4856927
+  },
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 1600,
+    "food": 4900,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 5,
+    "rainFriendly": 2,
+    "walkingIntensity": 8
+  },
+  "image": "https://loremflickr.com/1000/800/japan,kawagoe/all?lock=1002",
+  "transportOptions": {
+    "train": 45
+  }
+}

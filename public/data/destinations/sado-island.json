@@ -1,0 +1,105 @@
+{
+  "id": "sado-island",
+  "name": "Sado Island",
+  "region": "Chubu",
+  "categories": [
+    "Island",
+    "History",
+    "Nature"
+  ],
+  "tags": [
+    "Gold Mine",
+    "Tub Boats",
+    "Remote"
+  ],
+  "budgetRecommended": 15000,
+  "ratings": {
+    "overall": 8.4,
+    "photography": 8.5,
+    "food": 8.5,
+    "summer": 8,
+    "couple": 8,
+    "winter": 7,
+    "rain": 6,
+    "relaxation": 8,
+    "value": 8,
+    "uniqueness": 8
+  },
+  "indoorPercent": 30,
+  "coordinates": {
+    "lat": 38.0333,
+    "lng": 138.3833
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png"
+  ],
+  "prefecture": "Shizuoka",
+  "description": "Discover Sado Island, a prominent destination in Shizuoka. With its rich mix of gold mine, tub boats, remote, it's a highly recommended spot for a 8-hour getaway.",
+  "highlights": [
+    "Explore top-rated island locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "budgetMin": 12000,
+  "budgetMax": 20000,
+  "budgetBreakdown": {
+    "transport": 6000,
+    "tickets": 3000,
+    "food": 4500,
+    "cafe": 1500
+  },
+  "totalTripHours": 8,
+  "walkingMin": 10000,
+  "walkingSunMin": 4000,
+  "walkingShadeMin": 6000,
+  "comfort": {
+    "heatTolerance": 5,
+    "rainFriendly": 4,
+    "walkingIntensity": 5
+  },
+  "transportOptions": {
+    "car": 240
+  },
+  "restaurants": [
+    "Sado Island Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Sado Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Sado Island",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Sado Island. Known for its gold mine and tub boats vibes, it offers a great escape with an overall score of 8.4.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Sado Island in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary island attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "akihabara-chiyoda",
+  "name": "Akihabara (Chiyoda)",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": [
+    "City",
+    "Shopping"
+  ],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/960px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
+  "gallery": [],
+  "description": "The epicenter of anime, gaming, and electronics culture in Japan. Bustling with themed cafes and arcades.",
+  "totalTripHours": 6,
+  "budgetMin": 6000,
+  "budgetRecommended": 9000,
+  "budgetMax": 14000,
+  "walkingMin": 8000,
+  "walkingSunMin": 4000,
+  "walkingShadeMin": 4000,
+  "indoorPercent": 60,
+  "ratings": {
+    "overall": 8.8,
+    "couple": 7,
+    "summer": 7,
+    "winter": 8,
+    "rain": 8,
+    "food": 7.5,
+    "photography": 9,
+    "relaxation": 5,
+    "value": 8,
+    "uniqueness": 10
+  },
+  "crowd": {
+    "weekday": 8,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 8,
+    "winter": 8
+  },
+  "bestMonths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reservation": "Required for popular maid cafes.",
+  "parking": "Extremely difficult and expensive.",
+  "highlights": [
+    "Electric Town",
+    "Maid Cafes",
+    "Radio Kaikan"
+  ],
+  "tags": [
+    "Anime",
+    "Electronics",
+    "Pop Culture"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "GoGo Curry",
+    "Gyu-Kaku"
+  ],
+  "cafes": [
+    "Maidreamin"
+  ],
+  "notes": "Sunday afternoons have a pedestrian paradise on Chuo-dori.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Akihabara (Chiyoda) in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.6985177,
+    "lng": 139.7754836
+  },
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 0,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 7,
+    "rainFriendly": 6,
+    "walkingIntensity": 8
+  },
+  "image": "https://loremflickr.com/1000/800/japan,akihabara/all?lock=1021",
+  "transportOptions": {
+    "train": 40
+  }
+}

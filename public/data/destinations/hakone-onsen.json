@@ -1,0 +1,164 @@
+{
+  "id": "hakone-onsen",
+  "name": "Hakone",
+  "prefecture": "Kanagawa",
+  "region": "Kanto",
+  "categories": [
+    "Onsen",
+    "Nature",
+    "Museums"
+  ],
+  "heroImage": "/images/hakone_hero.jpg",
+  "gallery": [],
+  "description": "A popular hot spring resort area featuring views of Mt. Fuji, art museums, and a scenic lake.",
+  "totalTripHours": 24,
+  "budgetMin": 16200,
+  "budgetRecommended": 19200,
+  "budgetMax": 24200,
+  "walkingMin": 4000,
+  "walkingSunMin": 2000,
+  "walkingShadeMin": 2000,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 9.2,
+    "couple": 9.5,
+    "summer": 7,
+    "winter": 9.5,
+    "rain": 8,
+    "food": 8.5,
+    "photography": 9,
+    "relaxation": 9.8,
+    "value": 7.5,
+    "uniqueness": 8.5
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 8,
+    "summer": 6,
+    "autumn": 10,
+    "winter": 9
+  },
+  "bestMonths": [
+    10,
+    11,
+    12,
+    1,
+    2
+  ],
+  "reservation": "Required well in advance for ryokans.",
+  "parking": "Limited and expensive.",
+  "highlights": [
+    "Hakone Open-Air Museum",
+    "Owakudani",
+    "Lake Ashi Cruise"
+  ],
+  "tags": [
+    "Romantic",
+    "Relaxing",
+    "Scenic"
+  ],
+  "itinerary": [
+    {
+      "time": "10:00",
+      "activity": "Arrive at Hakone-Yumoto Station"
+    },
+    {
+      "time": "11:00",
+      "activity": "Hakone Open-Air Museum"
+    },
+    {
+      "time": "14:00",
+      "activity": "Owakudani Ropeway"
+    },
+    {
+      "time": "16:00",
+      "activity": "Check-in to Ryokan"
+    }
+  ],
+  "restaurants": [
+    "Hakone Gindofu",
+    "Bakery & Table Hakone"
+  ],
+  "cafes": [
+    "Naraya Cafe",
+    "Amazake Chaya"
+  ],
+  "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport.",
+  "itineraries": [
+    {
+      "name": "Plan A: The Classic Hakone Loop",
+      "description": "Experience all modes of transport and the best views of Mt. Fuji.",
+      "steps": [
+        {
+          "time": "09:00",
+          "activity": "Arrive at Hakone-Yumoto and take the scenic Tozan Mountain Railway to Gora."
+        },
+        {
+          "time": "10:30",
+          "activity": "Transfer to the Hakone Ropeway at Sounzan. Enjoy views over the volcanic Owakudani valley."
+        },
+        {
+          "time": "11:30",
+          "activity": "Eat black eggs (Kuro-tamago) boiled in the hot springs at Owakudani."
+        },
+        {
+          "time": "13:00",
+          "activity": "Take the Pirate Ship cruise across Lake Ashi to Motohakone."
+        },
+        {
+          "time": "15:00",
+          "activity": "Walk the old Cedar Avenue and visit Hakone Shrine."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Art & Relaxation",
+      "description": "A laid-back day focusing on world-class museums and high-end hot springs.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Explore the Hakone Open-Air Museum, featuring Picasso and massive outdoor sculptures."
+        },
+        {
+          "time": "12:30",
+          "activity": "Lunch at a traditional soba restaurant in Gora."
+        },
+        {
+          "time": "14:00",
+          "activity": "Visit the Pola Museum of Art, nestled deep in the forest."
+        },
+        {
+          "time": "16:30",
+          "activity": "Enjoy a premium day-use Onsen (hot spring) with mountain views."
+        },
+        {
+          "time": "18:30",
+          "activity": "Dinner in Hakone-Yumoto before heading back to Yokohama."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.2323662,
+    "lng": 139.1068849
+  },
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 8200,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 7,
+    "rainFriendly": 4,
+    "walkingIntensity": 4
+  },
+  "image": "https://loremflickr.com/1000/800/japan,hakone/all?lock=1000",
+  "transportOptions": {
+    "train": 85
+  }
+}

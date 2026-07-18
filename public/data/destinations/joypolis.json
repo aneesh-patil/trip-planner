@@ -1,0 +1,153 @@
+{
+  "id": "joypolis",
+  "name": "Joypolis Odaiba",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": [
+    "Indoor Park",
+    "Gaming"
+  ],
+  "heroImage": "/images/joypolis.jpg",
+  "gallery": [],
+  "description": "Sega's massive indoor amusement park with VR attractions, roller coasters, and arcade games.",
+  "totalTripHours": 8,
+  "budgetMin": 16000,
+  "budgetRecommended": 19000,
+  "budgetMax": 24000,
+  "walkingMin": 4000,
+  "walkingSunMin": 0,
+  "walkingShadeMin": 4000,
+  "indoorPercent": 90,
+  "ratings": {
+    "overall": 8.7,
+    "couple": 9,
+    "summer": 9.3,
+    "winter": 9.3,
+    "rain": 9.5,
+    "food": 8,
+    "photography": 8.5,
+    "relaxation": 6,
+    "value": 8,
+    "uniqueness": 8.5
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 10,
+    "summer": 10,
+    "autumn": 10,
+    "winter": 10
+  },
+  "bestMonths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reservation": "",
+  "parking": "Yes",
+  "highlights": [
+    "Halfpipe Tokyo",
+    "VR Attractions"
+  ],
+  "tags": [
+    "Indoor",
+    "Action"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "Joypolis Odaiba Traditional Dining",
+    "Local Tokyo Specialty Restaurant",
+    "The Joypolis Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Joypolis Odaiba",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "Combine with Odaiba",
+  "itineraries": [
+    {
+      "name": "Plan A: Thrills & Coasters",
+      "description": "Tackle the most intense, adrenaline-pumping rides the indoor park has to offer.",
+      "steps": [
+        {
+          "time": "11:00",
+          "activity": "Arrive at Decks Tokyo Beach and head into Joypolis."
+        },
+        {
+          "time": "11:30",
+          "activity": "Ride the Gekion Live Coaster, a rhythm game combined with a rollercoaster."
+        },
+        {
+          "time": "13:00",
+          "activity": "Compete against friends on the Halfpipe Tokyo spinning ride."
+        },
+        {
+          "time": "14:30",
+          "activity": "Quick lunch at the Frame Cafe inside the park overlooking the bay."
+        },
+        {
+          "time": "16:00",
+          "activity": "Ride the Transformers 360-degree spinning simulator."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Horror & Virtual Reality",
+      "description": "Focus on the immersive walk-through attractions and cutting-edge VR.",
+      "steps": [
+        {
+          "time": "12:00",
+          "activity": "Start with the Zero Latency VR free-roaming experience (book in advance!)."
+        },
+        {
+          "time": "14:00",
+          "activity": "Grab lunch at a restaurant in Odaiba outside the park."
+        },
+        {
+          "time": "15:30",
+          "activity": "Experience the Room of the Living Doll 3D sound horror attraction."
+        },
+        {
+          "time": "16:30",
+          "activity": "Play the interactive Phoenix Wright: Ace Attorney investigation game."
+        },
+        {
+          "time": "18:00",
+          "activity": "Watch the main stage projection mapping show before leaving."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.6762,
+    "lng": 139.6503
+  },
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 10000,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 9.3,
+    "rainFriendly": 9,
+    "walkingIntensity": 4
+  },
+  "image": "https://loremflickr.com/1000/800/japan,joypolis/all?lock=1014",
+  "transportOptions": {
+    "train": 90
+  }
+}

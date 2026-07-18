@@ -1,0 +1,105 @@
+{
+  "id": "kurobe-gorge",
+  "name": "Kurobe Gorge",
+  "region": "Chubu",
+  "categories": [
+    "Nature",
+    "Mountain"
+  ],
+  "tags": [
+    "Scenic Railway",
+    "Ravine",
+    "Onsen"
+  ],
+  "budgetRecommended": 20000,
+  "ratings": {
+    "overall": 8.9,
+    "photography": 9.4,
+    "food": 7,
+    "summer": 8.5,
+    "couple": 8,
+    "winter": 7,
+    "rain": 6,
+    "relaxation": 8,
+    "value": 8,
+    "uniqueness": 8
+  },
+  "indoorPercent": 10,
+  "coordinates": {
+    "lat": 36.6833,
+    "lng": 137.6667
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
+  "gallery": [
+    "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop"
+  ],
+  "prefecture": "Shizuoka",
+  "description": "Discover Kurobe Gorge, a prominent destination in Shizuoka. With its rich mix of scenic railway, ravine, onsen, it's a highly recommended spot for a 8-hour getaway.",
+  "highlights": [
+    "Explore top-rated nature locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "budgetMin": 17000,
+  "budgetMax": 25000,
+  "budgetBreakdown": {
+    "transport": 6000,
+    "tickets": 8000,
+    "food": 4500,
+    "cafe": 1500
+  },
+  "totalTripHours": 8,
+  "walkingMin": 10000,
+  "walkingSunMin": 4000,
+  "walkingShadeMin": 6000,
+  "comfort": {
+    "heatTolerance": 5,
+    "rainFriendly": 4,
+    "walkingIntensity": 5
+  },
+  "transportOptions": {
+    "car": 320,
+    "shinkansen": 220
+  },
+  "restaurants": [
+    "Kurobe Gorge Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Kurobe Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Kurobe Gorge",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Kurobe Gorge. Known for its scenic railway and ravine vibes, it offers a great escape with an overall score of 8.9.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Kurobe Gorge in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary nature attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ]
+}

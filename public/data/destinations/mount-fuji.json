@@ -1,0 +1,105 @@
+{
+  "id": "mount-fuji",
+  "name": "Mount Fuji",
+  "region": "Chubu",
+  "categories": [
+    "Mountain",
+    "Nature"
+  ],
+  "tags": [
+    "Iconic",
+    "Climbing",
+    "Views"
+  ],
+  "budgetRecommended": 5000,
+  "ratings": {
+    "overall": 9.6,
+    "photography": 10,
+    "food": 5,
+    "summer": 9,
+    "couple": 8,
+    "winter": 7,
+    "rain": 6,
+    "relaxation": 8,
+    "value": 8,
+    "uniqueness": 8
+  },
+  "indoorPercent": 0,
+  "coordinates": {
+    "lat": 35.3606,
+    "lng": 138.7274
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg"
+  ],
+  "prefecture": "Shizuoka",
+  "description": "Discover Mount Fuji, a prominent destination in Shizuoka. With its rich mix of iconic, climbing, views, it's a highly recommended spot for a 8-hour getaway.",
+  "highlights": [
+    "Explore top-rated mountain locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "budgetMin": 2000,
+  "budgetMax": 10000,
+  "budgetBreakdown": {
+    "transport": 2000,
+    "tickets": 1000,
+    "food": 1500,
+    "cafe": 500
+  },
+  "totalTripHours": 8,
+  "walkingMin": 10000,
+  "walkingSunMin": 4000,
+  "walkingShadeMin": 6000,
+  "comfort": {
+    "heatTolerance": 5,
+    "rainFriendly": 4,
+    "walkingIntensity": 5
+  },
+  "transportOptions": {
+    "car": 120,
+    "shinkansen": 999
+  },
+  "restaurants": [
+    "Mount Fuji Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Mount Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Mount Fuji",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Mount Fuji. Known for its iconic and climbing vibes, it offers a great escape with an overall score of 9.6.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Mount Fuji in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary mountain attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ]
+}

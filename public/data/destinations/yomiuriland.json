@@ -1,0 +1,121 @@
+{
+  "id": "yomiuriland",
+  "name": "Yomiuriland",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": [
+    "Theme Park"
+  ],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Yomiuriland-20100411.jpg/960px-Yomiuriland-20100411.jpg",
+  "gallery": [],
+  "description": "A classic amusement park in Tokyo known for thrilling roller coasters and spectacular winter illuminations.",
+  "totalTripHours": 8,
+  "budgetMin": 9000,
+  "budgetRecommended": 12000,
+  "budgetMax": 17000,
+  "walkingMin": 8000,
+  "walkingSunMin": 5000,
+  "walkingShadeMin": 3000,
+  "indoorPercent": 20,
+  "ratings": {
+    "overall": 8.5,
+    "couple": 9,
+    "summer": 7,
+    "winter": 9.5,
+    "rain": 4,
+    "food": 7,
+    "photography": 9,
+    "relaxation": 6,
+    "value": 8.5,
+    "uniqueness": 8
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 9,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 8,
+    "summer": 7,
+    "autumn": 8,
+    "winter": 10
+  },
+  "bestMonths": [
+    11,
+    12,
+    1,
+    2
+  ],
+  "reservation": "Recommended during winter illumination.",
+  "parking": "Available, but crowded in winter.",
+  "highlights": [
+    "Jewellumination (Winter)",
+    "Bandit Roller Coaster",
+    "Goodjoba!! Zone"
+  ],
+  "tags": [
+    "Theme Park",
+    "Illumination",
+    "Thrill Rides"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "Yomiuriland Traditional Dining",
+    "Local Tokyo Specialty Restaurant",
+    "The Yomiuriland Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Yomiuriland",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "Winter Jewellumination is incredibly famous and romantic.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Yomiuriland in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary theme park attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.6762,
+    "lng": 139.6503
+  },
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 8000,
+    "food": 2100,
+    "cafe": 900
+  },
+  "comfort": {
+    "heatTolerance": 7,
+    "rainFriendly": 2,
+    "walkingIntensity": 8
+  },
+  "image": "https://loremflickr.com/1000/800/japan,yomiuriland/all?lock=1017",
+  "transportOptions": {
+    "train": 60,
+    "car": 60
+  }
+}

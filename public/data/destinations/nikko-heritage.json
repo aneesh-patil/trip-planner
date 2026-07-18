@@ -1,0 +1,163 @@
+{
+  "id": "nikko-heritage",
+  "name": "Nikko",
+  "prefecture": "Tochigi",
+  "region": "Kanto",
+  "categories": [
+    "History",
+    "Nature",
+    "Temples"
+  ],
+  "heroImage": "/images/nikko_hero.jpg",
+  "gallery": [],
+  "description": "World Heritage site famous for Toshogu Shrine and stunning autumn colors around Lake Chuzenji.",
+  "totalTripHours": 36,
+  "budgetMin": 13000,
+  "budgetRecommended": 16000,
+  "budgetMax": 21000,
+  "walkingMin": 12000,
+  "walkingSunMin": 5000,
+  "walkingShadeMin": 7000,
+  "indoorPercent": 30,
+  "ratings": {
+    "overall": 9.4,
+    "couple": 8.8,
+    "summer": 8.5,
+    "winter": 8,
+    "rain": 6.5,
+    "food": 7.5,
+    "photography": 10,
+    "relaxation": 8.5,
+    "value": 8,
+    "uniqueness": 9.5
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 10,
+    "winter": 7
+  },
+  "bestMonths": [
+    9,
+    10,
+    11
+  ],
+  "reservation": "Required for limited express trains and ryokans.",
+  "parking": "Extremely crowded during autumn leaves season.",
+  "highlights": [
+    "Toshogu Shrine",
+    "Lake Chuzenji",
+    "Kegon Falls"
+  ],
+  "tags": [
+    "World Heritage",
+    "Nature",
+    "Overnight"
+  ],
+  "itinerary": [
+    {
+      "time": "09:30",
+      "activity": "Arrive at Tobu Nikko Station"
+    },
+    {
+      "time": "10:30",
+      "activity": "Toshogu Shrine Tour"
+    },
+    {
+      "time": "13:30",
+      "activity": "Bus to Lake Chuzenji"
+    },
+    {
+      "time": "15:00",
+      "activity": "Kegon Falls"
+    }
+  ],
+  "restaurants": [
+    "Nikko Yuba Maki",
+    "Meiji no Yakata"
+  ],
+  "cafes": [
+    "Hongu Cafe",
+    "Nikko Coffee"
+  ],
+  "notes": "Traffic jams to Okunikko are severe in October.",
+  "itineraries": [
+    {
+      "name": "Plan A: World Heritage Sanctuaries",
+      "description": "A focused tour of the elaborately decorated shrines and temples.",
+      "steps": [
+        {
+          "time": "09:30",
+          "activity": "Arrive in Nikko. Photograph the iconic red Shinkyo Bridge."
+        },
+        {
+          "time": "10:30",
+          "activity": "Explore Toshogu Shrine, the incredibly ornate mausoleum of Tokugawa Ieyasu."
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch featuring local Nikko Yuba (tofu skin) delicacies."
+        },
+        {
+          "time": "14:30",
+          "activity": "Visit Rinno-ji Temple and the quiet Futarasan Shrine."
+        },
+        {
+          "time": "16:30",
+          "activity": "Stroll along the Kanmangafuchi Abyss to see the row of stone Jizo statues."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Okunikko Nature Escape",
+      "description": "Skip the shrines and head higher up the mountains for waterfalls and lakes.",
+      "steps": [
+        {
+          "time": "09:00",
+          "activity": "Take the bus up the winding Irohazaka Route to Okunikko."
+        },
+        {
+          "time": "10:30",
+          "activity": "Ride the elevator down to the base of Kegon Falls, one of Japan's top 3 waterfalls."
+        },
+        {
+          "time": "12:00",
+          "activity": "Lunch overlooking the beautiful Lake Chuzenji."
+        },
+        {
+          "time": "13:30",
+          "activity": "Hike the wooden boardwalks of the Senjogahara Marshland."
+        },
+        {
+          "time": "16:00",
+          "activity": "Soak your feet in the public footbaths at Yumoto Onsen before returning."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 36.7197576,
+    "lng": 139.698139
+  },
+  "budgetBreakdown": {
+    "transport": 5000,
+    "tickets": 3000,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 8.5,
+    "rainFriendly": 3,
+    "walkingIntensity": 12
+  },
+  "image": "https://loremflickr.com/1000/800/japan,nikko/all?lock=1003",
+  "transportOptions": {
+    "train": 120,
+    "car": 130
+  }
+}

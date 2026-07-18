@@ -1,0 +1,149 @@
+{
+  "id": "boso-peninsula",
+  "name": "Boso Peninsula",
+  "prefecture": "Chiba",
+  "region": "Kanto",
+  "categories": [
+    "Coast",
+    "Nature",
+    "Drive"
+  ],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/960px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
+  "gallery": [],
+  "description": "Scenic coastal drives, fresh seafood, and nature spots perfect for a day trip by car.",
+  "totalTripHours": 12,
+  "budgetMin": 12000,
+  "budgetRecommended": 15000,
+  "budgetMax": 20000,
+  "walkingMin": 5000,
+  "walkingSunMin": 3000,
+  "walkingShadeMin": 2000,
+  "indoorPercent": 20,
+  "ratings": {
+    "overall": 9.7,
+    "couple": 10,
+    "summer": 9.3,
+    "winter": 7,
+    "rain": 4,
+    "food": 9.5,
+    "photography": 10,
+    "relaxation": 9,
+    "value": 9,
+    "uniqueness": 8
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 10,
+    "summer": 8,
+    "autumn": 10,
+    "winter": 5
+  },
+  "bestMonths": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
+  ],
+  "reservation": "Not required",
+  "parking": "Plenty of parking",
+  "highlights": [
+    "Coastal Drive",
+    "Seafood",
+    "Nokogiriyama"
+  ],
+  "tags": [
+    "Road Trip",
+    "Ocean"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "Boso Peninsula Traditional Dining",
+    "Local Chiba Specialty Restaurant",
+    "The Boso Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Boso Peninsula",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Boso Peninsula. Known for its road trip and ocean vibes, it offers a great escape with an overall score of 9.7.",
+  "itineraries": [
+    {
+      "name": "Plan A: Mountain & Buddha",
+      "description": "A hiking and cultural adventure on Mt. Nokogiri.",
+      "steps": [
+        {
+          "time": "09:30",
+          "activity": "Arrive at Hamakanaya and take the Mt. Nokogiri Ropeway up the mountain."
+        },
+        {
+          "time": "10:30",
+          "activity": "Hike to the Jigoku Nozoki (Hell's Peek) viewpoint."
+        },
+        {
+          "time": "12:00",
+          "activity": "Descend into the quarry to see the massive Nihon-ji Daibutsu (Great Buddha)."
+        },
+        {
+          "time": "14:00",
+          "activity": "Late lunch of fresh caught seafood near the ferry terminal."
+        },
+        {
+          "time": "15:30",
+          "activity": "Relax at the Baya-no-yu oceanfront hot spring."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Coastline Road Trip",
+      "description": "Best done by car. Exploring the scenic drives of Chiba.",
+      "steps": [
+        {
+          "time": "09:00",
+          "activity": "Drive the Tokyo Bay Aqua-Line and stop at Umihotaru PA."
+        },
+        {
+          "time": "11:00",
+          "activity": "Visit Mother Farm to see the animals and flower fields."
+        },
+        {
+          "time": "13:30",
+          "activity": "Drive down to Katsuura or Kamogawa for an incredible seafood lunch."
+        },
+        {
+          "time": "15:00",
+          "activity": "Explore the Kamogawa Sea World or take a coastal drive to the lighthouse."
+        },
+        {
+          "time": "17:30",
+          "activity": "Watch the sunset over the Pacific Ocean."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 34.900405,
+    "lng": 139.8880854
+  },
+  "budgetBreakdown": {
+    "transport": 7000,
+    "tickets": 0,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 9.3,
+    "rainFriendly": 2,
+    "walkingIntensity": 5
+  },
+  "image": "https://loremflickr.com/1000/800/japan,boso/all?lock=1006",
+  "transportOptions": {
+    "car": 90
+  }
+}

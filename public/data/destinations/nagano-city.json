@@ -1,0 +1,106 @@
+{
+  "id": "nagano-city",
+  "name": "Nagano & Snow Monkeys",
+  "region": "Chubu",
+  "categories": [
+    "City",
+    "Shrine",
+    "History"
+  ],
+  "tags": [
+    "Zenkoji",
+    "Olympics"
+  ],
+  "budgetRecommended": 9000,
+  "ratings": {
+    "overall": 8.2,
+    "photography": 8,
+    "food": 8.5,
+    "summer": 7.5,
+    "couple": 8,
+    "winter": 7,
+    "rain": 6,
+    "relaxation": 8,
+    "value": 8,
+    "uniqueness": 8
+  },
+  "indoorPercent": 50,
+  "coordinates": {
+    "lat": 36.7,
+    "lng": 138.3
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg"
+  ],
+  "prefecture": "Shizuoka",
+  "description": "Discover Nagano & Snow Monkeys, a prominent destination in Shizuoka. With its rich mix of zenkoji, olympics, it's a highly recommended spot for a 8-hour getaway.",
+  "highlights": [
+    "Explore top-rated city locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "budgetMin": 6000,
+  "budgetMax": 14000,
+  "budgetBreakdown": {
+    "transport": 3600,
+    "tickets": 1800,
+    "food": 2700,
+    "cafe": 900
+  },
+  "totalTripHours": 8,
+  "walkingMin": 10000,
+  "walkingSunMin": 4000,
+  "walkingShadeMin": 6000,
+  "comfort": {
+    "heatTolerance": 9,
+    "rainFriendly": 9,
+    "walkingIntensity": 5
+  },
+  "transportOptions": {
+    "train": 120,
+    "car": 180,
+    "shinkansen": 72
+  },
+  "restaurants": [
+    "Nagano Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Nagano Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Nagano",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Nagano & Snow Monkeys. Known for its zenkoji and olympics vibes, it offers a great escape with an overall score of 8.2.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Nagano & Snow Monkeys in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ]
+}

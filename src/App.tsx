@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import { TripStoreProvider } from "./hooks/useTripStore";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Home from "./pages/Home";
-import Destinations from "./pages/Destinations";
-import Favorites from "./pages/Favorites";
+import { TripStoreProvider } from "./shared/hooks/useTripStore";
+import Navbar from "./shared/components/layout/Navbar";
+import Footer from "./shared/components/layout/Footer";
+import Home from "./features/home/Home";
+import Destinations from "./features/destinations/Destinations";
+import Favorites from "./features/favorites/Favorites";
 
-const DestinationDetails = lazy(() => import("./pages/DestinationDetails"));
-const Compare = lazy(() => import("./pages/Compare"));
-const JapanMap = lazy(() => import("./pages/JapanMap"));
+const DestinationDetails = lazy(() => import("./features/destinations/DestinationDetails"));
+const Compare = lazy(() => import("./features/compare/Compare"));
+const JapanMap = lazy(() => import("./features/map/JapanMap"));
 
 function PageLoader() {
   return (

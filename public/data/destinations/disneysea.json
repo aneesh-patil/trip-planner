@@ -1,0 +1,145 @@
+{
+  "id": "disneysea",
+  "name": "DisneySea",
+  "prefecture": "Chiba",
+  "region": "Kanto",
+  "categories": [
+    "Theme Park"
+  ],
+  "heroImage": "/images/disneysea.jpg",
+  "gallery": [],
+  "description": "Unique ocean-themed Disney park with spectacular shows, rides, and adult-friendly atmosphere.",
+  "totalTripHours": 13,
+  "budgetMin": 26800,
+  "budgetRecommended": 29800,
+  "budgetMax": 34800,
+  "walkingMin": 20000,
+  "walkingSunMin": 15000,
+  "walkingShadeMin": 5000,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 9.1,
+    "couple": 10,
+    "summer": 6,
+    "winter": 7,
+    "rain": 5,
+    "food": 8.5,
+    "photography": 10,
+    "relaxation": 5,
+    "value": 8,
+    "uniqueness": 10
+  },
+  "crowd": {
+    "weekday": 9,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 10,
+    "summer": 5,
+    "autumn": 10,
+    "winter": 8
+  },
+  "bestMonths": [
+    4,
+    5,
+    9,
+    10,
+    11
+  ],
+  "reservation": "Required",
+  "parking": "Expensive",
+  "highlights": [
+    "DisneySea Transit Steamer",
+    "Soaring"
+  ],
+  "tags": [
+    "Theme Park",
+    "Walk-heavy"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "DisneySea Traditional Dining",
+    "Local Chiba Specialty Restaurant",
+    "The DisneySea Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de DisneySea",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "Avoid hottest days",
+  "itineraries": [
+    {
+      "name": "Plan A: The Adrenaline Rush",
+      "description": "Optimize your day to hit the biggest thrill rides.",
+      "steps": [
+        {
+          "time": "08:30",
+          "activity": "Arrive at rope drop. Head straight to Journey to the Center of the Earth."
+        },
+        {
+          "time": "10:00",
+          "activity": "Ride Indiana Jones Adventure and Raging Spirits."
+        },
+        {
+          "time": "12:30",
+          "activity": "Grab a quick bite (smoked turkey leg or spicy chicken) while walking."
+        },
+        {
+          "time": "14:00",
+          "activity": "Use Premier Access for Tower of Terror or Soaring: Fantastic Flight."
+        },
+        {
+          "time": "19:30",
+          "activity": "Secure a spot for the nighttime spectacular show on the Mediterranean Harbor."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Romantic & Immersive",
+      "description": "A slow-paced day focusing on atmosphere, shows, and fine dining.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Arrive and take a relaxing ride on the Venetian Gondolas."
+        },
+        {
+          "time": "11:30",
+          "activity": "Watch the incredible Big Band Beat jazz show."
+        },
+        {
+          "time": "13:00",
+          "activity": "Enjoy a sit-down lunch at the Magellan's fine dining restaurant."
+        },
+        {
+          "time": "15:00",
+          "activity": "Explore the interactive Fortress Explorations and walk through Arabian Coast."
+        },
+        {
+          "time": "18:00",
+          "activity": "Ride the Transit Steamer Line at sunset for beautiful views."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.6273011,
+    "lng": 139.8879707
+  },
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 18800,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 6,
+    "rainFriendly": 4,
+    "walkingIntensity": 20
+  },
+  "image": "https://loremflickr.com/1000/800/japan,disneysea/all?lock=1011",
+  "transportOptions": {
+    "train": 90
+  }
+}

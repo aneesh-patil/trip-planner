@@ -1,0 +1,121 @@
+{
+  "id": "edogawa-ward",
+  "name": "Edogawa",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": [
+    "Nature",
+    "Sea",
+    "Parks"
+  ],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kasai_Rinkai_Park_2011--1.JPG/960px-Kasai_Rinkai_Park_2011--1.JPG",
+  "gallery": [],
+  "description": "Known for Kasai Rinkai Park on Tokyo Bay, featuring a giant Ferris wheel, aquarium, and peaceful riverbank cycling.",
+  "totalTripHours": 6,
+  "budgetMin": 2000,
+  "budgetRecommended": 5000,
+  "budgetMax": 10000,
+  "walkingMin": 10000,
+  "walkingSunMin": 8000,
+  "walkingShadeMin": 2000,
+  "indoorPercent": 30,
+  "ratings": {
+    "overall": 8.2,
+    "couple": 8.5,
+    "summer": 8,
+    "winter": 7,
+    "rain": 6,
+    "food": 7,
+    "photography": 8.5,
+    "relaxation": 9.5,
+    "value": 9.5,
+    "uniqueness": 7.5
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 7
+  },
+  "bestMonths": [
+    4,
+    5,
+    9,
+    10
+  ],
+  "reservation": "Not required.",
+  "parking": "Ample parking at Kasai Rinkai Park.",
+  "highlights": [
+    "Kasai Rinkai Park",
+    "Tokyo Sea Life Park",
+    "Diamond and Flower Ferris Wheel"
+  ],
+  "tags": [
+    "Family",
+    "Picnic",
+    "Ocean"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "Park Cafes"
+  ],
+  "cafes": [
+    "Café de Edogawa",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "Great sunset views of Mt. Fuji and Tokyo Disneyland from the park.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Edogawa in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary nature attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.7066318,
+    "lng": 139.868677
+  },
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 0,
+    "food": 2800,
+    "cafe": 1200
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 3,
+    "walkingIntensity": 10
+  },
+  "image": "https://loremflickr.com/1000/800/japan,edogawa/all?lock=1028",
+  "transportOptions": {
+    "train": 60,
+    "car": 50
+  }
+}

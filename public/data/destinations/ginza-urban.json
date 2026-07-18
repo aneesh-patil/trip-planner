@@ -1,0 +1,125 @@
+{
+  "id": "ginza-urban",
+  "name": "Ginza",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": [
+    "City",
+    "Shopping",
+    "Art",
+    "History"
+  ],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ginza-WAKO_at_night.jpg/960px-Ginza-WAKO_at_night.jpg",
+  "gallery": [],
+  "description": "Tokyo's most prestigious shopping district, blending high-end fashion, traditional crafts, and world-class dining.",
+  "totalTripHours": 6,
+  "budgetMin": 8000,
+  "budgetRecommended": 11000,
+  "budgetMax": 16000,
+  "walkingMin": 7000,
+  "walkingSunMin": 3000,
+  "walkingShadeMin": 4000,
+  "indoorPercent": 80,
+  "ratings": {
+    "overall": 9,
+    "couple": 9,
+    "summer": 8.5,
+    "winter": 9,
+    "rain": 9,
+    "food": 10,
+    "photography": 8.5,
+    "relaxation": 7,
+    "value": 7,
+    "uniqueness": 8.5
+  },
+  "crowd": {
+    "weekday": 7,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reservation": "Recommended for high-end dining.",
+  "parking": "Expensive.",
+  "highlights": [
+    "Itoya Stationery Store",
+    "Seiko Museum",
+    "Ginza Six",
+    "Pedestrian Paradise (Weekends)"
+  ],
+  "tags": [
+    "Luxury",
+    "Shopping",
+    "Architecture"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "Kyubey Sushi",
+    "Ginza Ukai-tei"
+  ],
+  "cafes": [
+    "Cafe de L'Ambre",
+    "Shiseido Parlour"
+  ],
+  "notes": "Main street is closed to traffic on weekends (Pedestrian Paradise).",
+  "itineraries": [
+    {
+      "name": "Plan A: Cultured Urban Stroll",
+      "description": "Discover high-quality Japanese craftsmanship, from precision watches to perfect paper.",
+      "steps": [
+        {
+          "time": "11:00",
+          "activity": "Explore the Seiko Museum Ginza to learn about the history of Japanese timepieces."
+        },
+        {
+          "time": "12:30",
+          "activity": "Lunch at a traditional tempura or sushi restaurant."
+        },
+        {
+          "time": "14:00",
+          "activity": "Spend an hour wandering the 12 floors of Itoya, the ultimate stationery store."
+        },
+        {
+          "time": "15:30",
+          "activity": "Relax at a classic kissaten (retro cafe) with hand-drip coffee."
+        },
+        {
+          "time": "16:30",
+          "activity": "Walk the Chuo-dori pedestrian paradise (weekends only)."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.6720135,
+    "lng": 139.7647202
+  },
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 2000,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "comfort": {
+    "heatTolerance": 8.5,
+    "rainFriendly": 8,
+    "walkingIntensity": 7
+  },
+  "image": "https://loremflickr.com/1000/800/japan,ginza/all?lock=1019",
+  "transportOptions": {
+    "train": 40
+  }
+}

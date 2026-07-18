@@ -1,0 +1,106 @@
+{
+  "id": "okuhida",
+  "name": "Okuhida",
+  "region": "Chubu",
+  "categories": [
+    "Hot Spring",
+    "Mountain",
+    "Nature"
+  ],
+  "tags": [
+    "Onsen",
+    "Ropeway",
+    "Alps"
+  ],
+  "budgetRecommended": 18000,
+  "ratings": {
+    "overall": 8.9,
+    "photography": 9.2,
+    "food": 7.5,
+    "summer": 9.5,
+    "couple": 8,
+    "winter": 7,
+    "rain": 6,
+    "relaxation": 8,
+    "value": 8,
+    "uniqueness": 8
+  },
+  "indoorPercent": 20,
+  "coordinates": {
+    "lat": 36.2667,
+    "lng": 137.55
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg"
+  ],
+  "prefecture": "Shizuoka",
+  "description": "Discover Okuhida, a prominent destination in Shizuoka. With its rich mix of onsen, ropeway, alps, it's a highly recommended spot for a 8-hour getaway.",
+  "highlights": [
+    "Explore top-rated hot spring locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "budgetMin": 15000,
+  "budgetMax": 23000,
+  "budgetBreakdown": {
+    "transport": 7200,
+    "tickets": 3600,
+    "food": 5400,
+    "cafe": 1800
+  },
+  "totalTripHours": 8,
+  "walkingMin": 10000,
+  "walkingSunMin": 4000,
+  "walkingShadeMin": 6000,
+  "comfort": {
+    "heatTolerance": 5,
+    "rainFriendly": 4,
+    "walkingIntensity": 5
+  },
+  "transportOptions": {
+    "car": 280,
+    "bus": 310
+  },
+  "restaurants": [
+    "Okuhida Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Okuhida Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Okuhida",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Okuhida. Known for its onsen and ropeway vibes, it offers a great escape with an overall score of 8.9.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Okuhida in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary hot spring attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ]
+}

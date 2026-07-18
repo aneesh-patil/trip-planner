@@ -1,0 +1,126 @@
+{
+  "id": "ikebukuro-toshima",
+  "name": "Ikebukuro (Toshima)",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": [
+    "City",
+    "Shopping",
+    "Theme Park"
+  ],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/960px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
+  "gallery": [],
+  "description": "A massive commercial district in northwestern Tokyo with huge department stores, anime culture, and Sunshine City.",
+  "totalTripHours": 8,
+  "budgetMin": 9000,
+  "budgetRecommended": 12000,
+  "budgetMax": 17000,
+  "walkingMin": 8000,
+  "walkingSunMin": 2000,
+  "walkingShadeMin": 6000,
+  "indoorPercent": 80,
+  "ratings": {
+    "overall": 8.5,
+    "couple": 8.5,
+    "summer": 9,
+    "winter": 9,
+    "rain": 9.5,
+    "food": 8.5,
+    "photography": 7.5,
+    "relaxation": 7,
+    "value": 8.5,
+    "uniqueness": 8
+  },
+  "crowd": {
+    "weekday": 8,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 8,
+    "winter": 9
+  },
+  "bestMonths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reservation": "Not required.",
+  "parking": "Sunshine City has parking.",
+  "highlights": [
+    "Sunshine City Aquarium",
+    "Pokemon Center Mega Tokyo",
+    "Otome Road"
+  ],
+  "tags": [
+    "Indoor",
+    "Shopping",
+    "Anime"
+  ],
+  "itinerary": [],
+  "restaurants": [
+    "Mutekiya Ramen"
+  ],
+  "cafes": [
+    "Milky Way Cafe"
+  ],
+  "notes": "Excellent choice for rainy days due to Sunshine City and massive underground networks.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Ikebukuro (Toshima) in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "coordinates": {
+    "lat": 35.7288374,
+    "lng": 139.7093019
+  },
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 8000,
+    "food": 2100,
+    "cafe": 900
+  },
+  "comfort": {
+    "heatTolerance": 9,
+    "rainFriendly": 8,
+    "walkingIntensity": 8
+  },
+  "image": "https://loremflickr.com/1000/800/japan,ikebukuro/all?lock=1024",
+  "transportOptions": {
+    "train": 50
+  }
+}
