@@ -285,7 +285,7 @@ export default function Home() {
                 {/* Trip Type */}
                 <div className="space-y-3">
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">What's the vibe?</label>
-                  <Select value={tripType} onValueChange={(val) => { if (val) setTripType(val); }}>
+                  <Select value={tripType} onValueChange={(val: string | null) => { if (val) setTripType(val); }}>
                     <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
                       {tripType === "any" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Anything goes</div>}
                       {tripType === "themepark" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-pink-500" /> Theme Parks</div>}
@@ -332,7 +332,7 @@ export default function Home() {
                 {/* Weather */}
                 <div className="space-y-3">
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">Weather condition?</label>
-                  <Select value={weather} onValueChange={(val) => { if (val) setWeather(val); }}>
+                  <Select value={weather} onValueChange={(val: string | null) => { if (val) setWeather(val); }}>
                     <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
                       {weather === "any" && <div className="flex items-center"><Sun className="w-5 h-5 mr-3 text-amber-500" /> Perfect Weather</div>}
                       {weather === "rainy" && <div className="flex items-center"><CloudRain className="w-5 h-5 mr-3 text-blue-500" /> Looks like Rain</div>}
@@ -359,7 +359,7 @@ export default function Home() {
                 {/* Transport */}
                 <div className="space-y-3">
                   <label className="text-sm font-bold text-slate-700 dark:text-slate-300">How are you getting there?</label>
-                  <Select value={transport} onValueChange={(val) => { if (val) setTransport(val); }}>
+                  <Select value={transport} onValueChange={(val: string | null) => { if (val) setTransport(val); }}>
                     <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
                       {transport === "any" && <div className="flex items-center"><MapIcon className="w-5 h-5 mr-3 text-slate-400" /> No preference</div>}
                       {transport === "train" && <div className="flex items-center"><Train className="w-5 h-5 mr-3 text-emerald-600" /> Train Only</div>}

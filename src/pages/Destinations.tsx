@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import Fuse from "fuse.js";
+
 import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
 import DestinationCard from "@/components/destinations/DestinationCard";
@@ -18,19 +18,22 @@ export default function Destinations() {
   const [maxWalking, setMaxWalking] = useState(25000);
   const [viewMode, setViewMode] = useState<"grid" | "map">("grid");
 
-  // Setup Fuse.js for fuzzy searching
-  const fuse = useMemo(() => new Fuse(allDestinations, {
-    keys: ["name", "prefecture", "region", "tags", "categories", "highlights"],
-    threshold: 0.3,
-  }), [allDestinations]);
+  const query = searchQuery.toLowerCase().trim();
 
   // Filter and sort destinations
   const filteredAndSortedDestinations = useMemo(() => {
     let result = allDestinations;
 
     // 1. Search
-    if (searchQuery.trim()) {
-      result = fuse.search(searchQuery).map(res => res.item);
+    if (query) {
+      result = result.filter(dest => 
+        dest.name.toLowerCase().includes(query) ||
+        dest.prefecture.toLowerCase().includes(query) ||
+        dest.region.toLowerCase().includes(query) ||
+        dest.tags.some(t => t.toLowerCase().includes(query)) ||
+        dest.categories.some(c => c.toLowerCase().includes(query)) ||
+        dest.highlights.some(h => h.toLowerCase().includes(query))
+      );
     }
 
     // 2. Filter by budget
@@ -81,7 +84,7 @@ export default function Destinations() {
     });
 
     return result;
-  }, [allDestinations, searchQuery, maxBudget, sortBy, transportMode, weather, maxWalking, fuse]);
+  }, [allDestinations, query, maxBudget, sortBy, transportMode, weather, maxWalking]);
 
   const resetFilters = () => {
     setSearchQuery("");

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext } from 'react';
 import type { ReactNode } from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
@@ -81,31 +81,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  // Cloud Sync Logic
-  const [isCloudSyncing, setIsCloudSyncing] = useState(true);
 
-  // 1. Initial Load from Cloud
-  useEffect(() => {
-    fetch("/api/sync")
-      .then(res => res.json())
-      .then(data => {
-        if (data.favorites && Array.isArray(data.favorites)) setFavorites(data.favorites);
-        if (data.visited && Array.isArray(data.visited)) setVisited(data.visited);
-      })
-      .catch(err => console.error("Cloud sync failed (are you running the worker?)", err))
-      .finally(() => setIsCloudSyncing(false));
-  }, []);
-
-  // 2. Save to Cloud on Change
-  useEffect(() => {
-    if (isCloudSyncing) return; // Don't push during initial load
-    
-    fetch("/api/sync", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ favorites, visited })
-    }).catch(err => console.error("Failed to push to cloud", err));
-  }, [favorites, visited, isCloudSyncing]);
 
   return (
     <TripStoreContext.Provider value={{

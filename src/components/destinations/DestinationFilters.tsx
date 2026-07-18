@@ -57,7 +57,7 @@ export default function DestinationFilters({
         {/* Sort By */}
         <div className="space-y-3">
           <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">Sort By</label>
-          <Select value={sortBy} onValueChange={(val) => { if (val) setSortBy(val as string); }}>
+          <Select value={sortBy} onValueChange={(val: string | null) => { if (val) setSortBy(val); }}>
             <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
               {sortBy === "overall" && <div className="flex items-center"><Star className="w-5 h-5 mr-3 text-amber-500" /> Highest Rated</div>}
               {sortBy === "travelTime" && <div className="flex items-center"><Clock className="w-5 h-5 mr-3 text-blue-500" /> Fastest Travel</div>}
@@ -92,7 +92,7 @@ export default function DestinationFilters({
         {/* Transport */}
         <div className="space-y-3">
           <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">Transport</label>
-          <Select value={transportMode} onValueChange={(val) => { if (val) setTransportMode(val as string); }}>
+          <Select value={transportMode} onValueChange={(val: string | null) => { if (val) setTransportMode(val); }}>
             <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
               {transportMode === "all" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Any Transport</div>}
               {transportMode === "train" && <div className="flex items-center"><Train className="w-5 h-5 mr-3 text-blue-500" /> Train Accessible</div>}
@@ -123,7 +123,7 @@ export default function DestinationFilters({
         {/* Weather */}
         <div className="space-y-3">
           <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">Weather/Season</label>
-          <Select value={weather} onValueChange={(val) => { if (val) setWeather(val as string); }}>
+          <Select value={weather} onValueChange={(val: string | null) => { if (val) setWeather(val); }}>
             <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
               {weather === "all" && <div className="flex items-center"><Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Any Weather</div>}
               {weather === "indoor" && <div className="flex items-center"><CloudRain className="w-5 h-5 mr-3 text-blue-400" /> Rainy Day (Indoor)</div>}
