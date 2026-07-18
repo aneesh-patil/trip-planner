@@ -13,8 +13,8 @@
     "gallery": [],
     "description": "A popular hot spring resort area featuring views of Mt. Fuji, art museums, and a scenic lake.",
     "totalTripHours": 24,
-    "budgetMin": 12000,
-    "budgetRecommended": 14000,
+    "budgetMin": 11000,
+    "budgetRecommended": 13000,
     "budgetMax": 16000,
     "walkingMin": 4000,
     "walkingSunMin": 2000,
@@ -152,8 +152,8 @@
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 2000,
-      "food": 6300,
-      "cafe": 2700
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 7,
@@ -179,9 +179,9 @@
     "gallery": [],
     "description": "Coastal town rich in history, known for the Great Buddha, numerous temples, and surfing beaches.",
     "totalTripHours": 8,
-    "budgetMin": 3000,
+    "budgetMin": 6000,
     "budgetRecommended": 8000,
-    "budgetMax": 20000,
+    "budgetMax": 11000,
     "walkingMin": 10000,
     "walkingSunMin": 7000,
     "walkingShadeMin": 3000,
@@ -345,9 +345,9 @@
     "gallery": [],
     "description": "Known as 'Little Edo', featuring preserved clay-walled warehouse district and a charming candy alley.",
     "totalTripHours": 6,
-    "budgetMin": 8000,
-    "budgetRecommended": 10000,
-    "budgetMax": 12000,
+    "budgetMin": 7900,
+    "budgetRecommended": 9900,
+    "budgetMax": 12900,
     "walkingMin": 8000,
     "walkingSunMin": 6000,
     "walkingShadeMin": 2000,
@@ -484,7 +484,7 @@
       "transport": 3000,
       "tickets": 0,
       "food": 4900,
-      "cafe": 2100
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 5,
@@ -510,9 +510,9 @@
     "gallery": [],
     "description": "World Heritage site famous for Toshogu Shrine and stunning autumn colors around Lake Chuzenji.",
     "totalTripHours": 36,
-    "budgetMin": 15000,
-    "budgetRecommended": 40000,
-    "budgetMax": 90000,
+    "budgetMin": 11000,
+    "budgetRecommended": 13000,
+    "budgetMax": 16000,
     "walkingMin": 12000,
     "walkingSunMin": 5000,
     "walkingShadeMin": 7000,
@@ -647,8 +647,8 @@
     "budgetBreakdown": {
       "transport": 5000,
       "tickets": 0,
-      "food": 24500,
-      "cafe": 10500
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 8.5,
@@ -675,9 +675,9 @@
     "gallery": [],
     "description": "Vibrant port city offering romantic night views, large Chinatown, and modern shopping complexes.",
     "totalTripHours": 8,
-    "budgetMin": 5000,
-    "budgetRecommended": 12000,
-    "budgetMax": 30000,
+    "budgetMin": 9000,
+    "budgetRecommended": 11000,
+    "budgetMax": 14000,
     "walkingMin": 8000,
     "walkingSunMin": 4000,
     "walkingShadeMin": 4000,
@@ -816,8 +816,8 @@
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 0,
-      "food": 6300,
-      "cafe": 2700
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 7.5,
@@ -843,9 +843,9 @@
     "gallery": [],
     "description": "A retro-chic seaside hot spring town famous for its beaches, fresh seafood, and frequent fireworks.",
     "totalTripHours": 24,
-    "budgetMin": 14000,
-    "budgetRecommended": 15500,
-    "budgetMax": 17000,
+    "budgetMin": 10500,
+    "budgetRecommended": 12500,
+    "budgetMax": 15500,
     "walkingMin": 5000,
     "walkingSunMin": 3000,
     "walkingShadeMin": 2000,
@@ -980,8 +980,8 @@
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 1500,
-      "food": 7700,
-      "cafe": 3300
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.5,
@@ -1007,9 +1007,9 @@
     "gallery": [],
     "description": "Scenic coastal drives, fresh seafood, and nature spots perfect for a day trip by car.",
     "totalTripHours": 12,
-    "budgetMin": 18000,
-    "budgetRecommended": 20000,
-    "budgetMax": 22000,
+    "budgetMin": 13000,
+    "budgetRecommended": 15000,
+    "budgetMax": 18000,
     "walkingMin": 5000,
     "walkingSunMin": 3000,
     "walkingShadeMin": 2000,
@@ -1131,8 +1131,8 @@
     "budgetBreakdown": {
       "transport": 7000,
       "tickets": 0,
-      "food": 9100,
-      "cafe": 3900
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.3,
@@ -1157,9 +1157,9 @@
     "gallery": [],
     "description": "Historic mountain city famous for Matsumoto Castle, one of Japan's original historic castles.",
     "totalTripHours": 12,
-    "budgetMin": 20000,
-    "budgetRecommended": 22000,
-    "budgetMax": 24000,
+    "budgetMin": 11000,
+    "budgetRecommended": 13000,
+    "budgetMax": 16000,
     "walkingMin": 8000,
     "walkingSunMin": 4000,
     "walkingShadeMin": 4000,
@@ -1279,8 +1279,8 @@
     "budgetBreakdown": {
       "transport": 5000,
       "tickets": 0,
-      "food": 11900,
-      "cafe": 5100
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.8,
@@ -1305,9 +1305,9 @@
     "gallery": [],
     "description": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter. A magical indoor experience.",
     "totalTripHours": 8,
-    "budgetMin": 14000,
-    "budgetRecommended": 16000,
-    "budgetMax": 18000,
+    "budgetMin": 13900,
+    "budgetRecommended": 15900,
+    "budgetMax": 18900,
     "walkingMin": 6000,
     "walkingSunMin": 500,
     "walkingShadeMin": 5500,
@@ -1435,7 +1435,7 @@
       "transport": 1000,
       "tickets": 8000,
       "food": 4900,
-      "cafe": 2100
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.8,
@@ -1461,9 +1461,9 @@
     "gallery": [],
     "description": "An upscale mountain resort town famous for summer retreats, outlet shopping, and nature.",
     "totalTripHours": 12,
-    "budgetMin": 18000,
-    "budgetRecommended": 20000,
-    "budgetMax": 22000,
+    "budgetMin": 9000,
+    "budgetRecommended": 11000,
+    "budgetMax": 14000,
     "walkingMin": 8000,
     "walkingSunMin": 2000,
     "walkingShadeMin": 6000,
@@ -1583,8 +1583,8 @@
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 0,
-      "food": 11900,
-      "cafe": 5100
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.7,
@@ -1611,8 +1611,8 @@
     "gallery": [],
     "description": "Famous for its massive underground Oya stone quarry and delicious local gyoza.",
     "totalTripHours": 10,
-    "budgetMin": 10000,
-    "budgetRecommended": 12000,
+    "budgetMin": 9000,
+    "budgetRecommended": 11000,
     "budgetMax": 14000,
     "walkingMin": 5000,
     "walkingSunMin": 2000,
@@ -1732,8 +1732,8 @@
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 0,
-      "food": 6300,
-      "cafe": 2700
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.6,
@@ -1758,9 +1758,9 @@
     "gallery": [],
     "description": "Unique ocean-themed Disney park with spectacular shows, rides, and adult-friendly atmosphere.",
     "totalTripHours": 13,
-    "budgetMin": 24000,
-    "budgetRecommended": 28000,
-    "budgetMax": 32000,
+    "budgetMin": 17000,
+    "budgetRecommended": 19000,
+    "budgetMax": 22000,
     "walkingMin": 20000,
     "walkingSunMin": 15000,
     "walkingShadeMin": 5000,
@@ -1880,8 +1880,8 @@
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 8000,
-      "food": 11900,
-      "cafe": 5100
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 6,
@@ -1906,9 +1906,9 @@
     "gallery": [],
     "description": "A beautiful twin-peaked mountain famous for its cable car, shrines, and sweeping views of the Kanto plain.",
     "totalTripHours": 11,
-    "budgetMin": 14000,
-    "budgetRecommended": 16000,
-    "budgetMax": 18000,
+    "budgetMin": 11000,
+    "budgetRecommended": 13000,
+    "budgetMax": 16000,
     "walkingMin": 10000,
     "walkingSunMin": 5000,
     "walkingShadeMin": 5000,
@@ -2027,8 +2027,8 @@
     "budgetBreakdown": {
       "transport": 5000,
       "tickets": 0,
-      "food": 7700,
-      "cafe": 3300
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 8,
@@ -2054,9 +2054,9 @@
     "gallery": [],
     "description": "Massive indoor museum dedicated to Japan's railway history, featuring real historic trains.",
     "totalTripHours": 8,
-    "budgetMin": 8000,
-    "budgetRecommended": 10000,
-    "budgetMax": 12000,
+    "budgetMin": 7900,
+    "budgetRecommended": 9900,
+    "budgetMax": 12900,
     "walkingMin": 4000,
     "walkingSunMin": 500,
     "walkingShadeMin": 3500,
@@ -2184,7 +2184,7 @@
       "transport": 3000,
       "tickets": 0,
       "food": 4900,
-      "cafe": 2100
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.5,
@@ -2209,9 +2209,9 @@
     "gallery": [],
     "description": "Sega's massive indoor amusement park with VR attractions, roller coasters, and arcade games.",
     "totalTripHours": 8,
-    "budgetMin": 12000,
-    "budgetRecommended": 14000,
-    "budgetMax": 16000,
+    "budgetMin": 7000,
+    "budgetRecommended": 9000,
+    "budgetMax": 12000,
     "walkingMin": 4000,
     "walkingSunMin": 0,
     "walkingShadeMin": 4000,
@@ -2338,8 +2338,8 @@
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
-      "food": 9100,
-      "cafe": 3900
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.3,
@@ -2363,9 +2363,9 @@
     "gallery": [],
     "description": "The classic Disney theme park experience with iconic parades and attractions.",
     "totalTripHours": 12,
-    "budgetMin": 15000,
-    "budgetRecommended": 20000,
-    "budgetMax": 30000,
+    "budgetMin": 17000,
+    "budgetRecommended": 19000,
+    "budgetMax": 22000,
     "walkingMin": 12000,
     "walkingSunMin": 6000,
     "walkingShadeMin": 6000,
@@ -2461,8 +2461,8 @@
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 8000,
-      "food": 6300,
-      "cafe": 2700
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 8,
@@ -2488,9 +2488,9 @@
     "gallery": [],
     "description": "A whimsical museum dedicated to the art and animation of Studio Ghibli.",
     "totalTripHours": 6,
-    "budgetMin": 5000,
-    "budgetRecommended": 8000,
-    "budgetMax": 12000,
+    "budgetMin": 5900,
+    "budgetRecommended": 7900,
+    "budgetMax": 10900,
     "walkingMin": 5000,
     "walkingSunMin": 1000,
     "walkingShadeMin": 4000,
@@ -2592,7 +2592,7 @@
       "transport": 1000,
       "tickets": 0,
       "food": 4900,
-      "cafe": 2100
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 9.5,
@@ -2616,7 +2616,7 @@
     "gallery": [],
     "description": "A classic amusement park in Tokyo known for thrilling roller coasters and spectacular winter illuminations.",
     "totalTripHours": 8,
-    "budgetMin": 8000,
+    "budgetMin": 10000,
     "budgetRecommended": 12000,
     "budgetMax": 15000,
     "walkingMin": 8000,
@@ -2872,9 +2872,9 @@
     "gallery": [],
     "description": "Tokyo's most prestigious shopping district, blending high-end fashion, traditional crafts, and world-class dining.",
     "totalTripHours": 6,
-    "budgetMin": 10000,
-    "budgetRecommended": 30000,
-    "budgetMax": 80000,
+    "budgetMin": 9000,
+    "budgetRecommended": 11000,
+    "budgetMax": 14000,
     "walkingMin": 7000,
     "walkingSunMin": 3000,
     "walkingShadeMin": 4000,
@@ -2971,8 +2971,8 @@
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 2000,
-      "food": 18900,
-      "cafe": 8100
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 8.5,
@@ -2999,9 +2999,9 @@
     "gallery": [],
     "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
     "totalTripHours": 8,
-    "budgetMin": 5000,
+    "budgetMin": 6000,
     "budgetRecommended": 8000,
-    "budgetMax": 12000,
+    "budgetMax": 11000,
     "walkingMin": 12000,
     "walkingSunMin": 8000,
     "walkingShadeMin": 4000,
@@ -3119,9 +3119,9 @@
     "gallery": [],
     "description": "The epicenter of anime, gaming, and electronics culture in Japan. Bustling with themed cafes and arcades.",
     "totalTripHours": 6,
-    "budgetMin": 5000,
-    "budgetRecommended": 15000,
-    "budgetMax": 50000,
+    "budgetMin": 7000,
+    "budgetRecommended": 9000,
+    "budgetMax": 12000,
     "walkingMin": 8000,
     "walkingSunMin": 4000,
     "walkingShadeMin": 4000,
@@ -3221,8 +3221,8 @@
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
-      "food": 9800,
-      "cafe": 4200
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 7,
@@ -3248,7 +3248,7 @@
     "gallery": [],
     "description": "The primary residence of the Emperor of Japan. Surrounded by moats, stone walls, and beautiful gardens.",
     "totalTripHours": 4,
-    "budgetMin": 1400,
+    "budgetMin": 2000,
     "budgetRecommended": 2000,
     "budgetMax": 5000,
     "walkingMin": 12000,
@@ -3370,9 +3370,9 @@
     "gallery": [],
     "description": "A high-tech entertainment hub on an artificial island in Tokyo Bay, featuring shopping malls, beaches, and a giant Gundam.",
     "totalTripHours": 8,
-    "budgetMin": 5000,
+    "budgetMin": 10000,
     "budgetRecommended": 12000,
-    "budgetMax": 25000,
+    "budgetMax": 15000,
     "walkingMin": 10000,
     "walkingSunMin": 5000,
     "walkingShadeMin": 5000,
@@ -3492,9 +3492,9 @@
     "gallery": [],
     "description": "A massive commercial district in northwestern Tokyo with huge department stores, anime culture, and Sunshine City.",
     "totalTripHours": 8,
-    "budgetMin": 5000,
+    "budgetMin": 10000,
     "budgetRecommended": 12000,
-    "budgetMax": 25000,
+    "budgetMax": 15000,
     "walkingMin": 8000,
     "walkingSunMin": 2000,
     "walkingShadeMin": 6000,
@@ -3621,9 +3621,9 @@
     "gallery": [],
     "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
     "totalTripHours": 8,
-    "budgetMin": 3000,
+    "budgetMin": 6000,
     "budgetRecommended": 8000,
-    "budgetMax": 15000,
+    "budgetMax": 11000,
     "walkingMin": 12000,
     "walkingSunMin": 8000,
     "walkingShadeMin": 4000,
@@ -3741,9 +3741,9 @@
     "gallery": [],
     "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
     "totalTripHours": 8,
-    "budgetMin": 5000,
-    "budgetRecommended": 15000,
-    "budgetMax": 40000,
+    "budgetMin": 7000,
+    "budgetRecommended": 9000,
+    "budgetMax": 12000,
     "walkingMin": 10000,
     "walkingSunMin": 4000,
     "walkingShadeMin": 6000,
@@ -3835,8 +3835,8 @@
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
-      "food": 9800,
-      "cafe": 4200
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 8,
@@ -3861,9 +3861,9 @@
     "gallery": [],
     "description": "Youth culture, trendy fashion, and the iconic Shibuya Scramble Crossing. Constantly evolving with new high-rises like Shibuya Sky.",
     "totalTripHours": 8,
-    "budgetMin": 5000,
-    "budgetRecommended": 15000,
-    "budgetMax": 40000,
+    "budgetMin": 7000,
+    "budgetRecommended": 9000,
+    "budgetMax": 12000,
     "walkingMin": 10000,
     "walkingSunMin": 6000,
     "walkingShadeMin": 4000,
@@ -3956,8 +3956,8 @@
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
-      "food": 9800,
-      "cafe": 4200
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 7.5,
@@ -3983,9 +3983,9 @@
     "gallery": [],
     "description": "Known for Kasai Rinkai Park on Tokyo Bay, featuring a giant Ferris wheel, aquarium, and peaceful riverbank cycling.",
     "totalTripHours": 6,
-    "budgetMin": 2000,
+    "budgetMin": 3000,
     "budgetRecommended": 5000,
-    "budgetMax": 10000,
+    "budgetMax": 8000,
     "walkingMin": 10000,
     "walkingSunMin": 8000,
     "walkingShadeMin": 2000,
@@ -4105,9 +4105,9 @@
     "gallery": [],
     "description": "Tokyo's traditional heart, built around Senso-ji Temple. Nakamise shopping street offers snacks and souvenirs.",
     "totalTripHours": 5,
-    "budgetMin": 3000,
-    "budgetRecommended": 8000,
-    "budgetMax": 15000,
+    "budgetMin": 5900,
+    "budgetRecommended": 7900,
+    "budgetMax": 10900,
     "walkingMin": 7000,
     "walkingSunMin": 5000,
     "walkingShadeMin": 2000,
@@ -4203,7 +4203,7 @@
       "transport": 1000,
       "tickets": 0,
       "food": 4900,
-      "cafe": 2100
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 6.5,
@@ -4229,9 +4229,9 @@
     "gallery": [],
     "description": "An upscale commercial and residential district with excellent dining, high-end hotels, and Hie Shrine.",
     "totalTripHours": 5,
-    "budgetMin": 8000,
-    "budgetRecommended": 20000,
-    "budgetMax": 50000,
+    "budgetMin": 7000,
+    "budgetRecommended": 9000,
+    "budgetMax": 12000,
     "walkingMin": 5000,
     "walkingSunMin": 2000,
     "walkingShadeMin": 3000,
@@ -4331,8 +4331,8 @@
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
-      "food": 13300,
-      "cafe": 5700
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 8,
@@ -4357,9 +4357,9 @@
     "gallery": [],
     "description": "Famous worldwide for the Meguro River cherry blossoms. Features trendy cafes, boutiques, and a relaxed atmosphere.",
     "totalTripHours": 5,
-    "budgetMin": 5000,
-    "budgetRecommended": 10000,
-    "budgetMax": 20000,
+    "budgetMin": 7000,
+    "budgetRecommended": 9000,
+    "budgetMax": 12000,
     "walkingMin": 8000,
     "walkingSunMin": 4000,
     "walkingShadeMin": 4000,
@@ -4450,8 +4450,8 @@
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
-      "food": 6300,
-      "cafe": 2700
+      "food": 6000,
+      "cafe": 2000
     },
     "comfort": {
       "heatTolerance": 7,
@@ -4508,8 +4508,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5600,
-    "budgetMax": 12000,
+    "budgetMin": 6000,
+    "budgetMax": 11000,
     "budgetBreakdown": {
       "transport": 3200,
       "tickets": 1600,
@@ -4612,8 +4612,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 3500,
-    "budgetMax": 7500,
+    "budgetMin": 3000,
+    "budgetMax": 8000,
     "budgetBreakdown": {
       "transport": 2000,
       "tickets": 1000,
@@ -4715,8 +4715,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 8400,
-    "budgetMax": 18000,
+    "budgetMin": 10000,
+    "budgetMax": 15000,
     "budgetBreakdown": {
       "transport": 4800,
       "tickets": 2400,
@@ -4820,8 +4820,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 6300,
-    "budgetMax": 13500,
+    "budgetMin": 7000,
+    "budgetMax": 12000,
     "budgetBreakdown": {
       "transport": 3600,
       "tickets": 1800,
@@ -4924,8 +4924,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 2800,
-    "budgetMax": 6000,
+    "budgetMin": 2000,
+    "budgetMax": 7000,
     "budgetBreakdown": {
       "transport": 1600,
       "tickets": 800,
@@ -5028,7 +5028,7 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 4200,
+    "budgetMin": 4000,
     "budgetMax": 9000,
     "budgetBreakdown": {
       "transport": 2400,
@@ -5132,8 +5132,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 4900,
-    "budgetMax": 10500,
+    "budgetMin": 5000,
+    "budgetMax": 10000,
     "budgetBreakdown": {
       "transport": 2800,
       "tickets": 1400,
@@ -5237,7 +5237,7 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 4200,
+    "budgetMin": 4000,
     "budgetMax": 9000,
     "budgetBreakdown": {
       "transport": 2400,
@@ -5341,8 +5341,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 3500,
-    "budgetMax": 7500,
+    "budgetMin": 3000,
+    "budgetMax": 8000,
     "budgetBreakdown": {
       "transport": 2000,
       "tickets": 1000,
@@ -5445,8 +5445,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5600,
-    "budgetMax": 12000,
+    "budgetMin": 6000,
+    "budgetMax": 11000,
     "budgetBreakdown": {
       "transport": 3200,
       "tickets": 1600,
@@ -5549,8 +5549,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5250,
-    "budgetMax": 11250,
+    "budgetMin": 5500,
+    "budgetMax": 10500,
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 1500,
@@ -5654,8 +5654,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 10500,
-    "budgetMax": 22500,
+    "budgetMin": 13000,
+    "budgetMax": 18000,
     "budgetBreakdown": {
       "transport": 6000,
       "tickets": 3000,
@@ -5758,8 +5758,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5600,
-    "budgetMax": 12000,
+    "budgetMin": 6000,
+    "budgetMax": 11000,
     "budgetBreakdown": {
       "transport": 3200,
       "tickets": 1600,
@@ -5861,8 +5861,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 9100,
-    "budgetMax": 19500,
+    "budgetMin": 11000,
+    "budgetMax": 16000,
     "budgetBreakdown": {
       "transport": 5200,
       "tickets": 2600,
@@ -5965,7 +5965,7 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 4200,
+    "budgetMin": 4000,
     "budgetMax": 9000,
     "budgetBreakdown": {
       "transport": 2400,
@@ -6070,8 +6070,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5600,
-    "budgetMax": 12000,
+    "budgetMin": 6000,
+    "budgetMax": 11000,
     "budgetBreakdown": {
       "transport": 3200,
       "tickets": 1600,
@@ -6174,8 +6174,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 4550,
-    "budgetMax": 9750,
+    "budgetMin": 4500,
+    "budgetMax": 9500,
     "budgetBreakdown": {
       "transport": 2600,
       "tickets": 1300,
@@ -6279,8 +6279,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 8400,
-    "budgetMax": 18000,
+    "budgetMin": 10000,
+    "budgetMax": 15000,
     "budgetBreakdown": {
       "transport": 4800,
       "tickets": 2400,
@@ -6386,8 +6386,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 4900,
-    "budgetMax": 10500,
+    "budgetMin": 5000,
+    "budgetMax": 10000,
     "budgetBreakdown": {
       "transport": 2800,
       "tickets": 1400,
@@ -6493,8 +6493,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5600,
-    "budgetMax": 12000,
+    "budgetMin": 6000,
+    "budgetMax": 11000,
     "budgetBreakdown": {
       "transport": 3200,
       "tickets": 1600,
@@ -6599,8 +6599,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 7000,
-    "budgetMax": 15000,
+    "budgetMin": 8000,
+    "budgetMax": 13000,
     "budgetBreakdown": {
       "transport": 4000,
       "tickets": 2000,
@@ -6705,8 +6705,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 8400,
-    "budgetMax": 18000,
+    "budgetMin": 10000,
+    "budgetMax": 15000,
     "budgetBreakdown": {
       "transport": 4800,
       "tickets": 2400,
@@ -6811,8 +6811,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 12600,
-    "budgetMax": 27000,
+    "budgetMin": 16000,
+    "budgetMax": 21000,
     "budgetBreakdown": {
       "transport": 7200,
       "tickets": 3600,
@@ -6917,8 +6917,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 10500,
-    "budgetMax": 22500,
+    "budgetMin": 13000,
+    "budgetMax": 18000,
     "budgetBreakdown": {
       "transport": 6000,
       "tickets": 3000,
@@ -7021,8 +7021,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 14000,
-    "budgetMax": 30000,
+    "budgetMin": 18000,
+    "budgetMax": 23000,
     "budgetBreakdown": {
       "transport": 8000,
       "tickets": 4000,
@@ -7126,8 +7126,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 8400,
-    "budgetMax": 18000,
+    "budgetMin": 10000,
+    "budgetMax": 15000,
     "budgetBreakdown": {
       "transport": 4800,
       "tickets": 2400,
@@ -7231,8 +7231,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 7000,
-    "budgetMax": 15000,
+    "budgetMin": 8000,
+    "budgetMax": 13000,
     "budgetBreakdown": {
       "transport": 4000,
       "tickets": 2000,
@@ -7335,8 +7335,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 6300,
-    "budgetMax": 13500,
+    "budgetMin": 7000,
+    "budgetMax": 12000,
     "budgetBreakdown": {
       "transport": 3600,
       "tickets": 1800,
@@ -7441,8 +7441,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 3500,
-    "budgetMax": 7500,
+    "budgetMin": 3000,
+    "budgetMax": 8000,
     "budgetBreakdown": {
       "transport": 2000,
       "tickets": 1000,
@@ -7547,8 +7547,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 7699.999999999999,
-    "budgetMax": 16500,
+    "budgetMin": 9000,
+    "budgetMax": 14000,
     "budgetBreakdown": {
       "transport": 4400,
       "tickets": 2200,
@@ -7654,8 +7654,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5600,
-    "budgetMax": 12000,
+    "budgetMin": 6000,
+    "budgetMax": 11000,
     "budgetBreakdown": {
       "transport": 3200,
       "tickets": 1600,
@@ -7729,7 +7729,7 @@
       "Dam",
       "Scenic"
     ],
-    "budgetRecommended": 25000,
+    "budgetRecommended": 23000,
     "ratings": {
       "overall": 9.3,
       "photography": 9.8,
@@ -7760,13 +7760,13 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 17500,
-    "budgetMax": 37500,
+    "budgetMin": 21000,
+    "budgetMax": 26000,
     "budgetBreakdown": {
       "transport": 10000,
       "tickets": 5000,
-      "food": 7500,
-      "cafe": 2500
+      "food": 6000,
+      "cafe": 2000
     },
     "totalTripHours": 8,
     "walkingMin": 10000,
@@ -7865,8 +7865,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 5600,
-    "budgetMax": 12000,
+    "budgetMin": 6000,
+    "budgetMax": 11000,
     "budgetBreakdown": {
       "transport": 3200,
       "tickets": 1600,
@@ -7969,8 +7969,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 10500,
-    "budgetMax": 22500,
+    "budgetMin": 13000,
+    "budgetMax": 18000,
     "budgetBreakdown": {
       "transport": 6000,
       "tickets": 3000,
@@ -8075,8 +8075,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 8400,
-    "budgetMax": 18000,
+    "budgetMin": 10000,
+    "budgetMax": 15000,
     "budgetBreakdown": {
       "transport": 4800,
       "tickets": 2400,
@@ -8179,8 +8179,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 7699.999999999999,
-    "budgetMax": 16500,
+    "budgetMin": 9000,
+    "budgetMax": 14000,
     "budgetBreakdown": {
       "transport": 4400,
       "tickets": 2200,
@@ -8284,8 +8284,8 @@
       "Enjoy regional specialties and local culture",
       "Perfect for a active day out"
     ],
-    "budgetMin": 7000,
-    "budgetMax": 15000,
+    "budgetMin": 8000,
+    "budgetMax": 13000,
     "budgetBreakdown": {
       "transport": 4000,
       "tickets": 2000,

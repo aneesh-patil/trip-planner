@@ -6,20 +6,60 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+const CAR_RENTAL_RATES = {
+  upTo6h: 7370,
+  upTo12h: 7920,
+  upTo24h: 10340,
+  extra24h: 8690,
+  extraPerHour: 1540,
+} as const;
+
+const GAS_PRICE_PER_LITER = 170;
+const TOLL_RATE_PER_KM = 25;
+const PARTY_SIZE = 2;
+
+function getRentalBaseFee(tripDurationHours: number): number {
+  if (tripDurationHours <= 6) return CAR_RENTAL_RATES.upTo6h;
+  if (tripDurationHours <= 12) return CAR_RENTAL_RATES.upTo12h;
+  if (tripDurationHours <= 24) return CAR_RENTAL_RATES.upTo24h;
+  const extraHours = tripDurationHours - 24;
+  return CAR_RENTAL_RATES.upTo24h + Math.ceil(extraHours) * CAR_RENTAL_RATES.extraPerHour;
+}
+
 export function getTransportCost(dest: Destination, mode: string): number {
-  const baseTransport = dest.budgetBreakdown?.transport || 1500;
-  
   if (mode === "shinkansen" && dest.transportOptions?.shinkansen) {
-    return Math.max(baseTransport, 2500 + (dest.transportOptions.shinkansen * 120));
-  } else if (mode === "bus" && dest.transportOptions?.bus) {
-    return Math.max(1000, dest.transportOptions.bus * 20);
-  } else if (mode === "car" && dest.transportOptions?.car) {
-    return Math.max(1000, dest.transportOptions.car * 30);
-  } else if (mode === "train" && dest.transportOptions?.train) {
-    return Math.max(800, dest.transportOptions.train * 30);
+    const time = dest.transportOptions.shinkansen;
+    const perPersonCost = Math.floor((3000 + (time * 150)) * 2);
+    return perPersonCost * PARTY_SIZE;
   }
-  
-  return baseTransport;
+
+  if (mode === "bus" && dest.transportOptions?.bus) {
+    const time = dest.transportOptions.bus;
+    const perPersonCost = Math.floor((2000 + (time * 15)) * 2);
+    return perPersonCost * PARTY_SIZE;
+  }
+
+  if (mode === "car" && dest.transportOptions?.car) {
+    const driveTimeOneWayMin = dest.transportOptions.car;
+    const distanceKm = driveTimeOneWayMin * 1.2;
+
+    // We use totalTripHours if available, otherwise assume 8 hours
+    const tripDurationHours = dest.totalTripHours || 8;
+
+    const rentalFee = getRentalBaseFee(tripDurationHours);
+    const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
+    const gasRoundTrip = Math.floor((distanceKm * 2) / 15 * GAS_PRICE_PER_LITER);
+
+    return rentalFee + tollsRoundTrip + gasRoundTrip;
+  }
+
+  if (mode === "train" && dest.transportOptions?.train) {
+    const time = dest.transportOptions.train;
+    const perPersonCost = Math.max(300, Math.floor(time * 22.4));
+    return perPersonCost * PARTY_SIZE;
+  }
+
+  return dest.budgetBreakdown?.transport || 1500;
 }
 
 export function getAdjustedBudget(dest: Destination, activeMode: string): number {
