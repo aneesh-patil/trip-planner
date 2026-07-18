@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
-import { ArrowLeft, MapPin, Clock, DollarSign, ThermometerSun, Heart, Umbrella, Camera, Coffee, Utensils, Cloud, CloudRain, CloudSnow, CloudLightning, Sun } from "lucide-react";
+import { ArrowLeft, MapPin, Clock, DollarSign, ThermometerSun, Heart, Umbrella, Camera, Coffee, Utensils, Cloud, CloudRain, CloudSnow, CloudLightning, Sun, Train, TrainFront, Bus, Car } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -101,14 +101,30 @@ export default function DestinationDetails() {
                         <h4 className="font-bold text-slate-900 dark:text-white">Travel Time</h4>
                       </div>
                       <div className="space-y-2 flex-grow">
-                        <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
-                          <span className="text-slate-500">🚆 Train</span>
-                          <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.trainAvailable ? `${destination.trainTimeMin}m` : "N/A"}</span>
-                        </div>
-                        <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
-                          <span className="text-slate-500">🚗 Car</span>
-                          <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.carTimeMin}m</span>
-                        </div>
+                        {destination.transportOptions?.train && (
+                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                            <span className="text-slate-500 flex items-center"><Train className="w-4 h-4 mr-1.5"/> Train</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.train}m</span>
+                          </div>
+                        )}
+                        {destination.transportOptions?.shinkansen && (
+                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                            <span className="text-slate-500 flex items-center"><TrainFront className="w-4 h-4 mr-1.5"/> Shinkansen</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.shinkansen}m</span>
+                          </div>
+                        )}
+                        {destination.transportOptions?.bus && (
+                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                            <span className="text-slate-500 flex items-center"><Bus className="w-4 h-4 mr-1.5"/> Bus</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.bus}m</span>
+                          </div>
+                        )}
+                        {destination.transportOptions?.car && (
+                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                            <span className="text-slate-500 flex items-center"><Car className="w-4 h-4 mr-1.5"/> Car</span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">{destination.transportOptions.car}m</span>
+                          </div>
+                        )}
                         <div className="flex justify-between items-center text-sm">
                           <span className="text-slate-500">👣 Walk</span>
                           <span className="font-semibold text-slate-700 dark:text-slate-300">~{(destination.walkingMin / 1000).toFixed(1)}k steps</span>

@@ -6,6 +6,7 @@ import DestinationCard from "@/components/destinations/DestinationCard";
 import DestinationFilters from "@/components/destinations/DestinationFilters";
 import DestinationMap from "@/components/destinations/DestinationMap";
 import { Frown, Map as MapIcon, Grid } from "lucide-react";
+import { getAdjustedBudget } from "@/lib/utils";
 
 export default function Destinations() {
   const allDestinations = destinationsData as Destination[];
@@ -33,13 +34,11 @@ export default function Destinations() {
     }
 
     // 2. Filter by budget
-    result = result.filter(dest => dest.budgetRecommended <= maxBudget);
+    result = result.filter(dest => getAdjustedBudget(dest, transportMode) <= maxBudget);
 
     // 3. Filter by Transport
-    if (transportMode === "train") {
-      result = result.filter(dest => dest.trainAvailable);
-    } else if (transportMode === "car") {
-      result = result.filter(dest => dest.carRecommended || !dest.trainAvailable);
+    if (transportMode && transportMode !== "all") {
+      result = result.filter(dest => dest.transportOptions && dest.transportOptions[transportMode as keyof typeof dest.transportOptions] !== undefined);
     }
 
     // 4. Filter by Weather
@@ -56,10 +55,18 @@ export default function Destinations() {
     result = [...result].sort((a, b) => {
       switch (sortBy) {
         case "budget":
-          return a.budgetRecommended - b.budgetRecommended;
+          return getAdjustedBudget(a, transportMode) - getAdjustedBudget(b, transportMode);
         case "travelTime":
-          const aTime = a.trainAvailable ? a.trainTimeMin : a.carTimeMin;
-          const bTime = b.trainAvailable ? b.trainTimeMin : b.carTimeMin;
+          const getFastestTime = (dest: Destination) => {
+            const times = Object.values(dest.transportOptions || {}).filter((t): t is number => t !== undefined);
+            return times.length > 0 ? Math.min(...times) : 999;
+          };
+          const aTime = (transportMode !== "all" && a.transportOptions && a.transportOptions[transportMode as keyof typeof a.transportOptions])
+            ? a.transportOptions[transportMode as keyof typeof a.transportOptions]!
+            : getFastestTime(a);
+          const bTime = (transportMode !== "all" && b.transportOptions && b.transportOptions[transportMode as keyof typeof b.transportOptions])
+            ? b.transportOptions[transportMode as keyof typeof b.transportOptions]!
+            : getFastestTime(b);
           return aTime - bTime;
         case "walking":
           return a.walkingMin - b.walkingMin;
@@ -149,7 +156,7 @@ export default function Destinations() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredAndSortedDestinations.map((dest) => (
-            <DestinationCard key={dest.id} destination={dest} />
+            <DestinationCard key={dest.id} destination={dest} activeTransportMode={transportMode} />
           ))}
         </div>
       )}

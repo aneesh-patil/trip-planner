@@ -7,6 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Map, PlusSquare, Trash2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import WeatherWidget from "@/components/destinations/WeatherWidget";
+import { getAdjustedBudget } from "@/lib/utils";
 
 export default function Compare() {
   const { compareList, toggleCompare, clearCompare } = useTripStore();
@@ -40,10 +41,13 @@ export default function Compare() {
   const getMin = (arr: number[]) => Math.min(...arr);
   const getMax = (arr: number[]) => Math.max(...arr);
 
-  const budgets = compareDestinations.map(d => d.budgetRecommended);
+  const budgets = compareDestinations.map(d => getAdjustedBudget(d, "all"));
   const minBudget = getMin(budgets);
 
-  const travelTimes = compareDestinations.map(d => d.trainAvailable ? d.trainTimeMin : d.carTimeMin);
+  const travelTimes = compareDestinations.map(d => {
+    const times = Object.values(d.transportOptions || {}).filter((t): t is number => t !== undefined);
+    return times.length > 0 ? Math.min(...times) : 999;
+  });
   const minTravelTime = getMin(travelTimes);
 
   const walking = compareDestinations.map(d => d.walkingMin);
@@ -124,23 +128,26 @@ export default function Compare() {
               <TableCell className="font-semibold text-slate-700 dark:text-slate-300">Budget (Recommended)</TableCell>
               {compareDestinations.map(dest => (
                 <TableCell key={dest.id}>
-                  <span className={dest.budgetRecommended === minBudget ? "font-bold text-emerald-600 dark:text-emerald-400" : ""}>
-                    ¥{(dest.budgetRecommended / 1000).toFixed(0)}k
+                  <span className={getAdjustedBudget(dest, "all") === minBudget ? "font-bold text-emerald-600 dark:text-emerald-400" : ""}>
+                    ¥{(getAdjustedBudget(dest, "all") / 1000).toFixed(0)}k
                   </span>
-                  {dest.budgetRecommended === minBudget && <Badge className="ml-2 bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800">Lowest</Badge>}
+                  {getAdjustedBudget(dest, "all") === minBudget && <Badge className="ml-2 bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800">Lowest</Badge>}
                 </TableCell>
               ))}
             </TableRow>
             <TableRow>
               <TableCell className="font-semibold text-slate-700 dark:text-slate-300">Travel Time</TableCell>
               {compareDestinations.map(dest => {
-                const time = dest.trainAvailable ? dest.trainTimeMin : dest.carTimeMin;
+                const times = Object.entries(dest.transportOptions || {}).filter(([_, v]) => v !== undefined) as [string, number][];
+                const fastest = times.length > 0 ? times.reduce((min, curr) => curr[1] < min[1] ? curr : min) : ["none", 999];
+                const time = fastest[1];
+                const mode = fastest[0];
                 return (
                   <TableCell key={dest.id}>
                     <span className={time === minTravelTime ? "font-bold text-emerald-600 dark:text-emerald-400" : ""}>
-                      {time} min ({dest.trainAvailable ? 'Train' : 'Car'})
+                      {time !== 999 ? `${time} min (${mode})` : 'N/A'}
                     </span>
-                    {time === minTravelTime && <Badge className="ml-2 bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800">Fastest</Badge>}
+                    {time === minTravelTime && time !== 999 && <Badge className="ml-2 bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800">Fastest</Badge>}
                   </TableCell>
                 );
               })}

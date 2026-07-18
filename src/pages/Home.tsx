@@ -1,15 +1,19 @@
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Sparkles, Search, Utensils, Trees, Palette, Camera, Car, Train, Sun, CloudRain, ThermometerSun, Map as MapIcon, Navigation, Waves, Landmark, Snowflake } from "lucide-react";
+import { Sparkles, Search, Utensils, Trees, Palette, Camera, Car, Train, TrainFront, Bus, Sun, CloudRain, ThermometerSun, Map as MapIcon, Navigation, Waves, Landmark, Snowflake } from "lucide-react";
 import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
 import DestinationCard from "@/components/destinations/DestinationCard";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
+import { useTripStore } from "@/hooks/useTripStore";
+import { getAdjustedBudget } from "@/lib/utils";
 
 export default function Home() {
   const allDestinations = destinationsData as Destination[];
+
+  const { isVisited } = useTripStore();
 
   // Smart Planner State
   const [tripType, setTripType] = useState<string>("any");
@@ -63,41 +67,63 @@ export default function Home() {
 
   // Calculate Smart Match Score
   const scoredDestinations = useMemo(() => {
-    return allDestinations.map(dest => {
+    return allDestinations
+      .filter(dest => !isVisited(dest.id)) // 0. Filter out already visited places entirely from top matches
+      .map(dest => {
       // 1. Base score derived dynamically from the destination's actual overall rating
       // e.g., an 8.5 rating -> 20 + 51 = 71 base score. This naturally breaks ties.
       let score = 20 + (dest.ratings.overall * 6); 
       const reasons: string[] = [];
 
       // 2. Budget Logic (Continuous penalty/bonus)
-      if (dest.budgetRecommended > budget) {
-        score -= ((dest.budgetRecommended - budget) / 1000) * 1.5;
+      const adjustedBudget = getAdjustedBudget(dest, transport);
+      if (adjustedBudget > budget) {
+        score -= ((adjustedBudget - budget) / 1000) * 1.5;
       } else {
-        const budgetBonus = Math.min(8, ((budget - dest.budgetRecommended) / 3000));
+        const budgetBonus = Math.min(8, ((budget - adjustedBudget) / 3000));
         score += budgetBonus;
-        if (budget - dest.budgetRecommended >= 5000) {
-          reasons.push(`Well under budget (est. ¥${dest.budgetRecommended.toLocaleString()})`);
+        if (budget - adjustedBudget >= 5000) {
+          reasons.push(`Well under budget (est. ¥${adjustedBudget.toLocaleString()})`);
         }
       }
 
       // 3. Transport Logic (Granular distance-based scoring)
       if (transport === "train") {
-        if (!dest.trainAvailable) {
-          score -= 50; 
+        if (!dest.transportOptions?.train) {
+          score -= 1000; 
         } else {
-          const timeBonus = Math.max(0, 12 - (dest.trainTimeMin / 10)); // Faster trains get up to +12
+          const time = dest.transportOptions.train;
+          const timeBonus = Math.max(0, 12 - (time / 10)); // Faster trains get up to +12
           score += 4 + timeBonus;
-          if (dest.trainTimeMin <= 60) reasons.push(`Fast train access (${dest.trainTimeMin}m)`);
+          if (time <= 60) reasons.push(`Fast train access (${time}m)`);
         }
       } else if (transport === "car") {
-        if (!dest.carRecommended && dest.trainAvailable) score -= 15;
-        if (dest.carRecommended) {
-          const timeBonus = Math.max(0, 10 - (dest.carTimeMin / 15));
+        if (!dest.transportOptions?.car) score -= 1000;
+        if (dest.transportOptions?.car) {
+          const time = dest.transportOptions.car;
+          const timeBonus = Math.max(0, 10 - (time / 15));
           score += 5 + timeBonus; 
-          if (dest.carTimeMin <= 60) reasons.push(`Easy drive (${dest.carTimeMin}m)`);
+          if (time <= 60) reasons.push(`Easy drive (${time}m)`);
+        }
+      } else if (transport === "shinkansen") {
+        if (!dest.transportOptions?.shinkansen) {
+          score -= 1000; 
+        } else {
+          const time = dest.transportOptions.shinkansen;
+          score += 10;
+          reasons.push(`Accessible by Shinkansen (${time}m)`);
+        }
+      } else if (transport === "bus") {
+        if (!dest.transportOptions?.bus) {
+          score -= 1000; 
+        } else {
+          const time = dest.transportOptions.bus;
+          score += 10;
+          reasons.push(`Accessible by Highway Bus (${time}m)`);
         }
       } else {
-        const minTime = dest.trainAvailable ? Math.min(dest.trainTimeMin, dest.carTimeMin) : dest.carTimeMin;
+        const times = Object.values(dest.transportOptions || {}).filter((t): t is number => t !== undefined);
+        const minTime = times.length > 0 ? Math.min(...times) : 999;
         score += Math.max(0, 5 - (minTime / 30)); // Slight bump for closer destinations overall
       }
 
@@ -180,7 +206,7 @@ export default function Home() {
 
       return { ...dest, matchScore: finalScore, matchReasons: reasons.slice(0, 3) };
     }).sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
-  }, [allDestinations, tripType, budget, transport, weather]);
+  }, [allDestinations, tripType, budget, transport, weather, isVisited, currentSituation]);
 
   const topRecommendations = scoredDestinations.slice(0, 3);
 
@@ -201,7 +227,7 @@ export default function Home() {
                       <button
                         key={idx}
                         onClick={() => setSelectedDayIndex(idx)}
-                        className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all ${selectedDayIndex === idx ? 'bg-emerald-600 text-white shadow-md' : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700'}`}
+                        className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all focus:outline-none focus:ring-0 outline-none ${selectedDayIndex === idx ? 'bg-emerald-600 text-white shadow-md' : 'bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700'}`}
                       >
                         {day.label}
                       </button>
@@ -327,6 +353,8 @@ export default function Home() {
                       {transport === "any" && <div className="flex items-center"><MapIcon className="w-5 h-5 mr-3 text-slate-400" /> No preference</div>}
                       {transport === "train" && <div className="flex items-center"><Train className="w-5 h-5 mr-3 text-emerald-600" /> Train Only</div>}
                       {transport === "car" && <div className="flex items-center"><Car className="w-5 h-5 mr-3 text-slate-600" /> Driving a Car</div>}
+                      {transport === "shinkansen" && <div className="flex items-center"><TrainFront className="w-5 h-5 mr-3 text-purple-600" /> Shinkansen</div>}
+                      {transport === "bus" && <div className="flex items-center"><Bus className="w-5 h-5 mr-3 text-amber-600" /> Highway Bus</div>}
                     </SelectTrigger>
                     <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
                       <SelectItem value="any" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
@@ -337,6 +365,12 @@ export default function Home() {
                       </SelectItem>
                       <SelectItem value="car" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
                         <div className="flex items-center"><Car className="w-5 h-5 mr-3 text-slate-600" /> <span className="text-base font-medium">Driving a Car</span></div>
+                      </SelectItem>
+                      <SelectItem value="shinkansen" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><TrainFront className="w-5 h-5 mr-3 text-purple-600" /> <span className="text-base font-medium">Shinkansen</span></div>
+                      </SelectItem>
+                      <SelectItem value="bus" className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg">
+                        <div className="flex items-center"><Bus className="w-5 h-5 mr-3 text-amber-600" /> <span className="text-base font-medium">Highway Bus</span></div>
                       </SelectItem>
                     </SelectContent>
                   </Select>
@@ -392,7 +426,7 @@ export default function Home() {
                   #{index + 1}
                 </div>
                 <div className="flex-grow">
-                  <DestinationCard destination={dest} />
+                  <DestinationCard destination={dest} activeTransportMode={transport} />
                 </div>
               </div>
             ))}

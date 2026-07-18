@@ -41,10 +41,12 @@ export interface Destination {
     food: number;
     cafe: number;
   };
-  trainAvailable: boolean;
-  carRecommended: boolean;
-  trainTimeMin: number;
-  carTimeMin: number;
+  transportOptions: {
+    train?: number;
+    car?: number;
+    shinkansen?: number;
+    bus?: number;
+  };
   totalTripHours: number;
   walkingMin: number;
   walkingSunMin: number;

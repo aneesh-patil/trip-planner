@@ -3,15 +3,17 @@ import type { Destination } from "@/types/destination";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Train, Car, DollarSign, Bookmark, CheckCircle2, PlusSquare, CheckSquare, Sun } from "lucide-react";
+import { MapPin, Train, TrainFront, Bus, Car, DollarSign, Bookmark, CheckCircle2, PlusSquare, CheckSquare, Sun } from "lucide-react";
 import { useTripStore } from "@/hooks/useTripStore";
 import WeatherWidget from "./WeatherWidget";
+import { getAdjustedBudget } from "@/lib/utils";
 
 interface DestinationCardProps {
   destination: Destination;
+  activeTransportMode?: string;
 }
 
-export default function DestinationCard({ destination }: DestinationCardProps) {
+export default function DestinationCard({ destination, activeTransportMode = "all" }: DestinationCardProps) {
   const { isFavorite, toggleFavorite, isVisited, toggleVisited, isComparing, toggleCompare, compareList } = useTripStore();
   const favorite = isFavorite(destination.id);
   const visited = isVisited(destination.id);
@@ -97,14 +99,40 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
           // STANDARD EXPLORE VIEW (Simple, elegant tags instead of raw numbers)
           <div className="space-y-5">
              <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
-               <div className="flex items-center">
-                 {destination.trainAvailable ? <Train className="w-4 h-4 mr-2 text-slate-400"/> : <Car className="w-4 h-4 mr-2 text-slate-400"/>}
-                 <span>{destination.trainAvailable ? destination.trainTimeMin : destination.carTimeMin}m trip</span>
-               </div>
-               <div className="flex items-center">
-                 <DollarSign className="w-4 h-4 mr-2 text-slate-400"/>
-                 <span>¥{(destination.budgetRecommended / 1000).toFixed(0)}k est.</span>
-               </div>
+                <div className="flex items-center">
+                  {(() => {
+                    const to = destination.transportOptions || {};
+                    let mode = "train";
+                    let time = 0;
+                    if (activeTransportMode !== "all" && to[activeTransportMode as keyof typeof to]) {
+                      mode = activeTransportMode;
+                      time = to[activeTransportMode as keyof typeof to]!;
+                    } else {
+                      const entries = Object.entries(to).filter(([_, v]) => v !== undefined) as [string, number][];
+                      if (entries.length > 0) {
+                        const fastest = entries.reduce((min, curr) => curr[1] < min[1] ? curr : min);
+                        mode = fastest[0];
+                        time = fastest[1];
+                      }
+                    }
+                    
+                    let Icon = Train;
+                    if (mode === "car") Icon = Car;
+                    if (mode === "bus") Icon = Bus;
+                    if (mode === "shinkansen") Icon = TrainFront;
+                    
+                    return (
+                      <>
+                        <Icon className="w-4 h-4 mr-2 text-slate-400" />
+                        <span>{time > 0 ? `${time}m trip` : 'N/A'}</span>
+                      </>
+                    );
+                  })()}
+                </div>
+                <div className="flex items-center">
+                  <DollarSign className="w-4 h-4 mr-2 text-slate-400"/>
+                  <span>¥{(getAdjustedBudget(destination, activeTransportMode) / 1000).toFixed(0)}k est.</span>
+                </div>
                <div className="flex items-center">
                  <Sun className="w-4 h-4 mr-2 text-slate-400"/>
                  <span>{destination.walkingSunMin < 3000 ? 'Low sun' : 'High sun'}</span>
