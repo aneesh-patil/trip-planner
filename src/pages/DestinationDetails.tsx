@@ -158,16 +158,25 @@ export default function DestinationDetails() {
                       
                       {destination.budgetBreakdown && (
                         <div className="space-y-2 mt-auto">
-                          <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5">
-                            <span className="text-slate-500">🚆 Transport (Fastest)</span>
-                            <span className="font-semibold text-slate-700 dark:text-slate-300">¥{(getAdjustedBudget(destination, "all") - (destination.budgetRecommended - destination.budgetBreakdown.transport)).toLocaleString()}</span>
-                          </div>
-                          <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5">
+                          {Object.keys(destination.transportOptions || {}).map((mode) => {
+                            const icons: Record<string, string> = { train: "🚆", shinkansen: "🚄", car: "🚗", bus: "🚌" };
+                            const names: Record<string, string> = { train: "Local Train", shinkansen: "Shinkansen", car: "Car Rental & Tolls", bus: "Highway Bus" };
+                            return (
+                              <div key={mode} className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5 mt-1.5 first:mt-0">
+                                <span className="text-slate-500">{icons[mode]} {names[mode]}</span>
+                                <span className="font-semibold text-slate-700 dark:text-slate-300">
+                                  ¥{getTransportCost(destination, mode).toLocaleString()}
+                                </span>
+                              </div>
+                            );
+                          })}
+                          
+                          <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5 mt-1.5">
                             <span className="text-slate-500">🎟 Tickets</span>
                             <span className="font-semibold text-slate-700 dark:text-slate-300">¥{destination.budgetBreakdown.tickets.toLocaleString()}</span>
                           </div>
-                          <div className="flex justify-between text-sm">
-                            <span className="text-slate-500">🍜 Food</span>
+                          <div className="flex justify-between text-sm mt-1.5">
+                            <span className="text-slate-500">🍜 Food & Cafe</span>
                             <span className="font-semibold text-slate-700 dark:text-slate-300">¥{(destination.budgetBreakdown.food + destination.budgetBreakdown.cafe).toLocaleString()}</span>
                           </div>
                         </div>

@@ -55,8 +55,8 @@ export function getTransportCost(dest: Destination, mode: string): number {
 
   if (mode === "train" && dest.transportOptions?.train) {
     const time = dest.transportOptions.train;
-    const perPersonCost = Math.max(300, Math.floor(time * 22.4));
-    return perPersonCost * PARTY_SIZE;
+    const perPersonRoundTrip = Math.max(600, Math.floor(time * 34.3));
+    return perPersonRoundTrip * PARTY_SIZE;
   }
 
   return dest.budgetBreakdown?.transport || 1500;
