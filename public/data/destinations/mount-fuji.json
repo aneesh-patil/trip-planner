@@ -53,8 +53,7 @@
     "walkingIntensity": 5
   },
   "transportOptions": {
-    "car": 120,
-    "shinkansen": 999
+    "car": 120
   },
   "restaurants": [
     "Mount Fuji Traditional Dining",
