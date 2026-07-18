@@ -3,9 +3,10 @@ import { lazy, Suspense } from "react";
 import { TripStoreProvider } from "./shared/hooks/useTripStore";
 import Navbar from "./shared/components/layout/Navbar";
 import Footer from "./shared/components/layout/Footer";
-import Home from "./features/home/Home";
-import Destinations from "./features/destinations/Destinations";
-import Favorites from "./features/favorites/Favorites";
+const Home = lazy(() => import("./features/home/Home"));
+const Destinations = lazy(() => import("./features/destinations/Destinations"));
+const Favorites = lazy(() => import("./features/favorites/Favorites"));
+import { ErrorBoundary } from "./shared/components/layout/ErrorBoundary";
 
 const DestinationDetails = lazy(
   () => import("./features/destinations/DestinationDetails"),
@@ -28,19 +29,21 @@ function App() {
         <div className="flex flex-col min-h-screen bg-background text-foreground">
           <Navbar />
           <main className="flex-grow">
-            <Suspense fallback={<PageLoader />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/destinations" element={<Destinations />} />
-                <Route
-                  path="/destinations/:id"
-                  element={<DestinationDetails />}
-                />
-                <Route path="/compare" element={<Compare />} />
-                <Route path="/favorites" element={<Favorites />} />
-                <Route path="/map" element={<JapanMap />} />
-              </Routes>
-            </Suspense>
+            <ErrorBoundary>
+              <Suspense fallback={<PageLoader />}>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/destinations" element={<Destinations />} />
+                  <Route
+                    path="/destinations/:id"
+                    element={<DestinationDetails />}
+                  />
+                  <Route path="/compare" element={<Compare />} />
+                  <Route path="/favorites" element={<Favorites />} />
+                  <Route path="/map" element={<JapanMap />} />
+                </Routes>
+              </Suspense>
+            </ErrorBoundary>
           </main>
           <Footer />
         </div>
