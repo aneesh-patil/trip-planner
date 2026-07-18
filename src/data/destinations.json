@@ -978,7 +978,9 @@
     },
     "image": "https://loremflickr.com/1000/800/japan,atami/all?lock=1005",
     "transportOptions": {
-      "train": 45
+      "train": 87,
+      "shinkansen": 45,
+      "car": 90
     }
   },
   {
@@ -1575,7 +1577,8 @@
     "transportOptions": {
       "train": 70,
       "car": 180,
-      "shinkansen": 42
+      "shinkansen": 42,
+      "bus": 180
     }
   },
   {
@@ -7503,7 +7506,8 @@
     "transportOptions": {
       "train": 130,
       "car": 110,
-      "shinkansen": 78
+      "shinkansen": 78,
+      "bus": 120
     },
     "restaurants": [
       "Fuji Five Lakes Traditional Dining",

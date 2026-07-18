@@ -1,3 +1,4 @@
+import { useState, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import destinationsData from "@/data/destinations.json";
 import type { Destination } from "@/types/destination";
@@ -22,6 +23,18 @@ export default function DestinationDetails() {
   const { id } = useParams();
   const destination = (destinationsData as Destination[]).find(d => d.id === id);
   const { forecast, loading } = useWeekendWeather(destination?.coordinates?.lat, destination?.coordinates?.lng);
+
+  const defaultMode = useMemo(() => {
+    if (!destination?.transportOptions) return "train";
+    const entries = Object.entries(destination.transportOptions).filter(([_, v]) => v !== undefined) as [string, number][];
+    if (entries.length === 0) return "train";
+    return entries.reduce((min, curr) => curr[1] < min[1] ? curr : min)[0];
+  }, [destination]);
+
+  const [selectedTransportState, setSelectedTransport] = useState<string | null>(null);
+  const selectedTransport = selectedTransportState && destination?.transportOptions && destination.transportOptions[selectedTransportState as keyof typeof destination.transportOptions] !== undefined
+    ? selectedTransportState 
+    : defaultMode;
 
   if (!destination) {
     return (
@@ -56,13 +69,13 @@ export default function DestinationDetails() {
               <MapPin className="w-5 h-5 mr-1" /> {destination.prefecture}, Japan
             </div>
             <a 
-              href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent("Nakayama Station, Yokohama, Japan")}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
+              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg transition-colors"
             >
               <MapPin className="w-4 h-4 mr-1.5" />
-              Directions from Nakayama
+              Get Directions
             </a>
           </div>
         </div>
@@ -152,24 +165,42 @@ export default function DestinationDetails() {
                         <div className="bg-emerald-100 dark:bg-emerald-900/30 p-2.5 rounded-full text-emerald-600"><DollarSign className="w-5 h-5" /></div>
                         <div>
                           <h4 className="font-bold text-slate-900 dark:text-white leading-tight">Couple Budget</h4>
-                          <div className="text-emerald-600 font-black text-lg">¥{getAdjustedBudget(destination, "all").toLocaleString()}</div>
+                          <div className="text-emerald-600 font-black text-lg">¥{getAdjustedBudget(destination, selectedTransport).toLocaleString()}</div>
                         </div>
                       </div>
                       
-                      {destination.budgetBreakdown && (
-                        <div className="space-y-2 mt-auto">
-                          {Object.keys(destination.transportOptions || {}).map((mode) => {
-                            const icons: Record<string, string> = { train: "🚆", shinkansen: "🚄", car: "🚗", bus: "🚌" };
-                            const names: Record<string, string> = { train: "Local Train", shinkansen: "Shinkansen", car: "Car Rental & Tolls", bus: "Highway Bus" };
+                      {destination.transportOptions && Object.keys(destination.transportOptions).length > 1 && (
+                        <div className="flex flex-wrap gap-1.5 mb-4">
+                          {Object.keys(destination.transportOptions).map((mode) => {
+                            const isSelected = selectedTransport === mode;
+                            const names: Record<string, string> = { train: "Train", shinkansen: "Shinkansen", car: "Car", bus: "Bus" };
                             return (
-                              <div key={mode} className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5 mt-1.5 first:mt-0">
-                                <span className="text-slate-500">{icons[mode]} {names[mode]}</span>
-                                <span className="font-semibold text-slate-700 dark:text-slate-300">
-                                  ¥{getTransportCost(destination, mode).toLocaleString()}
-                                </span>
-                              </div>
+                              <button
+                                key={mode}
+                                onClick={() => setSelectedTransport(mode)}
+                                className={`px-2.5 py-1 text-xs font-medium rounded-full transition-colors ${
+                                  isSelected 
+                                    ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300" 
+                                    : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700"
+                                }`}
+                              >
+                                {names[mode]}
+                              </button>
                             );
                           })}
+                        </div>
+                      )}
+
+                      {destination.budgetBreakdown && (
+                        <div className="space-y-2 mt-auto">
+                          <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5 mt-1.5 first:mt-0">
+                            <span className="text-slate-500">
+                              {({ train: "🚆 Local Train", shinkansen: "🚄 Shinkansen", car: "🚗 Car & Tolls", bus: "🚌 Highway Bus" } as Record<string, string>)[selectedTransport]}
+                            </span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-300">
+                              ¥{getTransportCost(destination, selectedTransport).toLocaleString()}
+                            </span>
+                          </div>
                           
                           <div className="flex justify-between text-sm border-b border-slate-100 dark:border-slate-800 pb-1.5 mt-1.5">
                             <span className="text-slate-500">🎟 Tickets</span>
