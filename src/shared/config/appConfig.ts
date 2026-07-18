@@ -13,5 +13,5 @@ export const APP_CONFIG = {
   featureFlags: {
     enableCompareRecommendations: true,
     enableDetailedItineraryView: true,
-  }
+  },
 };

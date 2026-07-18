@@ -3,11 +3,7 @@
   "name": "Boso Peninsula",
   "prefecture": "Chiba",
   "region": "Kanto",
-  "categories": [
-    "Coast",
-    "Nature",
-    "Drive"
-  ],
+  "categories": ["Coast", "Nature", "Drive"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/960px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
   "gallery": [],
   "description": "Scenic coastal drives, fresh seafood, and nature spots perfect for a day trip by car.",
@@ -42,25 +38,11 @@
     "autumn": 10,
     "winter": 5
   },
-  "bestMonths": [
-    3,
-    4,
-    5,
-    9,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 5, 9, 10, 11],
   "reservation": "Not required",
   "parking": "Plenty of parking",
-  "highlights": [
-    "Coastal Drive",
-    "Seafood",
-    "Nokogiriyama"
-  ],
-  "tags": [
-    "Road Trip",
-    "Ocean"
-  ],
+  "highlights": ["Coastal Drive", "Seafood", "Nokogiriyama"],
+  "tags": ["Road Trip", "Ocean"],
   "itinerary": [],
   "restaurants": [
     "Boso Peninsula Traditional Dining",

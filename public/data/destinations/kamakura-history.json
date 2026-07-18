@@ -3,11 +3,7 @@
   "name": "Kamakura",
   "prefecture": "Kanagawa",
   "region": "Kanto",
-  "categories": [
-    "History",
-    "Temples",
-    "Beach"
-  ],
+  "categories": ["History", "Temples", "Beach"],
   "heroImage": "/images/kamakura_hero.jpg",
   "gallery": [],
   "description": "Coastal town rich in history, known for the Great Buddha, numerous temples, and surfing beaches.",
@@ -42,13 +38,7 @@
     "autumn": 8,
     "winter": 5
   },
-  "bestMonths": [
-    5,
-    6,
-    7,
-    8,
-    9
-  ],
+  "bestMonths": [5, 6, 7, 8, 9],
   "reservation": "Not required for day trips.",
   "parking": "Extremely congested on weekends.",
   "highlights": [
@@ -56,11 +46,7 @@
     "Hasedera Temple",
     "Komachi-dori Street"
   ],
-  "tags": [
-    "Day Trip",
-    "Culture",
-    "Walk-heavy"
-  ],
+  "tags": ["Day Trip", "Culture", "Walk-heavy"],
   "itinerary": [
     {
       "time": "09:30",
@@ -79,14 +65,8 @@
       "activity": "Great Buddha"
     }
   ],
-  "restaurants": [
-    "Kamakura Matsubaraan",
-    "Caraway Curry"
-  ],
-  "cafes": [
-    "Iwata Coffee",
-    "Starbucks Kamakura Onarimachi"
-  ],
+  "restaurants": ["Kamakura Matsubaraan", "Caraway Curry"],
+  "cafes": ["Iwata Coffee", "Starbucks Kamakura Onarimachi"],
   "notes": "Wear comfortable walking shoes. Enoden line can be very crowded.",
   "itineraries": [
     {

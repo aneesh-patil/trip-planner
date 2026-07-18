@@ -3,11 +3,7 @@
   "name": "Ghibli Museum",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "Theme Park",
-    "Museum",
-    "Art"
-  ],
+  "categories": ["Theme Park", "Museum", "Art"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/960px-Ghibli_Museum_2024.JPG",
   "gallery": [],
   "description": "A whimsical museum dedicated to the art and animation of Studio Ghibli.",
@@ -42,41 +38,18 @@
     "autumn": 9,
     "winter": 9
   },
-  "bestMonths": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "reservation": "Tickets sell out within hours. Book on the 10th of the previous month.",
   "parking": "Not recommended, take the train to Mitaka.",
-  "highlights": [
-    "Giant Robot Soldier",
-    "Catbus Room",
-    "Exclusive Short Films"
-  ],
-  "tags": [
-    "Anime",
-    "Indoor",
-    "Art"
-  ],
+  "highlights": ["Giant Robot Soldier", "Catbus Room", "Exclusive Short Films"],
+  "tags": ["Anime", "Indoor", "Art"],
   "itinerary": [],
   "restaurants": [
     "Ghibli Museum Traditional Dining",
     "Local Tokyo Specialty Restaurant",
     "The Ghibli Grill & Izakaya"
   ],
-  "cafes": [
-    "Straw Hat Cafe"
-  ],
+  "cafes": ["Straw Hat Cafe"],
   "notes": "No photography allowed inside the museum.",
   "itineraries": [
     {

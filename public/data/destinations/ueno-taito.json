@@ -3,12 +3,7 @@
   "name": "Ueno (Taito)",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "History",
-    "Art",
-    "Museum",
-    "Parks"
-  ],
+  "categories": ["History", "Art", "Museum", "Parks"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ueno_park.jpg/960px-Ueno_park.jpg",
   "gallery": [],
   "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
@@ -43,31 +38,14 @@
     "autumn": 9,
     "winter": 8
   },
-  "bestMonths": [
-    3,
-    4,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 10, 11],
   "reservation": "Required for special exhibitions.",
   "parking": "Limited.",
-  "highlights": [
-    "Tokyo National Museum",
-    "Ueno Zoo",
-    "Ameyoko Street"
-  ],
-  "tags": [
-    "Museums",
-    "Cherry Blossoms",
-    "Street Food"
-  ],
+  "highlights": ["Tokyo National Museum", "Ueno Zoo", "Ameyoko Street"],
+  "tags": ["Museums", "Cherry Blossoms", "Street Food"],
   "itinerary": [],
-  "restaurants": [
-    "Minatoya (Takoyaki)"
-  ],
-  "cafes": [
-    "Starbucks Ueno Park"
-  ],
+  "restaurants": ["Minatoya (Takoyaki)"],
+  "cafes": ["Starbucks Ueno Park"],
   "notes": "In spring, the park is one of Tokyo's most crowded cherry blossom spots.",
   "itineraries": [
     {

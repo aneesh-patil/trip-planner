@@ -2,16 +2,8 @@
   "id": "takaoka",
   "name": "Takaoka",
   "region": "Chubu",
-  "categories": [
-    "City",
-    "Shrine",
-    "History"
-  ],
-  "tags": [
-    "Great Buddha",
-    "Doraemon",
-    "Crafts"
-  ],
+  "categories": ["City", "Shrine", "History"],
+  "tags": ["Great Buddha", "Doraemon", "Crafts"],
   "budgetRecommended": 8000,
   "ratings": {
     "overall": 7.7,
@@ -68,11 +60,7 @@
     "Local Shizuoka Specialty Restaurant",
     "The Takaoka Grill & Izakaya"
   ],
-  "cafes": [
-    "Café de Takaoka",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
+  "cafes": ["Café de Takaoka", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Takaoka. Known for its great buddha and doraemon vibes, it offers a great escape with an overall score of 7.7.",
   "itineraries": [
     {

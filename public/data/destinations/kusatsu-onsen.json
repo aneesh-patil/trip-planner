@@ -2,15 +2,8 @@
   "id": "kusatsu-onsen",
   "name": "Kusatsu & Shima Onsen",
   "region": "Kanto",
-  "categories": [
-    "Hot Spring",
-    "Town"
-  ],
-  "tags": [
-    "Onsen",
-    "Yubatake",
-    "Mountains"
-  ],
+  "categories": ["Hot Spring", "Town"],
+  "tags": ["Onsen", "Yubatake", "Mountains"],
   "budgetRecommended": 15000,
   "ratings": {
     "overall": 9.2,
@@ -68,11 +61,7 @@
     "Local Kanagawa Specialty Restaurant",
     "The Kusatsu Grill & Izakaya"
   ],
-  "cafes": [
-    "Café de Kusatsu",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
+  "cafes": ["Café de Kusatsu", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Kusatsu & Shima Onsen. Known for its onsen and yubatake vibes, it offers a great escape with an overall score of 9.2.",
   "itineraries": [
     {

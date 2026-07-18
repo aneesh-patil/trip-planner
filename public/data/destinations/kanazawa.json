@@ -2,16 +2,8 @@
   "id": "kanazawa",
   "name": "Kanazawa",
   "region": "Chubu",
-  "categories": [
-    "City",
-    "Garden",
-    "History"
-  ],
-  "tags": [
-    "Kenrokuen",
-    "Gold Leaf",
-    "Geisha District"
-  ],
+  "categories": ["City", "Garden", "History"],
+  "tags": ["Kenrokuen", "Gold Leaf", "Geisha District"],
   "budgetRecommended": 12000,
   "ratings": {
     "overall": 9.4,

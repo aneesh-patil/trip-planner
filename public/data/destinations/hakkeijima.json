@@ -2,14 +2,8 @@
   "id": "hakkeijima",
   "name": "Hakkeijima Sea Paradise",
   "region": "Kanto",
-  "categories": [
-    "Theme Park",
-    "Aquarium"
-  ],
-  "tags": [
-    "Family",
-    "Entertainment"
-  ],
+  "categories": ["Theme Park", "Aquarium"],
+  "tags": ["Family", "Entertainment"],
   "budgetRecommended": 20800,
   "ratings": {
     "overall": 8.4,

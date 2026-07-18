@@ -2,15 +2,8 @@
   "id": "toyama-alpine",
   "name": "Tateyama Kurobe Alpine Route",
   "region": "Chubu",
-  "categories": [
-    "Nature",
-    "Mountain"
-  ],
-  "tags": [
-    "Snow Wall",
-    "Dam",
-    "Scenic"
-  ],
+  "categories": ["Nature", "Mountain"],
+  "tags": ["Snow Wall", "Dam", "Scenic"],
   "budgetRecommended": 23000,
   "ratings": {
     "overall": 9.3,

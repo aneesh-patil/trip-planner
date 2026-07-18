@@ -2,15 +2,8 @@
   "id": "narita",
   "name": "Narita",
   "region": "Kanto",
-  "categories": [
-    "Shrine",
-    "History",
-    "Town"
-  ],
-  "tags": [
-    "Temple",
-    "Eel"
-  ],
+  "categories": ["Shrine", "History", "Town"],
+  "tags": ["Temple", "Eel"],
   "budgetRecommended": 8000,
   "ratings": {
     "overall": 8.1,
@@ -68,11 +61,7 @@
     "Local Kanagawa Specialty Restaurant",
     "The Narita Grill & Izakaya"
   ],
-  "cafes": [
-    "Café de Narita",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
+  "cafes": ["Café de Narita", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Narita. Known for its temple and eel vibes, it offers a great escape with an overall score of 8.1.",
   "itineraries": [
     {

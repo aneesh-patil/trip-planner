@@ -2,15 +2,8 @@
   "id": "lake-hamanako",
   "name": "Lake Hamanako",
   "region": "Chubu",
-  "categories": [
-    "Lake",
-    "Hot Spring"
-  ],
-  "tags": [
-    "Eel",
-    "Cycling",
-    "Onsen"
-  ],
+  "categories": ["Lake", "Hot Spring"],
+  "tags": ["Eel", "Cycling", "Onsen"],
   "budgetRecommended": 10000,
   "ratings": {
     "overall": 8.2,

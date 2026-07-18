@@ -3,10 +3,7 @@
   "name": "Omiya Railway Museum",
   "prefecture": "Saitama",
   "region": "Kanto",
-  "categories": [
-    "Museum",
-    "Indoor"
-  ],
+  "categories": ["Museum", "Indoor"],
   "heroImage": "/images/omiya-railway.jpg",
   "gallery": [],
   "description": "Massive indoor museum dedicated to Japan's railway history, featuring real historic trains.",
@@ -41,30 +38,11 @@
     "autumn": 10,
     "winter": 10
   },
-  "bestMonths": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "reservation": "",
   "parking": "Yes",
-  "highlights": [
-    "Train Simulators",
-    "Historic Cars"
-  ],
-  "tags": [
-    "Indoor",
-    "Family-friendly"
-  ],
+  "highlights": ["Train Simulators", "Historic Cars"],
+  "tags": ["Indoor", "Family-friendly"],
   "itinerary": [],
   "restaurants": [
     "Omiya Railway Museum Traditional Dining",

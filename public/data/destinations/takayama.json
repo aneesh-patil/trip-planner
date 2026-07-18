@@ -2,15 +2,8 @@
   "id": "takayama",
   "name": "Takayama & Shirakawa-go",
   "region": "Chubu",
-  "categories": [
-    "Town",
-    "History"
-  ],
-  "tags": [
-    "Old Town",
-    "Hida Beef",
-    "Sake"
-  ],
+  "categories": ["Town", "History"],
+  "tags": ["Old Town", "Hida Beef", "Sake"],
   "budgetRecommended": 12000,
   "ratings": {
     "overall": 9,

@@ -3,10 +3,7 @@
   "name": "Asakusa (Taito)",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "History",
-    "City"
-  ],
+  "categories": ["History", "City"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/960px-Sensoji_2023.jpg",
   "gallery": [],
   "description": "Tokyo's traditional heart, built around Senso-ji Temple. Nakamise shopping street offers snacks and souvenirs.",
@@ -41,35 +38,14 @@
     "autumn": 9,
     "winter": 8
   },
-  "bestMonths": [
-    3,
-    4,
-    5,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [3, 4, 5, 9, 10, 11, 12],
   "reservation": "Not required.",
   "parking": "Difficult.",
-  "highlights": [
-    "Senso-ji Temple",
-    "Kaminarimon Gate",
-    "Sumida River Cruise"
-  ],
-  "tags": [
-    "Traditional",
-    "Street Food",
-    "Culture"
-  ],
+  "highlights": ["Senso-ji Temple", "Kaminarimon Gate", "Sumida River Cruise"],
+  "tags": ["Traditional", "Street Food", "Culture"],
   "itinerary": [],
-  "restaurants": [
-    "Asakusa Imahan (Sukiyaki)",
-    "Daikokuya (Tempura)"
-  ],
-  "cafes": [
-    "Suzukien (Matcha Gelato)"
-  ],
+  "restaurants": ["Asakusa Imahan (Sukiyaki)", "Daikokuya (Tempura)"],
+  "cafes": ["Suzukien (Matcha Gelato)"],
   "notes": "Go early morning (before 9 AM) to photograph Kaminarimon without crowds.",
   "itineraries": [
     {

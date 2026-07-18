@@ -2,16 +2,8 @@
   "id": "fuji-5-lake",
   "name": "Fuji Five Lakes",
   "region": "Chubu",
-  "categories": [
-    "Lake",
-    "Nature",
-    "Theme Park"
-  ],
-  "tags": [
-    "Fuji Views",
-    "Fuji-Q",
-    "Cycling"
-  ],
+  "categories": ["Lake", "Nature", "Theme Park"],
+  "tags": ["Fuji Views", "Fuji-Q", "Cycling"],
   "budgetRecommended": 11000,
   "ratings": {
     "overall": 9,

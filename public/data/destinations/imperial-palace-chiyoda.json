@@ -3,11 +3,7 @@
   "name": "Imperial Palace (Chiyoda)",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "History",
-    "Nature",
-    "Parks"
-  ],
+  "categories": ["History", "Nature", "Parks"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Edo_P_detail.jpg/960px-Edo_P_detail.jpg",
   "gallery": [],
   "description": "The primary residence of the Emperor of Japan. Surrounded by moats, stone walls, and beautiful gardens.",
@@ -42,33 +38,18 @@
     "autumn": 9,
     "winter": 7
   },
-  "bestMonths": [
-    3,
-    4,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 10, 11],
   "reservation": "Required for inner grounds tour.",
   "parking": "Very limited.",
-  "highlights": [
-    "East Gardens",
-    "Nijubashi Bridge",
-    "Chidorigafuchi (Spring)"
-  ],
-  "tags": [
-    "Historical",
-    "Gardens",
-    "Free"
-  ],
+  "highlights": ["East Gardens", "Nijubashi Bridge", "Chidorigafuchi (Spring)"],
+  "tags": ["Historical", "Gardens", "Free"],
   "itinerary": [],
   "restaurants": [
     "Imperial Palace (Chiyoda) Traditional Dining",
     "Local Tokyo Specialty Restaurant",
     "The Imperial Grill & Izakaya"
   ],
-  "cafes": [
-    "Wadakura Fountain Park Cafe"
-  ],
+  "cafes": ["Wadakura Fountain Park Cafe"],
   "notes": "East Gardens are closed on Mondays and Fridays.",
   "itineraries": [
     {

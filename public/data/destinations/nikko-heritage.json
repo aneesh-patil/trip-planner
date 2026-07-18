@@ -3,11 +3,7 @@
   "name": "Nikko",
   "prefecture": "Tochigi",
   "region": "Kanto",
-  "categories": [
-    "History",
-    "Nature",
-    "Temples"
-  ],
+  "categories": ["History", "Nature", "Temples"],
   "heroImage": "/images/nikko_hero.jpg",
   "gallery": [],
   "description": "World Heritage site famous for Toshogu Shrine and stunning autumn colors around Lake Chuzenji.",
@@ -42,23 +38,11 @@
     "autumn": 10,
     "winter": 7
   },
-  "bestMonths": [
-    9,
-    10,
-    11
-  ],
+  "bestMonths": [9, 10, 11],
   "reservation": "Required for limited express trains and ryokans.",
   "parking": "Extremely crowded during autumn leaves season.",
-  "highlights": [
-    "Toshogu Shrine",
-    "Lake Chuzenji",
-    "Kegon Falls"
-  ],
-  "tags": [
-    "World Heritage",
-    "Nature",
-    "Overnight"
-  ],
+  "highlights": ["Toshogu Shrine", "Lake Chuzenji", "Kegon Falls"],
+  "tags": ["World Heritage", "Nature", "Overnight"],
   "itinerary": [
     {
       "time": "09:30",
@@ -77,14 +61,8 @@
       "activity": "Kegon Falls"
     }
   ],
-  "restaurants": [
-    "Nikko Yuba Maki",
-    "Meiji no Yakata"
-  ],
-  "cafes": [
-    "Hongu Cafe",
-    "Nikko Coffee"
-  ],
+  "restaurants": ["Nikko Yuba Maki", "Meiji no Yakata"],
+  "cafes": ["Hongu Cafe", "Nikko Coffee"],
   "notes": "Traffic jams to Okunikko are severe in October.",
   "itineraries": [
     {

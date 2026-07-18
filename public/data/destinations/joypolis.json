@@ -3,10 +3,7 @@
   "name": "Joypolis Odaiba",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "Indoor Park",
-    "Gaming"
-  ],
+  "categories": ["Indoor Park", "Gaming"],
   "heroImage": "/images/joypolis.jpg",
   "gallery": [],
   "description": "Sega's massive indoor amusement park with VR attractions, roller coasters, and arcade games.",
@@ -41,30 +38,11 @@
     "autumn": 10,
     "winter": 10
   },
-  "bestMonths": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "reservation": "",
   "parking": "Yes",
-  "highlights": [
-    "Halfpipe Tokyo",
-    "VR Attractions"
-  ],
-  "tags": [
-    "Indoor",
-    "Action"
-  ],
+  "highlights": ["Halfpipe Tokyo", "VR Attractions"],
+  "tags": ["Indoor", "Action"],
   "itinerary": [],
   "restaurants": [
     "Joypolis Odaiba Traditional Dining",

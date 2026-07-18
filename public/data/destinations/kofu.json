@@ -2,16 +2,8 @@
   "id": "kofu",
   "name": "Kofu",
   "region": "Chubu",
-  "categories": [
-    "City",
-    "History",
-    "Mountain"
-  ],
-  "tags": [
-    "Takeda Shingen",
-    "Wine",
-    "Gorges"
-  ],
+  "categories": ["City", "History", "Mountain"],
+  "tags": ["Takeda Shingen", "Wine", "Gorges"],
   "budgetRecommended": 8000,
   "ratings": {
     "overall": 7.8,
@@ -70,11 +62,7 @@
     "Local Shizuoka Specialty Restaurant",
     "The Kofu Grill & Izakaya"
   ],
-  "cafes": [
-    "Café de Kofu",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
+  "cafes": ["Café de Kofu", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Kofu. Known for its takeda shingen and wine vibes, it offers a great escape with an overall score of 7.8.",
   "itineraries": [
     {

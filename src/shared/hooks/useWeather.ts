@@ -15,7 +15,7 @@ export function useWeekendWeather(lat?: number, lng?: number) {
     if (!lat || !lng) return;
 
     let isMounted = true;
-    
+
     async function fetchWeather() {
       setLoading(true);
       setError(null);
@@ -31,7 +31,7 @@ export function useWeekendWeather(lat?: number, lng?: number) {
     }
 
     fetchWeather();
-    
+
     return () => {
       isMounted = false;
     };

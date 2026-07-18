@@ -2,15 +2,8 @@
   "id": "saitama-city",
   "name": "Saitama City",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Museum",
-    "Shrine"
-  ],
-  "tags": [
-    "Bonsai",
-    "Railway Museum"
-  ],
+  "categories": ["City", "Museum", "Shrine"],
+  "tags": ["Bonsai", "Railway Museum"],
   "budgetRecommended": 6000,
   "ratings": {
     "overall": 7.8,

@@ -2,15 +2,8 @@
   "id": "noto",
   "name": "Noto Peninsula",
   "region": "Chubu",
-  "categories": [
-    "Coast",
-    "Nature"
-  ],
-  "tags": [
-    "Scenic Drive",
-    "Seafood",
-    "Rugged"
-  ],
+  "categories": ["Coast", "Nature"],
+  "tags": ["Scenic Drive", "Seafood", "Rugged"],
   "budgetRecommended": 11000,
   "ratings": {
     "overall": 8.6,

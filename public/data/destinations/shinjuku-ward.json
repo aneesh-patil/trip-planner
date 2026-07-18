@@ -3,11 +3,7 @@
   "name": "Shinjuku",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Shopping",
-    "Parks"
-  ],
+  "categories": ["City", "Shopping", "Parks"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/960px-Skyscrapers_of_Shinjuku_2009_January.jpg",
   "gallery": [],
   "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
@@ -42,13 +38,7 @@
     "autumn": 9,
     "winter": 9
   },
-  "bestMonths": [
-    3,
-    4,
-    9,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 9, 10, 11],
   "reservation": "Highly recommended for dinners.",
   "parking": "Available in major towers, very expensive.",
   "highlights": [
@@ -56,18 +46,10 @@
     "Kabukicho",
     "Tokyo Metropolitan Government Building (Free View)"
   ],
-  "tags": [
-    "Nightlife",
-    "Shopping",
-    "Views"
-  ],
+  "tags": ["Nightlife", "Shopping", "Views"],
   "itinerary": [],
-  "restaurants": [
-    "Omoide Yokocho"
-  ],
-  "cafes": [
-    "Blue Bottle Coffee Shinjuku"
-  ],
+  "restaurants": ["Omoide Yokocho"],
+  "cafes": ["Blue Bottle Coffee Shinjuku"],
   "notes": "Shinjuku Station is a maze. Meet at the East Exit Studio Alta or South Exit.",
   "itineraries": [
     {

@@ -2,16 +2,8 @@
   "id": "fujinomiya",
   "name": "Fujinomiya",
   "region": "Chubu",
-  "categories": [
-    "City",
-    "Nature",
-    "Mountain"
-  ],
-  "tags": [
-    "Mt Fuji",
-    "Yakisoba",
-    "Waterfalls"
-  ],
+  "categories": ["City", "Nature", "Mountain"],
+  "tags": ["Mt Fuji", "Yakisoba", "Waterfalls"],
   "budgetRecommended": 7000,
   "ratings": {
     "overall": 8.4,

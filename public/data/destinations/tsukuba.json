@@ -3,10 +3,7 @@
   "name": "Mt. Tsukuba",
   "prefecture": "Ibaraki",
   "region": "Kanto",
-  "categories": [
-    "Mountain",
-    "Nature"
-  ],
+  "categories": ["Mountain", "Nature"],
   "heroImage": "/images/tsukuba.jpg",
   "gallery": [],
   "description": "A beautiful twin-peaked mountain famous for its cable car, shrines, and sweeping views of the Kanto plain.",
@@ -41,22 +38,11 @@
     "autumn": 10,
     "winter": 5
   },
-  "bestMonths": [
-    4,
-    5,
-    10,
-    11
-  ],
+  "bestMonths": [4, 5, 10, 11],
   "reservation": "",
   "parking": "Yes",
-  "highlights": [
-    "Tsukubasan Shrine",
-    "Ropeway"
-  ],
-  "tags": [
-    "Hiking",
-    "Views"
-  ],
+  "highlights": ["Tsukubasan Shrine", "Ropeway"],
+  "tags": ["Hiking", "Views"],
   "itinerary": [],
   "restaurants": [
     "Mt. Tsukuba Traditional Dining",

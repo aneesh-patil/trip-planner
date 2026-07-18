@@ -3,10 +3,7 @@
   "name": "Matsumoto",
   "prefecture": "Nagano",
   "region": "Chubu",
-  "categories": [
-    "Castle",
-    "History"
-  ],
+  "categories": ["Castle", "History"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/960px-Matsumoto_Castle_Keep_Tower.jpg",
   "gallery": [],
   "description": "Historic mountain city famous for Matsumoto Castle, one of Japan's original historic castles.",
@@ -41,23 +38,11 @@
     "autumn": 9,
     "winter": 6
   },
-  "bestMonths": [
-    6,
-    7,
-    8,
-    9,
-    10
-  ],
+  "bestMonths": [6, 7, 8, 9, 10],
   "reservation": "",
   "parking": "Available",
-  "highlights": [
-    "Matsumoto Castle",
-    "Nawate Dori"
-  ],
-  "tags": [
-    "Historic",
-    "Mountains"
-  ],
+  "highlights": ["Matsumoto Castle", "Nawate Dori"],
+  "tags": ["Historic", "Mountains"],
   "itinerary": [],
   "restaurants": [
     "Matsumoto Traditional Dining",

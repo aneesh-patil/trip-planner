@@ -2,16 +2,8 @@
   "id": "shizuoka",
   "name": "Shizuoka City",
   "region": "Chubu",
-  "categories": [
-    "City",
-    "History",
-    "Nature"
-  ],
-  "tags": [
-    "Green Tea",
-    "Castle Ruins",
-    "Fuji Views"
-  ],
+  "categories": ["City", "History", "Nature"],
+  "tags": ["Green Tea", "Castle Ruins", "Fuji Views"],
   "budgetRecommended": 8000,
   "ratings": {
     "overall": 8,

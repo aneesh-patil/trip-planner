@@ -3,11 +3,7 @@
   "name": "Karuizawa",
   "prefecture": "Nagano",
   "region": "Chubu",
-  "categories": [
-    "Nature",
-    "Shopping",
-    "Resort"
-  ],
+  "categories": ["Nature", "Shopping", "Resort"],
   "heroImage": "/images/karuizawa.jpg",
   "gallery": [],
   "description": "An upscale mountain resort town famous for summer retreats, outlet shopping, and nature.",
@@ -42,23 +38,11 @@
     "autumn": 9,
     "winter": 7
   },
-  "bestMonths": [
-    7,
-    8,
-    9,
-    10
-  ],
+  "bestMonths": [7, 8, 9, 10],
   "reservation": "",
   "parking": "Yes",
-  "highlights": [
-    "Kyu-Karuizawa",
-    "Shiraito Falls",
-    "Prince Shopping Plaza"
-  ],
-  "tags": [
-    "Cool Summer",
-    "Upscale"
-  ],
+  "highlights": ["Kyu-Karuizawa", "Shiraito Falls", "Prince Shopping Plaza"],
+  "tags": ["Cool Summer", "Upscale"],
   "itinerary": [],
   "restaurants": [
     "Karuizawa Traditional Dining",

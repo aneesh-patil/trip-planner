@@ -1,6 +1,6 @@
-import fs from 'fs';
+import fs from "fs";
 
-const dests = JSON.parse(fs.readFileSync('src/data/destinations.json', 'utf8'));
+const dests = JSON.parse(fs.readFileSync("src/data/destinations.json", "utf8"));
 
 const workingImages = [
   "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1000&auto=format&fit=crop",
@@ -17,7 +17,7 @@ const workingImages = [
   "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?q=80&w=1000&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=1000&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1551043047-1d2adf00f3fd?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1551893665-f843f600794e?q=80&w=1000&auto=format&fit=crop"
+  "https://images.unsplash.com/photo-1551893665-f843f600794e?q=80&w=1000&auto=format&fit=crop",
 ];
 
 dests.forEach((d, index) => {
@@ -28,27 +28,51 @@ dests.forEach((d, index) => {
   d.itineraries = [
     {
       name: "Plan A: The Classic Tourist Route",
-      description: "Hit all the major highlights and famous spots in one efficient day. Best for first-timers.",
+      description:
+        "Hit all the major highlights and famous spots in one efficient day. Best for first-timers.",
       steps: [
-        { time: "09:30", activity: "Arrive and grab a quick coffee near the station." },
-        { time: "10:30", activity: "Visit the main attraction or historic site." },
-        { time: "12:30", activity: "Lunch at a highly-rated local restaurant." },
+        {
+          time: "09:30",
+          activity: "Arrive and grab a quick coffee near the station.",
+        },
+        {
+          time: "10:30",
+          activity: "Visit the main attraction or historic site.",
+        },
+        {
+          time: "12:30",
+          activity: "Lunch at a highly-rated local restaurant.",
+        },
         { time: "14:00", activity: "Afternoon sightseeing and photo spots." },
-        { time: "16:30", activity: "Souvenir shopping before heading back." }
-      ]
+        { time: "16:30", activity: "Souvenir shopping before heading back." },
+      ],
     },
     {
       name: "Plan B: Relaxed & Off-the-Beaten-Path",
-      description: "A slower pace focusing on local cafes, hidden gems, and avoiding the major crowds.",
+      description:
+        "A slower pace focusing on local cafes, hidden gems, and avoiding the major crowds.",
       steps: [
-        { time: "11:00", activity: "Late arrival. Head straight to a hidden cafe for brunch." },
-        { time: "12:30", activity: "Stroll through a quiet neighborhood or local park." },
-        { time: "14:30", activity: "Visit a smaller, lesser-known museum or shrine." },
-        { time: "16:00", activity: "Relax at a local bathhouse (if available) or scenic viewpoint." },
-        { time: "18:00", activity: "Dinner at an izakaya loved by locals." }
-      ]
-    }
+        {
+          time: "11:00",
+          activity: "Late arrival. Head straight to a hidden cafe for brunch.",
+        },
+        {
+          time: "12:30",
+          activity: "Stroll through a quiet neighborhood or local park.",
+        },
+        {
+          time: "14:30",
+          activity: "Visit a smaller, lesser-known museum or shrine.",
+        },
+        {
+          time: "16:00",
+          activity:
+            "Relax at a local bathhouse (if available) or scenic viewpoint.",
+        },
+        { time: "18:00", activity: "Dinner at an izakaya loved by locals." },
+      ],
+    },
   ];
 });
 
-fs.writeFileSync('src/data/destinations.json', JSON.stringify(dests, null, 2));
+fs.writeFileSync("src/data/destinations.json", JSON.stringify(dests, null, 2));

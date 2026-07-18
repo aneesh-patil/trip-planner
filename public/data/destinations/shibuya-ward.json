@@ -3,10 +3,7 @@
   "name": "Shibuya",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Shopping"
-  ],
+  "categories": ["City", "Shopping"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/960px-Shibuya_Crossing%2C_Aerial.jpg",
   "gallery": [],
   "description": "Youth culture, trendy fashion, and the iconic Shibuya Scramble Crossing. Constantly evolving with new high-rises like Shibuya Sky.",
@@ -41,33 +38,14 @@
     "autumn": 8,
     "winter": 9
   },
-  "bestMonths": [
-    3,
-    4,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [3, 4, 9, 10, 11, 12],
   "reservation": "Required for Shibuya Sky.",
   "parking": "Extremely difficult.",
-  "highlights": [
-    "Scramble Crossing",
-    "Shibuya Sky",
-    "Miyashita Park"
-  ],
-  "tags": [
-    "Trendy",
-    "Photography",
-    "Fashion"
-  ],
+  "highlights": ["Scramble Crossing", "Shibuya Sky", "Miyashita Park"],
+  "tags": ["Trendy", "Photography", "Fashion"],
   "itinerary": [],
-  "restaurants": [
-    "Katsumidori Seibu Shibuya"
-  ],
-  "cafes": [
-    "Fuglen Tokyo"
-  ],
+  "restaurants": ["Katsumidori Seibu Shibuya"],
+  "cafes": ["Fuglen Tokyo"],
   "notes": "Book Shibuya Sky tickets for sunset at least 2 weeks in advance.",
   "itineraries": [
     {

@@ -1,13 +1,25 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const filePath = path.join(__dirname, '../src/features/destinations/DestinationDetails.tsx');
-let content = fs.readFileSync(filePath, 'utf8');
+const filePath = path.join(
+  __dirname,
+  "../src/features/destinations/DestinationDetails.tsx",
+);
+let content = fs.readFileSync(filePath, "utf8");
 
 // Replace top imports
-content = content.replace('import { useState, useMemo } from "react";', 'import { useState, useEffect, useMemo } from "react";');
-content = content.replace('import { getTransportCost, getAdjustedBudget } from "@/shared/utils/utils";', 'import { budgetService } from "@/shared/services/budget/BudgetService";');
-content = content.replace('import { destinationService } from "@/shared/services/destination/DestinationService";', 'import { destinationService } from "@/shared/services/destination/DestinationService";');
+content = content.replace(
+  'import { useState, useMemo } from "react";',
+  'import { useState, useEffect, useMemo } from "react";',
+);
+content = content.replace(
+  'import { getTransportCost, getAdjustedBudget } from "@/shared/utils/utils";',
+  'import { budgetService } from "@/shared/services/budget/BudgetService";',
+);
+content = content.replace(
+  'import { destinationService } from "@/shared/services/destination/DestinationService";',
+  'import { destinationService } from "@/shared/services/destination/DestinationService";',
+);
 
 // Replace component start to loading check
 const targetOldStart = `export default function DestinationDetails() {
@@ -16,7 +28,8 @@ const targetOldStart = `export default function DestinationDetails() {
   const destination = (destinationService.getDestinationList() as Destination[]).find(d => d.id === id);
   const { forecast, loading } = useWeekendWeather(destination?.coordinates?.lat, destination?.coordinates?.lng);`;
 
-const actualStartRegex = /export default function DestinationDetails\(\) \{[\s\S]*?const \{ forecast, loading \} = useWeekendWeather\(destination\?\.coordinates\?\.lat, destination\?\.coordinates\?\.lng\);/m;
+const actualStartRegex =
+  /export default function DestinationDetails\(\) \{[\s\S]*?const \{ forecast, loading \} = useWeekendWeather\(destination\?\.coordinates\?\.lat, destination\?\.coordinates\?\.lng\);/m;
 
 const newStart = `export default function DestinationDetails() {
   const { id } = useParams();
@@ -59,8 +72,14 @@ const notFoundNew = `  if (destLoading) {
 content = content.replace(notFoundOld, notFoundNew);
 
 // Replace budget calls
-content = content.replace(/getTransportCost\(/g, 'budgetService.getTransportCost(');
-content = content.replace(/getAdjustedBudget\(/g, 'budgetService.getAdjustedBudget(');
+content = content.replace(
+  /getTransportCost\(/g,
+  "budgetService.getTransportCost(",
+);
+content = content.replace(
+  /getAdjustedBudget\(/g,
+  "budgetService.getAdjustedBudget(",
+);
 
-fs.writeFileSync(filePath, content, 'utf8');
+fs.writeFileSync(filePath, content, "utf8");
 console.log("Updated DestinationDetails.tsx");

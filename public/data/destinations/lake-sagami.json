@@ -2,15 +2,8 @@
   "id": "lake-sagami",
   "name": "Lake Sagami",
   "region": "Kanto",
-  "categories": [
-    "Lake",
-    "Nature",
-    "Theme Park"
-  ],
-  "tags": [
-    "Illumination",
-    "Outdoors"
-  ],
+  "categories": ["Lake", "Nature", "Theme Park"],
+  "tags": ["Illumination", "Outdoors"],
   "budgetRecommended": 9000,
   "ratings": {
     "overall": 8.1,

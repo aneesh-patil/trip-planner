@@ -2,15 +2,8 @@
   "id": "zushi",
   "name": "Zushi & Yokosuka",
   "region": "Kanto",
-  "categories": [
-    "Coast",
-    "Beach"
-  ],
-  "tags": [
-    "Surfing",
-    "Cafes",
-    "Sunset"
-  ],
+  "categories": ["Coast", "Beach"],
+  "tags": ["Surfing", "Cafes", "Sunset"],
   "budgetRecommended": 6000,
   "ratings": {
     "overall": 8,
@@ -68,11 +61,7 @@
     "Local Kanagawa Specialty Restaurant",
     "The Zushi Grill & Izakaya"
   ],
-  "cafes": [
-    "Café de Zushi",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
+  "cafes": ["Café de Zushi", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Zushi & Yokosuka. Known for its surfing and cafes vibes, it offers a great escape with an overall score of 8.",
   "itineraries": [
     {

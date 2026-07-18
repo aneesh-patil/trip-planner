@@ -3,11 +3,7 @@
   "name": "Odaiba (Minato)",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Sea",
-    "Theme Park"
-  ],
+  "categories": ["City", "Sea", "Theme Park"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
   "gallery": [],
   "description": "A high-tech entertainment hub on an artificial island in Tokyo Bay, featuring shopping malls, beaches, and a giant Gundam.",
@@ -42,33 +38,14 @@
     "autumn": 9,
     "winter": 9
   },
-  "bestMonths": [
-    3,
-    4,
-    5,
-    9,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 5, 9, 10, 11],
   "reservation": "Not required.",
   "parking": "Plenty of paid parking in malls.",
-  "highlights": [
-    "Gundam Statue",
-    "Odaiba Seaside Park",
-    "Rainbow Bridge View"
-  ],
-  "tags": [
-    "Date Spot",
-    "Entertainment",
-    "Ocean View"
-  ],
+  "highlights": ["Gundam Statue", "Odaiba Seaside Park", "Rainbow Bridge View"],
+  "tags": ["Date Spot", "Entertainment", "Ocean View"],
   "itinerary": [],
-  "restaurants": [
-    "Aqua City Dining"
-  ],
-  "cafes": [
-    "Bills Odaiba"
-  ],
+  "restaurants": ["Aqua City Dining"],
+  "cafes": ["Bills Odaiba"],
   "notes": "Take the Yurikamome line for an automated scenic ride across the bay.",
   "itineraries": [
     {

@@ -2,14 +2,8 @@
   "id": "ashigara",
   "name": "Ashigara",
   "region": "Kanto",
-  "categories": [
-    "Nature",
-    "Mountain"
-  ],
-  "tags": [
-    "Hiking",
-    "Quiet"
-  ],
+  "categories": ["Nature", "Mountain"],
+  "tags": ["Hiking", "Quiet"],
   "budgetRecommended": 4000,
   "ratings": {
     "overall": 7.8,

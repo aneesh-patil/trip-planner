@@ -2,16 +2,8 @@
   "id": "sado-island",
   "name": "Sado Island",
   "region": "Chubu",
-  "categories": [
-    "Island",
-    "History",
-    "Nature"
-  ],
-  "tags": [
-    "Gold Mine",
-    "Tub Boats",
-    "Remote"
-  ],
+  "categories": ["Island", "History", "Nature"],
+  "tags": ["Gold Mine", "Tub Boats", "Remote"],
   "budgetRecommended": 15000,
   "ratings": {
     "overall": 8.4,

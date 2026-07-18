@@ -3,11 +3,7 @@
   "name": "teamLab Planets",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "Art",
-    "Theme Park",
-    "Indoor"
-  ],
+  "categories": ["Art", "Theme Park", "Indoor"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
   "gallery": [],
   "description": "An immersive digital art museum where you walk barefoot through massive, interactive water and light installations.",
@@ -42,20 +38,7 @@
     "autumn": 9,
     "winter": 9
   },
-  "bestMonths": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "reservation": "Required well in advance.",
   "parking": "Not recommended.",
   "highlights": [
@@ -63,15 +46,9 @@
     "Floating Flower Garden",
     "Water Installations"
   ],
-  "tags": [
-    "Digital Art",
-    "Photogenic",
-    "Date Spot"
-  ],
+  "tags": ["Digital Art", "Photogenic", "Date Spot"],
   "itinerary": [],
-  "restaurants": [
-    "Vegan Ramen UZU Tokyo"
-  ],
+  "restaurants": ["Vegan Ramen UZU Tokyo"],
   "cafes": [
     "Café de teamLab Planets",
     "Riverside Roasters",

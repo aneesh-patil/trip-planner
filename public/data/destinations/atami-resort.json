@@ -3,11 +3,7 @@
   "name": "Atami",
   "prefecture": "Shizuoka",
   "region": "Chubu",
-  "categories": [
-    "Onsen",
-    "Beach",
-    "Retro"
-  ],
+  "categories": ["Onsen", "Beach", "Retro"],
   "heroImage": "/images/atami_hero.jpg",
   "gallery": [],
   "description": "A retro-chic seaside hot spring town famous for its beaches, fresh seafood, and frequent fireworks.",
@@ -42,23 +38,11 @@
     "autumn": 8,
     "winter": 7
   },
-  "bestMonths": [
-    7,
-    8,
-    9
-  ],
+  "bestMonths": [7, 8, 9],
   "reservation": "Essential during summer and fireworks days.",
   "parking": "Limited near the beach.",
-  "highlights": [
-    "Sun Beach",
-    "Atami Castle",
-    "Kiunkaku"
-  ],
-  "tags": [
-    "Seafood",
-    "Onsen",
-    "Beach"
-  ],
+  "highlights": ["Sun Beach", "Atami Castle", "Kiunkaku"],
+  "tags": ["Seafood", "Onsen", "Beach"],
   "itinerary": [
     {
       "time": "11:00",
@@ -77,14 +61,8 @@
       "activity": "Check-in to seaside Ryokan"
     }
   ],
-  "restaurants": [
-    "Atami Osakana Shokudo",
-    "Restaurant Scott"
-  ],
-  "cafes": [
-    "Café RoCA",
-    "Atami Pudding"
-  ],
+  "restaurants": ["Atami Osakana Shokudo", "Restaurant Scott"],
+  "cafes": ["Café RoCA", "Atami Pudding"],
   "notes": "Check the schedule for Atami's year-round fireworks displays!",
   "itineraries": [
     {

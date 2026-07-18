@@ -2,14 +2,8 @@
   "id": "chiba-city",
   "name": "Chiba City",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Museum"
-  ],
-  "tags": [
-    "Urban",
-    "Shopping"
-  ],
+  "categories": ["City", "Museum"],
+  "tags": ["Urban", "Shopping"],
   "budgetRecommended": 7000,
   "ratings": {
     "overall": 7.5,

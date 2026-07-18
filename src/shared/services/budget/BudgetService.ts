@@ -18,7 +18,10 @@ class BudgetService {
     if (tripDurationHours <= 12) return CAR_RENTAL_RATES.upTo12h;
     if (tripDurationHours <= 24) return CAR_RENTAL_RATES.upTo24h;
     const extraHours = tripDurationHours - 24;
-    return CAR_RENTAL_RATES.upTo24h + Math.ceil(extraHours) * CAR_RENTAL_RATES.extraPerHour;
+    return (
+      CAR_RENTAL_RATES.upTo24h +
+      Math.ceil(extraHours) * CAR_RENTAL_RATES.extraPerHour
+    );
   }
 
   public getTransportCost(dest: Destination, mode: string): number {
@@ -26,13 +29,13 @@ class BudgetService {
 
     if (mode === "shinkansen" && dest.transportOptions?.shinkansen) {
       const time = dest.transportOptions.shinkansen;
-      const perPersonCost = Math.floor((3000 + (time * 150)) * 2);
+      const perPersonCost = Math.floor((3000 + time * 150) * 2);
       return perPersonCost * PARTY_SIZE;
     }
 
     if (mode === "bus" && dest.transportOptions?.bus) {
       const time = dest.transportOptions.bus;
-      const perPersonCost = Math.floor((2000 + (time * 15)) * 2);
+      const perPersonCost = Math.floor((2000 + time * 15) * 2);
       return perPersonCost * PARTY_SIZE;
     }
 
@@ -45,7 +48,9 @@ class BudgetService {
 
       const rentalFee = this.getRentalBaseFee(tripDurationHours);
       const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
-      const gasRoundTrip = Math.floor((distanceKm * 2) / 15 * GAS_PRICE_PER_LITER);
+      const gasRoundTrip = Math.floor(
+        ((distanceKm * 2) / 15) * GAS_PRICE_PER_LITER,
+      );
 
       return rentalFee + tollsRoundTrip + gasRoundTrip;
     }
@@ -61,20 +66,29 @@ class BudgetService {
 
   public getAdjustedBudget(dest: Destination, activeMode: string): number {
     let mode = "train";
-    
-    if (activeMode !== "all" && activeMode !== "any" && dest.transportOptions?.[activeMode as keyof typeof dest.transportOptions]) {
+
+    if (
+      activeMode !== "all" &&
+      activeMode !== "any" &&
+      dest.transportOptions?.[activeMode as keyof typeof dest.transportOptions]
+    ) {
       mode = activeMode;
     } else {
       const to = dest.transportOptions || {};
-      const entries = Object.entries(to).filter(([_, v]) => v !== undefined) as [string, number][];
+      const entries = Object.entries(to).filter(
+        ([_, v]) => v !== undefined,
+      ) as [string, number][];
       if (entries.length > 0) {
-        const fastest = entries.reduce((min, curr) => curr[1] < min[1] ? curr : min);
+        const fastest = entries.reduce((min, curr) =>
+          curr[1] < min[1] ? curr : min,
+        );
         mode = fastest[0];
       }
     }
 
     const transportCost = this.getTransportCost(dest, mode);
-    const otherCosts = dest.budgetRecommended - (dest.budgetBreakdown?.transport || 1500);
+    const otherCosts =
+      dest.budgetRecommended - (dest.budgetBreakdown?.transport || 1500);
     return otherCosts + transportCost;
   }
 }

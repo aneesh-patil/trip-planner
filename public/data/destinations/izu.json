@@ -2,15 +2,8 @@
   "id": "izu",
   "name": "Izu Peninsula",
   "region": "Chubu",
-  "categories": [
-    "Coast",
-    "Hot Spring"
-  ],
-  "tags": [
-    "Beaches",
-    "Onsen",
-    "Scuba"
-  ],
+  "categories": ["Coast", "Hot Spring"],
+  "tags": ["Beaches", "Onsen", "Scuba"],
   "budgetRecommended": 12000,
   "ratings": {
     "overall": 8.6,

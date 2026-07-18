@@ -2,16 +2,8 @@
   "id": "fukui",
   "name": "Fukui",
   "region": "Chubu",
-  "categories": [
-    "City",
-    "Museum",
-    "Coast"
-  ],
-  "tags": [
-    "Dinosaurs",
-    "Cliffs",
-    "Crab"
-  ],
+  "categories": ["City", "Museum", "Coast"],
+  "tags": ["Dinosaurs", "Cliffs", "Crab"],
   "budgetRecommended": 10000,
   "ratings": {
     "overall": 8.2,
@@ -68,11 +60,7 @@
     "Local Shizuoka Specialty Restaurant",
     "The Fukui Grill & Izakaya"
   ],
-  "cafes": [
-    "Café de Fukui",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
+  "cafes": ["Café de Fukui", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Fukui. Known for its dinosaurs and cliffs vibes, it offers a great escape with an overall score of 8.2.",
   "itineraries": [
     {

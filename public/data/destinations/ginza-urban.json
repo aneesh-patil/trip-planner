@@ -3,12 +3,7 @@
   "name": "Ginza",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Shopping",
-    "Art",
-    "History"
-  ],
+  "categories": ["City", "Shopping", "Art", "History"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ginza-WAKO_at_night.jpg/960px-Ginza-WAKO_at_night.jpg",
   "gallery": [],
   "description": "Tokyo's most prestigious shopping district, blending high-end fashion, traditional crafts, and world-class dining.",
@@ -43,15 +38,7 @@
     "autumn": 9,
     "winter": 9
   },
-  "bestMonths": [
-    3,
-    4,
-    5,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [3, 4, 5, 9, 10, 11, 12],
   "reservation": "Recommended for high-end dining.",
   "parking": "Expensive.",
   "highlights": [
@@ -60,20 +47,10 @@
     "Ginza Six",
     "Pedestrian Paradise (Weekends)"
   ],
-  "tags": [
-    "Luxury",
-    "Shopping",
-    "Architecture"
-  ],
+  "tags": ["Luxury", "Shopping", "Architecture"],
   "itinerary": [],
-  "restaurants": [
-    "Kyubey Sushi",
-    "Ginza Ukai-tei"
-  ],
-  "cafes": [
-    "Cafe de L'Ambre",
-    "Shiseido Parlour"
-  ],
+  "restaurants": ["Kyubey Sushi", "Ginza Ukai-tei"],
+  "cafes": ["Cafe de L'Ambre", "Shiseido Parlour"],
   "notes": "Main street is closed to traffic on weekends (Pedestrian Paradise).",
   "itineraries": [
     {

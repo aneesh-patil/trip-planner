@@ -2,14 +2,8 @@
   "id": "chichibu",
   "name": "Chichibu",
   "region": "Kanto",
-  "categories": [
-    "Mountain",
-    "Shrine"
-  ],
-  "tags": [
-    "Nature",
-    "Festivals"
-  ],
+  "categories": ["Mountain", "Shrine"],
+  "tags": ["Nature", "Festivals"],
   "budgetRecommended": 8000,
   "ratings": {
     "overall": 8.5,

@@ -3,11 +3,7 @@
   "name": "Yokohama",
   "prefecture": "Kanagawa",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Food",
-    "Shopping"
-  ],
+  "categories": ["City", "Food", "Shopping"],
   "heroImage": "/images/yokohama_hero.jpg",
   "gallery": [],
   "description": "Vibrant port city offering romantic night views, large Chinatown, and modern shopping complexes.",
@@ -42,27 +38,11 @@
     "autumn": 9,
     "winter": 9
   },
-  "bestMonths": [
-    3,
-    4,
-    5,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [3, 4, 5, 9, 10, 11, 12],
   "reservation": "Dinners with night views require booking.",
   "parking": "Plenty of paid parking in Minatomirai.",
-  "highlights": [
-    "Chinatown",
-    "Red Brick Warehouse",
-    "Cup Noodle Museum"
-  ],
-  "tags": [
-    "Date Spot",
-    "Foodie",
-    "Night View"
-  ],
+  "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
+  "tags": ["Date Spot", "Foodie", "Night View"],
   "itinerary": [
     {
       "time": "11:00",
@@ -81,14 +61,8 @@
       "activity": "Dinner with Minatomirai view"
     }
   ],
-  "restaurants": [
-    "Manchinro",
-    "Bills Red Brick Warehouse"
-  ],
-  "cafes": [
-    "Zebracoffee",
-    "Koku Kafe"
-  ],
+  "restaurants": ["Manchinro", "Bills Red Brick Warehouse"],
+  "cafes": ["Zebracoffee", "Koku Kafe"],
   "notes": "Extremely easy access from central Tokyo.",
   "itineraries": [
     {

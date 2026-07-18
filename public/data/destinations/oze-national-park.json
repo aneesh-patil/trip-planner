@@ -2,14 +2,8 @@
   "id": "oze-national-park",
   "name": "Oze National Park",
   "region": "Kanto",
-  "categories": [
-    "Nature",
-    "Mountain"
-  ],
-  "tags": [
-    "Hiking",
-    "Marshlands"
-  ],
+  "categories": ["Nature", "Mountain"],
+  "tags": ["Hiking", "Marshlands"],
   "budgetRecommended": 6400,
   "ratings": {
     "overall": 8.8,

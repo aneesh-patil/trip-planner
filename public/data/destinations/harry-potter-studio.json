@@ -3,10 +3,7 @@
   "name": "Harry Potter Studio",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "Theme Park",
-    "Indoor"
-  ],
+  "categories": ["Theme Park", "Indoor"],
   "heroImage": "/images/harry-potter-studio.jpg",
   "gallery": [],
   "description": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter. A magical indoor experience.",
@@ -41,30 +38,11 @@
     "autumn": 10,
     "winter": 10
   },
-  "bestMonths": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "reservation": "Required well in advance",
   "parking": "Available but train recommended",
-  "highlights": [
-    "Great Hall",
-    "Diagon Alley"
-  ],
-  "tags": [
-    "Indoor",
-    "Pop Culture"
-  ],
+  "highlights": ["Great Hall", "Diagon Alley"],
+  "tags": ["Indoor", "Pop Culture"],
   "itinerary": [],
   "restaurants": [
     "Harry Potter Studio Traditional Dining",

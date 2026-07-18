@@ -2,14 +2,8 @@
   "id": "ushiku-daibutsu",
   "name": "Ushiku Daibutsu",
   "region": "Kanto",
-  "categories": [
-    "Shrine",
-    "Park"
-  ],
-  "tags": [
-    "Giant Statue",
-    "Record Breaking"
-  ],
+  "categories": ["Shrine", "Park"],
+  "tags": ["Giant Statue", "Record Breaking"],
   "budgetRecommended": 6500,
   "ratings": {
     "overall": 7.6,

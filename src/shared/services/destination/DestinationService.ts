@@ -29,7 +29,7 @@ class DestinationService {
    * Returns details for a subset of destinations for comparison.
    */
   public async compareDestinations(ids: string[]): Promise<Destination[]> {
-    const promises = ids.map(id => this.getDestination(id));
+    const promises = ids.map((id) => this.getDestination(id));
     const results = await Promise.all(promises);
     return results.filter((d): d is Destination => d !== null);
   }

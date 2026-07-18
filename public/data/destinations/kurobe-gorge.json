@@ -2,15 +2,8 @@
   "id": "kurobe-gorge",
   "name": "Kurobe Gorge",
   "region": "Chubu",
-  "categories": [
-    "Nature",
-    "Mountain"
-  ],
-  "tags": [
-    "Scenic Railway",
-    "Ravine",
-    "Onsen"
-  ],
+  "categories": ["Nature", "Mountain"],
+  "tags": ["Scenic Railway", "Ravine", "Onsen"],
   "budgetRecommended": 20000,
   "ratings": {
     "overall": 8.9,

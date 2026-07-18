@@ -3,10 +3,7 @@
   "name": "Meguro",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "Nature",
-    "City"
-  ],
+  "categories": ["Nature", "City"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Meguro_River_Spring_2014%282%29.jpg/960px-Meguro_River_Spring_2014%282%29.jpg",
   "gallery": [],
   "description": "Famous worldwide for the Meguro River cherry blossoms. Features trendy cafes, boutiques, and a relaxed atmosphere.",
@@ -41,12 +38,7 @@
     "autumn": 8,
     "winter": 7
   },
-  "bestMonths": [
-    3,
-    4,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 10, 11],
   "reservation": "Not required, but cafes fill up.",
   "parking": "Limited.",
   "highlights": [
@@ -54,18 +46,10 @@
     "Starbucks Reserve Roastery",
     "Tokyo Photographic Art Museum"
   ],
-  "tags": [
-    "Cherry Blossoms",
-    "Cafes",
-    "Date Spot"
-  ],
+  "tags": ["Cherry Blossoms", "Cafes", "Date Spot"],
   "itinerary": [],
-  "restaurants": [
-    "Tonki (Tonkatsu)"
-  ],
-  "cafes": [
-    "Starbucks Reserve Roastery Tokyo"
-  ],
+  "restaurants": ["Tonki (Tonkatsu)"],
+  "cafes": ["Starbucks Reserve Roastery Tokyo"],
   "notes": "Spring cherry blossoms are incredibly beautiful but completely packed with people.",
   "itineraries": [
     {

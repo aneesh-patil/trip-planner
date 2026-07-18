@@ -3,10 +3,7 @@
   "name": "Akihabara (Chiyoda)",
   "prefecture": "Tokyo",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Shopping"
-  ],
+  "categories": ["City", "Shopping"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/960px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
   "gallery": [],
   "description": "The epicenter of anime, gaming, and electronics culture in Japan. Bustling with themed cafes and arcades.",
@@ -41,40 +38,14 @@
     "autumn": 8,
     "winter": 8
   },
-  "bestMonths": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "reservation": "Required for popular maid cafes.",
   "parking": "Extremely difficult and expensive.",
-  "highlights": [
-    "Electric Town",
-    "Maid Cafes",
-    "Radio Kaikan"
-  ],
-  "tags": [
-    "Anime",
-    "Electronics",
-    "Pop Culture"
-  ],
+  "highlights": ["Electric Town", "Maid Cafes", "Radio Kaikan"],
+  "tags": ["Anime", "Electronics", "Pop Culture"],
   "itinerary": [],
-  "restaurants": [
-    "GoGo Curry",
-    "Gyu-Kaku"
-  ],
-  "cafes": [
-    "Maidreamin"
-  ],
+  "restaurants": ["GoGo Curry", "Gyu-Kaku"],
+  "cafes": ["Maidreamin"],
   "notes": "Sunday afternoons have a pedestrian paradise on Chuo-dori.",
   "itineraries": [
     {

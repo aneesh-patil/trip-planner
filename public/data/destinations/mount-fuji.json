@@ -2,15 +2,8 @@
   "id": "mount-fuji",
   "name": "Mount Fuji",
   "region": "Chubu",
-  "categories": [
-    "Mountain",
-    "Nature"
-  ],
-  "tags": [
-    "Iconic",
-    "Climbing",
-    "Views"
-  ],
+  "categories": ["Mountain", "Nature"],
+  "tags": ["Iconic", "Climbing", "Views"],
   "budgetRecommended": 5000,
   "ratings": {
     "overall": 9.6,

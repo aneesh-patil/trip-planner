@@ -3,10 +3,7 @@
   "name": "Utsunomiya & Oya",
   "prefecture": "Tochigi",
   "region": "Kanto",
-  "categories": [
-    "History",
-    "Food"
-  ],
+  "categories": ["History", "Food"],
   "heroImage": "/images/utsunomiya-oya.jpg",
   "gallery": [],
   "description": "Famous for its massive underground Oya stone quarry and delicious local gyoza.",
@@ -41,22 +38,11 @@
     "autumn": 8,
     "winter": 7
   },
-  "bestMonths": [
-    6,
-    7,
-    8
-  ],
+  "bestMonths": [6, 7, 8],
   "reservation": "",
   "parking": "Yes",
-  "highlights": [
-    "Oya History Museum",
-    "Utsunomiya Gyoza"
-  ],
-  "tags": [
-    "Unique",
-    "Foodie",
-    "Underground"
-  ],
+  "highlights": ["Oya History Museum", "Utsunomiya Gyoza"],
+  "tags": ["Unique", "Foodie", "Underground"],
   "itinerary": [],
   "restaurants": [
     "Utsunomiya Traditional Dining",

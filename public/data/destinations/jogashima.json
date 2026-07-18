@@ -2,15 +2,8 @@
   "id": "jogashima",
   "name": "Miura Peninsula & Jogashima",
   "region": "Kanto",
-  "categories": [
-    "Coast",
-    "Nature"
-  ],
-  "tags": [
-    "Ocean",
-    "Scenic",
-    "Hiking"
-  ],
+  "categories": ["Coast", "Nature"],
+  "tags": ["Ocean", "Scenic", "Hiking"],
   "budgetRecommended": 5000,
   "ratings": {
     "overall": 8,

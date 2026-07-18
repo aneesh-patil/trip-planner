@@ -2,15 +2,8 @@
   "id": "gala-yuzawa",
   "name": "Gala Yuzawa",
   "region": "Chubu",
-  "categories": [
-    "Mountain",
-    "Theme Park"
-  ],
-  "tags": [
-    "Skiing",
-    "Snow",
-    "Shinkansen Access"
-  ],
+  "categories": ["Mountain", "Theme Park"],
+  "tags": ["Skiing", "Snow", "Shinkansen Access"],
   "budgetRecommended": 29000,
   "ratings": {
     "overall": 8.6,

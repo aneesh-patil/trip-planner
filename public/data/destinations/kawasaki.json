@@ -2,15 +2,8 @@
   "id": "kawasaki",
   "name": "Kawasaki",
   "region": "Kanto",
-  "categories": [
-    "City",
-    "Museum",
-    "Shrine"
-  ],
-  "tags": [
-    "Night Factory",
-    "Doraemon"
-  ],
+  "categories": ["City", "Museum", "Shrine"],
+  "tags": ["Night Factory", "Doraemon"],
   "budgetRecommended": 5000,
   "ratings": {
     "overall": 7.9,

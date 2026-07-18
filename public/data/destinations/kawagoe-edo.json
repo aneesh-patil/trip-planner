@@ -3,11 +3,7 @@
   "name": "Kawagoe",
   "prefecture": "Saitama",
   "region": "Kanto",
-  "categories": [
-    "History",
-    "Food",
-    "Architecture"
-  ],
+  "categories": ["History", "Food", "Architecture"],
   "heroImage": "/images/kawagoe_hero.jpg",
   "gallery": [],
   "description": "Known as 'Little Edo', featuring preserved clay-walled warehouse district and a charming candy alley.",
@@ -42,12 +38,7 @@
     "autumn": 9,
     "winter": 7
   },
-  "bestMonths": [
-    3,
-    4,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 10, 11],
   "reservation": "Not required.",
   "parking": "Available but traffic can be slow in town.",
   "highlights": [
@@ -55,11 +46,7 @@
     "Toki no Kane (Time Bell Tower)",
     "Penny Candy Alley"
   ],
-  "tags": [
-    "Foodie",
-    "Photogenic",
-    "Budget-friendly"
-  ],
+  "tags": ["Foodie", "Photogenic", "Budget-friendly"],
   "itinerary": [
     {
       "time": "10:00",
@@ -78,14 +65,8 @@
       "activity": "Kashiya Yokocho (Candy Alley)"
     }
   ],
-  "restaurants": [
-    "Ichinoya",
-    "Ogakiku"
-  ],
-  "cafes": [
-    "Starbucks Kawagoe Kanetsuki Dori",
-    "Glayt"
-  ],
+  "restaurants": ["Ichinoya", "Ogakiku"],
+  "cafes": ["Starbucks Kawagoe Kanetsuki Dori", "Glayt"],
   "notes": "Famous for sweet potato snacks and traditional unagi.",
   "itineraries": [
     {

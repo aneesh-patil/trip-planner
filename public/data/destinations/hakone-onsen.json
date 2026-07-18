@@ -3,11 +3,7 @@
   "name": "Hakone",
   "prefecture": "Kanagawa",
   "region": "Kanto",
-  "categories": [
-    "Onsen",
-    "Nature",
-    "Museums"
-  ],
+  "categories": ["Onsen", "Nature", "Museums"],
   "heroImage": "/images/hakone_hero.jpg",
   "gallery": [],
   "description": "A popular hot spring resort area featuring views of Mt. Fuji, art museums, and a scenic lake.",
@@ -42,25 +38,11 @@
     "autumn": 10,
     "winter": 9
   },
-  "bestMonths": [
-    10,
-    11,
-    12,
-    1,
-    2
-  ],
+  "bestMonths": [10, 11, 12, 1, 2],
   "reservation": "Required well in advance for ryokans.",
   "parking": "Limited and expensive.",
-  "highlights": [
-    "Hakone Open-Air Museum",
-    "Owakudani",
-    "Lake Ashi Cruise"
-  ],
-  "tags": [
-    "Romantic",
-    "Relaxing",
-    "Scenic"
-  ],
+  "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
+  "tags": ["Romantic", "Relaxing", "Scenic"],
   "itinerary": [
     {
       "time": "10:00",
@@ -79,14 +61,8 @@
       "activity": "Check-in to Ryokan"
     }
   ],
-  "restaurants": [
-    "Hakone Gindofu",
-    "Bakery & Table Hakone"
-  ],
-  "cafes": [
-    "Naraya Cafe",
-    "Amazake Chaya"
-  ],
+  "restaurants": ["Hakone Gindofu", "Bakery & Table Hakone"],
+  "cafes": ["Naraya Cafe", "Amazake Chaya"],
   "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport.",
   "itineraries": [
     {

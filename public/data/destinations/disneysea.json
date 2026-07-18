@@ -3,9 +3,7 @@
   "name": "DisneySea",
   "prefecture": "Chiba",
   "region": "Kanto",
-  "categories": [
-    "Theme Park"
-  ],
+  "categories": ["Theme Park"],
   "heroImage": "/images/disneysea.jpg",
   "gallery": [],
   "description": "Unique ocean-themed Disney park with spectacular shows, rides, and adult-friendly atmosphere.",
@@ -40,23 +38,11 @@
     "autumn": 10,
     "winter": 8
   },
-  "bestMonths": [
-    4,
-    5,
-    9,
-    10,
-    11
-  ],
+  "bestMonths": [4, 5, 9, 10, 11],
   "reservation": "Required",
   "parking": "Expensive",
-  "highlights": [
-    "DisneySea Transit Steamer",
-    "Soaring"
-  ],
-  "tags": [
-    "Theme Park",
-    "Walk-heavy"
-  ],
+  "highlights": ["DisneySea Transit Steamer", "Soaring"],
+  "tags": ["Theme Park", "Walk-heavy"],
   "itinerary": [],
   "restaurants": [
     "DisneySea Traditional Dining",

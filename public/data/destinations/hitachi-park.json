@@ -2,14 +2,8 @@
   "id": "hitachi-park",
   "name": "Hitachi Seaside Park",
   "region": "Kanto",
-  "categories": [
-    "Nature",
-    "Park"
-  ],
-  "tags": [
-    "Flowers",
-    "Nemophila"
-  ],
+  "categories": ["Nature", "Park"],
+  "tags": ["Flowers", "Nemophila"],
   "budgetRecommended": 7800,
   "ratings": {
     "overall": 8.9,
