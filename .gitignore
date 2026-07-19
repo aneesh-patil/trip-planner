@@ -25,3 +25,10 @@ dist-ssr
 *.xml
 *.md
 repomix-output.xml
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
