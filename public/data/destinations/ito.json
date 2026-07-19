@@ -1,0 +1,93 @@
+{
+  "id": "ito",
+  "name": "Ito",
+  "prefecture": "Shizuoka",
+  "region": "Chubu",
+  "categories": [
+    "Onsen",
+    "Coast",
+    "Nature"
+  ],
+  "heroImage": "/images/ito_hero.jpg",
+  "totalTripHours": 24,
+  "budgetMin": 12000,
+  "budgetRecommended": 18000,
+  "budgetMax": 28000,
+  "budgetBreakdown": {
+    "transport": 6000,
+    "tickets": 2000,
+    "food": 8000,
+    "cafe": 2000
+  },
+  "transportOptions": {
+    "train": 100,
+    "shinkansen": 60,
+    "car": 120
+  },
+  "walkingMin": 5000,
+  "walkingSunMin": 3000,
+  "walkingShadeMin": 2000,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 8.7,
+    "couple": 9,
+    "summer": 9,
+    "winter": 8.5,
+    "rain": 6,
+    "food": 9,
+    "photography": 9,
+    "relaxation": 9.5,
+    "value": 8.5,
+    "uniqueness": 8
+  },
+  "crowd": {
+    "weekday": 40,
+    "weekend": 80,
+    "holiday": 95
+  },
+  "season": {
+    "spring": 85,
+    "summer": 90,
+    "autumn": 85,
+    "winter": 80
+  },
+  "bestMonths": [
+    4,
+    5,
+    8,
+    10
+  ],
+  "bestSeason": "Summer for coast, Winter for Onsen",
+  "weatherDependence": "Moderate",
+  "tags": [
+    "Jogasaki Coast",
+    "Seafood",
+    "Hot Springs"
+  ],
+  "reservation": "Book ryokans in advance",
+  "parking": "Widely available",
+  "restaurants": [
+    "Ito Marine Town Seafood",
+    "Kaisen-don Ito"
+  ],
+  "cafes": [
+    "Tokai Kan Cafe",
+    "Jogasaki Ocean View Cafe"
+  ],
+  "notes": "A classic Izu Peninsula getaway, very accessible from Yokohama.",
+  "description": "Ito offers the quintessential Izu Peninsula experience. Soak in historic hot springs, marvel at the dramatic jagged cliffs of the Jogasaki Coast, and indulge in incredibly fresh local seafood.",
+  "highlights": [
+    "Jogasaki Coast",
+    "Mount Omuro",
+    "Tokai-kan Historic Hostel"
+  ],
+  "coordinates": {
+    "lat": 34.9734,
+    "lng": 139.0924
+  },
+  "comfort": {
+    "heatTolerance": 3,
+    "rainFriendly": 3,
+    "walkingIntensity": 3
+  }
+}

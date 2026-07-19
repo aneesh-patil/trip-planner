@@ -1,0 +1,91 @@
+{
+  "id": "gujo",
+  "name": "Gujo Hachiman",
+  "prefecture": "Gifu",
+  "region": "Chubu",
+  "categories": [
+    "Culture",
+    "History",
+    "Nature"
+  ],
+  "heroImage": "/images/gujo_hero.jpg",
+  "totalTripHours": 24,
+  "budgetMin": 16000,
+  "budgetRecommended": 22000,
+  "budgetMax": 30000,
+  "budgetBreakdown": {
+    "transport": 14000,
+    "tickets": 2000,
+    "food": 5000,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 180,
+    "bus": 200,
+    "car": 220
+  },
+  "walkingMin": 7000,
+  "walkingSunMin": 4000,
+  "walkingShadeMin": 3000,
+  "indoorPercent": 30,
+  "ratings": {
+    "overall": 9,
+    "couple": 9.2,
+    "summer": 9.5,
+    "winter": 7.5,
+    "rain": 6,
+    "food": 8,
+    "photography": 9.5,
+    "relaxation": 9,
+    "value": 8.5,
+    "uniqueness": 9.5
+  },
+  "crowd": {
+    "weekday": 30,
+    "weekend": 60,
+    "holiday": 85
+  },
+  "season": {
+    "spring": 85,
+    "summer": 98,
+    "autumn": 85,
+    "winter": 75
+  },
+  "bestMonths": [
+    7,
+    8,
+    9
+  ],
+  "bestSeason": "Summer (Gujo Odori Dance Festival)",
+  "weatherDependence": "High",
+  "tags": [
+    "Water City",
+    "Food Replicas",
+    "Summer Dance"
+  ],
+  "reservation": "Book hotels well in advance during summer",
+  "parking": "Public parking available outside town center",
+  "restaurants": [
+    "Soba Hachiman",
+    "Yoshida River Ayu Dining"
+  ],
+  "cafes": [
+    "Gujo Matcha Cafe"
+  ],
+  "notes": "Famous for its pristine waterways, the town feels incredibly refreshing in summer.",
+  "description": "Known as the Water City, Gujo Hachiman is a pristine riverside town in Gifu. Famous for its summer Gujo Odori dance festival lasting 32 nights, beautiful canals, and being the birthplace of Japanese plastic food replicas.",
+  "highlights": [
+    "Sogi-sui Water Source",
+    "Gujo Hachiman Castle",
+    "Food Replica Making"
+  ],
+  "coordinates": {
+    "lat": 35.7483,
+    "lng": 136.9582
+  },
+  "comfort": {
+    "heatTolerance": 4,
+    "rainFriendly": 3,
+    "walkingIntensity": 3
+  }
+}
