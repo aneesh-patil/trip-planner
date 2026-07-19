@@ -306,7 +306,7 @@ export default function Compare() {
               {compareDestinations.map((dest) => (
                 <TableCell key={dest.id}>
                   <div className="flex flex-wrap gap-1">
-                    {dest.tags.map((tag) => (
+                    {(dest.tags ?? []).map((tag) => (
                       <span
                         key={tag}
                         className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded-md"

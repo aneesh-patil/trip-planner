@@ -32,13 +32,13 @@ function getRentalBaseFee(tripDurationHours: number): number {
 export function getTransportCost(dest: Destination, mode: string): number {
   if (mode === "shinkansen" && dest.transportOptions?.shinkansen) {
     const time = dest.transportOptions.shinkansen;
-    const perPersonCost = Math.floor((3000 + time * 150) * 2);
+    const perPersonCost = Math.floor(3000 + time * 150);
     return perPersonCost * PARTY_SIZE;
   }
 
   if (mode === "bus" && dest.transportOptions?.bus) {
     const time = dest.transportOptions.bus;
-    const perPersonCost = Math.floor((2000 + time * 15) * 2);
+    const perPersonCost = Math.floor(2000 + time * 15);
     return perPersonCost * PARTY_SIZE;
   }
 

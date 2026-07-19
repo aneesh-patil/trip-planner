@@ -548,7 +548,7 @@ export default function DestinationDetails() {
                         <Utensils className="w-4 h-4 mr-2" /> Top Restaurants
                       </h4>
                       <ul className="list-disc pl-5 space-y-1 text-slate-600 dark:text-slate-400">
-                        {destination.restaurants.map((r) => (
+                        {(destination.restaurants ?? []).map((r) => (
                           <li key={r}>{r}</li>
                         ))}
                       </ul>
@@ -558,7 +558,7 @@ export default function DestinationDetails() {
                         <Coffee className="w-4 h-4 mr-2" /> Nice Cafes
                       </h4>
                       <ul className="list-disc pl-5 space-y-1 text-slate-600 dark:text-slate-400">
-                        {destination.cafes.map((c) => (
+                        {(destination.cafes ?? []).map((c) => (
                           <li key={c}>{c}</li>
                         ))}
                       </ul>
@@ -588,7 +588,7 @@ export default function DestinationDetails() {
               <CardContent className="p-6">
                 <h3 className="font-bold mb-4">Highlights</h3>
                 <ul className="space-y-3">
-                  {destination.highlights.map((h) => (
+                  {(destination.highlights ?? []).map((h) => (
                     <li key={h} className="flex items-start">
                       <div className="min-w-6 min-h-6 bg-slate-100 dark:bg-slate-800 text-emerald-600 rounded-full flex items-center justify-center mr-3 mt-0.5 text-xs font-bold">
                         ✓
@@ -651,6 +651,7 @@ export default function DestinationDetails() {
 
             <Card>
               <CardContent className="p-6 space-y-4">
+{destination.reservation && (
                 <div>
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
                     Reservation Info
@@ -659,6 +660,8 @@ export default function DestinationDetails() {
                     {destination.reservation}
                   </p>
                 </div>
+                )}
+                {destination.parking && (
                 <div>
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
                     Parking
@@ -667,6 +670,7 @@ export default function DestinationDetails() {
                     {destination.parking}
                   </p>
                 </div>
+                )}
               </CardContent>
             </Card>
           </div>
