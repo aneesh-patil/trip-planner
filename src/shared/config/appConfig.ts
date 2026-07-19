@@ -10,8 +10,4 @@ export const APP_CONFIG = {
     baseUrl: "https://api.open-meteo.com/v1",
     cacheDurationMs: 10 * 60 * 1000, // 10 minutes cache
   },
-  featureFlags: {
-    enableCompareRecommendations: true,
-    enableDetailedItineraryView: true,
-  },
 };
