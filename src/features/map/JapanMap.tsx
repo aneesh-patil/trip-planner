@@ -113,10 +113,10 @@ export default function JapanMap() {
                       />
                       <h3 className="font-bold text-lg mb-0">{dest.name}</h3>
                       <div className="text-sm font-medium text-emerald-600 mb-2">
-                        ★ {dest.ratings.overall}/10
+                        ★ {dest.ratings?.overall || "N/A"}/10
                       </div>
                       <p className="text-sm text-slate-500 mb-3">
-                        {dest.description.slice(0, 60)}...
+                        {dest.description ? dest.description.slice(0, 60) + "..." : "No description available"}
                       </p>
                       <Link to={`/destinations/${dest.id}`}>
                         <Button
