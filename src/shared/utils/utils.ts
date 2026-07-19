@@ -32,8 +32,11 @@ function getRentalBaseFee(tripDurationHours: number): number {
 export function getTransportCost(dest: Destination, mode: string): number {
   if (mode === "shinkansen" && dest.transportOptions?.shinkansen) {
     const time = dest.transportOptions.shinkansen;
-    const perPersonCost = Math.floor(3000 + time * 150);
-    return perPersonCost * PARTY_SIZE;
+    // Calibrated against real JR fares from Yokohama area:
+    // round-trip per person ≈ 1000 + 136 * one-way minutes
+    // Atami 45min: ¥7,120/person ✓  Shizuoka 60min: ¥9,160 (real ¥9,640, -5%)
+    const perPersonRoundTrip = Math.floor(1000 + time * 136);
+    return perPersonRoundTrip * PARTY_SIZE;
   }
 
   if (mode === "bus" && dest.transportOptions?.bus) {
