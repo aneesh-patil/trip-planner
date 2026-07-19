@@ -89,5 +89,33 @@
     "heatTolerance": 3,
     "rainFriendly": 3,
     "walkingIntensity": 3
-  }
+  },
+  "itineraries": [
+    {
+      "name": "Coastal Drama and Onsen",
+      "description": "Cliffs, ocean views, and relaxing hot springs.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Hike the Jogasaki Coast and cross the Kadowakizaki Suspension Bridge."
+        },
+        {
+          "time": "12:30",
+          "activity": "Seafood lunch featuring fresh local catch."
+        },
+        {
+          "time": "14:00",
+          "activity": "Take the chairlift up Mount Omuro for 360-degree views of Izu and Mt. Fuji."
+        },
+        {
+          "time": "16:00",
+          "activity": "Explore the historic Tokai-kan hostel in central Ito."
+        },
+        {
+          "time": "17:30",
+          "activity": "Unwind in a local hot spring (onsen) before dinner."
+        }
+      ]
+    }
+  ]
 }

@@ -87,5 +87,33 @@
     "heatTolerance": 4,
     "rainFriendly": 3,
     "walkingIntensity": 3
-  }
+  },
+  "itineraries": [
+    {
+      "name": "Waterways and Culture",
+      "description": "Discover pristine canals and local crafts.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Visit the Sogi-sui Water Source and walk along the crystal-clear canals."
+        },
+        {
+          "time": "11:30",
+          "activity": "Try your hand at making wax food replicas at Sample Village Iwasaki."
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch: Local Soba noodles using Gujo's pure water."
+        },
+        {
+          "time": "14:30",
+          "activity": "Hike up to Gujo Hachiman Castle for panoramic valley views."
+        },
+        {
+          "time": "16:30",
+          "activity": "Relax at a riverside cafe before heading back."
+        }
+      ]
+    }
+  ]
 }
