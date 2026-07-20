@@ -5,7 +5,6 @@ import {
   Bookmark,
   Map,
   Settings,
-  MapPinned,
   Menu,
   X,
   LogIn,
@@ -28,7 +27,6 @@ export default function Navbar() {
   const navItems = [
     { name: "Explore", path: "/", icon: Compass },
     { name: "Destinations", path: "/destinations", icon: Map },
-    { name: "Full Map", path: "/map", icon: MapPinned },
     { name: "Prefectures", path: "/visited-map", icon: CheckSquare },
     { name: "Compare", path: "/compare", icon: Settings },
     { name: "Bucket List", path: "/favorites", icon: Bookmark },

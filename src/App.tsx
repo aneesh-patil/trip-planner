@@ -12,7 +12,6 @@ const DestinationDetails = lazy(
   () => import("./features/destinations/DestinationDetails"),
 );
 const Compare = lazy(() => import("./features/compare/Compare"));
-const JapanMap = lazy(() => import("./features/map/JapanMap"));
 const PrefectureChecklist = lazy(
   () => import("./features/map/PrefectureChecklist"),
 );
@@ -43,7 +42,6 @@ function App() {
                   />
                   <Route path="/compare" element={<Compare />} />
                   <Route path="/favorites" element={<Favorites />} />
-                  <Route path="/map" element={<JapanMap />} />
                   <Route
                     path="/visited-map"
                     element={<PrefectureChecklist />}
