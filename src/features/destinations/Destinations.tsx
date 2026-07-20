@@ -157,8 +157,8 @@ export default function Destinations() {
             Explore Destinations
           </h1>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl">
-            Find the perfect day trip from Nakayama Station. Filter by budget,
-            travel time, and what kind of experience you want.
+            Find the perfect adventure across Japan. Filter by budget,
+            season, and vibe.
           </p>
         </div>
 

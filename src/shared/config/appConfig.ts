@@ -1,7 +1,7 @@
 export const APP_CONFIG = {
   defaultOrigin: {
-    name: "Nakayama Station",
-    address: "Nakayama Station, Yokohama, Japan",
+    name: "Tokyo Station",
+    address: "Tokyo Station, Marunouchi, Tokyo, Japan",
   },
   multipliers: {
     couple: 2, // Multiplying transit costs for couples

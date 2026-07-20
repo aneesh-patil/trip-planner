@@ -40,9 +40,9 @@ export default function Navbar() {
           className="flex items-center gap-2 font-bold text-xl tracking-tight"
           onClick={() => setMenuOpen(false)}
         >
-          <span className="text-emerald-600 dark:text-emerald-400">Japan</span>
+          <span className="text-emerald-600 dark:text-emerald-400">Tabi</span>
           <span className="text-slate-800 dark:text-slate-200">
-            Weekend Planner
+            Map
           </span>
         </Link>
         <div className="flex items-center gap-6">
