@@ -49,31 +49,32 @@ describe("BudgetService", () => {
   } as unknown as Destination;
 
   it("calculates transport cost correctly for couple multiplier (train)", () => {
-    // Train formula: Math.max(600, 60 * 34.3) = 2058.
-    // Round trip per person = 2058.
-    // Party size (couple) = 2. Total = 4116.
+    // Train (60 min local/rapid):
+    // oneWayPerPerson = 150 + 60 * 25 = 1650.
+    // roundTripPerPerson = 3300.
+    // Party size (couple) = 2. Total = 6600.
     const cost = budgetService.getTransportCost(mockDest, "train");
-    expect(cost).toBe(4116);
+    expect(cost).toBe(6600);
   });
 
-  it("calculates transport cost correctly for car rental and tolls", () => {
+  it("calculates transport cost correctly for car rental, gas, and tolls", () => {
     // Car drive time: 50 min.
     // Distance = 50 * 1.2 = 60 km.
     // Trip hours = 8. Base fee up to 12h = 7920.
-    // Tolls round trip = Math.floor(60 * 25 * 2) = 3000.
-    // Gas round trip = Math.floor((120 / 15) * 170) = 1360.
-    // Total = 7920 + 3000 + 1360 = 12280.
+    // Tolls round trip = Math.floor(60 * 30 * 2) = 3600.
+    // Gas round trip = Math.floor((120 / 13) * 175) = 1615.
+    // Total = 7920 + 3600 + 1615 = 13135.
     const cost = budgetService.getTransportCost(mockDest, "car");
-    expect(cost).toBe(12280);
+    expect(cost).toBe(13135);
   });
 
   it("calculates adjusted budget subtracting original transport cost and adding new transport", () => {
     // Original recommended = 20000.
     // Original transport = 2000.
     // Base other costs = 18000.
-    // Train cost = 4116.
-    // Expected = 18000 + 4116 = 22116.
+    // Train cost for couple = 6600.
+    // Expected = 18000 + 6600 = 24600.
     const budget = budgetService.getAdjustedBudget(mockDest, "train");
-    expect(budget).toBe(22116);
+    expect(budget).toBe(24600);
   });
 });

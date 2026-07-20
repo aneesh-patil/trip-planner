@@ -7,8 +7,8 @@ const CAR_RENTAL_RATES = {
   upTo24h: 10340,
   extraPerHour: 1540,
 } as const;
-const GAS_PRICE_PER_LITER = 170;
-const TOLL_RATE_PER_KM = 25;
+const GAS_PRICE_PER_LITER = 175; // ¥175/L current avg
+const TOLL_RATE_PER_KM = 30; // ~¥30/km for NEXCO highways
 
 function getRentalBaseFee(tripDurationHours: number): number {
   if (tripDurationHours <= 6) return CAR_RENTAL_RATES.upTo6h;
@@ -21,21 +21,24 @@ function getRentalBaseFee(tripDurationHours: number): number {
 }
 
 /**
- * Returns the round-trip transport cost for a couple.
- * This is the single source of truth — do not duplicate this in utils.ts.
+ * Returns the round-trip transport cost for a couple (2 adults).
+ * This is the single source of truth.
  */
 export function getTransportCost(dest: Destination, mode: string): number {
   if (mode === "shinkansen" && dest.transportOptions?.shinkansen) {
-    const time = dest.transportOptions.shinkansen;
-    // Calibrated against real JR fares from Yokohama area:
-    // round-trip per person ≈ 1000 + 136 × one-way minutes
-    // Atami 45min: ¥7,120/person ✓  Shizuoka 60min: ¥9,160 (real ¥9,640, -5%)
-    return Math.floor(1000 + time * 136) * PARTY_SIZE;
+    const mins = dest.transportOptions.shinkansen;
+    // Shinkansen per-person one-way = ¥1,200 base + mins * ¥160 (includes reserved seat surcharge)
+    const oneWayPerPerson = 1200 + mins * 160;
+    const roundTripPerPerson = oneWayPerPerson * 2;
+    return Math.floor(roundTripPerPerson * PARTY_SIZE);
   }
 
   if (mode === "bus" && dest.transportOptions?.bus) {
-    const time = dest.transportOptions.bus;
-    return Math.floor(2000 + time * 15) * PARTY_SIZE;
+    const mins = dest.transportOptions.bus;
+    // Highway Bus per-person one-way = ¥1,000 + mins * ¥16
+    const oneWayPerPerson = 1000 + mins * 16;
+    const roundTripPerPerson = oneWayPerPerson * 2;
+    return Math.floor(roundTripPerPerson * PARTY_SIZE);
   }
 
   if (mode === "car" && dest.transportOptions?.car) {
@@ -45,17 +48,23 @@ export function getTransportCost(dest: Destination, mode: string): number {
     const rentalFee = getRentalBaseFee(tripDurationHours);
     const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
     const gasRoundTrip = Math.floor(
-      ((distanceKm * 2) / 15) * GAS_PRICE_PER_LITER,
+      ((distanceKm * 2) / 13) * GAS_PRICE_PER_LITER, // 13 km/L avg rental car
     );
     return rentalFee + tollsRoundTrip + gasRoundTrip;
   }
 
   if (mode === "train" && dest.transportOptions?.train) {
-    const time = dest.transportOptions.train;
-    return Math.max(600, Math.floor(time * 34.3)) * PARTY_SIZE;
+    const mins = dest.transportOptions.train;
+    // Trains > 70 mins usually require Limited Express surcharges (e.g. Romancecar, Hitachi, Azusa)
+    const isLimitedExpress = mins > 70;
+    const oneWayPerPerson = isLimitedExpress
+      ? 800 + mins * 40
+      : Math.max(400, 150 + mins * 25);
+    const roundTripPerPerson = oneWayPerPerson * 2;
+    return Math.floor(roundTripPerPerson * PARTY_SIZE);
   }
 
-  return dest.budgetBreakdown?.transport || 1500;
+  return (dest.budgetBreakdown?.transport || 1500) * PARTY_SIZE;
 }
 
 /**
