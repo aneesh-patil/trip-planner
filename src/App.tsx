@@ -32,30 +32,30 @@ function App() {
         <Router>
           <div className="flex flex-col min-h-screen bg-background text-foreground">
             <Navbar />
-          <main className="flex-grow">
-            <ErrorBoundary>
-              <Suspense fallback={<PageLoader />}>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/destinations" element={<Destinations />} />
-                  <Route
-                    path="/destinations/:id"
-                    element={<DestinationDetails />}
-                  />
-                  <Route path="/compare" element={<Compare />} />
-                  <Route path="/favorites" element={<Favorites />} />
-                  <Route
-                    path="/visited-map"
-                    element={<PrefectureChecklist />}
-                  />
-                </Routes>
-              </Suspense>
-            </ErrorBoundary>
-          </main>
-          <Footer />
-        </div>
-      </Router>
-    </TripStoreProvider>
+            <main className="flex-grow">
+              <ErrorBoundary>
+                <Suspense fallback={<PageLoader />}>
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/destinations" element={<Destinations />} />
+                    <Route
+                      path="/destinations/:id"
+                      element={<DestinationDetails />}
+                    />
+                    <Route path="/compare" element={<Compare />} />
+                    <Route path="/favorites" element={<Favorites />} />
+                    <Route
+                      path="/visited-map"
+                      element={<PrefectureChecklist />}
+                    />
+                  </Routes>
+                </Suspense>
+              </ErrorBoundary>
+            </main>
+            <Footer />
+          </div>
+        </Router>
+      </TripStoreProvider>
     </AuthProvider>
   );
 }

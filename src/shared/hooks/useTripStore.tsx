@@ -59,9 +59,12 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     "trip-planner-home-station",
     "Tokyo Station",
   );
-  const [homeStationCoords, setHomeStationCoords] = useLocalStorage<{ lat: number; lng: number } | null>(
+  const [homeStationCoords, setHomeStationCoords] = useLocalStorage<{
+    lat: number;
+    lng: number;
+  } | null>(
     "trip-planner-home-station-coords",
-    { lat: 35.6812, lng: 139.7671 } // Tokyo Station default
+    { lat: 35.6812, lng: 139.7671 }, // Tokyo Station default
   );
   const isLoadedRef = useRef(false);
   const prevUserIdRef = useRef(user?.id);
@@ -138,22 +141,22 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   const toggleVisited = (id: string) => {
     setVisited((prev) => {
       const isNowVisited = !prev.includes(id);
-      
-      const destination = destinationsIndex.find(d => d.id === id);
+
+      const destination = destinationsIndex.find((d) => d.id === id);
       if (destination) {
         let prefId = destination.prefecture;
         if (prefId === "Hokkaido") prefId = "Hokkaido\x8D";
-        
+
         if (isNowVisited) {
           // Auto-check the prefecture
-          setVisitedPrefectures(prevPrefs => 
-            prevPrefs.includes(prefId) ? prevPrefs : [...prevPrefs, prefId]
+          setVisitedPrefectures((prevPrefs) =>
+            prevPrefs.includes(prefId) ? prevPrefs : [...prevPrefs, prefId],
           );
         } else {
           // Smart un-check: only remove the prefecture if no OTHER visited destinations are in it
-          const remainingVisitedIds = prev.filter(vId => vId !== id);
-          const hasOtherVisitedInPref = remainingVisitedIds.some(vId => {
-            const otherDest = destinationsIndex.find(d => d.id === vId);
+          const remainingVisitedIds = prev.filter((vId) => vId !== id);
+          const hasOtherVisitedInPref = remainingVisitedIds.some((vId) => {
+            const otherDest = destinationsIndex.find((d) => d.id === vId);
             if (!otherDest) return false;
             let otherPref = otherDest.prefecture;
             if (otherPref === "Hokkaido") otherPref = "Hokkaido\x8D";
@@ -161,7 +164,9 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
           });
 
           if (!hasOtherVisitedInPref) {
-            setVisitedPrefectures(prevPrefs => prevPrefs.filter(p => p !== prefId));
+            setVisitedPrefectures((prevPrefs) =>
+              prevPrefs.filter((p) => p !== prefId),
+            );
           }
         }
       }

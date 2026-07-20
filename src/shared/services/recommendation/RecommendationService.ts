@@ -1,6 +1,9 @@
 import type { Destination } from "@/shared/types/destination";
 import { getAdjustedBudget } from "@/shared/services/budget/BudgetService";
-import { getDistance, getDynamicTransportOptions } from "@/shared/utils/distance";
+import {
+  getDistance,
+  getDynamicTransportOptions,
+} from "@/shared/utils/distance";
 
 export interface RecommendationContext {
   tripType: string;
@@ -21,8 +24,15 @@ export function getRecommendations(
   destinations: Partial<Destination>[],
   context: RecommendationContext,
 ): ScoredDestination[] {
-  const { tripType, budget, transport, weather, visitedIds, currentWeather, homeStationCoords } =
-    context;
+  const {
+    tripType,
+    budget,
+    transport,
+    weather,
+    visitedIds,
+    currentWeather,
+    homeStationCoords,
+  } = context;
 
   return destinations
     .filter((dest) => dest.id && !visitedIds.includes(dest.id))
@@ -30,7 +40,12 @@ export function getRecommendations(
       // Clone destination to safely override transportOptions
       const dest = { ...destObj };
       if (homeStationCoords && dest.coordinates?.lat && dest.coordinates?.lng) {
-        const distKm = getDistance(homeStationCoords.lat, homeStationCoords.lng, dest.coordinates.lat, dest.coordinates.lng);
+        const distKm = getDistance(
+          homeStationCoords.lat,
+          homeStationCoords.lng,
+          dest.coordinates.lat,
+          dest.coordinates.lng,
+        );
         dest.transportOptions = getDynamicTransportOptions(distKm);
       }
 

@@ -39,7 +39,10 @@ import {
   getWeatherDescription,
 } from "@/shared/hooks/useWeather";
 import { budgetService } from "@/shared/services/budget/BudgetService";
-import { getDistance, getDynamicTransportOptions } from "@/shared/utils/distance";
+import {
+  getDistance,
+  getDynamicTransportOptions,
+} from "@/shared/utils/distance";
 
 function WeatherIcon({ type }: { type: string }) {
   if (type === "sun") return <Sun className="w-6 h-6 text-amber-500" />;
@@ -53,27 +56,45 @@ function WeatherIcon({ type }: { type: string }) {
 
 export default function DestinationDetails() {
   const { id } = useParams();
-  const { isFavorite, toggleFavorite, isVisited, toggleVisited, homeStation, homeStationCoords } = useTripStore();
+  const {
+    isFavorite,
+    toggleFavorite,
+    isVisited,
+    toggleVisited,
+    homeStation,
+    homeStationCoords,
+  } = useTripStore();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [destLoading, setDestLoading] = useState(true);
 
   useEffect(() => {
     if (id) {
       setDestLoading(true);
-      destinationService.getDestination(id).then((destObj: Destination | null) => {
-        if (!destObj) {
-          setDestination(null);
+      destinationService
+        .getDestination(id)
+        .then((destObj: Destination | null) => {
+          if (!destObj) {
+            setDestination(null);
+            setDestLoading(false);
+            return;
+          }
+          const dest = { ...destObj };
+          if (
+            homeStationCoords &&
+            dest.coordinates?.lat &&
+            dest.coordinates?.lng
+          ) {
+            const distKm = getDistance(
+              homeStationCoords.lat,
+              homeStationCoords.lng,
+              dest.coordinates.lat,
+              dest.coordinates.lng,
+            );
+            dest.transportOptions = getDynamicTransportOptions(distKm);
+          }
+          setDestination(dest);
           setDestLoading(false);
-          return;
-        }
-        const dest = { ...destObj };
-        if (homeStationCoords && dest.coordinates?.lat && dest.coordinates?.lng) {
-          const distKm = getDistance(homeStationCoords.lat, homeStationCoords.lng, dest.coordinates.lat, dest.coordinates.lng);
-          dest.transportOptions = getDynamicTransportOptions(distKm);
-        }
-        setDestination(dest);
-        setDestLoading(false);
-      });
+        });
     }
   }, [id, homeStationCoords]);
 

@@ -41,9 +41,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           <span className="text-emerald-600 dark:text-emerald-400">Tabi</span>
-          <span className="text-slate-800 dark:text-slate-200">
-            Map
-          </span>
+          <span className="text-slate-800 dark:text-slate-200">Map</span>
         </Link>
         <div className="flex items-center gap-6">
           <nav className="hidden md:flex gap-6">

@@ -14,7 +14,10 @@ import {
 } from "lucide-react";
 import { getAdjustedBudget } from "@/shared/utils/utils";
 import StationInput from "@/shared/components/StationInput";
-import { getDistance, getDynamicTransportOptions } from "@/shared/utils/distance";
+import {
+  getDistance,
+  getDynamicTransportOptions,
+} from "@/shared/utils/distance";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 
 export default function Destinations() {
@@ -43,7 +46,12 @@ export default function Destinations() {
     let result = allDestinations.map((destObj) => {
       const dest = { ...destObj };
       if (homeStationCoords && dest.coordinates?.lat && dest.coordinates?.lng) {
-        const distKm = getDistance(homeStationCoords.lat, homeStationCoords.lng, dest.coordinates.lat, dest.coordinates.lng);
+        const distKm = getDistance(
+          homeStationCoords.lat,
+          homeStationCoords.lng,
+          dest.coordinates.lat,
+          dest.coordinates.lng,
+        );
         dest.transportOptions = getDynamicTransportOptions(distKm);
       }
       return dest;
@@ -169,8 +177,8 @@ export default function Destinations() {
             Explore Destinations
           </h1>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl">
-            Find the perfect adventure across Japan. Filter by budget,
-            season, and vibe.
+            Find the perfect adventure across Japan. Filter by budget, season,
+            and vibe.
           </p>
           <div className="mt-4">
             <StationInput />
