@@ -52,7 +52,7 @@ export default function DestinationMap({ destinations }: DestinationMapProps) {
                       ★ {dest.ratings.overall}/10
                     </div>
                     <p className="text-sm text-slate-500 mb-3">
-                      {dest.description.slice(0, 60)}...
+                      {dest.description ? `${dest.description.slice(0, 60)}...` : dest.categories?.join(" • ")}
                     </p>
                     <Link to={`/destinations/${dest.id}`}>
                       <Button
