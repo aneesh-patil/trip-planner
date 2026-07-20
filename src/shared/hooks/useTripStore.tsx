@@ -41,6 +41,21 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     [],
   );
   const isLoadedRef = useRef(false);
+  const prevUserIdRef = useRef(user?.id);
+
+  // Clear data on logout, reset load state on user change
+  useEffect(() => {
+    if (prevUserIdRef.current && !user?.id) {
+      // User logged out: wipe local data
+      setFavorites([]);
+      setVisited([]);
+      isLoadedRef.current = false;
+    } else if (user?.id && user.id !== prevUserIdRef.current) {
+      // User changed / logged in: reset load state so it fetches fresh data
+      isLoadedRef.current = false;
+    }
+    prevUserIdRef.current = user?.id;
+  }, [user?.id, setFavorites, setVisited]);
 
   // Fetch initial data on login
   useEffect(() => {
