@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { X, User as UserIcon, MapPin, Calendar, Loader2 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
@@ -53,42 +54,29 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
     }
   };
 
-  return (
+  if (!isOpen) return null;
+
+  return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"
         onClick={onClose}
       />
-      <div className="relative w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-in fade-in zoom-in duration-200">
-        <div className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-slate-800">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
-              <UserIcon className="w-5 h-5" />
-            </div>
-            <div>
-              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
-                Edit Profile
-              </h2>
-              <p className="text-sm text-slate-500 dark:text-slate-400">
-                Update your personal information
-              </p>
-            </div>
-          </div>
+
+      <div className="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">
+            Edit Profile
+          </h2>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 transition-colors"
+            className="p-2 -mr-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-6 space-y-4">
-          {success && (
-            <div className="p-3 mb-4 rounded-lg bg-emerald-50 text-emerald-600 text-sm font-medium border border-emerald-200 text-center">
-              Profile updated successfully!
-            </div>
-          )}
-
+        <form onSubmit={handleSubmit} className="p-6 space-y-5">
           <div className="space-y-1.5">
             <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
               Username
@@ -140,10 +128,16 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl py-2.5 font-bold shadow-md hover:shadow-lg transition-all"
+              className={`w-full py-2.5 rounded-xl font-bold shadow-md transition-all duration-300 ${
+                success
+                  ? "bg-emerald-500 hover:bg-emerald-600 text-white"
+                  : "bg-emerald-600 hover:bg-emerald-700 text-white"
+              }`}
             >
               {loading ? (
                 <Loader2 className="w-5 h-5 animate-spin" />
+              ) : success ? (
+                "Profile Saved!"
               ) : (
                 "Save Profile"
               )}
@@ -151,6 +145,7 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
           </div>
         </form>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
