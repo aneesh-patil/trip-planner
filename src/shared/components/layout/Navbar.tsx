@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Compass,
   Bookmark,
@@ -16,13 +16,16 @@ import {
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { AuthModal } from "@/shared/components/auth/AuthModal";
+import { ProfileModal } from "@/shared/components/profile/ProfileModal";
+import { PreferencesModal } from "@/shared/components/profile/PreferencesModal";
 
 export default function Navbar() {
   const location = useLocation();
-  const navigate = useNavigate();
   const { user, loading, signOut } = useAuth();
   const [menuOpen, setMenuOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  const [profileOpen, setProfileOpen] = useState(false);
+  const [preferencesOpen, setPreferencesOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
 
@@ -119,7 +122,7 @@ export default function Navbar() {
                       <button
                         onClick={() => {
                           setUserMenuOpen(false);
-                          setAuthOpen(true);
+                          setProfileOpen(true);
                         }}
                         className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors text-left"
                       >
@@ -130,7 +133,7 @@ export default function Navbar() {
                       <button
                         onClick={() => {
                           setUserMenuOpen(false);
-                          navigate("/");
+                          setPreferencesOpen(true);
                         }}
                         className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors text-left"
                       >
@@ -165,6 +168,14 @@ export default function Navbar() {
             )}
           </div>
           <AuthModal isOpen={authOpen} onClose={() => setAuthOpen(false)} />
+          <ProfileModal
+            isOpen={profileOpen}
+            onClose={() => setProfileOpen(false)}
+          />
+          <PreferencesModal
+            isOpen={preferencesOpen}
+            onClose={() => setPreferencesOpen(false)}
+          />
 
           {/* Hamburger button — mobile only */}
           <button

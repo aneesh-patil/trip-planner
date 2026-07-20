@@ -12,6 +12,7 @@ interface AuthContextType {
   signInWithEmail: (email: string, password: string) => Promise<any>;
   signUpWithEmail: (email: string, password: string) => Promise<any>;
   signOut: () => void;
+  updateUserProfile: (data: any) => Promise<any>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -69,6 +70,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signOut = () => supabase?.auth.signOut();
 
+  const updateUserProfile = (data: any) => supabase!.auth.updateUser({ data });
+
   return (
     <AuthContext.Provider
       value={{
@@ -80,6 +83,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         signInWithEmail,
         signUpWithEmail,
         signOut,
+        updateUserProfile,
       }}
     >
       {children}
