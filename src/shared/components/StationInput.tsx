@@ -1,28 +1,35 @@
 import { MapPin } from "lucide-react";
 import { useTripStore } from "@/shared/hooks/useTripStore";
-
-const POPULAR_STATIONS = [
-  "Tokyo Station",
-  "Shinjuku Station",
-  "Shibuya Station",
-  "Shinagawa Station",
-  "Ueno Station",
-  "Yokohama Station",
-  "Kyoto Station",
-  "Shin-Osaka Station",
-  "Osaka Station",
-  "Nagoya Station",
-  "Fukuoka (Hakata) Station",
-  "Sapporo Station",
-  "Sendai Station",
-  "Kobe (Sannomiya) Station",
-  "Hiroshima Station",
-  "Kanazawa Station",
-  "Naha Airport"
-];
+import { useState, useEffect, useMemo } from "react";
 
 export default function StationInput() {
   const { homeStation, setHomeStation } = useTripStore();
+  const [stations, setStations] = useState<string[]>([]);
+
+  useEffect(() => {
+    fetch("/data/stations.json")
+      .then((res) => res.json())
+      .then((data) => setStations(data))
+      .catch((err) => console.error("Failed to load stations", err));
+  }, []);
+
+  // Show up to 100 matching stations for performance
+  const filteredStations = useMemo(() => {
+    if (!homeStation) return stations.slice(0, 100);
+    const lower = homeStation.toLowerCase();
+    const matches = [];
+    for (let i = 0; i < stations.length; i++) {
+      if (stations[i].toLowerCase().includes(lower)) {
+        matches.push(stations[i]);
+        if (matches.length >= 100) break;
+      }
+    }
+    // Always include the current value so datalist behaves correctly
+    if (!matches.includes(homeStation) && stations.includes(homeStation)) {
+      matches.push(homeStation);
+    }
+    return matches;
+  }, [stations, homeStation]);
   
   return (
     <div className="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 p-2 rounded-lg w-fit border border-slate-200 dark:border-slate-700">
@@ -37,7 +44,7 @@ export default function StationInput() {
         placeholder="e.g. Tokyo Station"
       />
       <datalist id="stations-list">
-        {POPULAR_STATIONS.map(station => (
+        {filteredStations.map(station => (
           <option key={station} value={station} />
         ))}
       </datalist>
