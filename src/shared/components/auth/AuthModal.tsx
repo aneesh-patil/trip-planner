@@ -75,8 +75,8 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
           {/* Header */}
           <div className="text-center mb-8">
             <div className="text-2xl font-bold mb-1">
-              <span className="text-emerald-400">Japan</span>
-              <span className="text-white"> Weekend Planner</span>
+              <span className="text-emerald-400">Tabi</span>
+              <span className="text-white">Map</span>
             </div>
             <p className="text-slate-400 text-sm">
               {mode === "signin"
