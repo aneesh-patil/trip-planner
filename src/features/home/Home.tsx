@@ -39,7 +39,7 @@ export default function Home() {
   const allDestinations =
     destinationService.getDestinationList() as Destination[];
 
-  const { isVisited } = useTripStore();
+  const { isVisited, homeStationCoords } = useTripStore();
 
   // Smart Planner State
   const [tripType, setTripType] = useState<string>("any");
@@ -117,6 +117,7 @@ export default function Home() {
             desc: currentSituation.desc,
           }
         : null,
+      homeStationCoords: homeStationCoords || null,
     });
   }, [
     allDestinations,
@@ -126,6 +127,7 @@ export default function Home() {
     weather,
     isVisited,
     currentSituation,
+    homeStationCoords,
   ]);
 
   const topRecommendations = scoredDestinations.slice(0, 3);

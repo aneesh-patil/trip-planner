@@ -21,6 +21,9 @@ interface TripStoreContextType {
   homeStation: string;
   setHomeStation: (station: string) => void;
 
+  homeStationCoords: { lat: number; lng: number } | null;
+  setHomeStationCoords: (coords: { lat: number; lng: number } | null) => void;
+
   compareList: string[];
   toggleCompare: (id: string) => void;
   isComparing: (id: string) => boolean;
@@ -55,6 +58,10 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   const [homeStation, setHomeStation] = useLocalStorage<string>(
     "trip-planner-home-station",
     "Tokyo Station",
+  );
+  const [homeStationCoords, setHomeStationCoords] = useLocalStorage<{ lat: number; lng: number } | null>(
+    "trip-planner-home-station-coords",
+    { lat: 35.6812, lng: 139.7671 } // Tokyo Station default
   );
   const isLoadedRef = useRef(false);
   const prevUserIdRef = useRef(user?.id);
@@ -234,6 +241,8 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         importData,
         homeStation,
         setHomeStation,
+        homeStationCoords,
+        setHomeStationCoords,
       }}
     >
       {children}

@@ -14,8 +14,11 @@ import {
 } from "lucide-react";
 import { getAdjustedBudget } from "@/shared/utils/utils";
 import StationInput from "@/shared/components/StationInput";
+import { getDistance, getDynamicTransportOptions } from "@/shared/utils/distance";
+import { useTripStore } from "@/shared/hooks/useTripStore";
 
 export default function Destinations() {
+  const { homeStationCoords } = useTripStore();
   const allDestinations =
     destinationService.getDestinationList() as Destination[];
   const [searchQuery, setSearchQuery] = useState("");
@@ -37,7 +40,14 @@ export default function Destinations() {
 
   // Filter and sort destinations
   const filteredAndSortedDestinations = useMemo(() => {
-    let result = allDestinations;
+    let result = allDestinations.map((destObj) => {
+      const dest = { ...destObj };
+      if (homeStationCoords && dest.coordinates?.lat && dest.coordinates?.lng) {
+        const distKm = getDistance(homeStationCoords.lat, homeStationCoords.lng, dest.coordinates.lat, dest.coordinates.lng);
+        dest.transportOptions = getDynamicTransportOptions(distKm);
+      }
+      return dest;
+    });
 
     // 1. Search
     if (query) {
@@ -139,6 +149,7 @@ export default function Destinations() {
     transportMode,
     weather,
     maxWalking,
+    homeStationCoords,
   ]);
 
   const resetFilters = () => {

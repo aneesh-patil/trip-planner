@@ -13,10 +13,11 @@ const PREFECTURES = [
 ];
 
 export default function StationInput() {
-  const { homeStation, setHomeStation } = useTripStore();
+  const { homeStation, setHomeStation, setHomeStationCoords } = useTripStore();
   
+  type StationData = { name: string; lat: number; lng: number };
   // Data for stations by prefecture
-  const [stationsByPref, setStationsByPref] = useState<Record<string, string[]>>({});
+  const [stationsByPref, setStationsByPref] = useState<Record<string, StationData[]>>({});
   
   // UI State
   const [mode, setMode] = useState<"station" | "zip">("station");
@@ -54,27 +55,29 @@ export default function StationInput() {
   }, [homeStation]);
 
   const handleStationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const val = e.target.value;
-    setSelectedStation(val);
-    if (val) {
-      setHomeStation(`${val}, ${selectedPref}`);
-    } else {
-      setHomeStation("");
-    }
+    setSelectedStation(e.target.value);
   };
 
   const handlePrefChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const p = e.target.value;
     setSelectedPref(p);
     setSelectedStation(""); // reset station
-    // We don't update homeStation yet until they pick a station, or we can clear it
   };
 
   const handleZipChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value;
-    setZipCode(val);
-    if (val.length >= 7) {
-      setHomeStation(val);
+    setZipCode(e.target.value);
+  };
+
+  const handleSet = () => {
+    if (mode === "station" && selectedStation) {
+      setHomeStation(`${selectedStation}, ${selectedPref}`);
+      const st = stations.find(s => s.name === selectedStation);
+      if (st) {
+        setHomeStationCoords({ lat: st.lat, lng: st.lng });
+      }
+    } else if (mode === "zip" && zipCode) {
+      setHomeStation(zipCode);
+      setHomeStationCoords(null);
     }
   };
 
@@ -123,7 +126,7 @@ export default function StationInput() {
            >
              <option value="">-- Select Station --</option>
              {stations.map(st => (
-               <option key={st} value={st}>{st}</option>
+               <option key={st.name} value={st.name}>{st.name}</option>
              ))}
            </select>
         </div>
@@ -134,11 +137,18 @@ export default function StationInput() {
             placeholder="e.g. 100-0001" 
             value={zipCode} 
             onChange={handleZipChange}
-            onBlur={() => setHomeStation(zipCode)}
+            onKeyDown={(e) => e.key === 'Enter' && handleSet()}
             className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-1.5 text-sm font-medium focus:outline-none focus:border-emerald-500 w-full sm:w-64"
           />
         </div>
       )}
+      <button
+        onClick={handleSet}
+        disabled={(mode === "station" && !selectedStation) || (mode === "zip" && !zipCode)}
+        className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Set
+      </button>
     </div>
   );
 }

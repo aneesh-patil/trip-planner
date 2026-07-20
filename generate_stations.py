@@ -4,9 +4,9 @@ import os
 import pykakasi
 
 kakasi = pykakasi.kakasi()
-kakasi.setMode('J', 'a') # Japanese to ascii
-kakasi.setMode('H', 'a') # Hiragana to ascii
-kakasi.setMode('K', 'a') # Katakana to ascii
+kakasi.setMode('J', 'a')
+kakasi.setMode('H', 'a')
+kakasi.setMode('K', 'a')
 conv = kakasi.getConverter()
 
 PREFECTURES = [
@@ -27,7 +27,7 @@ stations_by_pref = {}
 
 for i, pref_data in enumerate(data):
     pref_name = PREFECTURES[i]
-    stations = set()
+    stations = {}
     
     if "lines" in pref_data:
         for line in pref_data["lines"]:
@@ -39,12 +39,16 @@ for i, pref_data in enumerate(data):
                         if not romaji.endswith(" Station") and not romaji.endswith(" station"):
                             romaji += " Station"
                         display = f"{romaji} ({name_ja}駅)"
-                        stations.add(display)
+                        lat = st.get("location", {}).get("lat")
+                        lng = st.get("location", {}).get("lng")
+                        if lat is not None and lng is not None:
+                            stations[display] = {"lat": lat, "lng": lng}
                         
-    stations_by_pref[pref_name] = sorted(list(stations))
+    # Convert back to sorted list of objects
+    stations_by_pref[pref_name] = sorted([{"name": k, "lat": v["lat"], "lng": v["lng"]} for k, v in stations.items()], key=lambda x: x["name"])
 
 os.makedirs("public/data", exist_ok=True)
 with open("public/data/stations-by-prefecture.json", "w", encoding="utf-8") as f:
     json.dump(stations_by_pref, f, ensure_ascii=False)
 
-print(f"Saved {len(stations_by_pref)} prefectures.")
+print("Saved stations with coordinates.")

@@ -1,5 +1,6 @@
 import type { Destination } from "@/shared/types/destination";
 import { getAdjustedBudget } from "@/shared/services/budget/BudgetService";
+import { getDistance, getDynamicTransportOptions } from "@/shared/utils/distance";
 
 export interface RecommendationContext {
   tripType: string;
@@ -8,6 +9,7 @@ export interface RecommendationContext {
   weather: string;
   visitedIds: string[];
   currentWeather?: { temp: number; desc: string } | null;
+  homeStationCoords?: { lat: number; lng: number } | null;
 }
 
 export interface ScoredDestination extends Partial<Destination> {
@@ -19,12 +21,19 @@ export function getRecommendations(
   destinations: Partial<Destination>[],
   context: RecommendationContext,
 ): ScoredDestination[] {
-  const { tripType, budget, transport, weather, visitedIds, currentWeather } =
+  const { tripType, budget, transport, weather, visitedIds, currentWeather, homeStationCoords } =
     context;
 
   return destinations
     .filter((dest) => dest.id && !visitedIds.includes(dest.id))
-    .map((dest) => {
+    .map((destObj) => {
+      // Clone destination to safely override transportOptions
+      const dest = { ...destObj };
+      if (homeStationCoords && dest.coordinates?.lat && dest.coordinates?.lng) {
+        const distKm = getDistance(homeStationCoords.lat, homeStationCoords.lng, dest.coordinates.lat, dest.coordinates.lng);
+        dest.transportOptions = getDynamicTransportOptions(distKm);
+      }
+
       let score = 20 + (dest.ratings?.overall || 5) * 6;
       const reasons: string[] = [];
 
