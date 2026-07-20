@@ -8,6 +8,7 @@ import {
   MapPinned,
   Menu,
   X,
+  LogIn,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
@@ -83,11 +84,10 @@ export default function Navbar() {
               </div>
             ) : (
               <Button
-                variant="default"
-                size="sm"
                 onClick={() => setAuthOpen(true)}
-                className="bg-emerald-600 hover:bg-emerald-700 text-white"
+                className="group bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 px-6"
               >
+                <LogIn className="w-4 h-4 mr-2 transition-transform group-hover:-translate-x-1" />
                 Sign In
               </Button>
             )}

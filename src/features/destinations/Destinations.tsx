@@ -1,11 +1,17 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 import { destinationService } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import DestinationCard from "@/features/destinations/components/DestinationCard";
 import DestinationFilters from "@/features/destinations/components/DestinationFilters";
 import DestinationMap from "@/features/destinations/components/DestinationMap";
-import { Frown, Map as MapIcon, Grid } from "lucide-react";
+import {
+  Frown,
+  Map as MapIcon,
+  Grid,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { getAdjustedBudget } from "@/shared/utils/utils";
 
 export default function Destinations() {
@@ -18,8 +24,15 @@ export default function Destinations() {
   const [weather, setWeather] = useState("all");
   const [maxWalking, setMaxWalking] = useState(25000);
   const [viewMode, setViewMode] = useState<"grid" | "map">("grid");
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 20;
 
   const query = searchQuery.toLowerCase().trim();
+
+  // Reset page to 1 when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, maxBudget, sortBy, transportMode, weather, maxWalking]);
 
   // Filter and sort destinations
   const filteredAndSortedDestinations = useMemo(() => {
@@ -192,6 +205,13 @@ export default function Destinations() {
         onReset={resetFilters}
       />
 
+      <div className="mb-6 flex items-center justify-between text-slate-600 dark:text-slate-400 font-medium">
+        <span>
+          Found {filteredAndSortedDestinations.length} destination
+          {filteredAndSortedDestinations.length === 1 ? "" : "s"}
+        </span>
+      </div>
+
       {filteredAndSortedDestinations.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-slate-500">
           <Frown className="w-12 h-12 mb-4 text-slate-400" />
@@ -203,15 +223,77 @@ export default function Destinations() {
       ) : viewMode === "map" ? (
         <DestinationMap destinations={filteredAndSortedDestinations} />
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredAndSortedDestinations.map((dest) => (
-            <DestinationCard
-              key={dest.id}
-              destination={dest}
-              activeTransportMode={transportMode}
-            />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredAndSortedDestinations
+              .slice(
+                (currentPage - 1) * ITEMS_PER_PAGE,
+                currentPage * ITEMS_PER_PAGE,
+              )
+              .map((dest) => (
+                <DestinationCard
+                  key={dest.id}
+                  destination={dest}
+                  activeTransportMode={transportMode}
+                />
+              ))}
+          </div>
+
+          {/* Pagination Controls */}
+          {filteredAndSortedDestinations.length > ITEMS_PER_PAGE && (
+            <div className="mt-12 flex justify-center items-center gap-2">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 disabled:opacity-50 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+
+              <div className="flex gap-1 flex-wrap justify-center">
+                {Array.from({
+                  length: Math.ceil(
+                    filteredAndSortedDestinations.length / ITEMS_PER_PAGE,
+                  ),
+                }).map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrentPage(i + 1)}
+                    className={`w-10 h-10 rounded-lg font-semibold transition-colors ${
+                      currentPage === i + 1
+                        ? "bg-emerald-600 text-white"
+                        : "border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800"
+                    }`}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+              </div>
+
+              <button
+                onClick={() =>
+                  setCurrentPage((p) =>
+                    Math.min(
+                      Math.ceil(
+                        filteredAndSortedDestinations.length / ITEMS_PER_PAGE,
+                      ),
+                      p + 1,
+                    ),
+                  )
+                }
+                disabled={
+                  currentPage ===
+                  Math.ceil(
+                    filteredAndSortedDestinations.length / ITEMS_PER_PAGE,
+                  )
+                }
+                className="p-2 rounded-lg border border-slate-200 dark:border-slate-800 disabled:opacity-50 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 transition-colors"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          )}
+        </>
       )}
     </div>
   );
