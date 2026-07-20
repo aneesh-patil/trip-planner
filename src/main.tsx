@@ -4,22 +4,17 @@ import "./index.css";
 import App from "./App.tsx";
 import { ClerkProvider } from "@clerk/clerk-react";
 
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+// Test key works on any domain (including .pages.dev).
+// Live key (pk_live_) only works with a custom domain + clerk. subdomain CNAME.
+const PUBLISHABLE_KEY =
+  import.meta.env.VITE_CLERK_PUBLISHABLE_KEY ||
+  "pk_test_ZGVzdGluZWQtYXJhY2huaWQtNDUuY2xlcmsuYWNjb3VudHMuZGV2JA";
 
-// Render without Clerk if no valid key (graceful degradation for local dev)
-if (!PUBLISHABLE_KEY) {
-  createRoot(document.getElementById("root")!).render(
-    <StrictMode>
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <App />
-    </StrictMode>
-  );
-} else {
-  createRoot(document.getElementById("root")!).render(
-    <StrictMode>
-      <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
-        <App />
-      </ClerkProvider>
-    </StrictMode>
-  );
-}
+    </ClerkProvider>
+  </StrictMode>
+);
 
