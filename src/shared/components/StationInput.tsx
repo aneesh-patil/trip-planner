@@ -13,7 +13,7 @@ const PREFECTURES = [
 ];
 
 export default function StationInput() {
-  const { homeStation, setHomeStation, setHomeStationCoords } = useTripStore();
+  const { homeStation, setHomeStation, homeStationCoords, setHomeStationCoords } = useTripStore();
   
   type StationData = { name: string; lat: number; lng: number };
   // Data for stations by prefecture
@@ -25,6 +25,8 @@ export default function StationInput() {
   const [selectedPref, setSelectedPref] = useState<string>("Tokyo");
   const [selectedStation, setSelectedStation] = useState<string>("");
   const [zipCode, setZipCode] = useState<string>("");
+  const [isFetchingZip, setIsFetchingZip] = useState(false);
+  const [zipError, setZipError] = useState("");
 
   useEffect(() => {
     fetch("/data/stations-by-prefecture.json")
@@ -41,6 +43,21 @@ export default function StationInput() {
     if (/^\d{3}-?\d{4}$/.test(homeStation) || /^\d+$/.test(homeStation)) {
       setMode("zip");
       setZipCode(homeStation);
+      
+      // Auto-resolve coordinates if missing (e.g. from previous app versions)
+      if (!homeStationCoords) {
+        setIsFetchingZip(true);
+        const cleanZip = homeStation.replace("-", "");
+        fetch(`https://nominatim.openstreetmap.org/search?postalcode=${cleanZip}&country=japan&format=json`)
+          .then(res => res.json())
+          .then(data => {
+            if (data && data.length > 0) {
+              setHomeStationCoords({ lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) });
+            }
+          })
+          .catch(console.error)
+          .finally(() => setIsFetchingZip(false));
+      }
     } else if (homeStation.includes(", ")) {
       const parts = homeStation.split(", ");
       setMode("station");
@@ -48,12 +65,18 @@ export default function StationInput() {
         setSelectedPref(parts[1]);
       }
       setSelectedStation(parts[0]);
+      
+      // Auto-resolve station coordinates if missing
+      if (!homeStationCoords && stationsByPref[parts[1]]) {
+        const st = stationsByPref[parts[1]].find(s => s.name === parts[0]);
+        if (st) setHomeStationCoords({ lat: st.lat, lng: st.lng });
+      }
     } else {
       // Fallback
       setMode("station");
       setSelectedStation(homeStation);
     }
-  }, [homeStation]);
+  }, [homeStation, homeStationCoords, stationsByPref, setHomeStationCoords]);
 
   const handleStationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedStation(e.target.value);
@@ -68,9 +91,6 @@ export default function StationInput() {
   const handleZipChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setZipCode(e.target.value);
   };
-
-  const [isFetchingZip, setIsFetchingZip] = useState(false);
-  const [zipError, setZipError] = useState("");
 
   const handleSet = async () => {
     if (mode === "station" && selectedStation) {
