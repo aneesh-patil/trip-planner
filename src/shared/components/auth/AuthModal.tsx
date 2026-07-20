@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { useAuth } from "@/shared/hooks/useAuth";
 
 interface AuthModalProps {
@@ -37,7 +38,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
     }
   };
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-[100] p-4 overflow-y-auto"
       style={{ background: "rgba(0,0,0,0.7)", backdropFilter: "blur(8px)" }}
@@ -142,6 +143,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
         </p>
       </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

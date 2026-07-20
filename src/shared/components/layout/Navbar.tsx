@@ -2,21 +2,16 @@ import { useEffect, useState } from "react";
 import {
   Link,
   useLocation,
-  useSearchParams,
-  useNavigate,
 } from "react-router-dom";
 import {
   Compass,
   Bookmark,
   Map,
   Settings,
-  Share2,
-  Check,
   MapPinned,
   Menu,
   X,
 } from "lucide-react";
-import { useTripStore } from "@/shared/hooks/useTripStore";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { AuthModal } from "@/shared/components/auth/AuthModal";
@@ -24,41 +19,13 @@ import { AuthModal } from "@/shared/components/auth/AuthModal";
 
 export default function Navbar() {
   const location = useLocation();
-  const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
-  const { exportData, importData } = useTripStore();
   const { user, signOut } = useAuth();
-  const [copied, setCopied] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
 
   useEffect(() => {
     setMenuOpen(false);
   }, [location.pathname]);
-
-  useEffect(() => {
-    const syncData = searchParams.get("sync");
-    if (syncData) {
-      const success = importData(syncData);
-      if (success) {
-        alert("Data successfully synced from link!");
-        navigate(location.pathname, { replace: true });
-      } else {
-        alert("Failed to sync data. The link might be invalid.");
-      }
-    }
-  }, [searchParams, importData, navigate, location.pathname]);
-
-  const handleShare = () => {
-    const dataStr = exportData();
-    const url = new URL(window.location.href);
-    url.searchParams.set("sync", dataStr);
-
-    navigator.clipboard.writeText(url.toString()).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 3000);
-    });
-  };
 
   const navItems = [
     { name: "Explore", path: "/", icon: Compass },
@@ -100,21 +67,6 @@ export default function Navbar() {
               );
             })}
           </nav>
-
-          {/* Share Button for Syncing */}
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={handleShare}
-            className="hidden sm:flex border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/30"
-          >
-            {copied ? (
-              <Check className="w-4 h-4 mr-2" />
-            ) : (
-              <Share2 className="w-4 h-4 mr-2" />
-            )}
-            {copied ? "Copied Link!" : "Sync Devices"}
-          </Button>
 
           <div className="hidden sm:flex items-center gap-2">
             {user ? (
