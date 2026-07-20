@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
+import { useTripStore } from "@/shared/hooks/useTripStore";
 import { destinationService } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import {
@@ -22,6 +23,7 @@ import {
   TrainFront,
   Bus,
   Car,
+  CheckCircle2,
 } from "lucide-react";
 import { Badge } from "@/shared/components/ui/badge";
 import { Button } from "@/shared/components/ui/button";
@@ -50,6 +52,7 @@ function WeatherIcon({ type }: { type: string }) {
 
 export default function DestinationDetails() {
   const { id } = useParams();
+  const { toggleFavorite, isFavorite, toggleVisited, isVisited } = useTripStore();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [destLoading, setDestLoading] = useState(true);
 
@@ -156,6 +159,32 @@ export default function DestinationDetails() {
               <MapPin className="w-4 h-4 mr-1.5" />
               Get Directions
             </a>
+
+            <button
+              onClick={() => toggleFavorite(destination.id)}
+              className={`inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors ${
+                isFavorite(destination.id)
+                  ? "bg-rose-500 text-white hover:bg-rose-600 shadow-md"
+                  : "bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
+              }`}
+            >
+              <Heart
+                className={`w-4 h-4 mr-1.5 ${isFavorite(destination.id) ? "fill-current" : ""}`}
+              />
+              {isFavorite(destination.id) ? "On Bucket List" : "Want to visit"}
+            </button>
+
+            <button
+              onClick={() => toggleVisited(destination.id)}
+              className={`inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors ${
+                isVisited(destination.id)
+                  ? "bg-blue-500 text-white hover:bg-blue-600 shadow-md"
+                  : "bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
+              }`}
+            >
+              <CheckCircle2 className="w-4 h-4 mr-1.5" />
+              {isVisited(destination.id) ? "Visited" : "Mark as Visited"}
+            </button>
           </div>
         </div>
       </div>

@@ -20,6 +20,7 @@ import {
   Footprints,
   Coins,
   ThermometerSun,
+  Snowflake,
 } from "lucide-react";
 
 interface DestinationFiltersProps {
@@ -122,6 +123,12 @@ export default function DestinationFilters({
                   Best for Summer
                 </div>
               )}
+              {sortBy === "winter" && (
+                <div className="flex items-center">
+                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" />{" "}
+                  Best for Winter
+                </div>
+              )}
             </SelectTrigger>
             <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
               <SelectItem
@@ -176,6 +183,15 @@ export default function DestinationFilters({
                 <div className="flex items-center">
                   <ThermometerSun className="w-4 h-4 mr-3 text-orange-500" />{" "}
                   <span className="font-medium">Best for Summer</span>
+                </div>
+              </SelectItem>
+              <SelectItem
+                value="winter"
+                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+              >
+                <div className="flex items-center">
+                  <Snowflake className="w-4 h-4 mr-3 text-cyan-500" />{" "}
+                  <span className="font-medium">Best for Winter</span>
                 </div>
               </SelectItem>
             </SelectContent>
@@ -304,6 +320,12 @@ export default function DestinationFilters({
                   Beat the Heat
                 </div>
               )}
+              {weather === "winter" && (
+                <div className="flex items-center">
+                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" />{" "}
+                  Winter Magic
+                </div>
+              )}
             </SelectTrigger>
             <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
               <SelectItem
@@ -331,6 +353,15 @@ export default function DestinationFilters({
                 <div className="flex items-center">
                   <ThermometerSun className="w-4 h-4 mr-3 text-orange-500" />{" "}
                   <span className="font-medium">Beat the Heat</span>
+                </div>
+              </SelectItem>
+              <SelectItem
+                value="winter"
+                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+              >
+                <div className="flex items-center">
+                  <Snowflake className="w-4 h-4 mr-3 text-cyan-500" />{" "}
+                  <span className="font-medium">Winter Magic</span>
                 </div>
               </SelectItem>
             </SelectContent>

@@ -61,6 +61,8 @@ export default function Destinations() {
       );
     } else if (weather === "summer") {
       result = result.filter((dest) => dest.ratings.summer >= 8);
+    } else if (weather === "winter") {
+      result = result.filter((dest) => dest.ratings.winter >= 8);
     }
 
     // 5. Filter by Max Walking
@@ -104,6 +106,8 @@ export default function Destinations() {
           return b.ratings.couple - a.ratings.couple;
         case "summer":
           return b.ratings.summer - a.ratings.summer;
+        case "winter":
+          return b.ratings.winter - a.ratings.winter;
         case "overall":
         default:
           return b.ratings.overall - a.ratings.overall;
