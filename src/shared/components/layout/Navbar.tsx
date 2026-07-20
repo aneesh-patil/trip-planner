@@ -18,7 +18,42 @@ import {
 } from "lucide-react";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { Button } from "@/shared/components/ui/button";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+  useClerk,
+} from "@clerk/clerk-react";
+
+// Wrapper that only renders auth UI when ClerkProvider is present
+function ClerkAuthButtons() {
+  try {
+    // useClerk throws if there is no ClerkProvider in the tree
+    useClerk();
+    return (
+      <div className="hidden sm:block">
+        <SignedOut>
+          <SignInButton mode="modal">
+            <Button
+              variant="default"
+              size="sm"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white"
+            >
+              Sign In
+            </Button>
+          </SignInButton>
+        </SignedOut>
+        <SignedIn>
+          <UserButton afterSignOutUrl="/" />
+        </SignedIn>
+      </div>
+    );
+  } catch {
+    return null;
+  }
+}
+
 
 export default function Navbar() {
   const location = useLocation();
@@ -112,16 +147,7 @@ export default function Navbar() {
             {copied ? "Copied Link!" : "Sync Devices"}
           </Button>
 
-          <div className="hidden sm:block">
-            <SignedOut>
-              <SignInButton mode="modal">
-                <Button variant="default" size="sm" className="bg-emerald-600 hover:bg-emerald-700 text-white">Sign In</Button>
-              </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton afterSignOutUrl="/" />
-            </SignedIn>
-          </div>
+          <ClerkAuthButtons />
 
           {/* Hamburger button — mobile only */}
           <button
