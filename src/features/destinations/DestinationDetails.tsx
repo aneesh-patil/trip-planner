@@ -52,7 +52,7 @@ function WeatherIcon({ type }: { type: string }) {
 
 export default function DestinationDetails() {
   const { id } = useParams();
-  const { isFavorite, toggleFavorite, isVisited, toggleVisited, isComparing, toggleCompare, homeStation } = useTripStore();
+  const { isFavorite, toggleFavorite, isVisited, toggleVisited, homeStation } = useTripStore();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [destLoading, setDestLoading] = useState(true);
 
