@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useRef } from "react";
 import type { ReactNode } from "react";
 import { useLocalStorage } from "./useLocalStorage";
-import { useUser } from "@clerk/clerk-react";
+import { useAuth } from "@/shared/hooks/useAuth";
 
 interface TripStoreContextType {
   favorites: string[];
@@ -26,7 +26,7 @@ const TripStoreContext = createContext<TripStoreContextType | undefined>(
 );
 
 export function TripStoreProvider({ children }: { children: ReactNode }) {
-  const { user, isSignedIn } = useUser();
+  const { user } = useAuth();
   const [favorites, setFavorites] = useLocalStorage<string[]>(
     "trip-planner-favorites",
     [],
@@ -43,7 +43,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
   // Fetch initial data on login
   useEffect(() => {
-    if (isSignedIn && user?.id && !isLoadedRef.current) {
+    if (user?.id && !isLoadedRef.current) {
       fetch(`/api/sync?userId=${user.id}`)
         .then((res) => res.json())
         .then((data) => {
@@ -53,11 +53,11 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         })
         .catch((err) => console.error("Failed to load user data", err));
     }
-  }, [isSignedIn, user?.id, setFavorites, setVisited]);
+  }, [user?.id, setFavorites, setVisited]);
 
   // Sync back to db when state changes
   useEffect(() => {
-    if (isSignedIn && user?.id && isLoadedRef.current) {
+    if (user?.id && isLoadedRef.current) {
       fetch("/api/sync", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -68,7 +68,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         }),
       }).catch((err) => console.error("Failed to sync user data", err));
     }
-  }, [favorites, visited, isSignedIn, user?.id]);
+  }, [favorites, visited, user?.id]);
 
   const toggleFavorite = (id: string) => {
     setFavorites((prev) =>

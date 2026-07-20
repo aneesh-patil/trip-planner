@@ -18,41 +18,8 @@ import {
 } from "lucide-react";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { Button } from "@/shared/components/ui/button";
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-  useClerk,
-} from "@clerk/clerk-react";
-
-// Wrapper that only renders auth UI when ClerkProvider is present
-function ClerkAuthButtons() {
-  try {
-    // useClerk throws if there is no ClerkProvider in the tree
-    useClerk();
-    return (
-      <div className="hidden sm:block">
-        <SignedOut>
-          <SignInButton mode="modal">
-            <Button
-              variant="default"
-              size="sm"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white"
-            >
-              Sign In
-            </Button>
-          </SignInButton>
-        </SignedOut>
-        <SignedIn>
-          <UserButton afterSignOutUrl="/" />
-        </SignedIn>
-      </div>
-    );
-  } catch {
-    return null;
-  }
-}
+import { useAuth } from "@/shared/hooks/useAuth";
+import { AuthModal } from "@/shared/components/auth/AuthModal";
 
 
 export default function Navbar() {
@@ -60,8 +27,10 @@ export default function Navbar() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const { exportData, importData } = useTripStore();
+  const { user, signOut } = useAuth();
   const [copied, setCopied] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -147,7 +116,31 @@ export default function Navbar() {
             {copied ? "Copied Link!" : "Sync Devices"}
           </Button>
 
-          <ClerkAuthButtons />
+          <div className="hidden sm:flex items-center gap-2">
+            {user ? (
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white text-sm font-semibold">
+                  {(user.email?.[0] ?? (user.user_metadata?.full_name as string)?.[0] ?? "U").toUpperCase()}
+                </div>
+                <button
+                  onClick={() => signOut?.()}
+                  className="text-xs text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+                >
+                  Sign out
+                </button>
+              </div>
+            ) : (
+              <Button
+                variant="default"
+                size="sm"
+                onClick={() => setAuthOpen(true)}
+                className="bg-emerald-600 hover:bg-emerald-700 text-white"
+              >
+                Sign In
+              </Button>
+            )}
+          </div>
+          <AuthModal isOpen={authOpen} onClose={() => setAuthOpen(false)} />
 
           {/* Hamburger button — mobile only */}
           <button
