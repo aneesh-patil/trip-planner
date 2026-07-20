@@ -20,6 +20,7 @@ export default function StationInput() {
   const [stationsByPref, setStationsByPref] = useState<Record<string, StationData[]>>({});
   
   // UI State
+  const [isEditing, setIsEditing] = useState<boolean>(!homeStation);
   const [mode, setMode] = useState<"station" | "zip">("station");
   const [selectedPref, setSelectedPref] = useState<string>("Tokyo");
   const [selectedStation, setSelectedStation] = useState<string>("");
@@ -79,17 +80,35 @@ export default function StationInput() {
       setHomeStation(zipCode);
       setHomeStationCoords(null);
     }
+    setIsEditing(false);
   };
 
   const stations = useMemo(() => {
     return stationsByPref[selectedPref] || [];
   }, [stationsByPref, selectedPref]);
 
+  if (!isEditing && homeStation) {
+    return (
+      <div className="flex items-center gap-3 bg-white/70 dark:bg-slate-900/70 p-3 rounded-xl w-fit border border-slate-200 dark:border-slate-700 backdrop-blur-md shadow-sm">
+        <MapPin className="w-5 h-5 text-emerald-500 shrink-0" />
+        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 shrink-0">
+          Base Location: <span className="text-emerald-600 dark:text-emerald-400 ml-1">{homeStation}</span>
+        </span>
+        <button
+          onClick={() => setIsEditing(true)}
+          className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium text-xs px-3 py-1 rounded-md transition-colors shadow-sm ml-2"
+        >
+          Edit
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col gap-3 bg-white/70 dark:bg-slate-900/70 p-3 rounded-xl w-fit border border-slate-200 dark:border-slate-700 backdrop-blur-md shadow-sm">
       <div className="flex items-center gap-3">
         <MapPin className="w-5 h-5 text-emerald-500 shrink-0" />
-        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 shrink-0">Base Location:</span>
+        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 shrink-0">Set Base Location:</span>
         <div className="flex bg-slate-200 dark:bg-slate-800 rounded-lg p-0.5 border border-slate-300 dark:border-slate-700">
           <button 
             onClick={() => setMode('station')} 
@@ -142,13 +161,23 @@ export default function StationInput() {
           />
         </div>
       )}
-      <button
-        onClick={handleSet}
-        disabled={(mode === "station" && !selectedStation) || (mode === "zip" && !zipCode)}
-        className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        Set
-      </button>
+      <div className="flex gap-2">
+        <button
+          onClick={handleSet}
+          disabled={(mode === "station" && !selectedStation) || (mode === "zip" && !zipCode)}
+          className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex-1"
+        >
+          Set
+        </button>
+        {homeStation && (
+          <button
+            onClick={() => setIsEditing(false)}
+            className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm"
+          >
+            Cancel
+          </button>
+        )}
+      </div>
     </div>
   );
 }
