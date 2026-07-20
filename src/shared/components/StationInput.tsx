@@ -69,18 +69,40 @@ export default function StationInput() {
     setZipCode(e.target.value);
   };
 
-  const handleSet = () => {
+  const [isFetchingZip, setIsFetchingZip] = useState(false);
+  const [zipError, setZipError] = useState("");
+
+  const handleSet = async () => {
     if (mode === "station" && selectedStation) {
       setHomeStation(`${selectedStation}, ${selectedPref}`);
       const st = stations.find(s => s.name === selectedStation);
       if (st) {
         setHomeStationCoords({ lat: st.lat, lng: st.lng });
       }
+      setIsEditing(false);
     } else if (mode === "zip" && zipCode) {
-      setHomeStation(zipCode);
-      setHomeStationCoords(null);
+      setIsFetchingZip(true);
+      setZipError("");
+      try {
+        const cleanZip = zipCode.replace("-", "");
+        const res = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${cleanZip}&country=japan&format=json`);
+        const data = await res.json();
+        if (data && data.length > 0) {
+          const lat = parseFloat(data[0].lat);
+          const lng = parseFloat(data[0].lon);
+          setHomeStation(zipCode);
+          setHomeStationCoords({ lat, lng });
+          setIsEditing(false);
+        } else {
+          setZipError("Could not find coordinates for this zip code.");
+        }
+      } catch (err) {
+        console.error("Failed to fetch zip code coordinates", err);
+        setZipError("Failed to fetch location. Try again.");
+      } finally {
+        setIsFetchingZip(false);
+      }
     }
-    setIsEditing(false);
   };
 
   const stations = useMemo(() => {
@@ -150,7 +172,7 @@ export default function StationInput() {
            </select>
         </div>
       ) : (
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col gap-1">
           <input 
             type="text" 
             placeholder="e.g. 100-0001" 
@@ -159,15 +181,17 @@ export default function StationInput() {
             onKeyDown={(e) => e.key === 'Enter' && handleSet()}
             className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-1.5 text-sm font-medium focus:outline-none focus:border-emerald-500 w-full sm:w-64"
           />
+          {zipError && <span className="text-xs text-red-500">{zipError}</span>}
         </div>
       )}
       <div className="flex gap-2">
         <button
           onClick={handleSet}
-          disabled={(mode === "station" && !selectedStation) || (mode === "zip" && !zipCode)}
-          className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex-1"
+          disabled={(mode === "station" && !selectedStation) || (mode === "zip" && !zipCode) || isFetchingZip}
+          className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex-1 flex items-center justify-center gap-2"
         >
-          Set
+          {isFetchingZip && <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />}
+          {isFetchingZip ? "Locating..." : "Set"}
         </button>
         {homeStation && (
           <button
