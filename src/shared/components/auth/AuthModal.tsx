@@ -39,18 +39,19 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+      className="fixed inset-0 z-[100] p-4 overflow-y-auto"
       style={{ background: "rgba(0,0,0,0.7)", backdropFilter: "blur(8px)" }}
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div
-        className="relative w-full max-w-md rounded-2xl p-8"
-        style={{
-          background: "rgba(15,23,42,0.95)",
-          border: "1px solid rgba(255,255,255,0.1)",
-          boxShadow: "0 25px 50px rgba(0,0,0,0.5)",
-        }}
-      >
+      <div className="min-h-full flex items-center justify-center">
+        <div
+          className="relative w-full max-w-md rounded-2xl p-8 my-8"
+          style={{
+            background: "rgba(15,23,42,0.95)",
+            border: "1px solid rgba(255,255,255,0.1)",
+            boxShadow: "0 25px 50px rgba(0,0,0,0.5)",
+          }}
+        >
         {/* Close */}
         <button
           onClick={onClose}
@@ -139,6 +140,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
             {mode === "signin" ? "Sign Up" : "Sign In"}
           </button>
         </p>
+      </div>
       </div>
     </div>
   );
