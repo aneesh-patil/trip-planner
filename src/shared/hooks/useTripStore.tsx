@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useRef } from "react";
 import type { ReactNode } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 import { useAuth } from "@/shared/hooks/useAuth";
+import { supabase } from "@/lib/supabase";
 
 interface TripStoreContextType {
   favorites: string[];
@@ -44,29 +45,41 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   // Fetch initial data on login
   useEffect(() => {
     if (user?.id && !isLoadedRef.current) {
-      fetch(`/api/sync?userId=${user.id}`)
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.favorites) setFavorites(data.favorites);
-          if (data.visited) setVisited(data.visited);
+      if (!supabase) return;
+      supabase
+        .from("user_data")
+        .select("favorites, visited")
+        .eq("id", user.id)
+        .single()
+        .then(({ data, error }) => {
+          if (error && error.code !== "PGRST116") {
+            // PGRST116 means 0 rows returned, which is normal for a brand new user
+            console.error("Failed to load user data", error);
+            return;
+          }
+          if (data) {
+            if (data.favorites) setFavorites(data.favorites);
+            if (data.visited) setVisited(data.visited);
+          }
           isLoadedRef.current = true;
-        })
-        .catch((err) => console.error("Failed to load user data", err));
+        });
     }
   }, [user?.id, setFavorites, setVisited]);
 
   // Sync back to db when state changes
   useEffect(() => {
     if (user?.id && isLoadedRef.current) {
-      fetch("/api/sync", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          userId: user.id,
+      if (!supabase) return;
+      supabase
+        .from("user_data")
+        .upsert({
+          id: user.id,
           favorites,
           visited,
-        }),
-      }).catch((err) => console.error("Failed to sync user data", err));
+        })
+        .then(({ error }) => {
+          if (error) console.error("Failed to sync user data", error);
+        });
     }
   }, [favorites, visited, user?.id]);
 
