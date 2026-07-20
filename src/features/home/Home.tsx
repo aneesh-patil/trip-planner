@@ -33,6 +33,7 @@ import {
 import { Slider } from "@/shared/components/ui/slider";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { recommendationService } from "@/shared/services/recommendation/RecommendationService";
+import StationInput from "@/shared/components/StationInput";
 
 export default function Home() {
   const allDestinations =
@@ -138,6 +139,9 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Contextual Hero */}
             <div className="flex flex-col items-start text-left w-full">
+              <div className="mb-6">
+                <StationInput />
+              </div>
               {currentSituation ? (
                 <div className="mb-10 w-full">
                   <div className="flex gap-2 mb-6">
@@ -160,7 +164,7 @@ export default function Home() {
                       |
                     </span>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">
-                      {currentSituation.desc} in Yokohama
+                      {currentSituation.desc} in your area
                     </span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 mt-6 leading-tight">

@@ -11,10 +11,9 @@ import {
   Grid,
   ChevronLeft,
   ChevronRight,
-  MapPin,
 } from "lucide-react";
 import { getAdjustedBudget } from "@/shared/utils/utils";
-import { useTripStore } from "@/shared/hooks/useTripStore";
+import StationInput from "@/shared/components/StationInput";
 
 export default function Destinations() {
   const allDestinations =
@@ -28,8 +27,6 @@ export default function Destinations() {
   const [viewMode, setViewMode] = useState<"grid" | "map">("grid");
   const [currentPage, setCurrentPage] = useState(1);
   const ITEMS_PER_PAGE = 20;
-  
-  const { homeStation, setHomeStation } = useTripStore();
 
   const query = searchQuery.toLowerCase().trim();
 
@@ -164,16 +161,8 @@ export default function Destinations() {
             Find the perfect adventure across Japan. Filter by budget,
             season, and vibe.
           </p>
-          <div className="flex items-center gap-2 mt-4 bg-slate-100 dark:bg-slate-800 p-2 rounded-lg w-fit border border-slate-200 dark:border-slate-700">
-            <MapPin className="w-4 h-4 text-emerald-500" />
-            <span className="text-sm font-medium text-slate-600 dark:text-slate-400">Nearest Station:</span>
-            <input 
-              type="text" 
-              value={homeStation} 
-              onChange={(e) => setHomeStation(e.target.value)}
-              className="bg-transparent border-b border-slate-300 dark:border-slate-600 focus:outline-none focus:border-emerald-500 text-sm font-semibold text-slate-800 dark:text-slate-200 px-1 py-0.5 min-w-[150px]" 
-              placeholder="e.g. Tokyo Station"
-            />
+          <div className="mt-4">
+            <StationInput />
           </div>
         </div>
 

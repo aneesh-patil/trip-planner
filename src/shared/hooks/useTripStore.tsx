@@ -80,7 +80,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       if (!supabase) return;
       supabase
         .from("user_data")
-        .select("favorites, visited, visited_prefectures")
+        .select("favorites, visited, visited_prefectures, home_station")
         .eq("id", user.id)
         .single()
         .then(({ data, error }) => {
@@ -94,6 +94,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
             if (data.visited) setVisited(data.visited);
             if (data.visited_prefectures)
               setVisitedPrefectures(data.visited_prefectures);
+            if (data.home_station) setHomeStation(data.home_station);
           }
           isLoadedRef.current = true;
         });
@@ -111,12 +112,13 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
           favorites,
           visited,
           visited_prefectures: visitedPrefectures,
+          home_station: homeStation,
         })
         .then(({ error }) => {
           if (error) console.error("Failed to sync user data", error);
         });
     }
-  }, [favorites, visited, visitedPrefectures, user?.id]);
+  }, [favorites, visited, visitedPrefectures, homeStation, user?.id]);
 
   const toggleFavorite = (id: string) => {
     setFavorites((prev) =>
