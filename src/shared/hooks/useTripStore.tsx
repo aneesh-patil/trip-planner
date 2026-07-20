@@ -18,6 +18,9 @@ interface TripStoreContextType {
   toggleVisitedPrefecture: (id: string) => void;
   isPrefectureVisited: (id: string) => boolean;
 
+  homeStation: string;
+  setHomeStation: (station: string) => void;
+
   compareList: string[];
   toggleCompare: (id: string) => void;
   isComparing: (id: string) => boolean;
@@ -48,6 +51,10 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   const [compareList, setCompareList] = useLocalStorage<string[]>(
     "trip-planner-compare",
     [],
+  );
+  const [homeStation, setHomeStation] = useLocalStorage<string>(
+    "trip-planner-home-station",
+    "Tokyo Station",
   );
   const isLoadedRef = useRef(false);
   const prevUserIdRef = useRef(user?.id);
@@ -223,6 +230,8 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         clearCompare,
         exportData,
         importData,
+        homeStation,
+        setHomeStation,
       }}
     >
       {children}

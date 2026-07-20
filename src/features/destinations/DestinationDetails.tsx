@@ -52,8 +52,7 @@ function WeatherIcon({ type }: { type: string }) {
 
 export default function DestinationDetails() {
   const { id } = useParams();
-  const { toggleFavorite, isFavorite, toggleVisited, isVisited } =
-    useTripStore();
+  const { isFavorite, toggleFavorite, isVisited, toggleVisited, isComparing, toggleCompare, homeStation } = useTripStore();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [destLoading, setDestLoading] = useState(true);
 
@@ -152,7 +151,7 @@ export default function DestinationDetails() {
               Japan
             </div>
             <a
-              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
+              href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(homeStation)}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg transition-colors"
