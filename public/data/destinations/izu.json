@@ -54,8 +54,7 @@
   },
   "transportOptions": {
     "train": 120,
-    "car": 120,
-    "shinkansen": 72
+    "car": 120
   },
   "restaurants": [
     "Izu Peninsula Traditional Dining",

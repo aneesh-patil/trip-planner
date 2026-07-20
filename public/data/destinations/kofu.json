@@ -54,8 +54,7 @@
   },
   "transportOptions": {
     "train": 110,
-    "car": 100,
-    "shinkansen": 66
+    "car": 100
   },
   "restaurants": [
     "Kofu Traditional Dining",

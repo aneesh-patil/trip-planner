@@ -2358,8 +2358,7 @@
     },
     "transportOptions": {
       "train": 110,
-      "car": 110,
-      "shinkansen": 66
+      "car": 110
     }
   },
   {
@@ -2485,8 +2484,7 @@
     },
     "transportOptions": {
       "train": 120,
-      "car": 120,
-      "shinkansen": 72
+      "car": 120
     }
   },
   {
@@ -2528,8 +2526,7 @@
     },
     "transportOptions": {
       "train": 130,
-      "car": 110,
-      "shinkansen": 78
+      "car": 110
     }
   },
   {
@@ -2948,8 +2945,7 @@
       "walkingIntensity": 5
     },
     "transportOptions": {
-      "car": 120,
-      "shinkansen": 999
+      "car": 120
     }
   },
   {
@@ -2992,7 +2988,6 @@
     "transportOptions": {
       "train": 130,
       "car": 110,
-      "shinkansen": 78,
       "bus": 120
     }
   },
@@ -3035,8 +3030,7 @@
     },
     "transportOptions": {
       "train": 110,
-      "car": 100,
-      "shinkansen": 66
+      "car": 100
     }
   },
   {
@@ -3479,7 +3473,6 @@
     },
     "transportOptions": {
       "train": 100,
-      "shinkansen": 60,
       "car": 120
     },
     "walkingMin": 5000,

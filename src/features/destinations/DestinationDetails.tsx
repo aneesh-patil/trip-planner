@@ -90,7 +90,11 @@ export default function DestinationDetails() {
               dest.coordinates.lat,
               dest.coordinates.lng,
             );
-            dest.transportOptions = getDynamicTransportOptions(distKm);
+            const hasShinkansen = Boolean(dest.transportOptions?.shinkansen);
+            dest.transportOptions = getDynamicTransportOptions(
+              distKm,
+              hasShinkansen,
+            );
           }
           setDestination(dest);
           setDestLoading(false);

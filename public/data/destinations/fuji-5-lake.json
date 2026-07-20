@@ -55,7 +55,6 @@
   "transportOptions": {
     "train": 130,
     "car": 110,
-    "shinkansen": 78,
     "bus": 120
   },
   "restaurants": [

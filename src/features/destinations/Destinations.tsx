@@ -52,7 +52,11 @@ export default function Destinations() {
           dest.coordinates.lat,
           dest.coordinates.lng,
         );
-        dest.transportOptions = getDynamicTransportOptions(distKm);
+        const hasShinkansen = Boolean(destObj.transportOptions?.shinkansen);
+        dest.transportOptions = getDynamicTransportOptions(
+          distKm,
+          hasShinkansen,
+        );
       }
       return dest;
     });

@@ -54,8 +54,7 @@
   },
   "transportOptions": {
     "train": 110,
-    "car": 110,
-    "shinkansen": 66
+    "car": 110
   },
   "restaurants": [
     "Mito Traditional Dining",

@@ -46,7 +46,11 @@ export function getRecommendations(
           dest.coordinates.lat,
           dest.coordinates.lng,
         );
-        dest.transportOptions = getDynamicTransportOptions(distKm);
+        const hasShinkansen = Boolean(destObj.transportOptions?.shinkansen);
+        dest.transportOptions = getDynamicTransportOptions(
+          distKm,
+          hasShinkansen,
+        );
       }
 
       let score = 20 + (dest.ratings?.overall || 5) * 6;

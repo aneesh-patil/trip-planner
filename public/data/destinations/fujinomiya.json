@@ -54,8 +54,7 @@
   },
   "transportOptions": {
     "train": 130,
-    "car": 110,
-    "shinkansen": 78
+    "car": 110
   },
   "restaurants": [
     "Fujinomiya Traditional Dining",
