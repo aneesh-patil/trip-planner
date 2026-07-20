@@ -16,7 +16,7 @@ import { AuthModal } from "@/shared/components/auth/AuthModal";
 
 export default function Navbar() {
   const location = useLocation();
-  const { user, signOut } = useAuth();
+  const { user, loading, signOut } = useAuth();
   const [menuOpen, setMenuOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
 
@@ -66,7 +66,9 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden sm:flex items-center gap-2">
-            {user ? (
+            {loading ? (
+              <div className="w-8 h-8 rounded-full border-2 border-emerald-500 border-t-transparent animate-spin" />
+            ) : user ? (
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white text-sm font-semibold">
                   {(

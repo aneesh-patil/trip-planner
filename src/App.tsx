@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import { AuthProvider } from "./shared/hooks/useAuth";
 import { TripStoreProvider } from "./shared/hooks/useTripStore";
 import Navbar from "./shared/components/layout/Navbar";
 import Footer from "./shared/components/layout/Footer";
@@ -26,10 +27,11 @@ function PageLoader() {
 
 function App() {
   return (
-    <TripStoreProvider>
-      <Router>
-        <div className="flex flex-col min-h-screen bg-background text-foreground">
-          <Navbar />
+    <AuthProvider>
+      <TripStoreProvider>
+        <Router>
+          <div className="flex flex-col min-h-screen bg-background text-foreground">
+            <Navbar />
           <main className="flex-grow">
             <ErrorBoundary>
               <Suspense fallback={<PageLoader />}>
@@ -54,6 +56,7 @@ function App() {
         </div>
       </Router>
     </TripStoreProvider>
+    </AuthProvider>
   );
 }
 
