@@ -13,6 +13,9 @@ const DestinationDetails = lazy(
 );
 const Compare = lazy(() => import("./features/compare/Compare"));
 const JapanMap = lazy(() => import("./features/map/JapanMap"));
+const PrefectureChecklist = lazy(
+  () => import("./features/map/PrefectureChecklist"),
+);
 
 function PageLoader() {
   return (
@@ -41,6 +44,10 @@ function App() {
                   <Route path="/compare" element={<Compare />} />
                   <Route path="/favorites" element={<Favorites />} />
                   <Route path="/map" element={<JapanMap />} />
+                  <Route
+                    path="/visited-map"
+                    element={<PrefectureChecklist />}
+                  />
                 </Routes>
               </Suspense>
             </ErrorBoundary>

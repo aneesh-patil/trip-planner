@@ -9,6 +9,7 @@ import {
   Menu,
   X,
   LogIn,
+  CheckSquare,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
@@ -28,6 +29,7 @@ export default function Navbar() {
     { name: "Explore", path: "/", icon: Compass },
     { name: "Destinations", path: "/destinations", icon: Map },
     { name: "Full Map", path: "/map", icon: MapPinned },
+    { name: "Prefectures", path: "/visited-map", icon: CheckSquare },
     { name: "Compare", path: "/compare", icon: Settings },
     { name: "Bucket List", path: "/favorites", icon: Bookmark },
   ];

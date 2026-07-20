@@ -13,6 +13,10 @@ interface TripStoreContextType {
   toggleVisited: (id: string) => void;
   isVisited: (id: string) => boolean;
 
+  visitedPrefectures: string[];
+  toggleVisitedPrefecture: (id: string) => void;
+  isPrefectureVisited: (id: string) => boolean;
+
   compareList: string[];
   toggleCompare: (id: string) => void;
   isComparing: (id: string) => boolean;
@@ -36,6 +40,10 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     "trip-planner-visited",
     [],
   );
+  const [visitedPrefectures, setVisitedPrefectures] = useLocalStorage<string[]>(
+    "trip-planner-visited-prefs",
+    [],
+  );
   const [compareList, setCompareList] = useLocalStorage<string[]>(
     "trip-planner-compare",
     [],
@@ -49,6 +57,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       // User logged out: wipe local data
       setFavorites([]);
       setVisited([]);
+      setVisitedPrefectures([]);
       isLoadedRef.current = false;
     } else if (user?.id && user.id !== prevUserIdRef.current) {
       // User changed / logged in: reset load state so it fetches fresh data
@@ -63,7 +72,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       if (!supabase) return;
       supabase
         .from("user_data")
-        .select("favorites, visited")
+        .select("favorites, visited, visited_prefectures")
         .eq("id", user.id)
         .single()
         .then(({ data, error }) => {
@@ -75,11 +84,13 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
           if (data) {
             if (data.favorites) setFavorites(data.favorites);
             if (data.visited) setVisited(data.visited);
+            if (data.visited_prefectures)
+              setVisitedPrefectures(data.visited_prefectures);
           }
           isLoadedRef.current = true;
         });
     }
-  }, [user?.id, setFavorites, setVisited]);
+  }, [user?.id, setFavorites, setVisited, setVisitedPrefectures]);
 
   // Sync back to db when state changes
   useEffect(() => {
@@ -91,12 +102,13 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
           id: user.id,
           favorites,
           visited,
+          visited_prefectures: visitedPrefectures,
         })
         .then(({ error }) => {
           if (error) console.error("Failed to sync user data", error);
         });
     }
-  }, [favorites, visited, user?.id]);
+  }, [favorites, visited, visitedPrefectures, user?.id]);
 
   const toggleFavorite = (id: string) => {
     setFavorites((prev) =>
@@ -113,6 +125,14 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   };
 
   const isVisited = (id: string) => visited.includes(id);
+
+  const toggleVisitedPrefecture = (id: string) => {
+    setVisitedPrefectures((prev) =>
+      prev.includes(id) ? prev.filter((vId) => vId !== id) : [...prev, id],
+    );
+  };
+
+  const isPrefectureVisited = (id: string) => visitedPrefectures.includes(id);
 
   const toggleCompare = (id: string) => {
     setCompareList((prev) => {
@@ -131,7 +151,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   const clearCompare = () => setCompareList([]);
 
   const exportData = () => {
-    const data = { favorites, visited };
+    const data = { favorites, visited, visitedPrefectures };
     return btoa(JSON.stringify(data)); // Base64 encode
   };
 
@@ -144,6 +164,9 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       }
       if (data.visited && Array.isArray(data.visited)) {
         setVisited(data.visited);
+      }
+      if (data.visitedPrefectures && Array.isArray(data.visitedPrefectures)) {
+        setVisitedPrefectures(data.visitedPrefectures);
       }
       return true;
     } catch (e) {
@@ -161,6 +184,9 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         visited,
         toggleVisited,
         isVisited,
+        visitedPrefectures,
+        toggleVisitedPrefecture,
+        isPrefectureVisited,
         compareList,
         toggleCompare,
         isComparing,
