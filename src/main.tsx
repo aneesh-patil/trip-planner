@@ -4,22 +4,15 @@ import "./index.css";
 import App from "./App.tsx";
 import { ClerkProvider } from "@clerk/clerk-react";
 
-// Retrieve Clerk Publishable Key from Vite env
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
-
-if (!PUBLISHABLE_KEY) {
-  console.warn("Clerk Publishable Key not set – Auth UI will be disabled in this build.");
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || "pk_test_dummy";
+if (!import.meta.env.VITE_CLERK_PUBLISHABLE_KEY) {
+  console.warn("Clerk Publishable Key not set – using dummy key for dev. Production will use real key.");
 }
 
-const renderApp = (
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {PUBLISHABLE_KEY ? (
-      <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
-        <App />
-      </ClerkProvider>
-    ) : (
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <App />
-    )}
+    </ClerkProvider>
   </StrictMode>
 );
-
