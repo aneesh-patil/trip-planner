@@ -116,7 +116,9 @@ export default function JapanMap() {
                         ★ {dest.ratings?.overall || "N/A"}/10
                       </div>
                       <p className="text-sm text-slate-500 mb-3">
-                        {dest.description ? dest.description.slice(0, 60) + "..." : "No description available"}
+                        {dest.description
+                          ? dest.description.slice(0, 60) + "..."
+                          : "No description available"}
                       </p>
                       <Link to={`/destinations/${dest.id}`}>
                         <Button

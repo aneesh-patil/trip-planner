@@ -52,7 +52,8 @@ function WeatherIcon({ type }: { type: string }) {
 
 export default function DestinationDetails() {
   const { id } = useParams();
-  const { toggleFavorite, isFavorite, toggleVisited, isVisited } = useTripStore();
+  const { toggleFavorite, isFavorite, toggleVisited, isVisited } =
+    useTripStore();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [destLoading, setDestLoading] = useState(true);
 
@@ -680,25 +681,25 @@ export default function DestinationDetails() {
 
             <Card>
               <CardContent className="p-6 space-y-4">
-{destination.reservation && (
-                <div>
-                  <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
-                    Reservation Info
-                  </h4>
-                  <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
-                    {destination.reservation}
-                  </p>
-                </div>
+                {destination.reservation && (
+                  <div>
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
+                      Reservation Info
+                    </h4>
+                    <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
+                      {destination.reservation}
+                    </p>
+                  </div>
                 )}
                 {destination.parking && (
-                <div>
-                  <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
-                    Parking
-                  </h4>
-                  <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
-                    {destination.parking}
-                  </p>
-                </div>
+                  <div>
+                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
+                      Parking
+                    </h4>
+                    <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
+                      {destination.parking}
+                    </p>
+                  </div>
                 )}
               </CardContent>
             </Card>

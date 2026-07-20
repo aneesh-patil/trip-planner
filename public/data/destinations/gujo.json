@@ -3,11 +3,7 @@
   "name": "Gujo Hachiman",
   "prefecture": "Gifu",
   "region": "Chubu",
-  "categories": [
-    "Culture",
-    "History",
-    "Nature"
-  ],
+  "categories": ["Culture", "History", "Nature"],
   "heroImage": "/images/gujo_hero.jpg",
   "totalTripHours": 24,
   "budgetMin": 16000,
@@ -51,27 +47,14 @@
     "autumn": 85,
     "winter": 75
   },
-  "bestMonths": [
-    7,
-    8,
-    9
-  ],
+  "bestMonths": [7, 8, 9],
   "bestSeason": "Summer (Gujo Odori Dance Festival)",
   "weatherDependence": "High",
-  "tags": [
-    "Water City",
-    "Food Replicas",
-    "Summer Dance"
-  ],
+  "tags": ["Water City", "Food Replicas", "Summer Dance"],
   "reservation": "Book hotels well in advance during summer",
   "parking": "Public parking available outside town center",
-  "restaurants": [
-    "Soba Hachiman",
-    "Yoshida River Ayu Dining"
-  ],
-  "cafes": [
-    "Gujo Matcha Cafe"
-  ],
+  "restaurants": ["Soba Hachiman", "Yoshida River Ayu Dining"],
+  "cafes": ["Gujo Matcha Cafe"],
   "notes": "Famous for its pristine waterways, the town feels incredibly refreshing in summer.",
   "description": "Known as the Water City, Gujo Hachiman is a pristine riverside town in Gifu. Famous for its summer Gujo Odori dance festival lasting 32 nights, beautiful canals, and being the birthplace of Japanese plastic food replicas.",
   "highlights": [

@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  Link,
-  useLocation,
-} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Compass,
   Bookmark,
@@ -15,7 +12,6 @@ import {
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { AuthModal } from "@/shared/components/auth/AuthModal";
-
 
 export default function Navbar() {
   const location = useLocation();
@@ -72,7 +68,11 @@ export default function Navbar() {
             {user ? (
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white text-sm font-semibold">
-                  {(user.email?.[0] ?? (user.user_metadata?.full_name as string)?.[0] ?? "U").toUpperCase()}
+                  {(
+                    user.email?.[0] ??
+                    (user.user_metadata?.full_name as string)?.[0] ??
+                    "U"
+                  ).toUpperCase()}
                 </div>
                 <button
                   onClick={() => signOut?.()}

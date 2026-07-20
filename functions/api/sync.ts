@@ -21,7 +21,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
        VALUES (?1, ?2, ?3)
        ON CONFLICT (userId) DO UPDATE SET
        favorites = excluded.favorites,
-       visited = excluded.visited`
+       visited = excluded.visited`,
     )
       .bind(userId, JSON.stringify(favorites), JSON.stringify(visited))
       .run();
@@ -44,7 +44,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     }
 
     const result = await context.env.DB.prepare(
-      "SELECT favorites, visited FROM UserData WHERE userId = ?"
+      "SELECT favorites, visited FROM UserData WHERE userId = ?",
     )
       .bind(userId)
       .first<{ favorites: string; visited: string }>();
@@ -62,7 +62,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
       }),
       {
         headers: { "Content-Type": "application/json" },
-      }
+      },
     );
   } catch (err: any) {
     return new Response(err.message, { status: 500 });

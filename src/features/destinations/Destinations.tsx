@@ -33,7 +33,9 @@ export default function Destinations() {
           dest.prefecture.toLowerCase().includes(query) ||
           dest.region.toLowerCase().includes(query) ||
           (dest.tags ?? []).some((t) => t.toLowerCase().includes(query)) ||
-          (dest.categories ?? []).some((c) => c.toLowerCase().includes(query)) ||
+          (dest.categories ?? []).some((c) =>
+            c.toLowerCase().includes(query),
+          ) ||
           (dest.highlights ?? []).some((h) => h.toLowerCase().includes(query)),
       );
     }

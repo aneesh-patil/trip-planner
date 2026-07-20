@@ -6,4 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 // Transport/budget helpers live in BudgetService.ts — import from there.
-export { getTransportCost, getAdjustedBudget } from "@/shared/services/budget/BudgetService";
+export {
+  getTransportCost,
+  getAdjustedBudget,
+} from "@/shared/services/budget/BudgetService";

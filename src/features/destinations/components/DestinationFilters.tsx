@@ -125,8 +125,8 @@ export default function DestinationFilters({
               )}
               {sortBy === "winter" && (
                 <div className="flex items-center">
-                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" />{" "}
-                  Best for Winter
+                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" /> Best for
+                  Winter
                 </div>
               )}
             </SelectTrigger>
@@ -322,8 +322,8 @@ export default function DestinationFilters({
               )}
               {weather === "winter" && (
                 <div className="flex items-center">
-                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" />{" "}
-                  Winter Magic
+                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" /> Winter
+                  Magic
                 </div>
               )}
             </SelectTrigger>

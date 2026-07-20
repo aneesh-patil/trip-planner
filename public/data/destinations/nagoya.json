@@ -3,11 +3,7 @@
   "name": "Nagoya",
   "prefecture": "Aichi",
   "region": "Chubu",
-  "categories": [
-    "City",
-    "History",
-    "Food"
-  ],
+  "categories": ["City", "History", "Food"],
   "heroImage": "/images/nagoya_hero.jpg",
   "totalTripHours": 24,
   "budgetMin": 15000,
@@ -51,19 +47,10 @@
     "autumn": 85,
     "winter": 70
   },
-  "bestMonths": [
-    3,
-    4,
-    10,
-    11
-  ],
+  "bestMonths": [3, 4, 10, 11],
   "bestSeason": "Spring and Autumn",
   "weatherDependence": "Moderate",
-  "tags": [
-    "Castle",
-    "Local Food",
-    "Shopping"
-  ],
+  "tags": ["Castle", "Local Food", "Shopping"],
   "reservation": "Recommended for Shinkansen",
   "parking": "Available in city center (expensive)",
   "restaurants": [
@@ -71,17 +58,10 @@
     "Yabaton Miso Katsu",
     "Yamamotoya Honten"
   ],
-  "cafes": [
-    "Komeda Coffee",
-    "Cafe de Ciel"
-  ],
+  "cafes": ["Komeda Coffee", "Cafe de Ciel"],
   "notes": "Nagoya is the heart of Chubu. A fast bullet train ride from Tokyo or Yokohama, famous for its unique rich food culture.",
   "description": "Explore Nagoya, a vibrant metropolis mixing samurai history with industrial innovation. Famous for Nagoya Castle, Atsuta Shrine, and an incredible local food scene featuring hitsumabushi (grilled eel) and red miso katsu.",
-  "highlights": [
-    "Nagoya Castle",
-    "Osu Kannon Temple",
-    "Atsuta Jingu"
-  ],
+  "highlights": ["Nagoya Castle", "Osu Kannon Temple", "Atsuta Jingu"],
   "coordinates": {
     "lat": 35.1815,
     "lng": 136.9066

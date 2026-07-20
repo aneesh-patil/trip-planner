@@ -14,7 +14,7 @@ interface State {
 
 export class ErrorBoundary extends Component<Props, State> {
   public state: State = {
-    hasError: false
+    hasError: false,
   };
 
   public static getDerivedStateFromError(error: Error): State {
@@ -32,16 +32,25 @@ export class ErrorBoundary extends Component<Props, State> {
           <div className="bg-red-50 dark:bg-red-900/10 p-4 rounded-full mb-6">
             <AlertTriangle className="w-12 h-12 text-red-500" />
           </div>
-          <h2 className="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Something went wrong</h2>
+          <h2 className="text-2xl font-bold mb-3 text-slate-900 dark:text-white">
+            Something went wrong
+          </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-md">
-            We encountered an unexpected error while trying to load this content. Please try refreshing the page.
+            We encountered an unexpected error while trying to load this
+            content. Please try refreshing the page.
           </p>
           <div className="flex gap-3">
-            <Button onClick={() => window.location.reload()} className="bg-emerald-600 hover:bg-emerald-700 text-white">
+            <Button
+              onClick={() => window.location.reload()}
+              className="bg-emerald-600 hover:bg-emerald-700 text-white"
+            >
               <RefreshCw className="w-4 h-4 mr-2" />
               Reload Page
             </Button>
-            <Button variant="outline" onClick={() => this.setState({ hasError: false })}>
+            <Button
+              variant="outline"
+              onClick={() => this.setState({ hasError: false })}
+            >
               Try Again
             </Button>
           </div>

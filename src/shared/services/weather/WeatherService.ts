@@ -22,7 +22,10 @@ export function getWeatherDescription(code: number): {
   return { text: "Unknown", icon: "cloud" };
 }
 
-export async function getWeekendWeather(lat: number, lng: number): Promise<WeatherForecast[]> {
+export async function getWeekendWeather(
+  lat: number,
+  lng: number,
+): Promise<WeatherForecast[]> {
   const cacheKey = `${lat.toFixed(2)},${lng.toFixed(2)}`;
   const now = Date.now();
   const cached = cache.get(cacheKey);

@@ -1,5 +1,6 @@
 var __defProp = Object.defineProperty;
-var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
+var __name = (target, value) =>
+  __defProp(target, "name", { value, configurable: true });
 
 // api/sync.ts
 var onRequestPost = /* @__PURE__ */ __name(async (context) => {
@@ -14,10 +15,12 @@ var onRequestPost = /* @__PURE__ */ __name(async (context) => {
        VALUES (?1, ?2, ?3)
        ON CONFLICT (userId) DO UPDATE SET
        favorites = excluded.favorites,
-       visited = excluded.visited`
-    ).bind(userId, JSON.stringify(favorites), JSON.stringify(visited)).run();
+       visited = excluded.visited`,
+    )
+      .bind(userId, JSON.stringify(favorites), JSON.stringify(visited))
+      .run();
     return new Response(JSON.stringify({ success: true }), {
-      headers: { "Content-Type": "application/json" }
+      headers: { "Content-Type": "application/json" },
     });
   } catch (err) {
     return new Response(err.message, { status: 500 });
@@ -31,21 +34,23 @@ var onRequestGet = /* @__PURE__ */ __name(async (context) => {
       return new Response("Missing userId", { status: 400 });
     }
     const result = await context.env.DB.prepare(
-      "SELECT favorites, visited FROM UserData WHERE userId = ?"
-    ).bind(userId).first();
+      "SELECT favorites, visited FROM UserData WHERE userId = ?",
+    )
+      .bind(userId)
+      .first();
     if (!result) {
       return new Response(JSON.stringify({ favorites: [], visited: [] }), {
-        headers: { "Content-Type": "application/json" }
+        headers: { "Content-Type": "application/json" },
       });
     }
     return new Response(
       JSON.stringify({
         favorites: JSON.parse(result.favorites || "[]"),
-        visited: JSON.parse(result.visited || "[]")
+        visited: JSON.parse(result.visited || "[]"),
       }),
       {
-        headers: { "Content-Type": "application/json" }
-      }
+        headers: { "Content-Type": "application/json" },
+      },
     );
   } catch (err) {
     return new Response(err.message, { status: 500 });
@@ -59,15 +64,15 @@ var routes = [
     mountPath: "/api",
     method: "GET",
     middlewares: [],
-    modules: [onRequestGet]
+    modules: [onRequestGet],
   },
   {
     routePath: "/api/sync",
     mountPath: "/api",
     method: "POST",
     middlewares: [],
-    modules: [onRequestPost]
-  }
+    modules: [onRequestPost],
+  },
 ];
 
 // ../../../../.npm/_npx/32026684e21afda6/node_modules/path-to-regexp/dist.es2015/index.js
@@ -99,9 +104,9 @@ function lexer(str) {
         var code = str.charCodeAt(j);
         if (
           // `0-9`
-          code >= 48 && code <= 57 || // `A-Z`
-          code >= 65 && code <= 90 || // `a-z`
-          code >= 97 && code <= 122 || // `_`
+          (code >= 48 && code <= 57) || // `A-Z`
+          (code >= 65 && code <= 90) || // `a-z`
+          (code >= 97 && code <= 122) || // `_`
           code === 95
         ) {
           name += str[j++];
@@ -109,8 +114,7 @@ function lexer(str) {
         }
         break;
       }
-      if (!name)
-        throw new TypeError("Missing parameter name at ".concat(i));
+      if (!name) throw new TypeError("Missing parameter name at ".concat(i));
       tokens.push({ type: "NAME", index: i, value: name });
       i = j;
       continue;
@@ -136,15 +140,15 @@ function lexer(str) {
         } else if (str[j] === "(") {
           count++;
           if (str[j + 1] !== "?") {
-            throw new TypeError("Capturing groups are not allowed at ".concat(j));
+            throw new TypeError(
+              "Capturing groups are not allowed at ".concat(j),
+            );
           }
         }
         pattern += str[j++];
       }
-      if (count)
-        throw new TypeError("Unbalanced pattern at ".concat(i));
-      if (!pattern)
-        throw new TypeError("Missing pattern at ".concat(i));
+      if (count) throw new TypeError("Unbalanced pattern at ".concat(i));
+      if (!pattern) throw new TypeError("Missing pattern at ".concat(i));
       tokens.push({ type: "PATTERN", index: i, value: pattern });
       i = j;
       continue;
@@ -160,47 +164,61 @@ function parse(str, options) {
     options = {};
   }
   var tokens = lexer(str);
-  var _a = options.prefixes, prefixes = _a === void 0 ? "./" : _a, _b = options.delimiter, delimiter = _b === void 0 ? "/#?" : _b;
+  var _a = options.prefixes,
+    prefixes = _a === void 0 ? "./" : _a,
+    _b = options.delimiter,
+    delimiter = _b === void 0 ? "/#?" : _b;
   var result = [];
   var key = 0;
   var i = 0;
   var path = "";
-  var tryConsume = /* @__PURE__ */ __name(function(type) {
-    if (i < tokens.length && tokens[i].type === type)
-      return tokens[i++].value;
+  var tryConsume = /* @__PURE__ */ __name(function (type) {
+    if (i < tokens.length && tokens[i].type === type) return tokens[i++].value;
   }, "tryConsume");
-  var mustConsume = /* @__PURE__ */ __name(function(type) {
+  var mustConsume = /* @__PURE__ */ __name(function (type) {
     var value2 = tryConsume(type);
-    if (value2 !== void 0)
-      return value2;
-    var _a2 = tokens[i], nextType = _a2.type, index = _a2.index;
-    throw new TypeError("Unexpected ".concat(nextType, " at ").concat(index, ", expected ").concat(type));
+    if (value2 !== void 0) return value2;
+    var _a2 = tokens[i],
+      nextType = _a2.type,
+      index = _a2.index;
+    throw new TypeError(
+      "Unexpected "
+        .concat(nextType, " at ")
+        .concat(index, ", expected ")
+        .concat(type),
+    );
   }, "mustConsume");
-  var consumeText = /* @__PURE__ */ __name(function() {
+  var consumeText = /* @__PURE__ */ __name(function () {
     var result2 = "";
     var value2;
-    while (value2 = tryConsume("CHAR") || tryConsume("ESCAPED_CHAR")) {
+    while ((value2 = tryConsume("CHAR") || tryConsume("ESCAPED_CHAR"))) {
       result2 += value2;
     }
     return result2;
   }, "consumeText");
-  var isSafe = /* @__PURE__ */ __name(function(value2) {
+  var isSafe = /* @__PURE__ */ __name(function (value2) {
     for (var _i = 0, delimiter_1 = delimiter; _i < delimiter_1.length; _i++) {
       var char2 = delimiter_1[_i];
-      if (value2.indexOf(char2) > -1)
-        return true;
+      if (value2.indexOf(char2) > -1) return true;
     }
     return false;
   }, "isSafe");
-  var safePattern = /* @__PURE__ */ __name(function(prefix2) {
+  var safePattern = /* @__PURE__ */ __name(function (prefix2) {
     var prev = result[result.length - 1];
     var prevText = prefix2 || (prev && typeof prev === "string" ? prev : "");
     if (prev && !prevText) {
-      throw new TypeError('Must have text between two parameters, missing text after "'.concat(prev.name, '"'));
+      throw new TypeError(
+        'Must have text between two parameters, missing text after "'.concat(
+          prev.name,
+          '"',
+        ),
+      );
     }
     if (!prevText || isSafe(prevText))
       return "[^".concat(escapeString(delimiter), "]+?");
-    return "(?:(?!".concat(escapeString(prevText), ")[^").concat(escapeString(delimiter), "])+?");
+    return "(?:(?!"
+      .concat(escapeString(prevText), ")[^")
+      .concat(escapeString(delimiter), "])+?");
   }, "safePattern");
   while (i < tokens.length) {
     var char = tryConsume("CHAR");
@@ -221,7 +239,7 @@ function parse(str, options) {
         prefix,
         suffix: "",
         pattern: pattern || safePattern(prefix),
-        modifier: tryConsume("MODIFIER") || ""
+        modifier: tryConsume("MODIFIER") || "",
       });
       continue;
     }
@@ -246,7 +264,7 @@ function parse(str, options) {
         pattern: name_1 && !pattern_1 ? safePattern(prefix) : pattern_1,
         prefix,
         suffix,
-        modifier: tryConsume("MODIFIER") || ""
+        modifier: tryConsume("MODIFIER") || "",
       });
       continue;
     }
@@ -265,23 +283,28 @@ function regexpToFunction(re, keys, options) {
   if (options === void 0) {
     options = {};
   }
-  var _a = options.decode, decode = _a === void 0 ? function(x) {
-    return x;
-  } : _a;
-  return function(pathname) {
+  var _a = options.decode,
+    decode =
+      _a === void 0
+        ? function (x) {
+            return x;
+          }
+        : _a;
+  return function (pathname) {
     var m = re.exec(pathname);
-    if (!m)
-      return false;
-    var path = m[0], index = m.index;
+    if (!m) return false;
+    var path = m[0],
+      index = m.index;
     var params = /* @__PURE__ */ Object.create(null);
-    var _loop_1 = /* @__PURE__ */ __name(function(i2) {
-      if (m[i2] === void 0)
-        return "continue";
+    var _loop_1 = /* @__PURE__ */ __name(function (i2) {
+      if (m[i2] === void 0) return "continue";
       var key = keys[i2 - 1];
       if (key.modifier === "*" || key.modifier === "+") {
-        params[key.name] = m[i2].split(key.prefix + key.suffix).map(function(value) {
-          return decode(value, key);
-        });
+        params[key.name] = m[i2]
+          .split(key.prefix + key.suffix)
+          .map(function (value) {
+            return decode(value, key);
+          });
       } else {
         params[key.name] = decode(m[i2], key);
       }
@@ -302,8 +325,7 @@ function flags(options) {
 }
 __name(flags, "flags");
 function regexpToRegexp(path, keys) {
-  if (!keys)
-    return path;
+  if (!keys) return path;
   var groupsRegex = /\((?:\?<(.*?)>)?(?!\?)/g;
   var index = 0;
   var execResult = groupsRegex.exec(path.source);
@@ -314,7 +336,7 @@ function regexpToRegexp(path, keys) {
       prefix: "",
       suffix: "",
       modifier: "",
-      pattern: ""
+      pattern: "",
     });
     execResult = groupsRegex.exec(path.source);
   }
@@ -322,7 +344,7 @@ function regexpToRegexp(path, keys) {
 }
 __name(regexpToRegexp, "regexpToRegexp");
 function arrayToRegexp(paths, keys, options) {
-  var parts = paths.map(function(path) {
+  var parts = paths.map(function (path) {
     return pathToRegexp(path, keys, options).source;
   });
   return new RegExp("(?:".concat(parts.join("|"), ")"), flags(options));
@@ -336,9 +358,23 @@ function tokensToRegexp(tokens, keys, options) {
   if (options === void 0) {
     options = {};
   }
-  var _a = options.strict, strict = _a === void 0 ? false : _a, _b = options.start, start = _b === void 0 ? true : _b, _c = options.end, end = _c === void 0 ? true : _c, _d = options.encode, encode = _d === void 0 ? function(x) {
-    return x;
-  } : _d, _e = options.delimiter, delimiter = _e === void 0 ? "/#?" : _e, _f = options.endsWith, endsWith = _f === void 0 ? "" : _f;
+  var _a = options.strict,
+    strict = _a === void 0 ? false : _a,
+    _b = options.start,
+    start = _b === void 0 ? true : _b,
+    _c = options.end,
+    end = _c === void 0 ? true : _c,
+    _d = options.encode,
+    encode =
+      _d === void 0
+        ? function (x) {
+            return x;
+          }
+        : _d,
+    _e = options.delimiter,
+    delimiter = _e === void 0 ? "/#?" : _e,
+    _f = options.endsWith,
+    endsWith = _f === void 0 ? "" : _f;
   var endsWithRe = "[".concat(escapeString(endsWith), "]|$");
   var delimiterRe = "[".concat(escapeString(delimiter), "]");
   var route = start ? "^" : "";
@@ -350,33 +386,53 @@ function tokensToRegexp(tokens, keys, options) {
       var prefix = escapeString(encode(token.prefix));
       var suffix = escapeString(encode(token.suffix));
       if (token.pattern) {
-        if (keys)
-          keys.push(token);
+        if (keys) keys.push(token);
         if (prefix || suffix) {
           if (token.modifier === "+" || token.modifier === "*") {
             var mod = token.modifier === "*" ? "?" : "";
-            route += "(?:".concat(prefix, "((?:").concat(token.pattern, ")(?:").concat(suffix).concat(prefix, "(?:").concat(token.pattern, "))*)").concat(suffix, ")").concat(mod);
+            route += "(?:"
+              .concat(prefix, "((?:")
+              .concat(token.pattern, ")(?:")
+              .concat(suffix)
+              .concat(prefix, "(?:")
+              .concat(token.pattern, "))*)")
+              .concat(suffix, ")")
+              .concat(mod);
           } else {
-            route += "(?:".concat(prefix, "(").concat(token.pattern, ")").concat(suffix, ")").concat(token.modifier);
+            route += "(?:"
+              .concat(prefix, "(")
+              .concat(token.pattern, ")")
+              .concat(suffix, ")")
+              .concat(token.modifier);
           }
         } else {
           if (token.modifier === "+" || token.modifier === "*") {
-            throw new TypeError('Can not repeat "'.concat(token.name, '" without a prefix and suffix'));
+            throw new TypeError(
+              'Can not repeat "'.concat(
+                token.name,
+                '" without a prefix and suffix',
+              ),
+            );
           }
           route += "(".concat(token.pattern, ")").concat(token.modifier);
         }
       } else {
-        route += "(?:".concat(prefix).concat(suffix, ")").concat(token.modifier);
+        route += "(?:"
+          .concat(prefix)
+          .concat(suffix, ")")
+          .concat(token.modifier);
       }
     }
   }
   if (end) {
-    if (!strict)
-      route += "".concat(delimiterRe, "?");
+    if (!strict) route += "".concat(delimiterRe, "?");
     route += !options.endsWith ? "$" : "(?=".concat(endsWithRe, ")");
   } else {
     var endToken = tokens[tokens.length - 1];
-    var isEndDelimited = typeof endToken === "string" ? delimiterRe.indexOf(endToken[endToken.length - 1]) > -1 : endToken === void 0;
+    var isEndDelimited =
+      typeof endToken === "string"
+        ? delimiterRe.indexOf(endToken[endToken.length - 1]) > -1
+        : endToken === void 0;
     if (!strict) {
       route += "(?:".concat(delimiterRe, "(?=").concat(endsWithRe, "))?");
     }
@@ -388,10 +444,8 @@ function tokensToRegexp(tokens, keys, options) {
 }
 __name(tokensToRegexp, "tokensToRegexp");
 function pathToRegexp(path, keys, options) {
-  if (path instanceof RegExp)
-    return regexpToRegexp(path, keys);
-  if (Array.isArray(path))
-    return arrayToRegexp(path, keys, options);
+  if (path instanceof RegExp) return regexpToRegexp(path, keys);
+  if (Array.isArray(path)) return arrayToRegexp(path, keys, options);
   return stringToRegexp(path, keys, options);
 }
 __name(pathToRegexp, "pathToRegexp");
@@ -405,10 +459,10 @@ function* executeRequest(request) {
       continue;
     }
     const routeMatcher = match(route.routePath.replace(escapeRegex, "\\$&"), {
-      end: false
+      end: false,
     });
     const mountMatcher = match(route.mountPath.replace(escapeRegex, "\\$&"), {
-      end: false
+      end: false,
     });
     const matchResult = routeMatcher(requestPath);
     const mountMatchResult = mountMatcher(requestPath);
@@ -417,7 +471,7 @@ function* executeRequest(request) {
         yield {
           handler,
           params: matchResult.params,
-          path: mountMatchResult.path
+          path: mountMatchResult.path,
         };
       }
     }
@@ -427,10 +481,10 @@ function* executeRequest(request) {
       continue;
     }
     const routeMatcher = match(route.routePath.replace(escapeRegex, "\\$&"), {
-      end: true
+      end: true,
     });
     const mountMatcher = match(route.mountPath.replace(escapeRegex, "\\$&"), {
-      end: false
+      end: false,
     });
     const matchResult = routeMatcher(requestPath);
     const mountMatchResult = mountMatcher(requestPath);
@@ -439,7 +493,7 @@ function* executeRequest(request) {
         yield {
           handler,
           params: matchResult.params,
-          path: matchResult.path
+          path: matchResult.path,
         };
       }
       break;
@@ -482,7 +536,7 @@ var pages_template_worker_default = {
           waitUntil: workerContext.waitUntil.bind(workerContext),
           passThroughOnException: /* @__PURE__ */ __name(() => {
             isFailOpen = true;
-          }, "passThroughOnException")
+          }, "passThroughOnException"),
         };
         const response = await handler(context);
         if (!(response instanceof Response)) {
@@ -506,15 +560,15 @@ var pages_template_worker_default = {
       }
       throw error;
     }
-  }
+  },
 };
-var cloneResponse = /* @__PURE__ */ __name((response) => (
-  // https://fetch.spec.whatwg.org/#null-body-status
-  new Response(
-    [101, 204, 205, 304].includes(response.status) ? null : response.body,
-    response
-  )
-), "cloneResponse");
-export {
-  pages_template_worker_default as default
-};
+var cloneResponse = /* @__PURE__ */ __name(
+  (response) =>
+    // https://fetch.spec.whatwg.org/#null-body-status
+    new Response(
+      [101, 204, 205, 304].includes(response.status) ? null : response.body,
+      response,
+    ),
+  "cloneResponse",
+);
+export { pages_template_worker_default as default };

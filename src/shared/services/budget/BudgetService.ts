@@ -44,7 +44,9 @@ export function getTransportCost(dest: Destination, mode: string): number {
     const tripDurationHours = dest.totalTripHours || 8;
     const rentalFee = getRentalBaseFee(tripDurationHours);
     const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
-    const gasRoundTrip = Math.floor(((distanceKm * 2) / 15) * GAS_PRICE_PER_LITER);
+    const gasRoundTrip = Math.floor(
+      ((distanceKm * 2) / 15) * GAS_PRICE_PER_LITER,
+    );
     return rentalFee + tollsRoundTrip + gasRoundTrip;
   }
 
@@ -60,7 +62,10 @@ export function getTransportCost(dest: Destination, mode: string): number {
  * Returns the total estimated budget for a couple, substituting the cheapest
  * available transport if activeMode is "all" or "any".
  */
-export function getAdjustedBudget(dest: Destination, activeMode: string): number {
+export function getAdjustedBudget(
+  dest: Destination,
+  activeMode: string,
+): number {
   let mode = "train";
 
   if (
@@ -79,7 +84,8 @@ export function getAdjustedBudget(dest: Destination, activeMode: string): number
   }
 
   const transportCost = getTransportCost(dest, mode);
-  const otherCosts = dest.budgetRecommended - (dest.budgetBreakdown?.transport || 1500);
+  const otherCosts =
+    dest.budgetRecommended - (dest.budgetBreakdown?.transport || 1500);
   return otherCosts + transportCost;
 }
 
