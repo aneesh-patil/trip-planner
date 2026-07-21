@@ -10,7 +10,6 @@ import {
   Search,
   Clock,
   Train,
-  Car,
   Bus,
   TrainFront,
   Star,
@@ -355,10 +354,10 @@ export default function DestinationFilters({
                 <div className="flex gap-2">
                   <button
                     onClick={() =>
-                      setPublicModes((prev) =>
-                        prev.includes("train")
-                          ? prev.filter((m) => m !== "train")
-                          : [...prev, "train"],
+                      setPublicModes(
+                        publicModes.includes("train")
+                          ? publicModes.filter((m) => m !== "train")
+                          : [...publicModes, "train"],
                       )
                     }
                     className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
@@ -371,10 +370,10 @@ export default function DestinationFilters({
                   </button>
                   <button
                     onClick={() =>
-                      setPublicModes((prev) =>
-                        prev.includes("shinkansen")
-                          ? prev.filter((m) => m !== "shinkansen")
-                          : [...prev, "shinkansen"],
+                      setPublicModes(
+                        publicModes.includes("shinkansen")
+                          ? publicModes.filter((m) => m !== "shinkansen")
+                          : [...publicModes, "shinkansen"],
                       )
                     }
                     className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
@@ -387,10 +386,10 @@ export default function DestinationFilters({
                   </button>
                   <button
                     onClick={() =>
-                      setPublicModes((prev) =>
-                        prev.includes("bus")
-                          ? prev.filter((m) => m !== "bus")
-                          : [...prev, "bus"],
+                      setPublicModes(
+                        publicModes.includes("bus")
+                          ? publicModes.filter((m) => m !== "bus")
+                          : [...publicModes, "bus"],
                       )
                     }
                     className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
