@@ -2,4 +2,7 @@
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src 'self' https://fonts.bunny.net; img-src 'self' data: blob: https:; connect-src 'self' https://nkrfuowqzuvzgqnudchx.supabase.co wss://nkrfuowqzuvzgqnudchx.supabase.co https://api.open-meteo.com; frame-ancestors 'none';
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cross-Origin-Resource-Policy: same-site
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src 'self' https://fonts.bunny.net; img-src 'self' data: blob: https:; connect-src 'self' https://nkrfuowqzuvzgqnudchx.supabase.co wss://nkrfuowqzuvzgqnudchx.supabase.co https://api.open-meteo.com; frame-ancestors 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests;
