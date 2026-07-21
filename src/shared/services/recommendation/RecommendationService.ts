@@ -136,6 +136,29 @@ export function getRecommendations(
         (dest.ratings?.overall || 5) * SCORING_WEIGHTS.RATING_MULTIPLIER;
       const reasons: string[] = [];
 
+      let validModesForDest: string[] = [];
+      if (carMode === "rental" && dest.transportOptions?.car)
+        validModesForDest.push("car");
+      if (carMode === "my_car" && dest.transportOptions?.my_car)
+        validModesForDest.push("my_car");
+
+      for (const m of publicModes) {
+        if (dest.transportOptions?.[m as keyof typeof dest.transportOptions]) {
+          validModesForDest.push(m);
+        }
+      }
+
+      if (validModesForDest.length === 0) {
+        const entries = Object.entries(dest.transportOptions || {}).filter(
+          ([_, v]) => v !== undefined,
+        );
+        if (entries.length > 0) {
+          validModesForDest = entries.map((e) => e[0]);
+        } else {
+          validModesForDest = ["train"]; // Absolute fallback
+        }
+      }
+
       // 1 & 2. Budget and Transport Logic
       // Evaluate all valid active modes for the destination and pick the best one
       let bestMode = validModesForDest[0];
