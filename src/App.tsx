@@ -16,6 +16,9 @@ const Compare = lazy(() => import("./features/compare/Compare"));
 const PrefectureChecklist = lazy(
   () => import("./features/map/PrefectureChecklist"),
 );
+const Terms = lazy(() => import("./features/legal/Terms"));
+const Privacy = lazy(() => import("./features/legal/Privacy"));
+const Cookies = lazy(() => import("./features/legal/Cookies"));
 
 function PageLoader() {
   return (
@@ -48,6 +51,9 @@ function App() {
                       path="/visited-map"
                       element={<PrefectureChecklist />}
                     />
+                    <Route path="/terms" element={<Terms />} />
+                    <Route path="/privacy" element={<Privacy />} />
+                    <Route path="/cookies" element={<Cookies />} />
                   </Routes>
                 </Suspense>
               </ErrorBoundary>
