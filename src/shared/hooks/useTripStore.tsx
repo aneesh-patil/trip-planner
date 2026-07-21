@@ -4,6 +4,7 @@ import { useLocalStorage } from "./useLocalStorage";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { supabase } from "@/lib/supabase";
 import destinationsIndex from "@/shared/data/destinations-index.json";
+import { toast } from "sonner";
 
 interface TripStoreContextType {
   favorites: string[];
@@ -65,6 +66,9 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   );
   const isLoadedRef = useRef(false);
   const prevUserIdRef = useRef(user?.id);
+  const syncTimeoutRef = useRef<number | ReturnType<typeof setTimeout> | null>(
+    null,
+  );
 
   // Clear data on logout, reset load state on user change
   useEffect(() => {
@@ -97,34 +101,59 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
             return;
           }
           if (data) {
+            // Overwrite local state with remote state (remote-wins on initial load)
             if (data.favorites) setFavorites(data.favorites);
             if (data.visited) setVisited(data.visited);
             if (data.visited_prefectures)
               setVisitedPrefectures(data.visited_prefectures);
-            if (data.home_station) setHomeStation(data.home_station);
+            if (data.home_station && data.home_station !== "Tokyo Station") {
+              setHomeStation(data.home_station);
+            }
           }
-          isLoadedRef.current = true;
+          // Defer setting isLoaded to true to avoid race condition with state updates
+          setTimeout(() => {
+            isLoadedRef.current = true;
+          }, 0);
         });
     }
-  }, [user?.id, setFavorites, setVisited, setVisitedPrefectures]);
+  }, [
+    user?.id,
+    setFavorites,
+    setVisited,
+    setVisitedPrefectures,
+    setHomeStation,
+  ]);
 
   // Sync back to db when state changes
   useEffect(() => {
     if (user?.id && isLoadedRef.current) {
-      if (!supabase) return;
-      supabase
-        .from("user_data")
-        .upsert({
-          id: user.id,
-          favorites,
-          visited,
-          visited_prefectures: visitedPrefectures,
-          home_station: homeStation,
-        })
-        .then(({ error }) => {
-          if (error) console.error("Failed to sync user data", error);
-        });
+      const client = supabase;
+      if (!client) return;
+
+      if (syncTimeoutRef.current) clearTimeout(syncTimeoutRef.current);
+
+      syncTimeoutRef.current = setTimeout(() => {
+        client
+          .from("user_data")
+          .upsert({
+            id: user.id,
+            favorites,
+            visited,
+            visited_prefectures: visitedPrefectures,
+            home_station: homeStation,
+          })
+          .then(({ error }) => {
+            if (error) {
+              console.error("Failed to sync user data", error);
+              toast.error("Failed to sync to cloud. Saved locally.");
+            }
+          });
+      }, 1000);
     }
+
+    return () => {
+      if (syncTimeoutRef.current) clearTimeout(syncTimeoutRef.current);
+    };
   }, [favorites, visited, visitedPrefectures, homeStation, user?.id]);
 
   const toggleFavorite = (id: string) => {

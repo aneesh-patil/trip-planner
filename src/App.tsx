@@ -8,6 +8,7 @@ const Home = lazy(() => import("./features/home/Home"));
 const Destinations = lazy(() => import("./features/destinations/Destinations"));
 const Favorites = lazy(() => import("./features/favorites/Favorites"));
 import { ErrorBoundary } from "./shared/components/layout/ErrorBoundary";
+import { Toaster } from "sonner";
 
 const DestinationDetails = lazy(
   () => import("./features/destinations/DestinationDetails"),
@@ -60,6 +61,7 @@ function App() {
             </main>
             <Footer />
           </div>
+          <Toaster position="bottom-right" />
         </Router>
       </TripStoreProvider>
     </AuthProvider>
