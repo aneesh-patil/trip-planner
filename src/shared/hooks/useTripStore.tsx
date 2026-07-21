@@ -108,6 +108,37 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
               setVisitedPrefectures(data.visited_prefectures);
             if (data.home_station && data.home_station !== "Tokyo Station") {
               setHomeStation(data.home_station);
+
+              if (data.home_station.includes(", ")) {
+                const [stName, pref] = data.home_station.split(", ");
+                fetch("/data/stations-by-prefecture.json")
+                  .then((r) => r.json())
+                  .then((stationsMap) => {
+                    const st = stationsMap[pref]?.find(
+                      (s: any) => s.name === stName,
+                    );
+                    if (st) setHomeStationCoords({ lat: st.lat, lng: st.lng });
+                  })
+                  .catch(console.error);
+              } else if (
+                /^\d{3}-?\d{4}$/.test(data.home_station) ||
+                /^\d+$/.test(data.home_station)
+              ) {
+                const cleanZip = data.home_station.replace("-", "");
+                fetch(
+                  `https://nominatim.openstreetmap.org/search?postalcode=${cleanZip}&country=japan&format=json`,
+                )
+                  .then((r) => r.json())
+                  .then((d) => {
+                    if (d && d.length > 0) {
+                      setHomeStationCoords({
+                        lat: parseFloat(d[0].lat),
+                        lng: parseFloat(d[0].lon),
+                      });
+                    }
+                  })
+                  .catch(console.error);
+              }
             }
           }
           // Defer setting isLoaded to true to avoid race condition with state updates
@@ -122,6 +153,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     setVisited,
     setVisitedPrefectures,
     setHomeStation,
+    setHomeStationCoords,
   ]);
 
   // Sync back to db when state changes
