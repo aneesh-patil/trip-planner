@@ -30,8 +30,12 @@ interface DestinationFiltersProps {
   setMaxBudget: (val: number) => void;
   sortBy: string;
   setSortBy: (val: string) => void;
-  transportMode: string;
-  setTransportMode: (val: string) => void;
+  carMode: string;
+  setCarMode: (val: string) => void;
+  publicModes: string[];
+  setPublicModes: (val: string[]) => void;
+  partySize: number;
+  setPartySize: (val: number) => void;
   weather: string;
   setWeather: (val: string) => void;
   maxWalking: number;
@@ -46,8 +50,12 @@ export default function DestinationFilters({
   setMaxBudget,
   sortBy,
   setSortBy,
-  transportMode,
-  setTransportMode,
+  carMode,
+  setCarMode,
+  publicModes,
+  setPublicModes,
+  partySize,
+  setPartySize,
   weather,
   setWeather,
   maxWalking,
@@ -198,112 +206,6 @@ export default function DestinationFilters({
           </Select>
         </div>
 
-        {/* Transport */}
-        <div className="space-y-3">
-          <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-            Transport
-          </label>
-          <Select
-            value={transportMode}
-            onValueChange={(val: string | null) => {
-              if (val) setTransportMode(val);
-            }}
-          >
-            <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
-              {transportMode === "all" && (
-                <div className="flex items-center">
-                  <Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Any
-                  Transport
-                </div>
-              )}
-              {transportMode === "train" && (
-                <div className="flex items-center">
-                  <Train className="w-5 h-5 mr-3 text-blue-500" /> Train
-                  Accessible
-                </div>
-              )}
-              {transportMode === "car" && (
-                <div className="flex items-center">
-                  <Car className="w-5 h-5 mr-3 text-emerald-500" /> Rental Car
-                  Recommended
-                </div>
-              )}
-              {transportMode === "my_car" && (
-                <div className="flex items-center">
-                  <Car className="w-5 h-5 mr-3 text-emerald-500" /> My Car
-                </div>
-              )}
-              {transportMode === "shinkansen" && (
-                <div className="flex items-center">
-                  <TrainFront className="w-5 h-5 mr-3 text-purple-500" />{" "}
-                  Shinkansen
-                </div>
-              )}
-              {transportMode === "bus" && (
-                <div className="flex items-center">
-                  <Bus className="w-5 h-5 mr-3 text-amber-600" /> Highway Bus
-                </div>
-              )}
-            </SelectTrigger>
-            <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
-              <SelectItem
-                value="all"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <Sparkles className="w-4 h-4 mr-3 text-slate-400" />{" "}
-                  <span className="font-medium">Any Transport</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="train"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <Train className="w-4 h-4 mr-3 text-blue-500" />{" "}
-                  <span className="font-medium">Train</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="car"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <Car className="w-4 h-4 mr-3 text-emerald-500" />{" "}
-                  <span className="font-medium">Rental Car</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="my_car"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <Car className="w-4 h-4 mr-3 text-emerald-500" />{" "}
-                  <span className="font-medium">My Car</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="shinkansen"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <TrainFront className="w-4 h-4 mr-3 text-purple-500" />{" "}
-                  <span className="font-medium">Shinkansen</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="bus"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <Bus className="w-4 h-4 mr-3 text-amber-600" />{" "}
-                  <span className="font-medium">Highway Bus</span>
-                </div>
-              </SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-
         {/* Weather */}
         <div className="space-y-3">
           <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
@@ -381,15 +283,134 @@ export default function DestinationFilters({
             </SelectContent>
           </Select>
         </div>
+
+        {/* Party Size Stepper */}
+        <div className="space-y-3">
+          <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
+            Party Size
+          </label>
+          <div className="flex items-center justify-between h-12 px-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+            <button
+              onClick={() => setPartySize(Math.max(1, partySize - 1))}
+              className="w-8 h-8 flex items-center justify-center rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 transition-colors text-slate-600 dark:text-slate-400 font-bold"
+            >
+              -
+            </button>
+            <span className="font-semibold text-slate-700 dark:text-slate-200 w-16 text-center text-sm">
+              {partySize} {partySize === 1 ? "Person" : "People"}
+            </span>
+            <button
+              onClick={() => setPartySize(Math.min(10, partySize + 1))}
+              className="w-8 h-8 flex items-center justify-center rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 transition-colors text-slate-600 dark:text-slate-400 font-bold"
+            >
+              +
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col lg:flex-row gap-8 items-start lg:items-center">
-        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+      <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col lg:flex-row gap-8 items-start lg:items-center">
+        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+          {/* Transport Options */}
+          <div className="space-y-3 lg:col-span-2">
+            <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
+              Transport Mode
+            </label>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex-1">
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setCarMode("none")}
+                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                      carMode === "none"
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                    }`}
+                  >
+                    No Car
+                  </button>
+                  <button
+                    onClick={() => setCarMode("rental")}
+                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                      carMode === "rental"
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                    }`}
+                  >
+                    Rental
+                  </button>
+                  <button
+                    onClick={() => setCarMode("my_car")}
+                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                      carMode === "my_car"
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                    }`}
+                  >
+                    My Car
+                  </button>
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="flex gap-2">
+                  <button
+                    onClick={() =>
+                      setPublicModes((prev) =>
+                        prev.includes("train")
+                          ? prev.filter((m) => m !== "train")
+                          : [...prev, "train"],
+                      )
+                    }
+                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
+                      publicModes.includes("train")
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                    }`}
+                  >
+                    <Train className="w-3.5 h-3.5" /> Train
+                  </button>
+                  <button
+                    onClick={() =>
+                      setPublicModes((prev) =>
+                        prev.includes("shinkansen")
+                          ? prev.filter((m) => m !== "shinkansen")
+                          : [...prev, "shinkansen"],
+                      )
+                    }
+                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
+                      publicModes.includes("shinkansen")
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                    }`}
+                  >
+                    <TrainFront className="w-3.5 h-3.5" /> Bullet
+                  </button>
+                  <button
+                    onClick={() =>
+                      setPublicModes((prev) =>
+                        prev.includes("bus")
+                          ? prev.filter((m) => m !== "bus")
+                          : [...prev, "bus"],
+                      )
+                    }
+                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
+                      publicModes.includes("bus")
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                    }`}
+                  >
+                    <Bus className="w-3.5 h-3.5" /> Bus
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Budget Slider */}
-          <div className="space-y-4">
+          <div className="space-y-4 lg:col-span-1">
             <div className="flex justify-between items-center">
               <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-                Max Budget (per couple)
+                Max Budget
               </label>
               <span className="text-sm font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400 px-2 py-1 rounded-md">
                 ¥{maxBudget.toLocaleString()}
@@ -406,15 +427,15 @@ export default function DestinationFilters({
             />
             <div className="flex justify-between text-xs text-slate-400 font-medium">
               <span>¥0</span>
-              <span>¥100,000+</span>
+              <span>¥100k+</span>
             </div>
           </div>
 
           {/* Walking Slider */}
-          <div className="space-y-4">
+          <div className="space-y-4 lg:col-span-1">
             <div className="flex justify-between items-center">
               <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-                Max Walking (Steps)
+                Max Walking
               </label>
               <span className="text-sm font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400 px-2 py-1 rounded-md">
                 {maxWalking >= 25000
@@ -434,16 +455,16 @@ export default function DestinationFilters({
             />
             <div className="flex justify-between text-xs text-slate-400 font-medium">
               <span>2k steps</span>
-              <span>25k+ steps</span>
+              <span>25k+</span>
             </div>
           </div>
         </div>
 
         {/* Reset Button */}
-        <div className="w-full lg:w-auto flex justify-end">
+        <div className="w-full lg:w-auto flex justify-end shrink-0 mt-4 lg:mt-0">
           <button
             onClick={onReset}
-            className="px-6 py-2.5 text-sm font-semibold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-900/20 dark:text-emerald-400 dark:hover:bg-emerald-900/40 rounded-lg transition-colors whitespace-nowrap"
+            className="px-6 py-2.5 text-sm font-semibold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-900/20 dark:text-emerald-400 dark:hover:bg-emerald-900/40 rounded-lg transition-colors whitespace-nowrap h-12 flex items-center"
           >
             Reset Filters
           </button>

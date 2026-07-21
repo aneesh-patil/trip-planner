@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 
 import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
+import { useAuth } from "@/shared/hooks/useAuth";
 import DestinationCard from "@/features/destinations/components/DestinationCard";
 import DestinationFilters from "@/features/destinations/components/DestinationFilters";
 import DestinationMap from "@/features/destinations/components/DestinationMap";
@@ -26,7 +27,10 @@ export default function Destinations() {
   const [searchQuery, setSearchQuery] = useState("");
   const [maxBudget, setMaxBudget] = useState(100000);
   const [sortBy, setSortBy] = useState("overall");
-  const [transportMode, setTransportMode] = useState("all");
+  const { user } = useAuth();
+  const [carMode, setCarMode] = useState("none");
+  const [publicModes, setPublicModes] = useState<string[]>(["train"]);
+  const [partySize, setPartySize] = useState(2);
   const [weather, setWeather] = useState("all");
   const [maxWalking, setMaxWalking] = useState(25000);
   const [viewMode, setViewMode] = useState<"grid" | "map">("grid");
@@ -35,10 +39,28 @@ export default function Destinations() {
 
   const query = searchQuery.toLowerCase().trim();
 
+  // Sync preferences on load
+  useEffect(() => {
+    if (user?.user_metadata?.preferences) {
+      setCarMode(user.user_metadata.preferences.carMode || "none");
+      setPublicModes(user.user_metadata.preferences.publicModes || ["train"]);
+      setPartySize(user.user_metadata.preferences.partySize || 2);
+    }
+  }, [user]);
+
   // Reset page to 1 when filters change
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery, maxBudget, sortBy, transportMode, weather, maxWalking]);
+  }, [
+    searchQuery,
+    maxBudget,
+    sortBy,
+    carMode,
+    publicModes,
+    partySize,
+    weather,
+    maxWalking,
+  ]);
 
   // Filter and sort destinations
   const filteredAndSortedDestinations = useMemo(() => {
@@ -75,21 +97,44 @@ export default function Destinations() {
       );
     }
 
-    // 2. Filter by budget
-    result = result.filter(
-      (dest) => getAdjustedBudget(dest, transportMode) <= maxBudget,
-    );
+    const getValidModes = (dest: Destination) => {
+      let validModes: string[] = [];
+      if (carMode === "rental" && dest.transportOptions?.car)
+        validModes.push("car");
+      if (carMode === "my_car" && dest.transportOptions?.my_car)
+        validModes.push("my_car");
+      for (const m of publicModes) {
+        if (dest.transportOptions?.[m as keyof typeof dest.transportOptions])
+          validModes.push(m);
+      }
+      if (
+        validModes.length === 0 &&
+        (carMode !== "none" || publicModes.length > 0)
+      ) {
+        return []; // Invalid
+      }
+      if (validModes.length === 0) {
+        const entries = Object.entries(dest.transportOptions || {}).filter(
+          ([_, v]) => v !== undefined,
+        );
+        if (entries.length > 0) validModes = entries.map((e) => e[0]);
+        else validModes = ["train"];
+      }
+      return validModes;
+    };
 
-    // 3. Filter by Transport
-    if (transportMode && transportMode !== "all") {
-      result = result.filter(
-        (dest) =>
-          dest.transportOptions &&
-          dest.transportOptions[
-            transportMode as keyof typeof dest.transportOptions
-          ] !== undefined,
-      );
-    }
+    // 2. Filter by budget and Transport availability
+    result = result.filter((dest) => {
+      const modes = getValidModes(dest);
+      if (modes.length === 0) return false;
+
+      let lowest = 999999;
+      for (const m of modes) {
+        const b = getAdjustedBudget(dest, m, partySize);
+        if (b < lowest) lowest = b;
+      }
+      return lowest <= maxBudget;
+    });
 
     // 4. Filter by Weather
     if (weather === "indoor") {
@@ -110,33 +155,28 @@ export default function Destinations() {
       switch (sortBy) {
         case "budget":
           return (
-            getAdjustedBudget(a, transportMode) -
-            getAdjustedBudget(b, transportMode)
+            Math.min(
+              ...getValidModes(a).map((m) =>
+                getAdjustedBudget(a, m, partySize),
+              ),
+            ) -
+            Math.min(
+              ...getValidModes(b).map((m) =>
+                getAdjustedBudget(b, m, partySize),
+              ),
+            )
           );
         case "travelTime":
           const getFastestTime = (dest: Destination) => {
-            const times = Object.values(dest.transportOptions || {}).filter(
-              (t): t is number => t !== undefined,
+            const times = getValidModes(dest).map(
+              (m) =>
+                (dest.transportOptions?.[
+                  m as keyof typeof dest.transportOptions
+                ] as number) || 999,
             );
             return times.length > 0 ? Math.min(...times) : 999;
           };
-          const aTime =
-            transportMode !== "all" &&
-            a.transportOptions &&
-            a.transportOptions[transportMode as keyof typeof a.transportOptions]
-              ? a.transportOptions[
-                  transportMode as keyof typeof a.transportOptions
-                ]!
-              : getFastestTime(a);
-          const bTime =
-            transportMode !== "all" &&
-            b.transportOptions &&
-            b.transportOptions[transportMode as keyof typeof b.transportOptions]
-              ? b.transportOptions[
-                  transportMode as keyof typeof b.transportOptions
-                ]!
-              : getFastestTime(b);
-          return aTime - bTime;
+          return getFastestTime(a) - getFastestTime(b);
         case "walking":
           return a.walkingMin - b.walkingMin;
         case "couple":
@@ -157,7 +197,9 @@ export default function Destinations() {
     query,
     maxBudget,
     sortBy,
-    transportMode,
+    carMode,
+    publicModes,
+    partySize,
     weather,
     maxWalking,
     homeStationCoords,
@@ -167,7 +209,9 @@ export default function Destinations() {
     setSearchQuery("");
     setMaxBudget(100000);
     setSortBy("overall");
-    setTransportMode("all");
+    setCarMode("none");
+    setPublicModes(["train"]);
+    setPartySize(2);
     setWeather("all");
     setMaxWalking(25000);
   };
@@ -222,8 +266,12 @@ export default function Destinations() {
         setMaxBudget={setMaxBudget}
         sortBy={sortBy}
         setSortBy={setSortBy}
-        transportMode={transportMode}
-        setTransportMode={setTransportMode}
+        carMode={carMode}
+        setCarMode={setCarMode}
+        publicModes={publicModes}
+        setPublicModes={setPublicModes}
+        partySize={partySize}
+        setPartySize={setPartySize}
         weather={weather}
         setWeather={setWeather}
         maxWalking={maxWalking}
@@ -260,7 +308,32 @@ export default function Destinations() {
                 <DestinationCard
                   key={dest.id}
                   destination={dest}
-                  activeTransportMode={transportMode}
+                  activeTransportMode={(() => {
+                    let validModes: string[] = [];
+                    if (carMode === "rental" && dest.transportOptions?.car)
+                      validModes.push("car");
+                    if (carMode === "my_car" && dest.transportOptions?.my_car)
+                      validModes.push("my_car");
+                    for (const m of publicModes) {
+                      if (
+                        dest.transportOptions?.[
+                          m as keyof typeof dest.transportOptions
+                        ]
+                      )
+                        validModes.push(m);
+                    }
+                    if (validModes.length === 0) return "train";
+                    let best = validModes[0];
+                    let lowest = 999999;
+                    for (const m of validModes) {
+                      const b = getAdjustedBudget(dest, m, partySize);
+                      if (b < lowest) {
+                        lowest = b;
+                        best = m;
+                      }
+                    }
+                    return best;
+                  })()}
                 />
               ))}
           </div>
