@@ -20,6 +20,45 @@ export interface ScoredDestination extends Partial<Destination> {
   matchReasons: string[];
 }
 
+export const SCORING_WEIGHTS = {
+  // Base & Ratings
+  BASE_SCORE: 20,
+  RATING_MULTIPLIER: 6,
+
+  // Budget
+  BUDGET_OVER_PENALTY_MULTIPLIER: 1.5,
+  BUDGET_OVER_DIVISOR: 1000,
+  BUDGET_UNDER_BONUS_MAX: 10,
+  BUDGET_UNDER_DIVISOR: 3000,
+
+  // Transport
+  TRANSPORT_TRAIN_BASE: 4,
+  TRANSPORT_CAR_BASE: 5,
+  TRANSPORT_SHINKANSEN_FLAT: 12,
+  TRANSPORT_BUS_FLAT: 10,
+
+  // Trip Type (Target ~+20 for strong match, -25 for mismatch)
+  TRIP_TYPE_FOOD_MULTIPLIER: 5, // e.g. (10 - 5) * 5 = +25 max
+  TRIP_TYPE_NATURE_MATCH: 15,
+  TRIP_TYPE_NATURE_PHOTO_MULT: 1, // 15 + (10 * 1) = +25 max
+  TRIP_TYPE_NATURE_PENALTY: 25,
+  TRIP_TYPE_HISTORY_MATCH: 20,
+  TRIP_TYPE_HISTORY_PENALTY: 25,
+  TRIP_TYPE_ART_MATCH: 20,
+  TRIP_TYPE_ART_PENALTY: 25,
+  TRIP_TYPE_SEA_MATCH: 20,
+  TRIP_TYPE_SEA_PENALTY: 25,
+  TRIP_TYPE_COOL_MULTIPLIER: 5, // e.g. (10 - 5) * 5 = +25 max
+  TRIP_TYPE_THEMEPARK_MATCH: 20,
+  TRIP_TYPE_THEMEPARK_PENALTY: 25,
+
+  // Environment
+  ENV_RAIN_INDOOR_MULTIPLIER: 25,
+  ENV_RAIN_POOR_INDOOR_PENALTY: 25,
+  ENV_TEMP_MULTIPLIER: 5,
+  ENV_TEMP_PENALTY: 25,
+};
+
 export function getRecommendations(
   destinations: Partial<Destination>[],
   context: RecommendationContext,
@@ -35,7 +74,24 @@ export function getRecommendations(
   } = context;
 
   return destinations
-    .filter((dest) => dest.id && !visitedIds.includes(dest.id))
+    .filter((destObj) => {
+      if (!destObj.id || visitedIds.includes(destObj.id)) return false;
+
+      // Hard filter: discard destinations missing the explicitly requested transport mode
+      if (transport === "train" && !destObj.transportOptions?.train)
+        return false;
+      if (
+        (transport === "car" || transport === "my_car") &&
+        !destObj.transportOptions?.car &&
+        !destObj.transportOptions?.my_car
+      )
+        return false;
+      if (transport === "shinkansen" && !destObj.transportOptions?.shinkansen)
+        return false;
+      if (transport === "bus" && !destObj.transportOptions?.bus) return false;
+
+      return true;
+    })
     .map((destObj) => {
       // Clone destination to safely override transportOptions
       const dest = { ...destObj };
@@ -53,7 +109,9 @@ export function getRecommendations(
         );
       }
 
-      let score = 20 + (dest.ratings?.overall || 5) * 6;
+      let score =
+        SCORING_WEIGHTS.BASE_SCORE +
+        (dest.ratings?.overall || 5) * SCORING_WEIGHTS.RATING_MULTIPLIER;
       const reasons: string[] = [];
 
       // 1. Budget Logic
@@ -63,9 +121,14 @@ export function getRecommendations(
           transport,
         );
         if (adjustedBudget > budget) {
-          score -= ((adjustedBudget - budget) / 1000) * 1.5;
+          score -=
+            ((adjustedBudget - budget) / SCORING_WEIGHTS.BUDGET_OVER_DIVISOR) *
+            SCORING_WEIGHTS.BUDGET_OVER_PENALTY_MULTIPLIER;
         } else {
-          score += Math.min(8, (budget - adjustedBudget) / 3000);
+          score += Math.min(
+            SCORING_WEIGHTS.BUDGET_UNDER_BONUS_MAX,
+            (budget - adjustedBudget) / SCORING_WEIGHTS.BUDGET_UNDER_DIVISOR,
+          );
           if (budget - adjustedBudget >= 5000)
             reasons.push(
               `Well under budget (est. ¥${adjustedBudget.toLocaleString()})`,
@@ -73,13 +136,12 @@ export function getRecommendations(
         }
       }
 
-      // 2. Transport Logic
+      // 2. Transport Logic (Hard filters already removed impossible routes)
       if (transport === "train") {
-        if (!dest.transportOptions?.train) {
-          score -= 1000;
-        } else {
-          const time = dest.transportOptions.train;
-          score += 4 + Math.max(0, 12 - time / 10);
+        const time = dest.transportOptions?.train;
+        if (time) {
+          score +=
+            SCORING_WEIGHTS.TRANSPORT_TRAIN_BASE + Math.max(0, 12 - time / 10);
           if (time <= 60) reasons.push(`Fast train access (${time}m)`);
         }
       } else if (transport === "car" || transport === "my_car") {
@@ -87,29 +149,21 @@ export function getRecommendations(
           transport === "my_car"
             ? dest.transportOptions?.my_car
             : dest.transportOptions?.car;
-        if (!time) score -= 1000;
         if (time) {
-          score += 5 + Math.max(0, 10 - time / 15);
+          score +=
+            SCORING_WEIGHTS.TRANSPORT_CAR_BASE + Math.max(0, 10 - time / 15);
           if (time <= 60) reasons.push(`Easy drive (${time}m)`);
         }
       } else if (transport === "shinkansen") {
-        if (!dest.transportOptions?.shinkansen) {
-          score -= 1000;
-        } else {
-          score += 10;
-          reasons.push(
-            `Accessible by Shinkansen (${dest.transportOptions.shinkansen}m)`,
-          );
-        }
+        score += SCORING_WEIGHTS.TRANSPORT_SHINKANSEN_FLAT;
+        reasons.push(
+          `Accessible by Shinkansen (${dest.transportOptions?.shinkansen}m)`,
+        );
       } else if (transport === "bus") {
-        if (!dest.transportOptions?.bus) {
-          score -= 1000;
-        } else {
-          score += 10;
-          reasons.push(
-            `Accessible by Highway Bus (${dest.transportOptions.bus}m)`,
-          );
-        }
+        score += SCORING_WEIGHTS.TRANSPORT_BUS_FLAT;
+        reasons.push(
+          `Accessible by Highway Bus (${dest.transportOptions?.bus}m)`,
+        );
       }
 
       // 3. Trip Type Logic
@@ -125,14 +179,17 @@ export function getRecommendations(
 
       switch (tripType) {
         case "food":
-          score += (ratings.food - 5) * 4.5;
+          score +=
+            (ratings.food - 5) * SCORING_WEIGHTS.TRIP_TYPE_FOOD_MULTIPLIER;
           if (ratings.food >= 8.5) reasons.push("Top-tier local food scene");
           break;
         case "nature":
           if (tags.includes("Nature") || cats.includes("Mountain")) {
-            score += 12 + ratings.photography * 1.5;
+            score +=
+              SCORING_WEIGHTS.TRIP_TYPE_NATURE_MATCH +
+              ratings.photography * SCORING_WEIGHTS.TRIP_TYPE_NATURE_PHOTO_MULT;
             reasons.push("Beautiful nature escape");
-          } else score -= 25;
+          } else score -= SCORING_WEIGHTS.TRIP_TYPE_NATURE_PENALTY;
           break;
         case "history":
           if (
@@ -140,15 +197,15 @@ export function getRecommendations(
             cats.includes("Shrine") ||
             tags.includes("Historic")
           ) {
-            score += 18;
+            score += SCORING_WEIGHTS.TRIP_TYPE_HISTORY_MATCH;
             reasons.push("Deep historical significance");
-          } else score -= 20;
+          } else score -= SCORING_WEIGHTS.TRIP_TYPE_HISTORY_PENALTY;
           break;
         case "art":
           if (cats.includes("Museum") || cats.includes("Art")) {
-            score += 18;
+            score += SCORING_WEIGHTS.TRIP_TYPE_ART_MATCH;
             reasons.push("Rich in museums & art");
-          } else score -= 20;
+          } else score -= SCORING_WEIGHTS.TRIP_TYPE_ART_PENALTY;
           break;
         case "sea":
           if (
@@ -156,19 +213,20 @@ export function getRecommendations(
             cats.includes("Sea") ||
             cats.includes("Beach")
           ) {
-            score += 18;
+            score += SCORING_WEIGHTS.TRIP_TYPE_SEA_MATCH;
             reasons.push("Gorgeous coastal atmosphere");
-          } else score -= 35;
+          } else score -= SCORING_WEIGHTS.TRIP_TYPE_SEA_PENALTY;
           break;
         case "cool":
-          score += (ratings.summer - 5) * 4.5;
+          score +=
+            (ratings.summer - 5) * SCORING_WEIGHTS.TRIP_TYPE_COOL_MULTIPLIER;
           if (ratings.summer >= 8.5) reasons.push("Cool & refreshing climate");
           break;
         case "themepark":
           if (cats.includes("Theme Park")) {
-            score += 30;
+            score += SCORING_WEIGHTS.TRIP_TYPE_THEMEPARK_MATCH;
             reasons.push("World-class theme park");
-          } else score -= 45;
+          } else score -= SCORING_WEIGHTS.TRIP_TYPE_THEMEPARK_PENALTY;
           break;
       }
 
@@ -185,20 +243,20 @@ export function getRecommendations(
 
       if (isRaining) {
         const indoor = dest.indoorPercent || 0;
-        score += (indoor / 100) * 25;
+        score += (indoor / 100) * SCORING_WEIGHTS.ENV_RAIN_INDOOR_MULTIPLIER;
         if (indoor >= 70)
           reasons.push(`${Math.round(indoor)}% indoor (perfect for rain)`);
-        if (indoor < 30) score -= 30;
+        if (indoor < 30) score -= SCORING_WEIGHTS.ENV_RAIN_POOR_INDOOR_PENALTY;
       }
       if (isHot) {
-        score += (ratings.summer - 5) * 4;
+        score += (ratings.summer - 5) * SCORING_WEIGHTS.ENV_TEMP_MULTIPLIER;
         if (ratings.summer >= 8.5) reasons.push("Cool retreat from heat");
-        if (ratings.summer <= 4) score -= 20;
+        if (ratings.summer <= 4) score -= SCORING_WEIGHTS.ENV_TEMP_PENALTY;
       }
       if (isCold) {
-        score += (ratings.winter - 5) * 4;
+        score += (ratings.winter - 5) * SCORING_WEIGHTS.ENV_TEMP_MULTIPLIER;
         if (ratings.winter >= 8.5) reasons.push("Warm indoor/winter escape");
-        if (ratings.winter <= 4) score -= 20;
+        if (ratings.winter <= 4) score -= SCORING_WEIGHTS.ENV_TEMP_PENALTY;
       }
 
       if (reasons.length === 0) {
