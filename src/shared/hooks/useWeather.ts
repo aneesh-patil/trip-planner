@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
-import { weatherService } from "@/shared/services/weather/WeatherService";
+import {
+  getWeatherDescription as getWeatherDesc,
+  getWeekendWeather,
+} from "@/shared/services/weather/WeatherService";
 import type { WeatherForecast } from "@/shared/services/weather/WeatherService";
 
 export function getWeatherDescription(code: number) {
-  return weatherService.getWeatherDescription(code);
+  return getWeatherDesc(code);
 }
 
 export function useWeekendWeather(lat?: number, lng?: number) {
@@ -20,7 +23,7 @@ export function useWeekendWeather(lat?: number, lng?: number) {
       setLoading(true);
       setError(null);
       try {
-        const weekendData = await weatherService.getWeekendWeather(lat!, lng!);
+        const weekendData = await getWeekendWeather(lat!, lng!);
         if (isMounted) setForecast(weekendData);
       } catch (err) {
         console.error(err);

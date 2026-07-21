@@ -22,10 +22,3 @@ export async function compareDestinations(
   const results = await Promise.all(ids.map(getDestination));
   return results.filter((d): d is Destination => d !== null);
 }
-
-// Object alias kept for components that still call destinationService.method()
-export const destinationService = {
-  getDestinationList,
-  getDestination,
-  compareDestinations,
-};

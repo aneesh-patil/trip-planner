@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { destinationService } from "@/shared/services/destination/DestinationService";
+import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { Button } from "@/shared/components/ui/button";
@@ -17,8 +17,7 @@ import { getAdjustedBudget } from "@/shared/utils/utils";
 
 export default function Compare() {
   const { compareList, toggleCompare, clearCompare } = useTripStore();
-  const allDestinations =
-    destinationService.getDestinationList() as Destination[];
+  const allDestinations = getDestinationList() as Destination[];
 
   const compareDestinations = compareList
     .map((id) => allDestinations.find((d) => d.id === id))

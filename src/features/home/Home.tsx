@@ -20,7 +20,7 @@ import {
   Landmark,
   Snowflake,
 } from "lucide-react";
-import { destinationService } from "@/shared/services/destination/DestinationService";
+import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import DestinationCard from "@/features/destinations/components/DestinationCard";
 import { Button } from "@/shared/components/ui/button";
@@ -32,12 +32,11 @@ import {
 } from "@/shared/components/ui/select";
 import { Slider } from "@/shared/components/ui/slider";
 import { useTripStore } from "@/shared/hooks/useTripStore";
-import { recommendationService } from "@/shared/services/recommendation/RecommendationService";
+import { getRecommendations } from "@/shared/services/recommendation/RecommendationService";
 import StationInput from "@/shared/components/StationInput";
 
 export default function Home() {
-  const allDestinations =
-    destinationService.getDestinationList() as Destination[];
+  const allDestinations = getDestinationList() as Destination[];
 
   const { isVisited, homeStationCoords } = useTripStore();
 
@@ -103,7 +102,7 @@ export default function Home() {
 
   // Calculate Smart Match Score using the new service
   const scoredDestinations = useMemo(() => {
-    return recommendationService.getRecommendations(allDestinations, {
+    return getRecommendations(allDestinations, {
       tripType,
       budget,
       transport,

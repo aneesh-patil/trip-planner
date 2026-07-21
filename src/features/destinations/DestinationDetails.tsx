@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
-import { destinationService } from "@/shared/services/destination/DestinationService";
+import { getDestination } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import {
   ArrowLeft,
@@ -70,35 +70,33 @@ export default function DestinationDetails() {
   useEffect(() => {
     if (id) {
       setDestLoading(true);
-      destinationService
-        .getDestination(id)
-        .then((destObj: Destination | null) => {
-          if (!destObj) {
-            setDestination(null);
-            setDestLoading(false);
-            return;
-          }
-          const dest = { ...destObj };
-          if (
-            homeStationCoords &&
-            dest.coordinates?.lat &&
-            dest.coordinates?.lng
-          ) {
-            const distKm = getDistance(
-              homeStationCoords.lat,
-              homeStationCoords.lng,
-              dest.coordinates.lat,
-              dest.coordinates.lng,
-            );
-            const hasShinkansen = Boolean(dest.transportOptions?.shinkansen);
-            dest.transportOptions = getDynamicTransportOptions(
-              distKm,
-              hasShinkansen,
-            );
-          }
-          setDestination(dest);
+      getDestination(id).then((destObj: Destination | null) => {
+        if (!destObj) {
+          setDestination(null);
           setDestLoading(false);
-        });
+          return;
+        }
+        const dest = { ...destObj };
+        if (
+          homeStationCoords &&
+          dest.coordinates?.lat &&
+          dest.coordinates?.lng
+        ) {
+          const distKm = getDistance(
+            homeStationCoords.lat,
+            homeStationCoords.lng,
+            dest.coordinates.lat,
+            dest.coordinates.lng,
+          );
+          const hasShinkansen = Boolean(dest.transportOptions?.shinkansen);
+          dest.transportOptions = getDynamicTransportOptions(
+            distKm,
+            hasShinkansen,
+          );
+        }
+        setDestination(dest);
+        setDestLoading(false);
+      });
     }
   }, [id, homeStationCoords]);
 

@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 
-import { destinationService } from "@/shared/services/destination/DestinationService";
+import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import DestinationCard from "@/features/destinations/components/DestinationCard";
 import DestinationFilters from "@/features/destinations/components/DestinationFilters";
@@ -22,8 +22,7 @@ import { useTripStore } from "@/shared/hooks/useTripStore";
 
 export default function Destinations() {
   const { homeStationCoords } = useTripStore();
-  const allDestinations =
-    destinationService.getDestinationList() as Destination[];
+  const allDestinations = getDestinationList() as Destination[];
   const [searchQuery, setSearchQuery] = useState("");
   const [maxBudget, setMaxBudget] = useState(100000);
   const [sortBy, setSortBy] = useState("overall");

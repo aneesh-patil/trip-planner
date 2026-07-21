@@ -214,6 +214,3 @@ export function getRecommendations(
     })
     .sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
 }
-
-// Object alias kept for backwards compatibility with existing import sites
-export const recommendationService = { getRecommendations };

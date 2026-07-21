@@ -54,6 +54,3 @@ export async function getWeekendWeather(
   cache.set(cacheKey, { timestamp: now, data: weekendData });
   return weekendData;
 }
-
-// Object alias kept for backwards compatibility
-export const weatherService = { getWeatherDescription, getWeekendWeather };

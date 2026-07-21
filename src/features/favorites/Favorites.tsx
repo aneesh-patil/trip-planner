@@ -1,5 +1,5 @@
 import { useTripStore } from "@/shared/hooks/useTripStore";
-import { destinationService } from "@/shared/services/destination/DestinationService";
+import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import DestinationCard from "@/features/destinations/components/DestinationCard";
 import { Bookmark, Search, CheckCircle2 } from "lucide-react";
@@ -8,8 +8,7 @@ import { Button } from "@/shared/components/ui/button";
 
 export default function Favorites() {
   const { favorites, visited } = useTripStore();
-  const allDestinations =
-    destinationService.getDestinationList() as Destination[];
+  const allDestinations = getDestinationList() as Destination[];
 
   const favoriteDestinations = allDestinations.filter((d) =>
     favorites.includes(d.id),

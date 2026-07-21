@@ -28,9 +28,6 @@ interface TripStoreContextType {
   toggleCompare: (id: string) => void;
   isComparing: (id: string) => boolean;
   clearCompare: () => void;
-
-  exportData: () => string;
-  importData: (encodedData: string) => boolean;
 }
 
 const TripStoreContext = createContext<TripStoreContextType | undefined>(
@@ -201,31 +198,6 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
   const clearCompare = () => setCompareList([]);
 
-  const exportData = () => {
-    const data = { favorites, visited, visitedPrefectures };
-    return btoa(JSON.stringify(data)); // Base64 encode
-  };
-
-  const importData = (encodedData: string) => {
-    try {
-      const decoded = atob(encodedData);
-      const data = JSON.parse(decoded);
-      if (data.favorites && Array.isArray(data.favorites)) {
-        setFavorites(data.favorites);
-      }
-      if (data.visited && Array.isArray(data.visited)) {
-        setVisited(data.visited);
-      }
-      if (data.visitedPrefectures && Array.isArray(data.visitedPrefectures)) {
-        setVisitedPrefectures(data.visitedPrefectures);
-      }
-      return true;
-    } catch (e) {
-      console.error("Failed to import data", e);
-      return false;
-    }
-  };
-
   return (
     <TripStoreContext.Provider
       value={{
@@ -242,8 +214,6 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         toggleCompare,
         isComparing,
         clearCompare,
-        exportData,
-        importData,
         homeStation,
         setHomeStation,
         homeStationCoords,
