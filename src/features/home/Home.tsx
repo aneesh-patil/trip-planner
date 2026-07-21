@@ -32,6 +32,7 @@ import {
 } from "@/shared/components/ui/select";
 import { Slider } from "@/shared/components/ui/slider";
 import { useTripStore } from "@/shared/hooks/useTripStore";
+import { useAuth } from "@/shared/hooks/useAuth";
 import { getRecommendations } from "@/shared/services/recommendation/RecommendationService";
 import StationInput from "@/shared/components/StationInput";
 
@@ -39,12 +40,24 @@ export default function Home() {
   const allDestinations = getDestinationList() as Destination[];
 
   const { isVisited, homeStationCoords } = useTripStore();
+  const { user } = useAuth();
 
   // Smart Planner State
   const [tripType, setTripType] = useState<string>("any");
   const [budget, setBudget] = useState<number>(30000);
-  const [transport, setTransport] = useState<string>("any");
+  const [carMode, setCarMode] = useState<string>("none");
+  const [publicModes, setPublicModes] = useState<string[]>(["train"]);
+  const [partySize, setPartySize] = useState<number>(2);
   const [weather, setWeather] = useState<string>("any");
+
+  // Sync preferences on load
+  useEffect(() => {
+    if (user?.user_metadata?.preferences) {
+      setCarMode(user.user_metadata.preferences.carMode || "none");
+      setPublicModes(user.user_metadata.preferences.publicModes || ["train"]);
+      setPartySize(user.user_metadata.preferences.partySize || 2);
+    }
+  }, [user]);
 
   // Current Situation State (Yokohama)
   interface DayContext {
@@ -105,7 +118,9 @@ export default function Home() {
     return getRecommendations(allDestinations, {
       tripType,
       budget,
-      transport,
+      carMode,
+      publicModes,
+      partySize,
       weather,
       visitedIds: allDestinations
         .filter((d) => isVisited(d.id!))
@@ -122,7 +137,9 @@ export default function Home() {
     allDestinations,
     tripType,
     budget,
-    transport,
+    carMode,
+    publicModes,
+    partySize,
     weather,
     isVisited,
     currentSituation,
@@ -477,124 +494,123 @@ export default function Home() {
                   </Select>
                 </div>
 
-                {/* Transport */}
-                <div className="space-y-3">
-                  <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
-                    How are you getting there?
-                  </label>
-                  <Select
-                    value={transport}
-                    onValueChange={(val: string | null) => {
-                      if (val) setTransport(val);
-                    }}
-                  >
-                    <SelectTrigger className="h-14 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
-                      {transport === "any" && (
-                        <div className="flex items-center">
-                          <MapIcon className="w-5 h-5 mr-3 text-slate-400" /> No
-                          preference
-                        </div>
-                      )}
-                      {transport === "train" && (
-                        <div className="flex items-center">
-                          <Train className="w-5 h-5 mr-3 text-emerald-600" />{" "}
-                          Train Only
-                        </div>
-                      )}
-                      {transport === "car" && (
-                        <div className="flex items-center">
-                          <Car className="w-5 h-5 mr-3 text-slate-600" />{" "}
-                          Driving a Rental Car
-                        </div>
-                      )}
-                      {transport === "my_car" && (
-                        <div className="flex items-center">
-                          <Car className="w-5 h-5 mr-3 text-emerald-600" />{" "}
-                          Driving My Car
-                        </div>
-                      )}
-                      {transport === "shinkansen" && (
-                        <div className="flex items-center">
-                          <TrainFront className="w-5 h-5 mr-3 text-purple-600" />{" "}
-                          Shinkansen
-                        </div>
-                      )}
-                      {transport === "bus" && (
-                        <div className="flex items-center">
-                          <Bus className="w-5 h-5 mr-3 text-amber-600" />{" "}
-                          Highway Bus
-                        </div>
-                      )}
-                    </SelectTrigger>
-                    <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
-                      <SelectItem
-                        value="any"
-                        className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                {/* Transport & Party */}
+                <div className="space-y-5">
+                  <div>
+                    <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
+                      Car Option
+                    </label>
+                    <div className="flex gap-2 mt-2">
+                      <button
+                        onClick={() => setCarMode("none")}
+                        className={`flex-1 py-2.5 px-3 rounded-xl border-2 text-sm font-bold transition-colors ${
+                          carMode === "none"
+                            ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                            : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        }`}
                       >
-                        <div className="flex items-center">
-                          <MapIcon className="w-5 h-5 mr-3 text-slate-400" />{" "}
-                          <span className="text-base font-medium">
-                            No preference
-                          </span>
-                        </div>
-                      </SelectItem>
-                      <SelectItem
-                        value="train"
-                        className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                        None
+                      </button>
+                      <button
+                        onClick={() => setCarMode("rental")}
+                        className={`flex-1 py-2.5 px-3 rounded-xl border-2 text-sm font-bold transition-colors ${
+                          carMode === "rental"
+                            ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                            : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        }`}
                       >
-                        <div className="flex items-center">
-                          <Train className="w-5 h-5 mr-3 text-emerald-600" />{" "}
-                          <span className="text-base font-medium">
-                            Train Only
-                          </span>
-                        </div>
-                      </SelectItem>
-                      <SelectItem
-                        value="car"
-                        className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                        Rental
+                      </button>
+                      <button
+                        onClick={() => setCarMode("my_car")}
+                        className={`flex-1 py-2.5 px-3 rounded-xl border-2 text-sm font-bold transition-colors ${
+                          carMode === "my_car"
+                            ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                            : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        }`}
                       >
-                        <div className="flex items-center">
-                          <Car className="w-5 h-5 mr-3 text-slate-600" />{" "}
-                          <span className="text-base font-medium">
-                            Driving a Rental Car
-                          </span>
-                        </div>
-                      </SelectItem>
-                      <SelectItem
-                        value="my_car"
-                        className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                        My Car
+                      </button>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
+                      Public Transport
+                    </label>
+                    <div className="flex gap-2 mt-2">
+                      <button
+                        onClick={() =>
+                          setPublicModes((prev) =>
+                            prev.includes("train")
+                              ? prev.filter((m) => m !== "train")
+                              : [...prev, "train"],
+                          )
+                        }
+                        className={`flex-1 py-2.5 px-3 rounded-xl border-2 text-sm font-bold flex items-center justify-center gap-2 transition-colors ${
+                          publicModes.includes("train")
+                            ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                            : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        }`}
                       >
-                        <div className="flex items-center">
-                          <Car className="w-5 h-5 mr-3 text-emerald-600" />{" "}
-                          <span className="text-base font-medium">
-                            Driving My Car
-                          </span>
-                        </div>
-                      </SelectItem>
-                      <SelectItem
-                        value="shinkansen"
-                        className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                        <Train className="w-4 h-4" /> Train
+                      </button>
+                      <button
+                        onClick={() =>
+                          setPublicModes((prev) =>
+                            prev.includes("shinkansen")
+                              ? prev.filter((m) => m !== "shinkansen")
+                              : [...prev, "shinkansen"],
+                          )
+                        }
+                        className={`flex-1 py-2.5 px-3 rounded-xl border-2 text-sm font-bold flex items-center justify-center gap-2 transition-colors ${
+                          publicModes.includes("shinkansen")
+                            ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                            : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        }`}
                       >
-                        <div className="flex items-center">
-                          <TrainFront className="w-5 h-5 mr-3 text-purple-600" />{" "}
-                          <span className="text-base font-medium">
-                            Shinkansen
-                          </span>
-                        </div>
-                      </SelectItem>
-                      <SelectItem
-                        value="bus"
-                        className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                        <TrainFront className="w-4 h-4" /> Bullet
+                      </button>
+                      <button
+                        onClick={() =>
+                          setPublicModes((prev) =>
+                            prev.includes("bus")
+                              ? prev.filter((m) => m !== "bus")
+                              : [...prev, "bus"],
+                          )
+                        }
+                        className={`flex-1 py-2.5 px-3 rounded-xl border-2 text-sm font-bold flex items-center justify-center gap-2 transition-colors ${
+                          publicModes.includes("bus")
+                            ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                            : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        }`}
                       >
-                        <div className="flex items-center">
-                          <Bus className="w-5 h-5 mr-3 text-amber-600" />{" "}
-                          <span className="text-base font-medium">
-                            Highway Bus
-                          </span>
-                        </div>
-                      </SelectItem>
-                    </SelectContent>
-                  </Select>
+                        <Bus className="w-4 h-4" /> Bus
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Party Size */}
+                <div className="space-y-4 pt-2">
+                  <div className="flex justify-between items-center">
+                    <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
+                      Party Size
+                    </label>
+                    <span className="text-sm font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400 px-2 py-1 rounded-md">
+                      {partySize} {partySize === 1 ? "Person" : "People"}
+                    </span>
+                  </div>
+                  <Slider
+                    value={[partySize]}
+                    min={1}
+                    max={10}
+                    step={1}
+                    onValueChange={(val: number | readonly number[]) =>
+                      setPartySize(Array.isArray(val) ? val[0] : val)
+                    }
+                    className="w-full"
+                  />
                 </div>
 
                 {/* Budget */}
@@ -661,7 +677,9 @@ export default function Home() {
                 <div className="flex-grow">
                   <DestinationCard
                     destination={dest as Destination}
-                    activeTransportMode={transport}
+                    activeTransportMode={
+                      (dest as any).bestTransportMode || "train"
+                    }
                   />
                 </div>
               </div>

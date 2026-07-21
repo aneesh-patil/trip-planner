@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { X, User as UserIcon, MapPin, Calendar, Loader2 } from "lucide-react";
+import {
+  X,
+  User as UserIcon,
+  MapPin,
+  Calendar,
+  Loader2,
+  Trash2,
+} from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
 
@@ -10,21 +17,27 @@ interface ProfileModalProps {
 }
 
 export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
-  const { user, updateUserProfile } = useAuth();
+  const { user, updateUserProfile, deleteAccount } = useAuth();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [deleteConfirm, setDeleteConfirm] = useState(false);
 
   const [username, setUsername] = useState("");
   const [homeCity, setHomeCity] = useState("");
   const [dob, setDob] = useState("");
+  const [units, setUnits] = useState("metric");
+  const [emailNotifications, setEmailNotifications] = useState(false);
 
   useEffect(() => {
     if (user?.user_metadata) {
       setUsername(user.user_metadata.username || "");
       setHomeCity(user.user_metadata.home_city || "");
       setDob(user.user_metadata.dob || "");
+      setUnits(user.user_metadata.units || "metric");
+      setEmailNotifications(user.user_metadata.emailNotifications || false);
     }
     setSuccess(false);
+    setDeleteConfirm(false);
   }, [user, isOpen]);
 
   if (!isOpen) return null;
@@ -39,6 +52,8 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
         username,
         home_city: homeCity,
         dob,
+        units,
+        emailNotifications,
       });
 
       if (error) {
@@ -124,7 +139,47 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
             </div>
           </div>
 
-          <div className="pt-4">
+          <div className="flex flex-col gap-4 pt-2">
+            <div className="space-y-1.5">
+              <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                Unit Preference
+              </label>
+              <div className="flex gap-4 mt-1">
+                <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300 cursor-pointer">
+                  <input
+                    type="radio"
+                    checked={units === "metric"}
+                    onChange={() => setUnits("metric")}
+                    className="text-emerald-500 focus:ring-emerald-500"
+                  />
+                  Metric (°C, km)
+                </label>
+                <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300 cursor-pointer">
+                  <input
+                    type="radio"
+                    checked={units === "imperial"}
+                    onChange={() => setUnits("imperial")}
+                    className="text-emerald-500 focus:ring-emerald-500"
+                  />
+                  Imperial (°F, mi)
+                </label>
+              </div>
+            </div>
+
+            <div className="space-y-1.5 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={emailNotifications}
+                  onChange={(e) => setEmailNotifications(e.target.checked)}
+                  className="rounded text-emerald-500 focus:ring-emerald-500"
+                />
+                Receive email notifications and trip ideas
+              </label>
+            </div>
+          </div>
+
+          <div className="pt-4 pb-2">
             <Button
               type="submit"
               disabled={loading}
@@ -142,6 +197,46 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
                 "Save Profile"
               )}
             </Button>
+          </div>
+
+          <div className="pt-2 border-t border-slate-100 dark:border-slate-800">
+            {!deleteConfirm ? (
+              <button
+                type="button"
+                onClick={() => setDeleteConfirm(true)}
+                className="w-full flex items-center justify-center gap-2 py-2 text-sm font-semibold text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-lg transition-colors"
+              >
+                <Trash2 className="w-4 h-4" />
+                Delete Profile
+              </button>
+            ) : (
+              <div className="space-y-3 p-3 bg-red-50 dark:bg-red-500/10 rounded-xl border border-red-100 dark:border-red-500/20">
+                <p className="text-xs text-red-600 dark:text-red-400 font-medium text-center">
+                  Are you sure? This cannot be undone.
+                </p>
+                <div className="flex gap-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => setDeleteConfirm(false)}
+                    className="flex-1 h-8 text-xs border-red-200 text-red-600 hover:bg-red-100 dark:border-red-500/30 dark:hover:bg-red-500/20"
+                  >
+                    Cancel
+                  </Button>
+                  <Button
+                    type="button"
+                    onClick={async () => {
+                      setLoading(true);
+                      await deleteAccount();
+                      onClose();
+                    }}
+                    className="flex-1 h-8 text-xs bg-red-600 hover:bg-red-700 text-white border-0"
+                  >
+                    Yes, Delete
+                  </Button>
+                </div>
+              </div>
+            )}
           </div>
         </form>
       </div>

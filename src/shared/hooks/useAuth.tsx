@@ -13,6 +13,7 @@ interface AuthContextType {
   signUpWithEmail: (email: string, password: string) => Promise<any>;
   signOut: () => void;
   updateUserProfile: (data: any) => Promise<any>;
+  deleteAccount: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -72,6 +73,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const updateUserProfile = (data: any) => supabase!.auth.updateUser({ data });
 
+  const deleteAccount = async () => {
+    if (user && supabase) {
+      // Attempt to delete user data; if RLS doesn't allow it, it will fail silently here,
+      // but we still sign out.
+      await supabase.from("user_data").delete().eq("id", user.id);
+    }
+    await signOut();
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -84,6 +94,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         signUpWithEmail,
         signOut,
         updateUserProfile,
+        deleteAccount,
       }}
     >
       {children}

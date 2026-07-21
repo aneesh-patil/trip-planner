@@ -35,6 +35,12 @@ export default function Footer() {
           >
             Cookies
           </Link>
+          <a
+            href="mailto:kaihatsu.studio@gmail.com"
+            className="hover:text-emerald-500 transition-colors"
+          >
+            Feedback
+          </a>
         </div>
       </div>
     </footer>

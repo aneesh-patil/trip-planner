@@ -8,7 +8,9 @@ import {
 export interface RecommendationContext {
   tripType: string;
   budget: number;
-  transport: string;
+  carMode: string;
+  publicModes: string[];
+  partySize: number;
   weather: string;
   visitedIds: string[];
   currentWeather?: { temp: number; desc: string } | null;
@@ -18,6 +20,7 @@ export interface RecommendationContext {
 export interface ScoredDestination extends Partial<Destination> {
   matchScore: number;
   matchReasons: string[];
+  bestTransportMode?: string;
 }
 
 export const SCORING_WEIGHTS = {
@@ -66,7 +69,9 @@ export function getRecommendations(
   const {
     tripType,
     budget,
-    transport,
+    carMode,
+    publicModes,
+    partySize,
     weather,
     visitedIds,
     currentWeather,
@@ -77,18 +82,35 @@ export function getRecommendations(
     .filter((destObj) => {
       if (!destObj.id || visitedIds.includes(destObj.id)) return false;
 
-      // Hard filter: discard destinations missing the explicitly requested transport mode
-      if (transport === "train" && !destObj.transportOptions?.train)
-        return false;
+      let validModesForDest: string[] = [];
+      if (carMode === "rental" && destObj.transportOptions?.car)
+        validModesForDest.push("car");
+      if (carMode === "my_car" && destObj.transportOptions?.my_car)
+        validModesForDest.push("my_car");
+
+      for (const m of publicModes) {
+        if (
+          destObj.transportOptions?.[m as keyof typeof destObj.transportOptions]
+        ) {
+          validModesForDest.push(m);
+        }
+      }
+
+      // If user selected modes, but destination supports none of them, discard.
       if (
-        (transport === "car" || transport === "my_car") &&
-        !destObj.transportOptions?.car &&
-        !destObj.transportOptions?.my_car
-      )
+        validModesForDest.length === 0 &&
+        (carMode !== "none" || publicModes.length > 0)
+      ) {
         return false;
-      if (transport === "shinkansen" && !destObj.transportOptions?.shinkansen)
-        return false;
-      if (transport === "bus" && !destObj.transportOptions?.bus) return false;
+      }
+      if (validModesForDest.length === 0) {
+        // Fallback if user selected absolutely nothing
+        const entries = Object.entries(destObj.transportOptions || {}).filter(
+          ([_, v]) => v !== undefined,
+        );
+        if (entries.length === 0) return false;
+        validModesForDest = entries.map((e) => e[0]);
+      }
 
       return true;
     })
@@ -114,57 +136,86 @@ export function getRecommendations(
         (dest.ratings?.overall || 5) * SCORING_WEIGHTS.RATING_MULTIPLIER;
       const reasons: string[] = [];
 
-      // 1. Budget Logic
-      if (dest.budgetRecommended) {
-        const adjustedBudget = getAdjustedBudget(
-          dest as Destination,
-          transport,
-        );
-        if (adjustedBudget > budget) {
-          score -=
-            ((adjustedBudget - budget) / SCORING_WEIGHTS.BUDGET_OVER_DIVISOR) *
-            SCORING_WEIGHTS.BUDGET_OVER_PENALTY_MULTIPLIER;
-        } else {
-          score += Math.min(
-            SCORING_WEIGHTS.BUDGET_UNDER_BONUS_MAX,
-            (budget - adjustedBudget) / SCORING_WEIGHTS.BUDGET_UNDER_DIVISOR,
+      // 1 & 2. Budget and Transport Logic
+      // Evaluate all valid active modes for the destination and pick the best one
+      let bestMode = validModesForDest[0];
+      let bestModeScore = -9999;
+      let bestModeBudget = 999999;
+      let bestModeReasons: string[] = [];
+
+      for (const mode of validModesForDest) {
+        let modeScore = 0;
+        let modeReasons: string[] = [];
+
+        let adjustedBudget = 999999;
+        if (dest.budgetRecommended) {
+          adjustedBudget = getAdjustedBudget(
+            dest as Destination,
+            mode,
+            partySize,
           );
-          if (budget - adjustedBudget >= 5000)
-            reasons.push(
-              `Well under budget (est. ¥${adjustedBudget.toLocaleString()})`,
+          if (adjustedBudget > budget) {
+            modeScore -=
+              ((adjustedBudget - budget) /
+                SCORING_WEIGHTS.BUDGET_OVER_DIVISOR) *
+              SCORING_WEIGHTS.BUDGET_OVER_PENALTY_MULTIPLIER;
+          } else {
+            modeScore += Math.min(
+              SCORING_WEIGHTS.BUDGET_UNDER_BONUS_MAX,
+              (budget - adjustedBudget) / SCORING_WEIGHTS.BUDGET_UNDER_DIVISOR,
             );
+            if (budget - adjustedBudget >= 5000)
+              modeReasons.push(
+                `Well under budget (est. ¥${adjustedBudget.toLocaleString()})`,
+              );
+          }
+        }
+
+        if (mode === "train") {
+          const time = dest.transportOptions?.train;
+          if (time) {
+            modeScore +=
+              SCORING_WEIGHTS.TRANSPORT_TRAIN_BASE +
+              Math.max(0, 12 - time / 10);
+            if (time <= 60) modeReasons.push(`Fast train access (${time}m)`);
+          }
+        } else if (mode === "car" || mode === "my_car") {
+          const time =
+            mode === "my_car"
+              ? dest.transportOptions?.my_car
+              : dest.transportOptions?.car;
+          if (time) {
+            modeScore +=
+              SCORING_WEIGHTS.TRANSPORT_CAR_BASE + Math.max(0, 10 - time / 15);
+            if (time <= 60) modeReasons.push(`Easy drive (${time}m)`);
+          }
+        } else if (mode === "shinkansen") {
+          modeScore += SCORING_WEIGHTS.TRANSPORT_SHINKANSEN_FLAT;
+          modeReasons.push(
+            `Accessible by Shinkansen (${dest.transportOptions?.shinkansen}m)`,
+          );
+        } else if (mode === "bus") {
+          modeScore += SCORING_WEIGHTS.TRANSPORT_BUS_FLAT;
+          modeReasons.push(
+            `Accessible by Highway Bus (${dest.transportOptions?.bus}m)`,
+          );
+        }
+
+        if (
+          modeScore > bestModeScore ||
+          (Math.abs(modeScore - bestModeScore) < 0.1 &&
+            adjustedBudget < bestModeBudget)
+        ) {
+          bestModeScore = modeScore;
+          bestModeBudget = adjustedBudget;
+          bestModeReasons = modeReasons;
+          bestMode = mode;
         }
       }
 
-      // 2. Transport Logic (Hard filters already removed impossible routes)
-      if (transport === "train") {
-        const time = dest.transportOptions?.train;
-        if (time) {
-          score +=
-            SCORING_WEIGHTS.TRANSPORT_TRAIN_BASE + Math.max(0, 12 - time / 10);
-          if (time <= 60) reasons.push(`Fast train access (${time}m)`);
-        }
-      } else if (transport === "car" || transport === "my_car") {
-        const time =
-          transport === "my_car"
-            ? dest.transportOptions?.my_car
-            : dest.transportOptions?.car;
-        if (time) {
-          score +=
-            SCORING_WEIGHTS.TRANSPORT_CAR_BASE + Math.max(0, 10 - time / 15);
-          if (time <= 60) reasons.push(`Easy drive (${time}m)`);
-        }
-      } else if (transport === "shinkansen") {
-        score += SCORING_WEIGHTS.TRANSPORT_SHINKANSEN_FLAT;
-        reasons.push(
-          `Accessible by Shinkansen (${dest.transportOptions?.shinkansen}m)`,
-        );
-      } else if (transport === "bus") {
-        score += SCORING_WEIGHTS.TRANSPORT_BUS_FLAT;
-        reasons.push(
-          `Accessible by Highway Bus (${dest.transportOptions?.bus}m)`,
-        );
-      }
+      score += bestModeScore;
+      reasons.push(...bestModeReasons);
+      const destBestTransportMode = bestMode;
 
       // 3. Trip Type Logic
       const ratings = dest.ratings || {
@@ -271,6 +322,7 @@ export function getRecommendations(
         ...dest,
         matchScore: Math.min(99.9, Math.max(0.1, score)),
         matchReasons: reasons.slice(0, 3),
+        bestTransportMode: destBestTransportMode,
       };
     })
     .sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));

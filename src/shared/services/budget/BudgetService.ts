@@ -1,6 +1,5 @@
 import type { Destination } from "@/shared/types/destination";
 
-const PARTY_SIZE = 2; // couple
 const CAR_RENTAL_RATES = {
   upTo6h: 7370,
   upTo12h: 7920,
@@ -21,16 +20,20 @@ function getRentalBaseFee(tripDurationHours: number): number {
 }
 
 /**
- * Returns the round-trip transport cost for a couple (2 adults).
+ * Returns the round-trip transport cost for the given party size.
  * This is the single source of truth.
  */
-export function getTransportCost(dest: Destination, mode: string): number {
+export function getTransportCost(
+  dest: Destination,
+  mode: string,
+  partySize: number = 2,
+): number {
   if (mode === "shinkansen" && dest.transportOptions?.shinkansen) {
     const mins = dest.transportOptions.shinkansen;
     // Shinkansen per-person one-way = ¥1,200 base + mins * ¥160 (includes reserved seat surcharge)
     const oneWayPerPerson = 1200 + mins * 160;
     const roundTripPerPerson = oneWayPerPerson * 2;
-    return Math.floor(roundTripPerPerson * PARTY_SIZE);
+    return Math.floor(roundTripPerPerson * partySize);
   }
 
   if (mode === "bus" && dest.transportOptions?.bus) {
@@ -38,7 +41,7 @@ export function getTransportCost(dest: Destination, mode: string): number {
     // Highway Bus per-person one-way = ¥1,000 + mins * ¥16
     const oneWayPerPerson = 1000 + mins * 16;
     const roundTripPerPerson = oneWayPerPerson * 2;
-    return Math.floor(roundTripPerPerson * PARTY_SIZE);
+    return Math.floor(roundTripPerPerson * partySize);
   }
 
   if (mode === "car" && dest.transportOptions?.car) {
@@ -50,7 +53,8 @@ export function getTransportCost(dest: Destination, mode: string): number {
     const gasRoundTrip = Math.floor(
       ((distanceKm * 2) / 13) * GAS_PRICE_PER_LITER, // 13 km/L avg rental car
     );
-    return rentalFee + tollsRoundTrip + gasRoundTrip;
+    const carsNeeded = Math.ceil(partySize / 4);
+    return (rentalFee + tollsRoundTrip + gasRoundTrip) * carsNeeded;
   }
 
   if (mode === "my_car" && dest.transportOptions?.my_car) {
@@ -60,7 +64,8 @@ export function getTransportCost(dest: Destination, mode: string): number {
     const gasRoundTrip = Math.floor(
       ((distanceKm * 2) / 13) * GAS_PRICE_PER_LITER, // 13 km/L avg car
     );
-    return tollsRoundTrip + gasRoundTrip;
+    const carsNeeded = Math.ceil(partySize / 4);
+    return (tollsRoundTrip + gasRoundTrip) * carsNeeded;
   }
 
   if (mode === "train" && dest.transportOptions?.train) {
@@ -71,19 +76,20 @@ export function getTransportCost(dest: Destination, mode: string): number {
       ? 800 + mins * 40
       : Math.max(400, 150 + mins * 25);
     const roundTripPerPerson = oneWayPerPerson * 2;
-    return Math.floor(roundTripPerPerson * PARTY_SIZE);
+    return Math.floor(roundTripPerPerson * partySize);
   }
 
-  return (dest.budgetBreakdown?.transport || 1500) * PARTY_SIZE;
+  return ((dest.budgetBreakdown?.transport || 3000) / 2) * partySize;
 }
 
 /**
- * Returns the total estimated budget for a couple, substituting the cheapest
+ * Returns the total estimated budget for the party size, substituting the cheapest
  * available transport if activeMode is "all" or "any".
  */
 export function getAdjustedBudget(
   dest: Destination,
   activeMode: string,
+  partySize: number = 2,
 ): number {
   let mode = "train";
 
@@ -102,9 +108,10 @@ export function getAdjustedBudget(
     }
   }
 
-  const transportCost = getTransportCost(dest, mode);
-  const otherCosts =
-    dest.budgetRecommended - (dest.budgetBreakdown?.transport || 1500);
+  const transportCost = getTransportCost(dest, mode, partySize);
+  const otherCostsCouple =
+    dest.budgetRecommended - (dest.budgetBreakdown?.transport || 3000);
+  const otherCosts = (otherCostsCouple / 2) * partySize;
   return otherCosts + transportCost;
 }
 

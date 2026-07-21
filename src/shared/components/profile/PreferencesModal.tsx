@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { X, Car, Train, Users, Loader2 } from "lucide-react";
+import { X, Car, Train, Bus, TrainFront, Users, Loader2 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
 
@@ -14,12 +14,14 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const [transport, setTransport] = useState("train");
+  const [carMode, setCarMode] = useState("none");
+  const [publicModes, setPublicModes] = useState<string[]>(["train"]);
   const [partySize, setPartySize] = useState(2);
 
   useEffect(() => {
     if (user?.user_metadata?.preferences) {
-      setTransport(user.user_metadata.preferences.transport || "train");
+      setCarMode(user.user_metadata.preferences.carMode || "none");
+      setPublicModes(user.user_metadata.preferences.publicModes || ["train"]);
       setPartySize(user.user_metadata.preferences.partySize || 2);
     }
     setSuccess(false);
@@ -35,7 +37,8 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
     try {
       const { error } = await updateUserProfile({
         preferences: {
-          transport,
+          carMode,
+          publicModes,
           partySize,
         },
       });
@@ -79,54 +82,110 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                Preferred Transport
+                Car Preference
               </label>
               <div className="grid grid-cols-3 gap-3">
                 <button
                   type="button"
-                  onClick={() => setTransport("train")}
-                  className={`flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 transition-all ${
-                    transport === "train"
+                  onClick={() => setCarMode("none")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-xl border-2 transition-all ${
+                    carMode === "none"
                       ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
                       : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200 dark:hover:border-emerald-800"
                   }`}
                 >
-                  <Train className="w-6 h-6" />
-                  <span className="text-sm font-medium">Train</span>
+                  <X className="w-5 h-5" />
+                  <span className="text-xs font-medium">None</span>
                 </button>
-
                 <button
                   type="button"
-                  onClick={() => setTransport("car")}
-                  className={`flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 transition-all ${
-                    transport === "car"
+                  onClick={() => setCarMode("rental")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-xl border-2 transition-all ${
+                    carMode === "rental"
                       ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
                       : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200 dark:hover:border-emerald-800"
                   }`}
                 >
-                  <Car className="w-6 h-6" />
-                  <span className="text-sm font-medium text-center leading-tight">
+                  <Car className="w-5 h-5" />
+                  <span className="text-xs font-medium text-center leading-tight">
                     Rental
-                    <br />
-                    Car
                   </span>
                 </button>
-
                 <button
                   type="button"
-                  onClick={() => setTransport("my_car")}
-                  className={`flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 transition-all ${
-                    transport === "my_car"
+                  onClick={() => setCarMode("my_car")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-xl border-2 transition-all ${
+                    carMode === "my_car"
                       ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
                       : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200 dark:hover:border-emerald-800"
                   }`}
                 >
-                  <Car className="w-6 h-6" />
-                  <span className="text-sm font-medium text-center leading-tight">
-                    My
-                    <br />
-                    Car
+                  <Car className="w-5 h-5" />
+                  <span className="text-xs font-medium text-center leading-tight">
+                    My Car
                   </span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                Public Transport
+              </label>
+              <div className="grid grid-cols-3 gap-3">
+                <button
+                  type="button"
+                  onClick={() =>
+                    setPublicModes((prev) =>
+                      prev.includes("train")
+                        ? prev.filter((m) => m !== "train")
+                        : [...prev, "train"],
+                    )
+                  }
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-xl border-2 transition-all ${
+                    publicModes.includes("train")
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200 dark:hover:border-emerald-800"
+                  }`}
+                >
+                  <Train className="w-5 h-5" />
+                  <span className="text-xs font-medium">Train</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setPublicModes((prev) =>
+                      prev.includes("shinkansen")
+                        ? prev.filter((m) => m !== "shinkansen")
+                        : [...prev, "shinkansen"],
+                    )
+                  }
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-xl border-2 transition-all ${
+                    publicModes.includes("shinkansen")
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200 dark:hover:border-emerald-800"
+                  }`}
+                >
+                  <TrainFront className="w-5 h-5" />
+                  <span className="text-xs font-medium">Bullet</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setPublicModes((prev) =>
+                      prev.includes("bus")
+                        ? prev.filter((m) => m !== "bus")
+                        : [...prev, "bus"],
+                    )
+                  }
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-xl border-2 transition-all ${
+                    publicModes.includes("bus")
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200 dark:hover:border-emerald-800"
+                  }`}
+                >
+                  <Bus className="w-5 h-5" />
+                  <span className="text-xs font-medium">Bus</span>
                 </button>
               </div>
             </div>
