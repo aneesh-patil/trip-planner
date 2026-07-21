@@ -308,6 +308,7 @@ export default function Destinations() {
                 <DestinationCard
                   key={dest.id}
                   destination={dest}
+                  partySize={partySize}
                   activeTransportMode={(() => {
                     let validModes: string[] = [];
                     if (carMode === "rental" && dest.transportOptions?.car)

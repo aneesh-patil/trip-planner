@@ -27,11 +27,13 @@ import { getAdjustedBudget } from "@/shared/utils/utils";
 interface DestinationCardProps {
   destination: Destination;
   activeTransportMode?: string;
+  partySize?: number;
 }
 
 export default function DestinationCard({
   destination,
   activeTransportMode = "all",
+  partySize = 2,
 }: DestinationCardProps) {
   const {
     isFavorite,
@@ -145,49 +147,60 @@ export default function DestinationCard({
           // STANDARD EXPLORE VIEW (Simple, elegant tags instead of raw numbers)
           <div className="space-y-5">
             <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-sm font-semibold text-slate-700 dark:text-slate-300">
-              <div className="flex items-center">
-                {(() => {
-                  const to = destination.transportOptions || {};
-                  let mode = "train";
-                  let time = 0;
-                  if (
-                    activeTransportMode !== "all" &&
-                    to[activeTransportMode as keyof typeof to]
-                  ) {
-                    mode = activeTransportMode;
-                    time = to[activeTransportMode as keyof typeof to]!;
-                  } else {
-                    const entries = Object.entries(to).filter(
-                      ([_, v]) => v !== undefined,
-                    ) as [string, number][];
-                    if (entries.length > 0) {
-                      const fastest = entries.reduce((min, curr) =>
-                        curr[1] < min[1] ? curr : min,
-                      );
-                      mode = fastest[0];
-                      time = fastest[1];
-                    }
+              {(() => {
+                const to = destination.transportOptions || {};
+                let mode = "train";
+                let time = 0;
+                if (
+                  activeTransportMode !== "all" &&
+                  to[activeTransportMode as keyof typeof to]
+                ) {
+                  mode = activeTransportMode;
+                  time = to[activeTransportMode as keyof typeof to]!;
+                } else {
+                  const entries = Object.entries(to).filter(
+                    ([_, v]) => v !== undefined,
+                  ) as [string, number][];
+                  if (entries.length > 0) {
+                    const fastest = entries.reduce((min, curr) =>
+                      curr[1] < min[1] ? curr : min,
+                    );
+                    mode = fastest[0];
+                    time = fastest[1];
                   }
+                }
 
-                  let Icon = Train;
-                  if (mode === "car" || mode === "my_car") Icon = Car;
-                  if (mode === "bus") Icon = Bus;
-                  if (mode === "shinkansen") Icon = TrainFront;
+                let Icon = Train;
+                if (mode === "car" || mode === "my_car") Icon = Car;
+                if (mode === "bus") Icon = Bus;
+                if (mode === "shinkansen") Icon = TrainFront;
 
-                  return (
-                    <>
-                      <Icon className="w-4 h-4 mr-2 text-slate-400" />
-                      <span>{time > 0 ? `${time}m trip` : "N/A"}</span>
-                    </>
-                  );
-                })()}
-              </div>
+                return (
+                  <div
+                    className={`flex items-center ${activeTransportMode !== "all" ? "bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-2 py-1 rounded-md -ml-2" : ""}`}
+                  >
+                    <Icon
+                      className={`w-4 h-4 mr-2 ${activeTransportMode !== "all" ? "text-emerald-600 dark:text-emerald-500" : "text-slate-400"}`}
+                    />
+                    <span>{time > 0 ? `${time}m trip` : "N/A"}</span>
+                    {activeTransportMode !== "all" && (
+                      <span className="text-[10px] font-extrabold uppercase tracking-widest ml-2 bg-emerald-100 dark:bg-emerald-800/60 px-1.5 py-0.5 rounded-sm">
+                        Cheapest
+                      </span>
+                    )}
+                  </div>
+                );
+              })()}
               <div className="flex items-center">
                 <DollarSign className="w-4 h-4 mr-2 text-slate-400" />
                 <span>
                   ¥
                   {(
-                    getAdjustedBudget(destination, activeTransportMode) / 1000
+                    getAdjustedBudget(
+                      destination,
+                      activeTransportMode,
+                      partySize,
+                    ) / 1000
                   ).toFixed(0)}
                   k est.
                 </span>
