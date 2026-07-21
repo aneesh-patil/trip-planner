@@ -82,10 +82,13 @@ export function getRecommendations(
           score += 4 + Math.max(0, 12 - time / 10);
           if (time <= 60) reasons.push(`Fast train access (${time}m)`);
         }
-      } else if (transport === "car") {
-        if (!dest.transportOptions?.car) score -= 1000;
-        if (dest.transportOptions?.car) {
-          const time = dest.transportOptions.car;
+      } else if (transport === "car" || transport === "my_car") {
+        const time =
+          transport === "my_car"
+            ? dest.transportOptions?.my_car
+            : dest.transportOptions?.car;
+        if (!time) score -= 1000;
+        if (time) {
           score += 5 + Math.max(0, 10 - time / 15);
           if (time <= 60) reasons.push(`Easy drive (${time}m)`);
         }

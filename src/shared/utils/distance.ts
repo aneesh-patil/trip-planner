@@ -21,6 +21,7 @@ export function getDynamicTransportOptions(
   return {
     train: Math.round((distanceKm / 60) * 60),
     car: Math.round((distanceKm / 50) * 60),
+    my_car: Math.round((distanceKm / 50) * 60),
     bus: Math.round((distanceKm / 60) * 60),
     shinkansen:
       hasShinkansen && distanceKm > 60

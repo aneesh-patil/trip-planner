@@ -224,8 +224,13 @@ export default function DestinationFilters({
               )}
               {transportMode === "car" && (
                 <div className="flex items-center">
-                  <Car className="w-5 h-5 mr-3 text-emerald-500" /> Car
+                  <Car className="w-5 h-5 mr-3 text-emerald-500" /> Rental Car
                   Recommended
+                </div>
+              )}
+              {transportMode === "my_car" && (
+                <div className="flex items-center">
+                  <Car className="w-5 h-5 mr-3 text-emerald-500" /> My Car
                 </div>
               )}
               {transportMode === "shinkansen" && (
@@ -265,7 +270,16 @@ export default function DestinationFilters({
               >
                 <div className="flex items-center">
                   <Car className="w-4 h-4 mr-3 text-emerald-500" />{" "}
-                  <span className="font-medium">Car</span>
+                  <span className="font-medium">Rental Car</span>
+                </div>
+              </SelectItem>
+              <SelectItem
+                value="my_car"
+                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+              >
+                <div className="flex items-center">
+                  <Car className="w-4 h-4 mr-3 text-emerald-500" />{" "}
+                  <span className="font-medium">My Car</span>
                 </div>
               </SelectItem>
               <SelectItem

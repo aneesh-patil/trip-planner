@@ -170,7 +170,7 @@ export default function DestinationCard({
                   }
 
                   let Icon = Train;
-                  if (mode === "car") Icon = Car;
+                  if (mode === "car" || mode === "my_car") Icon = Car;
                   if (mode === "bus") Icon = Bus;
                   if (mode === "shinkansen") Icon = TrainFront;
 

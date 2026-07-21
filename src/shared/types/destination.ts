@@ -44,6 +44,7 @@ export interface Destination {
   transportOptions: {
     train?: number;
     car?: number;
+    my_car?: number;
     shinkansen?: number;
     bus?: number;
   };

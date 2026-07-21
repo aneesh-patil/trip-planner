@@ -53,6 +53,16 @@ export function getTransportCost(dest: Destination, mode: string): number {
     return rentalFee + tollsRoundTrip + gasRoundTrip;
   }
 
+  if (mode === "my_car" && dest.transportOptions?.my_car) {
+    const driveTimeOneWayMin = dest.transportOptions.my_car;
+    const distanceKm = driveTimeOneWayMin * 1.2;
+    const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
+    const gasRoundTrip = Math.floor(
+      ((distanceKm * 2) / 13) * GAS_PRICE_PER_LITER, // 13 km/L avg car
+    );
+    return tollsRoundTrip + gasRoundTrip;
+  }
+
   if (mode === "train" && dest.transportOptions?.train) {
     const mins = dest.transportOptions.train;
     // Trains > 70 mins usually require Limited Express surcharges (e.g. Romancecar, Hitachi, Azusa)

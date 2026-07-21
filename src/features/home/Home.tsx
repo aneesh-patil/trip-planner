@@ -504,7 +504,13 @@ export default function Home() {
                       {transport === "car" && (
                         <div className="flex items-center">
                           <Car className="w-5 h-5 mr-3 text-slate-600" />{" "}
-                          Driving a Car
+                          Driving a Rental Car
+                        </div>
+                      )}
+                      {transport === "my_car" && (
+                        <div className="flex items-center">
+                          <Car className="w-5 h-5 mr-3 text-emerald-600" />{" "}
+                          Driving My Car
                         </div>
                       )}
                       {transport === "shinkansen" && (
@@ -550,7 +556,18 @@ export default function Home() {
                         <div className="flex items-center">
                           <Car className="w-5 h-5 mr-3 text-slate-600" />{" "}
                           <span className="text-base font-medium">
-                            Driving a Car
+                            Driving a Rental Car
+                          </span>
+                        </div>
+                      </SelectItem>
+                      <SelectItem
+                        value="my_car"
+                        className="py-3 px-4 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                      >
+                        <div className="flex items-center">
+                          <Car className="w-5 h-5 mr-3 text-emerald-600" />{" "}
+                          <span className="text-base font-medium">
+                            Driving My Car
                           </span>
                         </div>
                       </SelectItem>

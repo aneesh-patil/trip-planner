@@ -81,7 +81,7 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                 Preferred Transport
               </label>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-3 gap-3">
                 <button
                   type="button"
                   onClick={() => setTransport("train")}
@@ -92,7 +92,7 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
                   }`}
                 >
                   <Train className="w-6 h-6" />
-                  <span className="text-sm font-medium">Train / Transit</span>
+                  <span className="text-sm font-medium">Train</span>
                 </button>
 
                 <button
@@ -105,7 +105,28 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
                   }`}
                 >
                   <Car className="w-6 h-6" />
-                  <span className="text-sm font-medium">Car Rental</span>
+                  <span className="text-sm font-medium text-center leading-tight">
+                    Rental
+                    <br />
+                    Car
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setTransport("my_car")}
+                  className={`flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 transition-all ${
+                    transport === "my_car"
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200 dark:hover:border-emerald-800"
+                  }`}
+                >
+                  <Car className="w-6 h-6" />
+                  <span className="text-sm font-medium text-center leading-tight">
+                    My
+                    <br />
+                    Car
+                  </span>
                 </button>
               </div>
             </div>

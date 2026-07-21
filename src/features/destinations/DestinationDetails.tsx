@@ -352,7 +352,7 @@ export default function DestinationDetails() {
                         {destination.transportOptions?.car && (
                           <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
                             <span className="text-slate-500 flex items-center">
-                              <Car className="w-4 h-4 mr-1.5" /> Car
+                              <Car className="w-4 h-4 mr-1.5" /> Rental Car
                             </span>
                             <div className="text-right">
                               <div className="font-semibold text-slate-700 dark:text-slate-300">
@@ -364,6 +364,28 @@ export default function DestinationDetails() {
                                   budgetService.getTransportCost(
                                     destination,
                                     "car",
+                                  ) / 1000
+                                ).toFixed(1)}
+                                k
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        {destination.transportOptions?.my_car && (
+                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                            <span className="text-slate-500 flex items-center">
+                              <Car className="w-4 h-4 mr-1.5" /> My Car
+                            </span>
+                            <div className="text-right">
+                              <div className="font-semibold text-slate-700 dark:text-slate-300">
+                                {destination.transportOptions.my_car}m
+                              </div>
+                              <div className="text-xs text-slate-400">
+                                est. ¥
+                                {(
+                                  budgetService.getTransportCost(
+                                    destination,
+                                    "my_car",
                                   ) / 1000
                                 ).toFixed(1)}
                                 k
@@ -410,7 +432,8 @@ export default function DestinationDetails() {
                                 const names: Record<string, string> = {
                                   train: "Train",
                                   shinkansen: "Shinkansen",
-                                  car: "Car",
+                                  car: "Rental Car",
+                                  my_car: "My Car",
                                   bus: "Bus",
                                 };
                                 return (
@@ -440,7 +463,8 @@ export default function DestinationDetails() {
                                   {
                                     train: "🚆 Local Train",
                                     shinkansen: "🚄 Shinkansen",
-                                    car: "🚗 Car & Tolls",
+                                    car: "🚗 Rental Car & Tolls",
+                                    my_car: "🚗 My Car (Gas & Tolls)",
                                     bus: "🚌 Highway Bus",
                                   } as Record<string, string>
                                 )[selectedTransport]
