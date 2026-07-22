@@ -20,6 +20,7 @@ const PrefectureChecklist = lazy(
 const Terms = lazy(() => import("./features/legal/Terms"));
 const Privacy = lazy(() => import("./features/legal/Privacy"));
 const Cookies = lazy(() => import("./features/legal/Cookies"));
+const MyTrips = lazy(() => import("./features/profile/MyTrips"));
 
 function PageLoader() {
   return (
@@ -48,6 +49,7 @@ function App() {
                     />
                     <Route path="/compare" element={<Compare />} />
                     <Route path="/favorites" element={<Favorites />} />
+                    <Route path="/my-trips" element={<MyTrips />} />
                     <Route
                       path="/visited-map"
                       element={<PrefectureChecklist />}
