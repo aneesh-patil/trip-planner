@@ -1,274 +1,225 @@
 [
   {
-    "id": "hakone-onsen",
-    "name": "Hakone",
-    "prefecture": "Kanagawa",
+    "id": "akasaka-minato",
+    "name": "Akasaka (Minato)",
+    "prefecture": "Tokyo",
     "region": "Kanto",
-    "categories": ["Onsen", "Nature", "Museums"],
-    "heroImage": "/images/hakone_hero.jpg",
-    "totalTripHours": 24,
-    "budgetMin": 16200,
-    "budgetRecommended": 19200,
-    "budgetMax": 24200,
-    "walkingMin": 4000,
+    "categories": ["City", "Food", "History"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Akasaka_skyline_201806.jpg/960px-Akasaka_skyline_201806.jpg",
+    "totalTripHours": 5,
+    "budgetMin": 7600,
+    "budgetRecommended": 11600,
+    "budgetMax": 15600,
+    "walkingMin": 5000,
     "walkingSunMin": 2000,
-    "walkingShadeMin": 2000,
-    "indoorPercent": 40,
-    "ratings": {
-      "overall": 9.2,
-      "couple": 9.5,
-      "summer": 7,
-      "winter": 9.5,
-      "rain": 8,
-      "food": 8.5,
-      "photography": 9,
-      "relaxation": 9.8,
-      "value": 7.5,
-      "uniqueness": 8.5
-    },
-    "crowd": {
-      "weekday": 5,
-      "weekend": 9,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 8,
-      "summer": 6,
-      "autumn": 10,
-      "winter": 9
-    },
-    "bestMonths": [10, 11, 12, 1, 2],
-    "tags": ["Romantic", "Relaxing", "Scenic"],
-    "coordinates": {
-      "lat": 35.2323662,
-      "lng": 139.1068849
-    },
-    "comfort": {
-      "heatTolerance": 7,
-      "rainFriendly": 4,
-      "walkingIntensity": 4
-    },
-    "image": "https://loremflickr.com/1000/800/japan,hakone/all?lock=1000",
-    "transportOptions": {
-      "train": 85
-    }
-  },
-  {
-    "id": "kamakura-history",
-    "name": "Kamakura",
-    "prefecture": "Kanagawa",
-    "region": "Kanto",
-    "categories": ["History", "Temples", "Beach"],
-    "heroImage": "/images/kamakura_hero.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 7000,
-    "budgetRecommended": 10000,
-    "budgetMax": 15000,
-    "walkingMin": 10000,
-    "walkingSunMin": 7000,
     "walkingShadeMin": 3000,
-    "indoorPercent": 15,
+    "indoorPercent": 70,
     "ratings": {
-      "overall": 8.8,
-      "couple": 8.5,
-      "summer": 9,
-      "winter": 6.5,
-      "rain": 4,
-      "food": 8,
-      "photography": 8.5,
-      "relaxation": 7,
-      "value": 9,
+      "overall": 8.5,
+      "couple": 9,
+      "summer": 8,
+      "winter": 8.5,
+      "rain": 8.5,
+      "food": 10,
+      "photography": 8,
+      "relaxation": 8,
+      "value": 7.5,
       "uniqueness": 8
     },
     "crowd": {
-      "weekday": 6,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 9,
-      "summer": 9,
-      "autumn": 8,
-      "winter": 5
-    },
-    "bestMonths": [5, 6, 7, 8, 9],
-    "tags": ["Day Trip", "Culture", "Walk-heavy"],
-    "coordinates": {
-      "lat": 35.3192808,
-      "lng": 139.5469627
-    },
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 1.5,
-      "walkingIntensity": 10
-    },
-    "image": "https://loremflickr.com/1000/800/japan,kamakura/all?lock=1001",
-    "transportOptions": {
-      "train": 60
-    }
-  },
-  {
-    "id": "kawagoe-edo",
-    "name": "Kawagoe",
-    "prefecture": "Saitama",
-    "region": "Kanto",
-    "categories": ["History", "Food", "Architecture"],
-    "heroImage": "/images/kawagoe_hero.jpg",
-    "totalTripHours": 6,
-    "budgetMin": 8500,
-    "budgetRecommended": 11500,
-    "budgetMax": 16500,
-    "walkingMin": 8000,
-    "walkingSunMin": 6000,
-    "walkingShadeMin": 2000,
-    "indoorPercent": 20,
-    "ratings": {
-      "overall": 8.2,
-      "couple": 8,
-      "summer": 5,
-      "winter": 7.5,
-      "rain": 6,
-      "food": 9,
-      "photography": 9.5,
-      "relaxation": 6,
-      "value": 9.5,
-      "uniqueness": 8.5
-    },
-    "crowd": {
-      "weekday": 4,
-      "weekend": 8,
-      "holiday": 9
+      "weekday": 8,
+      "weekend": 7,
+      "holiday": 6
     },
     "season": {
       "spring": 8,
-      "summer": 4,
-      "autumn": 9,
-      "winter": 7
+      "summer": 8,
+      "autumn": 8,
+      "winter": 8
     },
-    "bestMonths": [3, 4, 10, 11],
-    "tags": ["Foodie", "Photogenic", "Budget-friendly"],
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Upscale", "Dining", "Business"],
     "coordinates": {
-      "lat": 35.9251145,
-      "lng": 139.4856927
+      "lat": 35.6734932,
+      "lng": 139.7277088
     },
     "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 2,
-      "walkingIntensity": 8
+      "heatTolerance": 8,
+      "rainFriendly": 7,
+      "walkingIntensity": 5
     },
-    "image": "https://loremflickr.com/1000/800/japan,kawagoe/all?lock=1002",
+    "image": "https://loremflickr.com/1000/800/japan,akasaka/all?lock=1030",
     "transportOptions": {
       "train": 45
-    }
+    },
+    "description": "Akasaka (Minato) in Tokyo, Japan.",
+    "highlights": ["Akasaka (Minato)"]
   },
   {
-    "id": "nikko-heritage",
-    "name": "Nikko",
-    "prefecture": "Tochigi",
+    "id": "akihabara-chiyoda",
+    "name": "Akihabara (Chiyoda)",
+    "prefecture": "Tokyo",
     "region": "Kanto",
-    "categories": ["History", "Nature", "Temples"],
-    "heroImage": "/images/nikko_hero.jpg",
-    "totalTripHours": 36,
-    "budgetMin": 13000,
-    "budgetRecommended": 16000,
-    "budgetMax": 21000,
-    "walkingMin": 12000,
-    "walkingSunMin": 5000,
-    "walkingShadeMin": 7000,
-    "indoorPercent": 30,
+    "categories": ["City", "Shopping"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/960px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
+    "totalTripHours": 6,
+    "budgetMin": 6000,
+    "budgetRecommended": 10000,
+    "budgetMax": 14000,
+    "walkingMin": 8000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 60,
     "ratings": {
-      "overall": 9.4,
-      "couple": 8.8,
-      "summer": 8.5,
+      "overall": 8.8,
+      "couple": 7,
+      "summer": 7,
       "winter": 8,
-      "rain": 6.5,
+      "rain": 8,
       "food": 7.5,
-      "photography": 10,
-      "relaxation": 8.5,
+      "photography": 9,
+      "relaxation": 5,
       "value": 8,
-      "uniqueness": 9.5
+      "uniqueness": 10
     },
     "crowd": {
-      "weekday": 6,
-      "weekend": 9,
+      "weekday": 8,
+      "weekend": 10,
       "holiday": 10
     },
     "season": {
       "spring": 8,
       "summer": 8,
-      "autumn": 10,
-      "winter": 7
+      "autumn": 8,
+      "winter": 8
     },
-    "bestMonths": [9, 10, 11],
-    "tags": ["World Heritage", "Nature", "Overnight"],
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Anime", "Electronics", "Pop Culture"],
     "coordinates": {
-      "lat": 36.7197576,
-      "lng": 139.698139
+      "lat": 35.6985177,
+      "lng": 139.7754836
     },
     "comfort": {
-      "heatTolerance": 8.5,
-      "rainFriendly": 3,
-      "walkingIntensity": 12
+      "heatTolerance": 7,
+      "rainFriendly": 6,
+      "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,nikko/all?lock=1003",
+    "image": "https://loremflickr.com/1000/800/japan,akihabara/all?lock=1021",
     "transportOptions": {
-      "train": 120,
-      "car": 130
-    }
+      "train": 40
+    },
+    "description": "Akihabara (Chiyoda) in Tokyo, Japan.",
+    "highlights": ["Akihabara (Chiyoda)"]
   },
   {
-    "id": "yokohama-city",
-    "name": "Yokohama",
-    "prefecture": "Kanagawa",
+    "id": "asakusa-taito",
+    "name": "Asakusa (Taito)",
+    "prefecture": "Tokyo",
     "region": "Kanto",
-    "categories": ["City", "Food", "Shopping"],
-    "heroImage": "/images/yokohama_hero.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 8000,
-    "budgetRecommended": 11000,
-    "budgetMax": 16000,
-    "walkingMin": 8000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 70,
+    "categories": ["History", "City"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/960px-Sensoji_2023.jpg",
+    "totalTripHours": 5,
+    "budgetMin": 6500,
+    "budgetRecommended": 10500,
+    "budgetMax": 14500,
+    "walkingMin": 7000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 20,
     "ratings": {
       "overall": 9,
-      "couple": 9.8,
-      "summer": 7.5,
+      "couple": 8.5,
+      "summer": 6.5,
       "winter": 8.5,
-      "rain": 8.5,
-      "food": 9.5,
-      "photography": 9,
-      "relaxation": 8,
-      "value": 8.5,
-      "uniqueness": 7.5
+      "rain": 6,
+      "food": 9,
+      "photography": 9.5,
+      "relaxation": 7,
+      "value": 9,
+      "uniqueness": 9.5
     },
     "crowd": {
-      "weekday": 5,
-      "weekend": 9,
-      "holiday": 9
+      "weekday": 9,
+      "weekend": 10,
+      "holiday": 10
     },
     "season": {
       "spring": 9,
-      "summer": 7,
+      "summer": 6,
       "autumn": 9,
-      "winter": 9
+      "winter": 8
     },
     "bestMonths": [3, 4, 5, 9, 10, 11, 12],
-    "tags": ["Date Spot", "Foodie", "Night View"],
+    "tags": ["Traditional", "Street Food", "Culture"],
     "coordinates": {
-      "lat": 35.4503381,
-      "lng": 139.6343802
+      "lat": 35.7111543,
+      "lng": 139.7954005
     },
     "comfort": {
-      "heatTolerance": 7.5,
-      "rainFriendly": 7,
-      "walkingIntensity": 8
+      "heatTolerance": 6.5,
+      "rainFriendly": 2,
+      "walkingIntensity": 7
     },
-    "image": "https://loremflickr.com/1000/800/japan,yokohama/all?lock=1004",
+    "image": "https://loremflickr.com/1000/800/japan,asakusa/all?lock=1029",
     "transportOptions": {
-      "train": 30
-    }
+      "train": 50
+    },
+    "description": "Asakusa (Taito) in Tokyo, Japan.",
+    "highlights": ["Asakusa (Taito)"]
+  },
+  {
+    "id": "ashigara",
+    "name": "Ashigara",
+    "region": "Kanto",
+    "categories": ["Nature", "Mountain"],
+    "tags": ["Hiking", "Quiet"],
+    "budgetRecommended": 5500,
+    "ratings": {
+      "overall": 7.8,
+      "photography": 8.2,
+      "food": 6,
+      "summer": 8,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 35.3236,
+      "lng": 139.0436
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 2000,
+    "budgetMax": 9000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 80
+    },
+    "description": "Ashigara in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Ashigara"]
   },
   {
     "id": "atami-resort",
@@ -279,7 +230,7 @@
     "heroImage": "/images/atami_hero.jpg",
     "totalTripHours": 24,
     "budgetMin": 13400,
-    "budgetRecommended": 16400,
+    "budgetRecommended": 17400,
     "budgetMax": 21400,
     "walkingMin": 5000,
     "walkingSunMin": 3000,
@@ -324,7 +275,9 @@
       "train": 87,
       "shinkansen": 45,
       "car": 90
-    }
+    },
+    "description": "Atami in Shizuoka, Japan.",
+    "highlights": ["Atami"]
   },
   {
     "id": "boso-peninsula",
@@ -335,7 +288,7 @@
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/960px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
     "totalTripHours": 12,
     "budgetMin": 12000,
-    "budgetRecommended": 15000,
+    "budgetRecommended": 16000,
     "budgetMax": 20000,
     "walkingMin": 5000,
     "walkingSunMin": 3000,
@@ -378,444 +331,119 @@
     "image": "https://loremflickr.com/1000/800/japan,boso/all?lock=1006",
     "transportOptions": {
       "car": 90
-    }
+    },
+    "description": "Boso Peninsula in Chiba, Japan.",
+    "highlights": ["Boso Peninsula"]
   },
   {
-    "id": "matsumoto",
-    "name": "Matsumoto",
-    "prefecture": "Nagano",
-    "region": "Chubu",
-    "categories": ["Castle", "History"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/960px-Matsumoto_Castle_Keep_Tower.jpg",
-    "totalTripHours": 12,
-    "budgetMin": 11600,
-    "budgetRecommended": 14600,
-    "budgetMax": 19600,
-    "walkingMin": 8000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 30,
-    "ratings": {
-      "overall": 9.6,
-      "couple": 9.5,
-      "summer": 9.8,
-      "winter": 8,
-      "rain": 6,
-      "food": 9,
-      "photography": 10,
-      "relaxation": 8,
-      "value": 8.5,
-      "uniqueness": 9
-    },
-    "crowd": {
-      "weekday": 4,
-      "weekend": 8,
-      "holiday": 9
-    },
-    "season": {
-      "spring": 9,
-      "summer": 10,
-      "autumn": 9,
-      "winter": 6
-    },
-    "bestMonths": [6, 7, 8, 9, 10],
-    "tags": ["Historic", "Mountains"],
-    "coordinates": {
-      "lat": 36.2382047,
-      "lng": 137.9687141
-    },
-    "comfort": {
-      "heatTolerance": 9.8,
-      "rainFriendly": 3,
-      "walkingIntensity": 8
-    },
-    "image": "https://loremflickr.com/1000/800/japan,matsumoto/all?lock=1007",
-    "transportOptions": {
-      "car": 210
-    }
-  },
-  {
-    "id": "harry-potter-studio",
-    "name": "Harry Potter Studio",
-    "prefecture": "Tokyo",
+    "id": "chiba-city",
+    "name": "Chiba City",
     "region": "Kanto",
-    "categories": ["Theme Park", "Indoor"],
-    "heroImage": "/images/harry-potter-studio.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 17900,
-    "budgetRecommended": 20900,
-    "budgetMax": 25900,
-    "walkingMin": 6000,
-    "walkingSunMin": 500,
-    "walkingShadeMin": 5500,
-    "indoorPercent": 95,
+    "categories": ["City", "Museum"],
+    "tags": ["Urban", "Shopping"],
+    "budgetRecommended": 8000,
     "ratings": {
-      "overall": 9.5,
-      "couple": 10,
-      "summer": 9.8,
-      "winter": 9.8,
-      "rain": 10,
-      "food": 8.5,
-      "photography": 9.5,
-      "relaxation": 7,
-      "value": 8.5,
-      "uniqueness": 9.5
-    },
-    "crowd": {
-      "weekday": 7,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 10,
-      "summer": 10,
-      "autumn": 10,
-      "winter": 10
-    },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Indoor", "Pop Culture"],
-    "coordinates": {
-      "lat": 35.74562,
-      "lng": 139.645745
-    },
-    "comfort": {
-      "heatTolerance": 9.8,
-      "rainFriendly": 9.5,
-      "walkingIntensity": 6
-    },
-    "image": "https://loremflickr.com/1000/800/japan,harry/all?lock=1008",
-    "transportOptions": {
-      "train": 45
-    }
-  },
-  {
-    "id": "karuizawa",
-    "name": "Karuizawa",
-    "prefecture": "Nagano",
-    "region": "Chubu",
-    "categories": ["Nature", "Shopping", "Resort"],
-    "heroImage": "/images/karuizawa.jpg",
-    "totalTripHours": 12,
-    "budgetMin": 8000,
-    "budgetRecommended": 11000,
-    "budgetMax": 16000,
-    "walkingMin": 8000,
-    "walkingSunMin": 2000,
-    "walkingShadeMin": 6000,
-    "indoorPercent": 40,
-    "ratings": {
-      "overall": 9.4,
-      "couple": 9.5,
-      "summer": 9.7,
-      "winter": 8,
-      "rain": 6,
-      "food": 8.5,
-      "photography": 10,
-      "relaxation": 9,
-      "value": 8,
-      "uniqueness": 8.5
-    },
-    "crowd": {
-      "weekday": 6,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 8,
-      "summer": 10,
-      "autumn": 9,
-      "winter": 7
-    },
-    "bestMonths": [7, 8, 9, 10],
-    "tags": ["Cool Summer", "Upscale"],
-    "coordinates": {
-      "lat": 36.3482938,
-      "lng": 138.5969968
-    },
-    "comfort": {
-      "heatTolerance": 9.7,
-      "rainFriendly": 4,
-      "walkingIntensity": 8
-    },
-    "image": "https://loremflickr.com/1000/800/japan,karuizawa/all?lock=1009",
-    "transportOptions": {
-      "train": 70,
-      "car": 180,
-      "shinkansen": 42,
-      "bus": 180
-    }
-  },
-  {
-    "id": "utsunomiya-oya",
-    "name": "Utsunomiya & Oya",
-    "prefecture": "Tochigi",
-    "region": "Kanto",
-    "categories": ["History", "Food"],
-    "heroImage": "/images/utsunomiya-oya.jpg",
-    "totalTripHours": 10,
-    "budgetMin": 9600,
-    "budgetRecommended": 12600,
-    "budgetMax": 17600,
-    "walkingMin": 5000,
-    "walkingSunMin": 2000,
-    "walkingShadeMin": 3000,
-    "indoorPercent": 80,
-    "ratings": {
-      "overall": 9.2,
-      "couple": 9,
-      "summer": 9.6,
-      "winter": 8,
-      "rain": 9,
-      "food": 9,
-      "photography": 9,
-      "relaxation": 7,
-      "value": 9.5,
-      "uniqueness": 9.5
-    },
-    "crowd": {
-      "weekday": 3,
-      "weekend": 7,
-      "holiday": 8
-    },
-    "season": {
-      "spring": 8,
-      "summer": 10,
-      "autumn": 8,
-      "winter": 7
-    },
-    "bestMonths": [6, 7, 8],
-    "tags": ["Unique", "Foodie", "Underground"],
-    "coordinates": {
-      "lat": 36.5955648,
-      "lng": 139.819711
-    },
-    "comfort": {
-      "heatTolerance": 9.6,
-      "rainFriendly": 8,
-      "walkingIntensity": 5
-    },
-    "image": "https://loremflickr.com/1000/800/japan,utsunomiya/all?lock=1010",
-    "transportOptions": {
-      "train": 100,
-      "car": 150
-    }
-  },
-  {
-    "id": "disneysea",
-    "name": "DisneySea",
-    "prefecture": "Chiba",
-    "region": "Kanto",
-    "categories": ["Theme Park"],
-    "heroImage": "/images/disneysea.jpg",
-    "totalTripHours": 13,
-    "budgetMin": 26800,
-    "budgetRecommended": 29800,
-    "budgetMax": 34800,
-    "walkingMin": 20000,
-    "walkingSunMin": 15000,
-    "walkingShadeMin": 5000,
-    "indoorPercent": 40,
-    "ratings": {
-      "overall": 9.1,
-      "couple": 10,
+      "overall": 7.5,
+      "photography": 6.5,
+      "food": 7.5,
       "summer": 6,
+      "couple": 8,
       "winter": 7,
-      "rain": 5,
-      "food": 8.5,
-      "photography": 10,
-      "relaxation": 5,
+      "rain": 6,
+      "relaxation": 8,
       "value": 8,
-      "uniqueness": 10
-    },
-    "crowd": {
-      "weekday": 9,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 10,
-      "summer": 5,
-      "autumn": 10,
-      "winter": 8
-    },
-    "bestMonths": [4, 5, 9, 10, 11],
-    "tags": ["Theme Park", "Walk-heavy"],
-    "coordinates": {
-      "lat": 35.6273011,
-      "lng": 139.8879707
-    },
-    "comfort": {
-      "heatTolerance": 6,
-      "rainFriendly": 4,
-      "walkingIntensity": 20
-    },
-    "image": "https://loremflickr.com/1000/800/japan,disneysea/all?lock=1011",
-    "transportOptions": {
-      "train": 90
-    }
-  },
-  {
-    "id": "tsukuba",
-    "name": "Mt. Tsukuba",
-    "prefecture": "Ibaraki",
-    "region": "Kanto",
-    "categories": ["Mountain", "Nature"],
-    "heroImage": "/images/tsukuba.jpg",
-    "totalTripHours": 11,
-    "budgetMin": 10000,
-    "budgetRecommended": 13000,
-    "budgetMax": 18000,
-    "walkingMin": 10000,
-    "walkingSunMin": 5000,
-    "walkingShadeMin": 5000,
-    "indoorPercent": 10,
-    "ratings": {
-      "overall": 9.1,
-      "couple": 9,
-      "summer": 8,
-      "winter": 6,
-      "rain": 3,
-      "food": 8.5,
-      "photography": 9.5,
-      "relaxation": 7.5,
-      "value": 8.5,
       "uniqueness": 8
     },
+    "indoorPercent": 70,
+    "coordinates": {
+      "lat": 35.6073,
+      "lng": 140.1063
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 4000,
+    "budgetMax": 12000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 70,
+      "car": 60
+    },
+    "description": "Chiba City in Kanagawa, Japan.",
     "crowd": {
-      "weekday": 4,
-      "weekend": 8,
-      "holiday": 9
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
     },
     "season": {
-      "spring": 9,
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Chiba City"]
+  },
+  {
+    "id": "chichibu",
+    "name": "Chichibu",
+    "region": "Kanto",
+    "categories": ["Mountain", "Shrine"],
+    "tags": ["Nature", "Festivals"],
+    "budgetRecommended": 9000,
+    "ratings": {
+      "overall": 8.5,
+      "photography": 8.8,
+      "food": 8,
       "summer": 8,
-      "autumn": 10,
-      "winter": 5
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
     },
-    "bestMonths": [4, 5, 10, 11],
-    "tags": ["Hiking", "Views"],
+    "indoorPercent": 20,
     "coordinates": {
-      "lat": 36.2253952,
-      "lng": 140.1067186
+      "lat": 35.9961,
+      "lng": 139.0831
     },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
+    "prefecture": "Kanagawa",
+    "budgetMin": 5000,
+    "budgetMax": 13000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
     "comfort": {
-      "heatTolerance": 8,
-      "rainFriendly": 1,
-      "walkingIntensity": 10
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
     },
-    "image": "https://loremflickr.com/1000/800/japan,mt./all?lock=1012",
     "transportOptions": {
       "train": 120,
-      "car": 150
-    }
-  },
-  {
-    "id": "omiya-railway",
-    "name": "Omiya Railway Museum",
-    "prefecture": "Saitama",
-    "region": "Kanto",
-    "categories": ["Museum", "Indoor"],
-    "heroImage": "/images/omiya-railway.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 9700,
-    "budgetRecommended": 12700,
-    "budgetMax": 17700,
-    "walkingMin": 4000,
-    "walkingSunMin": 500,
-    "walkingShadeMin": 3500,
-    "indoorPercent": 95,
-    "ratings": {
-      "overall": 8.8,
-      "couple": 9,
-      "summer": 9.5,
-      "winter": 9.5,
-      "rain": 10,
-      "food": 8,
-      "photography": 8.5,
-      "relaxation": 8,
-      "value": 9,
-      "uniqueness": 9
+      "car": 110
     },
+    "description": "Chichibu in Kanagawa, Japan.",
     "crowd": {
-      "weekday": 4,
-      "weekend": 9,
-      "holiday": 10
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
     },
     "season": {
-      "spring": 10,
-      "summer": 10,
-      "autumn": 10,
-      "winter": 10
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
     },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Indoor", "Family-friendly"],
-    "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
-    },
-    "comfort": {
-      "heatTolerance": 9.5,
-      "rainFriendly": 9.5,
-      "walkingIntensity": 4
-    },
-    "image": "https://loremflickr.com/1000/800/japan,omiya/all?lock=1013",
-    "transportOptions": {
-      "train": 100
-    }
-  },
-  {
-    "id": "joypolis",
-    "name": "Joypolis Odaiba",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["Indoor Park", "Gaming"],
-    "heroImage": "/images/joypolis.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 16000,
-    "budgetRecommended": 19000,
-    "budgetMax": 24000,
-    "walkingMin": 4000,
-    "walkingSunMin": 0,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 90,
-    "ratings": {
-      "overall": 8.7,
-      "couple": 9,
-      "summer": 9.3,
-      "winter": 9.3,
-      "rain": 9.5,
-      "food": 8,
-      "photography": 8.5,
-      "relaxation": 6,
-      "value": 8,
-      "uniqueness": 8.5
-    },
-    "crowd": {
-      "weekday": 6,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 10,
-      "summer": 10,
-      "autumn": 10,
-      "winter": 10
-    },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Indoor", "Action"],
-    "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
-    },
-    "comfort": {
-      "heatTolerance": 9.3,
-      "rainFriendly": 9,
-      "walkingIntensity": 4
-    },
-    "image": "https://loremflickr.com/1000/800/japan,joypolis/all?lock=1014",
-    "transportOptions": {
-      "train": 90
-    }
+    "highlights": ["Chichibu"]
   },
   {
     "id": "disneyland",
@@ -826,7 +454,7 @@
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg/960px-Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg",
     "totalTripHours": 12,
     "budgetMin": 26800,
-    "budgetRecommended": 29800,
+    "budgetRecommended": 30800,
     "budgetMax": 34800,
     "walkingMin": 12000,
     "walkingSunMin": 6000,
@@ -869,656 +497,65 @@
     "image": "https://loremflickr.com/1000/800/japan,tokyo/all?lock=1015",
     "transportOptions": {
       "train": 45
-    }
+    },
+    "description": "Tokyo Disneyland in Chiba, Japan.",
+    "highlights": ["Tokyo Disneyland"]
   },
   {
-    "id": "ghibli-museum",
-    "name": "Ghibli Museum",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["Theme Park", "Museum", "Art"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/960px-Ghibli_Museum_2024.JPG",
-    "totalTripHours": 6,
-    "budgetMin": 6900,
-    "budgetRecommended": 9900,
-    "budgetMax": 14900,
-    "walkingMin": 5000,
-    "walkingSunMin": 1000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 90,
-    "ratings": {
-      "overall": 9.5,
-      "couple": 9,
-      "summer": 9.5,
-      "winter": 9.5,
-      "rain": 9.5,
-      "food": 8,
-      "photography": 8,
-      "relaxation": 8,
-      "value": 9.5,
-      "uniqueness": 10
-    },
-    "crowd": {
-      "weekday": 8,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 9,
-      "summer": 9,
-      "autumn": 9,
-      "winter": 9
-    },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Anime", "Indoor", "Art"],
-    "coordinates": {
-      "lat": 35.6961731,
-      "lng": 139.5706324
-    },
-    "comfort": {
-      "heatTolerance": 9.5,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "image": "https://loremflickr.com/1000/800/japan,ghibli/all?lock=1016",
-    "transportOptions": {
-      "train": 50
-    }
-  },
-  {
-    "id": "yomiuriland",
-    "name": "Yomiuriland",
-    "prefecture": "Tokyo",
+    "id": "disneysea",
+    "name": "DisneySea",
+    "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Yomiuriland-20100411.jpg/960px-Yomiuriland-20100411.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 9000,
-    "budgetRecommended": 12000,
-    "budgetMax": 17000,
-    "walkingMin": 8000,
-    "walkingSunMin": 5000,
-    "walkingShadeMin": 3000,
-    "indoorPercent": 20,
+    "heroImage": "/images/disneysea.jpg",
+    "totalTripHours": 13,
+    "budgetMin": 26800,
+    "budgetRecommended": 30800,
+    "budgetMax": 34800,
+    "walkingMin": 20000,
+    "walkingSunMin": 15000,
+    "walkingShadeMin": 5000,
+    "indoorPercent": 40,
     "ratings": {
-      "overall": 8.5,
-      "couple": 9,
-      "summer": 7,
-      "winter": 9.5,
-      "rain": 4,
-      "food": 7,
-      "photography": 9,
-      "relaxation": 6,
-      "value": 8.5,
-      "uniqueness": 8
-    },
-    "crowd": {
-      "weekday": 5,
-      "weekend": 9,
-      "holiday": 9
-    },
-    "season": {
-      "spring": 8,
-      "summer": 7,
-      "autumn": 8,
-      "winter": 10
-    },
-    "bestMonths": [11, 12, 1, 2],
-    "tags": ["Theme Park", "Illumination", "Thrill Rides"],
-    "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
-    },
-    "comfort": {
-      "heatTolerance": 7,
-      "rainFriendly": 2,
-      "walkingIntensity": 8
-    },
-    "image": "https://loremflickr.com/1000/800/japan,yomiuriland/all?lock=1017",
-    "transportOptions": {
-      "train": 60,
-      "car": 60
-    }
-  },
-  {
-    "id": "teamlab-planets",
-    "name": "teamLab Planets",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["Art", "Theme Park", "Indoor"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
-    "totalTripHours": 4,
-    "budgetMin": 11600,
-    "budgetRecommended": 14600,
-    "budgetMax": 19600,
-    "walkingMin": 3000,
-    "walkingSunMin": 0,
-    "walkingShadeMin": 3000,
-    "indoorPercent": 100,
-    "ratings": {
-      "overall": 9.2,
-      "couple": 9.8,
-      "summer": 10,
-      "winter": 10,
-      "rain": 10,
-      "food": 8,
-      "photography": 10,
-      "relaxation": 8.5,
-      "value": 8.5,
-      "uniqueness": 10
-    },
-    "crowd": {
-      "weekday": 8,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 9,
-      "summer": 9,
-      "autumn": 9,
-      "winter": 9
-    },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Digital Art", "Photogenic", "Date Spot"],
-    "coordinates": {
-      "lat": 35.64938,
-      "lng": 139.789728
-    },
-    "comfort": {
-      "heatTolerance": 10,
-      "rainFriendly": 10,
-      "walkingIntensity": 3
-    },
-    "image": "https://loremflickr.com/1000/800/japan,teamlab/all?lock=1018",
-    "transportOptions": {
-      "train": 50
-    }
-  },
-  {
-    "id": "ginza-urban",
-    "name": "Ginza",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["City", "Shopping", "Art", "History"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ginza-WAKO_at_night.jpg/960px-Ginza-WAKO_at_night.jpg",
-    "totalTripHours": 6,
-    "budgetMin": 8000,
-    "budgetRecommended": 11000,
-    "budgetMax": 16000,
-    "walkingMin": 7000,
-    "walkingSunMin": 3000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 80,
-    "ratings": {
-      "overall": 9,
-      "couple": 9,
-      "summer": 8.5,
-      "winter": 9,
-      "rain": 9,
-      "food": 10,
-      "photography": 8.5,
-      "relaxation": 7,
-      "value": 7,
-      "uniqueness": 8.5
-    },
-    "crowd": {
-      "weekday": 7,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 9,
-      "summer": 8,
-      "autumn": 9,
-      "winter": 9
-    },
-    "bestMonths": [3, 4, 5, 9, 10, 11, 12],
-    "tags": ["Luxury", "Shopping", "Architecture"],
-    "coordinates": {
-      "lat": 35.6720135,
-      "lng": 139.7647202
-    },
-    "comfort": {
-      "heatTolerance": 8.5,
-      "rainFriendly": 8,
-      "walkingIntensity": 7
-    },
-    "image": "https://loremflickr.com/1000/800/japan,ginza/all?lock=1019",
-    "transportOptions": {
-      "train": 40
-    }
-  },
-  {
-    "id": "enoshima-island",
-    "name": "Enoshima",
-    "prefecture": "Kanagawa",
-    "region": "Kanto",
-    "categories": ["Sea", "Coast", "History", "Nature"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/EnoshimaAeralPhoto1988JP14.jpg/960px-EnoshimaAeralPhoto1988JP14.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 8000,
-    "budgetRecommended": 11000,
-    "budgetMax": 16000,
-    "walkingMin": 12000,
-    "walkingSunMin": 8000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 10,
-    "ratings": {
-      "overall": 9.2,
-      "couple": 9.5,
-      "summer": 9.5,
-      "winter": 8,
-      "rain": 4,
+      "overall": 9.1,
+      "couple": 10,
+      "summer": 6,
+      "winter": 7,
+      "rain": 5,
       "food": 8.5,
-      "photography": 9.5,
-      "relaxation": 8,
-      "value": 9,
-      "uniqueness": 9.5
-    },
-    "crowd": {
-      "weekday": 6,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 9,
-      "summer": 10,
-      "autumn": 9,
-      "winter": 8
-    },
-    "bestMonths": [5, 6, 7, 8, 9],
-    "tags": ["Island", "Ocean", "Sunset"],
-    "coordinates": {
-      "lat": 35.3001052,
-      "lng": 139.4806371
-    },
-    "comfort": {
-      "heatTolerance": 9.5,
-      "rainFriendly": 1,
-      "walkingIntensity": 12
-    },
-    "image": "https://loremflickr.com/1000/800/japan,enoshima/all?lock=1020",
-    "transportOptions": {
-      "train": 60
-    }
-  },
-  {
-    "id": "akihabara-chiyoda",
-    "name": "Akihabara (Chiyoda)",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["City", "Shopping"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/960px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
-    "totalTripHours": 6,
-    "budgetMin": 6000,
-    "budgetRecommended": 9000,
-    "budgetMax": 14000,
-    "walkingMin": 8000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 60,
-    "ratings": {
-      "overall": 8.8,
-      "couple": 7,
-      "summer": 7,
-      "winter": 8,
-      "rain": 8,
-      "food": 7.5,
-      "photography": 9,
+      "photography": 10,
       "relaxation": 5,
       "value": 8,
       "uniqueness": 10
     },
     "crowd": {
-      "weekday": 8,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 8,
-      "summer": 8,
-      "autumn": 8,
-      "winter": 8
-    },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Anime", "Electronics", "Pop Culture"],
-    "coordinates": {
-      "lat": 35.6985177,
-      "lng": 139.7754836
-    },
-    "comfort": {
-      "heatTolerance": 7,
-      "rainFriendly": 6,
-      "walkingIntensity": 8
-    },
-    "image": "https://loremflickr.com/1000/800/japan,akihabara/all?lock=1021",
-    "transportOptions": {
-      "train": 40
-    }
-  },
-  {
-    "id": "imperial-palace-chiyoda",
-    "name": "Imperial Palace (Chiyoda)",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["History", "Nature", "Parks"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Edo_P_detail.jpg/960px-Edo_P_detail.jpg",
-    "totalTripHours": 4,
-    "budgetMin": 2000,
-    "budgetRecommended": 3600,
-    "budgetMax": 8600,
-    "walkingMin": 12000,
-    "walkingSunMin": 10000,
-    "walkingShadeMin": 2000,
-    "indoorPercent": 10,
-    "ratings": {
-      "overall": 8.5,
-      "couple": 8.5,
-      "summer": 5,
-      "winter": 7,
-      "rain": 3,
-      "food": 6,
-      "photography": 9.5,
-      "relaxation": 9,
-      "value": 10,
-      "uniqueness": 9
-    },
-    "crowd": {
-      "weekday": 6,
-      "weekend": 8,
-      "holiday": 9
-    },
-    "season": {
-      "spring": 10,
-      "summer": 5,
-      "autumn": 9,
-      "winter": 7
-    },
-    "bestMonths": [3, 4, 10, 11],
-    "tags": ["Historical", "Gardens", "Free"],
-    "coordinates": {
-      "lat": 35.6838467,
-      "lng": 139.7506859
-    },
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 1,
-      "walkingIntensity": 12
-    },
-    "image": "https://loremflickr.com/1000/800/japan,imperial/all?lock=1022",
-    "transportOptions": {
-      "train": 40
-    }
-  },
-  {
-    "id": "odaiba-minato",
-    "name": "Odaiba (Minato)",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["City", "Sea", "Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
-    "totalTripHours": 8,
-    "budgetMin": 9000,
-    "budgetRecommended": 12000,
-    "budgetMax": 17000,
-    "walkingMin": 10000,
-    "walkingSunMin": 5000,
-    "walkingShadeMin": 5000,
-    "indoorPercent": 60,
-    "ratings": {
-      "overall": 9,
-      "couple": 9.5,
-      "summer": 8.5,
-      "winter": 8.5,
-      "rain": 8,
-      "food": 8,
-      "photography": 9.5,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8.5
-    },
-    "crowd": {
-      "weekday": 6,
-      "weekend": 9,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 9,
-      "summer": 8,
-      "autumn": 9,
-      "winter": 9
-    },
-    "bestMonths": [3, 4, 5, 9, 10, 11],
-    "tags": ["Date Spot", "Entertainment", "Ocean View"],
-    "coordinates": {
-      "lat": 35.6190032,
-      "lng": 139.7793576
-    },
-    "comfort": {
-      "heatTolerance": 8.5,
-      "rainFriendly": 6,
-      "walkingIntensity": 10
-    },
-    "image": "https://loremflickr.com/1000/800/japan,odaiba/all?lock=1023",
-    "transportOptions": {
-      "train": 50
-    }
-  },
-  {
-    "id": "ikebukuro-toshima",
-    "name": "Ikebukuro (Toshima)",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["City", "Shopping", "Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/960px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 9000,
-    "budgetRecommended": 12000,
-    "budgetMax": 17000,
-    "walkingMin": 8000,
-    "walkingSunMin": 2000,
-    "walkingShadeMin": 6000,
-    "indoorPercent": 80,
-    "ratings": {
-      "overall": 8.5,
-      "couple": 8.5,
-      "summer": 9,
-      "winter": 9,
-      "rain": 9.5,
-      "food": 8.5,
-      "photography": 7.5,
-      "relaxation": 7,
-      "value": 8.5,
-      "uniqueness": 8
-    },
-    "crowd": {
-      "weekday": 8,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 8,
-      "summer": 9,
-      "autumn": 8,
-      "winter": 9
-    },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Indoor", "Shopping", "Anime"],
-    "coordinates": {
-      "lat": 35.7288374,
-      "lng": 139.7093019
-    },
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 8,
-      "walkingIntensity": 8
-    },
-    "image": "https://loremflickr.com/1000/800/japan,ikebukuro/all?lock=1024",
-    "transportOptions": {
-      "train": 50
-    }
-  },
-  {
-    "id": "ueno-taito",
-    "name": "Ueno (Taito)",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["History", "Art", "Museum", "Parks"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ueno_park.jpg/960px-Ueno_park.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 5000,
-    "budgetRecommended": 8000,
-    "budgetMax": 13000,
-    "walkingMin": 12000,
-    "walkingSunMin": 8000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 50,
-    "ratings": {
-      "overall": 9,
-      "couple": 8.5,
-      "summer": 7,
-      "winter": 8,
-      "rain": 8.5,
-      "food": 8.5,
-      "photography": 8.5,
-      "relaxation": 8,
-      "value": 9.5,
-      "uniqueness": 9
-    },
-    "crowd": {
-      "weekday": 7,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 10,
-      "summer": 7,
-      "autumn": 9,
-      "winter": 8
-    },
-    "bestMonths": [3, 4, 10, 11],
-    "tags": ["Museums", "Cherry Blossoms", "Street Food"],
-    "coordinates": {
-      "lat": 35.7161484,
-      "lng": 139.777257
-    },
-    "comfort": {
-      "heatTolerance": 7,
-      "rainFriendly": 5,
-      "walkingIntensity": 12
-    },
-    "image": "https://loremflickr.com/1000/800/japan,ueno/all?lock=1025",
-    "transportOptions": {
-      "train": 45
-    }
-  },
-  {
-    "id": "shinjuku-ward",
-    "name": "Shinjuku",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["City", "Shopping", "Parks"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/960px-Skyscrapers_of_Shinjuku_2009_January.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 6000,
-    "budgetRecommended": 9000,
-    "budgetMax": 14000,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "indoorPercent": 60,
-    "ratings": {
-      "overall": 9.2,
-      "couple": 9,
-      "summer": 8,
-      "winter": 9,
-      "rain": 8.5,
-      "food": 9.5,
-      "photography": 9,
-      "relaxation": 7,
-      "value": 8,
-      "uniqueness": 9
-    },
-    "crowd": {
       "weekday": 9,
       "weekend": 10,
       "holiday": 10
     },
     "season": {
-      "spring": 9,
-      "summer": 8,
-      "autumn": 9,
-      "winter": 9
+      "spring": 10,
+      "summer": 5,
+      "autumn": 10,
+      "winter": 8
     },
-    "bestMonths": [3, 4, 9, 10, 11],
-    "tags": ["Nightlife", "Shopping", "Views"],
+    "bestMonths": [4, 5, 9, 10, 11],
+    "tags": ["Theme Park", "Walk-heavy"],
     "coordinates": {
-      "lat": 35.6937632,
-      "lng": 139.7036319
+      "lat": 35.6273011,
+      "lng": 139.8879707
     },
     "comfort": {
-      "heatTolerance": 8,
-      "rainFriendly": 6,
-      "walkingIntensity": 10
+      "heatTolerance": 6,
+      "rainFriendly": 4,
+      "walkingIntensity": 20
     },
-    "image": "https://loremflickr.com/1000/800/japan,shinjuku/all?lock=1026",
+    "image": "https://loremflickr.com/1000/800/japan,disneysea/all?lock=1011",
     "transportOptions": {
-      "train": 40
-    }
-  },
-  {
-    "id": "shibuya-ward",
-    "name": "Shibuya",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["City", "Shopping"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/960px-Shibuya_Crossing%2C_Aerial.jpg",
-    "totalTripHours": 8,
-    "budgetMin": 6000,
-    "budgetRecommended": 9000,
-    "budgetMax": 14000,
-    "walkingMin": 10000,
-    "walkingSunMin": 6000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 50,
-    "ratings": {
-      "overall": 9,
-      "couple": 9,
-      "summer": 7.5,
-      "winter": 8.5,
-      "rain": 7.5,
-      "food": 9,
-      "photography": 9.5,
-      "relaxation": 6,
-      "value": 8,
-      "uniqueness": 9.5
+      "train": 90
     },
-    "crowd": {
-      "weekday": 9,
-      "weekend": 10,
-      "holiday": 10
-    },
-    "season": {
-      "spring": 8,
-      "summer": 7,
-      "autumn": 8,
-      "winter": 9
-    },
-    "bestMonths": [3, 4, 9, 10, 11, 12],
-    "tags": ["Trendy", "Photography", "Fashion"],
-    "coordinates": {
-      "lat": 35.6637109,
-      "lng": 139.6976941
-    },
-    "comfort": {
-      "heatTolerance": 7.5,
-      "rainFriendly": 5,
-      "walkingIntensity": 10
-    },
-    "image": "https://loremflickr.com/1000/800/japan,shibuya/all?lock=1027",
-    "transportOptions": {
-      "train": 40
-    }
+    "description": "DisneySea in Chiba, Japan.",
+    "highlights": ["DisneySea"]
   },
   {
     "id": "edogawa-ward",
@@ -1529,7 +566,7 @@
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kasai_Rinkai_Park_2011--1.JPG/960px-Kasai_Rinkai_Park_2011--1.JPG",
     "totalTripHours": 6,
     "budgetMin": 2000,
-    "budgetRecommended": 5000,
+    "budgetRecommended": 6000,
     "budgetMax": 10000,
     "walkingMin": 10000,
     "walkingSunMin": 8000,
@@ -1573,1380 +610,65 @@
     "transportOptions": {
       "train": 60,
       "car": 50
-    }
+    },
+    "description": "Edogawa in Tokyo, Japan.",
+    "highlights": ["Edogawa"]
   },
   {
-    "id": "asakusa-taito",
-    "name": "Asakusa (Taito)",
-    "prefecture": "Tokyo",
+    "id": "enoshima-island",
+    "name": "Enoshima",
+    "prefecture": "Kanagawa",
     "region": "Kanto",
-    "categories": ["History", "City"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/960px-Sensoji_2023.jpg",
-    "totalTripHours": 5,
-    "budgetMin": 6500,
-    "budgetRecommended": 9500,
-    "budgetMax": 14500,
-    "walkingMin": 7000,
-    "walkingSunMin": 5000,
-    "walkingShadeMin": 2000,
-    "indoorPercent": 20,
+    "categories": ["Sea", "Coast", "History", "Nature"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/EnoshimaAeralPhoto1988JP14.jpg/960px-EnoshimaAeralPhoto1988JP14.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 8000,
+    "budgetRecommended": 12000,
+    "budgetMax": 16000,
+    "walkingMin": 12000,
+    "walkingSunMin": 8000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 10,
     "ratings": {
-      "overall": 9,
-      "couple": 8.5,
-      "summer": 6.5,
-      "winter": 8.5,
-      "rain": 6,
-      "food": 9,
+      "overall": 9.2,
+      "couple": 9.5,
+      "summer": 9.5,
+      "winter": 8,
+      "rain": 4,
+      "food": 8.5,
       "photography": 9.5,
-      "relaxation": 7,
+      "relaxation": 8,
       "value": 9,
       "uniqueness": 9.5
     },
     "crowd": {
-      "weekday": 9,
+      "weekday": 6,
       "weekend": 10,
       "holiday": 10
     },
     "season": {
       "spring": 9,
-      "summer": 6,
+      "summer": 10,
       "autumn": 9,
       "winter": 8
     },
-    "bestMonths": [3, 4, 5, 9, 10, 11, 12],
-    "tags": ["Traditional", "Street Food", "Culture"],
+    "bestMonths": [5, 6, 7, 8, 9],
+    "tags": ["Island", "Ocean", "Sunset"],
     "coordinates": {
-      "lat": 35.7111543,
-      "lng": 139.7954005
+      "lat": 35.3001052,
+      "lng": 139.4806371
     },
     "comfort": {
-      "heatTolerance": 6.5,
-      "rainFriendly": 2,
-      "walkingIntensity": 7
+      "heatTolerance": 9.5,
+      "rainFriendly": 1,
+      "walkingIntensity": 12
     },
-    "image": "https://loremflickr.com/1000/800/japan,asakusa/all?lock=1029",
-    "transportOptions": {
-      "train": 50
-    }
-  },
-  {
-    "id": "akasaka-minato",
-    "name": "Akasaka (Minato)",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["City", "Food", "History"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Akasaka_skyline_201806.jpg/960px-Akasaka_skyline_201806.jpg",
-    "totalTripHours": 5,
-    "budgetMin": 7600,
-    "budgetRecommended": 10600,
-    "budgetMax": 15600,
-    "walkingMin": 5000,
-    "walkingSunMin": 2000,
-    "walkingShadeMin": 3000,
-    "indoorPercent": 70,
-    "ratings": {
-      "overall": 8.5,
-      "couple": 9,
-      "summer": 8,
-      "winter": 8.5,
-      "rain": 8.5,
-      "food": 10,
-      "photography": 8,
-      "relaxation": 8,
-      "value": 7.5,
-      "uniqueness": 8
-    },
-    "crowd": {
-      "weekday": 8,
-      "weekend": 7,
-      "holiday": 6
-    },
-    "season": {
-      "spring": 8,
-      "summer": 8,
-      "autumn": 8,
-      "winter": 8
-    },
-    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "tags": ["Upscale", "Dining", "Business"],
-    "coordinates": {
-      "lat": 35.6734932,
-      "lng": 139.7277088
-    },
-    "comfort": {
-      "heatTolerance": 8,
-      "rainFriendly": 7,
-      "walkingIntensity": 5
-    },
-    "image": "https://loremflickr.com/1000/800/japan,akasaka/all?lock=1030",
-    "transportOptions": {
-      "train": 45
-    }
-  },
-  {
-    "id": "meguro-ward",
-    "name": "Meguro",
-    "prefecture": "Tokyo",
-    "region": "Kanto",
-    "categories": ["Nature", "City"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Meguro_River_Spring_2014%282%29.jpg/960px-Meguro_River_Spring_2014%282%29.jpg",
-    "totalTripHours": 5,
-    "budgetMin": 6000,
-    "budgetRecommended": 9000,
-    "budgetMax": 14000,
-    "walkingMin": 8000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 4000,
-    "indoorPercent": 40,
-    "ratings": {
-      "overall": 8.7,
-      "couple": 9.5,
-      "summer": 7,
-      "winter": 7,
-      "rain": 6,
-      "food": 9,
-      "photography": 9.5,
-      "relaxation": 8.5,
-      "value": 8,
-      "uniqueness": 8.5
-    },
-    "crowd": {
-      "weekday": 6,
-      "weekend": 8,
-      "holiday": 8
-    },
-    "season": {
-      "spring": 10,
-      "summer": 7,
-      "autumn": 8,
-      "winter": 7
-    },
-    "bestMonths": [3, 4, 10, 11],
-    "tags": ["Cherry Blossoms", "Cafes", "Date Spot"],
-    "coordinates": {
-      "lat": 35.6408352,
-      "lng": 139.6985376
-    },
-    "comfort": {
-      "heatTolerance": 7,
-      "rainFriendly": 4,
-      "walkingIntensity": 8
-    },
-    "image": "https://loremflickr.com/1000/800/japan,meguro/all?lock=1031",
-    "transportOptions": {
-      "train": 45
-    }
-  },
-  {
-    "id": "odawara",
-    "name": "Odawara & Manazuru",
-    "region": "Kanto",
-    "categories": ["Castle", "History", "Coast"],
-    "tags": ["Historic", "Seafood", "Relaxing"],
-    "budgetRecommended": 8000,
-    "ratings": {
-      "overall": 8.2,
-      "photography": 8,
-      "food": 8.5,
-      "summer": 7,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 30,
-    "coordinates": {
-      "lat": 35.2,
-      "lng": 139.14
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
-    "prefecture": "Kanagawa",
-    "budgetMin": 5000,
-    "budgetMax": 13000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 40
-    }
-  },
-  {
-    "id": "jogashima",
-    "name": "Miura Peninsula & Jogashima",
-    "region": "Kanto",
-    "categories": ["Coast", "Nature"],
-    "tags": ["Ocean", "Scenic", "Hiking"],
-    "budgetRecommended": 5000,
-    "ratings": {
-      "overall": 8,
-      "photography": 8.8,
-      "food": 8,
-      "summer": 6.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 5,
-    "coordinates": {
-      "lat": 35.14,
-      "lng": 139.62
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 2000,
-    "budgetMax": 10000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 70
-    }
-  },
-  {
-    "id": "hakkeijima",
-    "name": "Hakkeijima Sea Paradise",
-    "region": "Kanto",
-    "categories": ["Theme Park", "Aquarium"],
-    "tags": ["Family", "Entertainment"],
-    "budgetRecommended": 20800,
-    "ratings": {
-      "overall": 8.4,
-      "photography": 7.5,
-      "food": 7,
-      "summer": 8.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 70,
-    "coordinates": {
-      "lat": 35.3375,
-      "lng": 139.6453
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 17800,
-    "budgetMax": 25800,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 45,
-      "car": 40
-    }
-  },
-  {
-    "id": "lake-sagami",
-    "name": "Lake Sagami",
-    "region": "Kanto",
-    "categories": ["Lake", "Nature", "Theme Park"],
-    "tags": ["Illumination", "Outdoors"],
-    "budgetRecommended": 9000,
-    "ratings": {
-      "overall": 8.1,
-      "photography": 8.5,
-      "food": 6.5,
-      "summer": 7.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 20,
-    "coordinates": {
-      "lat": 35.6131,
-      "lng": 139.1917
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 6000,
-    "budgetMax": 14000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 75,
-      "car": 60
-    }
-  },
-  {
-    "id": "ashigara",
-    "name": "Ashigara",
-    "region": "Kanto",
-    "categories": ["Nature", "Mountain"],
-    "tags": ["Hiking", "Quiet"],
-    "budgetRecommended": 4000,
-    "ratings": {
-      "overall": 7.8,
-      "photography": 8.2,
-      "food": 6,
-      "summer": 8,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 10,
-    "coordinates": {
-      "lat": 35.3236,
-      "lng": 139.0436
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 2000,
-    "budgetMax": 9000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 80
-    }
-  },
-  {
-    "id": "zushi",
-    "name": "Zushi & Yokosuka",
-    "region": "Kanto",
-    "categories": ["Coast", "Beach"],
-    "tags": ["Surfing", "Cafes", "Sunset"],
-    "budgetRecommended": 6000,
-    "ratings": {
-      "overall": 8,
-      "photography": 8.2,
-      "food": 7.8,
-      "summer": 9,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 20,
-    "coordinates": {
-      "lat": 35.29,
-      "lng": 139.63
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
-    "prefecture": "Kanagawa",
-    "budgetMin": 3000,
-    "budgetMax": 11000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 30,
-      "car": 40
-    }
-  },
-  {
-    "id": "chiba-city",
-    "name": "Chiba City",
-    "region": "Kanto",
-    "categories": ["City", "Museum"],
-    "tags": ["Urban", "Shopping"],
-    "budgetRecommended": 7000,
-    "ratings": {
-      "overall": 7.5,
-      "photography": 6.5,
-      "food": 7.5,
-      "summer": 6,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 70,
-    "coordinates": {
-      "lat": 35.6073,
-      "lng": 140.1063
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 4000,
-    "budgetMax": 12000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 70,
-      "car": 60
-    }
-  },
-  {
-    "id": "saitama-city",
-    "name": "Saitama City",
-    "region": "Kanto",
-    "categories": ["City", "Museum", "Shrine"],
-    "tags": ["Bonsai", "Railway Museum"],
-    "budgetRecommended": 6000,
-    "ratings": {
-      "overall": 7.8,
-      "photography": 7,
-      "food": 7.5,
-      "summer": 6,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 60,
-    "coordinates": {
-      "lat": 35.8617,
-      "lng": 139.6455
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 3000,
-    "budgetMax": 11000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
+    "image": "https://loremflickr.com/1000/800/japan,enoshima/all?lock=1020",
     "transportOptions": {
       "train": 60
-    }
-  },
-  {
-    "id": "kawasaki",
-    "name": "Kawasaki",
-    "region": "Kanto",
-    "categories": ["City", "Museum", "Shrine"],
-    "tags": ["Night Factory", "Doraemon"],
-    "budgetRecommended": 5000,
-    "ratings": {
-      "overall": 7.9,
-      "photography": 8,
-      "food": 8,
-      "summer": 5.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
     },
-    "indoorPercent": 60,
-    "coordinates": {
-      "lat": 35.5308,
-      "lng": 139.7028
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 2000,
-    "budgetMax": 10000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 15
-    }
-  },
-  {
-    "id": "narita",
-    "name": "Narita",
-    "region": "Kanto",
-    "categories": ["Shrine", "History", "Town"],
-    "tags": ["Temple", "Eel"],
-    "budgetRecommended": 8000,
-    "ratings": {
-      "overall": 8.1,
-      "photography": 8.2,
-      "food": 8.8,
-      "summer": 6,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 30,
-    "coordinates": {
-      "lat": 35.7767,
-      "lng": 140.3183
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 5000,
-    "budgetMax": 13000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 100,
-      "car": 80
-    }
-  },
-  {
-    "id": "chichibu",
-    "name": "Chichibu",
-    "region": "Kanto",
-    "categories": ["Mountain", "Shrine"],
-    "tags": ["Nature", "Festivals"],
-    "budgetRecommended": 8000,
-    "ratings": {
-      "overall": 8.5,
-      "photography": 8.8,
-      "food": 8,
-      "summer": 8,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 20,
-    "coordinates": {
-      "lat": 35.9961,
-      "lng": 139.0831
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
-    "prefecture": "Kanagawa",
-    "budgetMin": 5000,
-    "budgetMax": 13000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 120,
-      "car": 110
-    }
-  },
-  {
-    "id": "kusatsu-onsen",
-    "name": "Kusatsu & Shima Onsen",
-    "region": "Kanto",
-    "categories": ["Hot Spring", "Town"],
-    "tags": ["Onsen", "Yubatake", "Mountains"],
-    "budgetRecommended": 15000,
-    "ratings": {
-      "overall": 9.2,
-      "photography": 9,
-      "food": 8.5,
-      "summer": 8.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 40,
-    "coordinates": {
-      "lat": 36.64,
-      "lng": 138.65
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 12000,
-    "budgetMax": 20000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 180,
-      "bus": 210
-    }
-  },
-  {
-    "id": "oze-national-park",
-    "name": "Oze National Park",
-    "region": "Kanto",
-    "categories": ["Nature", "Mountain"],
-    "tags": ["Hiking", "Marshlands"],
-    "budgetRecommended": 6400,
-    "ratings": {
-      "overall": 8.8,
-      "photography": 9.2,
-      "food": 5,
-      "summer": 9.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 0,
-    "coordinates": {
-      "lat": 36.9333,
-      "lng": 139.2333
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 3400,
-    "budgetMax": 11400,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 200
-    }
-  },
-  {
-    "id": "kinugawa-onsen",
-    "name": "Kinugawa Onsen",
-    "region": "Kanto",
-    "categories": ["Hot Spring", "Theme Park"],
-    "tags": ["Onsen", "Edo Wonderland"],
-    "budgetRecommended": 16400,
-    "ratings": {
-      "overall": 8,
-      "photography": 7.5,
-      "food": 7.5,
-      "summer": 7,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 50,
-    "coordinates": {
-      "lat": 36.8167,
-      "lng": 139.7167
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
-    "prefecture": "Kanagawa",
-    "budgetMin": 13400,
-    "budgetMax": 21400,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 140,
-      "bus": 170
-    }
-  },
-  {
-    "id": "mito",
-    "name": "Mito",
-    "region": "Kanto",
-    "categories": ["City", "Garden"],
-    "tags": ["Kairakuen", "Plum Blossoms"],
-    "budgetRecommended": 6000,
-    "ratings": {
-      "overall": 7.8,
-      "photography": 8.2,
-      "food": 7.5,
-      "summer": 6.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 30,
-    "coordinates": {
-      "lat": 36.3658,
-      "lng": 140.4714
-    },
-    "heroImage": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
-    "prefecture": "Kanagawa",
-    "budgetMin": 3000,
-    "budgetMax": 11000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 110,
-      "car": 110
-    }
-  },
-  {
-    "id": "hitachi-park",
-    "name": "Hitachi Seaside Park",
-    "region": "Kanto",
-    "categories": ["Nature", "Park"],
-    "tags": ["Flowers", "Nemophila"],
-    "budgetRecommended": 7800,
-    "ratings": {
-      "overall": 8.9,
-      "photography": 9.5,
-      "food": 6,
-      "summer": 7,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 10,
-    "coordinates": {
-      "lat": 36.4022,
-      "lng": 140.5989
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 4800,
-    "budgetMax": 12800,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 140,
-      "car": 120
-    }
-  },
-  {
-    "id": "ushiku-daibutsu",
-    "name": "Ushiku Daibutsu",
-    "region": "Kanto",
-    "categories": ["Shrine", "Park"],
-    "tags": ["Giant Statue", "Record Breaking"],
-    "budgetRecommended": 6500,
-    "ratings": {
-      "overall": 7.6,
-      "photography": 8.5,
-      "food": 5.5,
-      "summer": 6,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 40,
-    "coordinates": {
-      "lat": 35.9825,
-      "lng": 140.2208
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-    "prefecture": "Kanagawa",
-    "budgetMin": 3500,
-    "budgetMax": 11500,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 100,
-      "car": 80
-    }
-  },
-  {
-    "id": "izu",
-    "name": "Izu Peninsula",
-    "region": "Chubu",
-    "categories": ["Coast", "Hot Spring"],
-    "tags": ["Beaches", "Onsen", "Scuba"],
-    "budgetRecommended": 12000,
-    "ratings": {
-      "overall": 8.6,
-      "photography": 8.8,
-      "food": 8.5,
-      "summer": 9,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 20,
-    "coordinates": {
-      "lat": 34.9083,
-      "lng": 138.9317
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 9000,
-    "budgetMax": 17000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 120,
-      "car": 120
-    }
-  },
-  {
-    "id": "fujinomiya",
-    "name": "Fujinomiya",
-    "region": "Chubu",
-    "categories": ["City", "Nature", "Mountain"],
-    "tags": ["Mt Fuji", "Yakisoba", "Waterfalls"],
-    "budgetRecommended": 7000,
-    "ratings": {
-      "overall": 8.4,
-      "photography": 9,
-      "food": 8.5,
-      "summer": 7.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 30,
-    "coordinates": {
-      "lat": 35.2236,
-      "lng": 138.6186
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
-    "prefecture": "Shizuoka",
-    "budgetMin": 4000,
-    "budgetMax": 12000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 130,
-      "car": 110
-    }
-  },
-  {
-    "id": "shizuoka",
-    "name": "Shizuoka City",
-    "region": "Chubu",
-    "categories": ["City", "History", "Nature"],
-    "tags": ["Green Tea", "Castle Ruins", "Fuji Views"],
-    "budgetRecommended": 8000,
-    "ratings": {
-      "overall": 8,
-      "photography": 8.2,
-      "food": 8.8,
-      "summer": 6.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 50,
-    "coordinates": {
-      "lat": 34.9756,
-      "lng": 138.3828
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 5000,
-    "budgetMax": 13000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 90,
-      "car": 120,
-      "shinkansen": 54
-    }
-  },
-  {
-    "id": "lake-hamanako",
-    "name": "Lake Hamanako",
-    "region": "Chubu",
-    "categories": ["Lake", "Hot Spring"],
-    "tags": ["Eel", "Cycling", "Onsen"],
-    "budgetRecommended": 10000,
-    "ratings": {
-      "overall": 8.2,
-      "photography": 8.4,
-      "food": 9,
-      "summer": 7.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 30,
-    "coordinates": {
-      "lat": 34.75,
-      "lng": 137.6
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 7000,
-    "budgetMax": 15000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 130,
-      "car": 160,
-      "shinkansen": 78
-    }
-  },
-  {
-    "id": "takayama",
-    "name": "Takayama & Shirakawa-go",
-    "region": "Chubu",
-    "categories": ["Town", "History"],
-    "tags": ["Old Town", "Hida Beef", "Sake"],
-    "budgetRecommended": 12000,
-    "ratings": {
-      "overall": 9,
-      "photography": 8.8,
-      "food": 9.5,
-      "summer": 8.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 40,
-    "coordinates": {
-      "lat": 36.2,
-      "lng": 137.05
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 9000,
-    "budgetMax": 17000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 260,
-      "shinkansen": 250
-    }
-  },
-  {
-    "id": "okuhida",
-    "name": "Okuhida",
-    "region": "Chubu",
-    "categories": ["Hot Spring", "Mountain", "Nature"],
-    "tags": ["Onsen", "Ropeway", "Alps"],
-    "budgetRecommended": 18000,
-    "ratings": {
-      "overall": 8.9,
-      "photography": 9.2,
-      "food": 7.5,
-      "summer": 9.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 20,
-    "coordinates": {
-      "lat": 36.2667,
-      "lng": 137.55
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 15000,
-    "budgetMax": 23000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 280,
-      "bus": 310
-    }
-  },
-  {
-    "id": "sado-island",
-    "name": "Sado Island",
-    "region": "Chubu",
-    "categories": ["Island", "History", "Nature"],
-    "tags": ["Gold Mine", "Tub Boats", "Remote"],
-    "budgetRecommended": 15000,
-    "ratings": {
-      "overall": 8.4,
-      "photography": 8.5,
-      "food": 8.5,
-      "summer": 8,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 30,
-    "coordinates": {
-      "lat": 38.0333,
-      "lng": 138.3833
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
-    "prefecture": "Shizuoka",
-    "budgetMin": 12000,
-    "budgetMax": 20000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 240
-    }
-  },
-  {
-    "id": "gala-yuzawa",
-    "name": "Gala Yuzawa",
-    "region": "Chubu",
-    "categories": ["Mountain", "Theme Park"],
-    "tags": ["Skiing", "Snow", "Shinkansen Access"],
-    "budgetRecommended": 29000,
-    "ratings": {
-      "overall": 8.6,
-      "photography": 8,
-      "food": 7,
-      "summer": 4,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 30,
-    "coordinates": {
-      "lat": 36.9536,
-      "lng": 138.8028
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG",
-    "prefecture": "Shizuoka",
-    "budgetMin": 26000,
-    "budgetMax": 34000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 100,
-      "shinkansen": 60
-    }
-  },
-  {
-    "id": "kamikochi",
-    "name": "Kamikochi",
-    "region": "Chubu",
-    "categories": ["Nature", "Mountain"],
-    "tags": ["Hiking", "Alps", "Pristine"],
-    "budgetRecommended": 12000,
-    "ratings": {
-      "overall": 9.5,
-      "photography": 9.8,
-      "food": 6.5,
-      "summer": 10,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 5,
-    "coordinates": {
-      "lat": 36.2464,
-      "lng": 137.6364
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 9000,
-    "budgetMax": 17000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 260
-    }
-  },
-  {
-    "id": "kiso",
-    "name": "Kiso Valley",
-    "region": "Chubu",
-    "categories": ["Town", "History", "Mountain"],
-    "tags": ["Nakasendo", "Post Towns", "Tsumago"],
-    "budgetRecommended": 10000,
-    "ratings": {
-      "overall": 9.1,
-      "photography": 9.5,
-      "food": 8,
-      "summer": 8.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 20,
-    "coordinates": {
-      "lat": 35.7933,
-      "lng": 137.6531
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 7000,
-    "budgetMax": 15000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 210
-    }
-  },
-  {
-    "id": "nagano-city",
-    "name": "Nagano & Snow Monkeys",
-    "region": "Chubu",
-    "categories": ["City", "Shrine", "History"],
-    "tags": ["Zenkoji", "Olympics"],
-    "budgetRecommended": 9000,
-    "ratings": {
-      "overall": 8.2,
-      "photography": 8,
-      "food": 8.5,
-      "summer": 7.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 50,
-    "coordinates": {
-      "lat": 36.7,
-      "lng": 138.3
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 6000,
-    "budgetMax": 14000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 120,
-      "car": 180,
-      "shinkansen": 72
-    }
-  },
-  {
-    "id": "mount-fuji",
-    "name": "Mount Fuji",
-    "region": "Chubu",
-    "categories": ["Mountain", "Nature"],
-    "tags": ["Iconic", "Climbing", "Views"],
-    "budgetRecommended": 5000,
-    "ratings": {
-      "overall": 9.6,
-      "photography": 10,
-      "food": 5,
-      "summer": 9,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 0,
-    "coordinates": {
-      "lat": 35.3606,
-      "lng": 138.7274
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 2000,
-    "budgetMax": 10000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 120
-    }
+    "description": "Enoshima in Kanagawa, Japan.",
+    "highlights": ["Enoshima"]
   },
   {
     "id": "fuji-5-lake",
@@ -2954,7 +676,7 @@
     "region": "Chubu",
     "categories": ["Lake", "Nature", "Theme Park"],
     "tags": ["Fuji Views", "Fuji-Q", "Cycling"],
-    "budgetRecommended": 11000,
+    "budgetRecommended": 12000,
     "ratings": {
       "overall": 9,
       "photography": 9.8,
@@ -2989,227 +711,33 @@
       "train": 130,
       "car": 110,
       "bus": 120
-    }
+    },
+    "description": "Fuji Five Lakes in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Fuji Five Lakes"]
   },
   {
-    "id": "kofu",
-    "name": "Kofu",
+    "id": "fujinomiya",
+    "name": "Fujinomiya",
     "region": "Chubu",
-    "categories": ["City", "History", "Mountain"],
-    "tags": ["Takeda Shingen", "Wine", "Gorges"],
+    "categories": ["City", "Nature", "Mountain"],
+    "tags": ["Mt Fuji", "Yakisoba", "Waterfalls"],
     "budgetRecommended": 8000,
     "ratings": {
-      "overall": 7.8,
-      "photography": 8,
-      "food": 8.5,
-      "summer": 7,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 40,
-    "coordinates": {
-      "lat": 35.6622,
-      "lng": 138.5683
-    },
-    "heroImage": "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
-    "prefecture": "Shizuoka",
-    "budgetMin": 5000,
-    "budgetMax": 13000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "train": 110,
-      "car": 100
-    }
-  },
-  {
-    "id": "toyama-alpine",
-    "name": "Tateyama Kurobe Alpine Route",
-    "region": "Chubu",
-    "categories": ["Nature", "Mountain"],
-    "tags": ["Snow Wall", "Dam", "Scenic"],
-    "budgetRecommended": 23000,
-    "ratings": {
-      "overall": 9.3,
-      "photography": 9.8,
-      "food": 6,
-      "summer": 9.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 10,
-    "coordinates": {
-      "lat": 36.5667,
-      "lng": 137.6
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 20000,
-    "budgetMax": 28000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 280
-    }
-  },
-  {
-    "id": "takaoka",
-    "name": "Takaoka",
-    "region": "Chubu",
-    "categories": ["City", "Shrine", "History"],
-    "tags": ["Great Buddha", "Doraemon", "Crafts"],
-    "budgetRecommended": 8000,
-    "ratings": {
-      "overall": 7.7,
-      "photography": 7.8,
-      "food": 8,
-      "summer": 6.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 60,
-    "coordinates": {
-      "lat": 36.7417,
-      "lng": 137.015
-    },
-    "heroImage": "/images/takaoka_hero.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 5000,
-    "budgetMax": 13000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 300
-    }
-  },
-  {
-    "id": "kurobe-gorge",
-    "name": "Kurobe Gorge",
-    "region": "Chubu",
-    "categories": ["Nature", "Mountain"],
-    "tags": ["Scenic Railway", "Ravine", "Onsen"],
-    "budgetRecommended": 20000,
-    "ratings": {
-      "overall": 8.9,
-      "photography": 9.4,
-      "food": 7,
-      "summer": 8.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 10,
-    "coordinates": {
-      "lat": 36.6833,
-      "lng": 137.6667
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 17000,
-    "budgetMax": 25000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 5,
-      "rainFriendly": 4,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "car": 320,
-      "shinkansen": 220
-    }
-  },
-  {
-    "id": "kanazawa",
-    "name": "Kanazawa",
-    "region": "Chubu",
-    "categories": ["City", "Garden", "History"],
-    "tags": ["Kenrokuen", "Gold Leaf", "Geisha District"],
-    "budgetRecommended": 12000,
-    "ratings": {
-      "overall": 9.4,
-      "photography": 9.2,
-      "food": 9.5,
-      "summer": 6.5,
-      "couple": 8,
-      "winter": 7,
-      "rain": 6,
-      "relaxation": 8,
-      "value": 8,
-      "uniqueness": 8
-    },
-    "indoorPercent": 50,
-    "coordinates": {
-      "lat": 36.5613,
-      "lng": 136.6562
-    },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
-    "prefecture": "Shizuoka",
-    "budgetMin": 9000,
-    "budgetMax": 17000,
-    "totalTripHours": 8,
-    "walkingMin": 10000,
-    "walkingSunMin": 4000,
-    "walkingShadeMin": 6000,
-    "comfort": {
-      "heatTolerance": 9,
-      "rainFriendly": 9,
-      "walkingIntensity": 5
-    },
-    "transportOptions": {
-      "shinkansen": 160
-    }
-  },
-  {
-    "id": "noto",
-    "name": "Noto Peninsula",
-    "region": "Chubu",
-    "categories": ["Coast", "Nature"],
-    "tags": ["Scenic Drive", "Seafood", "Rugged"],
-    "budgetRecommended": 11000,
-    "ratings": {
-      "overall": 8.6,
+      "overall": 8.4,
       "photography": 9,
-      "food": 9.2,
-      "summer": 8,
+      "food": 8.5,
+      "summer": 7.5,
       "couple": 8,
       "winter": 7,
       "rain": 6,
@@ -3217,15 +745,15 @@
       "value": 8,
       "uniqueness": 8
     },
-    "indoorPercent": 10,
+    "indoorPercent": 30,
     "coordinates": {
-      "lat": 37.2167,
-      "lng": 136.9667
+      "lat": 35.2236,
+      "lng": 138.6186
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
     "prefecture": "Shizuoka",
-    "budgetMin": 8000,
-    "budgetMax": 16000,
+    "budgetMin": 4000,
+    "budgetMax": 12000,
     "totalTripHours": 8,
     "walkingMin": 10000,
     "walkingSunMin": 4000,
@@ -3236,8 +764,22 @@
       "walkingIntensity": 5
     },
     "transportOptions": {
-      "car": 360
-    }
+      "train": 130,
+      "car": 110
+    },
+    "description": "Fujinomiya in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Fujinomiya"]
   },
   {
     "id": "fukui",
@@ -3245,7 +787,7 @@
     "region": "Chubu",
     "categories": ["City", "Museum", "Coast"],
     "tags": ["Dinosaurs", "Cliffs", "Crab"],
-    "budgetRecommended": 10000,
+    "budgetRecommended": 11000,
     "ratings": {
       "overall": 8.2,
       "photography": 8.5,
@@ -3278,120 +820,187 @@
     },
     "transportOptions": {
       "car": 300
-    }
+    },
+    "description": "Fukui in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Fukui"]
   },
   {
-    "id": "nagoya",
-    "name": "Nagoya",
-    "prefecture": "Aichi",
+    "id": "gala-yuzawa",
+    "name": "Gala Yuzawa",
     "region": "Chubu",
-    "categories": ["City", "History", "Food"],
-    "heroImage": "/images/nagoya_hero.jpg",
-    "totalTripHours": 24,
-    "budgetMin": 15000,
-    "budgetRecommended": 20000,
-    "budgetMax": 30000,
-    "budgetBreakdown": {
-      "transport": 10680,
-      "tickets": 2000,
-      "food": 6000,
-      "cafe": 1500
-    },
-    "transportOptions": {
-      "shinkansen": 90,
-      "bus": 300,
-      "car": 240
-    },
-    "walkingMin": 6000,
-    "walkingSunMin": 3000,
-    "walkingShadeMin": 3000,
-    "indoorPercent": 60,
+    "categories": ["Mountain", "Theme Park"],
+    "tags": ["Skiing", "Snow", "Shinkansen Access"],
+    "budgetRecommended": 30000,
     "ratings": {
-      "overall": 8.5,
-      "couple": 8.5,
-      "summer": 7,
-      "winter": 8,
-      "rain": 8,
-      "food": 9,
+      "overall": 8.6,
       "photography": 8,
-      "relaxation": 7,
+      "food": 7,
+      "summer": 4,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
       "value": 8,
       "uniqueness": 8
     },
-    "crowd": {
-      "weekday": 60,
-      "weekend": 85,
-      "holiday": 95
-    },
-    "season": {
-      "spring": 90,
-      "summer": 60,
-      "autumn": 85,
-      "winter": 70
-    },
-    "bestMonths": [3, 4, 10, 11],
-    "tags": ["Castle", "Local Food", "Shopping"],
-    "highlights": ["Nagoya Castle", "Osu Kannon Temple", "Atsuta Jingu"],
+    "indoorPercent": 30,
     "coordinates": {
-      "lat": 35.1815,
-      "lng": 136.9066
-    }
-  },
-  {
-    "id": "inuyama",
-    "name": "Inuyama",
-    "prefecture": "Aichi",
-    "region": "Chubu",
-    "categories": ["History", "Nature", "Castle"],
-    "heroImage": "/images/inuyama_hero.jpg",
-    "totalTripHours": 12,
-    "budgetMin": 12000,
-    "budgetRecommended": 16000,
-    "budgetMax": 22000,
-    "budgetBreakdown": {
-      "transport": 12000,
-      "tickets": 1000,
-      "food": 2500,
-      "cafe": 500
+      "lat": 36.9536,
+      "lng": 138.8028
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG",
+    "prefecture": "Shizuoka",
+    "budgetMin": 26000,
+    "budgetMax": 34000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
     },
     "transportOptions": {
-      "shinkansen": 110,
-      "car": 250
+      "train": 100,
+      "shinkansen": 60
     },
-    "walkingMin": 8000,
-    "walkingSunMin": 5000,
-    "walkingShadeMin": 3000,
-    "indoorPercent": 20,
-    "ratings": {
-      "overall": 8.8,
-      "couple": 9,
-      "summer": 7.5,
-      "winter": 7,
-      "rain": 5,
-      "food": 7.5,
-      "photography": 9,
-      "relaxation": 8.5,
-      "value": 8,
-      "uniqueness": 9
-    },
+    "description": "Gala Yuzawa in Shizuoka, Japan.",
     "crowd": {
-      "weekday": 40,
-      "weekend": 75,
-      "holiday": 90
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
     },
     "season": {
-      "spring": 95,
-      "summer": 70,
-      "autumn": 95,
-      "winter": 60
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
     },
-    "bestMonths": [4, 10, 11],
-    "tags": ["National Treasure", "Riverside", "Traditional"],
-    "highlights": ["Inuyama Castle", "Urakuen Garden", "Honmachi-dori Street"],
+    "highlights": ["Gala Yuzawa"]
+  },
+  {
+    "id": "ghibli-museum",
+    "name": "Ghibli Museum",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Theme Park", "Museum", "Art"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/960px-Ghibli_Museum_2024.JPG",
+    "totalTripHours": 6,
+    "budgetMin": 6900,
+    "budgetRecommended": 10900,
+    "budgetMax": 14900,
+    "walkingMin": 5000,
+    "walkingSunMin": 1000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 90,
+    "ratings": {
+      "overall": 9.5,
+      "couple": 9,
+      "summer": 9.5,
+      "winter": 9.5,
+      "rain": 9.5,
+      "food": 8,
+      "photography": 8,
+      "relaxation": 8,
+      "value": 9.5,
+      "uniqueness": 10
+    },
+    "crowd": {
+      "weekday": 8,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Anime", "Indoor", "Art"],
     "coordinates": {
-      "lat": 35.3853,
-      "lng": 136.9405
-    }
+      "lat": 35.6961731,
+      "lng": 139.5706324
+    },
+    "comfort": {
+      "heatTolerance": 9.5,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "image": "https://loremflickr.com/1000/800/japan,ghibli/all?lock=1016",
+    "transportOptions": {
+      "train": 50
+    },
+    "description": "Ghibli Museum in Tokyo, Japan.",
+    "highlights": ["Ghibli Museum"]
+  },
+  {
+    "id": "ginza-urban",
+    "name": "Ginza",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["City", "Shopping", "Art", "History"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ginza-WAKO_at_night.jpg/960px-Ginza-WAKO_at_night.jpg",
+    "totalTripHours": 6,
+    "budgetMin": 8000,
+    "budgetRecommended": 12000,
+    "budgetMax": 16000,
+    "walkingMin": 7000,
+    "walkingSunMin": 3000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 9,
+      "couple": 9,
+      "summer": 8.5,
+      "winter": 9,
+      "rain": 9,
+      "food": 10,
+      "photography": 8.5,
+      "relaxation": 7,
+      "value": 7,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 7,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [3, 4, 5, 9, 10, 11, 12],
+    "tags": ["Luxury", "Shopping", "Architecture"],
+    "coordinates": {
+      "lat": 35.6720135,
+      "lng": 139.7647202
+    },
+    "comfort": {
+      "heatTolerance": 8.5,
+      "rainFriendly": 8,
+      "walkingIntensity": 7
+    },
+    "image": "https://loremflickr.com/1000/800/japan,ginza/all?lock=1019",
+    "transportOptions": {
+      "train": 40
+    },
+    "description": "Ginza in Tokyo, Japan.",
+    "highlights": ["Ginza"]
   },
   {
     "id": "gujo",
@@ -3402,7 +1011,7 @@
     "heroImage": "/images/gujo_hero.jpg",
     "totalTripHours": 24,
     "budgetMin": 16000,
-    "budgetRecommended": 22000,
+    "budgetRecommended": 23000,
     "budgetMax": 30000,
     "budgetBreakdown": {
       "transport": 14000,
@@ -3452,7 +1061,399 @@
     "coordinates": {
       "lat": 35.7483,
       "lng": 136.9582
-    }
+    },
+    "description": "Gujo Hachiman in Gifu, Japan."
+  },
+  {
+    "id": "hakkeijima",
+    "name": "Hakkeijima Sea Paradise",
+    "region": "Kanto",
+    "categories": ["Theme Park", "Aquarium"],
+    "tags": ["Family", "Entertainment"],
+    "budgetRecommended": 21800,
+    "ratings": {
+      "overall": 8.4,
+      "photography": 7.5,
+      "food": 7,
+      "summer": 8.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 70,
+    "coordinates": {
+      "lat": 35.3375,
+      "lng": 139.6453
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 17800,
+    "budgetMax": 25800,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 45,
+      "car": 40
+    },
+    "description": "Hakkeijima Sea Paradise in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Hakkeijima Sea Paradise"]
+  },
+  {
+    "id": "hakone-onsen",
+    "name": "Hakone",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": ["Onsen", "Nature", "Museums"],
+    "heroImage": "/images/hakone_hero.jpg",
+    "totalTripHours": 24,
+    "budgetMin": 16200,
+    "budgetRecommended": 20200,
+    "budgetMax": 24200,
+    "walkingMin": 4000,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9.5,
+      "summer": 7,
+      "winter": 9.5,
+      "rain": 8,
+      "food": 8.5,
+      "photography": 9,
+      "relaxation": 9.8,
+      "value": 7.5,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 6,
+      "autumn": 10,
+      "winter": 9
+    },
+    "bestMonths": [10, 11, 12, 1, 2],
+    "tags": ["Romantic", "Relaxing", "Scenic"],
+    "coordinates": {
+      "lat": 35.2323662,
+      "lng": 139.1068849
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 4,
+      "walkingIntensity": 4
+    },
+    "image": "https://loremflickr.com/1000/800/japan,hakone/all?lock=1000",
+    "transportOptions": {
+      "train": 85
+    },
+    "description": "Hakone in Kanagawa, Japan.",
+    "highlights": ["Hakone"]
+  },
+  {
+    "id": "harry-potter-studio",
+    "name": "Harry Potter Studio",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Theme Park", "Indoor"],
+    "heroImage": "/images/harry-potter-studio.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 17900,
+    "budgetRecommended": 21900,
+    "budgetMax": 25900,
+    "walkingMin": 6000,
+    "walkingSunMin": 500,
+    "walkingShadeMin": 5500,
+    "indoorPercent": 95,
+    "ratings": {
+      "overall": 9.5,
+      "couple": 10,
+      "summer": 9.8,
+      "winter": 9.8,
+      "rain": 10,
+      "food": 8.5,
+      "photography": 9.5,
+      "relaxation": 7,
+      "value": 8.5,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 7,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 10,
+      "autumn": 10,
+      "winter": 10
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Indoor", "Pop Culture"],
+    "coordinates": {
+      "lat": 35.74562,
+      "lng": 139.645745
+    },
+    "comfort": {
+      "heatTolerance": 9.8,
+      "rainFriendly": 9.5,
+      "walkingIntensity": 6
+    },
+    "image": "https://loremflickr.com/1000/800/japan,harry/all?lock=1008",
+    "transportOptions": {
+      "train": 45
+    },
+    "description": "Harry Potter Studio in Tokyo, Japan.",
+    "highlights": ["Harry Potter Studio"]
+  },
+  {
+    "id": "hitachi-park",
+    "name": "Hitachi Seaside Park",
+    "region": "Kanto",
+    "categories": ["Nature", "Park"],
+    "tags": ["Flowers", "Nemophila"],
+    "budgetRecommended": 8800,
+    "ratings": {
+      "overall": 8.9,
+      "photography": 9.5,
+      "food": 6,
+      "summer": 7,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 36.4022,
+      "lng": 140.5989
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 4800,
+    "budgetMax": 12800,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 140,
+      "car": 120
+    },
+    "description": "Hitachi Seaside Park in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Hitachi Seaside Park"]
+  },
+  {
+    "id": "ikebukuro-toshima",
+    "name": "Ikebukuro (Toshima)",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["City", "Shopping", "Theme Park"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/960px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 9000,
+    "budgetRecommended": 13000,
+    "budgetMax": 17000,
+    "walkingMin": 8000,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 6000,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 8.5,
+      "summer": 9,
+      "winter": 9,
+      "rain": 9.5,
+      "food": 8.5,
+      "photography": 7.5,
+      "relaxation": 7,
+      "value": 8.5,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 8,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Indoor", "Shopping", "Anime"],
+    "coordinates": {
+      "lat": 35.7288374,
+      "lng": 139.7093019
+    },
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 8,
+      "walkingIntensity": 8
+    },
+    "image": "https://loremflickr.com/1000/800/japan,ikebukuro/all?lock=1024",
+    "transportOptions": {
+      "train": 50
+    },
+    "description": "Ikebukuro (Toshima) in Tokyo, Japan.",
+    "highlights": ["Ikebukuro (Toshima)"]
+  },
+  {
+    "id": "imperial-palace-chiyoda",
+    "name": "Imperial Palace (Chiyoda)",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["History", "Nature", "Parks"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Edo_P_detail.jpg/960px-Edo_P_detail.jpg",
+    "totalTripHours": 4,
+    "budgetMin": 2000,
+    "budgetRecommended": 5300,
+    "budgetMax": 8600,
+    "walkingMin": 12000,
+    "walkingSunMin": 10000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 10,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 8.5,
+      "summer": 5,
+      "winter": 7,
+      "rain": 3,
+      "food": 6,
+      "photography": 9.5,
+      "relaxation": 9,
+      "value": 10,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 10,
+      "summer": 5,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "tags": ["Historical", "Gardens", "Free"],
+    "coordinates": {
+      "lat": 35.6838467,
+      "lng": 139.7506859
+    },
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 1,
+      "walkingIntensity": 12
+    },
+    "image": "https://loremflickr.com/1000/800/japan,imperial/all?lock=1022",
+    "transportOptions": {
+      "train": 40
+    },
+    "description": "Imperial Palace (Chiyoda) in Tokyo, Japan.",
+    "highlights": ["Imperial Palace (Chiyoda)"]
+  },
+  {
+    "id": "inuyama",
+    "name": "Inuyama",
+    "prefecture": "Aichi",
+    "region": "Chubu",
+    "categories": ["History", "Nature", "Castle"],
+    "heroImage": "/images/inuyama_hero.jpg",
+    "totalTripHours": 12,
+    "budgetMin": 12000,
+    "budgetRecommended": 17000,
+    "budgetMax": 22000,
+    "budgetBreakdown": {
+      "transport": 12000,
+      "tickets": 1000,
+      "food": 2500,
+      "cafe": 500
+    },
+    "transportOptions": {
+      "shinkansen": 110,
+      "car": 250
+    },
+    "walkingMin": 8000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 7.5,
+      "winter": 7,
+      "rain": 5,
+      "food": 7.5,
+      "photography": 9,
+      "relaxation": 8.5,
+      "value": 8,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 40,
+      "weekend": 75,
+      "holiday": 90
+    },
+    "season": {
+      "spring": 95,
+      "summer": 70,
+      "autumn": 95,
+      "winter": 60
+    },
+    "bestMonths": [4, 10, 11],
+    "tags": ["National Treasure", "Riverside", "Traditional"],
+    "highlights": ["Inuyama Castle", "Urakuen Garden", "Honmachi-dori Street"],
+    "coordinates": {
+      "lat": 35.3853,
+      "lng": 136.9405
+    },
+    "description": "Inuyama in Aichi, Japan."
   },
   {
     "id": "ito",
@@ -3463,7 +1464,7 @@
     "heroImage": "/images/ito_hero.jpg",
     "totalTripHours": 24,
     "budgetMin": 12000,
-    "budgetRecommended": 18000,
+    "budgetRecommended": 20000,
     "budgetMax": 28000,
     "budgetBreakdown": {
       "transport": 6000,
@@ -3512,6 +1513,2554 @@
     "coordinates": {
       "lat": 34.9734,
       "lng": 139.0924
-    }
+    },
+    "description": "Ito in Shizuoka, Japan."
+  },
+  {
+    "id": "izu",
+    "name": "Izu Peninsula",
+    "region": "Chubu",
+    "categories": ["Coast", "Hot Spring"],
+    "tags": ["Beaches", "Onsen", "Scuba"],
+    "budgetRecommended": 13000,
+    "ratings": {
+      "overall": 8.6,
+      "photography": 8.8,
+      "food": 8.5,
+      "summer": 9,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 20,
+    "coordinates": {
+      "lat": 34.9083,
+      "lng": 138.9317
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 9000,
+    "budgetMax": 17000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 120,
+      "car": 120
+    },
+    "description": "Izu Peninsula in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Izu Peninsula"]
+  },
+  {
+    "id": "jogashima",
+    "name": "Miura Peninsula & Jogashima",
+    "region": "Kanto",
+    "categories": ["Coast", "Nature"],
+    "tags": ["Ocean", "Scenic", "Hiking"],
+    "budgetRecommended": 6000,
+    "ratings": {
+      "overall": 8,
+      "photography": 8.8,
+      "food": 8,
+      "summer": 6.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 5,
+    "coordinates": {
+      "lat": 35.14,
+      "lng": 139.62
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 2000,
+    "budgetMax": 10000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 70
+    },
+    "description": "Miura Peninsula & Jogashima in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Miura Peninsula & Jogashima"]
+  },
+  {
+    "id": "joypolis",
+    "name": "Joypolis Odaiba",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Indoor Park", "Gaming"],
+    "heroImage": "/images/joypolis.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 16000,
+    "budgetRecommended": 20000,
+    "budgetMax": 24000,
+    "walkingMin": 4000,
+    "walkingSunMin": 0,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 90,
+    "ratings": {
+      "overall": 8.7,
+      "couple": 9,
+      "summer": 9.3,
+      "winter": 9.3,
+      "rain": 9.5,
+      "food": 8,
+      "photography": 8.5,
+      "relaxation": 6,
+      "value": 8,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 10,
+      "autumn": 10,
+      "winter": 10
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Indoor", "Action"],
+    "coordinates": {
+      "lat": 35.6762,
+      "lng": 139.6503
+    },
+    "comfort": {
+      "heatTolerance": 9.3,
+      "rainFriendly": 9,
+      "walkingIntensity": 4
+    },
+    "image": "https://loremflickr.com/1000/800/japan,joypolis/all?lock=1014",
+    "transportOptions": {
+      "train": 90
+    },
+    "description": "Joypolis Odaiba in Tokyo, Japan.",
+    "highlights": ["Joypolis Odaiba"]
+  },
+  {
+    "id": "kamakura-history",
+    "name": "Kamakura",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": ["History", "Temples", "Beach"],
+    "heroImage": "/images/kamakura_hero.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 7000,
+    "budgetRecommended": 11000,
+    "budgetMax": 15000,
+    "walkingMin": 10000,
+    "walkingSunMin": 7000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 15,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 8.5,
+      "summer": 9,
+      "winter": 6.5,
+      "rain": 4,
+      "food": 8,
+      "photography": 8.5,
+      "relaxation": 7,
+      "value": 9,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 5
+    },
+    "bestMonths": [5, 6, 7, 8, 9],
+    "tags": ["Day Trip", "Culture", "Walk-heavy"],
+    "coordinates": {
+      "lat": 35.3192808,
+      "lng": 139.5469627
+    },
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 1.5,
+      "walkingIntensity": 10
+    },
+    "image": "https://loremflickr.com/1000/800/japan,kamakura/all?lock=1001",
+    "transportOptions": {
+      "train": 60
+    },
+    "description": "Kamakura in Kanagawa, Japan.",
+    "highlights": ["Kamakura"]
+  },
+  {
+    "id": "kamikochi",
+    "name": "Kamikochi",
+    "region": "Chubu",
+    "categories": ["Nature", "Mountain"],
+    "tags": ["Hiking", "Alps", "Pristine"],
+    "budgetRecommended": 13000,
+    "ratings": {
+      "overall": 9.5,
+      "photography": 9.8,
+      "food": 6.5,
+      "summer": 10,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 5,
+    "coordinates": {
+      "lat": 36.2464,
+      "lng": 137.6364
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 9000,
+    "budgetMax": 17000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 260
+    },
+    "description": "Kamikochi in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kamikochi"]
+  },
+  {
+    "id": "kanazawa",
+    "name": "Kanazawa",
+    "region": "Chubu",
+    "categories": ["City", "Garden", "History"],
+    "tags": ["Kenrokuen", "Gold Leaf", "Geisha District"],
+    "budgetRecommended": 13000,
+    "ratings": {
+      "overall": 9.4,
+      "photography": 9.2,
+      "food": 9.5,
+      "summer": 6.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 50,
+    "coordinates": {
+      "lat": 36.5613,
+      "lng": 136.6562
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 9000,
+    "budgetMax": 17000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "shinkansen": 160
+    },
+    "description": "Kanazawa in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kanazawa"]
+  },
+  {
+    "id": "karuizawa",
+    "name": "Karuizawa",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["Nature", "Shopping", "Resort"],
+    "heroImage": "/images/karuizawa.jpg",
+    "totalTripHours": 12,
+    "budgetMin": 8000,
+    "budgetRecommended": 12000,
+    "budgetMax": 16000,
+    "walkingMin": 8000,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 6000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 9.4,
+      "couple": 9.5,
+      "summer": 9.7,
+      "winter": 8,
+      "rain": 6,
+      "food": 8.5,
+      "photography": 10,
+      "relaxation": 9,
+      "value": 8,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 10,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [7, 8, 9, 10],
+    "tags": ["Cool Summer", "Upscale"],
+    "coordinates": {
+      "lat": 36.3482938,
+      "lng": 138.5969968
+    },
+    "comfort": {
+      "heatTolerance": 9.7,
+      "rainFriendly": 4,
+      "walkingIntensity": 8
+    },
+    "image": "https://loremflickr.com/1000/800/japan,karuizawa/all?lock=1009",
+    "transportOptions": {
+      "train": 70,
+      "car": 180,
+      "shinkansen": 42,
+      "bus": 180
+    },
+    "description": "Karuizawa in Nagano, Japan.",
+    "highlights": ["Karuizawa"]
+  },
+  {
+    "id": "kawagoe-edo",
+    "name": "Kawagoe",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": ["History", "Food", "Architecture"],
+    "heroImage": "/images/kawagoe_hero.jpg",
+    "totalTripHours": 6,
+    "budgetMin": 8500,
+    "budgetRecommended": 12500,
+    "budgetMax": 16500,
+    "walkingMin": 8000,
+    "walkingSunMin": 6000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 8.2,
+      "couple": 8,
+      "summer": 5,
+      "winter": 7.5,
+      "rain": 6,
+      "food": 9,
+      "photography": 9.5,
+      "relaxation": 6,
+      "value": 9.5,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 4,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "tags": ["Foodie", "Photogenic", "Budget-friendly"],
+    "coordinates": {
+      "lat": 35.9251145,
+      "lng": 139.4856927
+    },
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 2,
+      "walkingIntensity": 8
+    },
+    "image": "https://loremflickr.com/1000/800/japan,kawagoe/all?lock=1002",
+    "transportOptions": {
+      "train": 45
+    },
+    "description": "Kawagoe in Saitama, Japan.",
+    "highlights": ["Kawagoe"]
+  },
+  {
+    "id": "kawasaki",
+    "name": "Kawasaki",
+    "region": "Kanto",
+    "categories": ["City", "Museum", "Shrine"],
+    "tags": ["Night Factory", "Doraemon"],
+    "budgetRecommended": 6000,
+    "ratings": {
+      "overall": 7.9,
+      "photography": 8,
+      "food": 8,
+      "summer": 5.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 60,
+    "coordinates": {
+      "lat": 35.5308,
+      "lng": 139.7028
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 2000,
+    "budgetMax": 10000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 15
+    },
+    "description": "Kawasaki in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kawasaki"]
+  },
+  {
+    "id": "kinugawa-onsen",
+    "name": "Kinugawa Onsen",
+    "region": "Kanto",
+    "categories": ["Hot Spring", "Theme Park"],
+    "tags": ["Onsen", "Edo Wonderland"],
+    "budgetRecommended": 17400,
+    "ratings": {
+      "overall": 8,
+      "photography": 7.5,
+      "food": 7.5,
+      "summer": 7,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 50,
+    "coordinates": {
+      "lat": 36.8167,
+      "lng": 139.7167
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
+    "prefecture": "Kanagawa",
+    "budgetMin": 13400,
+    "budgetMax": 21400,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 140,
+      "bus": 170
+    },
+    "description": "Kinugawa Onsen in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kinugawa Onsen"]
+  },
+  {
+    "id": "kiso",
+    "name": "Kiso Valley",
+    "region": "Chubu",
+    "categories": ["Town", "History", "Mountain"],
+    "tags": ["Nakasendo", "Post Towns", "Tsumago"],
+    "budgetRecommended": 11000,
+    "ratings": {
+      "overall": 9.1,
+      "photography": 9.5,
+      "food": 8,
+      "summer": 8.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 20,
+    "coordinates": {
+      "lat": 35.7933,
+      "lng": 137.6531
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 7000,
+    "budgetMax": 15000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 210
+    },
+    "description": "Kiso Valley in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kiso Valley"]
+  },
+  {
+    "id": "kofu",
+    "name": "Kofu",
+    "region": "Chubu",
+    "categories": ["City", "History", "Mountain"],
+    "tags": ["Takeda Shingen", "Wine", "Gorges"],
+    "budgetRecommended": 9000,
+    "ratings": {
+      "overall": 7.8,
+      "photography": 8,
+      "food": 8.5,
+      "summer": 7,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 35.6622,
+      "lng": 138.5683
+    },
+    "heroImage": "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
+    "prefecture": "Shizuoka",
+    "budgetMin": 5000,
+    "budgetMax": 13000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 110,
+      "car": 100
+    },
+    "description": "Kofu in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kofu"]
+  },
+  {
+    "id": "kurobe-gorge",
+    "name": "Kurobe Gorge",
+    "region": "Chubu",
+    "categories": ["Nature", "Mountain"],
+    "tags": ["Scenic Railway", "Ravine", "Onsen"],
+    "budgetRecommended": 21000,
+    "ratings": {
+      "overall": 8.9,
+      "photography": 9.4,
+      "food": 7,
+      "summer": 8.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 36.6833,
+      "lng": 137.6667
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 17000,
+    "budgetMax": 25000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 320,
+      "shinkansen": 220
+    },
+    "description": "Kurobe Gorge in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kurobe Gorge"]
+  },
+  {
+    "id": "kusatsu-onsen",
+    "name": "Kusatsu & Shima Onsen",
+    "region": "Kanto",
+    "categories": ["Hot Spring", "Town"],
+    "tags": ["Onsen", "Yubatake", "Mountains"],
+    "budgetRecommended": 16000,
+    "ratings": {
+      "overall": 9.2,
+      "photography": 9,
+      "food": 8.5,
+      "summer": 8.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 36.64,
+      "lng": 138.65
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 12000,
+    "budgetMax": 20000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 180,
+      "bus": 210
+    },
+    "description": "Kusatsu & Shima Onsen in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Kusatsu & Shima Onsen"]
+  },
+  {
+    "id": "lake-hamanako",
+    "name": "Lake Hamanako",
+    "region": "Chubu",
+    "categories": ["Lake", "Hot Spring"],
+    "tags": ["Eel", "Cycling", "Onsen"],
+    "budgetRecommended": 11000,
+    "ratings": {
+      "overall": 8.2,
+      "photography": 8.4,
+      "food": 9,
+      "summer": 7.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 34.75,
+      "lng": 137.6
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 7000,
+    "budgetMax": 15000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 130,
+      "car": 160,
+      "shinkansen": 78
+    },
+    "description": "Lake Hamanako in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Lake Hamanako"]
+  },
+  {
+    "id": "lake-sagami",
+    "name": "Lake Sagami",
+    "region": "Kanto",
+    "categories": ["Lake", "Nature", "Theme Park"],
+    "tags": ["Illumination", "Outdoors"],
+    "budgetRecommended": 10000,
+    "ratings": {
+      "overall": 8.1,
+      "photography": 8.5,
+      "food": 6.5,
+      "summer": 7.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 20,
+    "coordinates": {
+      "lat": 35.6131,
+      "lng": 139.1917
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 6000,
+    "budgetMax": 14000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 75,
+      "car": 60
+    },
+    "description": "Lake Sagami in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Lake Sagami"]
+  },
+  {
+    "id": "matsumoto",
+    "name": "Matsumoto",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["Castle", "History"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/960px-Matsumoto_Castle_Keep_Tower.jpg",
+    "totalTripHours": 12,
+    "budgetMin": 11600,
+    "budgetRecommended": 15600,
+    "budgetMax": 19600,
+    "walkingMin": 8000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 30,
+    "ratings": {
+      "overall": 9.6,
+      "couple": 9.5,
+      "summer": 9.8,
+      "winter": 8,
+      "rain": 6,
+      "food": 9,
+      "photography": 10,
+      "relaxation": 8,
+      "value": 8.5,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 10,
+      "autumn": 9,
+      "winter": 6
+    },
+    "bestMonths": [6, 7, 8, 9, 10],
+    "tags": ["Historic", "Mountains"],
+    "coordinates": {
+      "lat": 36.2382047,
+      "lng": 137.9687141
+    },
+    "comfort": {
+      "heatTolerance": 9.8,
+      "rainFriendly": 3,
+      "walkingIntensity": 8
+    },
+    "image": "https://loremflickr.com/1000/800/japan,matsumoto/all?lock=1007",
+    "transportOptions": {
+      "car": 210
+    },
+    "description": "Matsumoto in Nagano, Japan.",
+    "highlights": ["Matsumoto"]
+  },
+  {
+    "id": "meguro-ward",
+    "name": "Meguro",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Nature", "City"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Meguro_River_Spring_2014%282%29.jpg/960px-Meguro_River_Spring_2014%282%29.jpg",
+    "totalTripHours": 5,
+    "budgetMin": 6000,
+    "budgetRecommended": 10000,
+    "budgetMax": 14000,
+    "walkingMin": 8000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 8.7,
+      "couple": 9.5,
+      "summer": 7,
+      "winter": 7,
+      "rain": 6,
+      "food": 9,
+      "photography": 9.5,
+      "relaxation": 8.5,
+      "value": 8,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 8,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 10,
+      "summer": 7,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "tags": ["Cherry Blossoms", "Cafes", "Date Spot"],
+    "coordinates": {
+      "lat": 35.6408352,
+      "lng": 139.6985376
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 4,
+      "walkingIntensity": 8
+    },
+    "image": "https://loremflickr.com/1000/800/japan,meguro/all?lock=1031",
+    "transportOptions": {
+      "train": 45
+    },
+    "description": "Meguro in Tokyo, Japan.",
+    "highlights": ["Meguro"]
+  },
+  {
+    "id": "mito",
+    "name": "Mito",
+    "region": "Kanto",
+    "categories": ["City", "Garden"],
+    "tags": ["Kairakuen", "Plum Blossoms"],
+    "budgetRecommended": 7000,
+    "ratings": {
+      "overall": 7.8,
+      "photography": 8.2,
+      "food": 7.5,
+      "summer": 6.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 36.3658,
+      "lng": 140.4714
+    },
+    "heroImage": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
+    "prefecture": "Kanagawa",
+    "budgetMin": 3000,
+    "budgetMax": 11000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 110,
+      "car": 110
+    },
+    "description": "Mito in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Mito"]
+  },
+  {
+    "id": "mount-fuji",
+    "name": "Mount Fuji",
+    "region": "Chubu",
+    "categories": ["Mountain", "Nature"],
+    "tags": ["Iconic", "Climbing", "Views"],
+    "budgetRecommended": 6000,
+    "ratings": {
+      "overall": 9.6,
+      "photography": 10,
+      "food": 5,
+      "summer": 9,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 0,
+    "coordinates": {
+      "lat": 35.3606,
+      "lng": 138.7274
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 2000,
+    "budgetMax": 10000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 120
+    },
+    "description": "Mount Fuji in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Mount Fuji"]
+  },
+  {
+    "id": "nagano-city",
+    "name": "Nagano & Snow Monkeys",
+    "region": "Chubu",
+    "categories": ["City", "Shrine", "History"],
+    "tags": ["Zenkoji", "Olympics"],
+    "budgetRecommended": 10000,
+    "ratings": {
+      "overall": 8.2,
+      "photography": 8,
+      "food": 8.5,
+      "summer": 7.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 50,
+    "coordinates": {
+      "lat": 36.7,
+      "lng": 138.3
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 6000,
+    "budgetMax": 14000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 120,
+      "car": 180,
+      "shinkansen": 72
+    },
+    "description": "Nagano & Snow Monkeys in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Nagano & Snow Monkeys"]
+  },
+  {
+    "id": "nagoya",
+    "name": "Nagoya",
+    "prefecture": "Aichi",
+    "region": "Chubu",
+    "categories": ["City", "History", "Food"],
+    "heroImage": "/images/nagoya_hero.jpg",
+    "totalTripHours": 24,
+    "budgetMin": 15000,
+    "budgetRecommended": 22500,
+    "budgetMax": 30000,
+    "budgetBreakdown": {
+      "transport": 10680,
+      "tickets": 2000,
+      "food": 6000,
+      "cafe": 1500
+    },
+    "transportOptions": {
+      "shinkansen": 90,
+      "bus": 300,
+      "car": 240
+    },
+    "walkingMin": 6000,
+    "walkingSunMin": 3000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 60,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 8.5,
+      "summer": 7,
+      "winter": 8,
+      "rain": 8,
+      "food": 9,
+      "photography": 8,
+      "relaxation": 7,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 60,
+      "weekend": 85,
+      "holiday": 95
+    },
+    "season": {
+      "spring": 90,
+      "summer": 60,
+      "autumn": 85,
+      "winter": 70
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "tags": ["Castle", "Local Food", "Shopping"],
+    "highlights": ["Nagoya Castle", "Osu Kannon Temple", "Atsuta Jingu"],
+    "coordinates": {
+      "lat": 35.1815,
+      "lng": 136.9066
+    },
+    "description": "Nagoya in Aichi, Japan."
+  },
+  {
+    "id": "narita",
+    "name": "Narita",
+    "region": "Kanto",
+    "categories": ["Shrine", "History", "Town"],
+    "tags": ["Temple", "Eel"],
+    "budgetRecommended": 9000,
+    "ratings": {
+      "overall": 8.1,
+      "photography": 8.2,
+      "food": 8.8,
+      "summer": 6,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 35.7767,
+      "lng": 140.3183
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 5000,
+    "budgetMax": 13000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 100,
+      "car": 80
+    },
+    "description": "Narita in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Narita"]
+  },
+  {
+    "id": "nikko-heritage",
+    "name": "Nikko",
+    "prefecture": "Tochigi",
+    "region": "Kanto",
+    "categories": ["History", "Nature", "Temples"],
+    "heroImage": "/images/nikko_hero.jpg",
+    "totalTripHours": 36,
+    "budgetMin": 13000,
+    "budgetRecommended": 17000,
+    "budgetMax": 21000,
+    "walkingMin": 12000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 7000,
+    "indoorPercent": 30,
+    "ratings": {
+      "overall": 9.4,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 8,
+      "rain": 6.5,
+      "food": 7.5,
+      "photography": 10,
+      "relaxation": 8.5,
+      "value": 8,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 7
+    },
+    "bestMonths": [9, 10, 11],
+    "tags": ["World Heritage", "Nature", "Overnight"],
+    "coordinates": {
+      "lat": 36.7197576,
+      "lng": 139.698139
+    },
+    "comfort": {
+      "heatTolerance": 8.5,
+      "rainFriendly": 3,
+      "walkingIntensity": 12
+    },
+    "image": "https://loremflickr.com/1000/800/japan,nikko/all?lock=1003",
+    "transportOptions": {
+      "train": 120,
+      "car": 130
+    },
+    "description": "Nikko in Tochigi, Japan.",
+    "highlights": ["Nikko"]
+  },
+  {
+    "id": "noto",
+    "name": "Noto Peninsula",
+    "region": "Chubu",
+    "categories": ["Coast", "Nature"],
+    "tags": ["Scenic Drive", "Seafood", "Rugged"],
+    "budgetRecommended": 12000,
+    "ratings": {
+      "overall": 8.6,
+      "photography": 9,
+      "food": 9.2,
+      "summer": 8,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 37.2167,
+      "lng": 136.9667
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 8000,
+    "budgetMax": 16000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 360
+    },
+    "description": "Noto Peninsula in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Noto Peninsula"]
+  },
+  {
+    "id": "odaiba-minato",
+    "name": "Odaiba (Minato)",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["City", "Sea", "Theme Park"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
+    "totalTripHours": 8,
+    "budgetMin": 9000,
+    "budgetRecommended": 13000,
+    "budgetMax": 17000,
+    "walkingMin": 10000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 5000,
+    "indoorPercent": 60,
+    "ratings": {
+      "overall": 9,
+      "couple": 9.5,
+      "summer": 8.5,
+      "winter": 8.5,
+      "rain": 8,
+      "food": 8,
+      "photography": 9.5,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "tags": ["Date Spot", "Entertainment", "Ocean View"],
+    "coordinates": {
+      "lat": 35.6190032,
+      "lng": 139.7793576
+    },
+    "comfort": {
+      "heatTolerance": 8.5,
+      "rainFriendly": 6,
+      "walkingIntensity": 10
+    },
+    "image": "https://loremflickr.com/1000/800/japan,odaiba/all?lock=1023",
+    "transportOptions": {
+      "train": 50
+    },
+    "description": "Odaiba (Minato) in Tokyo, Japan.",
+    "highlights": ["Odaiba (Minato)"]
+  },
+  {
+    "id": "odawara",
+    "name": "Odawara & Manazuru",
+    "region": "Kanto",
+    "categories": ["Castle", "History", "Coast"],
+    "tags": ["Historic", "Seafood", "Relaxing"],
+    "budgetRecommended": 9000,
+    "ratings": {
+      "overall": 8.2,
+      "photography": 8,
+      "food": 8.5,
+      "summer": 7,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 35.2,
+      "lng": 139.14
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
+    "prefecture": "Kanagawa",
+    "budgetMin": 5000,
+    "budgetMax": 13000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 40
+    },
+    "description": "Odawara & Manazuru in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Odawara & Manazuru"]
+  },
+  {
+    "id": "okuhida",
+    "name": "Okuhida",
+    "region": "Chubu",
+    "categories": ["Hot Spring", "Mountain", "Nature"],
+    "tags": ["Onsen", "Ropeway", "Alps"],
+    "budgetRecommended": 19000,
+    "ratings": {
+      "overall": 8.9,
+      "photography": 9.2,
+      "food": 7.5,
+      "summer": 9.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 20,
+    "coordinates": {
+      "lat": 36.2667,
+      "lng": 137.55
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 15000,
+    "budgetMax": 23000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 280,
+      "bus": 310
+    },
+    "description": "Okuhida in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Okuhida"]
+  },
+  {
+    "id": "omiya-railway",
+    "name": "Omiya Railway Museum",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": ["Museum", "Indoor"],
+    "heroImage": "/images/omiya-railway.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 9700,
+    "budgetRecommended": 13700,
+    "budgetMax": 17700,
+    "walkingMin": 4000,
+    "walkingSunMin": 500,
+    "walkingShadeMin": 3500,
+    "indoorPercent": 95,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 9.5,
+      "winter": 9.5,
+      "rain": 10,
+      "food": 8,
+      "photography": 8.5,
+      "relaxation": 8,
+      "value": 9,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 10,
+      "autumn": 10,
+      "winter": 10
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Indoor", "Family-friendly"],
+    "coordinates": {
+      "lat": 35.6762,
+      "lng": 139.6503
+    },
+    "comfort": {
+      "heatTolerance": 9.5,
+      "rainFriendly": 9.5,
+      "walkingIntensity": 4
+    },
+    "image": "https://loremflickr.com/1000/800/japan,omiya/all?lock=1013",
+    "transportOptions": {
+      "train": 100
+    },
+    "description": "Omiya Railway Museum in Saitama, Japan.",
+    "highlights": ["Omiya Railway Museum"]
+  },
+  {
+    "id": "oze-national-park",
+    "name": "Oze National Park",
+    "region": "Kanto",
+    "categories": ["Nature", "Mountain"],
+    "tags": ["Hiking", "Marshlands"],
+    "budgetRecommended": 7400,
+    "ratings": {
+      "overall": 8.8,
+      "photography": 9.2,
+      "food": 5,
+      "summer": 9.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 0,
+    "coordinates": {
+      "lat": 36.9333,
+      "lng": 139.2333
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 3400,
+    "budgetMax": 11400,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 200
+    },
+    "description": "Oze National Park in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Oze National Park"]
+  },
+  {
+    "id": "sado-island",
+    "name": "Sado Island",
+    "region": "Chubu",
+    "categories": ["Island", "History", "Nature"],
+    "tags": ["Gold Mine", "Tub Boats", "Remote"],
+    "budgetRecommended": 16000,
+    "ratings": {
+      "overall": 8.4,
+      "photography": 8.5,
+      "food": 8.5,
+      "summer": 8,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 38.0333,
+      "lng": 138.3833
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+    "prefecture": "Shizuoka",
+    "budgetMin": 12000,
+    "budgetMax": 20000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 240
+    },
+    "description": "Sado Island in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Sado Island"]
+  },
+  {
+    "id": "saitama-city",
+    "name": "Saitama City",
+    "region": "Kanto",
+    "categories": ["City", "Museum", "Shrine"],
+    "tags": ["Bonsai", "Railway Museum"],
+    "budgetRecommended": 7000,
+    "ratings": {
+      "overall": 7.8,
+      "photography": 7,
+      "food": 7.5,
+      "summer": 6,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 60,
+    "coordinates": {
+      "lat": 35.8617,
+      "lng": 139.6455
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 3000,
+    "budgetMax": 11000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 60
+    },
+    "description": "Saitama City in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Saitama City"]
+  },
+  {
+    "id": "shibuya-ward",
+    "name": "Shibuya",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["City", "Shopping"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/960px-Shibuya_Crossing%2C_Aerial.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 6000,
+    "budgetRecommended": 10000,
+    "budgetMax": 14000,
+    "walkingMin": 10000,
+    "walkingSunMin": 6000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 50,
+    "ratings": {
+      "overall": 9,
+      "couple": 9,
+      "summer": 7.5,
+      "winter": 8.5,
+      "rain": 7.5,
+      "food": 9,
+      "photography": 9.5,
+      "relaxation": 6,
+      "value": 8,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 9,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 7,
+      "autumn": 8,
+      "winter": 9
+    },
+    "bestMonths": [3, 4, 9, 10, 11, 12],
+    "tags": ["Trendy", "Photography", "Fashion"],
+    "coordinates": {
+      "lat": 35.6637109,
+      "lng": 139.6976941
+    },
+    "comfort": {
+      "heatTolerance": 7.5,
+      "rainFriendly": 5,
+      "walkingIntensity": 10
+    },
+    "image": "https://loremflickr.com/1000/800/japan,shibuya/all?lock=1027",
+    "transportOptions": {
+      "train": 40
+    },
+    "description": "Shibuya in Tokyo, Japan.",
+    "highlights": ["Shibuya"]
+  },
+  {
+    "id": "shinjuku-ward",
+    "name": "Shinjuku",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["City", "Shopping", "Parks"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/960px-Skyscrapers_of_Shinjuku_2009_January.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 6000,
+    "budgetRecommended": 10000,
+    "budgetMax": 14000,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "indoorPercent": 60,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9,
+      "summer": 8,
+      "winter": 9,
+      "rain": 8.5,
+      "food": 9.5,
+      "photography": 9,
+      "relaxation": 7,
+      "value": 8,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 9,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [3, 4, 9, 10, 11],
+    "tags": ["Nightlife", "Shopping", "Views"],
+    "coordinates": {
+      "lat": 35.6937632,
+      "lng": 139.7036319
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 6,
+      "walkingIntensity": 10
+    },
+    "image": "https://loremflickr.com/1000/800/japan,shinjuku/all?lock=1026",
+    "transportOptions": {
+      "train": 40
+    },
+    "description": "Shinjuku in Tokyo, Japan.",
+    "highlights": ["Shinjuku"]
+  },
+  {
+    "id": "shizuoka",
+    "name": "Shizuoka City",
+    "region": "Chubu",
+    "categories": ["City", "History", "Nature"],
+    "tags": ["Green Tea", "Castle Ruins", "Fuji Views"],
+    "budgetRecommended": 9000,
+    "ratings": {
+      "overall": 8,
+      "photography": 8.2,
+      "food": 8.8,
+      "summer": 6.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 50,
+    "coordinates": {
+      "lat": 34.9756,
+      "lng": 138.3828
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 5000,
+    "budgetMax": 13000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 90,
+      "car": 120,
+      "shinkansen": 54
+    },
+    "description": "Shizuoka City in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Shizuoka City"]
+  },
+  {
+    "id": "takaoka",
+    "name": "Takaoka",
+    "region": "Chubu",
+    "categories": ["City", "Shrine", "History"],
+    "tags": ["Great Buddha", "Doraemon", "Crafts"],
+    "budgetRecommended": 9000,
+    "ratings": {
+      "overall": 7.7,
+      "photography": 7.8,
+      "food": 8,
+      "summer": 6.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 60,
+    "coordinates": {
+      "lat": 36.7417,
+      "lng": 137.015
+    },
+    "heroImage": "/images/takaoka_hero.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 5000,
+    "budgetMax": 13000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 300
+    },
+    "description": "Takaoka in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Takaoka"]
+  },
+  {
+    "id": "takayama",
+    "name": "Takayama & Shirakawa-go",
+    "region": "Chubu",
+    "categories": ["Town", "History"],
+    "tags": ["Old Town", "Hida Beef", "Sake"],
+    "budgetRecommended": 13000,
+    "ratings": {
+      "overall": 9,
+      "photography": 8.8,
+      "food": 9.5,
+      "summer": 8.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 36.2,
+      "lng": 137.05
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 9000,
+    "budgetMax": 17000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 260,
+      "shinkansen": 250
+    },
+    "description": "Takayama & Shirakawa-go in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Takayama & Shirakawa-go"]
+  },
+  {
+    "id": "teamlab-planets",
+    "name": "teamLab Planets",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Art", "Theme Park", "Indoor"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
+    "totalTripHours": 4,
+    "budgetMin": 11600,
+    "budgetRecommended": 15600,
+    "budgetMax": 19600,
+    "walkingMin": 3000,
+    "walkingSunMin": 0,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 100,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9.8,
+      "summer": 10,
+      "winter": 10,
+      "rain": 10,
+      "food": 8,
+      "photography": 10,
+      "relaxation": 8.5,
+      "value": 8.5,
+      "uniqueness": 10
+    },
+    "crowd": {
+      "weekday": 8,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": ["Digital Art", "Photogenic", "Date Spot"],
+    "coordinates": {
+      "lat": 35.64938,
+      "lng": 139.789728
+    },
+    "comfort": {
+      "heatTolerance": 10,
+      "rainFriendly": 10,
+      "walkingIntensity": 3
+    },
+    "image": "https://loremflickr.com/1000/800/japan,teamlab/all?lock=1018",
+    "transportOptions": {
+      "train": 50
+    },
+    "description": "teamLab Planets in Tokyo, Japan.",
+    "highlights": ["teamLab Planets"]
+  },
+  {
+    "id": "toyama-alpine",
+    "name": "Tateyama Kurobe Alpine Route",
+    "region": "Chubu",
+    "categories": ["Nature", "Mountain"],
+    "tags": ["Snow Wall", "Dam", "Scenic"],
+    "budgetRecommended": 24000,
+    "ratings": {
+      "overall": 9.3,
+      "photography": 9.8,
+      "food": 6,
+      "summer": 9.5,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 36.5667,
+      "lng": 137.6
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
+    "prefecture": "Shizuoka",
+    "budgetMin": 20000,
+    "budgetMax": 28000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "car": 280
+    },
+    "description": "Tateyama Kurobe Alpine Route in Shizuoka, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Tateyama Kurobe Alpine Route"]
+  },
+  {
+    "id": "tsukuba",
+    "name": "Mt. Tsukuba",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": ["Mountain", "Nature"],
+    "heroImage": "/images/tsukuba.jpg",
+    "totalTripHours": 11,
+    "budgetMin": 10000,
+    "budgetRecommended": 14000,
+    "budgetMax": 18000,
+    "walkingMin": 10000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 5000,
+    "indoorPercent": 10,
+    "ratings": {
+      "overall": 9.1,
+      "couple": 9,
+      "summer": 8,
+      "winter": 6,
+      "rain": 3,
+      "food": 8.5,
+      "photography": 9.5,
+      "relaxation": 7.5,
+      "value": 8.5,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 5
+    },
+    "bestMonths": [4, 5, 10, 11],
+    "tags": ["Hiking", "Views"],
+    "coordinates": {
+      "lat": 36.2253952,
+      "lng": 140.1067186
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 1,
+      "walkingIntensity": 10
+    },
+    "image": "https://loremflickr.com/1000/800/japan,mt./all?lock=1012",
+    "transportOptions": {
+      "train": 120,
+      "car": 150
+    },
+    "description": "Mt. Tsukuba in Ibaraki, Japan.",
+    "highlights": ["Mt. Tsukuba"]
+  },
+  {
+    "id": "ueno-taito",
+    "name": "Ueno (Taito)",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["History", "Art", "Museum", "Parks"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ueno_park.jpg/960px-Ueno_park.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 5000,
+    "budgetRecommended": 9000,
+    "budgetMax": 13000,
+    "walkingMin": 12000,
+    "walkingSunMin": 8000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 50,
+    "ratings": {
+      "overall": 9,
+      "couple": 8.5,
+      "summer": 7,
+      "winter": 8,
+      "rain": 8.5,
+      "food": 8.5,
+      "photography": 8.5,
+      "relaxation": 8,
+      "value": 9.5,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 7,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 7,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "tags": ["Museums", "Cherry Blossoms", "Street Food"],
+    "coordinates": {
+      "lat": 35.7161484,
+      "lng": 139.777257
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 5,
+      "walkingIntensity": 12
+    },
+    "image": "https://loremflickr.com/1000/800/japan,ueno/all?lock=1025",
+    "transportOptions": {
+      "train": 45
+    },
+    "description": "Ueno (Taito) in Tokyo, Japan.",
+    "highlights": ["Ueno (Taito)"]
+  },
+  {
+    "id": "ushiku-daibutsu",
+    "name": "Ushiku Daibutsu",
+    "region": "Kanto",
+    "categories": ["Shrine", "Park"],
+    "tags": ["Giant Statue", "Record Breaking"],
+    "budgetRecommended": 7500,
+    "ratings": {
+      "overall": 7.6,
+      "photography": 8.5,
+      "food": 5.5,
+      "summer": 6,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 35.9825,
+      "lng": 140.2208
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
+    "prefecture": "Kanagawa",
+    "budgetMin": 3500,
+    "budgetMax": 11500,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 100,
+      "car": 80
+    },
+    "description": "Ushiku Daibutsu in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Ushiku Daibutsu"]
+  },
+  {
+    "id": "utsunomiya-oya",
+    "name": "Utsunomiya & Oya",
+    "prefecture": "Tochigi",
+    "region": "Kanto",
+    "categories": ["History", "Food"],
+    "heroImage": "/images/utsunomiya-oya.jpg",
+    "totalTripHours": 10,
+    "budgetMin": 9600,
+    "budgetRecommended": 13600,
+    "budgetMax": 17600,
+    "walkingMin": 5000,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9,
+      "summer": 9.6,
+      "winter": 8,
+      "rain": 9,
+      "food": 9,
+      "photography": 9,
+      "relaxation": 7,
+      "value": 9.5,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 10,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [6, 7, 8],
+    "tags": ["Unique", "Foodie", "Underground"],
+    "coordinates": {
+      "lat": 36.5955648,
+      "lng": 139.819711
+    },
+    "comfort": {
+      "heatTolerance": 9.6,
+      "rainFriendly": 8,
+      "walkingIntensity": 5
+    },
+    "image": "https://loremflickr.com/1000/800/japan,utsunomiya/all?lock=1010",
+    "transportOptions": {
+      "train": 100,
+      "car": 150
+    },
+    "description": "Utsunomiya & Oya in Tochigi, Japan.",
+    "highlights": ["Utsunomiya & Oya"]
+  },
+  {
+    "id": "yokohama-city",
+    "name": "Yokohama",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": ["City", "Food", "Shopping"],
+    "heroImage": "/images/yokohama_hero.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 8000,
+    "budgetRecommended": 12000,
+    "budgetMax": 16000,
+    "walkingMin": 8000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 4000,
+    "indoorPercent": 70,
+    "ratings": {
+      "overall": 9,
+      "couple": 9.8,
+      "summer": 7.5,
+      "winter": 8.5,
+      "rain": 8.5,
+      "food": 9.5,
+      "photography": 9,
+      "relaxation": 8,
+      "value": 8.5,
+      "uniqueness": 7.5
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 7,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [3, 4, 5, 9, 10, 11, 12],
+    "tags": ["Date Spot", "Foodie", "Night View"],
+    "coordinates": {
+      "lat": 35.4503381,
+      "lng": 139.6343802
+    },
+    "comfort": {
+      "heatTolerance": 7.5,
+      "rainFriendly": 7,
+      "walkingIntensity": 8
+    },
+    "image": "https://loremflickr.com/1000/800/japan,yokohama/all?lock=1004",
+    "transportOptions": {
+      "train": 30
+    },
+    "description": "Yokohama in Kanagawa, Japan.",
+    "highlights": ["Yokohama"]
+  },
+  {
+    "id": "yomiuriland",
+    "name": "Yomiuriland",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Theme Park"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Yomiuriland-20100411.jpg/960px-Yomiuriland-20100411.jpg",
+    "totalTripHours": 8,
+    "budgetMin": 9000,
+    "budgetRecommended": 13000,
+    "budgetMax": 17000,
+    "walkingMin": 8000,
+    "walkingSunMin": 5000,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 9,
+      "summer": 7,
+      "winter": 9.5,
+      "rain": 4,
+      "food": 7,
+      "photography": 9,
+      "relaxation": 6,
+      "value": 8.5,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 7,
+      "autumn": 8,
+      "winter": 10
+    },
+    "bestMonths": [11, 12, 1, 2],
+    "tags": ["Theme Park", "Illumination", "Thrill Rides"],
+    "coordinates": {
+      "lat": 35.6762,
+      "lng": 139.6503
+    },
+    "comfort": {
+      "heatTolerance": 7,
+      "rainFriendly": 2,
+      "walkingIntensity": 8
+    },
+    "image": "https://loremflickr.com/1000/800/japan,yomiuriland/all?lock=1017",
+    "transportOptions": {
+      "train": 60,
+      "car": 60
+    },
+    "description": "Yomiuriland in Tokyo, Japan.",
+    "highlights": ["Yomiuriland"]
+  },
+  {
+    "id": "zushi",
+    "name": "Zushi & Yokosuka",
+    "region": "Kanto",
+    "categories": ["Coast", "Beach"],
+    "tags": ["Surfing", "Cafes", "Sunset"],
+    "budgetRecommended": 7000,
+    "ratings": {
+      "overall": 8,
+      "photography": 8.2,
+      "food": 7.8,
+      "summer": 9,
+      "couple": 8,
+      "winter": 7,
+      "rain": 6,
+      "relaxation": 8,
+      "value": 8,
+      "uniqueness": 8
+    },
+    "indoorPercent": 20,
+    "coordinates": {
+      "lat": 35.29,
+      "lng": 139.63
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
+    "prefecture": "Kanagawa",
+    "budgetMin": 3000,
+    "budgetMax": 11000,
+    "totalTripHours": 8,
+    "walkingMin": 10000,
+    "walkingSunMin": 4000,
+    "walkingShadeMin": 6000,
+    "comfort": {
+      "heatTolerance": 5,
+      "rainFriendly": 4,
+      "walkingIntensity": 5
+    },
+    "transportOptions": {
+      "train": 30,
+      "car": 40
+    },
+    "description": "Zushi & Yokosuka in Kanagawa, Japan.",
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 4,
+      "autumn": 4,
+      "winter": 4
+    },
+    "highlights": ["Zushi & Yokosuka"]
   }
 ]

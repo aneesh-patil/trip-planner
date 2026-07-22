@@ -1,11 +1,12 @@
 {
   "name": "tabimap",
   "private": true,
-  "version": "1.3.313",
+  "version": "1.3.314",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "pipeline": "node scripts/pipeline.cjs",
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest",
