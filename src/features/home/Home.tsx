@@ -84,10 +84,17 @@ export default function Home() {
 
   const handleCustomDateSelect = (selectedDate: string) => {
     if (!weatherContext) return;
-    const matchingPreset = weatherContext.tabs.find((t) =>
-      t.dates.includes(selectedDate),
+    const matchingPreset = weatherContext.tabs.find(
+      (t) => !t.isCustom && t.dates.includes(selectedDate),
     );
+
     if (matchingPreset) {
+      const cleanTabs = weatherContext.tabs.filter((t) => !t.isCustom);
+      setWeatherContext({
+        ...weatherContext,
+        tabs: cleanTabs,
+      });
+      setCustomDate(null);
       setActiveTabId(matchingPreset.id);
     } else {
       const customTabId = `custom_${selectedDate}`;
@@ -104,13 +111,11 @@ export default function Home() {
         isCustom: true,
       };
 
-      const exists = weatherContext.tabs.some((t) => t.id === customTabId);
-      if (!exists) {
-        setWeatherContext({
-          ...weatherContext,
-          tabs: [...weatherContext.tabs, customTab],
-        });
-      }
+      const baseTabs = weatherContext.tabs.filter((t) => !t.isCustom);
+      setWeatherContext({
+        ...weatherContext,
+        tabs: [...baseTabs, customTab],
+      });
       setActiveTabId(customTabId);
     }
   };
@@ -192,7 +197,19 @@ export default function Home() {
                     {weatherContext?.tabs.map((tab) => (
                       <button
                         key={tab.id}
-                        onClick={() => setActiveTabId(tab.id)}
+                        onClick={() => {
+                          if (weatherContext && !tab.isCustom) {
+                            const cleanTabs = weatherContext.tabs.filter(
+                              (t) => !t.isCustom,
+                            );
+                            setWeatherContext({
+                              ...weatherContext,
+                              tabs: cleanTabs,
+                            });
+                            setCustomDate(null);
+                          }
+                          setActiveTabId(tab.id);
+                        }}
                         className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all focus:outline-none ${
                           activeTabId === tab.id
                             ? "bg-emerald-600 text-white shadow-md"
