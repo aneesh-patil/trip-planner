@@ -69,7 +69,18 @@ export default function DestinationDetails() {
   const navState = location.state as {
     carMode?: string;
     publicModes?: string[];
+    partySize?: number;
   } | null;
+
+  const { user } = useAuth();
+  const partySize =
+    navState?.partySize || user?.user_metadata?.preferences?.partySize || 2;
+  const budgetLabel =
+    partySize === 1
+      ? "Solo Budget"
+      : partySize === 2
+        ? "Couple Budget"
+        : `Group Budget (${partySize} people)`;
 
   const {
     isFavorite,
@@ -466,6 +477,7 @@ export default function DestinationDetails() {
                                     budgetService.getTransportCost(
                                       destination,
                                       "train",
+                                      partySize,
                                     ) / 1000
                                   ).toFixed(1)}
                                   k
@@ -490,6 +502,7 @@ export default function DestinationDetails() {
                                     budgetService.getTransportCost(
                                       destination,
                                       "shinkansen",
+                                      partySize,
                                     ) / 1000
                                   ).toFixed(1)}
                                   k
@@ -513,6 +526,7 @@ export default function DestinationDetails() {
                                     budgetService.getTransportCost(
                                       destination,
                                       "bus",
+                                      partySize,
                                     ) / 1000
                                   ).toFixed(1)}
                                   k
@@ -536,6 +550,7 @@ export default function DestinationDetails() {
                                     budgetService.getTransportCost(
                                       destination,
                                       "car",
+                                      partySize,
                                     ) / 1000
                                   ).toFixed(1)}
                                   k
@@ -559,6 +574,7 @@ export default function DestinationDetails() {
                                     budgetService.getTransportCost(
                                       destination,
                                       "my_car",
+                                      partySize,
                                     ) / 1000
                                   ).toFixed(1)}
                                   k
@@ -584,12 +600,16 @@ export default function DestinationDetails() {
                         </div>
                         <div>
                           <h4 className="font-bold text-slate-900 dark:text-white leading-tight">
-                            Couple Budget
+                            {budgetLabel}
                           </h4>
                           <div className="text-emerald-600 font-black text-lg">
                             ¥
                             {budgetService
-                              .getAdjustedBudget(destination, selectedTransport)
+                              .getAdjustedBudget(
+                                destination,
+                                selectedTransport,
+                                partySize,
+                              )
                               .toLocaleString()}
                           </div>
                         </div>
@@ -645,6 +665,7 @@ export default function DestinationDetails() {
                                 .getTransportCost(
                                   destination,
                                   selectedTransport,
+                                  partySize,
                                 )
                                 .toLocaleString()}
                             </span>
@@ -654,7 +675,10 @@ export default function DestinationDetails() {
                             <span className="text-slate-500">🎟 Tickets</span>
                             <span className="font-semibold text-slate-700 dark:text-slate-300">
                               ¥
-                              {destination.budgetBreakdown.tickets.toLocaleString()}
+                              {Math.round(
+                                (destination.budgetBreakdown.tickets / 2) *
+                                  partySize,
+                              ).toLocaleString()}
                             </span>
                           </div>
                           <div className="flex justify-between text-sm mt-1.5">
@@ -663,9 +687,11 @@ export default function DestinationDetails() {
                             </span>
                             <span className="font-semibold text-slate-700 dark:text-slate-300">
                               ¥
-                              {(
-                                destination.budgetBreakdown.food +
-                                destination.budgetBreakdown.cafe
+                              {Math.round(
+                                ((destination.budgetBreakdown.food +
+                                  destination.budgetBreakdown.cafe) /
+                                  2) *
+                                  partySize,
                               ).toLocaleString()}
                             </span>
                           </div>

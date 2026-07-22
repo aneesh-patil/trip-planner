@@ -47,6 +47,15 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (!loading && user) {
+      const isSet = Boolean(user.user_metadata?.preferences?.preferences_set);
+      if (!isSet) {
+        setPreferencesOpen(true);
+      }
+    }
+  }, [user, loading]);
+
   const navItems = [
     { name: "Explore", path: "/", icon: Compass },
     { name: "Destinations", path: "/destinations", icon: Map },

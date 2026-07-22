@@ -43,6 +43,7 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
           publicModes,
           partySize,
           carOwnership,
+          preferences_set: true,
         },
       });
 
@@ -60,6 +61,8 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
   };
 
   if (!isOpen) return null;
+
+  const isUnset = !user?.user_metadata?.preferences?.preferences_set;
 
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
@@ -82,6 +85,13 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-6">
+          {isUnset && (
+            <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl p-3.5 text-xs text-emerald-800 dark:text-emerald-300 font-medium leading-relaxed">
+              ✨ Welcome to TabiMap! Please set your travel preferences below.
+              We'll use these to customize your recommendations, car mode
+              filters, and budget estimates.
+            </div>
+          )}
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
