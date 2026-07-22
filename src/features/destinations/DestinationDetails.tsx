@@ -26,6 +26,7 @@ import {
   Car,
   CheckCircle2,
   Share2,
+  Copy,
 } from "lucide-react";
 import { toast } from "sonner";
 import { Badge } from "@/shared/components/ui/badge";
@@ -292,9 +293,26 @@ export default function DestinationDetails() {
                 }
               }}
               className="inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
+              title="Share destination via native share sheet"
             >
               <Share2 className="w-4 h-4 mr-1.5" />
               Share
+            </button>
+
+            <button
+              onClick={async () => {
+                try {
+                  await navigator.clipboard.writeText(window.location.href);
+                  toast.success("Link copied to clipboard!");
+                } catch {
+                  toast.error("Failed to copy link.");
+                }
+              }}
+              className="inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
+              title="Copy destination link to clipboard"
+            >
+              <Copy className="w-4 h-4 mr-1.5" />
+              Copy Link
             </button>
           </div>
         </div>
