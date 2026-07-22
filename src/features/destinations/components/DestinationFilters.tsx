@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Input } from "@/shared/components/ui/input";
 import { useAuth } from "@/shared/hooks/useAuth";
 import {
@@ -66,6 +67,14 @@ export default function DestinationFilters({
   const carOwnership = user?.user_metadata?.preferences?.carOwnership || "all";
   const showRental = carOwnership === "all" || carOwnership === "rental";
   const showMyCar = carOwnership === "all" || carOwnership === "my_car";
+
+  useEffect(() => {
+    if (!showRental && carMode === "rental") {
+      setCarMode("none");
+    } else if (!showMyCar && carMode === "my_car") {
+      setCarMode("none");
+    }
+  }, [showRental, showMyCar, carMode, setCarMode]);
   return (
     <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm mb-8 space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

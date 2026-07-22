@@ -52,7 +52,6 @@
     "transportOptions": {
       "train": 45
     },
-    "description": "Akasaka (Minato) in Tokyo, Japan.",
     "highlights": ["Akasaka (Minato)"]
   },
   {
@@ -108,7 +107,6 @@
     "transportOptions": {
       "train": 40
     },
-    "description": "Akihabara (Chiyoda) in Tokyo, Japan.",
     "highlights": ["Akihabara (Chiyoda)"]
   },
   {
@@ -164,7 +162,6 @@
     "transportOptions": {
       "train": 50
     },
-    "description": "Asakusa (Taito) in Tokyo, Japan.",
     "highlights": ["Asakusa (Taito)"]
   },
   {
@@ -207,7 +204,6 @@
     "transportOptions": {
       "car": 80
     },
-    "description": "Ashigara in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -276,7 +272,6 @@
       "shinkansen": 45,
       "car": 90
     },
-    "description": "Atami in Shizuoka, Japan.",
     "highlights": ["Atami"]
   },
   {
@@ -332,7 +327,6 @@
     "transportOptions": {
       "car": 90
     },
-    "description": "Boso Peninsula in Chiba, Japan.",
     "highlights": ["Boso Peninsula"]
   },
   {
@@ -376,7 +370,6 @@
       "train": 70,
       "car": 60
     },
-    "description": "Chiba City in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -431,7 +424,6 @@
       "train": 120,
       "car": 110
     },
-    "description": "Chichibu in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -624,7 +616,6 @@
     "transportOptions": {
       "train": 45
     },
-    "description": "Tokyo Disneyland in Chiba, Japan.",
     "highlights": ["Tokyo Disneyland"]
   },
   {
@@ -680,7 +671,6 @@
     "transportOptions": {
       "train": 90
     },
-    "description": "DisneySea in Chiba, Japan.",
     "highlights": ["DisneySea"]
   },
   {
@@ -737,7 +727,6 @@
       "train": 60,
       "car": 50
     },
-    "description": "Edogawa in Tokyo, Japan.",
     "highlights": ["Edogawa"]
   },
   {
@@ -793,7 +782,6 @@
     "transportOptions": {
       "train": 60
     },
-    "description": "Enoshima in Kanagawa, Japan.",
     "highlights": ["Enoshima"]
   },
   {
@@ -838,7 +826,6 @@
       "car": 110,
       "bus": 120
     },
-    "description": "Fuji Five Lakes in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -893,7 +880,6 @@
       "train": 130,
       "car": 110
     },
-    "description": "Fujinomiya in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -947,7 +933,6 @@
     "transportOptions": {
       "car": 300
     },
-    "description": "Fukui in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -1002,7 +987,6 @@
       "train": 100,
       "shinkansen": 60
     },
-    "description": "Gala Yuzawa in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -1069,7 +1053,6 @@
     "transportOptions": {
       "train": 50
     },
-    "description": "Ghibli Museum in Tokyo, Japan.",
     "highlights": ["Ghibli Museum"]
   },
   {
@@ -1125,7 +1108,6 @@
     "transportOptions": {
       "train": 40
     },
-    "description": "Ginza in Tokyo, Japan.",
     "highlights": ["Ginza"]
   },
   {
@@ -1187,8 +1169,7 @@
     "coordinates": {
       "lat": 35.7483,
       "lng": 136.9582
-    },
-    "description": "Gujo Hachiman in Gifu, Japan."
+    }
   },
   {
     "id": "hachioji-tokyo",
@@ -1294,7 +1275,6 @@
       "train": 45,
       "car": 40
     },
-    "description": "Hakkeijima Sea Paradise in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -1361,7 +1341,6 @@
     "transportOptions": {
       "train": 85
     },
-    "description": "Hakone in Kanagawa, Japan.",
     "highlights": ["Hakone"]
   },
   {
@@ -1417,7 +1396,6 @@
     "transportOptions": {
       "train": 45
     },
-    "description": "Harry Potter Studio in Tokyo, Japan.",
     "highlights": ["Harry Potter Studio"]
   },
   {
@@ -1461,7 +1439,6 @@
       "train": 140,
       "car": 120
     },
-    "description": "Hitachi Seaside Park in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -1592,7 +1569,6 @@
     "transportOptions": {
       "train": 50
     },
-    "description": "Ikebukuro (Toshima) in Tokyo, Japan.",
     "highlights": ["Ikebukuro (Toshima)"]
   },
   {
@@ -1648,7 +1624,6 @@
     "transportOptions": {
       "train": 40
     },
-    "description": "Imperial Palace (Chiyoda) in Tokyo, Japan.",
     "highlights": ["Imperial Palace (Chiyoda)"]
   },
   {
@@ -1705,8 +1680,7 @@
     "coordinates": {
       "lat": 35.3853,
       "lng": 136.9405
-    },
-    "description": "Inuyama in Aichi, Japan."
+    }
   },
   {
     "id": "ito",
@@ -1766,8 +1740,7 @@
     "coordinates": {
       "lat": 34.9734,
       "lng": 139.0924
-    },
-    "description": "Ito in Shizuoka, Japan."
+    }
   },
   {
     "id": "izu",
@@ -1810,7 +1783,6 @@
       "train": 120,
       "car": 120
     },
-    "description": "Izu Peninsula in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -1864,7 +1836,6 @@
     "transportOptions": {
       "car": 70
     },
-    "description": "Miura Peninsula & Jogashima in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -1931,7 +1902,6 @@
     "transportOptions": {
       "train": 90
     },
-    "description": "Joypolis Odaiba in Tokyo, Japan.",
     "highlights": ["Joypolis Odaiba"]
   },
   {
@@ -1987,7 +1957,6 @@
     "transportOptions": {
       "train": 60
     },
-    "description": "Kamakura in Kanagawa, Japan.",
     "highlights": ["Kamakura"]
   },
   {
@@ -2030,7 +1999,6 @@
     "transportOptions": {
       "car": 260
     },
-    "description": "Kamikochi in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2084,7 +2052,6 @@
     "transportOptions": {
       "shinkansen": 160
     },
-    "description": "Kanazawa in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2154,7 +2121,6 @@
       "shinkansen": 42,
       "bus": 180
     },
-    "description": "Karuizawa in Nagano, Japan.",
     "highlights": ["Karuizawa"]
   },
   {
@@ -2210,7 +2176,6 @@
     "transportOptions": {
       "train": 45
     },
-    "description": "Kawagoe in Saitama, Japan.",
     "highlights": ["Kawagoe"]
   },
   {
@@ -2253,7 +2218,6 @@
     "transportOptions": {
       "train": 15
     },
-    "description": "Kawasaki in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2308,7 +2272,6 @@
       "car": 140,
       "bus": 170
     },
-    "description": "Kinugawa Onsen in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2362,7 +2325,6 @@
     "transportOptions": {
       "car": 210
     },
-    "description": "Kiso Valley in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2417,7 +2379,6 @@
       "train": 110,
       "car": 100
     },
-    "description": "Kofu in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2472,7 +2433,6 @@
       "car": 320,
       "shinkansen": 220
     },
-    "description": "Kurobe Gorge in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2527,7 +2487,6 @@
       "car": 180,
       "bus": 210
     },
-    "description": "Kusatsu & Shima Onsen in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2583,7 +2542,6 @@
       "car": 160,
       "shinkansen": 78
     },
-    "description": "Lake Hamanako in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2638,7 +2596,6 @@
       "train": 75,
       "car": 60
     },
-    "description": "Lake Sagami in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2769,7 +2726,6 @@
     "transportOptions": {
       "car": 210
     },
-    "description": "Matsumoto in Nagano, Japan.",
     "highlights": ["Matsumoto"]
   },
   {
@@ -2825,7 +2781,6 @@
     "transportOptions": {
       "train": 45
     },
-    "description": "Meguro in Tokyo, Japan.",
     "highlights": ["Meguro"]
   },
   {
@@ -2869,7 +2824,6 @@
       "train": 110,
       "car": 110
     },
-    "description": "Mito in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -2982,7 +2936,6 @@
     "transportOptions": {
       "car": 120
     },
-    "description": "Mount Fuji in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3038,7 +2991,6 @@
       "car": 180,
       "shinkansen": 72
     },
-    "description": "Nagano & Snow Monkeys in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3170,8 +3122,7 @@
     "coordinates": {
       "lat": 35.1815,
       "lng": 136.9066
-    },
-    "description": "Nagoya in Aichi, Japan."
+    }
   },
   {
     "id": "narita",
@@ -3214,7 +3165,6 @@
       "train": 100,
       "car": 80
     },
-    "description": "Narita in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3282,7 +3232,6 @@
       "train": 120,
       "car": 130
     },
-    "description": "Nikko in Tochigi, Japan.",
     "highlights": ["Nikko"]
   },
   {
@@ -3325,7 +3274,6 @@
     "transportOptions": {
       "car": 360
     },
-    "description": "Noto Peninsula in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3392,7 +3340,6 @@
     "transportOptions": {
       "train": 50
     },
-    "description": "Odaiba (Minato) in Tokyo, Japan.",
     "highlights": ["Odaiba (Minato)"]
   },
   {
@@ -3435,7 +3382,6 @@
     "transportOptions": {
       "train": 40
     },
-    "description": "Odawara & Manazuru in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3490,7 +3436,6 @@
       "car": 280,
       "bus": 310
     },
-    "description": "Okuhida in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3679,7 +3624,6 @@
     "transportOptions": {
       "train": 100
     },
-    "description": "Omiya Railway Museum in Saitama, Japan.",
     "highlights": ["Omiya Railway Museum"]
   },
   {
@@ -3722,7 +3666,6 @@
     "transportOptions": {
       "car": 200
     },
-    "description": "Oze National Park in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3776,7 +3719,6 @@
     "transportOptions": {
       "car": 240
     },
-    "description": "Sado Island in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3830,7 +3772,6 @@
     "transportOptions": {
       "train": 60
     },
-    "description": "Saitama City in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -3897,7 +3838,6 @@
     "transportOptions": {
       "train": 40
     },
-    "description": "Shibuya in Tokyo, Japan.",
     "highlights": ["Shibuya"]
   },
   {
@@ -3953,7 +3893,6 @@
     "transportOptions": {
       "train": 40
     },
-    "description": "Shinjuku in Tokyo, Japan.",
     "highlights": ["Shinjuku"]
   },
   {
@@ -3998,7 +3937,6 @@
       "car": 120,
       "shinkansen": 54
     },
-    "description": "Shizuoka City in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -4179,7 +4117,6 @@
     "transportOptions": {
       "car": 300
     },
-    "description": "Takaoka in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -4234,7 +4171,6 @@
       "car": 260,
       "shinkansen": 250
     },
-    "description": "Takayama & Shirakawa-go in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -4301,7 +4237,6 @@
     "transportOptions": {
       "train": 50
     },
-    "description": "teamLab Planets in Tokyo, Japan.",
     "highlights": ["teamLab Planets"]
   },
   {
@@ -4344,7 +4279,6 @@
     "transportOptions": {
       "car": 280
     },
-    "description": "Tateyama Kurobe Alpine Route in Shizuoka, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -4412,7 +4346,6 @@
       "train": 120,
       "car": 150
     },
-    "description": "Mt. Tsukuba in Ibaraki, Japan.",
     "highlights": ["Mt. Tsukuba"]
   },
   {
@@ -4468,7 +4401,6 @@
     "transportOptions": {
       "train": 45
     },
-    "description": "Ueno (Taito) in Tokyo, Japan.",
     "highlights": ["Ueno (Taito)"]
   },
   {
@@ -4512,7 +4444,6 @@
       "train": 100,
       "car": 80
     },
-    "description": "Ushiku Daibutsu in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,
@@ -4580,7 +4511,6 @@
       "train": 100,
       "car": 150
     },
-    "description": "Utsunomiya & Oya in Tochigi, Japan.",
     "highlights": ["Utsunomiya & Oya"]
   },
   {
@@ -4636,7 +4566,6 @@
     "transportOptions": {
       "train": 30
     },
-    "description": "Yokohama in Kanagawa, Japan.",
     "highlights": ["Yokohama"]
   },
   {
@@ -4693,7 +4622,6 @@
       "train": 60,
       "car": 60
     },
-    "description": "Yomiuriland in Tokyo, Japan.",
     "highlights": ["Yomiuriland"]
   },
   {
@@ -4737,7 +4665,6 @@
       "train": 30,
       "car": 40
     },
-    "description": "Zushi & Yokosuka in Kanagawa, Japan.",
     "crowd": {
       "weekday": 3,
       "weekend": 4,

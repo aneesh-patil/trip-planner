@@ -188,8 +188,8 @@ async function runPipeline() {
       }
     }
 
-    if (!d.description) {
-      d.description = d.notes || `${d.name} in ${d.prefecture}, Japan.`;
+    if (!d.description && d.notes) {
+      d.description = d.notes;
       filledFieldsCount++;
     }
     if (!d.crowd) {
@@ -198,10 +198,6 @@ async function runPipeline() {
     }
     if (!d.season) {
       d.season = { spring: 4, summer: 4, autumn: 4, winter: 4 };
-      filledFieldsCount++;
-    }
-    if (!d.highlights) {
-      d.highlights = [d.name];
       filledFieldsCount++;
     }
     if (!d.tags) {

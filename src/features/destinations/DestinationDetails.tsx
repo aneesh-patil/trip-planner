@@ -364,14 +364,17 @@ export default function DestinationDetails() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full font-medium"
-                    title="View full article on Wikipedia"
+                    title="Overview sourced from Wikipedia under CC BY-SA 4.0 License"
                   >
-                    <ExternalLink className="w-3 h-3" /> Wikipedia
+                    <ExternalLink className="w-3 h-3" /> Wikipedia (CC BY-SA)
                   </a>
                 )}
               </div>
               <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                {wikiSummary ? wikiSummary.extract : destination.description}
+                {wikiSummary
+                  ? wikiSummary.extract
+                  : destination.description ||
+                    `${destination.name} is a premier destination located in ${destination.prefecture}, Japan, offering unique local highlights and travel experiences.`}
               </p>
               <div className="flex flex-wrap gap-2">
                 {destination.tags.map((tag) => (
