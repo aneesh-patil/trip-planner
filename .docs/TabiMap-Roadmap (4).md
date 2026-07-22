@@ -73,9 +73,9 @@ Shipped exactly to spec: `carMode` (single-select: My Car / Rental Car / None) a
 A gap was found and closed during review: **the Destination Details page's Logistics tab was showing all transport modes regardless of the active filter**, dropping filter context on click-through. Fixed by threading the selection through React Router state (`state={linkState}` on the card's `Link`), with an explicit, deliberate fallback: direct links/bookmarks with no state show all modes (unchanged safe default), while filtered navigation shows only the selected modes. The underlying mode-matching logic was also extracted into a single shared `getValidModes()` function during this fix, removing a prior duplication between the filter and scoring passes in `RecommendationService.ts` — a genuine improvement beyond the immediate ask.
 
 **One remaining item, still open:** the "hide car mode entirely if not applicable" part of the original decision was never implemented at the *preference* level — `DestinationFilters.tsx` still always shows all three car buttons (No Car / Rental / My Car) regardless of any saved profile preference, because no such preference (e.g. "I own a car" / "no car, public transport only") exists yet in `PreferencesModal.tsx`. This is a smaller, separate task:
-- [ ] Add a car-ownership preference to `PreferencesModal.tsx`, persisted the same way as `partySize`
-- [ ] Read it in `DestinationFilters.tsx` to conditionally hide irrelevant car buttons
-- [ ] Default to "show all three" for users who haven't set the preference yet
+- [x] Add a car-ownership preference to `PreferencesModal.tsx`, persisted the same way as `partySize`
+- [x] Read it in `DestinationFilters.tsx` to conditionally hide irrelevant car buttons
+- [x] Default to "show all three" for users who haven't set the preference yet
 
 **Minor, optional polish:** the "Cheapest" badge technically means "cheapest among your selected modes," not cheapest overall — accurate to the spec, but could be worded as "Best of selected" to avoid overclaiming when a cheaper unselected mode exists.
 
@@ -104,16 +104,16 @@ No existing integration code found in the repo — this is greenfield, not an ex
 
 **Status: ✅ Implemented** (commit `a250abc`) — added unit preferences and email notification opt-in, matching the candidates suggested above.
 
-> ### ⚠️ Remaining bug: `deleteAccount()` doesn't check for errors before signing out
-> A delete-account action already exists and is reachable in the UI. **The DELETE RLS policy has now been confirmed run in Supabase.** The remaining issue is in the code itself, not the database: `useAuth.tsx`'s `deleteAccount()` calls `supabase.from("user_data").delete()` but **unconditionally signs the user out regardless of whether that call succeeded** — there's no check on the returned `error`. With the policy now correctly in place, deletes should normally succeed — but if one ever fails for any reason (network blip, future policy change, unexpected error), the user would still be signed out and shown a "deleted" experience with no indication anything went wrong.
-> - [ ] Check the `error` returned from the delete call in `deleteAccount()` and surface a failure (toast, same pattern as the P0 sync-failure toast) instead of always proceeding to sign out regardless of outcome
+> ### ⚠️ Remaining bug: `deleteAccount()` doesn't check for errors before signing out (Fixed: commit `0e9317b`)
+> A delete-account action already exists and is reachable in the UI. **The DELETE RLS policy has now been confirmed run in Supabase.**
+> - [x] Check the `error` returned from the delete call in `deleteAccount()` and surface a failure (toast, same pattern as the P0 sync-failure toast) instead of always proceeding to sign out regardless of outcome
 
 ### F6 — Share a place (single destination first, itinerary/list sharing later)
 
-**Decision: start with single-destination sharing.**
+**Status: ✅ Complete** (commit `276c24b`)
 
-- [ ] Add a share action on `DestinationDetails.tsx` — generate a URL that deep-links directly to that destination's detail view
-- [ ] Decide share mechanism: native Web Share API (mobile-friendly, one tap) vs. simple "copy link" button — recommend both, Web Share API with copy-link fallback for desktop
+- [x] Add a share action on `DestinationDetails.tsx` — generate a URL that deep-links directly to that destination's detail view
+- [x] Decide share mechanism: native Web Share API (mobile-friendly, one tap) vs. simple "copy link" button — recommend both, Web Share API with copy-link fallback for desktop
 - [ ] Later phase (not now): sharing a comparison list or saved itinerary — would need a way to serialize `compareList`/`favorites` into a shareable, possibly read-only state, which is a bigger design question than single-destination linking
 
 ### F7 — Feedback and contact
