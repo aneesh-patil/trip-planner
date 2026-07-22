@@ -372,11 +372,15 @@ export default function DestinationDetails() {
               </div>
 
               {/* Primary Description */}
-              <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                {destination.description ||
-                  wikiSummary?.extract ||
-                  `${destination.name} is a premier destination located in ${destination.prefecture}, Japan, offering unique local highlights and travel experiences.`}
-              </p>
+              {(destination.description ||
+                wikiSummary?.extract ||
+                destination.notes) && (
+                <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+                  {destination.description ||
+                    wikiSummary?.extract ||
+                    destination.notes}
+                </p>
+              )}
 
               {/* Blended Wikipedia Context Box when local description is present */}
               {destination.description && wikiSummary && (
