@@ -358,7 +358,7 @@ export default function DestinationDetails() {
             <section className="bg-white dark:bg-slate-900 rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-bold tracking-tight">Overview</h2>
-                {wikiSummary && (
+                {wikiSummary && !destination.description && (
                   <a
                     href={wikiSummary.url}
                     target="_blank"
@@ -370,12 +370,34 @@ export default function DestinationDetails() {
                   </a>
                 )}
               </div>
+
+              {/* Primary Description */}
               <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                {wikiSummary
-                  ? wikiSummary.extract
-                  : destination.description ||
-                    `${destination.name} is a premier destination located in ${destination.prefecture}, Japan, offering unique local highlights and travel experiences.`}
+                {destination.description ||
+                  wikiSummary?.extract ||
+                  `${destination.name} is a premier destination located in ${destination.prefecture}, Japan, offering unique local highlights and travel experiences.`}
               </p>
+
+              {/* Blended Wikipedia Context Box when local description is present */}
+              {destination.description && wikiSummary && (
+                <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-4 border border-slate-200/80 dark:border-slate-700/60 text-sm text-slate-600 dark:text-slate-300 mb-6 space-y-2">
+                  <div className="flex items-center justify-between font-bold text-xs text-slate-500 dark:text-slate-400">
+                    <span>Wikipedia Article Summary</span>
+                    <a
+                      href={wikiSummary.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                      title="Overview sourced from Wikipedia under CC BY-SA 4.0 License"
+                    >
+                      <ExternalLink className="w-3 h-3" /> Wikipedia (CC BY-SA
+                      4.0)
+                    </a>
+                  </div>
+                  <p className="leading-relaxed">{wikiSummary.extract}</p>
+                </div>
+              )}
+
               <div className="flex flex-wrap gap-2">
                 {destination.tags.map((tag) => (
                   <Badge
