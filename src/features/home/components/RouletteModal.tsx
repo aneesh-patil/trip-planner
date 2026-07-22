@@ -224,6 +224,7 @@ export default function RouletteModal({
                 {winner && !spinning && (
                   <Link
                     to={`/destinations/${winner.id}`}
+                    state={{ carMode, publicModes, partySize }}
                     onClick={onClose}
                     className="flex-1"
                   >

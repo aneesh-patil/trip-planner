@@ -156,8 +156,19 @@ export default function DestinationDetails() {
     ) {
       return getValidModes(destination, navState.carMode, navState.publicModes);
     }
+    const userPrefs = user?.user_metadata?.preferences;
+    if (
+      userPrefs &&
+      (userPrefs.carMode !== undefined || userPrefs.publicModes !== undefined)
+    ) {
+      return getValidModes(
+        destination,
+        userPrefs.carMode,
+        userPrefs.publicModes,
+      );
+    }
     return null;
-  }, [destination, navState]);
+  }, [destination, navState, user]);
 
   const isModeVisible = (mode: string) => {
     if (
