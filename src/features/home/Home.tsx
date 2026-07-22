@@ -14,6 +14,7 @@ import {
   Waves,
   Landmark,
   Snowflake,
+  Calendar,
 } from "lucide-react";
 import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
@@ -28,6 +29,12 @@ import {
 import { Slider } from "@/shared/components/ui/slider";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { useAuth } from "@/shared/hooks/useAuth";
+import {
+  fetchWeatherTabContext,
+  getTabWeatherSummary,
+  type WeatherTabContext,
+  type WeatherTab,
+} from "@/shared/services/weather/WeatherTabService";
 import { getRecommendations } from "@/shared/services/recommendation/RecommendationService";
 import StationInput from "@/shared/components/StationInput";
 
@@ -54,59 +61,67 @@ export default function Home() {
     }
   }, [user]);
 
-  // Current Situation State (Yokohama)
-  interface DayContext {
-    temp: number;
-    desc: string;
-    date: string;
-    label: string;
-  }
-  const [forecastDays, setForecastDays] = useState<DayContext[]>([]);
-  const [selectedDayIndex, setSelectedDayIndex] = useState(0);
+  const [weatherContext, setWeatherContext] =
+    useState<WeatherTabContext | null>(null);
+  const [activeTabId, setActiveTabId] = useState<string>("today");
+  const [customDate, setCustomDate] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchContext = async () => {
-      try {
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=35.45&longitude=139.63&daily=weathercode,temperature_2m_max&timezone=Asia%2FTokyo&forecast_days=3`;
-        const res = await fetch(url);
-        const data = await res.json();
+    const lat = homeStationCoords?.lat || 35.6762;
+    const lng = homeStationCoords?.lng || 139.6503;
+    fetchWeatherTabContext(lat, lng)
+      .then((ctx) => {
+        setWeatherContext(ctx);
+        setActiveTabId(ctx.activeTabId);
+      })
+      .catch((err) => console.error("Weather tab fetch error:", err));
+  }, [homeStationCoords]);
 
-        const days: DayContext[] = [];
+  const handleCustomDateSelect = (selectedDate: string) => {
+    if (!weatherContext) return;
+    const matchingPreset = weatherContext.tabs.find((t) =>
+      t.dates.includes(selectedDate),
+    );
+    if (matchingPreset) {
+      setActiveTabId(matchingPreset.id);
+    } else {
+      const customTabId = `custom_${selectedDate}`;
+      const [y, m, d] = selectedDate.split("-").map(Number);
+      const dateObj = new Date(y, m - 1, d);
+      const label = dateObj.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+      });
+      const customTab: WeatherTab = {
+        id: customTabId,
+        label,
+        dates: [selectedDate],
+        isCustom: true,
+      };
 
-        for (let i = 0; i < 3; i++) {
-          const temp = Math.round(data.daily.temperature_2m_max[i]);
-          const code = data.daily.weathercode[i];
-
-          let desc = "Clear";
-          if (code >= 1 && code <= 3) desc = "Cloudy";
-          if (code >= 51 && code <= 67) desc = "Rainy";
-          if (code >= 71 && code <= 77) desc = "Snow";
-          if (code >= 80 && code <= 99) desc = "Stormy";
-
-          const dateObj = new Date(data.daily.time[i]);
-          const dateString = dateObj.toLocaleDateString("en-US", {
-            weekday: "long",
-            month: "long",
-            day: "numeric",
-          });
-
-          let label = "Today";
-          if (i === 1) label = "Tomorrow";
-          if (i === 2)
-            label = dateObj.toLocaleDateString("en-US", { weekday: "short" });
-
-          days.push({ temp, desc, date: dateString, label });
-        }
-
-        setForecastDays(days);
-      } catch (e) {
-        console.error(e);
+      const exists = weatherContext.tabs.some((t) => t.id === customTabId);
+      if (!exists) {
+        setWeatherContext({
+          ...weatherContext,
+          tabs: [...weatherContext.tabs, customTab],
+        });
       }
-    };
-    fetchContext();
-  }, []);
+      setActiveTabId(customTabId);
+    }
+  };
 
-  const currentSituation = forecastDays[selectedDayIndex] || null;
+  const currentTab = useMemo(() => {
+    if (!weatherContext) return null;
+    return (
+      weatherContext.tabs.find((t) => t.id === activeTabId) ||
+      weatherContext.tabs[0]
+    );
+  }, [weatherContext, activeTabId]);
+
+  const currentSituation = useMemo(() => {
+    if (!weatherContext || !currentTab) return null;
+    return getTabWeatherSummary(currentTab, weatherContext.forecastMap);
+  }, [weatherContext, currentTab]);
 
   // Calculate Smart Match Score using the new service
   const scoredDestinations = useMemo(() => {
@@ -157,19 +172,46 @@ export default function Home() {
               </div>
               {currentSituation ? (
                 <div className="mb-10 w-full">
-                  <div className="flex gap-2 mb-6">
-                    {forecastDays.map((day, idx) => (
+                  <div className="flex flex-wrap items-center gap-2 mb-6">
+                    {weatherContext?.tabs.map((tab) => (
                       <button
-                        key={idx}
-                        onClick={() => setSelectedDayIndex(idx)}
-                        className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all focus:outline-none focus:ring-0 outline-none ${selectedDayIndex === idx ? "bg-emerald-600 text-white shadow-md" : "bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700"}`}
+                        key={tab.id}
+                        onClick={() => setActiveTabId(tab.id)}
+                        className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all focus:outline-none ${
+                          activeTabId === tab.id
+                            ? "bg-emerald-600 text-white shadow-md"
+                            : "bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700"
+                        }`}
                       >
-                        {day.label}
+                        {tab.label}
                       </button>
                     ))}
+
+                    {/* Custom Date Picker (Bounded to Open-Meteo 10-day forecast) */}
+                    {weatherContext && (
+                      <div className="relative inline-flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full px-3 py-1 text-xs font-bold text-slate-600 dark:text-slate-300 shadow-sm hover:border-emerald-500 transition-colors">
+                        <Calendar className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                        <input
+                          type="date"
+                          min={weatherContext.minDate}
+                          max={weatherContext.maxDate}
+                          value={customDate || ""}
+                          onChange={(e) => {
+                            const val = e.target.value;
+                            if (val) {
+                              setCustomDate(val);
+                              handleCustomDateSelect(val);
+                            }
+                          }}
+                          className="bg-transparent border-none p-0 text-xs font-bold text-slate-700 dark:text-slate-200 focus:outline-none cursor-pointer"
+                          title="Pick custom forecast date"
+                        />
+                      </div>
+                    )}
                   </div>
+
                   <p className="text-slate-500 dark:text-slate-400 font-bold mb-2 tracking-widest uppercase text-xs">
-                    {currentSituation.date}
+                    {currentSituation.dateLabel}
                   </p>
                   <div className="flex items-center text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">
                     <span>{currentSituation.temp}°C</span>
@@ -182,11 +224,11 @@ export default function Home() {
                   </div>
                   <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 mt-6 leading-tight">
                     Based on{" "}
-                    {selectedDayIndex === 0
+                    {currentTab?.label.toLowerCase() === "today"
                       ? "today's"
-                      : selectedDayIndex === 1
+                      : currentTab?.label.toLowerCase() === "tomorrow"
                         ? "tomorrow's"
-                        : "the"}{" "}
+                        : `${currentTab?.label.toLowerCase() || "upcoming"}`}{" "}
                     conditions,
                     <br />
                     you should go to...
