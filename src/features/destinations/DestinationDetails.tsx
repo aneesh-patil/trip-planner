@@ -273,22 +273,23 @@ export default function DestinationDetails() {
 
             <button
               onClick={async () => {
+                const cleanUrl = `${window.location.origin}/destinations/${destination.id}`;
                 const shareData = {
                   title: destination.name,
                   text: `Check out ${destination.name} in ${destination.prefecture}, Japan on TabiMap!`,
-                  url: window.location.href,
+                  url: cleanUrl,
                 };
                 if (navigator.share) {
                   try {
                     await navigator.share(shareData);
                   } catch (err: any) {
                     if (err.name !== "AbortError") {
-                      await navigator.clipboard.writeText(window.location.href);
+                      await navigator.clipboard.writeText(cleanUrl);
                       toast.success("Link copied to clipboard!");
                     }
                   }
                 } else {
-                  await navigator.clipboard.writeText(window.location.href);
+                  await navigator.clipboard.writeText(cleanUrl);
                   toast.success("Link copied to clipboard!");
                 }
               }}
@@ -301,8 +302,9 @@ export default function DestinationDetails() {
 
             <button
               onClick={async () => {
+                const cleanUrl = `${window.location.origin}/destinations/${destination.id}`;
                 try {
-                  await navigator.clipboard.writeText(window.location.href);
+                  await navigator.clipboard.writeText(cleanUrl);
                   toast.success("Link copied to clipboard!");
                 } catch {
                   toast.error("Failed to copy link.");
