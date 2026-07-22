@@ -1,4 +1,5 @@
 import { Input } from "@/shared/components/ui/input";
+import { useAuth } from "@/shared/hooks/useAuth";
 import {
   Select,
   SelectContent,
@@ -61,6 +62,10 @@ export default function DestinationFilters({
   setMaxWalking,
   onReset,
 }: DestinationFiltersProps) {
+  const { user } = useAuth();
+  const carOwnership = user?.user_metadata?.preferences?.carOwnership || "all";
+  const showRental = carOwnership === "all" || carOwnership === "rental";
+  const showMyCar = carOwnership === "all" || carOwnership === "my_car";
   return (
     <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm mb-8 space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -328,26 +333,30 @@ export default function DestinationFilters({
                   >
                     No Car
                   </button>
-                  <button
-                    onClick={() => setCarMode("rental")}
-                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
-                      carMode === "rental"
-                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
-                    }`}
-                  >
-                    Rental
-                  </button>
-                  <button
-                    onClick={() => setCarMode("my_car")}
-                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
-                      carMode === "my_car"
-                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
-                    }`}
-                  >
-                    My Car
-                  </button>
+                  {showRental && (
+                    <button
+                      onClick={() => setCarMode("rental")}
+                      className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                        carMode === "rental"
+                          ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                          : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                      }`}
+                    >
+                      Rental
+                    </button>
+                  )}
+                  {showMyCar && (
+                    <button
+                      onClick={() => setCarMode("my_car")}
+                      className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                        carMode === "my_car"
+                          ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                          : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                      }`}
+                    >
+                      My Car
+                    </button>
+                  )}
                 </div>
               </div>
               <div className="flex-1">

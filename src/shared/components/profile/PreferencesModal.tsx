@@ -17,12 +17,14 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
   const [carMode, setCarMode] = useState("none");
   const [publicModes, setPublicModes] = useState<string[]>(["train"]);
   const [partySize, setPartySize] = useState(2);
+  const [carOwnership, setCarOwnership] = useState("all");
 
   useEffect(() => {
     if (user?.user_metadata?.preferences) {
       setCarMode(user.user_metadata.preferences.carMode || "none");
       setPublicModes(user.user_metadata.preferences.publicModes || ["train"]);
       setPartySize(user.user_metadata.preferences.partySize || 2);
+      setCarOwnership(user.user_metadata.preferences.carOwnership || "all");
     }
     setSuccess(false);
   }, [user, isOpen]);
@@ -40,6 +42,7 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
           carMode,
           publicModes,
           partySize,
+          carOwnership,
         },
       });
 
@@ -124,6 +127,58 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
                   <span className="text-xs font-medium text-center leading-tight">
                     My Car
                   </span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                Car Buttons in Search Filter
+              </label>
+              <div className="grid grid-cols-4 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setCarOwnership("all")}
+                  className={`py-2 px-2 rounded-xl border-2 text-xs font-medium transition-all ${
+                    carOwnership === "all"
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-bold"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200"
+                  }`}
+                >
+                  Show All
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCarOwnership("my_car")}
+                  className={`py-2 px-2 rounded-xl border-2 text-xs font-medium transition-all ${
+                    carOwnership === "my_car"
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-bold"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200"
+                  }`}
+                >
+                  Own Car
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCarOwnership("rental")}
+                  className={`py-2 px-2 rounded-xl border-2 text-xs font-medium transition-all ${
+                    carOwnership === "rental"
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-bold"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200"
+                  }`}
+                >
+                  Rental Only
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCarOwnership("none")}
+                  className={`py-2 px-2 rounded-xl border-2 text-xs font-medium transition-all ${
+                    carOwnership === "none"
+                      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-bold"
+                      : "border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-emerald-200"
+                  }`}
+                >
+                  No Car
                 </button>
               </div>
             </div>
