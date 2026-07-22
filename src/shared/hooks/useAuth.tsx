@@ -3,6 +3,8 @@ import type { ReactNode } from "react";
 import type { User } from "@supabase/supabase-js";
 import { supabase } from "@/lib/supabase";
 
+import { toast } from "sonner";
+
 interface AuthContextType {
   user: User | null;
   loading: boolean;
@@ -75,9 +77,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const deleteAccount = async () => {
     if (user && supabase) {
-      // Attempt to delete user data; if RLS doesn't allow it, it will fail silently here,
-      // but we still sign out.
-      await supabase.from("user_data").delete().eq("id", user.id);
+      const { error } = await supabase
+        .from("user_data")
+        .delete()
+        .eq("id", user.id);
+
+      if (error) {
+        console.error("Failed to delete user account data", error);
+        toast.error("Failed to delete account data. Please try again.");
+        return;
+      }
     }
     await signOut();
   };
