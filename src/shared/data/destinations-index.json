@@ -360,7 +360,7 @@
       "lng": 140.1063
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
-    "prefecture": "Kanagawa",
+    "prefecture": "Chiba",
     "budgetMin": 4000,
     "budgetMax": 12000,
     "totalTripHours": 8,
@@ -415,7 +415,7 @@
       "lng": 139.0831
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
-    "prefecture": "Kanagawa",
+    "prefecture": "Saitama",
     "budgetMin": 5000,
     "budgetMax": 13000,
     "totalTripHours": 8,
@@ -444,6 +444,132 @@
       "winter": 4
     },
     "highlights": ["Chichibu"]
+  },
+  {
+    "id": "chofu-tokyo",
+    "name": "Chofu",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Culture", "Nature", "Food"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "gallery": [],
+    "description": "Leafy suburban Tokyo town famous for Jindaiji Temple, hand-made Soba noodles, and GeGeGe no Kitaro anime heritage.",
+    "highlights": [
+      "Jindaiji Temple",
+      "Jindai Botanical Gardens",
+      "Kitaro Chaya Soba"
+    ],
+    "budgetMin": 5500,
+    "budgetMax": 13000,
+    "budgetRecommended": 9250,
+    "transportOptions": {
+      "train": 25,
+      "car": 35
+    },
+    "totalTripHours": 5,
+    "walkingMin": 40,
+    "walkingSunMin": 25,
+    "walkingShadeMin": 15,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 8.3,
+      "couple": 8.5,
+      "summer": 8,
+      "winter": 8,
+      "rain": 8,
+      "food": 8.8,
+      "photography": 8.4,
+      "relaxation": 8.6,
+      "value": 8.7,
+      "uniqueness": 8.2
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 4,
+      "holiday": 4
+    },
+    "season": {
+      "spring": 5,
+      "summer": 3,
+      "autumn": 5,
+      "winter": 3
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": ["Temple", "Soba Noodles", "Botanical Gardens"],
+    "reservation": "Not required",
+    "parking": "Available at Jindaiji",
+    "restaurants": ["Jindaiji Soba Ikkyu", "Kitaro Chaya"],
+    "cafes": ["Botanical Garden Tea House"],
+    "notes": "Jindaiji is Tokyo second oldest temple after Asakusa Sensoji.",
+    "coordinates": {
+      "lat": 35.6506036,
+      "lng": 139.5407066
+    }
+  },
+  {
+    "id": "choshi-chiba",
+    "name": "Choshi",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": ["Nature", "Food", "Ocean"],
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+    "gallery": [],
+    "description": "Easternmost coastal cape of the Kanto region, renowned for first sunrises, Inubosaki Lighthouse, and fresh seafood markets.",
+    "highlights": [
+      "Inubosaki Lighthouse",
+      "Choshi Electric Railway",
+      "Byobugaura Cliffs"
+    ],
+    "budgetMin": 9000,
+    "budgetMax": 20000,
+    "budgetRecommended": 14500,
+    "transportOptions": {
+      "train": 110,
+      "car": 110
+    },
+    "totalTripHours": 9,
+    "walkingMin": 45,
+    "walkingSunMin": 30,
+    "walkingShadeMin": 15,
+    "indoorPercent": 30,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 8.6,
+      "summer": 8.6,
+      "winter": 8,
+      "rain": 7,
+      "food": 9.1,
+      "photography": 8.9,
+      "relaxation": 8.6,
+      "value": 8.4,
+      "uniqueness": 8.7
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 4,
+      "holiday": 4
+    },
+    "season": {
+      "spring": 4,
+      "summer": 5,
+      "autumn": 4,
+      "winter": 4
+    },
+    "bestMonths": [1, 5, 7, 8, 10],
+    "bestSeason": "Summer",
+    "weatherDependence": "moderate",
+    "tags": ["Lighthouse", "Seafood", "Coastline"],
+    "reservation": "Not required",
+    "parking": "Available at Inubosaki",
+    "restaurants": ["Choshi Port Seafood Market", "Ichibanzushi"],
+    "cafes": ["Inubosaki Lighthouse Cafe"],
+    "notes": "Inubosaki is famous for being the first place on mainland Japan to see the New Year sunrise.",
+    "coordinates": {
+      "lat": 35.7345338,
+      "lng": 140.8272667
+    }
   },
   {
     "id": "disneyland",
@@ -695,7 +821,7 @@
       "lng": 138.7567
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Yamanashi",
     "budgetMin": 8000,
     "budgetMax": 16000,
     "totalTripHours": 8,
@@ -806,7 +932,7 @@
       "lng": 136.2195
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Fukui",
     "budgetMin": 7000,
     "budgetMax": 15000,
     "totalTripHours": 8,
@@ -860,7 +986,7 @@
       "lng": 138.8028
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG",
-    "prefecture": "Shizuoka",
+    "prefecture": "Niigata",
     "budgetMin": 26000,
     "budgetMax": 34000,
     "totalTripHours": 8,
@@ -1065,6 +1191,69 @@
     "description": "Gujo Hachiman in Gifu, Japan."
   },
   {
+    "id": "hachioji-tokyo",
+    "name": "Hachioji",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Nature", "Hiking", "Culture"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "gallery": [],
+    "description": "Historic castle town and mountain gateway at the base of Mt. Takao, offering scenic nature trails and Yakiniku food culture.",
+    "highlights": [
+      "Mount Takao Cable Car",
+      "Hachioji Castle Ruins",
+      "Takao 599 Museum"
+    ],
+    "budgetMin": 6500,
+    "budgetMax": 15000,
+    "budgetRecommended": 10750,
+    "transportOptions": {
+      "train": 40,
+      "car": 50
+    },
+    "totalTripHours": 7,
+    "walkingMin": 60,
+    "walkingSunMin": 35,
+    "walkingShadeMin": 25,
+    "indoorPercent": 30,
+    "ratings": {
+      "overall": 8.6,
+      "couple": 8.6,
+      "summer": 8,
+      "winter": 8.2,
+      "rain": 7.5,
+      "food": 8.4,
+      "photography": 8.7,
+      "relaxation": 8.6,
+      "value": 8.7,
+      "uniqueness": 8.4
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 5,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 5,
+      "summer": 4,
+      "autumn": 5,
+      "winter": 3
+    },
+    "bestMonths": [4, 5, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "moderate",
+    "tags": ["Hiking", "Mt. Takao", "Nature"],
+    "reservation": "Not required",
+    "parking": "Available at Takaosanguchi",
+    "restaurants": ["Takahashi Soba", "Ukai Toriyama"],
+    "cafes": ["Takao 599 Cafe"],
+    "notes": "Direct Keio line express trains from Shinjuku.",
+    "coordinates": {
+      "lat": 35.6663595,
+      "lng": 139.3163653
+    }
+  },
+  {
     "id": "hakkeijima",
     "name": "Hakkeijima Sea Paradise",
     "region": "Kanto",
@@ -1256,7 +1445,7 @@
       "lng": 140.5989
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
-    "prefecture": "Kanagawa",
+    "prefecture": "Ibaraki",
     "budgetMin": 4800,
     "budgetMax": 12800,
     "totalTripHours": 8,
@@ -1285,6 +1474,70 @@
       "winter": 4
     },
     "highlights": ["Hitachi Seaside Park"]
+  },
+  {
+    "id": "ikaho-onsen-gunma",
+    "name": "Ikaho Onsen",
+    "prefecture": "Gunma",
+    "region": "Kanto",
+    "categories": ["Onsen", "Culture", "Relaxation"],
+    "heroImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000",
+    "gallery": [],
+    "description": "Atmospheric thermal spring village built around a 365-step stone staircase lined with traditional ryokans, footbaths, and souvenir shops.",
+    "highlights": [
+      "365 Stone Steps",
+      "Kogane no Yu Hot Springs",
+      "Kajika Bridge"
+    ],
+    "budgetMin": 14000,
+    "budgetMax": 28000,
+    "budgetRecommended": 21000,
+    "transportOptions": {
+      "train": 105,
+      "car": 115,
+      "bus": 120
+    },
+    "totalTripHours": 9,
+    "walkingMin": 45,
+    "walkingSunMin": 25,
+    "walkingShadeMin": 20,
+    "indoorPercent": 55,
+    "ratings": {
+      "overall": 8.9,
+      "couple": 9.2,
+      "summer": 8.2,
+      "winter": 9.2,
+      "rain": 8.5,
+      "food": 8.9,
+      "photography": 9,
+      "relaxation": 9.5,
+      "value": 8.6,
+      "uniqueness": 9.1
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 3,
+      "autumn": 5,
+      "winter": 5
+    },
+    "bestMonths": [1, 2, 10, 11, 12],
+    "bestSeason": "Winter",
+    "weatherDependence": "low",
+    "tags": ["Onsen", "Stone Stairs", "Traditional Ryokan"],
+    "reservation": "Recommended for overnight ryokan stays",
+    "parking": "Available at entrance of stone steps",
+    "restaurants": ["Mizusawa Udon Tamaruya", "Ikaho Manju"],
+    "cafes": ["Stone Step Cafe"],
+    "notes": "Nearby Mizusawa Udon is one of Japan top three udon noodle traditions.",
+    "coordinates": {
+      "lat": 36.4998945,
+      "lng": 138.9259109
+    }
   },
   {
     "id": "ikebukuro-toshima",
@@ -1762,7 +2015,7 @@
       "lng": 137.6364
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Nagano",
     "budgetMin": 9000,
     "budgetMax": 17000,
     "totalTripHours": 8,
@@ -1816,7 +2069,7 @@
       "lng": 136.6562
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Ishikawa",
     "budgetMin": 9000,
     "budgetMax": 17000,
     "totalTripHours": 8,
@@ -2039,7 +2292,7 @@
       "lng": 139.7167
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
-    "prefecture": "Kanagawa",
+    "prefecture": "Tochigi",
     "budgetMin": 13400,
     "budgetMax": 21400,
     "totalTripHours": 8,
@@ -2094,7 +2347,7 @@
       "lng": 137.6531
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Nagano",
     "budgetMin": 7000,
     "budgetMax": 15000,
     "totalTripHours": 8,
@@ -2148,7 +2401,7 @@
       "lng": 138.5683
     },
     "heroImage": "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
-    "prefecture": "Shizuoka",
+    "prefecture": "Yamanashi",
     "budgetMin": 5000,
     "budgetMax": 13000,
     "totalTripHours": 8,
@@ -2203,7 +2456,7 @@
       "lng": 137.6667
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Toyama",
     "budgetMin": 17000,
     "budgetMax": 25000,
     "totalTripHours": 8,
@@ -2258,7 +2511,7 @@
       "lng": 138.65
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg",
-    "prefecture": "Kanagawa",
+    "prefecture": "Gunma",
     "budgetMin": 12000,
     "budgetMax": 20000,
     "totalTripHours": 8,
@@ -2400,6 +2653,70 @@
     "highlights": ["Lake Sagami"]
   },
   {
+    "id": "machida-tokyo",
+    "name": "Machida",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Urban", "Shopping", "Parks"],
+    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000",
+    "gallery": [],
+    "description": "Vibrant shopping and commercial hub in western Tokyo bordering Kanagawa, famous for Serigaya Park and Squirrel Garden.",
+    "highlights": [
+      "Machida Squirrel Garden",
+      "Serigaya Park",
+      "Grandberry Park",
+      "Nakamachi Shopping Street"
+    ],
+    "budgetMin": 5000,
+    "budgetMax": 12000,
+    "budgetRecommended": 8500,
+    "transportOptions": {
+      "train": 35,
+      "car": 45
+    },
+    "totalTripHours": 6,
+    "walkingMin": 45,
+    "walkingSunMin": 30,
+    "walkingShadeMin": 15,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 8,
+      "couple": 8.2,
+      "summer": 7.8,
+      "winter": 7.8,
+      "rain": 8.5,
+      "food": 8.5,
+      "photography": 8,
+      "relaxation": 8,
+      "value": 8.8,
+      "uniqueness": 7.8
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 3,
+      "autumn": 4,
+      "winter": 3
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": ["Shopping", "Parks", "Family"],
+    "reservation": "Not required",
+    "parking": "Available at shopping centers",
+    "restaurants": ["Machida Ramen", "Kurobekko"],
+    "cafes": ["Cafe Katsura"],
+    "notes": "Easy train access via Odakyu or JR Yokohama Line.",
+    "coordinates": {
+      "lat": 35.5466803,
+      "lng": 139.4386999
+    }
+  },
+  {
     "id": "matsumoto",
     "name": "Matsumoto",
     "prefecture": "Nagano",
@@ -2536,7 +2853,7 @@
       "lng": 140.4714
     },
     "heroImage": "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
-    "prefecture": "Kanagawa",
+    "prefecture": "Ibaraki",
     "budgetMin": 3000,
     "budgetMax": 11000,
     "totalTripHours": 8,
@@ -2565,6 +2882,65 @@
       "winter": 4
     },
     "highlights": ["Mito"]
+  },
+  {
+    "id": "mother-farm-chiba",
+    "name": "Mother Farm (Futtsu)",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": ["Nature", "Family", "Animals"],
+    "heroImage": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1000",
+    "gallery": [],
+    "description": "Sprawling 250-hectare mountain farm overlooking Tokyo Bay with alpaca feeding, sheep shearing shows, and flower fields.",
+    "highlights": ["Sheep Shearing Show", "Alpaca Farm", "Flower Fields"],
+    "budgetMin": 8000,
+    "budgetMax": 18000,
+    "budgetRecommended": 13000,
+    "transportOptions": {
+      "train": 95,
+      "car": 75
+    },
+    "totalTripHours": 8,
+    "walkingMin": 55,
+    "walkingSunMin": 40,
+    "walkingShadeMin": 15,
+    "indoorPercent": 25,
+    "ratings": {
+      "overall": 8.6,
+      "couple": 8.8,
+      "summer": 8.4,
+      "winter": 7.8,
+      "rain": 7.2,
+      "food": 8.3,
+      "photography": 8.8,
+      "relaxation": 8.7,
+      "value": 8.5,
+      "uniqueness": 8.6
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 5,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 5,
+      "summer": 4,
+      "autumn": 5,
+      "winter": 3
+    },
+    "bestMonths": [3, 4, 5, 9, 10],
+    "bestSeason": "Spring",
+    "weatherDependence": "high",
+    "tags": ["Animals", "Farm", "Family"],
+    "reservation": "Not required",
+    "parking": "Large parking lot available",
+    "restaurants": ["Farm BBQ Restaurant", "Soft Cream Bar"],
+    "cafes": ["Mother Farm Dairy Cafe"],
+    "notes": "Famous for fresh dairy ice cream and seasonal petunia and nemophila blooms.",
+    "coordinates": {
+      "lat": 35.2459214,
+      "lng": 139.9340832
+    }
   },
   {
     "id": "mount-fuji",
@@ -2645,7 +3021,7 @@
       "lng": 138.3
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Nagano",
     "budgetMin": 6000,
     "budgetMax": 14000,
     "totalTripHours": 8,
@@ -2675,6 +3051,69 @@
       "winter": 4
     },
     "highlights": ["Nagano & Snow Monkeys"]
+  },
+  {
+    "id": "nagatoro-saitama",
+    "name": "Nagatoro",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": ["Nature", "Adventure", "Hiking"],
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+    "gallery": [],
+    "description": "Scenic river valley famous for traditional wooden boat rafting down the Arakawa, Iwadatami rock formations, and autumn foliage.",
+    "highlights": [
+      "Nagatoro Line Boat Rafting",
+      "Iwadatami Rocks",
+      "Hodosan Shrine"
+    ],
+    "budgetMin": 7500,
+    "budgetMax": 17000,
+    "budgetRecommended": 12250,
+    "transportOptions": {
+      "train": 90,
+      "car": 100
+    },
+    "totalTripHours": 8,
+    "walkingMin": 50,
+    "walkingSunMin": 35,
+    "walkingShadeMin": 15,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 8.9,
+      "summer": 9,
+      "winter": 7.5,
+      "rain": 6.8,
+      "food": 8.3,
+      "photography": 9.1,
+      "relaxation": 8.8,
+      "value": 8.6,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 5,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 5,
+      "autumn": 5,
+      "winter": 3
+    },
+    "bestMonths": [5, 7, 8, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["River Rafting", "Rock Formations", "Nature"],
+    "reservation": "Recommended for boat rafting in peak season",
+    "parking": "Available near Nagatoro Station",
+    "restaurants": ["Nagatoro Soba", "Asami Shuten Shaved Ice"],
+    "cafes": ["Hodosan Ropeway Cafe"],
+    "notes": "Famous for natural shaved ice kakigori using frozen winter river ice.",
+    "coordinates": {
+      "lat": 36.1146759,
+      "lng": 139.1096479
+    }
   },
   {
     "id": "nagoya",
@@ -2759,7 +3198,7 @@
       "lng": 140.3183
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
-    "prefecture": "Kanagawa",
+    "prefecture": "Chiba",
     "budgetMin": 5000,
     "budgetMax": 13000,
     "totalTripHours": 8,
@@ -2871,7 +3310,7 @@
       "lng": 136.9667
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Ishikawa",
     "budgetMin": 8000,
     "budgetMax": 16000,
     "totalTripHours": 8,
@@ -3035,7 +3474,7 @@
       "lng": 137.55
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Gifu",
     "budgetMin": 15000,
     "budgetMax": 23000,
     "totalTripHours": 8,
@@ -3064,6 +3503,128 @@
       "winter": 4
     },
     "highlights": ["Okuhida"]
+  },
+  {
+    "id": "okutama-tokyo",
+    "name": "Okutama",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Nature", "Hiking", "Relaxation"],
+    "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687990d?q=80&w=1000",
+    "gallery": [],
+    "description": "Tokyos wildest mountain escape featuring Lake Okutama, dramatic limestone caves, suspension bridges, and riverside hot springs.",
+    "highlights": ["Lake Okutama", "Nippara Limestone Cave", "Hatanosu Gorge"],
+    "budgetMin": 8000,
+    "budgetMax": 18000,
+    "budgetRecommended": 13000,
+    "transportOptions": {
+      "train": 90,
+      "car": 95
+    },
+    "totalTripHours": 9,
+    "walkingMin": 70,
+    "walkingSunMin": 40,
+    "walkingShadeMin": 30,
+    "indoorPercent": 20,
+    "ratings": {
+      "overall": 8.7,
+      "couple": 8.7,
+      "summer": 8.8,
+      "winter": 8,
+      "rain": 7.2,
+      "food": 8,
+      "photography": 9,
+      "relaxation": 9.2,
+      "value": 8.7,
+      "uniqueness": 8.9
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 5,
+      "autumn": 5,
+      "winter": 3
+    },
+    "bestMonths": [5, 6, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Mountains", "Lake", "Limestone Cave"],
+    "reservation": "Not required",
+    "parking": "Available at Lake Okutama dam",
+    "restaurants": ["Moegi no Yu Dining", "Wasabi Dining"],
+    "cafes": ["Okutama River Cafe"],
+    "notes": "Moegi no Yu hot spring near Okutama station is perfect after a hike.",
+    "coordinates": {
+      "lat": 35.8100778,
+      "lng": 139.0954588
+    }
+  },
+  {
+    "id": "ome-tokyo",
+    "name": "Ome",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Nature", "Culture", "Hiking"],
+    "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1000",
+    "gallery": [],
+    "description": "Nostalgic Showa-era movie poster town in western Tokyo surrounded by Mitake Gorge, river rafting, and mountain shrines.",
+    "highlights": [
+      "Mitake Gorge",
+      "Ome Retro Movie Poster Street",
+      "Gyokudo Art Museum"
+    ],
+    "budgetMin": 7000,
+    "budgetMax": 16000,
+    "budgetRecommended": 11500,
+    "transportOptions": {
+      "train": 65,
+      "car": 75
+    },
+    "totalTripHours": 8,
+    "walkingMin": 55,
+    "walkingSunMin": 30,
+    "walkingShadeMin": 25,
+    "indoorPercent": 35,
+    "ratings": {
+      "overall": 8.3,
+      "couple": 8.3,
+      "summer": 8.5,
+      "winter": 7.8,
+      "rain": 7.5,
+      "food": 8.2,
+      "photography": 8.6,
+      "relaxation": 8.7,
+      "value": 8.6,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 4,
+      "holiday": 4
+    },
+    "season": {
+      "spring": 4,
+      "summer": 5,
+      "autumn": 5,
+      "winter": 3
+    },
+    "bestMonths": [4, 5, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "moderate",
+    "tags": ["River Gorge", "Showa Retro", "Hiking"],
+    "reservation": "Not required",
+    "parking": "Available near Mitake Station",
+    "restaurants": ["Mitake Soba", "Sawanoi Sake Brewery Bar"],
+    "cafes": ["Gorge Side Cafe"],
+    "notes": "Visit Ozawa Brewery (Sawanoi) for sake tasting along the river.",
+    "coordinates": {
+      "lat": 35.7880531,
+      "lng": 139.2753553
+    }
   },
   {
     "id": "omiya-railway",
@@ -3146,7 +3707,7 @@
       "lng": 139.2333
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
-    "prefecture": "Kanagawa",
+    "prefecture": "Gunma",
     "budgetMin": 3400,
     "budgetMax": 11400,
     "totalTripHours": 8,
@@ -3200,7 +3761,7 @@
       "lng": 138.3833
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
-    "prefecture": "Shizuoka",
+    "prefecture": "Niigata",
     "budgetMin": 12000,
     "budgetMax": 20000,
     "totalTripHours": 8,
@@ -3254,7 +3815,7 @@
       "lng": 139.6455
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
-    "prefecture": "Kanagawa",
+    "prefecture": "Saitama",
     "budgetMin": 3000,
     "budgetMax": 11000,
     "totalTripHours": 8,
@@ -3452,6 +4013,133 @@
     "highlights": ["Shizuoka City"]
   },
   {
+    "id": "suwa-nagano",
+    "name": "Lake Suwa",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["Nature", "Onsen", "Culture"],
+    "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000",
+    "gallery": [],
+    "description": "High-altitude lake surrounded by mountains, famous for Suwa Taisha shrine complex, fireworks, lakeside hot springs, and winter ice phenomena.",
+    "highlights": [
+      "Suwa Taisha Shrine",
+      "Lake Suwa Geyser Center",
+      "Tateishi Park Observatory"
+    ],
+    "budgetMin": 15000,
+    "budgetMax": 30000,
+    "budgetRecommended": 22500,
+    "transportOptions": {
+      "train": 130,
+      "car": 140,
+      "shinkansen": 110
+    },
+    "totalTripHours": 10,
+    "walkingMin": 45,
+    "walkingSunMin": 30,
+    "walkingShadeMin": 15,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 9,
+      "winter": 8.8,
+      "rain": 8,
+      "food": 8.7,
+      "photography": 9.2,
+      "relaxation": 9.2,
+      "value": 8.6,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 4,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 4,
+      "summer": 5,
+      "autumn": 4,
+      "winter": 4
+    },
+    "bestMonths": [7, 8, 9, 12, 1, 2],
+    "bestSeason": "Summer",
+    "weatherDependence": "moderate",
+    "tags": ["Lake", "Shrine", "Fireworks"],
+    "reservation": "Required for summer fireworks festival",
+    "parking": "Lakeside parking available",
+    "restaurants": ["Suwa Miso Ramen", "Katakura 館 Dining"],
+    "cafes": ["Lake View Cafe Suwa"],
+    "notes": "Tateishi Park offers breathtaking sunset views inspired by anime scenery.",
+    "coordinates": {
+      "lat": 36.0479452,
+      "lng": 138.0832846
+    }
+  },
+  {
+    "id": "tachikawa-tokyo",
+    "name": "Tachikawa",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Nature", "Parks", "Urban"],
+    "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1000",
+    "gallery": [],
+    "description": "Major Tama region gateway featuring the massive Showa Kinen Park, seasonal flower festivals, and modern dining quarters.",
+    "highlights": [
+      "Showa Kinen Park",
+      "GREEN SPRINGS Complex",
+      "Tachikawa Anime Mall"
+    ],
+    "budgetMin": 6000,
+    "budgetMax": 14000,
+    "budgetRecommended": 10000,
+    "transportOptions": {
+      "train": 30,
+      "car": 40
+    },
+    "totalTripHours": 6,
+    "walkingMin": 50,
+    "walkingSunMin": 35,
+    "walkingShadeMin": 15,
+    "indoorPercent": 35,
+    "ratings": {
+      "overall": 8.4,
+      "couple": 8.5,
+      "summer": 8.2,
+      "winter": 8,
+      "rain": 8,
+      "food": 8.5,
+      "photography": 8.6,
+      "relaxation": 8.5,
+      "value": 8.6,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 5,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 5,
+      "summer": 4,
+      "autumn": 5,
+      "winter": 3
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "moderate",
+    "tags": ["Parks", "Seasonal Flowers", "Family"],
+    "reservation": "Not required",
+    "parking": "Available at Showa Kinen Park",
+    "restaurants": ["LUMINE Tachikawa Dining", "Manoa Pancake"],
+    "cafes": ["Paper Moon Cafe"],
+    "notes": "Showa Kinen Park is famous for autumn ginkgo and spring cherry blossoms.",
+    "coordinates": {
+      "lat": 35.7139057,
+      "lng": 139.4077701
+    }
+  },
+  {
     "id": "takaoka",
     "name": "Takaoka",
     "region": "Chubu",
@@ -3476,7 +4164,7 @@
       "lng": 137.015
     },
     "heroImage": "/images/takaoka_hero.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Toyama",
     "budgetMin": 5000,
     "budgetMax": 13000,
     "totalTripHours": 8,
@@ -3530,7 +4218,7 @@
       "lng": 137.05
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Gifu",
     "budgetMin": 9000,
     "budgetMax": 17000,
     "totalTripHours": 8,
@@ -3641,7 +4329,7 @@
       "lng": 137.6
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
-    "prefecture": "Shizuoka",
+    "prefecture": "Toyama",
     "budgetMin": 20000,
     "budgetMax": 28000,
     "totalTripHours": 8,
@@ -3808,7 +4496,7 @@
       "lng": 140.2208
     },
     "heroImage": "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-    "prefecture": "Kanagawa",
+    "prefecture": "Ibaraki",
     "budgetMin": 3500,
     "budgetMax": 11500,
     "totalTripHours": 8,
