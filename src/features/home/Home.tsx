@@ -15,6 +15,7 @@ import {
   Landmark,
   Snowflake,
   Calendar,
+  Dices,
 } from "lucide-react";
 import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
@@ -35,8 +36,12 @@ import {
   type WeatherTabContext,
   type WeatherTab,
 } from "@/shared/services/weather/WeatherTabService";
-import { getRecommendations } from "@/shared/services/recommendation/RecommendationService";
+import {
+  getRecommendations,
+  getValidModes,
+} from "@/shared/services/recommendation/RecommendationService";
 import StationInput from "@/shared/components/StationInput";
+import RouletteModal from "@/features/home/components/RouletteModal";
 
 export default function Home() {
   const allDestinations = getDestinationList() as Destination[];
@@ -156,6 +161,17 @@ export default function Home() {
     homeStationCoords,
   ]);
 
+  const [rouletteOpen, setRouletteOpen] = useState(false);
+
+  const rouletteCandidates = useMemo(() => {
+    return scoredDestinations.filter((dest) => {
+      if (isVisited(dest.id!)) return false;
+      const validModes = getValidModes(dest, carMode, publicModes);
+      if (validModes.length === 0) return false;
+      return true;
+    });
+  }, [scoredDestinations, isVisited, carMode, publicModes]);
+
   const topRecommendations = scoredDestinations.slice(0, 3);
 
   return (
@@ -238,10 +254,10 @@ export default function Home() {
                 <div className="h-40 animate-pulse bg-slate-200 dark:bg-slate-800 rounded-2xl w-full max-w-lg mb-10" />
               )}
 
-              <div className="flex flex-col sm:flex-row gap-4 w-full">
+              <div className="flex flex-col sm:flex-row gap-3 w-full">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto h-14 px-8 text-lg font-bold rounded-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 shadow-xl"
+                  className="w-full sm:w-auto h-14 px-6 text-base font-bold rounded-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 shadow-xl"
                   onClick={() =>
                     document
                       .getElementById("recommendations")
@@ -251,17 +267,32 @@ export default function Home() {
                   <Sparkles className="w-5 h-5 mr-2" />
                   Reveal Top Match
                 </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  onClick={() => setRouletteOpen(true)}
+                  className="w-full sm:w-auto h-14 px-6 text-base font-bold rounded-full bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800"
+                >
+                  <Dices className="w-5 h-5 mr-2 text-emerald-600 dark:text-emerald-400" />
+                  Surprise Me 🎲
+                </Button>
                 <Link to="/destinations" className="w-full sm:w-auto">
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full h-14 px-8 text-lg font-bold rounded-full bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-slate-300 hover:bg-slate-100"
+                    className="w-full h-14 px-6 text-base font-bold rounded-full bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-slate-300 hover:bg-slate-100"
                   >
                     Browse All
                   </Button>
                 </Link>
               </div>
             </div>
+
+            <RouletteModal
+              isOpen={rouletteOpen}
+              onClose={() => setRouletteOpen(false)}
+              candidates={rouletteCandidates}
+            />
 
             {/* Smart Planner Card */}
             <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 relative">
