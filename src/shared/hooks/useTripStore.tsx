@@ -49,6 +49,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     "trip-planner-visited-prefs",
     [],
   );
+  // Note: compareList is intentionally kept local-only (stored in localStorage, not synced to cloud)
   const [compareList, setCompareList] = useLocalStorage<string[]>(
     "trip-planner-compare",
     [],
@@ -77,13 +78,20 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       setFavorites([]);
       setVisited([]);
       setVisitedPrefectures([]);
+      setCompareList([]);
       isLoadedRef.current = false;
     } else if (user?.id && user.id !== prevUserIdRef.current) {
       // User changed / logged in: reset load state so it fetches fresh data
       isLoadedRef.current = false;
     }
     prevUserIdRef.current = user?.id;
-  }, [user?.id, setFavorites, setVisited]);
+  }, [
+    user?.id,
+    setFavorites,
+    setVisited,
+    setVisitedPrefectures,
+    setCompareList,
+  ]);
 
   // Fetch initial data on login
   useEffect(() => {
