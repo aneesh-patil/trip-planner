@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { useParams, Link, useLocation } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
+import { useAuth } from "@/shared/hooks/useAuth";
 import { getDestination } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
