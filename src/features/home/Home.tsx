@@ -165,11 +165,11 @@ export default function Home() {
 
   const rouletteCandidates = useMemo(() => {
     return scoredDestinations.filter((dest) => {
-      if (isVisited(dest.id!)) return false;
+      if (!dest.id || isVisited(dest.id)) return false;
       const validModes = getValidModes(dest, carMode, publicModes);
       if (validModes.length === 0) return false;
       return true;
-    });
+    }) as Destination[];
   }, [scoredDestinations, isVisited, carMode, publicModes]);
 
   const topRecommendations = scoredDestinations.slice(0, 3);

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 import type { Destination } from "@/shared/types/destination";
-import { Dialog, DialogContent } from "@/shared/components/ui/dialog";
 import { Button } from "@/shared/components/ui/button";
 import {
   Dices,
@@ -46,7 +46,6 @@ export default function RouletteModal({
           candidates[Math.floor(Math.random() * candidates.length)];
         setWinner(finalWinner);
       } else {
-        // Slow down as tick count increases
         const nextDelay = 50 + Math.floor((count / totalTicks) * 250);
         setTimeout(tick, nextDelay);
       }
@@ -59,7 +58,7 @@ export default function RouletteModal({
     if (isOpen && candidates.length > 0) {
       startSpin();
     }
-  }, [isOpen]);
+  }, [isOpen, candidates]);
 
   if (!isOpen) return null;
 
@@ -67,9 +66,9 @@ export default function RouletteModal({
     ? candidates[currentIndex]
     : winner || candidates[0];
 
-  return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md p-0 overflow-hidden rounded-3xl border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl">
+  const modalContent = (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-200">
+      <div className="relative w-full max-w-md overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl animate-in zoom-in-95 duration-200">
         {/* Header */}
         <div className="relative bg-gradient-to-r from-emerald-600 to-teal-700 p-6 text-white text-center">
           <button
@@ -117,9 +116,9 @@ export default function RouletteModal({
               >
                 {/* Hero Image */}
                 <div className="relative h-48 w-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
-                  {currentDisplay?.leadImage ? (
+                  {currentDisplay?.heroImage ? (
                     <img
-                      src={currentDisplay.leadImage}
+                      src={currentDisplay.heroImage}
                       alt={currentDisplay.name}
                       className="w-full h-full object-cover transition-transform duration-500"
                     />
@@ -174,7 +173,7 @@ export default function RouletteModal({
                     <span>
                       Vibe:{" "}
                       <strong className="text-slate-700 dark:text-slate-200 font-medium">
-                        {currentDisplay?.vibe || "Scenic"}
+                        {currentDisplay?.categories?.[0] || "Scenic"}
                       </strong>
                     </span>
                   </div>
@@ -211,7 +210,9 @@ export default function RouletteModal({
             </div>
           )}
         </div>
-      </DialogContent>
-    </Dialog>
+      </div>
+    </div>
   );
+
+  return createPortal(modalContent, document.body);
 }
