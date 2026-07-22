@@ -62,6 +62,41 @@ export const SCORING_WEIGHTS = {
   ENV_TEMP_PENALTY: 25,
 };
 
+export function getValidModes(
+  dest: Partial<Destination> | Destination,
+  carMode: string = "none",
+  publicModes: string[] = [],
+): string[] {
+  let validModes: string[] = [];
+  if (carMode === "rental" && dest.transportOptions?.car)
+    validModes.push("car");
+  if (carMode === "my_car" && dest.transportOptions?.my_car)
+    validModes.push("my_car");
+
+  for (const m of publicModes) {
+    if (dest.transportOptions?.[m as keyof typeof dest.transportOptions]) {
+      validModes.push(m);
+    }
+  }
+
+  if (
+    validModes.length === 0 &&
+    (carMode !== "none" || publicModes.length > 0)
+  ) {
+    return [];
+  }
+
+  if (validModes.length === 0) {
+    const entries = Object.entries(dest.transportOptions || {}).filter(
+      ([_, v]) => v !== undefined,
+    );
+    if (entries.length > 0) validModes = entries.map((e) => e[0]);
+    else validModes = ["train"];
+  }
+
+  return validModes;
+}
+
 export function getRecommendations(
   destinations: Partial<Destination>[],
   context: RecommendationContext,
@@ -82,35 +117,8 @@ export function getRecommendations(
     .filter((destObj) => {
       if (!destObj.id || visitedIds.includes(destObj.id)) return false;
 
-      let validModesForDest: string[] = [];
-      if (carMode === "rental" && destObj.transportOptions?.car)
-        validModesForDest.push("car");
-      if (carMode === "my_car" && destObj.transportOptions?.my_car)
-        validModesForDest.push("my_car");
-
-      for (const m of publicModes) {
-        if (
-          destObj.transportOptions?.[m as keyof typeof destObj.transportOptions]
-        ) {
-          validModesForDest.push(m);
-        }
-      }
-
-      // If user selected modes, but destination supports none of them, discard.
-      if (
-        validModesForDest.length === 0 &&
-        (carMode !== "none" || publicModes.length > 0)
-      ) {
-        return false;
-      }
-      if (validModesForDest.length === 0) {
-        // Fallback if user selected absolutely nothing
-        const entries = Object.entries(destObj.transportOptions || {}).filter(
-          ([_, v]) => v !== undefined,
-        );
-        if (entries.length === 0) return false;
-        validModesForDest = entries.map((e) => e[0]);
-      }
+      const validModesForDest = getValidModes(destObj, carMode, publicModes);
+      if (validModesForDest.length === 0) return false;
 
       return true;
     })
@@ -136,28 +144,7 @@ export function getRecommendations(
         (dest.ratings?.overall || 5) * SCORING_WEIGHTS.RATING_MULTIPLIER;
       const reasons: string[] = [];
 
-      let validModesForDest: string[] = [];
-      if (carMode === "rental" && dest.transportOptions?.car)
-        validModesForDest.push("car");
-      if (carMode === "my_car" && dest.transportOptions?.my_car)
-        validModesForDest.push("my_car");
-
-      for (const m of publicModes) {
-        if (dest.transportOptions?.[m as keyof typeof dest.transportOptions]) {
-          validModesForDest.push(m);
-        }
-      }
-
-      if (validModesForDest.length === 0) {
-        const entries = Object.entries(dest.transportOptions || {}).filter(
-          ([_, v]) => v !== undefined,
-        );
-        if (entries.length > 0) {
-          validModesForDest = entries.map((e) => e[0]);
-        } else {
-          validModesForDest = ["train"]; // Absolute fallback
-        }
-      }
+      const validModesForDest = getValidModes(dest, carMode, publicModes);
 
       // 1 & 2. Budget and Transport Logic
       // Evaluate all valid active modes for the destination and pick the best one

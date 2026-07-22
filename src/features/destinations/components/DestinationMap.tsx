@@ -7,11 +7,22 @@ import { Button } from "@/shared/components/ui/button";
 
 interface DestinationMapProps {
   destinations: Destination[];
+  carMode?: string;
+  publicModes?: string[];
 }
 
-export default function DestinationMap({ destinations }: DestinationMapProps) {
+export default function DestinationMap({
+  destinations,
+  carMode,
+  publicModes,
+}: DestinationMapProps) {
   // Center roughly on Yokohama/Tokyo
   const center: [number, number] = [35.5, 139.6];
+
+  const linkState =
+    carMode !== undefined || publicModes !== undefined
+      ? { carMode, publicModes }
+      : undefined;
 
   return (
     <div className="w-full h-[600px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm z-0">
@@ -56,7 +67,7 @@ export default function DestinationMap({ destinations }: DestinationMapProps) {
                         ? `${dest.description.slice(0, 60)}...`
                         : dest.categories?.join(" • ")}
                     </p>
-                    <Link to={`/destinations/${dest.id}`}>
+                    <Link to={`/destinations/${dest.id}`} state={linkState}>
                       <Button
                         size="sm"
                         className="w-full bg-emerald-600 hover:bg-emerald-700"

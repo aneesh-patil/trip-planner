@@ -28,12 +28,16 @@ interface DestinationCardProps {
   destination: Destination;
   activeTransportMode?: string;
   partySize?: number;
+  carMode?: string;
+  publicModes?: string[];
 }
 
 export default function DestinationCard({
   destination,
   activeTransportMode = "all",
   partySize = 2,
+  carMode,
+  publicModes,
 }: DestinationCardProps) {
   const {
     isFavorite,
@@ -47,6 +51,11 @@ export default function DestinationCard({
   const favorite = isFavorite(destination.id);
   const visited = isVisited(destination.id);
   const comparing = isComparing(destination.id);
+
+  const linkState =
+    carMode !== undefined || publicModes !== undefined
+      ? { carMode, publicModes }
+      : undefined;
 
   return (
     <Card className="overflow-hidden flex flex-col h-full group hover:shadow-lg transition-all duration-300 border-slate-200 dark:border-slate-800">
@@ -257,7 +266,11 @@ export default function DestinationCard({
           )}
           {comparing ? "Added" : "Compare"}
         </Button>
-        <Link to={`/destinations/${destination.id}`} className="w-1/2">
+        <Link
+          to={`/destinations/${destination.id}`}
+          state={linkState}
+          className="w-1/2"
+        >
           <Button
             variant="default"
             size="sm"

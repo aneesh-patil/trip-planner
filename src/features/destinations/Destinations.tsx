@@ -20,6 +20,7 @@ import {
   getDynamicTransportOptions,
 } from "@/shared/utils/distance";
 import { useTripStore } from "@/shared/hooks/useTripStore";
+import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
 
 export default function Destinations() {
   const { homeStationCoords } = useTripStore();
@@ -97,35 +98,9 @@ export default function Destinations() {
       );
     }
 
-    const getValidModes = (dest: Destination) => {
-      let validModes: string[] = [];
-      if (carMode === "rental" && dest.transportOptions?.car)
-        validModes.push("car");
-      if (carMode === "my_car" && dest.transportOptions?.my_car)
-        validModes.push("my_car");
-      for (const m of publicModes) {
-        if (dest.transportOptions?.[m as keyof typeof dest.transportOptions])
-          validModes.push(m);
-      }
-      if (
-        validModes.length === 0 &&
-        (carMode !== "none" || publicModes.length > 0)
-      ) {
-        return []; // Invalid
-      }
-      if (validModes.length === 0) {
-        const entries = Object.entries(dest.transportOptions || {}).filter(
-          ([_, v]) => v !== undefined,
-        );
-        if (entries.length > 0) validModes = entries.map((e) => e[0]);
-        else validModes = ["train"];
-      }
-      return validModes;
-    };
-
     // 2. Filter by budget and Transport availability
     result = result.filter((dest) => {
-      const modes = getValidModes(dest);
+      const modes = getValidModes(dest, carMode, publicModes);
       if (modes.length === 0) return false;
 
       let lowest = 999999;
@@ -156,19 +131,19 @@ export default function Destinations() {
         case "budget":
           return (
             Math.min(
-              ...getValidModes(a).map((m) =>
+              ...getValidModes(a, carMode, publicModes).map((m) =>
                 getAdjustedBudget(a, m, partySize),
               ),
             ) -
             Math.min(
-              ...getValidModes(b).map((m) =>
+              ...getValidModes(b, carMode, publicModes).map((m) =>
                 getAdjustedBudget(b, m, partySize),
               ),
             )
           );
         case "travelTime":
           const getFastestTime = (dest: Destination) => {
-            const times = getValidModes(dest).map(
+            const times = getValidModes(dest, carMode, publicModes).map(
               (m) =>
                 (dest.transportOptions?.[
                   m as keyof typeof dest.transportOptions
@@ -295,7 +270,11 @@ export default function Destinations() {
           <p>Try adjusting your filters or search query.</p>
         </div>
       ) : viewMode === "map" ? (
-        <DestinationMap destinations={filteredAndSortedDestinations} />
+        <DestinationMap
+          destinations={filteredAndSortedDestinations}
+          carMode={carMode}
+          publicModes={publicModes}
+        />
       ) : (
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -309,20 +288,14 @@ export default function Destinations() {
                   key={dest.id}
                   destination={dest}
                   partySize={partySize}
+                  carMode={carMode}
+                  publicModes={publicModes}
                   activeTransportMode={(() => {
-                    let validModes: string[] = [];
-                    if (carMode === "rental" && dest.transportOptions?.car)
-                      validModes.push("car");
-                    if (carMode === "my_car" && dest.transportOptions?.my_car)
-                      validModes.push("my_car");
-                    for (const m of publicModes) {
-                      if (
-                        dest.transportOptions?.[
-                          m as keyof typeof dest.transportOptions
-                        ]
-                      )
-                        validModes.push(m);
-                    }
+                    const validModes = getValidModes(
+                      dest,
+                      carMode,
+                      publicModes,
+                    );
                     if (validModes.length === 0) return "train";
                     let best = validModes[0];
                     let lowest = 999999;

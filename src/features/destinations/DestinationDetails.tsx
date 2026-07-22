@@ -1,8 +1,9 @@
 import { useState, useEffect, useMemo } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { getDestination } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
+import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
 import {
   ArrowLeft,
   MapPin,
@@ -56,6 +57,12 @@ function WeatherIcon({ type }: { type: string }) {
 
 export default function DestinationDetails() {
   const { id } = useParams();
+  const location = useLocation();
+  const navState = location.state as {
+    carMode?: string;
+    publicModes?: string[];
+  } | null;
+
   const {
     isFavorite,
     toggleFavorite,
@@ -105,24 +112,65 @@ export default function DestinationDetails() {
     destination?.coordinates?.lng,
   );
 
-  const defaultMode = useMemo(() => {
-    if (!destination?.transportOptions) return "train";
-    const entries = Object.entries(destination.transportOptions).filter(
+  const activeModes = useMemo(() => {
+    if (!destination) return null;
+    if (
+      navState &&
+      (navState.carMode !== undefined || navState.publicModes !== undefined)
+    ) {
+      return getValidModes(destination, navState.carMode, navState.publicModes);
+    }
+    return null;
+  }, [destination, navState]);
+
+  const isModeVisible = (mode: string) => {
+    if (
+      !destination?.transportOptions?.[
+        mode as keyof typeof destination.transportOptions
+      ]
+    ) {
+      return false;
+    }
+    if (!activeModes) {
+      return true;
+    }
+    return activeModes.includes(mode);
+  };
+
+  const availableModes = useMemo(() => {
+    if (!destination?.transportOptions) return [];
+    const allEntries = Object.entries(destination.transportOptions).filter(
       ([_, v]) => v !== undefined,
     ) as [string, number][];
-    if (entries.length === 0) return "train";
+
+    if (!activeModes) {
+      return allEntries.map(([mode]) => mode);
+    }
+    return allEntries
+      .map(([mode]) => mode)
+      .filter((mode) => activeModes.includes(mode));
+  }, [destination, activeModes]);
+
+  const defaultMode = useMemo(() => {
+    if (!destination?.transportOptions || availableModes.length === 0)
+      return "train";
+    const entries = availableModes.map(
+      (mode) =>
+        [
+          mode,
+          destination.transportOptions[
+            mode as keyof typeof destination.transportOptions
+          ] ?? 999,
+        ] as [string, number],
+    );
     return entries.reduce((min, curr) => (curr[1] < min[1] ? curr : min))[0];
-  }, [destination]);
+  }, [destination, availableModes]);
 
   const [selectedTransportState, setSelectedTransport] = useState<
     string | null
   >(null);
   const selectedTransport =
-    selectedTransportState &&
-    destination?.transportOptions &&
-    destination.transportOptions[
-      selectedTransportState as keyof typeof destination.transportOptions
-    ] !== undefined
+    selectedTransportState && availableModes.includes(selectedTransportState)
       ? selectedTransportState
       : defaultMode;
 
@@ -282,117 +330,122 @@ export default function DestinationDetails() {
                         </h4>
                       </div>
                       <div className="space-y-2 flex-grow">
-                        {destination.transportOptions?.train && (
-                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
-                            <span className="text-slate-500 flex items-center">
-                              <Train className="w-4 h-4 mr-1.5" /> Train
-                            </span>
-                            <div className="text-right">
-                              <div className="font-semibold text-slate-700 dark:text-slate-300">
-                                {destination.transportOptions.train}m
-                              </div>
-                              <div className="text-xs text-slate-400">
-                                est. ¥
-                                {(
-                                  budgetService.getTransportCost(
-                                    destination,
-                                    "train",
-                                  ) / 1000
-                                ).toFixed(1)}
-                                k
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                        {destination.transportOptions?.shinkansen && (
-                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
-                            <span className="text-slate-500 flex items-center">
-                              <TrainFront className="w-4 h-4 mr-1.5" />{" "}
-                              Shinkansen
-                            </span>
-                            <div className="text-right">
-                              <div className="font-semibold text-slate-700 dark:text-slate-300">
-                                {destination.transportOptions.shinkansen}m
-                              </div>
-                              <div className="text-xs text-slate-400">
-                                est. ¥
-                                {(
-                                  budgetService.getTransportCost(
-                                    destination,
-                                    "shinkansen",
-                                  ) / 1000
-                                ).toFixed(1)}
-                                k
+                        {isModeVisible("train") &&
+                          destination.transportOptions?.train && (
+                            <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                              <span className="text-slate-500 flex items-center">
+                                <Train className="w-4 h-4 mr-1.5" /> Train
+                              </span>
+                              <div className="text-right">
+                                <div className="font-semibold text-slate-700 dark:text-slate-300">
+                                  {destination.transportOptions.train}m
+                                </div>
+                                <div className="text-xs text-slate-400">
+                                  est. ¥
+                                  {(
+                                    budgetService.getTransportCost(
+                                      destination,
+                                      "train",
+                                    ) / 1000
+                                  ).toFixed(1)}
+                                  k
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        )}
-                        {destination.transportOptions?.bus && (
-                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
-                            <span className="text-slate-500 flex items-center">
-                              <Bus className="w-4 h-4 mr-1.5" /> Bus
-                            </span>
-                            <div className="text-right">
-                              <div className="font-semibold text-slate-700 dark:text-slate-300">
-                                {destination.transportOptions.bus}m
-                              </div>
-                              <div className="text-xs text-slate-400">
-                                est. ¥
-                                {(
-                                  budgetService.getTransportCost(
-                                    destination,
-                                    "bus",
-                                  ) / 1000
-                                ).toFixed(1)}
-                                k
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                        {destination.transportOptions?.car && (
-                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
-                            <span className="text-slate-500 flex items-center">
-                              <Car className="w-4 h-4 mr-1.5" /> Rental Car
-                            </span>
-                            <div className="text-right">
-                              <div className="font-semibold text-slate-700 dark:text-slate-300">
-                                {destination.transportOptions.car}m
-                              </div>
-                              <div className="text-xs text-slate-400">
-                                est. ¥
-                                {(
-                                  budgetService.getTransportCost(
-                                    destination,
-                                    "car",
-                                  ) / 1000
-                                ).toFixed(1)}
-                                k
+                          )}
+                        {isModeVisible("shinkansen") &&
+                          destination.transportOptions?.shinkansen && (
+                            <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                              <span className="text-slate-500 flex items-center">
+                                <TrainFront className="w-4 h-4 mr-1.5" />{" "}
+                                Shinkansen
+                              </span>
+                              <div className="text-right">
+                                <div className="font-semibold text-slate-700 dark:text-slate-300">
+                                  {destination.transportOptions.shinkansen}m
+                                </div>
+                                <div className="text-xs text-slate-400">
+                                  est. ¥
+                                  {(
+                                    budgetService.getTransportCost(
+                                      destination,
+                                      "shinkansen",
+                                    ) / 1000
+                                  ).toFixed(1)}
+                                  k
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        )}
-                        {destination.transportOptions?.my_car && (
-                          <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
-                            <span className="text-slate-500 flex items-center">
-                              <Car className="w-4 h-4 mr-1.5" /> My Car
-                            </span>
-                            <div className="text-right">
-                              <div className="font-semibold text-slate-700 dark:text-slate-300">
-                                {destination.transportOptions.my_car}m
-                              </div>
-                              <div className="text-xs text-slate-400">
-                                est. ¥
-                                {(
-                                  budgetService.getTransportCost(
-                                    destination,
-                                    "my_car",
-                                  ) / 1000
-                                ).toFixed(1)}
-                                k
+                          )}
+                        {isModeVisible("bus") &&
+                          destination.transportOptions?.bus && (
+                            <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                              <span className="text-slate-500 flex items-center">
+                                <Bus className="w-4 h-4 mr-1.5" /> Bus
+                              </span>
+                              <div className="text-right">
+                                <div className="font-semibold text-slate-700 dark:text-slate-300">
+                                  {destination.transportOptions.bus}m
+                                </div>
+                                <div className="text-xs text-slate-400">
+                                  est. ¥
+                                  {(
+                                    budgetService.getTransportCost(
+                                      destination,
+                                      "bus",
+                                    ) / 1000
+                                  ).toFixed(1)}
+                                  k
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        )}
+                          )}
+                        {isModeVisible("car") &&
+                          destination.transportOptions?.car && (
+                            <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                              <span className="text-slate-500 flex items-center">
+                                <Car className="w-4 h-4 mr-1.5" /> Rental Car
+                              </span>
+                              <div className="text-right">
+                                <div className="font-semibold text-slate-700 dark:text-slate-300">
+                                  {destination.transportOptions.car}m
+                                </div>
+                                <div className="text-xs text-slate-400">
+                                  est. ¥
+                                  {(
+                                    budgetService.getTransportCost(
+                                      destination,
+                                      "car",
+                                    ) / 1000
+                                  ).toFixed(1)}
+                                  k
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        {isModeVisible("my_car") &&
+                          destination.transportOptions?.my_car && (
+                            <div className="flex justify-between items-center text-sm border-b border-slate-100 dark:border-slate-800 pb-2">
+                              <span className="text-slate-500 flex items-center">
+                                <Car className="w-4 h-4 mr-1.5" /> My Car
+                              </span>
+                              <div className="text-right">
+                                <div className="font-semibold text-slate-700 dark:text-slate-300">
+                                  {destination.transportOptions.my_car}m
+                                </div>
+                                <div className="text-xs text-slate-400">
+                                  est. ¥
+                                  {(
+                                    budgetService.getTransportCost(
+                                      destination,
+                                      "my_car",
+                                    ) / 1000
+                                  ).toFixed(1)}
+                                  k
+                                </div>
+                              </div>
+                            </div>
+                          )}
                         <div className="flex justify-between items-center text-sm">
                           <span className="text-slate-500">👣 Walk</span>
                           <span className="font-semibold text-slate-700 dark:text-slate-300">
@@ -422,37 +475,33 @@ export default function DestinationDetails() {
                         </div>
                       </div>
 
-                      {destination.transportOptions &&
-                        Object.keys(destination.transportOptions).length >
-                          1 && (
-                          <div className="flex flex-wrap gap-1.5 mb-4">
-                            {Object.keys(destination.transportOptions).map(
-                              (mode) => {
-                                const isSelected = selectedTransport === mode;
-                                const names: Record<string, string> = {
-                                  train: "Train",
-                                  shinkansen: "Shinkansen",
-                                  car: "Rental Car",
-                                  my_car: "My Car",
-                                  bus: "Bus",
-                                };
-                                return (
-                                  <button
-                                    key={mode}
-                                    onClick={() => setSelectedTransport(mode)}
-                                    className={`px-2.5 py-1 text-xs font-medium rounded-full transition-colors ${
-                                      isSelected
-                                        ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300"
-                                        : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700"
-                                    }`}
-                                  >
-                                    {names[mode]}
-                                  </button>
-                                );
-                              },
-                            )}
-                          </div>
-                        )}
+                      {availableModes.length > 1 && (
+                        <div className="flex flex-wrap gap-1.5 mb-4">
+                          {availableModes.map((mode) => {
+                            const isSelected = selectedTransport === mode;
+                            const names: Record<string, string> = {
+                              train: "Train",
+                              shinkansen: "Shinkansen",
+                              car: "Rental Car",
+                              my_car: "My Car",
+                              bus: "Bus",
+                            };
+                            return (
+                              <button
+                                key={mode}
+                                onClick={() => setSelectedTransport(mode)}
+                                className={`px-2.5 py-1 text-xs font-medium rounded-full transition-colors ${
+                                  isSelected
+                                    ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300"
+                                    : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700"
+                                }`}
+                              >
+                                {names[mode] || mode}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
 
                       {destination.budgetBreakdown && (
                         <div className="space-y-2 mt-auto">

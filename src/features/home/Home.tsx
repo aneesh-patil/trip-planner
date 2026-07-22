@@ -553,6 +553,9 @@ export default function Home() {
                 <div className="flex-grow">
                   <DestinationCard
                     destination={dest as Destination}
+                    partySize={partySize}
+                    carMode={carMode}
+                    publicModes={publicModes}
                     activeTransportMode={
                       (dest as any).bestTransportMode || "train"
                     }
