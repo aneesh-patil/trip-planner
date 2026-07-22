@@ -224,6 +224,11 @@ export default function DestinationDetails() {
         <img
           src={destination.heroImage}
           alt={destination.name}
+          onError={(e) => {
+            if (wikiSummary?.leadImage) {
+              (e.currentTarget as HTMLImageElement).src = wikiSummary.leadImage;
+            }
+          }}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
@@ -248,8 +253,13 @@ export default function DestinationDetails() {
               </Badge>
             ))}
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-2">
-            {destination.name}
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-2 flex flex-wrap items-baseline gap-3">
+            <span>{destination.name}</span>
+            {wikiSummary?.japaneseTitle && (
+              <span className="text-xl md:text-3xl font-medium text-emerald-400 font-sans tracking-wide">
+                {wikiSummary.japaneseTitle}
+              </span>
+            )}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-lg text-slate-200 mt-2">
             <div className="flex items-center">
