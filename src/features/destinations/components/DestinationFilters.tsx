@@ -326,8 +326,8 @@ export default function DestinationFilters({
         </div>
       </div>
 
-      <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col lg:flex-row gap-8 items-start lg:items-center">
-        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+      <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
           {/* Transport Options */}
           <div className="space-y-3 lg:col-span-2">
             <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">

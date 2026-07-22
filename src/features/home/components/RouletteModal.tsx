@@ -13,16 +13,25 @@ import {
   Compass,
 } from "lucide-react";
 
+import { getAdjustedBudget } from "@/shared/utils/utils";
+import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
+
 interface RouletteModalProps {
   isOpen: boolean;
   onClose: () => void;
   candidates: Destination[];
+  partySize?: number;
+  carMode?: string;
+  publicModes?: string[];
 }
 
 export default function RouletteModal({
   isOpen,
   onClose,
   candidates,
+  partySize = 2,
+  carMode = "none",
+  publicModes = ["train"],
 }: RouletteModalProps) {
   const [spinning, setSpinning] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -165,8 +174,17 @@ export default function RouletteModal({
                       Est. Budget:{" "}
                       <strong className="text-emerald-600 dark:text-emerald-400">
                         ¥
-                        {(
-                          currentDisplay?.budgetRecommended || 15000
+                        {(currentDisplay
+                          ? getAdjustedBudget(
+                              currentDisplay,
+                              getValidModes(
+                                currentDisplay,
+                                carMode,
+                                publicModes,
+                              )[0] || "train",
+                              partySize,
+                            )
+                          : 15000
                         ).toLocaleString()}
                       </strong>
                     </span>

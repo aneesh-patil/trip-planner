@@ -309,6 +309,9 @@ export default function Home() {
               isOpen={rouletteOpen}
               onClose={() => setRouletteOpen(false)}
               candidates={rouletteCandidates}
+              partySize={partySize}
+              carMode={carMode}
+              publicModes={publicModes}
             />
 
             {/* Smart Planner Card */}
