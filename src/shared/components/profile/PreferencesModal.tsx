@@ -275,23 +275,41 @@ export function PreferencesModal({ isOpen, onClose }: PreferencesModalProps) {
             </div>
           </div>
 
-          <Button
-            type="submit"
-            disabled={loading}
-            className={`w-full py-2.5 rounded-xl font-bold shadow-md transition-all duration-300 ${
-              success
-                ? "bg-emerald-500 hover:bg-emerald-600 text-white"
-                : "bg-emerald-600 hover:bg-emerald-700 text-white"
-            }`}
-          >
-            {loading ? (
-              <Loader2 className="w-5 h-5 animate-spin" />
-            ) : success ? (
-              "Preferences Saved!"
-            ) : (
-              "Save Preferences"
+          <div className="flex gap-3">
+            {isUnset && (
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => {
+                  sessionStorage.setItem(
+                    "tabimap_dismissed_preferences_prompt",
+                    "true",
+                  );
+                  onClose();
+                }}
+                className="flex-1 py-2.5 rounded-xl font-medium border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
+              >
+                Skip for now
+              </Button>
             )}
-          </Button>
+            <Button
+              type="submit"
+              disabled={loading}
+              className={`flex-1 py-2.5 rounded-xl font-bold shadow-md transition-all duration-300 ${
+                success
+                  ? "bg-emerald-500 hover:bg-emerald-600 text-white"
+                  : "bg-emerald-600 hover:bg-emerald-700 text-white"
+              }`}
+            >
+              {loading ? (
+                <Loader2 className="w-5 h-5 animate-spin" />
+              ) : success ? (
+                "Preferences Saved!"
+              ) : (
+                "Save Preferences"
+              )}
+            </Button>
+          </div>
         </form>
       </div>
     </div>,

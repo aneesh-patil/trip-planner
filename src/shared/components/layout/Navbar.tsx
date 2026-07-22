@@ -47,10 +47,18 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handlePreferencesClose = () => {
+    sessionStorage.setItem("tabimap_dismissed_preferences_prompt", "true");
+    setPreferencesOpen(false);
+  };
+
   useEffect(() => {
     if (!loading && user) {
       const isSet = Boolean(user.user_metadata?.preferences?.preferences_set);
-      if (!isSet) {
+      const dismissedThisSession =
+        sessionStorage.getItem("tabimap_dismissed_preferences_prompt") ===
+        "true";
+      if (!isSet && !dismissedThisSession) {
         setPreferencesOpen(true);
       }
     }
@@ -183,7 +191,7 @@ export default function Navbar() {
           />
           <PreferencesModal
             isOpen={preferencesOpen}
-            onClose={() => setPreferencesOpen(false)}
+            onClose={handlePreferencesClose}
           />
 
           {/* Hamburger button — mobile only */}
