@@ -2,19 +2,16 @@ import { useTripStore } from "@/shared/hooks/useTripStore";
 import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
 import DestinationCard from "@/features/destinations/components/DestinationCard";
-import { Bookmark, Search, CheckCircle2 } from "lucide-react";
+import { Bookmark, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/shared/components/ui/button";
 
 export default function Favorites() {
-  const { favorites, visited } = useTripStore();
+  const { favorites } = useTripStore();
   const allDestinations = getDestinationList() as Destination[];
 
   const favoriteDestinations = allDestinations.filter((d) =>
     favorites.includes(d.id),
-  );
-  const visitedDestinations = allDestinations.filter((d) =>
-    visited.includes(d.id),
   );
 
   return (
@@ -54,27 +51,6 @@ export default function Favorites() {
           {favoriteDestinations.map((dest) => (
             <DestinationCard key={dest.id} destination={dest} />
           ))}
-        </div>
-      )}
-
-      {visitedDestinations.length > 0 && (
-        <div className="mt-20">
-          <div className="flex items-center mb-8 border-b pb-6">
-            <CheckCircle2 className="w-8 h-8 mr-4 text-emerald-500" />
-            <div>
-              <h2 className="text-3xl font-extrabold tracking-tight">
-                Already Visited
-              </h2>
-              <p className="text-slate-500 dark:text-slate-400 mt-1">
-                Places you've already conquered
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-70 hover:opacity-100 transition-opacity">
-            {visitedDestinations.map((dest) => (
-              <DestinationCard key={dest.id} destination={dest} />
-            ))}
-          </div>
         </div>
       )}
     </div>

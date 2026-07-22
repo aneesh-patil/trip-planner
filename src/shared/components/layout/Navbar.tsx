@@ -12,12 +12,14 @@ import {
   User,
   Sliders,
   LogOut,
+  CheckCircle2,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { AuthModal } from "@/shared/components/auth/AuthModal";
 import { ProfileModal } from "@/shared/components/profile/ProfileModal";
 import { PreferencesModal } from "@/shared/components/profile/PreferencesModal";
+import { MyTripsModal } from "@/shared/components/profile/MyTripsModal";
 
 export default function Navbar() {
   const location = useLocation();
@@ -26,6 +28,7 @@ export default function Navbar() {
   const [authOpen, setAuthOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const [preferencesOpen, setPreferencesOpen] = useState(false);
+  const [myTripsOpen, setMyTripsOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
 
@@ -157,6 +160,17 @@ export default function Navbar() {
                         <Sliders className="w-4 h-4 text-slate-500" />
                         Set Preferences
                       </button>
+
+                      <button
+                        onClick={() => {
+                          setUserMenuOpen(false);
+                          setMyTripsOpen(true);
+                        }}
+                        className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors text-left"
+                      >
+                        <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                        My Trips (Visited)
+                      </button>
                     </div>
 
                     <div className="border-t border-slate-100 dark:border-slate-800 pt-1">
@@ -192,6 +206,10 @@ export default function Navbar() {
           <PreferencesModal
             isOpen={preferencesOpen}
             onClose={handlePreferencesClose}
+          />
+          <MyTripsModal
+            isOpen={myTripsOpen}
+            onClose={() => setMyTripsOpen(false)}
           />
 
           {/* Hamburger button — mobile only */}
