@@ -25,7 +25,9 @@ import {
   Bus,
   Car,
   CheckCircle2,
+  Share2,
 } from "lucide-react";
+import { toast } from "sonner";
 import { Badge } from "@/shared/components/ui/badge";
 import { Button } from "@/shared/components/ui/button";
 import {
@@ -266,6 +268,33 @@ export default function DestinationDetails() {
             >
               <CheckCircle2 className="w-4 h-4 mr-1.5" />
               {isVisited(destination.id) ? "Visited" : "Mark as Visited"}
+            </button>
+
+            <button
+              onClick={async () => {
+                const shareData = {
+                  title: destination.name,
+                  text: `Check out ${destination.name} in ${destination.prefecture}, Japan on TabiMap!`,
+                  url: window.location.href,
+                };
+                if (navigator.share) {
+                  try {
+                    await navigator.share(shareData);
+                  } catch (err: any) {
+                    if (err.name !== "AbortError") {
+                      await navigator.clipboard.writeText(window.location.href);
+                      toast.success("Link copied to clipboard!");
+                    }
+                  }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  toast.success("Link copied to clipboard!");
+                }
+              }}
+              className="inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
+            >
+              <Share2 className="w-4 h-4 mr-1.5" />
+              Share
             </button>
           </div>
         </div>
