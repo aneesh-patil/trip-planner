@@ -42,18 +42,27 @@ export default function RouletteModal({
     setSpinning(true);
     setWinner(null);
 
+    const winningIndex = Math.floor(Math.random() * candidates.length);
+    const targetWinner = candidates[winningIndex];
+
+    let currentIdx = currentIndex;
+    let ticksLeft =
+      15 +
+      ((winningIndex - (currentIdx % candidates.length) + candidates.length) %
+        candidates.length);
+    if (ticksLeft < 15) ticksLeft += candidates.length;
+
+    const totalTicks = ticksLeft;
     let count = 0;
-    const totalTicks = 20;
 
     const tick = () => {
       count++;
-      setCurrentIndex((prev) => (prev + 1) % candidates.length);
+      currentIdx = (currentIdx + 1) % candidates.length;
+      setCurrentIndex(currentIdx);
 
       if (count >= totalTicks) {
         setSpinning(false);
-        const finalWinner =
-          candidates[Math.floor(Math.random() * candidates.length)];
-        setWinner(finalWinner);
+        setWinner(targetWinner);
       } else {
         const nextDelay = 50 + Math.floor((count / totalTicks) * 250);
         setTimeout(tick, nextDelay);

@@ -225,12 +225,18 @@ export function getTabWeatherSummary(
   }
 
   // Combined Weekend (Sat + Sun)
-  const avgTemp = Math.round(
-    daysData.reduce((acc, curr) => acc + curr.maxTemp, 0) / daysData.length,
-  );
   const rainDay = daysData.find((d) => d.icon === "rain" || d.icon === "storm");
   const snowDay = daysData.find((d) => d.icon === "snow");
   const chosenDay = rainDay || snowDay || daysData[0];
+
+  // When an adverse weather day is selected to represent the weekend, use its exact temperature for consistency
+  const displayTemp =
+    rainDay || snowDay
+      ? chosenDay.maxTemp
+      : Math.round(
+          daysData.reduce((acc, curr) => acc + curr.maxTemp, 0) /
+            daysData.length,
+        );
 
   const [y1, m1, d1] = daysData[0].date.split("-").map(Number);
   const [y2, m2, d2] = daysData[daysData.length - 1].date
@@ -248,7 +254,7 @@ export function getTabWeatherSummary(
   })}`;
 
   return {
-    temp: avgTemp,
+    temp: displayTemp,
     desc: chosenDay.desc,
     dateLabel,
     icon: chosenDay.icon,
