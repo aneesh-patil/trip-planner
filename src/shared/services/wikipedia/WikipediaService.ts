@@ -1,10 +1,19 @@
 const cache = new Map<string, string | null>();
 
+/**
+ * NOTE (LICENSING): leadImage is retrieved as an unverified fallback from Wikipedia REST API
+ * (data.originalimage?.source || data.thumbnail?.source) for personal/demonstration use.
+ * Images hosted on Wikimedia Commons have varying licenses (Public Domain, CC BY-SA, GFDL,
+ * or Fair Use). If deployed in commercial or public production, an explicit Commons API
+ * imageinfo query (prop=imageinfo&iiprop=extmetadata) must be added to verify individual
+ * image reuse rights before rendering.
+ */
 export interface WikipediaSummary {
   extract: string;
   url: string;
   japaneseTitle?: string;
   leadImage?: string;
+  leadImageLicense?: string;
 }
 
 export class WikipediaService {
@@ -75,6 +84,7 @@ export class WikipediaService {
               `https://en.wikipedia.org/wiki/${encodeURIComponent(name)}`,
             japaneseTitle: jaTitle,
             leadImage: data.originalimage?.source || data.thumbnail?.source,
+            leadImageLicense: "Wikimedia Commons (Unverified)",
           };
           cache.set(cacheKey, JSON.stringify(result));
           return result;
@@ -116,6 +126,7 @@ export class WikipediaService {
                 japaneseTitle: jaTitle,
                 leadImage:
                   sumData.originalimage?.source || sumData.thumbnail?.source,
+                leadImageLicense: "Wikimedia Commons (Unverified)",
               };
               cache.set(cacheKey, JSON.stringify(result));
               return result;
