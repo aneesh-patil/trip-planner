@@ -191,6 +191,13 @@ export default function Destinations() {
     setMaxWalking(25000);
   };
 
+  const handleSearchSubmit = () => {
+    const resultsEl = document.getElementById("results-grid");
+    if (resultsEl) {
+      resultsEl.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
@@ -251,10 +258,15 @@ export default function Destinations() {
         setWeather={setWeather}
         maxWalking={maxWalking}
         setMaxWalking={setMaxWalking}
+        totalMatches={filteredAndSortedDestinations.length}
+        onSearch={handleSearchSubmit}
         onReset={resetFilters}
       />
 
-      <div className="mb-6 flex items-center justify-between text-slate-600 dark:text-slate-400 font-medium">
+      <div
+        id="results-grid"
+        className="mb-6 flex items-center justify-between text-slate-600 dark:text-slate-400 font-medium scroll-mt-24"
+      >
         <span>
           Found {filteredAndSortedDestinations.length} destination
           {filteredAndSortedDestinations.length === 1 ? "" : "s"}

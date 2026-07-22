@@ -41,6 +41,8 @@ interface DestinationFiltersProps {
   setWeather: (val: string) => void;
   maxWalking: number;
   setMaxWalking: (val: number) => void;
+  totalMatches?: number;
+  onSearch?: () => void;
   onReset: () => void;
 }
 
@@ -61,6 +63,8 @@ export default function DestinationFilters({
   setWeather,
   maxWalking,
   setMaxWalking,
+  totalMatches,
+  onSearch,
   onReset,
 }: DestinationFiltersProps) {
   const { user } = useAuth();
@@ -477,14 +481,28 @@ export default function DestinationFilters({
           </div>
         </div>
 
-        {/* Reset Button */}
-        <div className="w-full lg:w-auto flex justify-end shrink-0 mt-4 lg:mt-0">
+        {/* Action Bar: Reset & Primary Search CTA */}
+        <div className="w-full flex flex-col sm:flex-row items-center justify-end gap-3 shrink-0 mt-6 pt-4 border-t border-slate-100 dark:border-slate-800">
           <button
             onClick={onReset}
-            className="px-6 py-2.5 text-sm font-semibold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-900/20 dark:text-emerald-400 dark:hover:bg-emerald-900/40 rounded-lg transition-colors whitespace-nowrap h-12 flex items-center"
+            className="w-full sm:w-auto px-5 py-2.5 text-sm font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 rounded-xl transition-colors h-11 flex items-center justify-center"
           >
             Reset Filters
           </button>
+          {onSearch && (
+            <button
+              onClick={onSearch}
+              className="w-full sm:w-auto px-6 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 h-11 flex items-center justify-center gap-2 group"
+            >
+              <Search className="w-4 h-4 transition-transform group-hover:scale-110" />
+              <span>Search Destinations</span>
+              {typeof totalMatches === "number" && (
+                <span className="bg-white/20 px-2 py-0.5 rounded-full text-xs font-semibold">
+                  {totalMatches}
+                </span>
+              )}
+            </button>
+          )}
         </div>
       </div>
     </div>
