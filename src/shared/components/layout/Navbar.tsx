@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Compass,
-  Bookmark,
+  Calendar,
   Map,
   Settings,
   Menu,
@@ -70,7 +70,7 @@ export default function Navbar() {
     { name: "Destinations", path: "/destinations", icon: Map },
     { name: "Prefectures", path: "/visited-map", icon: CheckSquare },
     { name: "Compare", path: "/compare", icon: Settings },
-    { name: "Bucket List", path: "/my-trips?tab=bucketlist", icon: Bookmark },
+    { name: "My Trips", path: "/my-trips", icon: Calendar },
   ];
 
   return (
