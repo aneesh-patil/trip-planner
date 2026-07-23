@@ -109,13 +109,8 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero & Planner Section */}
-      <section
-        className="relative pt-20 pb-16 lg:pt-28 lg:pb-24 overflow-hidden bg-cover bg-center min-h-[85vh] flex items-center"
-        style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1800")`,
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/40 to-black/75 -z-10" />
+      <section className="relative pt-20 pb-16 lg:pt-28 lg:pb-24 overflow-hidden bg-slate-50 dark:bg-slate-950">
+        <div className="absolute inset-0 bg-grid-slate-200/50 dark:bg-grid-slate-800/50 [mask-image:linear-gradient(0deg,transparent,black)] -z-10" />
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Contextual Hero */}
@@ -145,7 +140,7 @@ export default function Home() {
                         className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all focus:outline-none ${
                           activeTabId === tab.id
                             ? "bg-emerald-600 text-white shadow-md"
-                            : "bg-white/10 text-slate-200 hover:bg-white/20"
+                            : "bg-slate-100 text-slate-500 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700"
                         }`}
                       >
                         {tab.label}
@@ -154,8 +149,8 @@ export default function Home() {
 
                     {/* Custom Date Picker (Bounded to Open-Meteo 10-day forecast) */}
                     {weatherContext && (
-                      <div className="relative inline-flex items-center gap-1.5 bg-white/10 border border-white/10 rounded-full px-3 py-1 text-xs font-bold text-slate-200 shadow-sm hover:border-emerald-500 transition-colors">
-                        <Calendar className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <div className="relative inline-flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full px-3 py-1 text-xs font-bold text-slate-600 dark:text-slate-300 shadow-sm hover:border-emerald-500 transition-colors">
+                        <Calendar className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                         <input
                           type="date"
                           min={weatherContext.minDate}
@@ -168,24 +163,26 @@ export default function Home() {
                               handleCustomDateSelect(val);
                             }
                           }}
-                          className="bg-transparent border-none p-0 text-xs font-bold text-slate-200 focus:outline-none cursor-pointer"
+                          className="bg-transparent border-none p-0 text-xs font-bold text-slate-700 dark:text-slate-200 focus:outline-none cursor-pointer"
                           title="Pick custom forecast date"
                         />
                       </div>
                     )}
                   </div>
 
-                  <p className="text-slate-400 font-bold mb-2 tracking-widest uppercase text-xs">
+                  <p className="text-slate-500 dark:text-slate-400 font-bold mb-2 tracking-widest uppercase text-xs">
                     {currentSituation.dateLabel}
                   </p>
-                  <div className="flex items-center text-4xl md:text-5xl font-black text-white mb-4">
+                  <div className="flex items-center text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4">
                     <span>{currentSituation.temp}°C</span>
-                    <span className="mx-4 text-white/20">|</span>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">
+                    <span className="mx-4 text-slate-200 dark:text-slate-800">
+                      |
+                    </span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">
                       {currentSituation.desc} in your area
                     </span>
                   </div>
-                  <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mt-6 leading-tight">
+                  <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 mt-6 leading-tight">
                     Based on{" "}
                     {currentTab?.label.toLowerCase() === "today"
                       ? "today's"
@@ -198,13 +195,13 @@ export default function Home() {
                   </h1>
                 </div>
               ) : (
-                <div className="h-40 animate-pulse bg-white/10 rounded-2xl w-full max-w-lg mb-10" />
+                <div className="h-40 animate-pulse bg-slate-200 dark:bg-slate-800 rounded-2xl w-full max-w-lg mb-10" />
               )}
 
               <div className="flex flex-col sm:flex-row gap-3 w-full">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto h-14 px-6 text-base font-bold rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-xl transition-all hover:scale-105"
+                  className="w-full sm:w-auto h-14 px-6 text-base font-bold rounded-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 shadow-xl"
                   onClick={() =>
                     document
                       .getElementById("recommendations")
@@ -218,16 +215,16 @@ export default function Home() {
                   size="lg"
                   variant="outline"
                   onClick={() => setRouletteOpen(true)}
-                  className="w-full sm:w-auto h-14 px-6 text-base font-bold rounded-full bg-white/10 hover:bg-white/20 text-white border-white/25 transition-all hover:scale-105"
+                  className="w-full sm:w-auto h-14 px-6 text-base font-bold rounded-full bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800"
                 >
-                  <Dices className="w-5 h-5 mr-2 text-emerald-400" />
+                  <Dices className="w-5 h-5 mr-2 text-emerald-600 dark:text-emerald-400" />
                   Surprise Me 🎲
                 </Button>
                 <Link to="/destinations" className="w-full sm:w-auto">
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full h-14 px-6 text-base font-bold rounded-full bg-white/10 hover:bg-white/20 text-white border-white/25 transition-all hover:scale-105"
+                    className="w-full h-14 px-6 text-base font-bold rounded-full bg-white/50 backdrop-blur-sm dark:bg-slate-900/50 border-slate-300 hover:bg-slate-100"
                   >
                     Browse All
                   </Button>
