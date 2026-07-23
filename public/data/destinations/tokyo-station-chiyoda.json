@@ -1,0 +1,111 @@
+{
+  "id": "tokyo-station-chiyoda",
+  "name": "Tokyo Station",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["City", "History", "Food", "Shopping"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tokyo_Station_Marunouchi_Building_2020.jpg/960px-Tokyo_Station_Marunouchi_Building_2020.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tokyo_Station_Marunouchi_Building_2020.jpg/960px-Tokyo_Station_Marunouchi_Building_2020.jpg",
+  "totalTripHours": 4,
+  "budgetMin": 5000,
+  "budgetRecommended": 9000,
+  "budgetMax": 15000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 85,
+  "ratings": {
+    "overall": 9.2,
+    "couple": 8.8,
+    "summer": 8.5,
+    "winter": 9,
+    "rain": 9.5,
+    "food": 9.8,
+    "photography": 9.3,
+    "relaxation": 8,
+    "value": 8.8,
+    "uniqueness": 9.5
+  },
+  "crowd": {
+    "weekday": 9,
+    "weekend": 9,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "tags": ["Iconic", "Historic Architecture", "Ramen Street", "Shinkansen Hub"],
+  "coordinates": {
+    "lat": 35.681236,
+    "lng": 139.767125
+  },
+  "comfort": {
+    "heatTolerance": 9,
+    "rainFriendly": 9,
+    "walkingIntensity": 4
+  },
+  "transportOptions": {
+    "train": 0,
+    "shinkansen": 0
+  },
+  "highlights": [
+    "Marunouchi Red Brick Building",
+    "Tokyo Ramen Street",
+    "Imperial Palace East Gardens (nearby)",
+    "Character Street"
+  ],
+  "description": "Japans premier railway terminal, featuring the restored 1914 Marunouchi red-brick facade, subterranean shopping passages, world-class ramen eateries, and immediate proximity to the Imperial Palace grounds.",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tokyo_Station_Marunouchi_Building_at_Night_202105.jpg/960px-Tokyo_Station_Marunouchi_Building_at_Night_202105.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tokyo_Ramen_Street_2019.jpg/960px-Tokyo_Ramen_Street_2019.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Marunouchi_Naka-dori_in_Winter.jpg/960px-Marunouchi_Naka-dori_in_Winter.jpg"
+  ],
+  "budgetBreakdown": {
+    "transport": 500,
+    "tickets": 0,
+    "food": 5500,
+    "cafe": 1500
+  },
+  "reservation": "Not required for public station concourses; reservations recommended for high-end Marunouchi dining.",
+  "parking": "Paid underground parking garages available throughout the Marunouchi and Yaesu districts.",
+  "itineraries": [
+    {
+      "name": "Marunouchi & Station Heritage Walk",
+      "description": "Explore red-brick architecture, underground gourmet streets, and Imperial Palace gardens.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Admire the restored 1914 Marunouchi station dome and grand atrium."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Walk through Tokyo Character Street and shop for regional souvenirs."
+        },
+        {
+          "time": "12:30 PM",
+          "activity": "Enjoy lunch at Tokyo Ramen Street in First Avenue station underground."
+        },
+        {
+          "time": "2:00 PM",
+          "activity": "Stroll down Marunouchi Naka-dori boulevard to the Imperial Palace East Gardens."
+        },
+        {
+          "time": "4:00 PM",
+          "activity": "Relax at a rooftop station cafe with views of incoming Shinkansen trains."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Rokurinsha (Ramen Street)",
+    "Ecsotto Marunouchi",
+    "Kitte Granche Dining"
+  ],
+  "cafes": ["TORAYA TOKYO (Tokyo Station Hotel)", "Sembikiya Fruit Parlor"],
+  "notes": "Direct access to Narita Express and all Shinkansen lines. Excellent rain-proof indoor routing.",
+  "schemaVersion": 2
+}
