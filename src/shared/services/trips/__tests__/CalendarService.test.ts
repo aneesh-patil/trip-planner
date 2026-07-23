@@ -28,7 +28,7 @@ describe("CalendarService Unit Tests", () => {
     expect(ics).toContain("BEGIN:VCALENDAR");
     expect(ics).toContain("SUMMARY:Tokyo Autumn Adventure");
     expect(ics).toContain("DTSTART;VALUE=DATE:20261101");
-    expect(ics).toContain("DTEND;VALUE=DATE:20261105");
+    expect(ics).toContain("DTEND;VALUE=DATE:20261106");
     expect(ics).toContain("DESCRIPTION:1. Shinjuku Gyoen (Arrives: 10:00 AM)");
     expect(ics).toContain("END:VEVENT");
     expect(ics).toContain("END:VCALENDAR");

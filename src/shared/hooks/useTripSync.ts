@@ -210,6 +210,7 @@ export function useTripSync({
       deletedTrips.forEach((t) => {
         tripRepo.deleteTrip(t.id).catch((err) => {
           console.error("Failed to delete trip from cloud", err);
+          toast.error("Failed to sync trip deletion to cloud.");
         });
       });
 

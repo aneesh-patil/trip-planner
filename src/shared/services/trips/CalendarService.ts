@@ -5,10 +5,20 @@ export function generateIcsContent(trip: Trip): string {
     return dateStr.replace(/-/g, "") + "T000000Z";
   };
 
+  const getNextDay = (dateStr: string) => {
+    const date = new Date(dateStr);
+    date.setDate(date.getDate() + 1);
+    return date.toISOString().split("T")[0];
+  };
+
   const start = trip.startDate
     ? formatIcsDate(trip.startDate)
     : formatIcsDate(new Date().toISOString().split("T")[0]);
-  const end = trip.endDate ? formatIcsDate(trip.endDate) : start;
+  const end = trip.endDate
+    ? formatIcsDate(getNextDay(trip.endDate))
+    : formatIcsDate(
+        getNextDay(trip.startDate || new Date().toISOString().split("T")[0]),
+      );
 
   const description = trip.stops
     .map(
