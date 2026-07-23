@@ -53,7 +53,11 @@
   },
   "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
   "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
+  ],
   "budgetBreakdown": {
     "transport": 3000,
     "tickets": 0,

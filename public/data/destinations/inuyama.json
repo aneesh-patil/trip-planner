@@ -87,5 +87,10 @@
   "restaurants": ["Inuyama Castle Town Food Stalls", "Kiso River Dining"],
   "cafes": ["Honmachi Tea House"],
   "notes": "A perfect extension to a Nagoya trip, offering one of Japan's oldest surviving wooden castles.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "gallery": [
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+    "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+  ]
 }

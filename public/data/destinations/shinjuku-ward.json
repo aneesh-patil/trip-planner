@@ -57,7 +57,11 @@
     "Tokyo Metropolitan Government Building (Free View)"
   ],
   "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+    "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+  ],
   "budgetBreakdown": {
     "transport": 1000,
     "tickets": 0,

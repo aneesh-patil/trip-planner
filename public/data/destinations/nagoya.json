@@ -92,5 +92,10 @@
   ],
   "cafes": ["Komeda Coffee", "Cafe de Ciel"],
   "notes": "Nagoya is the heart of Chubu. A fast bullet train ride from Tokyo or Yokohama, famous for its unique rich food culture.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "gallery": [
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
+  ]
 }

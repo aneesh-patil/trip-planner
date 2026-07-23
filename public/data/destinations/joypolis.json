@@ -53,7 +53,11 @@
   },
   "highlights": ["Halfpipe Tokyo", "VR Attractions"],
   "description": "Joypolis Odaiba is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
+  ],
   "budgetBreakdown": {
     "transport": 1000,
     "tickets": 10000,

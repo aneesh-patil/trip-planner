@@ -53,7 +53,11 @@
   },
   "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
   "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
+  ],
   "budgetBreakdown": {
     "transport": 3000,
     "tickets": 3000,

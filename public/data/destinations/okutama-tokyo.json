@@ -5,7 +5,11 @@
   "region": "Kanto",
   "categories": ["Nature", "Hiking", "Relaxation"],
   "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687990d?q=80&w=1000",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+  ],
   "description": "Tokyos wildest mountain escape featuring Lake Okutama, dramatic limestone caves, suspension bridges, and riverside hot springs.",
   "highlights": ["Lake Okutama", "Nippara Limestone Cave", "Hatanosu Gorge"],
   "budgetMin": 8000,

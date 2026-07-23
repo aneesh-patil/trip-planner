@@ -92,5 +92,10 @@
   "restaurants": ["Soba Hachiman", "Yoshida River Ayu Dining"],
   "cafes": ["Gujo Matcha Cafe"],
   "notes": "Famous for its pristine waterways, the town feels incredibly refreshing in summer.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "gallery": [
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+  ]
 }

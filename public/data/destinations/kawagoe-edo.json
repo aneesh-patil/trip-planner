@@ -57,7 +57,11 @@
     "Penny Candy Alley"
   ],
   "description": "Kawagoe is a scenic destination in the Saitama region of Japan, offering rich history and cultural attractions.",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+  ],
   "budgetBreakdown": {
     "transport": 3000,
     "tickets": 1600,

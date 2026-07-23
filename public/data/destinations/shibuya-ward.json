@@ -53,7 +53,11 @@
   },
   "highlights": ["Scramble Crossing", "Shibuya Sky", "Miyashita Park"],
   "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station.",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
+  ],
   "budgetBreakdown": {
     "transport": 1000,
     "tickets": 0,

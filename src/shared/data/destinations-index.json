@@ -54,7 +54,11 @@
     },
     "highlights": ["Hie Shrine", "Tokyo Midtown (nearby)", "TBS Studio area"],
     "description": "An upscale commercial and residential district with excellent dining, high-end hotels, and Hie Shrine.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 1600,
@@ -151,7 +155,11 @@
     },
     "highlights": ["Electric Town", "Maid Cafes", "Radio Kaikan"],
     "description": "Akihabara is a neighborhood in the Chiyoda ward of Tokyo, Japan, generally considered to be the area surrounding Akihabara Station. This area is part of the Sotokanda (外神田) and Kanda-Sakumachō districts of Chiyoda. There is an administrative district called Akihabara, located north of Akihabara Electric Town surrounding Akihabara Neribei Park.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
@@ -252,7 +260,11 @@
       "Sumida River Cruise"
     ],
     "description": "Asakusa is a district in Taitō, Tokyo, Japan. It is known for Sensō-ji, a Buddhist temple dedicated to the bodhisattva Kannon. There are several other temples in Asakusa, as well as various festivals, such as Sanja Matsuri.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 1600,
@@ -354,8 +366,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg"
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 1600,
@@ -461,7 +473,11 @@
     },
     "highlights": ["Sun Beach", "Atami Castle", "Kiunkaku"],
     "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 5400,
@@ -584,7 +600,11 @@
     },
     "highlights": ["Coastal Drive", "Seafood", "Nokogiriyama"],
     "description": "Boso Peninsula is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 7000,
       "tickets": 0,
@@ -721,8 +741,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg"
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2800,
@@ -832,8 +852,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG"
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3000,
@@ -889,7 +909,11 @@
     "region": "Kanto",
     "categories": ["Culture", "Nature", "Food"],
     "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
+    ],
     "description": "Leafy suburban Tokyo town famous for Jindaiji Temple, hand-made Soba noodles, and GeGeGe no Kitaro anime heritage.",
     "highlights": [
       "Jindaiji Temple",
@@ -953,7 +977,11 @@
     "region": "Kanto",
     "categories": ["Nature", "Food", "Ocean"],
     "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+    ],
     "description": "Easternmost coastal cape of the Kanto region, renowned for first sunrises, Inubosaki Lighthouse, and fresh seafood markets.",
     "highlights": [
       "Inubosaki Lighthouse",
@@ -1065,7 +1093,11 @@
     },
     "highlights": ["Cinderella Castle", "Space Mountain", "Electrical Parade"],
     "description": "Tokyo Disneyland is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 18800,
@@ -1170,7 +1202,11 @@
     },
     "highlights": ["DisneySea Transit Steamer", "Soaring"],
     "description": "DisneySea is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 18800,
@@ -1306,7 +1342,11 @@
       "Diamond and Flower Ferris Wheel"
     ],
     "description": "Known for Kasai Rinkai Park on Tokyo Bay, featuring a giant Ferris wheel, aquarium, and peaceful riverbank cycling.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
@@ -1407,7 +1447,11 @@
     },
     "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
     "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 3000,
@@ -1511,8 +1555,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg"
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4400,
@@ -1622,8 +1666,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png"
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2800,
@@ -1732,8 +1776,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg"
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4000,
@@ -1839,8 +1883,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 8000,
@@ -1948,7 +1992,11 @@
       "Exclusive Short Films"
     ],
     "description": "Ghibli Museum is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 2000,
@@ -2054,7 +2102,11 @@
       "Pedestrian Paradise (Weekends)"
     ],
     "description": "Ginza is a district of Chūō, Tokyo, located south of Yaesu and Kyōbashi, west of Tsukiji, east of Yūrakuchō and Uchisaiwaichō, and north of Shinbashi. It is a popular upscale shopping area of Tokyo, with numerous internationally renowned department stores, boutiques, restaurants and coffeehouses located in the vicinity.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 2000,
@@ -2190,7 +2242,12 @@
     "restaurants": ["Soba Hachiman", "Yoshida River Ayu Dining"],
     "cafes": ["Gujo Matcha Cafe"],
     "notes": "Famous for its pristine waterways, the town feels incredibly refreshing in summer.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ]
   },
   {
     "id": "hachioji-tokyo",
@@ -2199,7 +2256,11 @@
     "region": "Kanto",
     "categories": ["Nature", "Hiking", "Culture"],
     "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
+    ],
     "description": "Historic castle town and mountain gateway at the base of Mt. Takao, offering scenic nature trails and Yakiniku food culture.",
     "highlights": [
       "Mount Takao Cable Car",
@@ -2317,8 +2378,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg"
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4800,
@@ -2422,7 +2483,11 @@
     },
     "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
     "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 8200,
@@ -2545,7 +2610,11 @@
     },
     "highlights": ["Great Hall", "Diagon Alley"],
     "description": "Harry Potter Studio is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 13000,
@@ -2682,8 +2751,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg"
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -2739,7 +2808,11 @@
     "region": "Kanto",
     "categories": ["Onsen", "Culture", "Relaxation"],
     "heroImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600"
+    ],
     "description": "Atmospheric thermal spring village built around a 365-step stone staircase lined with traditional ryokans, footbaths, and souvenir shops.",
     "highlights": [
       "365 Stone Steps",
@@ -2856,7 +2929,11 @@
       "Otome Road"
     ],
     "description": "Ikebukuro (Toshima) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 8000,
@@ -2957,7 +3034,11 @@
       "Chidorigafuchi (Spring)"
     ],
     "description": "Imperial Palace (Chiyoda) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 1600,
@@ -3092,7 +3173,12 @@
     "restaurants": ["Inuyama Castle Town Food Stalls", "Kiso River Dining"],
     "cafes": ["Honmachi Tea House"],
     "notes": "A perfect extension to a Nagoya trip, offering one of Japan's oldest surviving wooden castles.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+    ]
   },
   {
     "id": "ito",
@@ -3187,7 +3273,12 @@
     "restaurants": ["Ito Marine Town Seafood", "Kaisen-don Ito"],
     "cafes": ["Tokai Kan Cafe", "Jogasaki Ocean View Cafe"],
     "notes": "A classic Izu Peninsula getaway, very accessible from Yokohama.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "gallery": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600"
+    ]
   },
   {
     "id": "izu",
@@ -3250,8 +3341,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg"
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4800,
@@ -3360,8 +3451,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg"
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2000,
@@ -3465,7 +3556,11 @@
     },
     "highlights": ["Halfpipe Tokyo", "VR Attractions"],
     "description": "Joypolis Odaiba is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 10000,
@@ -3600,7 +3695,11 @@
       "Komachi-dori Street"
     ],
     "description": "Kamakura , officially Kamakura City , is a city of Kanagawa Prefecture in Japan. It is located in the Kantō region on the island of Honshu. The city has an estimated population of 172,929 and a population density of 4,359 people per km2 over the total area of 39.67 km2 (15.32 sq mi). Kamakura was designated as a city on 3 November 1939.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 2000,
@@ -3728,8 +3827,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg"
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4800,
@@ -3838,8 +3937,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg"
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4800,
@@ -3946,7 +4045,11 @@
     },
     "highlights": ["Kyu-Karuizawa", "Shiraito Falls", "Prince Shopping Plaza"],
     "description": "Karuizawa is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 0,
@@ -4081,7 +4184,11 @@
       "Penny Candy Alley"
     ],
     "description": "Kawagoe is a scenic destination in the Saitama region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 1600,
@@ -4209,8 +4316,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg"
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2000,
@@ -4320,8 +4427,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG"
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 5200,
@@ -4430,8 +4537,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg"
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4000,
@@ -4541,8 +4648,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -4648,8 +4755,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 6000,
@@ -4759,8 +4866,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg"
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 6000,
@@ -4871,8 +4978,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg"
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4000,
@@ -4982,8 +5089,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg"
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3600,
@@ -5039,7 +5146,11 @@
     "region": "Kanto",
     "categories": ["Urban", "Shopping", "Parks"],
     "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600"
+    ],
     "description": "Vibrant shopping and commercial hub in western Tokyo bordering Kanagawa, famous for Serigaya Park and Squirrel Garden.",
     "highlights": [
       "Machida Squirrel Garden",
@@ -5152,7 +5263,11 @@
     },
     "highlights": ["Matsumoto Castle", "Nawate Dori"],
     "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 5000,
       "tickets": 1600,
@@ -5287,7 +5402,11 @@
       "Tokyo Photographic Art Museum"
     ],
     "description": "Famous worldwide for the Meguro River cherry blossoms. Features trendy cafes, boutiques, and a relaxed atmosphere.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
@@ -5390,8 +5509,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2400,
@@ -5443,7 +5562,11 @@
     "region": "Kanto",
     "categories": ["Nature", "Family", "Animals"],
     "heroImage": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
+    ],
     "description": "Sprawling 250-hectare mountain farm overlooking Tokyo Bay with alpaca feeding, sheep shearing shows, and flower fields.",
     "highlights": ["Sheep Shearing Show", "Alpaca Farm", "Flower Fields"],
     "budgetMin": 8000,
@@ -5556,8 +5679,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg"
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2000,
@@ -5668,8 +5791,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg"
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3600,
@@ -5725,7 +5848,11 @@
     "region": "Kanto",
     "categories": ["Nature", "Adventure", "Hiking"],
     "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
     "description": "Scenic river valley famous for traditional wooden boat rafting down the Arakawa, Iwadatami rock formations, and autumn foliage.",
     "highlights": [
       "Nagatoro Line Boat Rafting",
@@ -5876,7 +6003,12 @@
     ],
     "cafes": ["Komeda Coffee", "Cafe de Ciel"],
     "notes": "Nagoya is the heart of Chubu. A fast bullet train ride from Tokyo or Yokohama, famous for its unique rich food culture.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "gallery": [
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
+    ]
   },
   {
     "id": "narita",
@@ -5939,8 +6071,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg"
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -6045,7 +6177,11 @@
     },
     "highlights": ["Toshogu Shrine", "Lake Chuzenji", "Kegon Falls"],
     "description": "Nikko is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 5000,
       "tickets": 3000,
@@ -6173,8 +6309,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg"
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4400,
@@ -6282,7 +6418,11 @@
       "Rainbow Bridge View"
     ],
     "description": "A high-tech entertainment hub on an artificial island in Tokyo Bay, featuring shopping malls, beaches, and a giant Gundam.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 8000,
@@ -6384,8 +6524,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG"
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -6495,8 +6635,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg"
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 7200,
@@ -6552,7 +6692,11 @@
     "region": "Kanto",
     "categories": ["Nature", "Hiking", "Relaxation"],
     "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687990d?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
     "description": "Tokyos wildest mountain escape featuring Lake Okutama, dramatic limestone caves, suspension bridges, and riverside hot springs.",
     "highlights": ["Lake Okutama", "Nippara Limestone Cave", "Hatanosu Gorge"],
     "budgetMin": 8000,
@@ -6612,7 +6756,11 @@
     "region": "Kanto",
     "categories": ["Nature", "Culture", "Hiking"],
     "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
+    ],
     "description": "Nostalgic Showa-era movie poster town in western Tokyo surrounded by Mitake Gorge, river rafting, and mountain shrines.",
     "highlights": [
       "Mitake Gorge",
@@ -6724,7 +6872,11 @@
     },
     "highlights": ["Train Simulators", "Historic Cars"],
     "description": "Ōmiya is one of ten wards of the city of Saitama, in Saitama Prefecture, Japan, and is located in the northeastern part of the city. As of 1 March 2021, the ward had an estimated population of 119,298 and a population density of 9,300 persons per km2. Its total area was 12.80 square kilometres (4.94 sq mi). Although Urawa-ku is the governmental center of Saitama City, Ōmiya-ku is the most active commercial and business centre in both Saitama City and Saitama Prefecture thanks to its transport infrastructure, especially railways connected at Ōmiya Station.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 2800,
@@ -6860,8 +7012,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg"
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -6970,8 +7122,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
-      "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
-      "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png"
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 6000,
@@ -7080,8 +7232,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg"
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2400,
@@ -7185,7 +7337,11 @@
     },
     "highlights": ["Scramble Crossing", "Shibuya Sky", "Miyashita Park"],
     "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
@@ -7286,7 +7442,11 @@
       "Tokyo Metropolitan Government Building (Free View)"
     ],
     "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 0,
@@ -7390,8 +7550,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg"
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -7447,7 +7607,11 @@
     "region": "Chubu",
     "categories": ["Nature", "Onsen", "Culture"],
     "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
+    ],
     "description": "High-altitude lake surrounded by mountains, famous for Suwa Taisha shrine complex, fireworks, lakeside hot springs, and winter ice phenomena.",
     "highlights": [
       "Suwa Taisha Shrine",
@@ -7512,7 +7676,11 @@
     "region": "Kanto",
     "categories": ["Nature", "Parks", "Urban"],
     "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1000",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
     "description": "Major Tama region gateway featuring the massive Showa Kinen Park, seasonal flower festivals, and modern dining quarters.",
     "highlights": [
       "Showa Kinen Park",
@@ -7629,8 +7797,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://images.unsplash.com/photo-1513681424911-396eb093ec89?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1513681424911-396eb093ec89?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1513681424911-396eb093ec89?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -7740,8 +7908,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 4800,
@@ -7849,7 +8017,11 @@
       "Water Installations"
     ],
     "description": "teamLab Planets is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 7600,
@@ -7955,8 +8127,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg"
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 10000,
@@ -8061,7 +8233,11 @@
     },
     "highlights": ["Tsukubasan Shrine", "Ropeway"],
     "description": "Mt. Tsukuba is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 5000,
       "tickets": 0,
@@ -8192,7 +8368,11 @@
     },
     "highlights": ["Tokyo National Museum", "Ueno Zoo", "Ameyoko Street"],
     "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 2000,
@@ -8295,8 +8475,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg"
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2600,
@@ -8401,7 +8581,11 @@
     },
     "highlights": ["Oya History Museum", "Utsunomiya Gyoza"],
     "description": "Utsunomiya & Oya is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 1600,
@@ -8532,7 +8716,11 @@
     },
     "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
     "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 3000,
       "tickets": 0,
@@ -8660,7 +8848,11 @@
       "Goodjoba!! Zone"
     ],
     "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings.",
-    "gallery": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
     "budgetBreakdown": {
       "transport": 1000,
       "tickets": 8000,
@@ -8771,8 +8963,8 @@
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG"
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 2400,
@@ -9869,7 +10061,7 @@
     "gallery": [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
     ],
     "description": "A massive coastal park world-renowned for its rolling Miharashi Hill, covered in blue Nemophila flowers in spring and fluffy red Kochia bushes in autumn.",
     "highlights": [

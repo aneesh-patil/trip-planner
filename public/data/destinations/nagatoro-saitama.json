@@ -5,7 +5,11 @@
   "region": "Kanto",
   "categories": ["Nature", "Adventure", "Hiking"],
   "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+  ],
   "description": "Scenic river valley famous for traditional wooden boat rafting down the Arakawa, Iwadatami rock formations, and autumn foliage.",
   "highlights": [
     "Nagatoro Line Boat Rafting",

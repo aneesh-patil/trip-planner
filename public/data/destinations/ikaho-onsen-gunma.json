@@ -5,7 +5,11 @@
   "region": "Kanto",
   "categories": ["Onsen", "Culture", "Relaxation"],
   "heroImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600"
+  ],
   "description": "Atmospheric thermal spring village built around a 365-step stone staircase lined with traditional ryokans, footbaths, and souvenir shops.",
   "highlights": [
     "365 Stone Steps",

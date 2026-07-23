@@ -53,7 +53,11 @@
   },
   "highlights": ["Tokyo National Museum", "Ueno Zoo", "Ameyoko Street"],
   "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
-  "gallery": [],
+  "gallery": [
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+  ],
   "budgetBreakdown": {
     "transport": 1000,
     "tickets": 2000,
