@@ -68,7 +68,7 @@ const RATING_KEYS = [
 
 async function runPipeline() {
   console.log("\x1b[36m=============================================\x1b[0m");
-  console.log("\x1b[36m        TabiMap Data Pipeline v2.0           \x1b[0m");
+  console.log("\x1b[36m        TabiMap Data Pipeline v2.1           \x1b[0m");
   console.log("\x1b[36m=============================================\x1b[0m");
   console.log(`Input:  ${inputPath}`);
   console.log(`Output: ${outputPath}`);
@@ -87,12 +87,27 @@ async function runPipeline() {
   console.log(`\x1b[32m✔ Loaded ${rawData.length} destinations.\x1b[0m\n`);
 
   // 2. Stage 1: Schema & Content Validation
-  console.log("Stage 1: Schema & Rating Validation...");
+  console.log("Stage 1: Schema, Coordinates & Media Validation...");
   let schemaErrors = 0;
   let schemaWarnings = 0;
+  let missingHeroCount = 0;
+  let missingCoordsCount = 0;
+  let duplicateIdsCount = 0;
+
+  const seenIds = new Set();
 
   rawData.forEach((dest, index) => {
     const label = dest.name || dest.id || `Item #${index + 1}`;
+
+    // Check duplicate IDs
+    if (dest.id) {
+      if (seenIds.has(dest.id)) {
+        console.error(`  \x1b[31m❌ [${label}] Duplicate ID found: '${dest.id}'\x1b[0m`);
+        schemaErrors++;
+        duplicateIdsCount++;
+      }
+      seenIds.add(dest.id);
+    }
 
     // Check required top-level fields
     for (const field of REQUIRED_FIELDS) {
@@ -123,6 +138,36 @@ async function runPipeline() {
         schemaErrors++;
       }
     }
+
+    // Validate Coordinates Range
+    if (dest.coordinates) {
+      const { lat, lng } = dest.coordinates;
+      if (typeof lat !== "number" || typeof lng !== "number") {
+        console.error(`  \x1b[31m❌ [${label}] Coordinates must be numeric\x1b[0m`);
+        schemaErrors++;
+      } else if (lat < -90 || lat > 90 || lng < -180 || lng > 180) {
+        console.error(`  \x1b[31m❌ [${label}] Coordinates out of bounds: lat=${lat}, lng=${lng}\x1b[0m`);
+        schemaErrors++;
+      }
+    } else {
+      missingCoordsCount++;
+    }
+
+    // Validate Media Integrity
+    if (!dest.heroImage || dest.heroImage.trim() === "") {
+      missingHeroCount++;
+    }
+    if (dest.gallery) {
+      if (dest.gallery.length < 3) {
+        console.warn(`  \x1b[33m⚠️  [${label}] Gallery has fewer than 3 images: ${dest.gallery.length}\x1b[0m`);
+        schemaWarnings++;
+      }
+      const uniqueUrls = new Set(dest.gallery);
+      if (uniqueUrls.size !== dest.gallery.length) {
+        console.warn(`  \x1b[33m⚠️  [${label}] Duplicate URLs detected in gallery\x1b[0m`);
+        schemaWarnings++;
+      }
+    }
   });
 
   if (schemaErrors > 0) {
@@ -133,6 +178,16 @@ async function runPipeline() {
   }
 
   if (isValidateOnly) {
+    // Generate Completeness Report for Validate Only mode
+    console.log("\x1b[36m=============================================\x1b[0m");
+    console.log("\x1b[36m        Completeness Report (Validation)      \x1b[0m");
+    console.log("\x1b[36m=============================================\x1b[0m");
+    console.log(`Total Destinations Checked:  ${rawData.length}`);
+    console.log(`Duplicate IDs:              ${duplicateIdsCount}`);
+    console.log(`Missing Coordinates:        ${missingCoordsCount}`);
+    console.log(`Missing Hero Images:        ${missingHeroCount}`);
+    console.log(`Warnings Issued:            ${schemaWarnings}`);
+    console.log("\x1b[36m=============================================\x1b[0m");
     console.log("\x1b[32mValidation complete. Exiting (--validate-only).\x1b[0m");
     return;
   }
@@ -151,7 +206,7 @@ async function runPipeline() {
       const q = encodeURIComponent(`${dest.name}, ${dest.prefecture || "Tokyo"}, Japan`);
       const url = `https://nominatim.openstreetmap.org/search?q=${q}&format=json&limit=1`;
       const res = await fetch(url, {
-        headers: { "User-Agent": "TabiMap-Pipeline/2.0" },
+        headers: { "User-Agent": "TabiMap-Pipeline/2.1" },
       });
       const results = await res.json();
 
@@ -162,6 +217,7 @@ async function runPipeline() {
         };
         console.log(`  \x1b[32m✔ Geocoded '${dest.name}': ${dest.coordinates.lat}, ${dest.coordinates.lng}\x1b[0m`);
         geocodedCount++;
+        missingCoordsCount--; // Recovered
       } else {
         console.warn(`  \x1b[33m⚠️ Could not geocode '${dest.name}', defaulting to Tokyo coordinates.\x1b[0m`);
         dest.coordinates = { lat: 35.6762, lng: 139.6503 };
@@ -231,6 +287,16 @@ async function runPipeline() {
 
   fs.writeFileSync(outputPath, JSON.stringify(rawData, null, 2) + "\n");
   console.log(`\x1b[32m✔ Successfully wrote ${rawData.length} processed destinations to ${outputPath}\x1b[0m\n`);
+  
+  // Print Completeness Report
+  console.log("\x1b[36m=============================================\x1b[0m");
+  console.log("\x1b[36m        TabiMap Data Completeness Report      \x1b[0m");
+  console.log("\x1b[36m=============================================\x1b[0m");
+  console.log(`Total Destinations Processed: ${rawData.length}`);
+  console.log(`Duplicate IDs:                ${duplicateIdsCount}`);
+  console.log(`Missing Coordinates:          ${missingCoordsCount}`);
+  console.log(`Missing Hero Images:          ${missingImages}`);
+  console.log(`Warnings Issued:              ${schemaWarnings}`);
   console.log("\x1b[36m=============================================\x1b[0m");
   console.log("\x1b[36m            Pipeline Complete!               \x1b[0m");
   console.log("\x1b[36m=============================================\x1b[0m");

@@ -1,0 +1,80 @@
+{
+  "id": "gunma-shima-onsen",
+  "name": "Shima Onsen",
+  "prefecture": "Gunma",
+  "region": "Kanto",
+  "categories": ["Relaxation", "Nature"],
+  "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+  ],
+  "description": "A peaceful hot spring village surrounded by lush forests and Shima blue rivers, boasting Sekizenkan, Japan's oldest wooden ryokan.",
+  "highlights": [
+    "Sekizenkan Ryokan (Spirited Away Inspiration)",
+    "Lake Okushima (Shima Blue)",
+    "Shima River Trail",
+    "Monomitayu Bathhouse"
+  ],
+  "budgetMin": 4500,
+  "budgetMax": 14000,
+  "budgetRecommended": 9000,
+  "budgetBreakdown": {
+    "transport": 3800,
+    "tickets": 800,
+    "food": 3000,
+    "cafe": 1400
+  },
+  "transportOptions": {
+    "train": 140,
+    "car": 150
+  },
+  "totalTripHours": 11,
+  "walkingMin": 70,
+  "walkingSunMin": 30,
+  "walkingShadeMin": 40,
+  "indoorPercent": 50,
+  "coordinates": {
+    "lat": 36.6853,
+    "lng": 138.7789
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 9,
+    "rainFriendly": 6
+  },
+  "ratings": {
+    "overall": 9,
+    "couple": 9.4,
+    "summer": 8.8,
+    "winter": 8.8,
+    "rain": 7.5,
+    "food": 8.2,
+    "photography": 9.6,
+    "relaxation": 9.8,
+    "value": 8,
+    "uniqueness": 9.5
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 6,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [5, 6, 10, 11],
+  "bestSeason": "Spring",
+  "weatherDependence": "medium",
+  "tags": ["Ryokan", "Spirited Away", "River Blue", "Onsen"],
+  "reservation": "Required for ryokan lodging stay",
+  "parking": "Free public tourist parking lots",
+  "restaurants": ["Shima Tonkatsu", "Onsen Soba"],
+  "cafes": ["Kashiwaya Cafe"],
+  "notes": "Sekizenkan's red bridge and front wooden facade is famously noted to resemble the bathhouse in Spirited Away.",
+  "schemaVersion": 2
+}

@@ -1,0 +1,80 @@
+{
+  "id": "nagano-tsumago-juku",
+  "name": "Tsumago-juku",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["History", "Nature"],
+  "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+  ],
+  "description": "A historic Nakasendo post town that banned modern updates, preserving its Edo-era wooden shops, inns, and stone paths.",
+  "highlights": [
+    "Waki-Honjin Okuya Inn",
+    "Tsumago Honjin",
+    "Kotoku-ji Temple",
+    "Tsumago-Magome Nakasendo Trail"
+  ],
+  "budgetMin": 4000,
+  "budgetMax": 11500,
+  "budgetRecommended": 7800,
+  "budgetBreakdown": {
+    "transport": 3800,
+    "tickets": 1000,
+    "food": 2000,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 150,
+    "car": 160
+  },
+  "totalTripHours": 10,
+  "walkingMin": 120,
+  "walkingSunMin": 60,
+  "walkingShadeMin": 60,
+  "indoorPercent": 30,
+  "coordinates": {
+    "lat": 35.5761,
+    "lng": 137.595
+  },
+  "comfort": {
+    "walkingIntensity": 3,
+    "heatTolerance": 8,
+    "rainFriendly": 5
+  },
+  "ratings": {
+    "overall": 9,
+    "couple": 9.2,
+    "summer": 8,
+    "winter": 7.5,
+    "rain": 6,
+    "food": 8.2,
+    "photography": 9.6,
+    "relaxation": 9.2,
+    "value": 8.4,
+    "uniqueness": 9.5
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 7
+  },
+  "bestMonths": [5, 6, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "medium",
+  "tags": ["Post Town", "Historic Preservation", "Nakasendo", "Hiking"],
+  "reservation": "Not required",
+  "parking": "Public paid parking lots outside the preservation area",
+  "restaurants": ["Tsumago Soba", "Chestnut Rice House"],
+  "cafes": ["Tsumago Tea Room"],
+  "notes": "No power lines or phone cables are visible along the street to preserve the historical atmosphere.",
+  "schemaVersion": 2
+}

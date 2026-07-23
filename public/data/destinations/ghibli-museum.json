@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["Theme Park", "Museum", "Art"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/960px-Ghibli_Museum_2024.JPG",
-  "gallery": [],
-  "description": "A whimsical museum dedicated to the art and animation of Studio Ghibli.",
   "totalTripHours": 6,
   "budgetMin": 6900,
-  "budgetRecommended": 9900,
+  "budgetRecommended": 10900,
   "budgetMax": 14900,
   "walkingMin": 5000,
   "walkingSunMin": 1000,
@@ -39,55 +37,10 @@
     "winter": 9
   },
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  "reservation": "Tickets sell out within hours. Book on the 10th of the previous month.",
-  "parking": "Not recommended, take the train to Mitaka.",
-  "highlights": ["Giant Robot Soldier", "Catbus Room", "Exclusive Short Films"],
   "tags": ["Anime", "Indoor", "Art"],
-  "itinerary": [],
-  "restaurants": [
-    "Ghibli Museum Traditional Dining",
-    "Local Tokyo Specialty Restaurant",
-    "The Ghibli Grill & Izakaya"
-  ],
-  "cafes": ["Straw Hat Cafe"],
-  "notes": "No photography allowed inside the museum.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Ghibli Museum in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary theme park attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.6961731,
     "lng": 139.5706324
-  },
-  "budgetBreakdown": {
-    "transport": 1000,
-    "tickets": 2000,
-    "food": 4900,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 9.5,
@@ -97,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,ghibli/all?lock=1016",
   "transportOptions": {
     "train": 50
-  }
+  },
+  "highlights": ["Ghibli Museum"],
+  "description": "Ghibli Museum is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
 }

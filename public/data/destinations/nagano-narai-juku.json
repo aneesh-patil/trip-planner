@@ -1,0 +1,80 @@
+{
+  "id": "nagano-narai-juku",
+  "name": "Narai-juku",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["History", "Urban"],
+  "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+  ],
+  "description": "Known as 'Narai of a Thousand Houses', this is the longest preserved post town along the historic Nakasendo trade route.",
+  "highlights": [
+    "Nakasendo Historic Street",
+    "Kiso Bridge (Wooden)",
+    "Narai Juku Museum",
+    "Nakamura House"
+  ],
+  "budgetMin": 4000,
+  "budgetMax": 11000,
+  "budgetRecommended": 7500,
+  "budgetBreakdown": {
+    "transport": 3500,
+    "tickets": 500,
+    "food": 2500,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 140,
+    "car": 150
+  },
+  "totalTripHours": 9,
+  "walkingMin": 80,
+  "walkingSunMin": 40,
+  "walkingShadeMin": 40,
+  "indoorPercent": 40,
+  "coordinates": {
+    "lat": 35.9681,
+    "lng": 137.8139
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 9,
+    "rainFriendly": 6
+  },
+  "ratings": {
+    "overall": 8.8,
+    "couple": 9,
+    "summer": 8.5,
+    "winter": 7,
+    "rain": 6.5,
+    "food": 8,
+    "photography": 9.4,
+    "relaxation": 9,
+    "value": 8.4,
+    "uniqueness": 9.2
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 6,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 7
+  },
+  "bestMonths": [5, 6, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "low",
+  "tags": ["Nakasendo", "Post Town", "Historic", "Wooden Bridge"],
+  "reservation": "Not required",
+  "parking": "Paid parking at station area",
+  "restaurants": ["Gohyaku-man-goku Soba", "Kiso Rice Bowls"],
+  "cafes": ["Nakasendo Tea Salon"],
+  "notes": "Beautifully preserved wooden street facade stretching for over a kilometer.",
+  "schemaVersion": 2
+}

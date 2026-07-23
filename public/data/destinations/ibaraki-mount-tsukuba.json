@@ -1,0 +1,80 @@
+{
+  "id": "ibaraki-mount-tsukuba",
+  "name": "Mount Tsukuba",
+  "prefecture": "Ibaraki",
+  "region": "Kanto",
+  "categories": ["Hiking", "Nature"],
+  "heroImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+  ],
+  "description": "An iconic double-peaked mountain (Nantaimasan & Nyotaimasan) offering distinct rock trails, a shrine, cable cars, and open views over the Kanto plain.",
+  "highlights": [
+    "Tsukuba Shrine",
+    "Mount Tsukuba Ropeway & Cable Car",
+    "Nantaimasan Peak Trail",
+    "Benten Rock Path"
+  ],
+  "budgetMin": 3000,
+  "budgetMax": 9000,
+  "budgetRecommended": 6000,
+  "budgetBreakdown": {
+    "transport": 2500,
+    "tickets": 1500,
+    "food": 1400,
+    "cafe": 600
+  },
+  "transportOptions": {
+    "train": 80,
+    "car": 90
+  },
+  "totalTripHours": 8,
+  "walkingMin": 130,
+  "walkingSunMin": 60,
+  "walkingShadeMin": 70,
+  "indoorPercent": 15,
+  "coordinates": {
+    "lat": 36.2253,
+    "lng": 140.1069
+  },
+  "comfort": {
+    "walkingIntensity": 3,
+    "heatTolerance": 7,
+    "rainFriendly": 3
+  },
+  "ratings": {
+    "overall": 8.4,
+    "couple": 8,
+    "summer": 8,
+    "winter": 7,
+    "rain": 4.5,
+    "food": 7.5,
+    "photography": 8.8,
+    "relaxation": 8,
+    "value": 8.5,
+    "uniqueness": 8.2
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 6
+  },
+  "bestMonths": [4, 5, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "high",
+  "tags": ["Peak Views", "Shrine", "Active", "Climbing"],
+  "reservation": "Not required",
+  "parking": "Plenty of paid lots at temple base",
+  "restaurants": ["Mount Tsukuba Soba", "Tsukuba Udon"],
+  "cafes": ["Summit Observatory Tea House"],
+  "notes": "Unlike Fuji, Tsukuba is known for turning purple and changing color over the course of the day.",
+  "schemaVersion": 2
+}

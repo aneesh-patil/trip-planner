@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["Sea", "Coast", "History", "Nature"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/EnoshimaAeralPhoto1988JP14.jpg/960px-EnoshimaAeralPhoto1988JP14.jpg",
-  "gallery": [],
-  "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
   "totalTripHours": 8,
   "budgetMin": 8000,
-  "budgetRecommended": 11000,
+  "budgetRecommended": 12000,
   "budgetMax": 16000,
   "walkingMin": 12000,
   "walkingSunMin": 8000,
@@ -39,51 +37,10 @@
     "winter": 8
   },
   "bestMonths": [5, 6, 7, 8, 9],
-  "reservation": "Not required.",
-  "parking": "Gets full quickly in summer.",
-  "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
   "tags": ["Island", "Ocean", "Sunset"],
-  "itinerary": [],
-  "restaurants": ["Tobiccho (Shirasu Don)"],
-  "cafes": ["Loncafe"],
-  "notes": "Try the local specialty: Shirasu (whitebait) bowl.",
-  "itineraries": [
-    {
-      "name": "Plan A: Ocean Breeze & Shrines",
-      "description": "Hike over the island from the bustling shrine approach to the dramatic southern cliffs.",
-      "steps": [
-        {
-          "time": "11:00",
-          "activity": "Walk across the bridge to Enoshima. Grab a giant senbei cracker on the approach."
-        },
-        {
-          "time": "11:30",
-          "activity": "Visit Enoshima Shrine. Take the escalators up if you want to skip the stairs."
-        },
-        {
-          "time": "12:30",
-          "activity": "Eat fresh Shirasu-don for lunch."
-        },
-        {
-          "time": "14:00",
-          "activity": "Visit the Samuel Cocking Garden and Sea Candle for panoramic views."
-        },
-        {
-          "time": "15:30",
-          "activity": "Walk down to the Iwaya Caves on the rocky southern coast."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.3001052,
     "lng": 139.4806371
-  },
-  "budgetBreakdown": {
-    "transport": 3000,
-    "tickets": 3000,
-    "food": 3500,
-    "cafe": 1500
   },
   "comfort": {
     "heatTolerance": 9.5,
@@ -93,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,enoshima/all?lock=1020",
   "transportOptions": {
     "train": 60
-  }
+  },
+  "highlights": ["Enoshima"],
+  "description": "Enoshima is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
 }

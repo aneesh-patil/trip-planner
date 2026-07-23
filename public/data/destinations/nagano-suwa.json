@@ -1,0 +1,80 @@
+{
+  "id": "nagano-suwa",
+  "name": "Suwa",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["History", "Nature", "Relaxation"],
+  "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+  ],
+  "description": "Centred around Lake Suwa, this town is famous for the grand Suwa Taisha Shinto shrines, hot springs, sake breweries, and summer fireworks.",
+  "highlights": [
+    "Lake Suwa Geyser Center",
+    "Suwa Taisha Grand Shrine",
+    "Tateishi Park (anime lake view)",
+    "Suwa Lakefront Footbaths"
+  ],
+  "budgetMin": 4000,
+  "budgetMax": 13000,
+  "budgetRecommended": 8500,
+  "budgetBreakdown": {
+    "transport": 3500,
+    "tickets": 1000,
+    "food": 2500,
+    "cafe": 1500
+  },
+  "transportOptions": {
+    "train": 120,
+    "car": 130
+  },
+  "totalTripHours": 9,
+  "walkingMin": 80,
+  "walkingSunMin": 55,
+  "walkingShadeMin": 25,
+  "indoorPercent": 40,
+  "coordinates": {
+    "lat": 36.0469,
+    "lng": 138.1189
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 8,
+    "rainFriendly": 5
+  },
+  "ratings": {
+    "overall": 8.8,
+    "couple": 9,
+    "summer": 8.8,
+    "winter": 8,
+    "rain": 6.8,
+    "food": 8.5,
+    "photography": 9.4,
+    "relaxation": 9,
+    "value": 8.2,
+    "uniqueness": 9
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 8,
+    "winter": 7
+  },
+  "bestMonths": [5, 6, 8, 10],
+  "bestSeason": "Summer",
+  "weatherDependence": "medium",
+  "tags": ["Grand Shrine", "Lake Views", "Footbaths", "Sake Brews"],
+  "reservation": "Not required",
+  "parking": "Available at Tateishi park and shrine bases",
+  "restaurants": ["Suwa Lake Eel (Unagi)", "Sake Brew Dining"],
+  "cafes": ["Lakefront Coffee"],
+  "notes": "Tateishi Park offers panoramic lake views that inspired scenes in the movie 'Your Name'.",
+  "schemaVersion": 2
+}

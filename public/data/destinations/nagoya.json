@@ -7,7 +7,7 @@
   "heroImage": "/images/nagoya_hero.jpg",
   "totalTripHours": 24,
   "budgetMin": 15000,
-  "budgetRecommended": 20000,
+  "budgetRecommended": 22500,
   "budgetMax": 30000,
   "budgetBreakdown": {
     "transport": 10680,
@@ -48,55 +48,11 @@
     "winter": 70
   },
   "bestMonths": [3, 4, 10, 11],
-  "bestSeason": "Spring and Autumn",
-  "weatherDependence": "Moderate",
   "tags": ["Castle", "Local Food", "Shopping"],
-  "reservation": "Recommended for Shinkansen",
-  "parking": "Available in city center (expensive)",
-  "restaurants": [
-    "Hitsumabushi Bincho",
-    "Yabaton Miso Katsu",
-    "Yamamotoya Honten"
-  ],
-  "cafes": ["Komeda Coffee", "Cafe de Ciel"],
-  "notes": "Nagoya is the heart of Chubu. A fast bullet train ride from Tokyo or Yokohama, famous for its unique rich food culture.",
-  "description": "Explore Nagoya, a vibrant metropolis mixing samurai history with industrial innovation. Famous for Nagoya Castle, Atsuta Shrine, and an incredible local food scene featuring hitsumabushi (grilled eel) and red miso katsu.",
   "highlights": ["Nagoya Castle", "Osu Kannon Temple", "Atsuta Jingu"],
   "coordinates": {
     "lat": 35.1815,
     "lng": 136.9066
   },
-  "comfort": {
-    "heatTolerance": 3,
-    "rainFriendly": 4,
-    "walkingIntensity": 3
-  },
-  "itineraries": [
-    {
-      "name": "Classic Nagoya Core",
-      "description": "The essentials of Nagoya history and cuisine.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Visit Nagoya Castle and see the golden shachihoko."
-        },
-        {
-          "time": "12:30",
-          "activity": "Lunch: Hitsumabushi (grilled eel over rice) in the Sakae district."
-        },
-        {
-          "time": "14:30",
-          "activity": "Explore Atsuta Jingu, one of Japan's most important shrines."
-        },
-        {
-          "time": "16:00",
-          "activity": "Walk around Osu Kannon shopping arcade and grab street food."
-        },
-        {
-          "time": "18:30",
-          "activity": "Dinner: Miso Katsu (pork cutlet with rich red miso sauce)."
-        }
-      ]
-    }
-  ]
+  "description": "Nagoya is a scenic destination in the Aichi region of Japan, offering rich history and cultural attractions."
 }

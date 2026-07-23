@@ -1,0 +1,80 @@
+{
+  "id": "saitama-nagatoro",
+  "name": "Nagatoro",
+  "prefecture": "Saitama",
+  "region": "Kanto",
+  "categories": ["Nature", "River"],
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
+  ],
+  "description": "Famous for its crystal-clear Arakawa River boat cruises, spectacular Iwadatami rock formations, and Mount Hodo ropeway.",
+  "highlights": [
+    "Nagatoro Line Kudari (Boat Cruise)",
+    "Iwadatami Rock Terrace",
+    "Hodosan Shrine",
+    "Mount Hodo Ropeway"
+  ],
+  "budgetMin": 4000,
+  "budgetMax": 10000,
+  "budgetRecommended": 7000,
+  "budgetBreakdown": {
+    "transport": 2500,
+    "tickets": 2200,
+    "food": 1500,
+    "cafe": 800
+  },
+  "transportOptions": {
+    "train": 100,
+    "car": 90
+  },
+  "totalTripHours": 8,
+  "walkingMin": 80,
+  "walkingSunMin": 60,
+  "walkingShadeMin": 20,
+  "indoorPercent": 10,
+  "coordinates": {
+    "lat": 36.0964,
+    "lng": 139.1172
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 8,
+    "rainFriendly": 2
+  },
+  "ratings": {
+    "overall": 8.5,
+    "couple": 8.6,
+    "summer": 9,
+    "winter": 6,
+    "rain": 3,
+    "food": 8,
+    "photography": 8.8,
+    "relaxation": 8.5,
+    "value": 8,
+    "uniqueness": 8.8
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 5
+  },
+  "bestMonths": [5, 6, 7, 8, 10, 11],
+  "bestSeason": "Summer",
+  "weatherDependence": "high",
+  "tags": ["Boating", "River", "Active", "Family"],
+  "reservation": "Recommended for weekend boat tours",
+  "parking": "Plenty of public paid lots",
+  "restaurants": ["Nagatoro Soba", "Asami Reika Kakigori"],
+  "cafes": ["Urushi Cafe"],
+  "notes": "The boat cruise doesn't run during heavy rains or high river levels.",
+  "schemaVersion": 2
+}

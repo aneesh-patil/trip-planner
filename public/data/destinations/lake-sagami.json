@@ -4,7 +4,7 @@
   "region": "Kanto",
   "categories": ["Lake", "Nature", "Theme Park"],
   "tags": ["Illumination", "Outdoors"],
-  "budgetRecommended": 9000,
+  "budgetRecommended": 10000,
   "ratings": {
     "overall": 8.1,
     "photography": 8.5,
@@ -23,26 +23,9 @@
     "lng": 139.1917
   },
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
-  "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg"
-  ],
   "prefecture": "Kanagawa",
-  "description": "Discover Lake Sagami, a prominent destination in Kanagawa. With its rich mix of illumination, outdoors, it's a highly recommended spot for a 8-hour getaway.",
-  "highlights": [
-    "Explore top-rated lake locations",
-    "Enjoy regional specialties and local culture",
-    "Perfect for a active day out"
-  ],
   "budgetMin": 6000,
   "budgetMax": 14000,
-  "budgetBreakdown": {
-    "transport": 3600,
-    "tickets": 1800,
-    "food": 2700,
-    "cafe": 900
-  },
   "totalTripHours": 8,
   "walkingMin": 10000,
   "walkingSunMin": 4000,
@@ -56,43 +39,18 @@
     "train": 75,
     "car": 60
   },
-  "restaurants": [
-    "Lake Sagami Traditional Dining",
-    "Local Kanagawa Specialty Restaurant",
-    "The Lake Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Lake Sagami",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "A fantastic trip to Lake Sagami. Known for its illumination and outdoors vibes, it offers a great escape with an overall score of 8.1.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Lake Sagami in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary lake attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ]
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "highlights": ["Lake Sagami"],
+  "description": "Lake Sagami is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

@@ -4,7 +4,7 @@
   "region": "Kanto",
   "categories": ["Shrine", "History", "Town"],
   "tags": ["Temple", "Eel"],
-  "budgetRecommended": 8000,
+  "budgetRecommended": 9000,
   "ratings": {
     "overall": 8.1,
     "photography": 8.2,
@@ -23,26 +23,9 @@
     "lng": 140.3183
   },
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
-  "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg"
-  ],
-  "prefecture": "Kanagawa",
-  "description": "Discover Narita, a prominent destination in Kanagawa. With its rich mix of temple, eel, it's a highly recommended spot for a 8-hour getaway.",
-  "highlights": [
-    "Explore top-rated shrine locations",
-    "Enjoy regional specialties and local culture",
-    "Perfect for a active day out"
-  ],
+  "prefecture": "Chiba",
   "budgetMin": 5000,
   "budgetMax": 13000,
-  "budgetBreakdown": {
-    "transport": 3200,
-    "tickets": 1600,
-    "food": 2400,
-    "cafe": 800
-  },
   "totalTripHours": 8,
   "walkingMin": 10000,
   "walkingSunMin": 4000,
@@ -56,39 +39,18 @@
     "train": 100,
     "car": 80
   },
-  "restaurants": [
-    "Narita Traditional Dining",
-    "Local Kanagawa Specialty Restaurant",
-    "The Narita Grill & Izakaya"
-  ],
-  "cafes": ["Café de Narita", "Riverside Roasters", "Station Matcha & Sweets"],
-  "notes": "A fantastic trip to Narita. Known for its temple and eel vibes, it offers a great escape with an overall score of 8.1.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Narita in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary shrine attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ]
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "highlights": ["Narita"],
+  "description": "Narita is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

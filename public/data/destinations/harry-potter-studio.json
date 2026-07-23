@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["Theme Park", "Indoor"],
   "heroImage": "/images/harry-potter-studio.jpg",
-  "gallery": [],
-  "description": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter. A magical indoor experience.",
   "totalTripHours": 8,
   "budgetMin": 17900,
-  "budgetRecommended": 20900,
+  "budgetRecommended": 21900,
   "budgetMax": 25900,
   "walkingMin": 6000,
   "walkingSunMin": 500,
@@ -39,85 +37,10 @@
     "winter": 10
   },
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  "reservation": "Required well in advance",
-  "parking": "Available but train recommended",
-  "highlights": ["Great Hall", "Diagon Alley"],
   "tags": ["Indoor", "Pop Culture"],
-  "itinerary": [],
-  "restaurants": [
-    "Harry Potter Studio Traditional Dining",
-    "Local Tokyo Specialty Restaurant",
-    "The Harry Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Harry Potter Studio",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "Book ahead",
-  "itineraries": [
-    {
-      "name": "Plan A: The Ultimate Fan Experience",
-      "description": "A comprehensive walk-through prioritizing all major sets and photo ops.",
-      "steps": [
-        {
-          "time": "09:30",
-          "activity": "Arrive early and enter the Great Hall."
-        },
-        {
-          "time": "11:00",
-          "activity": "Explore the Hogwarts Express and Platform 9 ¾."
-        },
-        {
-          "time": "12:30",
-          "activity": "Drink Butterbeer in the Backlot Cafe."
-        },
-        {
-          "time": "14:00",
-          "activity": "Walk through Diagon Alley and the Ministry of Magic sets."
-        },
-        {
-          "time": "16:00",
-          "activity": "Spend an hour in the massive studio gift shop."
-        }
-      ]
-    },
-    {
-      "name": "Plan B: The Filmmaker's Focus",
-      "description": "Take your time studying the props, costumes, and behind-the-scenes magic.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Focus heavily on the Art Department and Costume exhibits."
-        },
-        {
-          "time": "12:00",
-          "activity": "Participate in the interactive green-screen broomstick flying."
-        },
-        {
-          "time": "13:30",
-          "activity": "Lunch at the Food Hall."
-        },
-        {
-          "time": "15:00",
-          "activity": "Study the creature effects and animatronics in the Creature Shop."
-        },
-        {
-          "time": "17:00",
-          "activity": "Examine the incredibly detailed Hogwarts Castle miniature."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.74562,
     "lng": 139.645745
-  },
-  "budgetBreakdown": {
-    "transport": 1000,
-    "tickets": 13000,
-    "food": 4900,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 9.8,
@@ -127,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,harry/all?lock=1008",
   "transportOptions": {
     "train": 45
-  }
+  },
+  "highlights": ["Harry Potter Studio"],
+  "description": "Harry Potter Studio is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
 }

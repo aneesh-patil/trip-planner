@@ -1,0 +1,80 @@
+{
+  "id": "nagano-bessho-onsen",
+  "name": "Bessho Onsen",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["Relaxation", "History"],
+  "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+  ],
+  "description": "Known as the 'Kamakura of Shinshu', Bessho is Nagano's oldest hot spring town, boasting historic temples and therapeutic sulfur baths.",
+  "highlights": [
+    "Anraku-ji Temple (Octagonal Pagoda)",
+    "Kitamuki Kannon Temple",
+    "Oyu Public Bathhouse",
+    "Bessho Forest Trails"
+  ],
+  "budgetMin": 4000,
+  "budgetMax": 12500,
+  "budgetRecommended": 8200,
+  "budgetBreakdown": {
+    "transport": 3500,
+    "tickets": 700,
+    "food": 2500,
+    "cafe": 1500
+  },
+  "transportOptions": {
+    "train": 130,
+    "car": 140
+  },
+  "totalTripHours": 10,
+  "walkingMin": 70,
+  "walkingSunMin": 35,
+  "walkingShadeMin": 35,
+  "indoorPercent": 50,
+  "coordinates": {
+    "lat": 36.3533,
+    "lng": 138.1633
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 9,
+    "rainFriendly": 6
+  },
+  "ratings": {
+    "overall": 8.8,
+    "couple": 9,
+    "summer": 8.5,
+    "winter": 8.5,
+    "rain": 7,
+    "food": 8,
+    "photography": 9.2,
+    "relaxation": 9.6,
+    "value": 8.5,
+    "uniqueness": 9.2
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 6,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [4, 5, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "low",
+  "tags": ["Shinshu Kamakura", "Sulfur baths", "Temples", "Onsen"],
+  "reservation": "Not required",
+  "parking": "Public lots at temple gates",
+  "restaurants": ["Bessho Soba", "Local Hotpot Diner"],
+  "cafes": ["Bessho Cafe"],
+  "notes": "Anraku-ji's octagonal three-storied pagoda is a national treasure and the only one of its kind in Japan.",
+  "schemaVersion": 2
+}

@@ -1,0 +1,80 @@
+{
+  "id": "saitama-chichibu",
+  "name": "Chichibu",
+  "prefecture": "Saitama",
+  "region": "Kanto",
+  "categories": ["History", "Nature", "Mountains"],
+  "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+  ],
+  "description": "A scenic valley town surrounded by craggy mountains, historic pilgrim shrines, and the famous Hitsujiyama Shibazakura moss fields.",
+  "highlights": [
+    "Chichibu Shrine",
+    "Hitsujiyama Park (Shibazakura)",
+    "Mitsumine Shrine",
+    "Chichibu Night Festival"
+  ],
+  "budgetMin": 3500,
+  "budgetMax": 12000,
+  "budgetRecommended": 8000,
+  "budgetBreakdown": {
+    "transport": 3500,
+    "tickets": 1500,
+    "food": 2000,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 80,
+    "car": 95
+  },
+  "totalTripHours": 10,
+  "walkingMin": 100,
+  "walkingSunMin": 70,
+  "walkingShadeMin": 30,
+  "indoorPercent": 25,
+  "coordinates": {
+    "lat": 35.9972,
+    "lng": 139.085
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 7,
+    "rainFriendly": 5
+  },
+  "ratings": {
+    "overall": 8.7,
+    "couple": 8.5,
+    "summer": 7.8,
+    "winter": 8,
+    "rain": 6,
+    "food": 8.8,
+    "photography": 9.2,
+    "relaxation": 8.5,
+    "value": 8.2,
+    "uniqueness": 9
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 7,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [4, 5, 10, 11, 12],
+  "bestSeason": "Spring",
+  "weatherDependence": "medium",
+  "tags": ["Pilgrimage", "Shibazakura", "Historic", "Foodie"],
+  "reservation": "Required during night festival (Dec 2-3)",
+  "parking": "Available at tourist spots",
+  "restaurants": ["Wild Boar Grill", "Chichibu Soba House"],
+  "cafes": ["Jiyuan Tea House"],
+  "notes": "Chichibu Night Festival is registered as a UNESCO Intangible Cultural Heritage.",
+  "schemaVersion": 2
+}

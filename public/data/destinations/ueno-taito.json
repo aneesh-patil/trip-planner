@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["History", "Art", "Museum", "Parks"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ueno_park.jpg/960px-Ueno_park.jpg",
-  "gallery": [],
-  "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
   "totalTripHours": 8,
   "budgetMin": 5000,
-  "budgetRecommended": 8000,
+  "budgetRecommended": 9000,
   "budgetMax": 13000,
   "walkingMin": 12000,
   "walkingSunMin": 8000,
@@ -39,51 +37,10 @@
     "winter": 8
   },
   "bestMonths": [3, 4, 10, 11],
-  "reservation": "Required for special exhibitions.",
-  "parking": "Limited.",
-  "highlights": ["Tokyo National Museum", "Ueno Zoo", "Ameyoko Street"],
   "tags": ["Museums", "Cherry Blossoms", "Street Food"],
-  "itinerary": [],
-  "restaurants": ["Minatoya (Takoyaki)"],
-  "cafes": ["Starbucks Ueno Park"],
-  "notes": "In spring, the park is one of Tokyo's most crowded cherry blossom spots.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Ueno (Taito) in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary history attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.7161484,
     "lng": 139.777257
-  },
-  "budgetBreakdown": {
-    "transport": 1000,
-    "tickets": 2000,
-    "food": 3500,
-    "cafe": 1500
   },
   "comfort": {
     "heatTolerance": 7,
@@ -93,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,ueno/all?lock=1025",
   "transportOptions": {
     "train": 45
-  }
+  },
+  "highlights": ["Ueno (Taito)"],
+  "description": "Ueno (Taito) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
 }

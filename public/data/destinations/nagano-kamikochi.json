@@ -1,0 +1,80 @@
+{
+  "id": "nagano-kamikochi",
+  "name": "Kamikochi",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["Nature", "Hiking", "Mountains"],
+  "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
+  ],
+  "description": "A pristine, highland valley in the Hida Mountains, boasting crystal-clear Azusa River flows, larch forests, and active volcano views.",
+  "highlights": [
+    "Kappa Bridge (Kappabashi)",
+    "Taisho Pond",
+    "Myojin Pond",
+    "Hotaka Mountain Range views"
+  ],
+  "budgetMin": 6000,
+  "budgetMax": 18000,
+  "budgetRecommended": 12000,
+  "budgetBreakdown": {
+    "transport": 5000,
+    "tickets": 2500,
+    "food": 3000,
+    "cafe": 1500
+  },
+  "transportOptions": {
+    "train": 180,
+    "car": 190
+  },
+  "totalTripHours": 12,
+  "walkingMin": 180,
+  "walkingSunMin": 90,
+  "walkingShadeMin": 90,
+  "indoorPercent": 5,
+  "coordinates": {
+    "lat": 36.2494,
+    "lng": 137.6375
+  },
+  "comfort": {
+    "walkingIntensity": 4,
+    "heatTolerance": 9,
+    "rainFriendly": 2
+  },
+  "ratings": {
+    "overall": 9.6,
+    "couple": 9.4,
+    "summer": 10,
+    "winter": 5,
+    "rain": 4,
+    "food": 8,
+    "photography": 10,
+    "relaxation": 9.5,
+    "value": 8.5,
+    "uniqueness": 10
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 8,
+    "summer": 10,
+    "autumn": 9,
+    "winter": 1
+  },
+  "bestMonths": [5, 6, 7, 8, 10],
+  "bestSeason": "Summer",
+  "weatherDependence": "high",
+  "tags": ["Highlands", "Alps", "Pristine", "River walks"],
+  "reservation": "Required for shuttle bus entry (private cars banned)",
+  "parking": "Mandatory parking at Sawando base area",
+  "restaurants": ["Kamikochi Diner", "Kappa Bridge Soba"],
+  "cafes": ["Alps Cafe"],
+  "notes": "Closed completely from mid-November to mid-April due to heavy snow.",
+  "schemaVersion": 2
+}

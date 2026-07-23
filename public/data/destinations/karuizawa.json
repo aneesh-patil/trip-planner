@@ -5,11 +5,9 @@
   "region": "Chubu",
   "categories": ["Nature", "Shopping", "Resort"],
   "heroImage": "/images/karuizawa.jpg",
-  "gallery": [],
-  "description": "An upscale mountain resort town famous for summer retreats, outlet shopping, and nature.",
   "totalTripHours": 12,
   "budgetMin": 8000,
-  "budgetRecommended": 11000,
+  "budgetRecommended": 12000,
   "budgetMax": 16000,
   "walkingMin": 8000,
   "walkingSunMin": 2000,
@@ -39,85 +37,10 @@
     "winter": 7
   },
   "bestMonths": [7, 8, 9, 10],
-  "reservation": "",
-  "parking": "Yes",
-  "highlights": ["Kyu-Karuizawa", "Shiraito Falls", "Prince Shopping Plaza"],
   "tags": ["Cool Summer", "Upscale"],
-  "itinerary": [],
-  "restaurants": [
-    "Karuizawa Traditional Dining",
-    "Local Nagano Specialty Restaurant",
-    "The Karuizawa Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Karuizawa",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "Cool escape from Tokyo summer",
-  "itineraries": [
-    {
-      "name": "Plan A: The Classic Resort",
-      "description": "Shopping, dining, and scenic walks in the famous mountain resort.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Rent a bicycle near Karuizawa Station."
-        },
-        {
-          "time": "10:30",
-          "activity": "Cycle to Kumoba Pond (Swan Lake) for a beautiful nature walk."
-        },
-        {
-          "time": "12:00",
-          "activity": "Explore the Kyu-Karuizawa Ginza street. Eat local breads and jams."
-        },
-        {
-          "time": "14:00",
-          "activity": "Cycle to the historic Shaw Memorial Church and the deep forest."
-        },
-        {
-          "time": "16:00",
-          "activity": "Finish the day shopping at the massive Prince Shopping Plaza outlet mall."
-        }
-      ]
-    },
-    {
-      "name": "Plan B: Art & Architecture",
-      "description": "Discover the elegant modern architecture and waterfalls of the area.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Take a bus to the breathtaking Shiraito Falls."
-        },
-        {
-          "time": "12:00",
-          "activity": "Head to Harunire Terrace for a stylish lunch in the forest."
-        },
-        {
-          "time": "14:00",
-          "activity": "Walk to the Stone Church and the Karuizawa Kogen Church."
-        },
-        {
-          "time": "15:30",
-          "activity": "Visit the Hiroshi Senju Museum, a stunning piece of modern architecture."
-        },
-        {
-          "time": "17:30",
-          "activity": "Relax at the Tombo-no-yu hot springs."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 36.3482938,
     "lng": 138.5969968
-  },
-  "budgetBreakdown": {
-    "transport": 3000,
-    "tickets": 0,
-    "food": 6000,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 9.7,
@@ -130,5 +53,7 @@
     "car": 180,
     "shinkansen": 42,
     "bus": 180
-  }
+  },
+  "highlights": ["Karuizawa"],
+  "description": "Karuizawa is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions."
 }

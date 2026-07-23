@@ -1,0 +1,80 @@
+{
+  "id": "gifu-shirakawa-go",
+  "name": "Shirakawa-go",
+  "prefecture": "Gifu",
+  "region": "Chubu",
+  "categories": ["History", "Relaxation"],
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
+  ],
+  "description": "A UNESCO World Heritage village famous for its steep, thatched-roof Gassho-zukuri farmhouses built to withstand massive winter snowfalls.",
+  "highlights": [
+    "Ogimachi Castle Observatory",
+    "Wada House (Wada-ke)",
+    "Myozenji Temple Museum",
+    "Deai Suspension Bridge"
+  ],
+  "budgetMin": 5500,
+  "budgetMax": 16000,
+  "budgetRecommended": 10500,
+  "budgetBreakdown": {
+    "transport": 5000,
+    "tickets": 1000,
+    "food": 3000,
+    "cafe": 1500
+  },
+  "transportOptions": {
+    "train": 170,
+    "car": 190
+  },
+  "totalTripHours": 12,
+  "walkingMin": 80,
+  "walkingSunMin": 40,
+  "walkingShadeMin": 40,
+  "indoorPercent": 40,
+  "coordinates": {
+    "lat": 36.2564,
+    "lng": 136.9064
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 8,
+    "rainFriendly": 6
+  },
+  "ratings": {
+    "overall": 9.4,
+    "couple": 9.2,
+    "summer": 8,
+    "winter": 9.8,
+    "rain": 7,
+    "food": 8,
+    "photography": 10,
+    "relaxation": 9,
+    "value": 8.2,
+    "uniqueness": 10
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 10
+  },
+  "bestMonths": [1, 2, 10, 11],
+  "bestSeason": "Winter",
+  "weatherDependence": "medium",
+  "tags": ["Farmhouses", "UNESCO Heritage", "Snowy Winter", "Village"],
+  "reservation": "Required for winter light-up dates (Jan/Feb)",
+  "parking": "Public paid parking field at visitor center across bridge",
+  "restaurants": ["Irori Diner", "Shirakawago Soba"],
+  "cafes": ["Ochiudo Coffee"],
+  "notes": "Wada House is the largest Gassho-style farmhouse in Ogimachi.",
+  "schemaVersion": 2
+}

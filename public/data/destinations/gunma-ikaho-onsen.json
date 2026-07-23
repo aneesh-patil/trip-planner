@@ -1,0 +1,81 @@
+{
+  "id": "gunma-ikaho-onsen",
+  "name": "Ikaho Onsen",
+  "prefecture": "Gunma",
+  "region": "Kanto",
+  "categories": ["Relaxation", "History"],
+  "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+  ],
+  "description": "An onsen town located on Mount Haruna's slopes, known for its steep 365 stone steps, golden iron-rich spring waters, and local food stalls.",
+  "highlights": [
+    "365 Stone Steps (Stone Stairs)",
+    "Ikaho Shrine",
+    "Kogane-no-yu (Golden Water) Baths",
+    "Kajika Bridge"
+  ],
+  "budgetMin": 4000,
+  "budgetMax": 12000,
+  "budgetRecommended": 8000,
+  "budgetBreakdown": {
+    "transport": 3500,
+    "tickets": 1000,
+    "food": 2500,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 130,
+    "car": 140,
+    "shinkansen": 100
+  },
+  "totalTripHours": 10,
+  "walkingMin": 80,
+  "walkingSunMin": 40,
+  "walkingShadeMin": 40,
+  "indoorPercent": 50,
+  "coordinates": {
+    "lat": 36.4975,
+    "lng": 138.9189
+  },
+  "comfort": {
+    "walkingIntensity": 3,
+    "heatTolerance": 8,
+    "rainFriendly": 6
+  },
+  "ratings": {
+    "overall": 8.8,
+    "couple": 9,
+    "summer": 8,
+    "winter": 8.5,
+    "rain": 7,
+    "food": 8.5,
+    "photography": 9.2,
+    "relaxation": 9,
+    "value": 8.5,
+    "uniqueness": 9
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [4, 5, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "low",
+  "tags": ["Stone Steps", "Slopes", "Onsen", "Lanterns"],
+  "reservation": "Not required",
+  "parking": "Public lots at step base",
+  "restaurants": ["Mizusawa Udon Shops", "Steps Soba"],
+  "cafes": ["Steps Tea Room"],
+  "notes": "Mizusawa Udon, served nearby, is considered one of Japan's top three udon types.",
+  "schemaVersion": 2
+}

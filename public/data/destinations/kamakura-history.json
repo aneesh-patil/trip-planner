@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["History", "Temples", "Beach"],
   "heroImage": "/images/kamakura_hero.jpg",
-  "gallery": [],
-  "description": "Coastal town rich in history, known for the Great Buddha, numerous temples, and surfing beaches.",
   "totalTripHours": 8,
   "budgetMin": 7000,
-  "budgetRecommended": 10000,
+  "budgetRecommended": 11000,
   "budgetMax": 15000,
   "walkingMin": 10000,
   "walkingSunMin": 7000,
@@ -39,98 +37,10 @@
     "winter": 5
   },
   "bestMonths": [5, 6, 7, 8, 9],
-  "reservation": "Not required for day trips.",
-  "parking": "Extremely congested on weekends.",
-  "highlights": [
-    "Great Buddha (Daibutsu)",
-    "Hasedera Temple",
-    "Komachi-dori Street"
-  ],
   "tags": ["Day Trip", "Culture", "Walk-heavy"],
-  "itinerary": [
-    {
-      "time": "09:30",
-      "activity": "Arrive at Kamakura Station"
-    },
-    {
-      "time": "10:00",
-      "activity": "Stroll down Komachi-dori"
-    },
-    {
-      "time": "11:30",
-      "activity": "Tsurugaoka Hachimangu"
-    },
-    {
-      "time": "14:00",
-      "activity": "Great Buddha"
-    }
-  ],
-  "restaurants": ["Kamakura Matsubaraan", "Caraway Curry"],
-  "cafes": ["Iwata Coffee", "Starbucks Kamakura Onarimachi"],
-  "notes": "Wear comfortable walking shoes. Enoden line can be very crowded.",
-  "itineraries": [
-    {
-      "name": "Plan A: Samurai Heritage Tour",
-      "description": "The classic Kamakura route focusing on the most famous shrines and the Great Buddha.",
-      "steps": [
-        {
-          "time": "09:30",
-          "activity": "Arrive at Kamakura Station and walk up the iconic Wakamiya Oji approach."
-        },
-        {
-          "time": "10:00",
-          "activity": "Visit Tsurugaoka Hachimangu, the most important Shinto shrine in Kamakura."
-        },
-        {
-          "time": "11:30",
-          "activity": "Street food and souvenir shopping along Komachi-dori street."
-        },
-        {
-          "time": "13:30",
-          "activity": "Take the Enoden train to Hase Station. Visit the giant bronze Great Buddha."
-        },
-        {
-          "time": "15:00",
-          "activity": "Explore Hase-dera temple and its beautiful hillside gardens and ocean views."
-        }
-      ]
-    },
-    {
-      "name": "Plan B: Bamboo Groves & Ocean Breezes",
-      "description": "Avoid the main crowds by exploring eastern Kamakura and the nearby island of Enoshima.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Take a bus to Hokoku-ji Temple. Enjoy matcha tea in the serene bamboo grove."
-        },
-        {
-          "time": "12:00",
-          "activity": "Lunch at a quiet local cafe in the Jomyoji area."
-        },
-        {
-          "time": "14:00",
-          "activity": "Ride the Enoden train all the way to Enoshima."
-        },
-        {
-          "time": "15:30",
-          "activity": "Walk across the bridge to Enoshima Island and explore the shrine and caves."
-        },
-        {
-          "time": "18:00",
-          "activity": "Watch the sunset over Mt. Fuji from the Enoshima Sea Candle."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.3192808,
     "lng": 139.5469627
-  },
-  "budgetBreakdown": {
-    "transport": 3000,
-    "tickets": 2000,
-    "food": 3500,
-    "cafe": 1500
   },
   "comfort": {
     "heatTolerance": 9,
@@ -140,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,kamakura/all?lock=1001",
   "transportOptions": {
     "train": 60
-  }
+  },
+  "highlights": ["Kamakura"],
+  "description": "Kamakura , officially Kamakura City , is a city of Kanagawa Prefecture in Japan. It is located in the Kantō region on the island of Honshu. The city has an estimated population of 172,929 and a population density of 4,359 people per km2 over the total area of 39.67 km2 (15.32 sq mi). Kamakura was designated as a city on 3 November 1939."
 }

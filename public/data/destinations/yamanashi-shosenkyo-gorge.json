@@ -1,0 +1,80 @@
+{
+  "id": "yamanashi-shosenkyo-gorge",
+  "name": "Shosenkyo Gorge",
+  "prefecture": "Yamanashi",
+  "region": "Chubu",
+  "categories": ["Nature", "Hiking"],
+  "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+  ],
+  "description": "Touted as one of Japan's most beautiful gorges, showcasing dramatic granite cliffs, Kakusenmei suspension bridge, and Senga Falls.",
+  "highlights": [
+    "Senga Falls",
+    "Kakusenmei Suspension Bridge",
+    "Shosenkyo Ropeway (Panorama view)",
+    "Kakutozan Rock Pinnacle"
+  ],
+  "budgetMin": 3500,
+  "budgetMax": 10000,
+  "budgetRecommended": 6800,
+  "budgetBreakdown": {
+    "transport": 2800,
+    "tickets": 1500,
+    "food": 1700,
+    "cafe": 800
+  },
+  "transportOptions": {
+    "train": 110,
+    "car": 100
+  },
+  "totalTripHours": 8,
+  "walkingMin": 120,
+  "walkingSunMin": 50,
+  "walkingShadeMin": 70,
+  "indoorPercent": 10,
+  "coordinates": {
+    "lat": 35.7461,
+    "lng": 138.5667
+  },
+  "comfort": {
+    "walkingIntensity": 3,
+    "heatTolerance": 8,
+    "rainFriendly": 2
+  },
+  "ratings": {
+    "overall": 9,
+    "couple": 8.8,
+    "summer": 8.5,
+    "winter": 7,
+    "rain": 4,
+    "food": 7.8,
+    "photography": 9.6,
+    "relaxation": 8.5,
+    "value": 8.5,
+    "uniqueness": 9.2
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 10,
+    "winter": 6
+  },
+  "bestMonths": [10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "high",
+  "tags": ["Gorge hikes", "Granite peaks", "Waterfalls", "Foliage"],
+  "reservation": "Not required",
+  "parking": "Free public parking lots at the valley base and ropeway station",
+  "restaurants": ["Yamanashi Hoto Noodles", "Gorge Grilled Trout"],
+  "cafes": ["Ropeway Summit Cafe"],
+  "notes": "Hoto noodles are flat wheat noodles stewed with pumpkin and seasonal veggies in miso broth.",
+  "schemaVersion": 2
+}

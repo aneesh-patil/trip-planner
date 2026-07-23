@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["History", "Food"],
   "heroImage": "/images/utsunomiya-oya.jpg",
-  "gallery": [],
-  "description": "Famous for its massive underground Oya stone quarry and delicious local gyoza.",
   "totalTripHours": 10,
   "budgetMin": 9600,
-  "budgetRecommended": 12600,
+  "budgetRecommended": 13600,
   "budgetMax": 17600,
   "walkingMin": 5000,
   "walkingSunMin": 2000,
@@ -39,85 +37,10 @@
     "winter": 7
   },
   "bestMonths": [6, 7, 8],
-  "reservation": "",
-  "parking": "Yes",
-  "highlights": ["Oya History Museum", "Utsunomiya Gyoza"],
   "tags": ["Unique", "Foodie", "Underground"],
-  "itinerary": [],
-  "restaurants": [
-    "Utsunomiya Traditional Dining",
-    "Local Tochigi Specialty Restaurant",
-    "The Utsunomiya Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Utsunomiya",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "Oya museum is very cool in summer",
-  "itineraries": [
-    {
-      "name": "Plan A: Stone & Gyoza",
-      "description": "The perfect mix of exploring massive underground caves and eating famous local food.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Take a bus from Utsunomiya Station to the Oya History Museum."
-        },
-        {
-          "time": "10:30",
-          "activity": "Explore the massive, atmospheric underground stone quarry."
-        },
-        {
-          "time": "12:30",
-          "activity": "Visit the nearby Oya-ji Temple and the giant Heiwa Kannon statue."
-        },
-        {
-          "time": "14:00",
-          "activity": "Head back to central Utsunomiya."
-        },
-        {
-          "time": "15:00",
-          "activity": "Go 'Gyoza Hopping' – try 3 different famous gyoza shops for a late lunch/dinner."
-        }
-      ]
-    },
-    {
-      "name": "Plan B: Scenic Cycling",
-      "description": "Rent a bike and explore the rural beauty surrounding the stone town.",
-      "steps": [
-        {
-          "time": "09:30",
-          "activity": "Rent a bicycle near Utsunomiya Station."
-        },
-        {
-          "time": "11:00",
-          "activity": "Cycle through the scenic countryside towards the Oya district."
-        },
-        {
-          "time": "12:30",
-          "activity": "Lunch at a stylish cafe built into an old stone warehouse."
-        },
-        {
-          "time": "14:00",
-          "activity": "Explore the ancient cliff carvings at Oya-ji Temple."
-        },
-        {
-          "time": "16:00",
-          "activity": "Cycle back, drop off the bike, and reward yourself with gyoza."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 36.5955648,
     "lng": 139.819711
-  },
-  "budgetBreakdown": {
-    "transport": 3000,
-    "tickets": 1600,
-    "food": 6000,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 9.6,
@@ -128,5 +51,7 @@
   "transportOptions": {
     "train": 100,
     "car": 150
-  }
+  },
+  "highlights": ["Utsunomiya & Oya"],
+  "description": "Utsunomiya & Oya is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions."
 }

@@ -1,0 +1,80 @@
+{
+  "id": "chiba-yoro-valley",
+  "name": "Yoro Valley",
+  "prefecture": "Chiba",
+  "region": "Kanto",
+  "categories": ["Nature", "Hiking"],
+  "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+  ],
+  "description": "A scenic forested river valley in the heart of Chiba, famous for its autumn leaves hikes and unique Awamata double waterfall cascades.",
+  "highlights": [
+    "Awamata Falls",
+    "Yoro River Trail",
+    "Kannon Bridge",
+    "Yoro Gorge Onsen"
+  ],
+  "budgetMin": 2500,
+  "budgetMax": 7500,
+  "budgetRecommended": 5000,
+  "budgetBreakdown": {
+    "transport": 2000,
+    "tickets": 300,
+    "food": 1800,
+    "cafe": 900
+  },
+  "transportOptions": {
+    "train": 115,
+    "car": 80
+  },
+  "totalTripHours": 7,
+  "walkingMin": 100,
+  "walkingSunMin": 50,
+  "walkingShadeMin": 50,
+  "indoorPercent": 15,
+  "coordinates": {
+    "lat": 35.2539,
+    "lng": 140.1603
+  },
+  "comfort": {
+    "walkingIntensity": 3,
+    "heatTolerance": 8,
+    "rainFriendly": 3
+  },
+  "ratings": {
+    "overall": 8.2,
+    "couple": 8,
+    "summer": 8.2,
+    "winter": 7,
+    "rain": 4.5,
+    "food": 7.2,
+    "photography": 8.8,
+    "relaxation": 8.5,
+    "value": 8.4,
+    "uniqueness": 8
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 6,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 10,
+    "winter": 6
+  },
+  "bestMonths": [10, 11, 12],
+  "bestSeason": "Autumn",
+  "weatherDependence": "high",
+  "tags": ["Waterfalls", "Foliage", "Hiking", "Valley"],
+  "reservation": "Not required",
+  "parking": "Available near Awamata falls",
+  "restaurants": ["Yoro River Soba", "Gorge Dining Hall"],
+  "cafes": ["Valley Cafe"],
+  "notes": "Chiba's most famous spot for late autumn colors, peaking around late November.",
+  "schemaVersion": 2
+}

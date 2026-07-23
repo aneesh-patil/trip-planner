@@ -1,0 +1,81 @@
+{
+  "id": "gifu-takayama",
+  "name": "Takayama",
+  "prefecture": "Gifu",
+  "region": "Chubu",
+  "categories": ["History", "Food", "Urban"],
+  "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+  ],
+  "description": "A historic merchant city preserving Edo-period wooden streets, morning local markets, Hida beef stalls, and sake breweries.",
+  "highlights": [
+    "Sanmachi Suji (Old Town)",
+    "Miyagawa Morning Market",
+    "Takayama Jinya (Government House)",
+    "Takayama Matsuri Festival"
+  ],
+  "budgetMin": 5000,
+  "budgetMax": 15000,
+  "budgetRecommended": 10000,
+  "budgetBreakdown": {
+    "transport": 4500,
+    "tickets": 800,
+    "food": 3500,
+    "cafe": 1200
+  },
+  "transportOptions": {
+    "train": 160,
+    "car": 180,
+    "shinkansen": 120
+  },
+  "totalTripHours": 11,
+  "walkingMin": 90,
+  "walkingSunMin": 45,
+  "walkingShadeMin": 45,
+  "indoorPercent": 40,
+  "coordinates": {
+    "lat": 36.1408,
+    "lng": 137.2519
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 8,
+    "rainFriendly": 5
+  },
+  "ratings": {
+    "overall": 9.2,
+    "couple": 9,
+    "summer": 8,
+    "winter": 8.5,
+    "rain": 7,
+    "food": 9.8,
+    "photography": 9.5,
+    "relaxation": 8.8,
+    "value": 8.4,
+    "uniqueness": 9.2
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [4, 5, 10, 11],
+  "bestSeason": "Spring",
+  "weatherDependence": "low",
+  "tags": ["Edo Merchant", "Hida Beef", "Sake Brews", "Historic"],
+  "reservation": "Required during Takayama Festivals (Apr/Oct)",
+  "parking": "Plenty of public tourist lots near train station",
+  "restaurants": ["Hida Beef Center", "Maruaki Steakhouse"],
+  "cafes": ["Old Town Tea House"],
+  "notes": "Try Hida beef skewers sold fresh along the merchant streets.",
+  "schemaVersion": 2
+}

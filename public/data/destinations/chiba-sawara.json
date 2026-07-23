@@ -1,0 +1,80 @@
+{
+  "id": "chiba-sawara",
+  "name": "Sawara",
+  "prefecture": "Chiba",
+  "region": "Kanto",
+  "categories": ["History", "Canal"],
+  "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
+  ],
+  "description": "Commonly nicknamed 'Little Edo', Sawara features a beautifully preserved historic canal district lined with traditional merchant houses.",
+  "highlights": [
+    "Ono River Historic District",
+    "Toyohashi Ja-Ja Bridge",
+    "Ino Tadataka Museum",
+    "Sawara Canal Boat Tour"
+  ],
+  "budgetMin": 3000,
+  "budgetMax": 9000,
+  "budgetRecommended": 6000,
+  "budgetBreakdown": {
+    "transport": 2200,
+    "tickets": 1300,
+    "food": 1800,
+    "cafe": 700
+  },
+  "transportOptions": {
+    "train": 90,
+    "car": 75
+  },
+  "totalTripHours": 6,
+  "walkingMin": 70,
+  "walkingSunMin": 40,
+  "walkingShadeMin": 30,
+  "indoorPercent": 40,
+  "coordinates": {
+    "lat": 35.8906,
+    "lng": 140.4981
+  },
+  "comfort": {
+    "walkingIntensity": 1,
+    "heatTolerance": 8,
+    "rainFriendly": 6
+  },
+  "ratings": {
+    "overall": 8.3,
+    "couple": 8.8,
+    "summer": 7.5,
+    "winter": 7.8,
+    "rain": 6.5,
+    "food": 8.2,
+    "photography": 9,
+    "relaxation": 8.8,
+    "value": 8.2,
+    "uniqueness": 8.5
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 6,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 8,
+    "winter": 7
+  },
+  "bestMonths": [4, 5, 9, 10],
+  "bestSeason": "Spring",
+  "weatherDependence": "low",
+  "tags": ["Canal", "Edo", "Historic", "Photogenic"],
+  "reservation": "Not required",
+  "parking": "Available along the outer river banks",
+  "restaurants": ["Sawara Unagi Yado", "Kanoya Soba"],
+  "cafes": ["Cafe Deko"],
+  "notes": "Toyohashi Bridge spills water into the canal twice an hour, making a pleasant 'ja-ja' sound.",
+  "schemaVersion": 2
+}

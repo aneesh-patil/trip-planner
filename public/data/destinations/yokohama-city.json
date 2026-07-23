@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["City", "Food", "Shopping"],
   "heroImage": "/images/yokohama_hero.jpg",
-  "gallery": [],
-  "description": "Vibrant port city offering romantic night views, large Chinatown, and modern shopping complexes.",
   "totalTripHours": 8,
   "budgetMin": 8000,
-  "budgetRecommended": 11000,
+  "budgetRecommended": 12000,
   "budgetMax": 16000,
   "walkingMin": 8000,
   "walkingSunMin": 4000,
@@ -39,94 +37,10 @@
     "winter": 9
   },
   "bestMonths": [3, 4, 5, 9, 10, 11, 12],
-  "reservation": "Dinners with night views require booking.",
-  "parking": "Plenty of paid parking in Minatomirai.",
-  "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
   "tags": ["Date Spot", "Foodie", "Night View"],
-  "itinerary": [
-    {
-      "time": "11:00",
-      "activity": "Lunch at Chinatown"
-    },
-    {
-      "time": "13:30",
-      "activity": "Walk through Yamashita Park"
-    },
-    {
-      "time": "15:00",
-      "activity": "Red Brick Warehouse"
-    },
-    {
-      "time": "19:00",
-      "activity": "Dinner with Minatomirai view"
-    }
-  ],
-  "restaurants": ["Manchinro", "Bills Red Brick Warehouse"],
-  "cafes": ["Zebracoffee", "Koku Kafe"],
-  "notes": "Extremely easy access from central Tokyo.",
-  "itineraries": [
-    {
-      "name": "Plan A: Minatomirai Classics",
-      "description": "The ultimate waterfront date or family trip hitting all major landmarks.",
-      "steps": [
-        {
-          "time": "11:00",
-          "activity": "Design your own custom cup noodles at the Cup Noodle Museum."
-        },
-        {
-          "time": "13:00",
-          "activity": "Lunch and shopping at the historic Red Brick Warehouse."
-        },
-        {
-          "time": "15:00",
-          "activity": "Take a ride on the Cosmo Clock 21 Ferris wheel."
-        },
-        {
-          "time": "16:30",
-          "activity": "Take the Yokohama Air Cabin ropeway across the bay."
-        },
-        {
-          "time": "18:00",
-          "activity": "Dinner in Yokohama Chinatown, the largest in Japan."
-        }
-      ]
-    },
-    {
-      "name": "Plan B: Gardens & History",
-      "description": "A quieter side of Yokohama, focusing on classic Japanese gardens and port history.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Explore Sankeien Garden, featuring historic buildings relocated from across Japan."
-        },
-        {
-          "time": "12:30",
-          "activity": "Lunch in the elegant Motomachi Shopping Street."
-        },
-        {
-          "time": "14:00",
-          "activity": "Stroll up to the Yamate Bluffs to see the historic Western-style diplomatic houses."
-        },
-        {
-          "time": "16:00",
-          "activity": "Walk through Yamashita Park and tour the NYK Hikawa Maru ocean liner."
-        },
-        {
-          "time": "18:30",
-          "activity": "Cocktails at a high-rise bar in the Landmark Tower."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.4503381,
     "lng": 139.6343802
-  },
-  "budgetBreakdown": {
-    "transport": 3000,
-    "tickets": 0,
-    "food": 6000,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 7.5,
@@ -136,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,yokohama/all?lock=1004",
   "transportOptions": {
     "train": 30
-  }
+  },
+  "highlights": ["Yokohama"],
+  "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
 }

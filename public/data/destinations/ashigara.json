@@ -4,7 +4,7 @@
   "region": "Kanto",
   "categories": ["Nature", "Mountain"],
   "tags": ["Hiking", "Quiet"],
-  "budgetRecommended": 4000,
+  "budgetRecommended": 5500,
   "ratings": {
     "overall": 7.8,
     "photography": 8.2,
@@ -23,26 +23,9 @@
     "lng": 139.0436
   },
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
-  "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg"
-  ],
   "prefecture": "Kanagawa",
-  "description": "Discover Ashigara, a prominent destination in Kanagawa. With its rich mix of hiking, quiet, it's a highly recommended spot for a 8-hour getaway.",
-  "highlights": [
-    "Explore top-rated nature locations",
-    "Enjoy regional specialties and local culture",
-    "Perfect for a active day out"
-  ],
   "budgetMin": 2000,
   "budgetMax": 9000,
-  "budgetBreakdown": {
-    "transport": 1600,
-    "tickets": 800,
-    "food": 1200,
-    "cafe": 400
-  },
   "totalTripHours": 8,
   "walkingMin": 10000,
   "walkingSunMin": 4000,
@@ -55,43 +38,18 @@
   "transportOptions": {
     "car": 80
   },
-  "restaurants": [
-    "Ashigara Traditional Dining",
-    "Local Kanagawa Specialty Restaurant",
-    "The Ashigara Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Ashigara",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "A fantastic trip to Ashigara. Known for its hiking and quiet vibes, it offers a great escape with an overall score of 7.8.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Ashigara in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary nature attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ]
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "highlights": ["Ashigara"],
+  "description": "Ashigara is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

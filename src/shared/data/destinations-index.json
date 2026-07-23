@@ -4787,5 +4787,2088 @@
     "highlights": ["Zushi & Yokosuka"],
     "description": "Zushi & Yokosuka is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
     "bestMonths": [3, 4, 5, 9, 10, 11]
+  },
+  {
+    "id": "tokyo-okutama",
+    "name": "Okutama",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Nature", "Hiking", "Lake"],
+    "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600"
+    ],
+    "description": "A scenic mountainous escape in western Tokyo, offering dense forests, Nippara Limestone Caves, and peaceful lake views.",
+    "highlights": [
+      "Lake Okutama",
+      "Nippara Limestone Cave",
+      "Mount Mitake Trail",
+      "Hatonosu Gorge"
+    ],
+    "budgetMin": 2500,
+    "budgetMax": 7500,
+    "budgetRecommended": 5000,
+    "budgetBreakdown": {
+      "transport": 2000,
+      "tickets": 800,
+      "food": 1500,
+      "cafe": 700
+    },
+    "transportOptions": {
+      "train": 95,
+      "car": 110
+    },
+    "totalTripHours": 9,
+    "walkingMin": 120,
+    "walkingSunMin": 60,
+    "walkingShadeMin": 60,
+    "indoorPercent": 20,
+    "coordinates": {
+      "lat": 35.8087,
+      "lng": 139.0963
+    },
+    "comfort": {
+      "walkingIntensity": 3,
+      "heatTolerance": 8,
+      "rainFriendly": 4
+    },
+    "ratings": {
+      "overall": 8.4,
+      "couple": 8,
+      "summer": 9,
+      "winter": 7,
+      "rain": 5,
+      "food": 7.5,
+      "photography": 9,
+      "relaxation": 8.5,
+      "value": 8.8,
+      "uniqueness": 8.2
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 6
+    },
+    "bestMonths": [4, 5, 8, 9, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Nature", "Hiking", "Active", "Escapes"],
+    "reservation": "Not required",
+    "parking": "Available at trailheads",
+    "restaurants": ["Okutama Beer Cafe", "Hatonosu Soba"],
+    "cafes": ["Goraikou Cafe"],
+    "notes": "Bring stout shoes for hiking trails. The Nippara caves maintain a cool 11°C temperature year-round.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "tokyo-mt-mitake",
+    "name": "Mt. Mitake",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["History", "Hiking", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+    ],
+    "description": "A sacred mountain located in Chichibu-Tama-Kai National Park, featuring a historic mountaintop Shinto shrine and scenic river hikes.",
+    "highlights": [
+      "Musashi Mitake Shrine",
+      "Rock Garden Trail",
+      "Mitake Cable Car",
+      "Anago Falls"
+    ],
+    "budgetMin": 3000,
+    "budgetMax": 8500,
+    "budgetRecommended": 5500,
+    "budgetBreakdown": {
+      "transport": 2500,
+      "tickets": 1200,
+      "food": 1200,
+      "cafe": 600
+    },
+    "transportOptions": {
+      "train": 85,
+      "car": 100
+    },
+    "totalTripHours": 8,
+    "walkingMin": 150,
+    "walkingSunMin": 50,
+    "walkingShadeMin": 100,
+    "indoorPercent": 15,
+    "coordinates": {
+      "lat": 35.7828,
+      "lng": 139.1512
+    },
+    "comfort": {
+      "walkingIntensity": 4,
+      "heatTolerance": 8,
+      "rainFriendly": 3
+    },
+    "ratings": {
+      "overall": 8.6,
+      "couple": 8.2,
+      "summer": 8.8,
+      "winter": 6.5,
+      "rain": 4.5,
+      "food": 7.2,
+      "photography": 9,
+      "relaxation": 8,
+      "value": 8.4,
+      "uniqueness": 8.8
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 5
+    },
+    "bestMonths": [5, 6, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Pilgrimage", "Hiking", "Historic", "Views"],
+    "reservation": "Not required",
+    "parking": "Cable car base parking",
+    "restaurants": ["Mitake Sobadokoro", "Shrine Lodge Dining"],
+    "cafes": ["Cafe Comon"],
+    "notes": "Mitake cable car cuts out the steepest initial climb, making it accessible for families.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "tokyo-hinohara",
+    "name": "Hinohara",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Nature", "Relaxation"],
+    "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
+    "description": "Tokyo mainland's only remaining village, beloved for its wild mountains, cascading Hossawa Falls, and deep forest tranquility.",
+    "highlights": [
+      "Hossawa Falls",
+      "Kanoto Rock",
+      "Hinohara Tokyo Citizens Forest",
+      "Kazuma Hot Spring"
+    ],
+    "budgetMin": 2000,
+    "budgetMax": 7000,
+    "budgetRecommended": 4500,
+    "budgetBreakdown": {
+      "transport": 1800,
+      "tickets": 500,
+      "food": 1500,
+      "cafe": 700
+    },
+    "transportOptions": {
+      "train": 105,
+      "car": 90
+    },
+    "totalTripHours": 7,
+    "walkingMin": 90,
+    "walkingSunMin": 40,
+    "walkingShadeMin": 50,
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 35.7225,
+      "lng": 139.0494
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 9,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 8.2,
+      "couple": 8.5,
+      "summer": 9.2,
+      "winter": 7,
+      "rain": 5.5,
+      "food": 7,
+      "photography": 8.6,
+      "relaxation": 9.5,
+      "value": 9,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 6
+    },
+    "bestMonths": [5, 6, 7, 8, 9],
+    "bestSeason": "Summer",
+    "weatherDependence": "medium",
+    "tags": ["Village", "Waterfalls", "Onsen", "Quiet"],
+    "reservation": "Not required",
+    "parking": "Free parking at Hossawa Falls trailhead",
+    "restaurants": ["Hinohara Tofu Shop", "Sansui Local Soba"],
+    "cafes": ["Cafe Kazuma"],
+    "notes": "Hossawa Falls is selected as one of Japan's Top 100 waterfalls.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "saitama-chichibu",
+    "name": "Chichibu",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": ["History", "Nature", "Mountains"],
+    "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "description": "A scenic valley town surrounded by craggy mountains, historic pilgrim shrines, and the famous Hitsujiyama Shibazakura moss fields.",
+    "highlights": [
+      "Chichibu Shrine",
+      "Hitsujiyama Park (Shibazakura)",
+      "Mitsumine Shrine",
+      "Chichibu Night Festival"
+    ],
+    "budgetMin": 3500,
+    "budgetMax": 12000,
+    "budgetRecommended": 8000,
+    "budgetBreakdown": {
+      "transport": 3500,
+      "tickets": 1500,
+      "food": 2000,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 80,
+      "car": 95
+    },
+    "totalTripHours": 10,
+    "walkingMin": 100,
+    "walkingSunMin": 70,
+    "walkingShadeMin": 30,
+    "indoorPercent": 25,
+    "coordinates": {
+      "lat": 35.9972,
+      "lng": 139.085
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 7,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 8.7,
+      "couple": 8.5,
+      "summer": 7.8,
+      "winter": 8,
+      "rain": 6,
+      "food": 8.8,
+      "photography": 9.2,
+      "relaxation": 8.5,
+      "value": 8.2,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 7,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [4, 5, 10, 11, 12],
+    "bestSeason": "Spring",
+    "weatherDependence": "medium",
+    "tags": ["Pilgrimage", "Shibazakura", "Historic", "Foodie"],
+    "reservation": "Required during night festival (Dec 2-3)",
+    "parking": "Available at tourist spots",
+    "restaurants": ["Wild Boar Grill", "Chichibu Soba House"],
+    "cafes": ["Jiyuan Tea House"],
+    "notes": "Chichibu Night Festival is registered as a UNESCO Intangible Cultural Heritage.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "saitama-nagatoro",
+    "name": "Nagatoro",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": ["Nature", "River"],
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
+    ],
+    "description": "Famous for its crystal-clear Arakawa River boat cruises, spectacular Iwadatami rock formations, and Mount Hodo ropeway.",
+    "highlights": [
+      "Nagatoro Line Kudari (Boat Cruise)",
+      "Iwadatami Rock Terrace",
+      "Hodosan Shrine",
+      "Mount Hodo Ropeway"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 10000,
+    "budgetRecommended": 7000,
+    "budgetBreakdown": {
+      "transport": 2500,
+      "tickets": 2200,
+      "food": 1500,
+      "cafe": 800
+    },
+    "transportOptions": {
+      "train": 100,
+      "car": 90
+    },
+    "totalTripHours": 8,
+    "walkingMin": 80,
+    "walkingSunMin": 60,
+    "walkingShadeMin": 20,
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 36.0964,
+      "lng": 139.1172
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 8,
+      "rainFriendly": 2
+    },
+    "ratings": {
+      "overall": 8.5,
+      "couple": 8.6,
+      "summer": 9,
+      "winter": 6,
+      "rain": 3,
+      "food": 8,
+      "photography": 8.8,
+      "relaxation": 8.5,
+      "value": 8,
+      "uniqueness": 8.8
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 5
+    },
+    "bestMonths": [5, 6, 7, 8, 10, 11],
+    "bestSeason": "Summer",
+    "weatherDependence": "high",
+    "tags": ["Boating", "River", "Active", "Family"],
+    "reservation": "Recommended for weekend boat tours",
+    "parking": "Plenty of public paid lots",
+    "restaurants": ["Nagatoro Soba", "Asami Reika Kakigori"],
+    "cafes": ["Urushi Cafe"],
+    "notes": "The boat cruise doesn't run during heavy rains or high river levels.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "chiba-sawara",
+    "name": "Sawara",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": ["History", "Canal"],
+    "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
+    ],
+    "description": "Commonly nicknamed 'Little Edo', Sawara features a beautifully preserved historic canal district lined with traditional merchant houses.",
+    "highlights": [
+      "Ono River Historic District",
+      "Toyohashi Ja-Ja Bridge",
+      "Ino Tadataka Museum",
+      "Sawara Canal Boat Tour"
+    ],
+    "budgetMin": 3000,
+    "budgetMax": 9000,
+    "budgetRecommended": 6000,
+    "budgetBreakdown": {
+      "transport": 2200,
+      "tickets": 1300,
+      "food": 1800,
+      "cafe": 700
+    },
+    "transportOptions": {
+      "train": 90,
+      "car": 75
+    },
+    "totalTripHours": 6,
+    "walkingMin": 70,
+    "walkingSunMin": 40,
+    "walkingShadeMin": 30,
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 35.8906,
+      "lng": 140.4981
+    },
+    "comfort": {
+      "walkingIntensity": 1,
+      "heatTolerance": 8,
+      "rainFriendly": 6
+    },
+    "ratings": {
+      "overall": 8.3,
+      "couple": 8.8,
+      "summer": 7.5,
+      "winter": 7.8,
+      "rain": 6.5,
+      "food": 8.2,
+      "photography": 9,
+      "relaxation": 8.8,
+      "value": 8.2,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [4, 5, 9, 10],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": ["Canal", "Edo", "Historic", "Photogenic"],
+    "reservation": "Not required",
+    "parking": "Available along the outer river banks",
+    "restaurants": ["Sawara Unagi Yado", "Kanoya Soba"],
+    "cafes": ["Cafe Deko"],
+    "notes": "Toyohashi Bridge spills water into the canal twice an hour, making a pleasant 'ja-ja' sound.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "chiba-nokogiriyama",
+    "name": "Nokogiriyama",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": ["History", "Hiking", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+    ],
+    "description": "A saw-toothed mountain showcasing Nihon-ji temple, a massive 31-meter tall stone carving of Buddha, and the dizzying 'View of Hell' cliff overlook.",
+    "highlights": [
+      "Jigoku Nozoki (Hell Peek)",
+      "Nihon-ji Great Buddha",
+      "Nokogiriyama Ropeway",
+      "Hyaku-shaku Kannon"
+    ],
+    "budgetMin": 3000,
+    "budgetMax": 9500,
+    "budgetRecommended": 6500,
+    "budgetBreakdown": {
+      "transport": 2800,
+      "tickets": 1700,
+      "food": 1300,
+      "cafe": 700
+    },
+    "transportOptions": {
+      "train": 110,
+      "car": 85
+    },
+    "totalTripHours": 8,
+    "walkingMin": 140,
+    "walkingSunMin": 80,
+    "walkingShadeMin": 60,
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 35.1587,
+      "lng": 139.8306
+    },
+    "comfort": {
+      "walkingIntensity": 4,
+      "heatTolerance": 6,
+      "rainFriendly": 2
+    },
+    "ratings": {
+      "overall": 8.8,
+      "couple": 8.4,
+      "summer": 8,
+      "winter": 7.8,
+      "rain": 4,
+      "food": 7.8,
+      "photography": 9.5,
+      "relaxation": 7.5,
+      "value": 8.8,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 7,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Cliff Views", "Buddha", "Pilgrimage", "Active"],
+    "reservation": "Not required",
+    "parking": "Paid parking at ropeway station base",
+    "restaurants": ["Kanaya Seafood", "Boso Fish Grill"],
+    "cafes": ["Nokogiri Coffee"],
+    "notes": "Hell Peek viewpoint is extremely high and does not suit travellers prone to vertigo.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "chiba-yoro-valley",
+    "name": "Yoro Valley",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": ["Nature", "Hiking"],
+    "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
+    "description": "A scenic forested river valley in the heart of Chiba, famous for its autumn leaves hikes and unique Awamata double waterfall cascades.",
+    "highlights": [
+      "Awamata Falls",
+      "Yoro River Trail",
+      "Kannon Bridge",
+      "Yoro Gorge Onsen"
+    ],
+    "budgetMin": 2500,
+    "budgetMax": 7500,
+    "budgetRecommended": 5000,
+    "budgetBreakdown": {
+      "transport": 2000,
+      "tickets": 300,
+      "food": 1800,
+      "cafe": 900
+    },
+    "transportOptions": {
+      "train": 115,
+      "car": 80
+    },
+    "totalTripHours": 7,
+    "walkingMin": 100,
+    "walkingSunMin": 50,
+    "walkingShadeMin": 50,
+    "indoorPercent": 15,
+    "coordinates": {
+      "lat": 35.2539,
+      "lng": 140.1603
+    },
+    "comfort": {
+      "walkingIntensity": 3,
+      "heatTolerance": 8,
+      "rainFriendly": 3
+    },
+    "ratings": {
+      "overall": 8.2,
+      "couple": 8,
+      "summer": 8.2,
+      "winter": 7,
+      "rain": 4.5,
+      "food": 7.2,
+      "photography": 8.8,
+      "relaxation": 8.5,
+      "value": 8.4,
+      "uniqueness": 8
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 6
+    },
+    "bestMonths": [10, 11, 12],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Waterfalls", "Foliage", "Hiking", "Valley"],
+    "reservation": "Not required",
+    "parking": "Available near Awamata falls",
+    "restaurants": ["Yoro River Soba", "Gorge Dining Hall"],
+    "cafes": ["Valley Cafe"],
+    "notes": "Chiba's most famous spot for late autumn colors, peaking around late November.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gunma-kusatsu-onsen",
+    "name": "Kusatsu Onsen",
+    "prefecture": "Gunma",
+    "region": "Kanto",
+    "categories": ["Relaxation", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
+    "description": "Ranked among Japan's top three hot spring towns, famous for its steam-billowing Yubatake central field and acidic, healing baths.",
+    "highlights": [
+      "Yubatake (Hot Water Field)",
+      "Netsunoyu (Yumomi Show)",
+      "Sainokawara Park",
+      "Otowanoyu Public Baths"
+    ],
+    "budgetMin": 5000,
+    "budgetMax": 16000,
+    "budgetRecommended": 11000,
+    "budgetBreakdown": {
+      "transport": 4500,
+      "tickets": 1500,
+      "food": 3500,
+      "cafe": 1500
+    },
+    "transportOptions": {
+      "train": 150,
+      "car": 180,
+      "shinkansen": 110
+    },
+    "totalTripHours": 12,
+    "walkingMin": 60,
+    "walkingSunMin": 30,
+    "walkingShadeMin": 30,
+    "indoorPercent": 60,
+    "coordinates": {
+      "lat": 36.6225,
+      "lng": 138.5967
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 9,
+      "rainFriendly": 7
+    },
+    "ratings": {
+      "overall": 9.5,
+      "couple": 9.6,
+      "summer": 8.5,
+      "winter": 9.8,
+      "rain": 8,
+      "food": 9,
+      "photography": 9.5,
+      "relaxation": 10,
+      "value": 8.2,
+      "uniqueness": 9.8
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 10
+    },
+    "bestMonths": [1, 2, 10, 11, 12],
+    "bestSeason": "Winter",
+    "weatherDependence": "low",
+    "tags": ["Onsen", "Steam", "Historic", "Winter getaway"],
+    "reservation": "Show tickets bought on site",
+    "parking": "Public paid parking lots outside the central ring",
+    "restaurants": ["Kusatsu Udon", "Onsen Tamago House"],
+    "cafes": ["Yubatake Cafe"],
+    "notes": "Kusatsu's hot springs have highly acidic water with strong antibacterial benefits.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gunma-ikaho-onsen",
+    "name": "Ikaho Onsen",
+    "prefecture": "Gunma",
+    "region": "Kanto",
+    "categories": ["Relaxation", "History"],
+    "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "description": "An onsen town located on Mount Haruna's slopes, known for its steep 365 stone steps, golden iron-rich spring waters, and local food stalls.",
+    "highlights": [
+      "365 Stone Steps (Stone Stairs)",
+      "Ikaho Shrine",
+      "Kogane-no-yu (Golden Water) Baths",
+      "Kajika Bridge"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 12000,
+    "budgetRecommended": 8000,
+    "budgetBreakdown": {
+      "transport": 3500,
+      "tickets": 1000,
+      "food": 2500,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 130,
+      "car": 140,
+      "shinkansen": 100
+    },
+    "totalTripHours": 10,
+    "walkingMin": 80,
+    "walkingSunMin": 40,
+    "walkingShadeMin": 40,
+    "indoorPercent": 50,
+    "coordinates": {
+      "lat": 36.4975,
+      "lng": 138.9189
+    },
+    "comfort": {
+      "walkingIntensity": 3,
+      "heatTolerance": 8,
+      "rainFriendly": 6
+    },
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 8,
+      "winter": 8.5,
+      "rain": 7,
+      "food": 8.5,
+      "photography": 9.2,
+      "relaxation": 9,
+      "value": 8.5,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [4, 5, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "low",
+    "tags": ["Stone Steps", "Slopes", "Onsen", "Lanterns"],
+    "reservation": "Not required",
+    "parking": "Public lots at step base",
+    "restaurants": ["Mizusawa Udon Shops", "Steps Soba"],
+    "cafes": ["Steps Tea Room"],
+    "notes": "Mizusawa Udon, served nearby, is considered one of Japan's top three udon types.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gunma-shima-onsen",
+    "name": "Shima Onsen",
+    "prefecture": "Gunma",
+    "region": "Kanto",
+    "categories": ["Relaxation", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
+    "description": "A peaceful hot spring village surrounded by lush forests and Shima blue rivers, boasting Sekizenkan, Japan's oldest wooden ryokan.",
+    "highlights": [
+      "Sekizenkan Ryokan (Spirited Away Inspiration)",
+      "Lake Okushima (Shima Blue)",
+      "Shima River Trail",
+      "Monomitayu Bathhouse"
+    ],
+    "budgetMin": 4500,
+    "budgetMax": 14000,
+    "budgetRecommended": 9000,
+    "budgetBreakdown": {
+      "transport": 3800,
+      "tickets": 800,
+      "food": 3000,
+      "cafe": 1400
+    },
+    "transportOptions": {
+      "train": 140,
+      "car": 150
+    },
+    "totalTripHours": 11,
+    "walkingMin": 70,
+    "walkingSunMin": 30,
+    "walkingShadeMin": 40,
+    "indoorPercent": 50,
+    "coordinates": {
+      "lat": 36.6853,
+      "lng": 138.7789
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 9,
+      "rainFriendly": 6
+    },
+    "ratings": {
+      "overall": 9,
+      "couple": 9.4,
+      "summer": 8.8,
+      "winter": 8.8,
+      "rain": 7.5,
+      "food": 8.2,
+      "photography": 9.6,
+      "relaxation": 9.8,
+      "value": 8,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [5, 6, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "medium",
+    "tags": ["Ryokan", "Spirited Away", "River Blue", "Onsen"],
+    "reservation": "Required for ryokan lodging stay",
+    "parking": "Free public tourist parking lots",
+    "restaurants": ["Shima Tonkatsu", "Onsen Soba"],
+    "cafes": ["Kashiwaya Cafe"],
+    "notes": "Sekizenkan's red bridge and front wooden facade is famously noted to resemble the bathhouse in Spirited Away.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "ibaraki-mount-tsukuba",
+    "name": "Mount Tsukuba",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": ["Hiking", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+    ],
+    "description": "An iconic double-peaked mountain (Nantaimasan & Nyotaimasan) offering distinct rock trails, a shrine, cable cars, and open views over the Kanto plain.",
+    "highlights": [
+      "Tsukuba Shrine",
+      "Mount Tsukuba Ropeway & Cable Car",
+      "Nantaimasan Peak Trail",
+      "Benten Rock Path"
+    ],
+    "budgetMin": 3000,
+    "budgetMax": 9000,
+    "budgetRecommended": 6000,
+    "budgetBreakdown": {
+      "transport": 2500,
+      "tickets": 1500,
+      "food": 1400,
+      "cafe": 600
+    },
+    "transportOptions": {
+      "train": 80,
+      "car": 90
+    },
+    "totalTripHours": 8,
+    "walkingMin": 130,
+    "walkingSunMin": 60,
+    "walkingShadeMin": 70,
+    "indoorPercent": 15,
+    "coordinates": {
+      "lat": 36.2253,
+      "lng": 140.1069
+    },
+    "comfort": {
+      "walkingIntensity": 3,
+      "heatTolerance": 7,
+      "rainFriendly": 3
+    },
+    "ratings": {
+      "overall": 8.4,
+      "couple": 8,
+      "summer": 8,
+      "winter": 7,
+      "rain": 4.5,
+      "food": 7.5,
+      "photography": 8.8,
+      "relaxation": 8,
+      "value": 8.5,
+      "uniqueness": 8.2
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 6
+    },
+    "bestMonths": [4, 5, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Peak Views", "Shrine", "Active", "Climbing"],
+    "reservation": "Not required",
+    "parking": "Plenty of paid lots at temple base",
+    "restaurants": ["Mount Tsukuba Soba", "Tsukuba Udon"],
+    "cafes": ["Summit Observatory Tea House"],
+    "notes": "Unlike Fuji, Tsukuba is known for turning purple and changing color over the course of the day.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "ibaraki-fukuroda-falls",
+    "name": "Fukuroda Falls",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": ["Nature", "Waterfalls"],
+    "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+    ],
+    "description": "One of Japan's Top Three Waterfalls, featuring a massive 120-meter drop across four tiers that freezes over completely during cold winters.",
+    "highlights": [
+      "Fukuroda Falls Tunnel & Deck",
+      "Tada Falls Suspension Bridge",
+      "Nagare-no-Kannon Shrine",
+      "Fukuroda Hot Springs (nearby)"
+    ],
+    "budgetMin": 3500,
+    "budgetMax": 9500,
+    "budgetRecommended": 6500,
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 500,
+      "food": 2000,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 150,
+      "car": 120
+    },
+    "totalTripHours": 9,
+    "walkingMin": 60,
+    "walkingSunMin": 30,
+    "walkingShadeMin": 30,
+    "indoorPercent": 20,
+    "coordinates": {
+      "lat": 36.7644,
+      "lng": 140.4075
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 8,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 8.6,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 8.5,
+      "rain": 6.5,
+      "food": 7.8,
+      "photography": 9.2,
+      "relaxation": 8.5,
+      "value": 8.4,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "low",
+    "tags": ["Waterfalls", "Winter Frozen", "Deck Views", "Family"],
+    "reservation": "Not required",
+    "parking": "Free and paid municipal lots a short walk from tunnel entrance",
+    "restaurants": ["Fukuroda Soba", "Kenyaki Grill"],
+    "cafes": ["Falls Lookout Cafe"],
+    "notes": "In autumn, the surrounding forest turns vibrant gold and crimson, framing the water cascades.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "ibaraki-hitachi-seaside-park",
+    "name": "Hitachi Seaside Park",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": ["Nature", "Parks"],
+    "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
+    "description": "A massive coastal park world-renowned for its rolling Miharashi Hill, covered in blue Nemophila flowers in spring and fluffy red Kochia bushes in autumn.",
+    "highlights": [
+      "Miharashi Hill",
+      "Pleasure Garden Ferris Wheel",
+      "Seaside Biking Trail",
+      "Dune Garden"
+    ],
+    "budgetMin": 3000,
+    "budgetMax": 9000,
+    "budgetRecommended": 6000,
+    "budgetBreakdown": {
+      "transport": 2500,
+      "tickets": 1000,
+      "food": 1700,
+      "cafe": 800
+    },
+    "transportOptions": {
+      "train": 90,
+      "car": 100
+    },
+    "totalTripHours": 8,
+    "walkingMin": 90,
+    "walkingSunMin": 80,
+    "walkingShadeMin": 10,
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 36.4053,
+      "lng": 140.5989
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 6,
+      "rainFriendly": 2
+    },
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9.2,
+      "summer": 7.5,
+      "winter": 6.5,
+      "rain": 3,
+      "food": 8,
+      "photography": 10,
+      "relaxation": 8.5,
+      "value": 8.8,
+      "uniqueness": 9.8
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 10,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 5
+    },
+    "bestMonths": [4, 5, 10],
+    "bestSeason": "Spring",
+    "weatherDependence": "high",
+    "tags": ["Flowers", "Hill Views", "Photogenic", "Biking"],
+    "reservation": "Not required",
+    "parking": "Massive paid parking fields at main park gate",
+    "restaurants": ["Park Curry House", "Seaside Bento"],
+    "cafes": ["Glass House Cafe"],
+    "notes": "Renting a bicycle inside the park is highly recommended to cover the vast park grounds.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "nagano-kamikochi",
+    "name": "Kamikochi",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["Nature", "Hiking", "Mountains"],
+    "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
+    ],
+    "description": "A pristine, highland valley in the Hida Mountains, boasting crystal-clear Azusa River flows, larch forests, and active volcano views.",
+    "highlights": [
+      "Kappa Bridge (Kappabashi)",
+      "Taisho Pond",
+      "Myojin Pond",
+      "Hotaka Mountain Range views"
+    ],
+    "budgetMin": 6000,
+    "budgetMax": 18000,
+    "budgetRecommended": 12000,
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 2500,
+      "food": 3000,
+      "cafe": 1500
+    },
+    "transportOptions": {
+      "train": 180,
+      "car": 190
+    },
+    "totalTripHours": 12,
+    "walkingMin": 180,
+    "walkingSunMin": 90,
+    "walkingShadeMin": 90,
+    "indoorPercent": 5,
+    "coordinates": {
+      "lat": 36.2494,
+      "lng": 137.6375
+    },
+    "comfort": {
+      "walkingIntensity": 4,
+      "heatTolerance": 9,
+      "rainFriendly": 2
+    },
+    "ratings": {
+      "overall": 9.6,
+      "couple": 9.4,
+      "summer": 10,
+      "winter": 5,
+      "rain": 4,
+      "food": 8,
+      "photography": 10,
+      "relaxation": 9.5,
+      "value": 8.5,
+      "uniqueness": 10
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 8,
+      "summer": 10,
+      "autumn": 9,
+      "winter": 1
+    },
+    "bestMonths": [5, 6, 7, 8, 10],
+    "bestSeason": "Summer",
+    "weatherDependence": "high",
+    "tags": ["Highlands", "Alps", "Pristine", "River walks"],
+    "reservation": "Required for shuttle bus entry (private cars banned)",
+    "parking": "Mandatory parking at Sawando base area",
+    "restaurants": ["Kamikochi Diner", "Kappa Bridge Soba"],
+    "cafes": ["Alps Cafe"],
+    "notes": "Closed completely from mid-November to mid-April due to heavy snow.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gifu-takayama",
+    "name": "Takayama",
+    "prefecture": "Gifu",
+    "region": "Chubu",
+    "categories": ["History", "Food", "Urban"],
+    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "description": "A historic merchant city preserving Edo-period wooden streets, morning local markets, Hida beef stalls, and sake breweries.",
+    "highlights": [
+      "Sanmachi Suji (Old Town)",
+      "Miyagawa Morning Market",
+      "Takayama Jinya (Government House)",
+      "Takayama Matsuri Festival"
+    ],
+    "budgetMin": 5000,
+    "budgetMax": 15000,
+    "budgetRecommended": 10000,
+    "budgetBreakdown": {
+      "transport": 4500,
+      "tickets": 800,
+      "food": 3500,
+      "cafe": 1200
+    },
+    "transportOptions": {
+      "train": 160,
+      "car": 180,
+      "shinkansen": 120
+    },
+    "totalTripHours": 11,
+    "walkingMin": 90,
+    "walkingSunMin": 45,
+    "walkingShadeMin": 45,
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 36.1408,
+      "lng": 137.2519
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 8,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9,
+      "summer": 8,
+      "winter": 8.5,
+      "rain": 7,
+      "food": 9.8,
+      "photography": 9.5,
+      "relaxation": 8.8,
+      "value": 8.4,
+      "uniqueness": 9.2
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [4, 5, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": ["Edo Merchant", "Hida Beef", "Sake Brews", "Historic"],
+    "reservation": "Required during Takayama Festivals (Apr/Oct)",
+    "parking": "Plenty of public tourist lots near train station",
+    "restaurants": ["Hida Beef Center", "Maruaki Steakhouse"],
+    "cafes": ["Old Town Tea House"],
+    "notes": "Try Hida beef skewers sold fresh along the merchant streets.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gifu-shirakawa-go",
+    "name": "Shirakawa-go",
+    "prefecture": "Gifu",
+    "region": "Chubu",
+    "categories": ["History", "Relaxation"],
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
+    ],
+    "description": "A UNESCO World Heritage village famous for its steep, thatched-roof Gassho-zukuri farmhouses built to withstand massive winter snowfalls.",
+    "highlights": [
+      "Ogimachi Castle Observatory",
+      "Wada House (Wada-ke)",
+      "Myozenji Temple Museum",
+      "Deai Suspension Bridge"
+    ],
+    "budgetMin": 5500,
+    "budgetMax": 16000,
+    "budgetRecommended": 10500,
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 1000,
+      "food": 3000,
+      "cafe": 1500
+    },
+    "transportOptions": {
+      "train": 170,
+      "car": 190
+    },
+    "totalTripHours": 12,
+    "walkingMin": 80,
+    "walkingSunMin": 40,
+    "walkingShadeMin": 40,
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 36.2564,
+      "lng": 136.9064
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 8,
+      "rainFriendly": 6
+    },
+    "ratings": {
+      "overall": 9.4,
+      "couple": 9.2,
+      "summer": 8,
+      "winter": 9.8,
+      "rain": 7,
+      "food": 8,
+      "photography": 10,
+      "relaxation": 9,
+      "value": 8.2,
+      "uniqueness": 10
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 10
+    },
+    "bestMonths": [1, 2, 10, 11],
+    "bestSeason": "Winter",
+    "weatherDependence": "medium",
+    "tags": ["Farmhouses", "UNESCO Heritage", "Snowy Winter", "Village"],
+    "reservation": "Required for winter light-up dates (Jan/Feb)",
+    "parking": "Public paid parking field at visitor center across bridge",
+    "restaurants": ["Irori Diner", "Shirakawago Soba"],
+    "cafes": ["Ochiudo Coffee"],
+    "notes": "Wada House is the largest Gassho-style farmhouse in Ogimachi.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gifu-gujo-hachiman",
+    "name": "Gujo Hachiman",
+    "prefecture": "Gifu",
+    "region": "Chubu",
+    "categories": ["History", "Waterfalls"],
+    "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
+    ],
+    "description": "Known for its pure water canals, historic town center, and Gujo Odori, a 30-night summer dance festival.",
+    "highlights": [
+      "Gujo Hachiman Castle",
+      "Sogisui Spring Canal",
+      "Yanagimachi Street",
+      "Gujo Odori Dance Museum"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 12000,
+    "budgetRecommended": 8000,
+    "budgetBreakdown": {
+      "transport": 3500,
+      "tickets": 1000,
+      "food": 2500,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 150,
+      "car": 160
+    },
+    "totalTripHours": 10,
+    "walkingMin": 90,
+    "walkingSunMin": 45,
+    "walkingShadeMin": 45,
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 35.7533,
+      "lng": 136.9589
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 8,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 8.6,
+      "couple": 8.5,
+      "summer": 9,
+      "winter": 7,
+      "rain": 6,
+      "food": 8,
+      "photography": 8.8,
+      "relaxation": 8.8,
+      "value": 8.2,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [7, 8, 9],
+    "bestSeason": "Summer",
+    "weatherDependence": "medium",
+    "tags": ["Canals", "Summer Dance", "Castle", "Water purity"],
+    "reservation": "Not required",
+    "parking": "Public paid parking spaces in town center",
+    "restaurants": ["Gujo Ayu Sweetfish Grill", "Sogisui Soba"],
+    "cafes": ["Canal Tea Room"],
+    "notes": "Sogisui Spring is designated by the government as one of Japan's 100 remarkable waters.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "nagano-narai-juku",
+    "name": "Narai-juku",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["History", "Urban"],
+    "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+    ],
+    "description": "Known as 'Narai of a Thousand Houses', this is the longest preserved post town along the historic Nakasendo trade route.",
+    "highlights": [
+      "Nakasendo Historic Street",
+      "Kiso Bridge (Wooden)",
+      "Narai Juku Museum",
+      "Nakamura House"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 11000,
+    "budgetRecommended": 7500,
+    "budgetBreakdown": {
+      "transport": 3500,
+      "tickets": 500,
+      "food": 2500,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 140,
+      "car": 150
+    },
+    "totalTripHours": 9,
+    "walkingMin": 80,
+    "walkingSunMin": 40,
+    "walkingShadeMin": 40,
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 35.9681,
+      "lng": 137.8139
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 9,
+      "rainFriendly": 6
+    },
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 8.5,
+      "winter": 7,
+      "rain": 6.5,
+      "food": 8,
+      "photography": 9.4,
+      "relaxation": 9,
+      "value": 8.4,
+      "uniqueness": 9.2
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [5, 6, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "low",
+    "tags": ["Nakasendo", "Post Town", "Historic", "Wooden Bridge"],
+    "reservation": "Not required",
+    "parking": "Paid parking at station area",
+    "restaurants": ["Gohyaku-man-goku Soba", "Kiso Rice Bowls"],
+    "cafes": ["Nakasendo Tea Salon"],
+    "notes": "Beautifully preserved wooden street facade stretching for over a kilometer.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "nagano-tsumago-juku",
+    "name": "Tsumago-juku",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["History", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
+    "description": "A historic Nakasendo post town that banned modern updates, preserving its Edo-era wooden shops, inns, and stone paths.",
+    "highlights": [
+      "Waki-Honjin Okuya Inn",
+      "Tsumago Honjin",
+      "Kotoku-ji Temple",
+      "Tsumago-Magome Nakasendo Trail"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 11500,
+    "budgetRecommended": 7800,
+    "budgetBreakdown": {
+      "transport": 3800,
+      "tickets": 1000,
+      "food": 2000,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 150,
+      "car": 160
+    },
+    "totalTripHours": 10,
+    "walkingMin": 120,
+    "walkingSunMin": 60,
+    "walkingShadeMin": 60,
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 35.5761,
+      "lng": 137.595
+    },
+    "comfort": {
+      "walkingIntensity": 3,
+      "heatTolerance": 8,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 9,
+      "couple": 9.2,
+      "summer": 8,
+      "winter": 7.5,
+      "rain": 6,
+      "food": 8.2,
+      "photography": 9.6,
+      "relaxation": 9.2,
+      "value": 8.4,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [5, 6, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "medium",
+    "tags": ["Post Town", "Historic Preservation", "Nakasendo", "Hiking"],
+    "reservation": "Not required",
+    "parking": "Public paid parking lots outside the preservation area",
+    "restaurants": ["Tsumago Soba", "Chestnut Rice House"],
+    "cafes": ["Tsumago Tea Room"],
+    "notes": "No power lines or phone cables are visible along the street to preserve the historical atmosphere.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gifu-magome-juku",
+    "name": "Magome-juku",
+    "prefecture": "Gifu",
+    "region": "Chubu",
+    "categories": ["History", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
+    "description": "A steeply sloped post town along the Nakasendo, boasting a fully restored stone path, waterwheel, and expansive mountain valley views.",
+    "highlights": [
+      "Magome Waterwheel",
+      "Toson Memorial Museum",
+      "Magome Lookout Point",
+      "Nakasendo stone steps path"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 11500,
+    "budgetRecommended": 7800,
+    "budgetBreakdown": {
+      "transport": 3800,
+      "tickets": 800,
+      "food": 2200,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 150,
+      "car": 160
+    },
+    "totalTripHours": 10,
+    "walkingMin": 100,
+    "walkingSunMin": 60,
+    "walkingShadeMin": 40,
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 35.5264,
+      "lng": 137.5667
+    },
+    "comfort": {
+      "walkingIntensity": 3,
+      "heatTolerance": 8,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 9,
+      "couple": 9.2,
+      "summer": 8,
+      "winter": 7.5,
+      "rain": 6,
+      "food": 8.2,
+      "photography": 9.6,
+      "relaxation": 9.2,
+      "value": 8.4,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [5, 6, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "medium",
+    "tags": ["Post Town", "Slopes", "Waterwheel", "Nakasendo"],
+    "reservation": "Not required",
+    "parking": "Public lots at both top and bottom of slope path",
+    "restaurants": ["Magome Gohei Mochi", "Magome Soba House"],
+    "cafes": ["Hillside Cafe"],
+    "notes": "Try Gohei Mochi, a skewered sticky rice cake covered in walnut/sesame paste.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "nagano-suwa",
+    "name": "Suwa",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["History", "Nature", "Relaxation"],
+    "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "description": "Centred around Lake Suwa, this town is famous for the grand Suwa Taisha Shinto shrines, hot springs, sake breweries, and summer fireworks.",
+    "highlights": [
+      "Lake Suwa Geyser Center",
+      "Suwa Taisha Grand Shrine",
+      "Tateishi Park (anime lake view)",
+      "Suwa Lakefront Footbaths"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 13000,
+    "budgetRecommended": 8500,
+    "budgetBreakdown": {
+      "transport": 3500,
+      "tickets": 1000,
+      "food": 2500,
+      "cafe": 1500
+    },
+    "transportOptions": {
+      "train": 120,
+      "car": 130
+    },
+    "totalTripHours": 9,
+    "walkingMin": 80,
+    "walkingSunMin": 55,
+    "walkingShadeMin": 25,
+    "indoorPercent": 40,
+    "coordinates": {
+      "lat": 36.0469,
+      "lng": 138.1189
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 8,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 8.8,
+      "winter": 8,
+      "rain": 6.8,
+      "food": 8.5,
+      "photography": 9.4,
+      "relaxation": 9,
+      "value": 8.2,
+      "uniqueness": 9
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [5, 6, 8, 10],
+    "bestSeason": "Summer",
+    "weatherDependence": "medium",
+    "tags": ["Grand Shrine", "Lake Views", "Footbaths", "Sake Brews"],
+    "reservation": "Not required",
+    "parking": "Available at Tateishi park and shrine bases",
+    "restaurants": ["Suwa Lake Eel (Unagi)", "Sake Brew Dining"],
+    "cafes": ["Lakefront Coffee"],
+    "notes": "Tateishi Park offers panoramic lake views that inspired scenes in the movie 'Your Name'.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "nagano-bessho-onsen",
+    "name": "Bessho Onsen",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["Relaxation", "History"],
+    "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
+    "description": "Known as the 'Kamakura of Shinshu', Bessho is Nagano's oldest hot spring town, boasting historic temples and therapeutic sulfur baths.",
+    "highlights": [
+      "Anraku-ji Temple (Octagonal Pagoda)",
+      "Kitamuki Kannon Temple",
+      "Oyu Public Bathhouse",
+      "Bessho Forest Trails"
+    ],
+    "budgetMin": 4000,
+    "budgetMax": 12500,
+    "budgetRecommended": 8200,
+    "budgetBreakdown": {
+      "transport": 3500,
+      "tickets": 700,
+      "food": 2500,
+      "cafe": 1500
+    },
+    "transportOptions": {
+      "train": 130,
+      "car": 140
+    },
+    "totalTripHours": 10,
+    "walkingMin": 70,
+    "walkingSunMin": 35,
+    "walkingShadeMin": 35,
+    "indoorPercent": 50,
+    "coordinates": {
+      "lat": 36.3533,
+      "lng": 138.1633
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 9,
+      "rainFriendly": 6
+    },
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9,
+      "summer": 8.5,
+      "winter": 8.5,
+      "rain": 7,
+      "food": 8,
+      "photography": 9.2,
+      "relaxation": 9.6,
+      "value": 8.5,
+      "uniqueness": 9.2
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [4, 5, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "low",
+    "tags": ["Shinshu Kamakura", "Sulfur baths", "Temples", "Onsen"],
+    "reservation": "Not required",
+    "parking": "Public lots at temple gates",
+    "restaurants": ["Bessho Soba", "Local Hotpot Diner"],
+    "cafes": ["Bessho Cafe"],
+    "notes": "Anraku-ji's octagonal three-storied pagoda is a national treasure and the only one of its kind in Japan.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "yamanashi-shosenkyo-gorge",
+    "name": "Shosenkyo Gorge",
+    "prefecture": "Yamanashi",
+    "region": "Chubu",
+    "categories": ["Nature", "Hiking"],
+    "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+    ],
+    "description": "Touted as one of Japan's most beautiful gorges, showcasing dramatic granite cliffs, Kakusenmei suspension bridge, and Senga Falls.",
+    "highlights": [
+      "Senga Falls",
+      "Kakusenmei Suspension Bridge",
+      "Shosenkyo Ropeway (Panorama view)",
+      "Kakutozan Rock Pinnacle"
+    ],
+    "budgetMin": 3500,
+    "budgetMax": 10000,
+    "budgetRecommended": 6800,
+    "budgetBreakdown": {
+      "transport": 2800,
+      "tickets": 1500,
+      "food": 1700,
+      "cafe": 800
+    },
+    "transportOptions": {
+      "train": 110,
+      "car": 100
+    },
+    "totalTripHours": 8,
+    "walkingMin": 120,
+    "walkingSunMin": 50,
+    "walkingShadeMin": 70,
+    "indoorPercent": 10,
+    "coordinates": {
+      "lat": 35.7461,
+      "lng": 138.5667
+    },
+    "comfort": {
+      "walkingIntensity": 3,
+      "heatTolerance": 8,
+      "rainFriendly": 2
+    },
+    "ratings": {
+      "overall": 9,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 7,
+      "rain": 4,
+      "food": 7.8,
+      "photography": 9.6,
+      "relaxation": 8.5,
+      "value": 8.5,
+      "uniqueness": 9.2
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 10,
+      "winter": 6
+    },
+    "bestMonths": [10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Gorge hikes", "Granite peaks", "Waterfalls", "Foliage"],
+    "reservation": "Not required",
+    "parking": "Free public parking lots at the valley base and ropeway station",
+    "restaurants": ["Yamanashi Hoto Noodles", "Gorge Grilled Trout"],
+    "cafes": ["Ropeway Summit Cafe"],
+    "notes": "Hoto noodles are flat wheat noodles stewed with pumpkin and seasonal veggies in miso broth.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "yamanashi-nishizawa-valley",
+    "name": "Nishizawa Valley",
+    "prefecture": "Yamanashi",
+    "region": "Chubu",
+    "categories": ["Nature", "Hiking"],
+    "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+    ],
+    "description": "A spectacular mountain valley featuring Nanatsugama Godan Falls, pristine forest trails, and therapeutic forest walking paths.",
+    "highlights": [
+      "Nanatsugama Godan Falls (Five-Tier Cascades)",
+      "Nishizawa Valley suspension bridge",
+      "Kobutori Rock",
+      "Valley forest trail"
+    ],
+    "budgetMin": 3000,
+    "budgetMax": 9000,
+    "budgetRecommended": 6000,
+    "budgetBreakdown": {
+      "transport": 2500,
+      "tickets": 500,
+      "food": 2000,
+      "cafe": 1000
+    },
+    "transportOptions": {
+      "train": 130,
+      "car": 110
+    },
+    "totalTripHours": 9,
+    "walkingMin": 240,
+    "walkingSunMin": 80,
+    "walkingShadeMin": 160,
+    "indoorPercent": 2,
+    "coordinates": {
+      "lat": 35.8644,
+      "lng": 138.7306
+    },
+    "comfort": {
+      "walkingIntensity": 5,
+      "heatTolerance": 8,
+      "rainFriendly": 1
+    },
+    "ratings": {
+      "overall": 9.2,
+      "couple": 8.2,
+      "summer": 9,
+      "winter": 4,
+      "rain": 2,
+      "food": 7,
+      "photography": 9.8,
+      "relaxation": 9,
+      "value": 8.8,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 2,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 10,
+      "winter": 2
+    },
+    "bestMonths": [5, 6, 10, 11],
+    "bestSeason": "Autumn",
+    "weatherDependence": "high",
+    "tags": ["Five-Tier Falls", "Active Hiking", "Valleys", "Forest Therapy"],
+    "reservation": "Not required",
+    "parking": "Free public parking lot at valley entry point",
+    "restaurants": ["Valley Trailhead Grill", "Hoto Stew"],
+    "cafes": ["Trailhead Tea Stall"],
+    "notes": "The loop hike takes about 4 hours. Good hiking boots are absolutely essential.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "yamanashi-fujiyoshida",
+    "name": "Fujiyoshida",
+    "prefecture": "Yamanashi",
+    "region": "Chubu",
+    "categories": ["History", "Nature", "Theme Park"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "gallery": [
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+    ],
+    "description": "Lying at Mt. Fuji's base, Fujiyoshida boasts the iconic Chureito Pagoda views, Fuji-Q Highland amusement rides, and historic shrines.",
+    "highlights": [
+      "Arakurayama Sengen Park (Chureito Pagoda)",
+      "Fuji-Q Highland",
+      "Kitaguchi Hongu Fuji Sengen Shrine",
+      "Kaneyama Onsen"
+    ],
+    "budgetMin": 5000,
+    "budgetMax": 16000,
+    "budgetRecommended": 10500,
+    "budgetBreakdown": {
+      "transport": 3500,
+      "tickets": 3000,
+      "food": 2500,
+      "cafe": 1500
+    },
+    "transportOptions": {
+      "train": 100,
+      "car": 90
+    },
+    "totalTripHours": 10,
+    "walkingMin": 80,
+    "walkingSunMin": 50,
+    "walkingShadeMin": 30,
+    "indoorPercent": 30,
+    "coordinates": {
+      "lat": 35.4853,
+      "lng": 138.8033
+    },
+    "comfort": {
+      "walkingIntensity": 2,
+      "heatTolerance": 8,
+      "rainFriendly": 5
+    },
+    "ratings": {
+      "overall": 9.4,
+      "couple": 9.2,
+      "summer": 8.5,
+      "winter": 8.8,
+      "rain": 6,
+      "food": 8.5,
+      "photography": 10,
+      "relaxation": 8.5,
+      "value": 8.4,
+      "uniqueness": 9.8
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [4, 5, 10, 11, 12],
+    "bestSeason": "Spring",
+    "weatherDependence": "medium",
+    "tags": ["Pagoda View", "Rollercoasters", "Fuji Base", "Photogenic"],
+    "reservation": "Recommended to book Fuji-Q passes in advance",
+    "parking": "Large paid lots at park and shrine entries",
+    "restaurants": ["Yoshida Udon Shops", "Fuji View Grill"],
+    "cafes": ["Chureito Tea House"],
+    "notes": "Chureito Pagoda offers one of Japan's most famous postcard views framing Mt. Fuji in cherry blossoms or red maple leaves.",
+    "schemaVersion": 2
   }
 ]

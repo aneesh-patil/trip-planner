@@ -7,7 +7,7 @@
   "heroImage": "/images/inuyama_hero.jpg",
   "totalTripHours": 12,
   "budgetMin": 12000,
-  "budgetRecommended": 16000,
+  "budgetRecommended": 17000,
   "budgetMax": 22000,
   "budgetBreakdown": {
     "transport": 12000,
@@ -47,51 +47,11 @@
     "winter": 60
   },
   "bestMonths": [4, 10, 11],
-  "bestSeason": "Spring (cherry blossoms) and Autumn",
-  "weatherDependence": "High",
   "tags": ["National Treasure", "Riverside", "Traditional"],
-  "reservation": "Not required",
-  "parking": "Available near the castle",
-  "restaurants": ["Inuyama Castle Town Food Stalls", "Kiso River Dining"],
-  "cafes": ["Honmachi Tea House"],
-  "notes": "A perfect extension to a Nagoya trip, offering one of Japan's oldest surviving wooden castles.",
-  "description": "Step back in time in Inuyama. Overlooking the scenic Kiso River, Inuyama Castle is one of only five castles designated as a National Treasure. The surrounding castle town offers fantastic street food and traditional atmosphere.",
   "highlights": ["Inuyama Castle", "Urakuen Garden", "Honmachi-dori Street"],
   "coordinates": {
     "lat": 35.3853,
     "lng": 136.9405
   },
-  "comfort": {
-    "heatTolerance": 2,
-    "rainFriendly": 2,
-    "walkingIntensity": 4
-  },
-  "itineraries": [
-    {
-      "name": "Castle and River Views",
-      "description": "Historical architecture and traditional river sights.",
-      "steps": [
-        {
-          "time": "09:30",
-          "activity": "Arrive at Inuyama and walk the historic Honmachi-dori Street."
-        },
-        {
-          "time": "10:30",
-          "activity": "Climb Inuyama Castle, a National Treasure, for views of the Kiso River."
-        },
-        {
-          "time": "12:00",
-          "activity": "Enjoy street food snacks or traditional soba for lunch."
-        },
-        {
-          "time": "13:30",
-          "activity": "Stroll through Urakuen Garden and enjoy matcha at the Joan tea house."
-        },
-        {
-          "time": "15:30",
-          "activity": "Take a boat ride on the Kiso River."
-        }
-      ]
-    }
-  ]
+  "description": "Inuyama is a scenic destination in the Aichi region of Japan, offering rich history and cultural attractions."
 }

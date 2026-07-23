@@ -4,7 +4,7 @@
   "region": "Kanto",
   "categories": ["City", "Museum"],
   "tags": ["Urban", "Shopping"],
-  "budgetRecommended": 7000,
+  "budgetRecommended": 8000,
   "ratings": {
     "overall": 7.5,
     "photography": 6.5,
@@ -23,26 +23,9 @@
     "lng": 140.1063
   },
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
-  "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg"
-  ],
-  "prefecture": "Kanagawa",
-  "description": "Discover Chiba City, a prominent destination in Kanagawa. With its rich mix of urban, shopping, it's a highly recommended spot for a 8-hour getaway.",
-  "highlights": [
-    "Explore top-rated city locations",
-    "Enjoy regional specialties and local culture",
-    "Perfect for a active day out"
-  ],
+  "prefecture": "Chiba",
   "budgetMin": 4000,
   "budgetMax": 12000,
-  "budgetBreakdown": {
-    "transport": 2800,
-    "tickets": 1400,
-    "food": 2100,
-    "cafe": 700
-  },
   "totalTripHours": 8,
   "walkingMin": 10000,
   "walkingSunMin": 4000,
@@ -56,43 +39,18 @@
     "train": 70,
     "car": 60
   },
-  "restaurants": [
-    "Chiba City Traditional Dining",
-    "Local Kanagawa Specialty Restaurant",
-    "The Chiba Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Chiba City",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "A fantastic trip to Chiba City. Known for its urban and shopping vibes, it offers a great escape with an overall score of 7.5.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Chiba City in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary city attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ]
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "highlights": ["Chiba City"],
+  "description": "Chiba City is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

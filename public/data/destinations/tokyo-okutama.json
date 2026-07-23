@@ -1,0 +1,80 @@
+{
+  "id": "tokyo-okutama",
+  "name": "Okutama",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Nature", "Hiking", "Lake"],
+  "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600"
+  ],
+  "description": "A scenic mountainous escape in western Tokyo, offering dense forests, Nippara Limestone Caves, and peaceful lake views.",
+  "highlights": [
+    "Lake Okutama",
+    "Nippara Limestone Cave",
+    "Mount Mitake Trail",
+    "Hatonosu Gorge"
+  ],
+  "budgetMin": 2500,
+  "budgetMax": 7500,
+  "budgetRecommended": 5000,
+  "budgetBreakdown": {
+    "transport": 2000,
+    "tickets": 800,
+    "food": 1500,
+    "cafe": 700
+  },
+  "transportOptions": {
+    "train": 95,
+    "car": 110
+  },
+  "totalTripHours": 9,
+  "walkingMin": 120,
+  "walkingSunMin": 60,
+  "walkingShadeMin": 60,
+  "indoorPercent": 20,
+  "coordinates": {
+    "lat": 35.8087,
+    "lng": 139.0963
+  },
+  "comfort": {
+    "walkingIntensity": 3,
+    "heatTolerance": 8,
+    "rainFriendly": 4
+  },
+  "ratings": {
+    "overall": 8.4,
+    "couple": 8,
+    "summer": 9,
+    "winter": 7,
+    "rain": 5,
+    "food": 7.5,
+    "photography": 9,
+    "relaxation": 8.5,
+    "value": 8.8,
+    "uniqueness": 8.2
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 6
+  },
+  "bestMonths": [4, 5, 8, 9, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "high",
+  "tags": ["Nature", "Hiking", "Active", "Escapes"],
+  "reservation": "Not required",
+  "parking": "Available at trailheads",
+  "restaurants": ["Okutama Beer Cafe", "Hatonosu Soba"],
+  "cafes": ["Goraikou Cafe"],
+  "notes": "Bring stout shoes for hiking trails. The Nippara caves maintain a cool 11°C temperature year-round.",
+  "schemaVersion": 2
+}

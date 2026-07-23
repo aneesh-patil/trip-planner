@@ -1,0 +1,80 @@
+{
+  "id": "gifu-gujo-hachiman",
+  "name": "Gujo Hachiman",
+  "prefecture": "Gifu",
+  "region": "Chubu",
+  "categories": ["History", "Waterfalls"],
+  "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
+  ],
+  "description": "Known for its pure water canals, historic town center, and Gujo Odori, a 30-night summer dance festival.",
+  "highlights": [
+    "Gujo Hachiman Castle",
+    "Sogisui Spring Canal",
+    "Yanagimachi Street",
+    "Gujo Odori Dance Museum"
+  ],
+  "budgetMin": 4000,
+  "budgetMax": 12000,
+  "budgetRecommended": 8000,
+  "budgetBreakdown": {
+    "transport": 3500,
+    "tickets": 1000,
+    "food": 2500,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 150,
+    "car": 160
+  },
+  "totalTripHours": 10,
+  "walkingMin": 90,
+  "walkingSunMin": 45,
+  "walkingShadeMin": 45,
+  "indoorPercent": 30,
+  "coordinates": {
+    "lat": 35.7533,
+    "lng": 136.9589
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 8,
+    "rainFriendly": 5
+  },
+  "ratings": {
+    "overall": 8.6,
+    "couple": 8.5,
+    "summer": 9,
+    "winter": 7,
+    "rain": 6,
+    "food": 8,
+    "photography": 8.8,
+    "relaxation": 8.8,
+    "value": 8.2,
+    "uniqueness": 9
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 6,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 8,
+    "winter": 7
+  },
+  "bestMonths": [7, 8, 9],
+  "bestSeason": "Summer",
+  "weatherDependence": "medium",
+  "tags": ["Canals", "Summer Dance", "Castle", "Water purity"],
+  "reservation": "Not required",
+  "parking": "Public paid parking spaces in town center",
+  "restaurants": ["Gujo Ayu Sweetfish Grill", "Sogisui Soba"],
+  "cafes": ["Canal Tea Room"],
+  "notes": "Sogisui Spring is designated by the government as one of Japan's 100 remarkable waters.",
+  "schemaVersion": 2
+}

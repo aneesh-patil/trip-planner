@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["History", "Nature", "Parks"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Edo_P_detail.jpg/960px-Edo_P_detail.jpg",
-  "gallery": [],
-  "description": "The primary residence of the Emperor of Japan. Surrounded by moats, stone walls, and beautiful gardens.",
   "totalTripHours": 4,
   "budgetMin": 2000,
-  "budgetRecommended": 3600,
+  "budgetRecommended": 5300,
   "budgetMax": 8600,
   "walkingMin": 12000,
   "walkingSunMin": 10000,
@@ -39,55 +37,10 @@
     "winter": 7
   },
   "bestMonths": [3, 4, 10, 11],
-  "reservation": "Required for inner grounds tour.",
-  "parking": "Very limited.",
-  "highlights": ["East Gardens", "Nijubashi Bridge", "Chidorigafuchi (Spring)"],
   "tags": ["Historical", "Gardens", "Free"],
-  "itinerary": [],
-  "restaurants": [
-    "Imperial Palace (Chiyoda) Traditional Dining",
-    "Local Tokyo Specialty Restaurant",
-    "The Imperial Grill & Izakaya"
-  ],
-  "cafes": ["Wadakura Fountain Park Cafe"],
-  "notes": "East Gardens are closed on Mondays and Fridays.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Imperial Palace (Chiyoda) in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary history attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.6838467,
     "lng": 139.7506859
-  },
-  "budgetBreakdown": {
-    "transport": 1000,
-    "tickets": 1600,
-    "food": 700,
-    "cafe": 300
   },
   "comfort": {
     "heatTolerance": 5,
@@ -97,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,imperial/all?lock=1022",
   "transportOptions": {
     "train": 40
-  }
+  },
+  "highlights": ["Imperial Palace (Chiyoda)"],
+  "description": "Imperial Palace (Chiyoda) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
 }

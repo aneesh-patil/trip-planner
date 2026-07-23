@@ -1,0 +1,80 @@
+{
+  "id": "yamanashi-nishizawa-valley",
+  "name": "Nishizawa Valley",
+  "prefecture": "Yamanashi",
+  "region": "Chubu",
+  "categories": ["Nature", "Hiking"],
+  "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+  ],
+  "description": "A spectacular mountain valley featuring Nanatsugama Godan Falls, pristine forest trails, and therapeutic forest walking paths.",
+  "highlights": [
+    "Nanatsugama Godan Falls (Five-Tier Cascades)",
+    "Nishizawa Valley suspension bridge",
+    "Kobutori Rock",
+    "Valley forest trail"
+  ],
+  "budgetMin": 3000,
+  "budgetMax": 9000,
+  "budgetRecommended": 6000,
+  "budgetBreakdown": {
+    "transport": 2500,
+    "tickets": 500,
+    "food": 2000,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 130,
+    "car": 110
+  },
+  "totalTripHours": 9,
+  "walkingMin": 240,
+  "walkingSunMin": 80,
+  "walkingShadeMin": 160,
+  "indoorPercent": 2,
+  "coordinates": {
+    "lat": 35.8644,
+    "lng": 138.7306
+  },
+  "comfort": {
+    "walkingIntensity": 5,
+    "heatTolerance": 8,
+    "rainFriendly": 1
+  },
+  "ratings": {
+    "overall": 9.2,
+    "couple": 8.2,
+    "summer": 9,
+    "winter": 4,
+    "rain": 2,
+    "food": 7,
+    "photography": 9.8,
+    "relaxation": 9,
+    "value": 8.8,
+    "uniqueness": 9.5
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 10,
+    "winter": 2
+  },
+  "bestMonths": [5, 6, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "high",
+  "tags": ["Five-Tier Falls", "Active Hiking", "Valleys", "Forest Therapy"],
+  "reservation": "Not required",
+  "parking": "Free public parking lot at valley entry point",
+  "restaurants": ["Valley Trailhead Grill", "Hoto Stew"],
+  "cafes": ["Trailhead Tea Stall"],
+  "notes": "The loop hike takes about 4 hours. Good hiking boots are absolutely essential.",
+  "schemaVersion": 2
+}

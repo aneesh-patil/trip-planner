@@ -1,0 +1,80 @@
+{
+  "id": "ibaraki-hitachi-seaside-park",
+  "name": "Hitachi Seaside Park",
+  "prefecture": "Ibaraki",
+  "region": "Kanto",
+  "categories": ["Nature", "Parks"],
+  "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+  ],
+  "description": "A massive coastal park world-renowned for its rolling Miharashi Hill, covered in blue Nemophila flowers in spring and fluffy red Kochia bushes in autumn.",
+  "highlights": [
+    "Miharashi Hill",
+    "Pleasure Garden Ferris Wheel",
+    "Seaside Biking Trail",
+    "Dune Garden"
+  ],
+  "budgetMin": 3000,
+  "budgetMax": 9000,
+  "budgetRecommended": 6000,
+  "budgetBreakdown": {
+    "transport": 2500,
+    "tickets": 1000,
+    "food": 1700,
+    "cafe": 800
+  },
+  "transportOptions": {
+    "train": 90,
+    "car": 100
+  },
+  "totalTripHours": 8,
+  "walkingMin": 90,
+  "walkingSunMin": 80,
+  "walkingShadeMin": 10,
+  "indoorPercent": 10,
+  "coordinates": {
+    "lat": 36.4053,
+    "lng": 140.5989
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 6,
+    "rainFriendly": 2
+  },
+  "ratings": {
+    "overall": 9.2,
+    "couple": 9.2,
+    "summer": 7.5,
+    "winter": 6.5,
+    "rain": 3,
+    "food": 8,
+    "photography": 10,
+    "relaxation": 8.5,
+    "value": 8.8,
+    "uniqueness": 9.8
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 10,
+    "summer": 8,
+    "autumn": 10,
+    "winter": 5
+  },
+  "bestMonths": [4, 5, 10],
+  "bestSeason": "Spring",
+  "weatherDependence": "high",
+  "tags": ["Flowers", "Hill Views", "Photogenic", "Biking"],
+  "reservation": "Not required",
+  "parking": "Massive paid parking fields at main park gate",
+  "restaurants": ["Park Curry House", "Seaside Bento"],
+  "cafes": ["Glass House Cafe"],
+  "notes": "Renting a bicycle inside the park is highly recommended to cover the vast park grounds.",
+  "schemaVersion": 2
+}

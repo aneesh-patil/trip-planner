@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["City", "Food", "History"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Akasaka_skyline_201806.jpg/960px-Akasaka_skyline_201806.jpg",
-  "gallery": [],
-  "description": "An upscale commercial and residential district with excellent dining, high-end hotels, and Hie Shrine.",
   "totalTripHours": 5,
   "budgetMin": 7600,
-  "budgetRecommended": 10600,
+  "budgetRecommended": 11600,
   "budgetMax": 15600,
   "walkingMin": 5000,
   "walkingSunMin": 2000,
@@ -39,51 +37,10 @@
     "winter": 8
   },
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  "reservation": "Required for nice dinners.",
-  "parking": "Expensive.",
-  "highlights": ["Hie Shrine", "Tokyo Midtown (nearby)", "TBS Studio area"],
   "tags": ["Upscale", "Dining", "Business"],
-  "itinerary": [],
-  "restaurants": ["Akasaka Matsubaya", "Kobe Beef 511"],
-  "cafes": ["Aoyama Flower Market Tea House"],
-  "notes": "Hie Shrine has a beautiful torii gate tunnel similar to Fushimi Inari in Kyoto.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Akasaka (Minato) in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary city attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.6734932,
     "lng": 139.7277088
-  },
-  "budgetBreakdown": {
-    "transport": 1000,
-    "tickets": 1600,
-    "food": 6000,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 8,
@@ -93,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,akasaka/all?lock=1030",
   "transportOptions": {
     "train": 45
-  }
+  },
+  "highlights": ["Akasaka (Minato)"],
+  "description": "Minato is a special ward of Tokyo, Japan. It is also called Minato City in English."
 }

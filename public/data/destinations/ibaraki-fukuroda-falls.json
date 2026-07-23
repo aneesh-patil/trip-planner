@@ -1,0 +1,80 @@
+{
+  "id": "ibaraki-fukuroda-falls",
+  "name": "Fukuroda Falls",
+  "prefecture": "Ibaraki",
+  "region": "Kanto",
+  "categories": ["Nature", "Waterfalls"],
+  "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+  ],
+  "description": "One of Japan's Top Three Waterfalls, featuring a massive 120-meter drop across four tiers that freezes over completely during cold winters.",
+  "highlights": [
+    "Fukuroda Falls Tunnel & Deck",
+    "Tada Falls Suspension Bridge",
+    "Nagare-no-Kannon Shrine",
+    "Fukuroda Hot Springs (nearby)"
+  ],
+  "budgetMin": 3500,
+  "budgetMax": 9500,
+  "budgetRecommended": 6500,
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 500,
+    "food": 2000,
+    "cafe": 1000
+  },
+  "transportOptions": {
+    "train": 150,
+    "car": 120
+  },
+  "totalTripHours": 9,
+  "walkingMin": 60,
+  "walkingSunMin": 30,
+  "walkingShadeMin": 30,
+  "indoorPercent": 20,
+  "coordinates": {
+    "lat": 36.7644,
+    "lng": 140.4075
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 8,
+    "rainFriendly": 5
+  },
+  "ratings": {
+    "overall": 8.6,
+    "couple": 8.8,
+    "summer": 8.5,
+    "winter": 8.5,
+    "rain": 6.5,
+    "food": 7.8,
+    "photography": 9.2,
+    "relaxation": 8.5,
+    "value": 8.4,
+    "uniqueness": 9
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 6,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 8,
+    "summer": 8,
+    "autumn": 10,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "low",
+  "tags": ["Waterfalls", "Winter Frozen", "Deck Views", "Family"],
+  "reservation": "Not required",
+  "parking": "Free and paid municipal lots a short walk from tunnel entrance",
+  "restaurants": ["Fukuroda Soba", "Kenyaki Grill"],
+  "cafes": ["Falls Lookout Cafe"],
+  "notes": "In autumn, the surrounding forest turns vibrant gold and crimson, framing the water cascades.",
+  "schemaVersion": 2
+}

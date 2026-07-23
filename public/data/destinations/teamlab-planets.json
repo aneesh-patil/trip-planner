@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["Art", "Theme Park", "Indoor"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
-  "gallery": [],
-  "description": "An immersive digital art museum where you walk barefoot through massive, interactive water and light installations.",
   "totalTripHours": 4,
   "budgetMin": 11600,
-  "budgetRecommended": 14600,
+  "budgetRecommended": 15600,
   "budgetMax": 19600,
   "walkingMin": 3000,
   "walkingSunMin": 0,
@@ -39,59 +37,10 @@
     "winter": 9
   },
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  "reservation": "Required well in advance.",
-  "parking": "Not recommended.",
-  "highlights": [
-    "Infinite Crystal Universe",
-    "Floating Flower Garden",
-    "Water Installations"
-  ],
   "tags": ["Digital Art", "Photogenic", "Date Spot"],
-  "itinerary": [],
-  "restaurants": ["Vegan Ramen UZU Tokyo"],
-  "cafes": [
-    "Café de teamLab Planets",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "You will walk barefoot and water goes up to your knees. Wear shorts or pants that can be rolled up.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of teamLab Planets in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary art attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.64938,
     "lng": 139.789728
-  },
-  "budgetBreakdown": {
-    "transport": 1000,
-    "tickets": 7600,
-    "food": 4200,
-    "cafe": 1800
   },
   "comfort": {
     "heatTolerance": 10,
@@ -101,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,teamlab/all?lock=1018",
   "transportOptions": {
     "train": 50
-  }
+  },
+  "highlights": ["teamLab Planets"],
+  "description": "teamLab Planets is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
 }

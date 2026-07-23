@@ -5,11 +5,9 @@
   "region": "Kanto",
   "categories": ["City", "Shopping", "Parks"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/960px-Skyscrapers_of_Shinjuku_2009_January.jpg",
-  "gallery": [],
-  "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
   "totalTripHours": 8,
   "budgetMin": 6000,
-  "budgetRecommended": 9000,
+  "budgetRecommended": 10000,
   "budgetMax": 14000,
   "walkingMin": 10000,
   "walkingSunMin": 4000,
@@ -39,55 +37,10 @@
     "winter": 9
   },
   "bestMonths": [3, 4, 9, 10, 11],
-  "reservation": "Highly recommended for dinners.",
-  "parking": "Available in major towers, very expensive.",
-  "highlights": [
-    "Shinjuku Gyoen",
-    "Kabukicho",
-    "Tokyo Metropolitan Government Building (Free View)"
-  ],
   "tags": ["Nightlife", "Shopping", "Views"],
-  "itinerary": [],
-  "restaurants": ["Omoide Yokocho"],
-  "cafes": ["Blue Bottle Coffee Shinjuku"],
-  "notes": "Shinjuku Station is a maze. Meet at the East Exit Studio Alta or South Exit.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Shinjuku in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary city attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 35.6937632,
     "lng": 139.7036319
-  },
-  "budgetBreakdown": {
-    "transport": 1000,
-    "tickets": 0,
-    "food": 6000,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 8,
@@ -97,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,shinjuku/all?lock=1026",
   "transportOptions": {
     "train": 40
-  }
+  },
+  "highlights": ["Shinjuku"],
+  "description": "Shinjuku , officially called Shinjuku City, is one of the 23 special wards of Tokyo."
 }

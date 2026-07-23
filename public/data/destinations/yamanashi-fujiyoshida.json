@@ -1,0 +1,80 @@
+{
+  "id": "yamanashi-fujiyoshida",
+  "name": "Fujiyoshida",
+  "prefecture": "Yamanashi",
+  "region": "Chubu",
+  "categories": ["History", "Nature", "Theme Park"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+  "gallery": [
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+  ],
+  "description": "Lying at Mt. Fuji's base, Fujiyoshida boasts the iconic Chureito Pagoda views, Fuji-Q Highland amusement rides, and historic shrines.",
+  "highlights": [
+    "Arakurayama Sengen Park (Chureito Pagoda)",
+    "Fuji-Q Highland",
+    "Kitaguchi Hongu Fuji Sengen Shrine",
+    "Kaneyama Onsen"
+  ],
+  "budgetMin": 5000,
+  "budgetMax": 16000,
+  "budgetRecommended": 10500,
+  "budgetBreakdown": {
+    "transport": 3500,
+    "tickets": 3000,
+    "food": 2500,
+    "cafe": 1500
+  },
+  "transportOptions": {
+    "train": 100,
+    "car": 90
+  },
+  "totalTripHours": 10,
+  "walkingMin": 80,
+  "walkingSunMin": 50,
+  "walkingShadeMin": 30,
+  "indoorPercent": 30,
+  "coordinates": {
+    "lat": 35.4853,
+    "lng": 138.8033
+  },
+  "comfort": {
+    "walkingIntensity": 2,
+    "heatTolerance": 8,
+    "rainFriendly": 5
+  },
+  "ratings": {
+    "overall": 9.4,
+    "couple": 9.2,
+    "summer": 8.5,
+    "winter": 8.8,
+    "rain": 6,
+    "food": 8.5,
+    "photography": 10,
+    "relaxation": 8.5,
+    "value": 8.4,
+    "uniqueness": 9.8
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 10,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [4, 5, 10, 11, 12],
+  "bestSeason": "Spring",
+  "weatherDependence": "medium",
+  "tags": ["Pagoda View", "Rollercoasters", "Fuji Base", "Photogenic"],
+  "reservation": "Recommended to book Fuji-Q passes in advance",
+  "parking": "Large paid lots at park and shrine entries",
+  "restaurants": ["Yoshida Udon Shops", "Fuji View Grill"],
+  "cafes": ["Chureito Tea House"],
+  "notes": "Chureito Pagoda offers one of Japan's most famous postcard views framing Mt. Fuji in cherry blossoms or red maple leaves.",
+  "schemaVersion": 2
+}

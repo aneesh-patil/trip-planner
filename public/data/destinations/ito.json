@@ -7,7 +7,7 @@
   "heroImage": "/images/ito_hero.jpg",
   "totalTripHours": 24,
   "budgetMin": 12000,
-  "budgetRecommended": 18000,
+  "budgetRecommended": 20000,
   "budgetMax": 28000,
   "budgetBreakdown": {
     "transport": 6000,
@@ -47,51 +47,11 @@
     "winter": 80
   },
   "bestMonths": [4, 5, 8, 10],
-  "bestSeason": "Summer for coast, Winter for Onsen",
-  "weatherDependence": "Moderate",
   "tags": ["Jogasaki Coast", "Seafood", "Hot Springs"],
-  "reservation": "Book ryokans in advance",
-  "parking": "Widely available",
-  "restaurants": ["Ito Marine Town Seafood", "Kaisen-don Ito"],
-  "cafes": ["Tokai Kan Cafe", "Jogasaki Ocean View Cafe"],
-  "notes": "A classic Izu Peninsula getaway, very accessible from Yokohama.",
-  "description": "Ito offers the quintessential Izu Peninsula experience. Soak in historic hot springs, marvel at the dramatic jagged cliffs of the Jogasaki Coast, and indulge in incredibly fresh local seafood.",
   "highlights": ["Jogasaki Coast", "Mount Omuro", "Tokai-kan Historic Hostel"],
   "coordinates": {
     "lat": 34.9734,
     "lng": 139.0924
   },
-  "comfort": {
-    "heatTolerance": 3,
-    "rainFriendly": 3,
-    "walkingIntensity": 3
-  },
-  "itineraries": [
-    {
-      "name": "Coastal Drama and Onsen",
-      "description": "Cliffs, ocean views, and relaxing hot springs.",
-      "steps": [
-        {
-          "time": "10:00",
-          "activity": "Hike the Jogasaki Coast and cross the Kadowakizaki Suspension Bridge."
-        },
-        {
-          "time": "12:30",
-          "activity": "Seafood lunch featuring fresh local catch."
-        },
-        {
-          "time": "14:00",
-          "activity": "Take the chairlift up Mount Omuro for 360-degree views of Izu and Mt. Fuji."
-        },
-        {
-          "time": "16:00",
-          "activity": "Explore the historic Tokai-kan hostel in central Ito."
-        },
-        {
-          "time": "17:30",
-          "activity": "Unwind in a local hot spring (onsen) before dinner."
-        }
-      ]
-    }
-  ]
+  "description": "Ito is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions."
 }

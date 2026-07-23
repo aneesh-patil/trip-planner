@@ -5,11 +5,9 @@
   "region": "Chubu",
   "categories": ["Castle", "History"],
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/960px-Matsumoto_Castle_Keep_Tower.jpg",
-  "gallery": [],
-  "description": "Historic mountain city famous for Matsumoto Castle, one of Japan's original historic castles.",
   "totalTripHours": 12,
   "budgetMin": 11600,
-  "budgetRecommended": 14600,
+  "budgetRecommended": 15600,
   "budgetMax": 19600,
   "walkingMin": 8000,
   "walkingSunMin": 4000,
@@ -39,85 +37,10 @@
     "winter": 6
   },
   "bestMonths": [6, 7, 8, 9, 10],
-  "reservation": "",
-  "parking": "Available",
-  "highlights": ["Matsumoto Castle", "Nawate Dori"],
   "tags": ["Historic", "Mountains"],
-  "itinerary": [],
-  "restaurants": [
-    "Matsumoto Traditional Dining",
-    "Local Nagano Specialty Restaurant",
-    "The Matsumoto Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Matsumoto",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "Long drive but rewarding",
-  "itineraries": [
-    {
-      "name": "Plan A: The Black Castle",
-      "description": "Focus on the historic samurai history of Matsumoto.",
-      "steps": [
-        {
-          "time": "11:00",
-          "activity": "Arrive in Matsumoto. Head straight to Matsumoto Castle, one of Japan's oldest."
-        },
-        {
-          "time": "13:00",
-          "activity": "Have Shinshu Soba for lunch, a local specialty."
-        },
-        {
-          "time": "14:30",
-          "activity": "Stroll along Nakamachi-dori, known for its historic black-and-white storehouses."
-        },
-        {
-          "time": "16:00",
-          "activity": "Wander Nawate-dori (Frog Street) for quirky shops and street food."
-        },
-        {
-          "time": "17:30",
-          "activity": "Visit a local sake brewery for tasting before dinner."
-        }
-      ]
-    },
-    {
-      "name": "Plan B: Art & Alps",
-      "description": "A cultural day featuring famous contemporary art and mountain views.",
-      "steps": [
-        {
-          "time": "10:30",
-          "activity": "Visit the Matsumoto City Museum of Art to see the permanent Yayoi Kusama exhibition."
-        },
-        {
-          "time": "13:00",
-          "activity": "Lunch at a trendy cafe near the museum district."
-        },
-        {
-          "time": "14:30",
-          "activity": "Take a short bus or taxi ride up to Alps Park."
-        },
-        {
-          "time": "16:00",
-          "activity": "Enjoy panoramic views of the Japan Alps and explore the nature trails."
-        },
-        {
-          "time": "18:00",
-          "activity": "Head back to town for a cozy dinner."
-        }
-      ]
-    }
-  ],
   "coordinates": {
     "lat": 36.2382047,
     "lng": 137.9687141
-  },
-  "budgetBreakdown": {
-    "transport": 5000,
-    "tickets": 1600,
-    "food": 6000,
-    "cafe": 2000
   },
   "comfort": {
     "heatTolerance": 9.8,
@@ -127,5 +50,7 @@
   "image": "https://loremflickr.com/1000/800/japan,matsumoto/all?lock=1007",
   "transportOptions": {
     "car": 210
-  }
+  },
+  "highlights": ["Matsumoto"],
+  "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions."
 }

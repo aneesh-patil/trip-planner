@@ -4,7 +4,7 @@
   "region": "Kanto",
   "categories": ["Shrine", "Park"],
   "tags": ["Giant Statue", "Record Breaking"],
-  "budgetRecommended": 6500,
+  "budgetRecommended": 7500,
   "ratings": {
     "overall": 7.6,
     "photography": 8.5,
@@ -23,26 +23,9 @@
     "lng": 140.2208
   },
   "heroImage": "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-  "gallery": [
-    "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-    "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-    "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg"
-  ],
-  "prefecture": "Kanagawa",
-  "description": "Discover Ushiku Daibutsu, a prominent destination in Kanagawa. With its rich mix of giant statue, record breaking, it's a highly recommended spot for a 8-hour getaway.",
-  "highlights": [
-    "Explore top-rated shrine locations",
-    "Enjoy regional specialties and local culture",
-    "Perfect for a active day out"
-  ],
+  "prefecture": "Ibaraki",
   "budgetMin": 3500,
   "budgetMax": 11500,
-  "budgetBreakdown": {
-    "transport": 2600,
-    "tickets": 1300,
-    "food": 1950,
-    "cafe": 650
-  },
   "totalTripHours": 8,
   "walkingMin": 10000,
   "walkingSunMin": 4000,
@@ -56,43 +39,18 @@
     "train": 100,
     "car": 80
   },
-  "restaurants": [
-    "Ushiku Daibutsu Traditional Dining",
-    "Local Kanagawa Specialty Restaurant",
-    "The Ushiku Grill & Izakaya"
-  ],
-  "cafes": [
-    "Café de Ushiku Daibutsu",
-    "Riverside Roasters",
-    "Station Matcha & Sweets"
-  ],
-  "notes": "A fantastic trip to Ushiku Daibutsu. Known for its giant statue and record breaking vibes, it offers a great escape with an overall score of 7.6.",
-  "itineraries": [
-    {
-      "name": "Classic Day Trip",
-      "description": "The most efficient way to see the highlights of Ushiku Daibutsu in one day.",
-      "steps": [
-        {
-          "time": "10:00 AM",
-          "activity": "Arrive at the main station and get oriented."
-        },
-        {
-          "time": "11:00 AM",
-          "activity": "Visit the primary shrine attraction."
-        },
-        {
-          "time": "1:00 PM",
-          "activity": "Grab a delicious regional lunch."
-        },
-        {
-          "time": "2:30 PM",
-          "activity": "Continue exploring the scenic sights."
-        },
-        {
-          "time": "4:30 PM",
-          "activity": "Relax at a local café before heading back."
-        }
-      ]
-    }
-  ]
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "highlights": ["Ushiku Daibutsu"],
+  "description": "Ushiku Daibutsu is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }
