@@ -12256,5 +12256,1322 @@
     "cafes": ["Port Building Cafe"],
     "notes": "Four-facility discount ticket available combining Port Building, Icebreaker Fuji, Aquarium, and Maritime Museum.",
     "schemaVersion": 2
+  },
+  {
+    "id": "edo-castle-tokyo",
+    "name": "Edo Castle Ruins (Imperial Palace)",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Castle", "History", "Landmark", "Park"],
+    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 2000,
+    "budgetRecommended": 4500,
+    "budgetMax": 9000,
+    "walkingMin": 4500,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 2500,
+    "indoorPercent": 60,
+    "ratings": {
+      "overall": 9.6,
+      "couple": 9.3,
+      "summer": 8.8,
+      "winter": 9.2,
+      "rain": 8.8,
+      "food": 8.5,
+      "photography": 9.8,
+      "relaxation": 9,
+      "value": 9.8,
+      "uniqueness": 9.7
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [3, 4, 5, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": [
+      "Shogunate Seat",
+      "Top 100 Castle",
+      "Fujimi-yagura",
+      "Imperial Gardens"
+    ],
+    "coordinates": {
+      "lat": 35.6852,
+      "lng": 139.7528
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 15
+    },
+    "highlights": [
+      "Fujimi-yagura Watchtower",
+      "Tenshudai Castle Keep Base",
+      "Otemon Gate & Moat",
+      "Ninomaru Garden"
+    ],
+    "description": "The historic seat of the Tokugawa Shogunate and current Imperial Palace, featuring massive cyclopean stone ramparts, historic watchtowers, and the Imperial Palace East Gardens.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 400,
+      "tickets": 0,
+      "food": 3100,
+      "cafe": 1000
+    },
+    "reservation": "Free admission to East Gardens; Imperial Palace Inner Grounds require advance household registration.",
+    "parking": "Paid parking structures near Tokyo Station and Marunouchi.",
+    "itineraries": [
+      {
+        "name": "Shogunate Heritage & Gardens Walk",
+        "description": "Explore massive stone ramparts and historic watchtowers of Tokugawa Shogunate headquarters.",
+        "steps": [
+          {
+            "time": "9:30 AM",
+            "activity": "Enter through the historic Otemon Gate into Imperial Palace East Gardens."
+          },
+          {
+            "time": "10:30 AM",
+            "activity": "Climb the Tenshudai (main keep base stone platform) for garden vistas."
+          },
+          {
+            "time": "11:30 AM",
+            "activity": "Admire the three-story Fujimi-yagura, one of the few surviving Edo-period watchtowers."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Stroll down Wadakura Fountain Park for a French bistro lunch."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Wadakura Dining Room", "Imperial Hotel Viking Sal"],
+    "cafes": ["Wadakura Fountain Park Cafe", "Palace Hotel Lounge"],
+    "notes": "Top 100 Castle of Japan #21. Free admission 5 days a week (closed Mondays and Fridays).",
+    "schemaVersion": 2
+  },
+  {
+    "id": "kawagoe-castle-saitama",
+    "name": "Kawagoe Castle Honmaru Goten",
+    "prefecture": "Saitama",
+    "region": "Kanto",
+    "categories": ["Castle", "History", "Architecture", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 8500,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 85,
+    "ratings": {
+      "overall": 9,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 8.8,
+      "rain": 9,
+      "food": 8.6,
+      "photography": 9.3,
+      "relaxation": 8.8,
+      "value": 9.2,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": ["Honmaru Goten", "Samurai Palace", "Top 100 Castle", "Little Edo"],
+    "coordinates": {
+      "lat": 35.9251,
+      "lng": 139.4935
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 9,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 45
+    },
+    "highlights": [
+      "Original 1848 Honmaru Goten Palace",
+      "Karo-no-ma (Council Room)",
+      "Tatami Grand Entrance",
+      "Little Edo Warehouse District (nearby)"
+    ],
+    "description": "Built in 1848, this rare structure is the only surviving original samurai lord's Honmaru Goten palace in eastern Japan, featuring tatami council chambers and garden verandas.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 700,
+      "tickets": 100,
+      "food": 3200,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required.",
+    "parking": "Free parking lot opposite Kawagoe City Museum.",
+    "itineraries": [
+      {
+        "name": "Kawagoe Samurai Palace & Little Edo Walk",
+        "description": "Tour Japan's rare surviving Honmaru Goten palace and historic merchant quarter.",
+        "steps": [
+          {
+            "time": "10:30 AM",
+            "activity": "Arrive at Hon-Kawagoe Station and bus 10 mins to Kawagoe Castle."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Walk the polished wooden corridors and Karo council room of Honmaru Goten."
+          },
+          {
+            "time": "12:30 PM",
+            "activity": "Savor eel unaju at a 150-year-old Kawagoe unagi restaurant."
+          },
+          {
+            "time": "2:00 PM",
+            "activity": "Explore the Kurazukuri warehouse zone and Toki no Kane bell tower."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Ogakiku Unagi", "Ichiya Kawagoe"],
+    "cafes": ["Kashya Yokocho Sweet Shop", "Elevato Coffee"],
+    "notes": "Top 100 Castle of Japan #19. Admission is only 100 JPY.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "sakura-castle-chiba",
+    "name": "Sakura Castle Park & Ruins",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": ["Castle", "History", "Nature", "Park"],
+    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 8500,
+    "walkingMin": 4500,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 2500,
+    "indoorPercent": 50,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 8.6,
+      "summer": 8.4,
+      "winter": 8.5,
+      "rain": 8.2,
+      "food": 8,
+      "photography": 9.2,
+      "relaxation": 9.1,
+      "value": 9.5,
+      "uniqueness": 8.8
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [3, 4, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "medium",
+    "tags": [
+      "Earthen Fortification",
+      "Dry Moats",
+      "Top 100 Castle",
+      "National Museum"
+    ],
+    "coordinates": {
+      "lat": 35.7208,
+      "lng": 140.2185
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 7,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 55,
+      "car": 45
+    },
+    "highlights": [
+      "Preserved Deep Dry Moats",
+      "Castle Keep Earthworks",
+      "National Museum of Japanese History",
+      "Cherry Blossom Moats"
+    ],
+    "description": "Constructed in 1611 by Doi Toshikatsu, Sakura Castle features impressive preserved earthen ramparts, deep dry moats, and over 1,100 cherry trees surrounding Rekihaku museum.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 900,
+      "tickets": 600,
+      "food": 2500,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required for castle park.",
+    "parking": "Free parking lot at Sakura Castle Park.",
+    "itineraries": [
+      {
+        "name": "Sakura Castle Earthworks & History Walk",
+        "description": "Hike deep dry moats and visit the National Museum of Japanese History.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Keisei Sakura Station and walk 15 mins to Sakura Castle Park."
+          },
+          {
+            "time": "10:30 AM",
+            "activity": "Explore the massive dry moats and earthen rampart ruins."
+          },
+          {
+            "time": "12:30 PM",
+            "activity": "Enjoy a traditional bento or soba lunch inside the park."
+          },
+          {
+            "time": "2:00 PM",
+            "activity": "Tour the National Museum of Japanese History located on the castle grounds."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Kaze no Mura Dining", "Sakura Soba-dokoro"],
+    "cafes": ["Rekihaku Museum Cafe"],
+    "notes": "Top 100 Castle of Japan #20. One of Kanto's finest cherry blossom viewing spots in early April.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "mito-castle-ibaraki",
+    "name": "Mito Castle Ruins & Kodokan",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": ["Castle", "History", "Education", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 3000,
+    "budgetRecommended": 5500,
+    "budgetMax": 9500,
+    "walkingMin": 4000,
+    "walkingSunMin": 1500,
+    "walkingShadeMin": 2500,
+    "indoorPercent": 75,
+    "ratings": {
+      "overall": 9,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 9,
+      "rain": 8.8,
+      "food": 8.4,
+      "photography": 9.4,
+      "relaxation": 8.8,
+      "value": 9.2,
+      "uniqueness": 9.2
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 7,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [2, 3, 4, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": [
+      "Mito Tokugawa",
+      "Kodokan School",
+      "Top 100 Castle",
+      "Otemon Gate"
+    ],
+    "coordinates": {
+      "lat": 36.3768,
+      "lng": 140.4782
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 70,
+      "car": 65
+    },
+    "highlights": [
+      "Restored 2020 Otemon Gate",
+      "Kodokan Clan School (1841)",
+      "Shinto-yagura Turret",
+      "Plum Blossom Gardens"
+    ],
+    "description": "The seat of the Mito Tokugawa family, featuring the restored wooden Otemon Gate, dry moat earthworks, and the 1841 Kodokan—Japan's largest Mito clan samurai school.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1500,
+      "tickets": 400,
+      "food": 2600,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required.",
+    "parking": "Paid parking lot at Kodokan and Mito Station.",
+    "itineraries": [
+      {
+        "name": "Mito Tokugawa Heritage & Kodokan Walk",
+        "description": "Tour the grand samurai school and walk the restored Mito Castle Otemon gate.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Mito Station and walk 8 mins to Kodokan samurai school."
+          },
+          {
+            "time": "11:30 AM",
+            "activity": "Walk through the newly restored wooden Otemon Castle Gate."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy Mito natto specialty dishes at a local restaurant."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Stroll to nearby Kairakuen Garden (one of Japan's Three Great Gardens)."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Mito Natto-ya", "Sazanka Dining"],
+    "cafes": ["Kodokan Teahouse", "Saza Coffee Mito Station"],
+    "notes": "Top 100 Castle of Japan #14. Beautiful plum blossoms bloom in Kodokan grounds every February-March.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "takeda-castle-yamanashi",
+    "name": "Tsutsujigasaki Castle (Takeda Shrine)",
+    "prefecture": "Yamanashi",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "Shrine", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 9000,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 70,
+    "ratings": {
+      "overall": 8.9,
+      "couple": 8.7,
+      "summer": 8.4,
+      "winter": 8.8,
+      "rain": 8.5,
+      "food": 8.8,
+      "photography": 9.3,
+      "relaxation": 8.8,
+      "value": 9.2,
+      "uniqueness": 9.2
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": [
+      "Takeda Shingen",
+      "Top 100 Castle",
+      "Moat Ruins",
+      "Treasure Museum"
+    ],
+    "coordinates": {
+      "lat": 35.6874,
+      "lng": 138.5772
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 90,
+      "car": 80
+    },
+    "highlights": [
+      "Original Stone Wall & Moats",
+      "Takeda Shrine Main Hall",
+      "Shingen-ko Treasure Museum",
+      "Princess Sanjo Well"
+    ],
+    "description": "The fortified residence of legendary Sengoku warlord Takeda Shingen, featuring original earthwork ramparts, triple moats, and Takeda Shrine.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1500,
+      "tickets": 300,
+      "food": 2400,
+      "cafe": 800
+    },
+    "reservation": "No reservation required.",
+    "parking": "Free parking lot at Takeda Shrine entrance.",
+    "itineraries": [
+      {
+        "name": "Takeda Shingen Stronghold Walk",
+        "description": "Explore warlord Shingen's castle moats and sample Yamanashi Houtou noodles.",
+        "steps": [
+          {
+            "time": "10:30 AM",
+            "activity": "Arrive at Kofu Station and bus 10 mins to Takeda Shrine."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Cross the moat bridge and explore original 16th-century stone walls."
+          },
+          {
+            "time": "12:30 PM",
+            "activity": "Visit the Treasure Museum displaying Shingen's battle armor and sword."
+          },
+          {
+            "time": "2:00 PM",
+            "activity": "Dine at Koshu Houtou Fudo near Kofu Station for flat iron-pot udon."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Koshu Houtou Fudo", "Kofu Torimotsu-ni"],
+    "cafes": ["Shingen-mochi Cafe", "Kofu Station Teahouse"],
+    "notes": "Top 100 Castle of Japan #24. Shingen-ko Festival held every April features 1,000 armor-clad samurai parade.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "hikone-castle-shiga",
+    "name": "Hikone Castle (National Treasure)",
+    "prefecture": "Shiga",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "National Treasure", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 3500,
+    "budgetRecommended": 7000,
+    "budgetMax": 12000,
+    "walkingMin": 4500,
+    "walkingSunMin": 1800,
+    "walkingShadeMin": 2700,
+    "indoorPercent": 75,
+    "ratings": {
+      "overall": 9.8,
+      "couple": 9.6,
+      "summer": 9,
+      "winter": 9.4,
+      "rain": 9,
+      "food": 9,
+      "photography": 9.9,
+      "relaxation": 9.2,
+      "value": 9.5,
+      "uniqueness": 9.9
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 9,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [3, 4, 5, 10, 11, 12],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": [
+      "National Treasure",
+      "Original Keep 1622",
+      "Hikonyan",
+      "Genkyuen Garden"
+    ],
+    "coordinates": {
+      "lat": 35.2764,
+      "lng": 136.2518
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 4
+    },
+    "transportOptions": {
+      "train": 110,
+      "car": 120
+    },
+    "highlights": [
+      "Original 1622 Three-Story Tenshu Keep",
+      "Tenbin-yagura Scales Turret",
+      "Genkyuen Feudal Garden",
+      "Hikonyan Mascot Show"
+    ],
+    "description": "Completed in 1622, Hikone Castle is one of Japan's five original surviving National Treasure keeps, overlooking Lake Biwa with pristine feudal turrets and Genkyuen garden.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1800,
+      "tickets": 800,
+      "food": 3400,
+      "cafe": 1000
+    },
+    "reservation": "No advance reservation required.",
+    "parking": "Paid parking lot at Hikone Castle Otemae.",
+    "itineraries": [
+      {
+        "name": "National Treasure Keep & Genkyuen Walk",
+        "description": "Climb the authentic 1622 wooden keep and stroll Genkyuen garden overlooking Lake Biwa.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Hikone Station and walk 10 mins to Hikone Castle."
+          },
+          {
+            "time": "10:30 AM",
+            "activity": "Climb the steep internal wooden ladders of the National Treasure Keep."
+          },
+          {
+            "time": "12:00 PM",
+            "activity": "Watch the daily Hikonyan mascot performance at the castle museum."
+          },
+          {
+            "time": "1:30 PM",
+            "activity": "Savor Omi Beef steak or sukiyaki lunch in Yumekyobashi Castle Road."
+          },
+          {
+            "time": "3:00 PM",
+            "activity": "Stroll around Genkyuen feudal garden reflecting the castle tower on its pond."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Omi Beef Senryu", "Hikone Yume-kyobashi Dining"],
+    "cafes": ["Genkyuen Tea House", "Hikonyan Sweet Cafe"],
+    "notes": "Top 100 Castle of Japan #50. Steep wooden stairs inside keep require sturdy footwear.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "gifu-castle-gifu",
+    "name": "Gifu Castle (Mt. Kinka)",
+    "prefecture": "Gifu",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "Mountain", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 3000,
+    "budgetRecommended": 6000,
+    "budgetMax": 10000,
+    "walkingMin": 4500,
+    "walkingSunMin": 1800,
+    "walkingShadeMin": 2700,
+    "indoorPercent": 70,
+    "ratings": {
+      "overall": 9.4,
+      "couple": 9.3,
+      "summer": 8.6,
+      "winter": 9,
+      "rain": 8.4,
+      "food": 8.6,
+      "photography": 9.7,
+      "relaxation": 8.8,
+      "value": 9.2,
+      "uniqueness": 9.6
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 8,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "medium",
+    "tags": [
+      "Oda Nobunaga",
+      "Mountain Fortress",
+      "Mt Kinka Ropeway",
+      "Top 100 Castle"
+    ],
+    "coordinates": {
+      "lat": 35.4339,
+      "lng": 136.7821
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 7,
+      "walkingIntensity": 4
+    },
+    "transportOptions": {
+      "train": 95,
+      "car": 110
+    },
+    "highlights": [
+      "Mt. Kinka Ropeway Ride",
+      "Top Deck Nagara River Panorama",
+      "Oda Nobunaga Residence Ruins",
+      "Kinka-zan Squirrel Village"
+    ],
+    "description": "Perched 329 meters atop Mt. Kinka, Gifu Castle was Oda Nobunaga's formidable mountain stronghold, offering panoramic views over the Nagara River and Nobi Plain.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1200,
+      "tickets": 1100,
+      "food": 2700,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required.",
+    "parking": "Paid parking lot at Gifu Park ropeway station base.",
+    "itineraries": [
+      {
+        "name": "Mt. Kinka Summit & Nobunaga Fortress Excursion",
+        "description": "Ride the ropeway to Oda Nobunaga's mountain summit castle.",
+        "steps": [
+          {
+            "time": "1:00 PM",
+            "activity": "Arrive at JR Gifu Station and bus 15 mins to Gifu Park."
+          },
+          {
+            "time": "1:30 PM",
+            "activity": "Ride the Mt. Kinka Ropeway to the mountain peak."
+          },
+          {
+            "time": "2:00 PM",
+            "activity": "Climb to Gifu Castle observation deck for 360-degree views of Nobi Plain."
+          },
+          {
+            "time": "4:00 PM",
+            "activity": "Enjoy Gifu sweetfish (Ayu) or Hida beef lunch in Gifu Park."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Kinka-zan Rest House", "Gifu Park Ayu Dining"],
+    "cafes": ["Ropeway Summit Cafe"],
+    "notes": "Top 100 Castle of Japan #39. Special night ropeway operates during summer weekends for night views.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "ueda-castle-nagano",
+    "name": "Ueda Castle Park",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "Landmark", "Park"],
+    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 9000,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 75,
+    "ratings": {
+      "overall": 9.1,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 8.8,
+      "rain": 8.8,
+      "food": 8.6,
+      "photography": 9.5,
+      "relaxation": 8.9,
+      "value": 9.3,
+      "uniqueness": 9.4
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [3, 4, 5, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": [
+      "Sanada Clan",
+      "Top 100 Castle",
+      "Cherry Blossoms",
+      "Yagura Turrets"
+    ],
+    "coordinates": {
+      "lat": 36.4035,
+      "lng": 138.2435
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 85,
+      "shinkansen": 75
+    },
+    "highlights": [
+      "Restored Yagura Turrets",
+      "Sanada Stone Moat Wall",
+      "Sanada Shrine",
+      "Thousands of Cherry Trees"
+    ],
+    "description": "Built in 1583 by Sanada Masayuki, this impregnable fortress famously repelled the massive Tokugawa army twice, featuring surviving corner turrets and Sanada Shrine.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1400,
+      "tickets": 300,
+      "food": 2300,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required.",
+    "parking": "Paid parking lot at Ueda Castle Park entrance.",
+    "itineraries": [
+      {
+        "name": "Sanada Warlord Heritage & Castle Walk",
+        "description": "Explore the legendary Sanada clan fortress and sample Shinshu Shinano Soba.",
+        "steps": [
+          {
+            "time": "10:30 AM",
+            "activity": "Arrive at Ueda Station (Hokuriku Shinkansen) and walk 12 mins to Ueda Castle."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Tour the South and North Yagura turrets and the massive Sanada Stone wall."
+          },
+          {
+            "time": "12:30 PM",
+            "activity": "Pay respects at Sanada Shrine inside the inner castle grounds."
+          },
+          {
+            "time": "1:30 PM",
+            "activity": "Enjoy famous Ueda Shinshu buckwheat soba noodles at a historic shop."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Ueda Soba-dokoro", "Shinshu Sanada Dining"],
+    "cafes": ["Ueda Castle Park Teahouse"],
+    "notes": "Top 100 Castle of Japan #27. Spectacular cherry blossom festival every mid-April.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "takato-castle-nagano",
+    "name": "Takato Castle Park",
+    "prefecture": "Nagano",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "Nature", "Park"],
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 3000,
+    "budgetRecommended": 6000,
+    "budgetMax": 10000,
+    "walkingMin": 4500,
+    "walkingSunMin": 2000,
+    "walkingShadeMin": 2500,
+    "indoorPercent": 40,
+    "ratings": {
+      "overall": 9.5,
+      "couple": 9.6,
+      "summer": 8.2,
+      "winter": 8,
+      "rain": 7.8,
+      "food": 8.4,
+      "photography": 9.9,
+      "relaxation": 9.2,
+      "value": 9.3,
+      "uniqueness": 9.6
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 10,
+      "summer": 7,
+      "autumn": 9,
+      "winter": 7
+    },
+    "bestMonths": [4, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "high",
+    "tags": [
+      "Sakura #1 Spot",
+      "Kohigan Cherry",
+      "Top 100 Castle",
+      "Bridge View"
+    ],
+    "coordinates": {
+      "lat": 35.8335,
+      "lng": 138.0628
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 6,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 120,
+      "car": 90
+    },
+    "highlights": [
+      "1,500 Kohigan Cherry Trees",
+      "Ohoribashi Bridge",
+      "Taikoyagura Drum Tower",
+      "Shinshu Alps Backcountry"
+    ],
+    "description": "Renowned as one of Japan's top three cherry blossom viewing spots, Takato Castle ruins feature 1,500 rare reddish Kohigan cherry trees frame over ancient stone moats.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1800,
+      "tickets": 500,
+      "food": 2700,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required.",
+    "parking": "Large temporary parking lots open during cherry blossom festival.",
+    "itineraries": [
+      {
+        "name": "Takato Sakura & Castle Moat Walk",
+        "description": "Experience Japan's legendary Kohigan cherry blossom tunnel above castle moats.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Ina-shi Station and bus 25 mins to Takato Castle Park."
+          },
+          {
+            "time": "10:30 AM",
+            "activity": "Walk across the curved Ohoribashi bridge shrouded in pink blossoms."
+          },
+          {
+            "time": "12:30 PM",
+            "activity": "Enjoy Takato Soba with spicy radish soup at a park teahouse."
+          },
+          {
+            "time": "2:00 PM",
+            "activity": "Explore the Taikoyagura drum tower and castle moat ramparts."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Takato Soba-dokoro", "Ina Valley Dining"],
+    "cafes": ["Takato Cherry Teahouse"],
+    "notes": "Top 100 Castle of Japan #28. Cherry blossoms bloom mid-to-late April.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "kakegawa-castle-shizuoka",
+    "name": "Kakegawa Castle & Ninomaru Goten",
+    "prefecture": "Shizuoka",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "National Treasure", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 3000,
+    "budgetRecommended": 5500,
+    "budgetMax": 9500,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 9,
+      "summer": 8.5,
+      "winter": 9,
+      "rain": 8.8,
+      "food": 8.6,
+      "photography": 9.5,
+      "relaxation": 8.9,
+      "value": 9.3,
+      "uniqueness": 9.4
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 7,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": [
+      "Authentic Wooden Keep",
+      "Ninomaru Goten",
+      "Top 100 Castle",
+      "Green Tea"
+    ],
+    "coordinates": {
+      "lat": 34.7758,
+      "lng": 138.0147
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 75,
+      "shinkansen": 60
+    },
+    "highlights": [
+      "Authentic 1994 Reconstructed Wooden Keep",
+      "Original Ninomaru Goten Palace",
+      "Kakegawa Tea House",
+      "Otemon Gate"
+    ],
+    "description": "Rebuilt in 1994 using traditional Japanese carpentry techniques, Kakegawa Castle is Japan's first authentically reconstructed wooden keep, featuring the original 1855 Ninomaru Goten palace.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1200,
+      "tickets": 410,
+      "food": 2800,
+      "cafe": 1090
+    },
+    "reservation": "No reservation required.",
+    "parking": "Paid parking lot near Kakegawa Castle park.",
+    "itineraries": [
+      {
+        "name": "Kakegawa Wooden Keep & Green Tea Walk",
+        "description": "Climb the authentic wooden keep and savor premium Shizuoka green tea.",
+        "steps": [
+          {
+            "time": "10:30 AM",
+            "activity": "Arrive at Kakegawa Station (Tokaido Shinkansen) and walk 8 mins to the castle."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Climb the traditional cypress wood steps of the reconstructed 1994 keep."
+          },
+          {
+            "time": "12:30 PM",
+            "activity": "Explore the original Ninomaru Goten samurai lord palace."
+          },
+          {
+            "time": "2:00 PM",
+            "activity": "Enjoy matcha and wagashi sweets at Ninomaru Tea House overlooking castle gardens."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Kakegawa Green Tea Dining", "Unagi Honpo Kakegawa"],
+    "cafes": ["Ninomaru Chashitsu", "Kakegawa Cha-bo"],
+    "notes": "Top 100 Castle of Japan #42. Ninomaru Goten is an Important Cultural Property.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "kanazawa-castle-ishikawa",
+    "name": "Kanazawa Castle Park",
+    "prefecture": "Ishikawa",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "Landmark", "Park"],
+    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 3000,
+    "budgetRecommended": 6500,
+    "budgetMax": 11000,
+    "walkingMin": 4500,
+    "walkingSunMin": 1800,
+    "walkingShadeMin": 2700,
+    "indoorPercent": 75,
+    "ratings": {
+      "overall": 9.7,
+      "couple": 9.6,
+      "summer": 8.8,
+      "winter": 9.5,
+      "rain": 9,
+      "food": 9.2,
+      "photography": 9.8,
+      "relaxation": 9.3,
+      "value": 9.5,
+      "uniqueness": 9.7
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 8,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": [
+      "Maeda Clan",
+      "Hishi Yagura",
+      "Kenrokuen Adjacent",
+      "Top 100 Castle"
+    ],
+    "coordinates": {
+      "lat": 36.5645,
+      "lng": 136.6592
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 9,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 150,
+      "shinkansen": 130
+    },
+    "highlights": [
+      "Hishi Yagura Diamond Turret",
+      "Gojukkoku Nagaya Storehouse",
+      "Gyokusen'inmaru Garden",
+      "Ishikawamon Gate"
+    ],
+    "description": "The magnificent seat of the powerful Maeda clan (Kaga Domain), featuring meticulously reconstructed wooden turrets, white lead tile roofs, and Gyokusen'inmaru feudal garden adjacent to Kenrokuen.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1800,
+      "tickets": 320,
+      "food": 3200,
+      "cafe": 1180
+    },
+    "reservation": "No reservation required.",
+    "parking": "Paid parking lot at Kenrokuen / Kanazawa Castle Park entrance.",
+    "itineraries": [
+      {
+        "name": "Kaga Domain Power & Kenrokuen Garden Walk",
+        "description": "Explore Maeda clan turrets and walk across to Kenrokuen Garden.",
+        "steps": [
+          {
+            "time": "9:30 AM",
+            "activity": "Arrive at Kanazawa Station (Hokuriku Shinkansen) and bus 10 mins to Ishikawamon."
+          },
+          {
+            "time": "10:00 AM",
+            "activity": "Tour inside the reconstructed Hishi Yagura and Gojukkoku Nagaya wooden storehouse."
+          },
+          {
+            "time": "12:00 PM",
+            "activity": "Savor Kaga Kaiseki or fresh Omicho Market kaisen-don lunch."
+          },
+          {
+            "time": "1:30 PM",
+            "activity": "Walk across the bridge directly into Kenrokuen Garden (Japan #1 Garden)."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Omicho Market Kaisen-don", "Kaga Cuisine Tsubajin"],
+    "cafes": ["Gyokusen'an Teahouse", "Kenrokuen Chaya"],
+    "notes": "Top 100 Castle of Japan #35. Beautiful night illumination of Gyokusen'inmaru garden on weekends.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "maruoka-castle-fukui",
+    "name": "Maruoka Castle (Original Keep 1576)",
+    "prefecture": "Fukui",
+    "region": "Chubu",
+    "categories": ["Castle", "History", "National Treasure", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 3000,
+    "budgetRecommended": 5500,
+    "budgetMax": 9500,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 75,
+    "ratings": {
+      "overall": 9.3,
+      "couple": 9,
+      "summer": 8.5,
+      "winter": 8.8,
+      "rain": 8.6,
+      "food": 8.4,
+      "photography": 9.6,
+      "relaxation": 8.8,
+      "value": 9.2,
+      "uniqueness": 9.8
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 10,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [3, 4, 5, 10, 11],
+    "bestSeason": "Spring",
+    "weatherDependence": "low",
+    "tags": [
+      "12 Original Keeps",
+      "Oldest Architectural Style",
+      "Stone Shingles",
+      "Mist Castle"
+    ],
+    "coordinates": {
+      "lat": 36.1554,
+      "lng": 136.2718
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 4
+    },
+    "transportOptions": {
+      "train": 160,
+      "shinkansen": 140
+    },
+    "highlights": [
+      "Original 1576 Two-Story Wooden Keep",
+      "Unique Stone Roof Shingles (Shaku-dani)",
+      "Steep 67-Degree Wooden Stairs",
+      "Mist Legend Park"
+    ],
+    "description": "Built in 1576, Maruoka Castle is one of Japan's 12 original surviving castle keeps and features the oldest architectural keep style in Japan, complete with rare stone roof tiles.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1800,
+      "tickets": 450,
+      "food": 2400,
+      "cafe": 850
+    },
+    "reservation": "No reservation required.",
+    "parking": "Free parking lot at Maruoka Castle Kasumi Park.",
+    "itineraries": [
+      {
+        "name": "Maruoka Original Keep & Kasumi Park Walk",
+        "description": "Climb Japan's oldest surviving keep style with stone roof shingles.",
+        "steps": [
+          {
+            "time": "11:00 AM",
+            "activity": "Arrive at Fukui Station (Hokuriku Shinkansen) and bus 40 mins to Maruoka Castle."
+          },
+          {
+            "time": "11:45 AM",
+            "activity": "Climb the steep 67-degree wooden stairs inside the 1576 original keep."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy Fukui Echizen soba noodles with grated daikon radish."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Stroll Kasumi Park surrounding the castle hill."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Maruoka Soba-dokoro", "Echizen Soba Kuraya"],
+    "cafes": ["Kasumi Castle Teahouse"],
+    "notes": "Top 100 Castle of Japan #36. Known as Kasumi-ga-jyo (Mist Castle) due to legend of fog concealing the tower from enemies.",
+    "schemaVersion": 2
   }
 ]

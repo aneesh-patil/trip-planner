@@ -1,0 +1,114 @@
+{
+  "id": "hikone-castle-shiga",
+  "name": "Hikone Castle (National Treasure)",
+  "prefecture": "Shiga",
+  "region": "Chubu",
+  "categories": ["Castle", "History", "National Treasure", "Landmark"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "totalTripHours": 4,
+  "budgetMin": 3500,
+  "budgetRecommended": 7000,
+  "budgetMax": 12000,
+  "walkingMin": 4500,
+  "walkingSunMin": 1800,
+  "walkingShadeMin": 2700,
+  "indoorPercent": 75,
+  "ratings": {
+    "overall": 9.8,
+    "couple": 9.6,
+    "summer": 9,
+    "winter": 9.4,
+    "rain": 9,
+    "food": 9,
+    "photography": 9.9,
+    "relaxation": 9.2,
+    "value": 9.5,
+    "uniqueness": 9.9
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 9,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 10,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [3, 4, 5, 10, 11, 12],
+  "bestSeason": "Spring",
+  "weatherDependence": "low",
+  "tags": [
+    "National Treasure",
+    "Original Keep 1622",
+    "Hikonyan",
+    "Genkyuen Garden"
+  ],
+  "coordinates": {
+    "lat": 35.2764,
+    "lng": 136.2518
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 4
+  },
+  "transportOptions": {
+    "train": 110,
+    "car": 120
+  },
+  "highlights": [
+    "Original 1622 Three-Story Tenshu Keep",
+    "Tenbin-yagura Scales Turret",
+    "Genkyuen Feudal Garden",
+    "Hikonyan Mascot Show"
+  ],
+  "description": "Completed in 1622, Hikone Castle is one of Japan's five original surviving National Treasure keeps, overlooking Lake Biwa with pristine feudal turrets and Genkyuen garden.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1800,
+    "tickets": 800,
+    "food": 3400,
+    "cafe": 1000
+  },
+  "reservation": "No advance reservation required.",
+  "parking": "Paid parking lot at Hikone Castle Otemae.",
+  "itineraries": [
+    {
+      "name": "National Treasure Keep & Genkyuen Walk",
+      "description": "Climb the authentic 1622 wooden keep and stroll Genkyuen garden overlooking Lake Biwa.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at Hikone Station and walk 10 mins to Hikone Castle."
+        },
+        {
+          "time": "10:30 AM",
+          "activity": "Climb the steep internal wooden ladders of the National Treasure Keep."
+        },
+        {
+          "time": "12:00 PM",
+          "activity": "Watch the daily Hikonyan mascot performance at the castle museum."
+        },
+        {
+          "time": "1:30 PM",
+          "activity": "Savor Omi Beef steak or sukiyaki lunch in Yumekyobashi Castle Road."
+        },
+        {
+          "time": "3:00 PM",
+          "activity": "Stroll around Genkyuen feudal garden reflecting the castle tower on its pond."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Omi Beef Senryu", "Hikone Yume-kyobashi Dining"],
+  "cafes": ["Genkyuen Tea House", "Hikonyan Sweet Cafe"],
+  "notes": "Top 100 Castle of Japan #50. Steep wooden stairs inside keep require sturdy footwear.",
+  "schemaVersion": 2
+}

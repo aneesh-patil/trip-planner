@@ -1,0 +1,105 @@
+{
+  "id": "takato-castle-nagano",
+  "name": "Takato Castle Park",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["Castle", "History", "Nature", "Park"],
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "totalTripHours": 4,
+  "budgetMin": 3000,
+  "budgetRecommended": 6000,
+  "budgetMax": 10000,
+  "walkingMin": 4500,
+  "walkingSunMin": 2000,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.6,
+    "summer": 8.2,
+    "winter": 8,
+    "rain": 7.8,
+    "food": 8.4,
+    "photography": 9.9,
+    "relaxation": 9.2,
+    "value": 9.3,
+    "uniqueness": 9.6
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 10,
+    "summer": 7,
+    "autumn": 9,
+    "winter": 7
+  },
+  "bestMonths": [4, 10, 11],
+  "bestSeason": "Spring",
+  "weatherDependence": "high",
+  "tags": ["Sakura #1 Spot", "Kohigan Cherry", "Top 100 Castle", "Bridge View"],
+  "coordinates": {
+    "lat": 35.8335,
+    "lng": 138.0628
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 6,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 120,
+    "car": 90
+  },
+  "highlights": [
+    "1,500 Kohigan Cherry Trees",
+    "Ohoribashi Bridge",
+    "Taikoyagura Drum Tower",
+    "Shinshu Alps Backcountry"
+  ],
+  "description": "Renowned as one of Japan's top three cherry blossom viewing spots, Takato Castle ruins feature 1,500 rare reddish Kohigan cherry trees frame over ancient stone moats.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1800,
+    "tickets": 500,
+    "food": 2700,
+    "cafe": 1000
+  },
+  "reservation": "No reservation required.",
+  "parking": "Large temporary parking lots open during cherry blossom festival.",
+  "itineraries": [
+    {
+      "name": "Takato Sakura & Castle Moat Walk",
+      "description": "Experience Japan's legendary Kohigan cherry blossom tunnel above castle moats.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at Ina-shi Station and bus 25 mins to Takato Castle Park."
+        },
+        {
+          "time": "10:30 AM",
+          "activity": "Walk across the curved Ohoribashi bridge shrouded in pink blossoms."
+        },
+        {
+          "time": "12:30 PM",
+          "activity": "Enjoy Takato Soba with spicy radish soup at a park teahouse."
+        },
+        {
+          "time": "2:00 PM",
+          "activity": "Explore the Taikoyagura drum tower and castle moat ramparts."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Takato Soba-dokoro", "Ina Valley Dining"],
+  "cafes": ["Takato Cherry Teahouse"],
+  "notes": "Top 100 Castle of Japan #28. Cherry blossoms bloom mid-to-late April.",
+  "schemaVersion": 2
+}

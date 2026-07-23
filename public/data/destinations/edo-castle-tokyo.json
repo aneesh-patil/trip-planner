@@ -1,0 +1,109 @@
+{
+  "id": "edo-castle-tokyo",
+  "name": "Edo Castle Ruins (Imperial Palace)",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Castle", "History", "Landmark", "Park"],
+  "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+  "totalTripHours": 4,
+  "budgetMin": 2000,
+  "budgetRecommended": 4500,
+  "budgetMax": 9000,
+  "walkingMin": 4500,
+  "walkingSunMin": 2000,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 60,
+  "ratings": {
+    "overall": 9.6,
+    "couple": 9.3,
+    "summer": 8.8,
+    "winter": 9.2,
+    "rain": 8.8,
+    "food": 8.5,
+    "photography": 9.8,
+    "relaxation": 9,
+    "value": 9.8,
+    "uniqueness": 9.7
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 10,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [3, 4, 5, 10, 11],
+  "bestSeason": "Spring",
+  "weatherDependence": "low",
+  "tags": [
+    "Shogunate Seat",
+    "Top 100 Castle",
+    "Fujimi-yagura",
+    "Imperial Gardens"
+  ],
+  "coordinates": {
+    "lat": 35.6852,
+    "lng": 139.7528
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 15
+  },
+  "highlights": [
+    "Fujimi-yagura Watchtower",
+    "Tenshudai Castle Keep Base",
+    "Otemon Gate & Moat",
+    "Ninomaru Garden"
+  ],
+  "description": "The historic seat of the Tokugawa Shogunate and current Imperial Palace, featuring massive cyclopean stone ramparts, historic watchtowers, and the Imperial Palace East Gardens.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 400,
+    "tickets": 0,
+    "food": 3100,
+    "cafe": 1000
+  },
+  "reservation": "Free admission to East Gardens; Imperial Palace Inner Grounds require advance household registration.",
+  "parking": "Paid parking structures near Tokyo Station and Marunouchi.",
+  "itineraries": [
+    {
+      "name": "Shogunate Heritage & Gardens Walk",
+      "description": "Explore massive stone ramparts and historic watchtowers of Tokugawa Shogunate headquarters.",
+      "steps": [
+        {
+          "time": "9:30 AM",
+          "activity": "Enter through the historic Otemon Gate into Imperial Palace East Gardens."
+        },
+        {
+          "time": "10:30 AM",
+          "activity": "Climb the Tenshudai (main keep base stone platform) for garden vistas."
+        },
+        {
+          "time": "11:30 AM",
+          "activity": "Admire the three-story Fujimi-yagura, one of the few surviving Edo-period watchtowers."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Stroll down Wadakura Fountain Park for a French bistro lunch."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Wadakura Dining Room", "Imperial Hotel Viking Sal"],
+  "cafes": ["Wadakura Fountain Park Cafe", "Palace Hotel Lounge"],
+  "notes": "Top 100 Castle of Japan #21. Free admission 5 days a week (closed Mondays and Fridays).",
+  "schemaVersion": 2
+}

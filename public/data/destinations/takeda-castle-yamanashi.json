@@ -1,0 +1,105 @@
+{
+  "id": "takeda-castle-yamanashi",
+  "name": "Tsutsujigasaki Castle (Takeda Shrine)",
+  "prefecture": "Yamanashi",
+  "region": "Chubu",
+  "categories": ["Castle", "History", "Shrine", "Landmark"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 2500,
+  "budgetRecommended": 5000,
+  "budgetMax": 9000,
+  "walkingMin": 3500,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 2300,
+  "indoorPercent": 70,
+  "ratings": {
+    "overall": 8.9,
+    "couple": 8.7,
+    "summer": 8.4,
+    "winter": 8.8,
+    "rain": 8.5,
+    "food": 8.8,
+    "photography": 9.3,
+    "relaxation": 8.8,
+    "value": 9.2,
+    "uniqueness": 9.2
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Takeda Shingen", "Top 100 Castle", "Moat Ruins", "Treasure Museum"],
+  "coordinates": {
+    "lat": 35.6874,
+    "lng": 138.5772
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 90,
+    "car": 80
+  },
+  "highlights": [
+    "Original Stone Wall & Moats",
+    "Takeda Shrine Main Hall",
+    "Shingen-ko Treasure Museum",
+    "Princess Sanjo Well"
+  ],
+  "description": "The fortified residence of legendary Sengoku warlord Takeda Shingen, featuring original earthwork ramparts, triple moats, and Takeda Shrine.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1500,
+    "tickets": 300,
+    "food": 2400,
+    "cafe": 800
+  },
+  "reservation": "No reservation required.",
+  "parking": "Free parking lot at Takeda Shrine entrance.",
+  "itineraries": [
+    {
+      "name": "Takeda Shingen Stronghold Walk",
+      "description": "Explore warlord Shingen's castle moats and sample Yamanashi Houtou noodles.",
+      "steps": [
+        {
+          "time": "10:30 AM",
+          "activity": "Arrive at Kofu Station and bus 10 mins to Takeda Shrine."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Cross the moat bridge and explore original 16th-century stone walls."
+        },
+        {
+          "time": "12:30 PM",
+          "activity": "Visit the Treasure Museum displaying Shingen's battle armor and sword."
+        },
+        {
+          "time": "2:00 PM",
+          "activity": "Dine at Koshu Houtou Fudo near Kofu Station for flat iron-pot udon."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Koshu Houtou Fudo", "Kofu Torimotsu-ni"],
+  "cafes": ["Shingen-mochi Cafe", "Kofu Station Teahouse"],
+  "notes": "Top 100 Castle of Japan #24. Shingen-ko Festival held every April features 1,000 armor-clad samurai parade.",
+  "schemaVersion": 2
+}

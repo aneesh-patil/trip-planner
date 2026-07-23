@@ -1,0 +1,110 @@
+{
+  "id": "gifu-castle-gifu",
+  "name": "Gifu Castle (Mt. Kinka)",
+  "prefecture": "Gifu",
+  "region": "Chubu",
+  "categories": ["Castle", "History", "Mountain", "Landmark"],
+  "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+  "totalTripHours": 4,
+  "budgetMin": 3000,
+  "budgetRecommended": 6000,
+  "budgetMax": 10000,
+  "walkingMin": 4500,
+  "walkingSunMin": 1800,
+  "walkingShadeMin": 2700,
+  "indoorPercent": 70,
+  "ratings": {
+    "overall": 9.4,
+    "couple": 9.3,
+    "summer": 8.6,
+    "winter": 9,
+    "rain": 8.4,
+    "food": 8.6,
+    "photography": 9.7,
+    "relaxation": 8.8,
+    "value": 9.2,
+    "uniqueness": 9.6
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "medium",
+  "tags": [
+    "Oda Nobunaga",
+    "Mountain Fortress",
+    "Mt Kinka Ropeway",
+    "Top 100 Castle"
+  ],
+  "coordinates": {
+    "lat": 35.4339,
+    "lng": 136.7821
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 7,
+    "walkingIntensity": 4
+  },
+  "transportOptions": {
+    "train": 95,
+    "car": 110
+  },
+  "highlights": [
+    "Mt. Kinka Ropeway Ride",
+    "Top Deck Nagara River Panorama",
+    "Oda Nobunaga Residence Ruins",
+    "Kinka-zan Squirrel Village"
+  ],
+  "description": "Perched 329 meters atop Mt. Kinka, Gifu Castle was Oda Nobunaga's formidable mountain stronghold, offering panoramic views over the Nagara River and Nobi Plain.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1200,
+    "tickets": 1100,
+    "food": 2700,
+    "cafe": 1000
+  },
+  "reservation": "No reservation required.",
+  "parking": "Paid parking lot at Gifu Park ropeway station base.",
+  "itineraries": [
+    {
+      "name": "Mt. Kinka Summit & Nobunaga Fortress Excursion",
+      "description": "Ride the ropeway to Oda Nobunaga's mountain summit castle.",
+      "steps": [
+        {
+          "time": "1:00 PM",
+          "activity": "Arrive at JR Gifu Station and bus 15 mins to Gifu Park."
+        },
+        {
+          "time": "1:30 PM",
+          "activity": "Ride the Mt. Kinka Ropeway to the mountain peak."
+        },
+        {
+          "time": "2:00 PM",
+          "activity": "Climb to Gifu Castle observation deck for 360-degree views of Nobi Plain."
+        },
+        {
+          "time": "4:00 PM",
+          "activity": "Enjoy Gifu sweetfish (Ayu) or Hida beef lunch in Gifu Park."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Kinka-zan Rest House", "Gifu Park Ayu Dining"],
+  "cafes": ["Ropeway Summit Cafe"],
+  "notes": "Top 100 Castle of Japan #39. Special night ropeway operates during summer weekends for night views.",
+  "schemaVersion": 2
+}

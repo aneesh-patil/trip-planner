@@ -1,0 +1,110 @@
+{
+  "id": "kakegawa-castle-shizuoka",
+  "name": "Kakegawa Castle & Ninomaru Goten",
+  "prefecture": "Shizuoka",
+  "region": "Chubu",
+  "categories": ["Castle", "History", "National Treasure", "Landmark"],
+  "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 3000,
+  "budgetRecommended": 5500,
+  "budgetMax": 9500,
+  "walkingMin": 3500,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 2300,
+  "indoorPercent": 80,
+  "ratings": {
+    "overall": 9.2,
+    "couple": 9,
+    "summer": 8.5,
+    "winter": 9,
+    "rain": 8.8,
+    "food": 8.6,
+    "photography": 9.5,
+    "relaxation": 8.9,
+    "value": 9.3,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 4,
+    "weekend": 7,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": [
+    "Authentic Wooden Keep",
+    "Ninomaru Goten",
+    "Top 100 Castle",
+    "Green Tea"
+  ],
+  "coordinates": {
+    "lat": 34.7758,
+    "lng": 138.0147
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 75,
+    "shinkansen": 60
+  },
+  "highlights": [
+    "Authentic 1994 Reconstructed Wooden Keep",
+    "Original Ninomaru Goten Palace",
+    "Kakegawa Tea House",
+    "Otemon Gate"
+  ],
+  "description": "Rebuilt in 1994 using traditional Japanese carpentry techniques, Kakegawa Castle is Japan's first authentically reconstructed wooden keep, featuring the original 1855 Ninomaru Goten palace.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1200,
+    "tickets": 410,
+    "food": 2800,
+    "cafe": 1090
+  },
+  "reservation": "No reservation required.",
+  "parking": "Paid parking lot near Kakegawa Castle park.",
+  "itineraries": [
+    {
+      "name": "Kakegawa Wooden Keep & Green Tea Walk",
+      "description": "Climb the authentic wooden keep and savor premium Shizuoka green tea.",
+      "steps": [
+        {
+          "time": "10:30 AM",
+          "activity": "Arrive at Kakegawa Station (Tokaido Shinkansen) and walk 8 mins to the castle."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Climb the traditional cypress wood steps of the reconstructed 1994 keep."
+        },
+        {
+          "time": "12:30 PM",
+          "activity": "Explore the original Ninomaru Goten samurai lord palace."
+        },
+        {
+          "time": "2:00 PM",
+          "activity": "Enjoy matcha and wagashi sweets at Ninomaru Tea House overlooking castle gardens."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Kakegawa Green Tea Dining", "Unagi Honpo Kakegawa"],
+  "cafes": ["Ninomaru Chashitsu", "Kakegawa Cha-bo"],
+  "notes": "Top 100 Castle of Japan #42. Ninomaru Goten is an Important Cultural Property.",
+  "schemaVersion": 2
+}
