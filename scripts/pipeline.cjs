@@ -72,7 +72,8 @@ async function runPipeline() {
   console.log("\x1b[36m=============================================\x1b[0m");
   console.log(`Input:  ${inputPath}`);
   console.log(`Output: ${outputPath}`);
-  if (isDryRun) console.log("\x1b[33mMode:   [DRY RUN - No files will be modified]\x1b[0m");
+  if (isDryRun)
+    console.log("\x1b[33mMode:   [DRY RUN - No files will be modified]\x1b[0m");
   if (isValidateOnly) console.log("\x1b[33mMode:   [VALIDATE ONLY]\x1b[0m");
   console.log("");
 
@@ -81,7 +82,10 @@ async function runPipeline() {
   try {
     rawData = JSON.parse(fs.readFileSync(inputPath, "utf8"));
   } catch (e) {
-    console.error(`\x1b[31m[ERROR] Failed to read input file (${inputPath}):\x1b[0m`, e.message);
+    console.error(
+      `\x1b[31m[ERROR] Failed to read input file (${inputPath}):\x1b[0m`,
+      e.message,
+    );
     process.exit(1);
   }
   console.log(`\x1b[32m✔ Loaded ${rawData.length} destinations.\x1b[0m\n`);
@@ -102,7 +106,9 @@ async function runPipeline() {
     // Check duplicate IDs
     if (dest.id) {
       if (seenIds.has(dest.id)) {
-        console.error(`  \x1b[31m❌ [${label}] Duplicate ID found: '${dest.id}'\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Duplicate ID found: '${dest.id}'\x1b[0m`,
+        );
         schemaErrors++;
         duplicateIdsCount++;
       }
@@ -112,7 +118,9 @@ async function runPipeline() {
     // Check required top-level fields
     for (const field of REQUIRED_FIELDS) {
       if (dest[field] === undefined || dest[field] === null) {
-        console.error(`  \x1b[31m❌ [${label}] Missing required field '${field}'\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Missing required field '${field}'\x1b[0m`,
+        );
         schemaErrors++;
       }
     }
@@ -122,19 +130,28 @@ async function runPipeline() {
       for (const rKey of RATING_KEYS) {
         const val = dest.ratings[rKey];
         if (val === undefined || typeof val !== "number") {
-          console.error(`  \x1b[31m❌ [${label}] Missing rating '${rKey}'\x1b[0m`);
+          console.error(
+            `  \x1b[31m❌ [${label}] Missing rating '${rKey}'\x1b[0m`,
+          );
           schemaErrors++;
         } else if (val < 1 || val > 10) {
-          console.warn(`  \x1b[33m⚠️  [${label}] Rating '${rKey}' out of bounds (1-10): ${val}\x1b[0m`);
+          console.warn(
+            `  \x1b[33m⚠️  [${label}] Rating '${rKey}' out of bounds (1-10): ${val}\x1b[0m`,
+          );
           schemaWarnings++;
         }
       }
     }
 
     // Check budget consistency
-    if (typeof dest.budgetMin === "number" && typeof dest.budgetMax === "number") {
+    if (
+      typeof dest.budgetMin === "number" &&
+      typeof dest.budgetMax === "number"
+    ) {
       if (dest.budgetMin > dest.budgetMax) {
-        console.error(`  \x1b[31m❌ [${label}] budgetMin (${dest.budgetMin}) > budgetMax (${dest.budgetMax})\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] budgetMin (${dest.budgetMin}) > budgetMax (${dest.budgetMax})\x1b[0m`,
+        );
         schemaErrors++;
       }
     }
@@ -143,10 +160,14 @@ async function runPipeline() {
     if (dest.coordinates) {
       const { lat, lng } = dest.coordinates;
       if (typeof lat !== "number" || typeof lng !== "number") {
-        console.error(`  \x1b[31m❌ [${label}] Coordinates must be numeric\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Coordinates must be numeric\x1b[0m`,
+        );
         schemaErrors++;
       } else if (lat < -90 || lat > 90 || lng < -180 || lng > 180) {
-        console.error(`  \x1b[31m❌ [${label}] Coordinates out of bounds: lat=${lat}, lng=${lng}\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Coordinates out of bounds: lat=${lat}, lng=${lng}\x1b[0m`,
+        );
         schemaErrors++;
       }
     } else {
@@ -159,28 +180,38 @@ async function runPipeline() {
     }
     if (dest.gallery) {
       if (dest.gallery.length < 3) {
-        console.warn(`  \x1b[33m⚠️  [${label}] Gallery has fewer than 3 images: ${dest.gallery.length}\x1b[0m`);
+        console.warn(
+          `  \x1b[33m⚠️  [${label}] Gallery has fewer than 3 images: ${dest.gallery.length}\x1b[0m`,
+        );
         schemaWarnings++;
       }
       const uniqueUrls = new Set(dest.gallery);
       if (uniqueUrls.size !== dest.gallery.length) {
-        console.warn(`  \x1b[33m⚠️  [${label}] Duplicate URLs detected in gallery\x1b[0m`);
+        console.warn(
+          `  \x1b[33m⚠️  [${label}] Duplicate URLs detected in gallery\x1b[0m`,
+        );
         schemaWarnings++;
       }
     }
   });
 
   if (schemaErrors > 0) {
-    console.error(`\n\x1b[31mStage 1 Failed with ${schemaErrors} schema error(s).\x1b[0m`);
+    console.error(
+      `\n\x1b[31mStage 1 Failed with ${schemaErrors} schema error(s).\x1b[0m`,
+    );
     process.exit(1);
   } else {
-    console.log(`\x1b[32m✔ Stage 1 Passed (${schemaWarnings} warning(s)).\x1b[0m\n`);
+    console.log(
+      `\x1b[32m✔ Stage 1 Passed (${schemaWarnings} warning(s)).\x1b[0m\n`,
+    );
   }
 
   if (isValidateOnly) {
     // Generate Completeness Report for Validate Only mode
     console.log("\x1b[36m=============================================\x1b[0m");
-    console.log("\x1b[36m        Completeness Report (Validation)      \x1b[0m");
+    console.log(
+      "\x1b[36m        Completeness Report (Validation)      \x1b[0m",
+    );
     console.log("\x1b[36m=============================================\x1b[0m");
     console.log(`Total Destinations Checked:  ${rawData.length}`);
     console.log(`Duplicate IDs:              ${duplicateIdsCount}`);
@@ -188,7 +219,9 @@ async function runPipeline() {
     console.log(`Missing Hero Images:        ${missingHeroCount}`);
     console.log(`Warnings Issued:            ${schemaWarnings}`);
     console.log("\x1b[36m=============================================\x1b[0m");
-    console.log("\x1b[32mValidation complete. Exiting (--validate-only).\x1b[0m");
+    console.log(
+      "\x1b[32mValidation complete. Exiting (--validate-only).\x1b[0m",
+    );
     return;
   }
 
@@ -197,13 +230,19 @@ async function runPipeline() {
   let geocodedCount = 0;
 
   for (const dest of rawData) {
-    if (dest.coordinates && typeof dest.coordinates.lat === "number" && typeof dest.coordinates.lng === "number") {
+    if (
+      dest.coordinates &&
+      typeof dest.coordinates.lat === "number" &&
+      typeof dest.coordinates.lng === "number"
+    ) {
       continue;
     }
 
     console.log(`  Geocoding missing coordinates for '${dest.name}'...`);
     try {
-      const q = encodeURIComponent(`${dest.name}, ${dest.prefecture || "Tokyo"}, Japan`);
+      const q = encodeURIComponent(
+        `${dest.name}, ${dest.prefecture || "Tokyo"}, Japan`,
+      );
       const url = `https://nominatim.openstreetmap.org/search?q=${q}&format=json&limit=1`;
       const res = await fetch(url, {
         headers: { "User-Agent": "TabiMap-Pipeline/2.1" },
@@ -215,20 +254,29 @@ async function runPipeline() {
           lat: parseFloat(results[0].lat),
           lng: parseFloat(results[0].lon),
         };
-        console.log(`  \x1b[32m✔ Geocoded '${dest.name}': ${dest.coordinates.lat}, ${dest.coordinates.lng}\x1b[0m`);
+        console.log(
+          `  \x1b[32m✔ Geocoded '${dest.name}': ${dest.coordinates.lat}, ${dest.coordinates.lng}\x1b[0m`,
+        );
         geocodedCount++;
         missingCoordsCount--; // Recovered
       } else {
-        console.warn(`  \x1b[33m⚠️ Could not geocode '${dest.name}', defaulting to Tokyo coordinates.\x1b[0m`);
+        console.warn(
+          `  \x1b[33m⚠️ Could not geocode '${dest.name}', defaulting to Tokyo coordinates.\x1b[0m`,
+        );
         dest.coordinates = { lat: 35.6762, lng: 139.6503 };
       }
     } catch (e) {
-      console.error(`  \x1b[31m❌ Geocoding error for '${dest.name}':\x1b[0m`, e.message);
+      console.error(
+        `  \x1b[31m❌ Geocoding error for '${dest.name}':\x1b[0m`,
+        e.message,
+      );
       dest.coordinates = { lat: 35.6762, lng: 139.6503 };
     }
     await delay(1500); // OpenStreetMap rate limit
   }
-  console.log(`\x1b[32m✔ Stage 2 Passed (${geocodedCount} newly geocoded).\x1b[0m\n`);
+  console.log(
+    `\x1b[32m✔ Stage 2 Passed (${geocodedCount} newly geocoded).\x1b[0m\n`,
+  );
 
   // 4. Stage 3: Data Normalization
   console.log("Stage 3: Data Normalization...");
@@ -261,7 +309,9 @@ async function runPipeline() {
       filledFieldsCount++;
     }
   });
-  console.log(`\x1b[32m✔ Stage 3 Passed (${normalizedBudgets} budgets normalized, ${filledFieldsCount} default fields populated).\x1b[0m\n`);
+  console.log(
+    `\x1b[32m✔ Stage 3 Passed (${normalizedBudgets} budgets normalized, ${filledFieldsCount} default fields populated).\x1b[0m\n`,
+  );
 
   // 5. Stage 4: Asset Validation
   console.log("Stage 4: Asset Validation...");
@@ -269,25 +319,34 @@ async function runPipeline() {
 
   rawData.forEach((d) => {
     if (!d.heroImage || d.heroImage.trim() === "") {
-      console.warn(`  \x1b[33m⚠️ Missing heroImage for '${d.name}' (${d.id})\x1b[0m`);
+      console.warn(
+        `  \x1b[33m⚠️ Missing heroImage for '${d.name}' (${d.id})\x1b[0m`,
+      );
       missingImages++;
     }
   });
-  console.log(`\x1b[32m✔ Stage 4 Passed (${missingImages} missing image warnings).\x1b[0m\n`);
+  console.log(
+    `\x1b[32m✔ Stage 4 Passed (${missingImages} missing image warnings).\x1b[0m\n`,
+  );
 
   // 6. Stage 5: Sort & Format Output
   console.log("Stage 5: Output Generation...");
   rawData.sort((a, b) => a.id.localeCompare(b.id));
 
   if (isDryRun) {
-    console.log("\x1b[33m[DRY RUN] Output would be written to:\x1b[0m", outputPath);
+    console.log(
+      "\x1b[33m[DRY RUN] Output would be written to:\x1b[0m",
+      outputPath,
+    );
     console.log(`Total valid destinations ready: ${rawData.length}`);
     return;
   }
 
   fs.writeFileSync(outputPath, JSON.stringify(rawData, null, 2) + "\n");
-  console.log(`\x1b[32m✔ Successfully wrote ${rawData.length} processed destinations to ${outputPath}\x1b[0m\n`);
-  
+  console.log(
+    `\x1b[32m✔ Successfully wrote ${rawData.length} processed destinations to ${outputPath}\x1b[0m\n`,
+  );
+
   // Print Completeness Report
   console.log("\x1b[36m=============================================\x1b[0m");
   console.log("\x1b[36m        TabiMap Data Completeness Report      \x1b[0m");

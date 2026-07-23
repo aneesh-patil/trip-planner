@@ -8,7 +8,10 @@ const path = require("path");
  * based on name similarity and coordinate distance.
  */
 
-const indexPath = path.join(__dirname, "../src/shared/data/destinations-index.json");
+const indexPath = path.join(
+  __dirname,
+  "../src/shared/data/destinations-index.json",
+);
 const indexData = JSON.parse(fs.readFileSync(indexPath, "utf8"));
 
 console.log("Scanning for duplicate names or close coordinates...");
@@ -34,20 +37,25 @@ for (let i = 0; i < indexData.length; i++) {
   const d1 = indexData[i];
   for (let j = i + 1; j < indexData.length; j++) {
     const d2 = indexData[j];
-    
+
     const name1 = d1.name.toLowerCase().replace(/[^a-z]/g, "");
     const name2 = d2.name.toLowerCase().replace(/[^a-z]/g, "");
     const isNameSimilar = name1.includes(name2) || name2.includes(name1);
-    
+
     let isCoordsClose = false;
     let dist = null;
     if (d1.coordinates && d2.coordinates) {
-      dist = getDistance(d1.coordinates.lat, d1.coordinates.lng, d2.coordinates.lat, d2.coordinates.lng);
+      dist = getDistance(
+        d1.coordinates.lat,
+        d1.coordinates.lng,
+        d2.coordinates.lat,
+        d2.coordinates.lng,
+      );
       if (dist < 1000) {
         isCoordsClose = true;
       }
     }
-    
+
     if (isNameSimilar || isCoordsClose) {
       console.log(`Potential Duplicate Match:`);
       console.log(`  1. [${d1.id}] "${d1.name}" (${d1.prefecture})`);
