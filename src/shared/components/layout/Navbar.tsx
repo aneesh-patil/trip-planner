@@ -70,7 +70,7 @@ export default function Navbar() {
     { name: "Destinations", path: "/destinations", icon: Map },
     { name: "Prefectures", path: "/visited-map", icon: CheckSquare },
     { name: "Compare", path: "/compare", icon: Settings },
-    { name: "Bucket List", path: "/favorites", icon: Bookmark },
+    { name: "Bucket List", path: "/my-trips?tab=bucketlist", icon: Bookmark },
   ];
 
   return (

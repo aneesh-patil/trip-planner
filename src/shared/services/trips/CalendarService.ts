@@ -58,3 +58,44 @@ export function downloadIcsFile(trip: Trip): void {
   link.click();
   document.body.removeChild(link);
 }
+
+export function generateGoogleCalendarUrl(trip: Trip): string {
+  const formatUrlDate = (dateStr: string) => {
+    return dateStr.replace(/-/g, "");
+  };
+
+  const getNextDay = (dateStr: string) => {
+    const date = new Date(dateStr);
+    date.setDate(date.getDate() + 1);
+    return date.toISOString().split("T")[0];
+  };
+
+  const startDate = trip.startDate || new Date().toISOString().split("T")[0];
+  const endDate = trip.endDate
+    ? getNextDay(trip.endDate)
+    : getNextDay(startDate);
+
+  const dates = `${formatUrlDate(startDate)}/${formatUrlDate(endDate)}`;
+  const text = encodeURIComponent(trip.title);
+
+  // Build deep link back to this specific trip
+  const tripLink = `${window.location.origin}/my-trips?tripId=${trip.id}`;
+
+  const stopsSummary = trip.stops
+    .map(
+      (s, idx) =>
+        `${idx + 1}. ${s.name}${s.arrivalTime ? ` (${s.arrivalTime})` : ""}`,
+    )
+    .join("\n");
+
+  const body = `Plan Link: ${tripLink}\n\nItinerary Overview:\n${stopsSummary}`;
+  const details = encodeURIComponent(body);
+
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${dates}&details=${details}`;
+}
+
+export function openGoogleCalendar(trip: Trip): void {
+  if (typeof window === "undefined") return;
+  const url = generateGoogleCalendarUrl(trip);
+  window.open(url, "_blank", "noopener,noreferrer");
+}

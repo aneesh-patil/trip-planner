@@ -1,5 +1,8 @@
 import { describe, it, expect } from "vitest";
-import { generateIcsContent } from "../CalendarService";
+import {
+  generateIcsContent,
+  generateGoogleCalendarUrl,
+} from "../CalendarService";
 import type { Trip } from "@/shared/types/trip";
 
 const mockTrip: Trip = {
@@ -32,5 +35,15 @@ describe("CalendarService Unit Tests", () => {
     expect(ics).toContain("DESCRIPTION:1. Shinjuku Gyoen (Arrives: 10:00 AM)");
     expect(ics).toContain("END:VEVENT");
     expect(ics).toContain("END:VCALENDAR");
+  });
+
+  it("generates a valid Google Calendar template URL with exclusive end date", () => {
+    const url = generateGoogleCalendarUrl(mockTrip);
+    expect(url).toContain(
+      "https://calendar.google.com/calendar/render?action=TEMPLATE",
+    );
+    expect(url).toContain("text=Tokyo%20Autumn%20Adventure");
+    expect(url).toContain("dates=20261101/20261106");
+    expect(url).toContain("details=Plan%20Link");
   });
 });

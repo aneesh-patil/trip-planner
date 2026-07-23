@@ -1,6 +1,9 @@
 import type { Trip } from "@/shared/types/trip";
 import { triggerPdfPrint } from "@/shared/services/trips/PdfExportService";
-import { downloadIcsFile } from "@/shared/services/trips/CalendarService";
+import {
+  downloadIcsFile,
+  openGoogleCalendar,
+} from "@/shared/services/trips/CalendarService";
 import { Button } from "@/shared/components/ui/button";
 import { Calendar, FileText, X } from "lucide-react";
 
@@ -37,6 +40,18 @@ export default function ExportDialog({ trip, onClose }: ExportDialogProps) {
           >
             <FileText className="w-5 h-5" />
             <span>Print or Save to PDF</span>
+          </Button>
+
+          <Button
+            onClick={() => {
+              openGoogleCalendar(trip);
+              onClose();
+            }}
+            variant="outline"
+            className="w-full justify-start gap-3 rounded-2xl h-12 font-bold border-slate-200 dark:border-slate-800"
+          >
+            <Calendar className="w-5 h-5 text-blue-600" />
+            <span>Add to Google Calendar</span>
           </Button>
 
           <Button

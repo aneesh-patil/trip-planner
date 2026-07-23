@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
@@ -16,6 +16,7 @@ import {
   Plus,
   Calendar,
   ListTodo,
+  Bookmark,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { Input } from "@/shared/components/ui/input";
@@ -24,6 +25,7 @@ export default function MyTrips() {
   const {
     visited,
     visitedPrefectures,
+    favorites,
     trips,
     addTrip,
     updateTrip,
@@ -33,15 +35,38 @@ export default function MyTrips() {
     reorderTripStops,
   } = useTripStore();
 
-  const [activeTab, setActiveTab] = useState<"planned" | "visited">("planned");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const paramTab = searchParams.get("tab");
+  const paramTripId = searchParams.get("tripId");
+
+  const [activeTab, setActiveTab] = useState<
+    "planned" | "bucketlist" | "visited"
+  >("planned");
   const [selectedTripId, setSelectedTripId] = useState<string | null>(null);
   const [isAddingTrip, setIsAddingTrip] = useState(false);
   const [visitedSearchQuery, setVisitedSearchQuery] = useState("");
+
+  useEffect(() => {
+    if (
+      paramTab === "bucketlist" ||
+      paramTab === "visited" ||
+      paramTab === "planned"
+    ) {
+      setActiveTab(paramTab);
+    }
+    if (paramTripId) {
+      setSelectedTripId(paramTripId);
+    }
+  }, [paramTab, paramTripId]);
 
   const allDestinations = getDestinationList() as Destination[];
 
   const visitedDestinations = allDestinations.filter((d) =>
     visited.includes(d.id),
+  );
+
+  const favoriteDestinations = allDestinations.filter((d) =>
+    favorites.includes(d.id),
   );
 
   const filteredVisited = visitedDestinations.filter(
@@ -132,7 +157,10 @@ export default function MyTrips() {
       {/* Tabs Switcher */}
       <div className="flex gap-4 border-b border-slate-200 dark:border-slate-800 mb-8">
         <button
-          onClick={() => setActiveTab("planned")}
+          onClick={() => {
+            setActiveTab("planned");
+            setSearchParams({});
+          }}
           className={`pb-4 px-2 font-bold text-sm tracking-wide transition-all border-b-2 ${
             activeTab === "planned"
               ? "border-emerald-500 text-slate-900 dark:text-white"
@@ -145,7 +173,26 @@ export default function MyTrips() {
           </div>
         </button>
         <button
-          onClick={() => setActiveTab("visited")}
+          onClick={() => {
+            setActiveTab("bucketlist");
+            setSearchParams({ tab: "bucketlist" });
+          }}
+          className={`pb-4 px-2 font-bold text-sm tracking-wide transition-all border-b-2 ${
+            activeTab === "bucketlist"
+              ? "border-emerald-500 text-slate-900 dark:text-white"
+              : "border-transparent text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+          }`}
+        >
+          <div className="flex items-center gap-1.5">
+            <Bookmark className="w-4 h-4" />
+            <span>Bucket List ({favorites.length})</span>
+          </div>
+        </button>
+        <button
+          onClick={() => {
+            setActiveTab("visited");
+            setSearchParams({ tab: "visited" });
+          }}
           className={`pb-4 px-2 font-bold text-sm tracking-wide transition-all border-b-2 ${
             activeTab === "visited"
               ? "border-emerald-500 text-slate-900 dark:text-white"
@@ -202,6 +249,42 @@ export default function MyTrips() {
                   onSelect={(id) => setSelectedTripId(id)}
                   onDelete={(id) => deleteTrip(id)}
                 />
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Bucket List Tab */}
+      {activeTab === "bucketlist" && (
+        <div className="space-y-6">
+          <div className="flex justify-between items-center">
+            <h2 className="text-2xl font-black text-slate-900 dark:text-white">
+              Your Bucket List
+            </h2>
+          </div>
+
+          {favoriteDestinations.length === 0 ? (
+            <div className="text-center py-20 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 max-w-2xl mx-auto">
+              <Bookmark className="w-16 h-16 mx-auto text-slate-300 dark:text-slate-700 mb-6" />
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+                Your Bucket List is empty
+              </h3>
+              <p className="text-slate-500 dark:text-slate-400 text-sm max-w-md mx-auto mb-8 leading-relaxed">
+                Explore our curated destinations and tap the bookmark icon to
+                save places you would like to visit later.
+              </p>
+              <Link to="/destinations">
+                <Button className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-bold px-8 shadow-md">
+                  <Sparkles className="w-4 h-4 mr-2" />
+                  Explore Destinations
+                </Button>
+              </Link>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {favoriteDestinations.map((dest) => (
+                <DestinationCard key={dest.id} destination={dest} />
               ))}
             </div>
           )}

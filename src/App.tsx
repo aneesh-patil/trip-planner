@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { AuthProvider } from "./shared/hooks/useAuth";
 import { TripStoreProvider } from "./shared/hooks/useTripStore";
@@ -6,7 +11,6 @@ import Navbar from "./shared/components/layout/Navbar";
 import Footer from "./shared/components/layout/Footer";
 const Home = lazy(() => import("./features/home/Home"));
 const Destinations = lazy(() => import("./features/destinations/Destinations"));
-const Favorites = lazy(() => import("./features/favorites/Favorites"));
 import { ErrorBoundary } from "./shared/components/layout/ErrorBoundary";
 import { Toaster } from "sonner";
 
@@ -48,7 +52,12 @@ function App() {
                       element={<DestinationDetails />}
                     />
                     <Route path="/compare" element={<Compare />} />
-                    <Route path="/favorites" element={<Favorites />} />
+                    <Route
+                      path="/favorites"
+                      element={
+                        <Navigate to="/my-trips?tab=bucketlist" replace />
+                      }
+                    />
                     <Route path="/my-trips" element={<MyTrips />} />
                     <Route
                       path="/visited-map"
