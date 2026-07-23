@@ -1,9 +1,14 @@
 import { useState } from "react";
 import type { Trip, TripStop } from "@/shared/types/trip";
 import ItineraryPlanner from "./components/ItineraryPlanner";
-import ExportDialog from "./components/ExportDialog";
 import { Button } from "@/shared/components/ui/button";
-import { ArrowLeft, Edit3, Share2 } from "lucide-react";
+import { ArrowLeft, Edit3, Share2, Calendar, FileText } from "lucide-react";
+import {
+  downloadIcsFile,
+  openGoogleCalendar,
+} from "@/shared/services/trips/CalendarService";
+import { triggerPdfPrint } from "@/shared/services/trips/PdfExportService";
+import { toast } from "sonner";
 
 interface TripDetailsProps {
   trip: Trip;
@@ -25,7 +30,7 @@ export default function TripDetails({
   const [journal, setJournal] = useState(trip.journalNotes || "");
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [titleInput, setTitleInput] = useState(trip.title);
-  const [showExport, setShowExport] = useState(false);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   const handleSaveTitle = () => {
     if (titleInput.trim() !== "") {
@@ -36,6 +41,12 @@ export default function TripDetails({
 
   const handleSaveJournal = () => {
     onUpdateTrip({ journalNotes: journal });
+  };
+
+  const handleShareTrip = () => {
+    const tripLink = `${window.location.origin}/my-trips?tripId=${trip.id}`;
+    navigator.clipboard.writeText(tripLink);
+    toast.success("Trip link copied to clipboard!");
   };
 
   return (
@@ -88,13 +99,71 @@ export default function TripDetails({
           </div>
         </div>
 
-        <Button
-          onClick={() => setShowExport(true)}
-          className="bg-slate-900 hover:bg-slate-850 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white rounded-full font-bold px-6 inline-flex items-center gap-2 self-stretch md:self-auto justify-center"
-        >
-          <Share2 className="w-4 h-4" />
-          <span>Export Itinerary</span>
-        </Button>
+        <div className="flex items-center gap-2 self-stretch md:self-auto justify-end">
+          {/* Calendar Exporter Popover */}
+          <div className="relative">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setIsCalendarOpen(!isCalendarOpen)}
+              className="rounded-full border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
+            >
+              <Calendar className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+            </Button>
+
+            {isCalendarOpen && (
+              <>
+                {/* Backdrop guard to close popover */}
+                <div
+                  className="fixed inset-0 z-40"
+                  onClick={() => setIsCalendarOpen(false)}
+                />
+                <div className="absolute right-0 mt-2 w-64 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-2 shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                  <button
+                    onClick={() => {
+                      openGoogleCalendar(trip);
+                      setIsCalendarOpen(false);
+                    }}
+                    className="flex items-center gap-3 w-full p-2.5 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-left text-sm font-semibold text-slate-800 dark:text-slate-200 transition-colors"
+                  >
+                    <Calendar className="w-4 h-4 text-blue-600" />
+                    <span>Add to Google Calendar</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      downloadIcsFile(trip);
+                      setIsCalendarOpen(false);
+                    }}
+                    className="flex items-center gap-3 w-full p-2.5 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-left text-sm font-semibold text-slate-800 dark:text-slate-200 transition-colors"
+                  >
+                    <Calendar className="w-4 h-4 text-purple-600" />
+                    <span>Export to Calendar (.ics)</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      triggerPdfPrint();
+                      setIsCalendarOpen(false);
+                    }}
+                    className="flex items-center gap-3 w-full p-2.5 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-left text-sm font-semibold text-slate-800 dark:text-slate-200 transition-colors"
+                  >
+                    <FileText className="w-4 h-4 text-emerald-600" />
+                    <span>Print or Save to PDF</span>
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Share Button */}
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={handleShareTrip}
+            className="rounded-full border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <Share2 className="w-5 h-5 text-slate-600 dark:text-slate-400" />
+          </Button>
+        </div>
       </div>
 
       {/* Main Grid */}
@@ -134,10 +203,6 @@ export default function TripDetails({
           </Button>
         </div>
       </div>
-
-      {showExport && (
-        <ExportDialog trip={trip} onClose={() => setShowExport(false)} />
-      )}
     </div>
   );
 }
