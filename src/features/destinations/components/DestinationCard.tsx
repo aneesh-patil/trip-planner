@@ -63,6 +63,8 @@ export default function DestinationCard({
         <img
           src={destination.heroImage}
           alt={destination.name}
+          loading="lazy"
+          decoding="async"
           className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${visited ? "grayscale opacity-80" : ""}`}
         />
         {visited && (

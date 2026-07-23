@@ -288,6 +288,7 @@ export default function DestinationDetails() {
         <img
           src={destination.heroImage}
           alt={destination.name}
+          decoding="async"
           onError={(e) => {
             if (wikiSummary?.leadImage) {
               (e.currentTarget as HTMLImageElement).src = wikiSummary.leadImage;
