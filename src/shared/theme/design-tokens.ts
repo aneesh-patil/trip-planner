@@ -23,6 +23,12 @@ export const designTokens = {
     modal:
       "0 20px 25px -5px rgb(0 0 0 / 0.15), 0 8px 10px -6px rgb(0 0 0 / 0.15)",
   },
+  colors: {
+    success: "#10b981",
+    warning: "#f59e0b",
+    danger: "#ef4444",
+    info: "#3b82f6",
+  },
   typography: {
     hero: "text-[48px] font-black leading-tight tracking-tight",
     sectionTitle: "text-[32px] font-extrabold leading-snug",

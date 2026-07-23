@@ -58,7 +58,7 @@ export default function DestinationCard({
       : undefined;
 
   return (
-    <Card className="overflow-hidden flex flex-col h-full group hover:shadow-lg transition-all duration-300 border-slate-200 dark:border-slate-800">
+    <Card className="overflow-hidden flex flex-col h-full group rounded-card shadow-card hover:shadow-hover transition-all duration-300 border-slate-200 dark:border-slate-800">
       <div className="relative h-56 overflow-hidden">
         <img
           src={destination.heroImage}
