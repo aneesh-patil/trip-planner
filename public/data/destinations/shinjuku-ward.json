@@ -51,6 +51,51 @@
   "transportOptions": {
     "train": 40
   },
-  "highlights": ["Shinjuku"],
-  "description": "Shinjuku , officially called Shinjuku City, is one of the 23 special wards of Tokyo."
+  "highlights": [
+    "Shinjuku Gyoen",
+    "Kabukicho",
+    "Tokyo Metropolitan Government Building (Free View)"
+  ],
+  "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 0,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "reservation": "Highly recommended for dinners.",
+  "parking": "Available in major towers, very expensive.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Shinjuku in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Omoide Yokocho"],
+  "cafes": ["Blue Bottle Coffee Shinjuku"],
+  "notes": "Shinjuku Station is a maze. Meet at the East Exit Studio Alta or South Exit.",
+  "schemaVersion": 2
 }

@@ -49,7 +49,62 @@
     "autumn": 4,
     "winter": 4
   },
-  "highlights": ["Oze National Park"],
+  "highlights": [
+    "Explore top-rated nature locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
   "description": "Oze National Park , is an area consisting of open greenland in Fukushima, Tochigi, Gunma and Niigata Prefectures in Japan. The park is 372 km2 in area and is the 29th national park in Japan.",
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg"
+  ],
+  "budgetBreakdown": {
+    "transport": 3200,
+    "tickets": 0,
+    "food": 2400,
+    "cafe": 800
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Oze National Park in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary nature attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Oze National Park Traditional Dining",
+    "Local Kanagawa Specialty Restaurant",
+    "The Oze Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Oze National Park",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Oze National Park. Known for its hiking and marshlands vibes, it offers a great escape with an overall score of 8.8.",
+  "schemaVersion": 2
 }

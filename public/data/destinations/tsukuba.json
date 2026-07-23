@@ -52,6 +52,81 @@
     "train": 120,
     "car": 150
   },
-  "highlights": ["Mt. Tsukuba"],
-  "description": "Mt. Tsukuba is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions."
+  "highlights": ["Tsukubasan Shrine", "Ropeway"],
+  "description": "Mt. Tsukuba is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 5000,
+    "tickets": 0,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "reservation": "",
+  "parking": "Yes",
+  "itineraries": [
+    {
+      "name": "Plan A: The Twin Peak Hike",
+      "description": "A moderately challenging hike to the summits for incredible Kanto Plain views.",
+      "steps": [
+        {
+          "time": "09:00",
+          "activity": "Take the Tsukuba Express, then a bus to the Tsukubasan Shrine."
+        },
+        {
+          "time": "10:00",
+          "activity": "Take the Cable Car up to Miyukigahara (the plateau between peaks)."
+        },
+        {
+          "time": "11:00",
+          "activity": "Hike to the summit of Mt. Nantai, then traverse to Mt. Nyotai."
+        },
+        {
+          "time": "13:30",
+          "activity": "Enjoy a bowl of Tsukuba Udon at the mountaintop restaurant."
+        },
+        {
+          "time": "15:00",
+          "activity": "Take the Ropeway down to the Tsutsujigaoka station."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Science & Shrines",
+      "description": "Mix the natural beauty of the shrine with Tsukuba's famous Space Center.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Visit the JAXA Tsukuba Space Center. See the rocket displays."
+        },
+        {
+          "time": "12:30",
+          "activity": "Lunch in Tsukuba city center."
+        },
+        {
+          "time": "14:00",
+          "activity": "Take the bus to Tsukubasan Shrine and explore the ancient grounds."
+        },
+        {
+          "time": "15:30",
+          "activity": "Take the cable car up for a quick panoramic view without the hiking."
+        },
+        {
+          "time": "17:00",
+          "activity": "Relax at an onsen near the base of the mountain."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Mt. Tsukuba Traditional Dining",
+    "Local Ibaraki Specialty Restaurant",
+    "The Mt. Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Mt. Tsukuba",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "Use ropeway to save time",
+  "schemaVersion": 2
 }

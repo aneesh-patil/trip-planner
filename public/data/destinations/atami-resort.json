@@ -53,6 +53,73 @@
     "shinkansen": 45,
     "car": 90
   },
-  "highlights": ["Atami"],
-  "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions."
+  "highlights": ["Sun Beach", "Atami Castle", "Kiunkaku"],
+  "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 5400,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "reservation": "Essential during summer and fireworks days.",
+  "parking": "Limited near the beach.",
+  "itineraries": [
+    {
+      "name": "Plan A: Seaside & Art",
+      "description": "A mix of ocean views and world-class museums.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Arrive in Atami. Take the bus to the spectacular MOA Museum of Art."
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch near Atami Sun Beach, enjoying fresh local seafood."
+        },
+        {
+          "time": "14:30",
+          "activity": "Take the ropeway up to Atami Castle for panoramic bay views."
+        },
+        {
+          "time": "16:00",
+          "activity": "Explore the retro shopping streets near the station and eat onsen manju."
+        },
+        {
+          "time": "17:30",
+          "activity": "Take a quick dip in a public bath before taking the Shinkansen home."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Retro Atami Vibe",
+      "description": "Focus on the nostalgic Showa-era atmosphere of this classic resort town.",
+      "steps": [
+        {
+          "time": "10:30",
+          "activity": "Visit Kiunkaku, a gorgeous former ryokan loved by Japanese literary giants."
+        },
+        {
+          "time": "12:30",
+          "activity": "Eat a classic Japanese curry or omurice at a retro Kissaten (coffee shop)."
+        },
+        {
+          "time": "14:00",
+          "activity": "Visit Kinomiya Shrine to see the 2,000-year-old sacred camphor tree."
+        },
+        {
+          "time": "16:00",
+          "activity": "Stroll along the oceanfront and find a quiet day-use hot spring."
+        },
+        {
+          "time": "18:00",
+          "activity": "Dinner at a local izakaya in the old town."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Atami Osakana Shokudo", "Restaurant Scott"],
+  "cafes": ["Café RoCA", "Atami Pudding"],
+  "notes": "Check the schedule for Atami's year-round fireworks displays!",
+  "schemaVersion": 2
 }

@@ -51,7 +51,62 @@
     "autumn": 4,
     "winter": 4
   },
-  "highlights": ["Shizuoka City"],
+  "highlights": [
+    "Explore top-rated city locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
   "description": "Shizuoka is the capital city of Shizuoka Prefecture, Japan, and the prefecture's second-largest city in both population and area. It has been populated since prehistoric times. As of 1 September 2023, the city had an estimated population of 677,867 in 106,087 households, and a population density of 480 inhabitants per square kilometre (1,200/sq mi).",
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg"
+  ],
+  "budgetBreakdown": {
+    "transport": 3200,
+    "tickets": 1600,
+    "food": 2400,
+    "cafe": 800
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Shizuoka City in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Shizuoka City Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Shizuoka Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Shizuoka City",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Shizuoka City. Known for its green tea and castle ruins vibes, it offers a great escape with an overall score of 8.",
+  "schemaVersion": 2
 }

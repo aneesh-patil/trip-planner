@@ -52,8 +52,49 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Akasaka (Minato)"],
-    "description": "Minato is a special ward of Tokyo, Japan. It is also called Minato City in English."
+    "highlights": ["Hie Shrine", "Tokyo Midtown (nearby)", "TBS Studio area"],
+    "description": "An upscale commercial and residential district with excellent dining, high-end hotels, and Hie Shrine.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 1600,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Required for nice dinners.",
+    "parking": "Expensive.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Akasaka (Minato) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Akasaka Matsubaya", "Kobe Beef 511"],
+    "cafes": ["Aoyama Flower Market Tea House"],
+    "notes": "Hie Shrine has a beautiful torii gate tunnel similar to Fushimi Inari in Kyoto.",
+    "schemaVersion": 2
   },
   {
     "id": "akihabara-chiyoda",
@@ -108,8 +149,49 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Akihabara (Chiyoda)"],
-    "description": "Akihabara is a neighborhood in the Chiyoda ward of Tokyo, Japan, generally considered to be the area surrounding Akihabara Station. This area is part of the Sotokanda (外神田) and Kanda-Sakumachō districts of Chiyoda. There is an administrative district called Akihabara, located north of Akihabara Electric Town surrounding Akihabara Neribei Park."
+    "highlights": ["Electric Town", "Maid Cafes", "Radio Kaikan"],
+    "description": "Akihabara is a neighborhood in the Chiyoda ward of Tokyo, Japan, generally considered to be the area surrounding Akihabara Station. This area is part of the Sotokanda (外神田) and Kanda-Sakumachō districts of Chiyoda. There is an administrative district called Akihabara, located north of Akihabara Electric Town surrounding Akihabara Neribei Park.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Required for popular maid cafes.",
+    "parking": "Extremely difficult and expensive.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Akihabara (Chiyoda) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["GoGo Curry", "Gyu-Kaku"],
+    "cafes": ["Maidreamin"],
+    "notes": "Sunday afternoons have a pedestrian paradise on Chuo-dori.",
+    "schemaVersion": 2
   },
   {
     "id": "asakusa-taito",
@@ -164,8 +246,53 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Asakusa (Taito)"],
-    "description": "Asakusa is a district in Taitō, Tokyo, Japan. It is known for Sensō-ji, a Buddhist temple dedicated to the bodhisattva Kannon. There are several other temples in Asakusa, as well as various festivals, such as Sanja Matsuri."
+    "highlights": [
+      "Senso-ji Temple",
+      "Kaminarimon Gate",
+      "Sumida River Cruise"
+    ],
+    "description": "Asakusa is a district in Taitō, Tokyo, Japan. It is known for Sensō-ji, a Buddhist temple dedicated to the bodhisattva Kannon. There are several other temples in Asakusa, as well as various festivals, such as Sanja Matsuri.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 1600,
+      "food": 4900,
+      "cafe": 2000
+    },
+    "reservation": "Not required.",
+    "parking": "Difficult.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Asakusa (Taito) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary history attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Asakusa Imahan (Sukiyaki)", "Daikokuya (Tempura)"],
+    "cafes": ["Suzukien (Matcha Gelato)"],
+    "notes": "Go early morning (before 9 AM) to photograph Kaminarimon without crowds.",
+    "schemaVersion": 2
   },
   {
     "id": "ashigara",
@@ -218,9 +345,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Ashigara"],
-    "description": "Ashigara is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated nature locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Ashigara, a prominent destination in Kanagawa. With its rich mix of hiking, quiet, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Wizyta_japo%C5%84skiego_kr%C4%85%C5%BCownika_Ashigara_w_Niemczech_%281-E-8502%29.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 1600,
+      "tickets": 800,
+      "food": 1200,
+      "cafe": 400
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Ashigara in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Ashigara Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Ashigara Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Ashigara",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Ashigara. Known for its hiking and quiet vibes, it offers a great escape with an overall score of 7.8.",
+    "schemaVersion": 2
   },
   {
     "id": "atami-resort",
@@ -277,8 +459,75 @@
       "shinkansen": 45,
       "car": 90
     },
-    "highlights": ["Atami"],
-    "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Sun Beach", "Atami Castle", "Kiunkaku"],
+    "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 5400,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Essential during summer and fireworks days.",
+    "parking": "Limited near the beach.",
+    "itineraries": [
+      {
+        "name": "Plan A: Seaside & Art",
+        "description": "A mix of ocean views and world-class museums.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Arrive in Atami. Take the bus to the spectacular MOA Museum of Art."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch near Atami Sun Beach, enjoying fresh local seafood."
+          },
+          {
+            "time": "14:30",
+            "activity": "Take the ropeway up to Atami Castle for panoramic bay views."
+          },
+          {
+            "time": "16:00",
+            "activity": "Explore the retro shopping streets near the station and eat onsen manju."
+          },
+          {
+            "time": "17:30",
+            "activity": "Take a quick dip in a public bath before taking the Shinkansen home."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Retro Atami Vibe",
+        "description": "Focus on the nostalgic Showa-era atmosphere of this classic resort town.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Visit Kiunkaku, a gorgeous former ryokan loved by Japanese literary giants."
+          },
+          {
+            "time": "12:30",
+            "activity": "Eat a classic Japanese curry or omurice at a retro Kissaten (coffee shop)."
+          },
+          {
+            "time": "14:00",
+            "activity": "Visit Kinomiya Shrine to see the 2,000-year-old sacred camphor tree."
+          },
+          {
+            "time": "16:00",
+            "activity": "Stroll along the oceanfront and find a quiet day-use hot spring."
+          },
+          {
+            "time": "18:00",
+            "activity": "Dinner at a local izakaya in the old town."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Atami Osakana Shokudo", "Restaurant Scott"],
+    "cafes": ["Café RoCA", "Atami Pudding"],
+    "notes": "Check the schedule for Atami's year-round fireworks displays!",
+    "schemaVersion": 2
   },
   {
     "id": "boso-peninsula",
@@ -333,8 +582,83 @@
     "transportOptions": {
       "car": 90
     },
-    "highlights": ["Boso Peninsula"],
-    "description": "Boso Peninsula is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Coastal Drive", "Seafood", "Nokogiriyama"],
+    "description": "Boso Peninsula is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 7000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Not required",
+    "parking": "Plenty of parking",
+    "itineraries": [
+      {
+        "name": "Plan A: Mountain & Buddha",
+        "description": "A hiking and cultural adventure on Mt. Nokogiri.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive at Hamakanaya and take the Mt. Nokogiri Ropeway up the mountain."
+          },
+          {
+            "time": "10:30",
+            "activity": "Hike to the Jigoku Nozoki (Hell's Peek) viewpoint."
+          },
+          {
+            "time": "12:00",
+            "activity": "Descend into the quarry to see the massive Nihon-ji Daibutsu (Great Buddha)."
+          },
+          {
+            "time": "14:00",
+            "activity": "Late lunch of fresh caught seafood near the ferry terminal."
+          },
+          {
+            "time": "15:30",
+            "activity": "Relax at the Baya-no-yu oceanfront hot spring."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Coastline Road Trip",
+        "description": "Best done by car. Exploring the scenic drives of Chiba.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Drive the Tokyo Bay Aqua-Line and stop at Umihotaru PA."
+          },
+          {
+            "time": "11:00",
+            "activity": "Visit Mother Farm to see the animals and flower fields."
+          },
+          {
+            "time": "13:30",
+            "activity": "Drive down to Katsuura or Kamogawa for an incredible seafood lunch."
+          },
+          {
+            "time": "15:00",
+            "activity": "Explore the Kamogawa Sea World or take a coastal drive to the lighthouse."
+          },
+          {
+            "time": "17:30",
+            "activity": "Watch the sunset over the Pacific Ocean."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Boso Peninsula Traditional Dining",
+      "Local Chiba Specialty Restaurant",
+      "The Boso Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Boso Peninsula",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Boso Peninsula. Known for its road trip and ocean vibes, it offers a great escape with an overall score of 9.7.",
+    "schemaVersion": 2
   },
   {
     "id": "chiba-city",
@@ -388,9 +712,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Chiba City"],
-    "description": "Chiba City is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Chiba City, a prominent destination in Kanagawa. With its rich mix of urban, shopping, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 2800,
+      "tickets": 1400,
+      "food": 2100,
+      "cafe": 700
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Chiba City in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Chiba City Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Chiba Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Chiba City",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Chiba City. Known for its urban and shopping vibes, it offers a great escape with an overall score of 7.5.",
+    "schemaVersion": 2
   },
   {
     "id": "chichibu",
@@ -444,9 +823,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Chichibu"],
-    "description": "Chichibu is a scenic destination in the Saitama region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated mountain locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Chichibu, a prominent destination in Kanagawa. With its rich mix of nature, festivals, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG"
+    ],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 2000,
+      "food": 2250,
+      "cafe": 750
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Chichibu in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary mountain attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Chichibu Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Chichibu Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Chichibu",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Chichibu. Known for its nature and festivals vibes, it offers a great escape with an overall score of 8.5.",
+    "schemaVersion": 2
   },
   {
     "id": "chofu-tokyo",
@@ -509,7 +943,8 @@
     "coordinates": {
       "lat": 35.6506036,
       "lng": 139.5407066
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "choshi-chiba",
@@ -572,7 +1007,8 @@
     "coordinates": {
       "lat": 35.7345338,
       "lng": 140.8272667
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "disneyland",
@@ -627,8 +1063,57 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Tokyo Disneyland"],
-    "description": "Tokyo Disneyland is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Cinderella Castle", "Space Mountain", "Electrical Parade"],
+    "description": "Tokyo Disneyland is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 18800,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Required well in advance.",
+    "parking": "Massive parking lots available.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Tokyo Disneyland in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary theme park attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Tokyo Disneyland Traditional Dining",
+      "Local Chiba Specialty Restaurant",
+      "The Tokyo Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Tokyo Disneyland",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Book tickets online up to 2 months in advance.",
+    "schemaVersion": 2
   },
   {
     "id": "disneysea",
@@ -683,8 +1168,83 @@
     "transportOptions": {
       "train": 90
     },
-    "highlights": ["DisneySea"],
-    "description": "DisneySea is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions."
+    "highlights": ["DisneySea Transit Steamer", "Soaring"],
+    "description": "DisneySea is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 18800,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Required",
+    "parking": "Expensive",
+    "itineraries": [
+      {
+        "name": "Plan A: The Adrenaline Rush",
+        "description": "Optimize your day to hit the biggest thrill rides.",
+        "steps": [
+          {
+            "time": "08:30",
+            "activity": "Arrive at rope drop. Head straight to Journey to the Center of the Earth."
+          },
+          {
+            "time": "10:00",
+            "activity": "Ride Indiana Jones Adventure and Raging Spirits."
+          },
+          {
+            "time": "12:30",
+            "activity": "Grab a quick bite (smoked turkey leg or spicy chicken) while walking."
+          },
+          {
+            "time": "14:00",
+            "activity": "Use Premier Access for Tower of Terror or Soaring: Fantastic Flight."
+          },
+          {
+            "time": "19:30",
+            "activity": "Secure a spot for the nighttime spectacular show on the Mediterranean Harbor."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Romantic & Immersive",
+        "description": "A slow-paced day focusing on atmosphere, shows, and fine dining.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Arrive and take a relaxing ride on the Venetian Gondolas."
+          },
+          {
+            "time": "11:30",
+            "activity": "Watch the incredible Big Band Beat jazz show."
+          },
+          {
+            "time": "13:00",
+            "activity": "Enjoy a sit-down lunch at the Magellan's fine dining restaurant."
+          },
+          {
+            "time": "15:00",
+            "activity": "Explore the interactive Fortress Explorations and walk through Arabian Coast."
+          },
+          {
+            "time": "18:00",
+            "activity": "Ride the Transit Steamer Line at sunset for beautiful views."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "DisneySea Traditional Dining",
+      "Local Chiba Specialty Restaurant",
+      "The DisneySea Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de DisneySea",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Avoid hottest days",
+    "schemaVersion": 2
   },
   {
     "id": "edogawa-ward",
@@ -740,8 +1300,57 @@
       "train": 60,
       "car": 50
     },
-    "highlights": ["Edogawa"],
-    "description": "Edogawa is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "Kasai Rinkai Park",
+      "Tokyo Sea Life Park",
+      "Diamond and Flower Ferris Wheel"
+    ],
+    "description": "Known for Kasai Rinkai Park on Tokyo Bay, featuring a giant Ferris wheel, aquarium, and peaceful riverbank cycling.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 2800,
+      "cafe": 1200
+    },
+    "reservation": "Not required.",
+    "parking": "Ample parking at Kasai Rinkai Park.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Edogawa in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Park Cafes"],
+    "cafes": [
+      "Café de Edogawa",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Great sunset views of Mt. Fuji and Tokyo Disneyland from the park.",
+    "schemaVersion": 2
   },
   {
     "id": "enoshima-island",
@@ -796,8 +1405,49 @@
     "transportOptions": {
       "train": 60
     },
-    "highlights": ["Enoshima"],
-    "description": "Enoshima is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
+    "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 3000,
+      "food": 3500,
+      "cafe": 1500
+    },
+    "reservation": "Not required.",
+    "parking": "Gets full quickly in summer.",
+    "itineraries": [
+      {
+        "name": "Plan A: Ocean Breeze & Shrines",
+        "description": "Hike over the island from the bustling shrine approach to the dramatic southern cliffs.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Walk across the bridge to Enoshima. Grab a giant senbei cracker on the approach."
+          },
+          {
+            "time": "11:30",
+            "activity": "Visit Enoshima Shrine. Take the escalators up if you want to skip the stairs."
+          },
+          {
+            "time": "12:30",
+            "activity": "Eat fresh Shirasu-don for lunch."
+          },
+          {
+            "time": "14:00",
+            "activity": "Visit the Samuel Cocking Garden and Sea Candle for panoramic views."
+          },
+          {
+            "time": "15:30",
+            "activity": "Walk down to the Iwaya Caves on the rocky southern coast."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Tobiccho (Shirasu Don)"],
+    "cafes": ["Loncafe"],
+    "notes": "Try the local specialty: Shirasu (whitebait) bowl.",
+    "schemaVersion": 2
   },
   {
     "id": "fuji-5-lake",
@@ -852,9 +1502,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Fuji Five Lakes"],
-    "description": "Fuji Five Lakes is a scenic destination in the Yamanashi region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated lake locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Fuji Five Lakes, a prominent destination in Shizuoka. With its rich mix of fuji views, fuji-q, cycling, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4400,
+      "tickets": 2200,
+      "food": 3300,
+      "cafe": 1100
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Fuji Five Lakes in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary lake attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Fuji Five Lakes Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Fuji Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Fuji Five Lakes",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Fuji Five Lakes. Known for its fuji views and fuji-q vibes, it offers a great escape with an overall score of 9.",
+    "schemaVersion": 2
   },
   {
     "id": "fujinomiya",
@@ -908,9 +1613,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Fujinomiya"],
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
     "description": "Fujinomiya is a city located in central Shizuoka Prefecture, Japan. As of 1 July 2019, the city had an estimated population of 132,507 in 56,655 households, and a population density of 340 persons per km2. The total area of the city is 388.99 square kilometres (150.19 sq mi).",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png"
+    ],
+    "budgetBreakdown": {
+      "transport": 2800,
+      "tickets": 1400,
+      "food": 2100,
+      "cafe": 700
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Fujinomiya in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Fujinomiya Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Fujinomiya Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Fujinomiya",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Fujinomiya. Known for its mt fuji and yakisoba vibes, it offers a great escape with an overall score of 8.4.",
+    "schemaVersion": 2
   },
   {
     "id": "fukui",
@@ -963,9 +1723,60 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Fukui"],
-    "description": "Fukui is a scenic destination in the Fukui region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Fukui, a prominent destination in Shizuoka. With its rich mix of dinosaurs, cliffs, crab, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4000,
+      "tickets": 2000,
+      "food": 3000,
+      "cafe": 1000
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Fukui in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Fukui Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Fukui Grill & Izakaya"
+    ],
+    "cafes": ["Café de Fukui", "Riverside Roasters", "Station Matcha & Sweets"],
+    "notes": "A fantastic trip to Fukui. Known for its dinosaurs and cliffs vibes, it offers a great escape with an overall score of 8.2.",
+    "schemaVersion": 2
   },
   {
     "id": "gala-yuzawa",
@@ -1019,9 +1830,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Gala Yuzawa"],
-    "description": "Gala Yuzawa is a scenic destination in the Niigata region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated mountain locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Gala Yuzawa, a prominent destination in Shizuoka. With its rich mix of skiing, snow, shinkansen access, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG"
+    ],
+    "budgetBreakdown": {
+      "transport": 8000,
+      "tickets": 13000,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Gala Yuzawa in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary mountain attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Gala Yuzawa Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Gala Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Gala Yuzawa",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Gala Yuzawa. Known for its skiing and snow vibes, it offers a great escape with an overall score of 8.6.",
+    "schemaVersion": 2
   },
   {
     "id": "ghibli-museum",
@@ -1076,8 +1942,57 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Ghibli Museum"],
-    "description": "Ghibli Museum is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "Giant Robot Soldier",
+      "Catbus Room",
+      "Exclusive Short Films"
+    ],
+    "description": "Ghibli Museum is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 2000,
+      "food": 4900,
+      "cafe": 2000
+    },
+    "reservation": "Tickets sell out within hours. Book on the 10th of the previous month.",
+    "parking": "Not recommended, take the train to Mitaka.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Ghibli Museum in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary theme park attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Ghibli Museum Traditional Dining",
+      "Local Tokyo Specialty Restaurant",
+      "The Ghibli Grill & Izakaya"
+    ],
+    "cafes": ["Straw Hat Cafe"],
+    "notes": "No photography allowed inside the museum.",
+    "schemaVersion": 2
   },
   {
     "id": "ginza-urban",
@@ -1132,8 +2047,54 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Ginza"],
-    "description": "Ginza is a district of Chūō, Tokyo, located south of Yaesu and Kyōbashi, west of Tsukiji, east of Yūrakuchō and Uchisaiwaichō, and north of Shinbashi. It is a popular upscale shopping area of Tokyo, with numerous internationally renowned department stores, boutiques, restaurants and coffeehouses located in the vicinity."
+    "highlights": [
+      "Itoya Stationery Store",
+      "Seiko Museum",
+      "Ginza Six",
+      "Pedestrian Paradise (Weekends)"
+    ],
+    "description": "Ginza is a district of Chūō, Tokyo, located south of Yaesu and Kyōbashi, west of Tsukiji, east of Yūrakuchō and Uchisaiwaichō, and north of Shinbashi. It is a popular upscale shopping area of Tokyo, with numerous internationally renowned department stores, boutiques, restaurants and coffeehouses located in the vicinity.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 2000,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Recommended for high-end dining.",
+    "parking": "Expensive.",
+    "itineraries": [
+      {
+        "name": "Plan A: Cultured Urban Stroll",
+        "description": "Discover high-quality Japanese craftsmanship, from precision watches to perfect paper.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Explore the Seiko Museum Ginza to learn about the history of Japanese timepieces."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch at a traditional tempura or sushi restaurant."
+          },
+          {
+            "time": "14:00",
+            "activity": "Spend an hour wandering the 12 floors of Itoya, the ultimate stationery store."
+          },
+          {
+            "time": "15:30",
+            "activity": "Relax at a classic kissaten (retro cafe) with hand-drip coffee."
+          },
+          {
+            "time": "16:30",
+            "activity": "Walk the Chuo-dori pedestrian paradise (weekends only)."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Kyubey Sushi", "Ginza Ukai-tei"],
+    "cafes": ["Cafe de L'Ambre", "Shiseido Parlour"],
+    "notes": "Main street is closed to traffic on weekends (Pedestrian Paradise).",
+    "schemaVersion": 2
   },
   {
     "id": "gujo",
@@ -1195,7 +2156,41 @@
       "lat": 35.7483,
       "lng": 136.9582
     },
-    "description": "Gujo Hachiman is a scenic destination in the Gifu region of Japan, offering rich history and cultural attractions."
+    "description": "Known as the Water City, Gujo Hachiman is a pristine riverside town in Gifu. Famous for its summer Gujo Odori dance festival lasting 32 nights, beautiful canals, and being the birthplace of Japanese plastic food replicas.",
+    "reservation": "Book hotels well in advance during summer",
+    "parking": "Public parking available outside town center",
+    "itineraries": [
+      {
+        "name": "Waterways and Culture",
+        "description": "Discover pristine canals and local crafts.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Visit the Sogi-sui Water Source and walk along the crystal-clear canals."
+          },
+          {
+            "time": "11:30",
+            "activity": "Try your hand at making wax food replicas at Sample Village Iwasaki."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch: Local Soba noodles using Gujo's pure water."
+          },
+          {
+            "time": "14:30",
+            "activity": "Hike up to Gujo Hachiman Castle for panoramic valley views."
+          },
+          {
+            "time": "16:30",
+            "activity": "Relax at a riverside cafe before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Soba Hachiman", "Yoshida River Ayu Dining"],
+    "cafes": ["Gujo Matcha Cafe"],
+    "notes": "Famous for its pristine waterways, the town feels incredibly refreshing in summer.",
+    "schemaVersion": 2
   },
   {
     "id": "hachioji-tokyo",
@@ -1258,7 +2253,8 @@
     "coordinates": {
       "lat": 35.6663595,
       "lng": 139.3163653
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "hakkeijima",
@@ -1312,9 +2308,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Hakkeijima Sea Paradise"],
-    "description": "Hakkeijima Sea Paradise is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated theme park locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Hakkeijima Sea Paradise, a prominent destination in Kanagawa. With its rich mix of family, entertainment, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Yokohama_Hakkeijima_Sea_Paradise_2015_%28crop%29.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4800,
+      "tickets": 11200,
+      "food": 3600,
+      "cafe": 1200
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Hakkeijima Sea Paradise in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary theme park attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Hakkeijima Sea Paradise Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Hakkeijima Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Hakkeijima Sea Paradise",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Hakkeijima Sea Paradise. Known for its family and entertainment vibes, it offers a great escape with an overall score of 8.4.",
+    "schemaVersion": 2
   },
   {
     "id": "hakone-onsen",
@@ -1369,8 +2420,75 @@
     "transportOptions": {
       "train": 85
     },
-    "highlights": ["Hakone"],
-    "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
+    "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 8200,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Required well in advance for ryokans.",
+    "parking": "Limited and expensive.",
+    "itineraries": [
+      {
+        "name": "Plan A: The Classic Hakone Loop",
+        "description": "Experience all modes of transport and the best views of Mt. Fuji.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Arrive at Hakone-Yumoto and take the scenic Tozan Mountain Railway to Gora."
+          },
+          {
+            "time": "10:30",
+            "activity": "Transfer to the Hakone Ropeway at Sounzan. Enjoy views over the volcanic Owakudani valley."
+          },
+          {
+            "time": "11:30",
+            "activity": "Eat black eggs (Kuro-tamago) boiled in the hot springs at Owakudani."
+          },
+          {
+            "time": "13:00",
+            "activity": "Take the Pirate Ship cruise across Lake Ashi to Motohakone."
+          },
+          {
+            "time": "15:00",
+            "activity": "Walk the old Cedar Avenue and visit Hakone Shrine."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Art & Relaxation",
+        "description": "A laid-back day focusing on world-class museums and high-end hot springs.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Explore the Hakone Open-Air Museum, featuring Picasso and massive outdoor sculptures."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch at a traditional soba restaurant in Gora."
+          },
+          {
+            "time": "14:00",
+            "activity": "Visit the Pola Museum of Art, nestled deep in the forest."
+          },
+          {
+            "time": "16:30",
+            "activity": "Enjoy a premium day-use Onsen (hot spring) with mountain views."
+          },
+          {
+            "time": "18:30",
+            "activity": "Dinner in Hakone-Yumoto before heading back to Yokohama."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Hakone Gindofu", "Bakery & Table Hakone"],
+    "cafes": ["Naraya Cafe", "Amazake Chaya"],
+    "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport.",
+    "schemaVersion": 2
   },
   {
     "id": "harry-potter-studio",
@@ -1425,8 +2543,83 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Harry Potter Studio"],
-    "description": "Harry Potter Studio is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Great Hall", "Diagon Alley"],
+    "description": "Harry Potter Studio is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 13000,
+      "food": 4900,
+      "cafe": 2000
+    },
+    "reservation": "Required well in advance",
+    "parking": "Available but train recommended",
+    "itineraries": [
+      {
+        "name": "Plan A: The Ultimate Fan Experience",
+        "description": "A comprehensive walk-through prioritizing all major sets and photo ops.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive early and enter the Great Hall."
+          },
+          {
+            "time": "11:00",
+            "activity": "Explore the Hogwarts Express and Platform 9 ¾."
+          },
+          {
+            "time": "12:30",
+            "activity": "Drink Butterbeer in the Backlot Cafe."
+          },
+          {
+            "time": "14:00",
+            "activity": "Walk through Diagon Alley and the Ministry of Magic sets."
+          },
+          {
+            "time": "16:00",
+            "activity": "Spend an hour in the massive studio gift shop."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: The Filmmaker's Focus",
+        "description": "Take your time studying the props, costumes, and behind-the-scenes magic.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Focus heavily on the Art Department and Costume exhibits."
+          },
+          {
+            "time": "12:00",
+            "activity": "Participate in the interactive green-screen broomstick flying."
+          },
+          {
+            "time": "13:30",
+            "activity": "Lunch at the Food Hall."
+          },
+          {
+            "time": "15:00",
+            "activity": "Study the creature effects and animatronics in the Creature Shop."
+          },
+          {
+            "time": "17:00",
+            "activity": "Examine the incredibly detailed Hogwarts Castle miniature."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Harry Potter Studio Traditional Dining",
+      "Local Tokyo Specialty Restaurant",
+      "The Harry Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Harry Potter Studio",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Book ahead",
+    "schemaVersion": 2
   },
   {
     "id": "hitachi-park",
@@ -1480,9 +2673,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Hitachi Seaside Park"],
-    "description": "Hitachi Seaside Park is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated nature locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Hitachi Seaside Park, a prominent destination in Kanagawa. With its rich mix of flowers, nemophila, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 3200,
+      "tickets": 1400,
+      "food": 2400,
+      "cafe": 800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Hitachi Seaside Park in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Hitachi Seaside Park Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Hitachi Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Hitachi Seaside Park",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Hitachi Seaside Park. Known for its flowers and nemophila vibes, it offers a great escape with an overall score of 8.9.",
+    "schemaVersion": 2
   },
   {
     "id": "ikaho-onsen-gunma",
@@ -1546,7 +2794,8 @@
     "coordinates": {
       "lat": 36.4998945,
       "lng": 138.9259109
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "ikebukuro-toshima",
@@ -1601,8 +2850,53 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Ikebukuro (Toshima)"],
-    "description": "Ikebukuro (Toshima) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "Sunshine City Aquarium",
+      "Pokemon Center Mega Tokyo",
+      "Otome Road"
+    ],
+    "description": "Ikebukuro (Toshima) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 8000,
+      "food": 2100,
+      "cafe": 900
+    },
+    "reservation": "Not required.",
+    "parking": "Sunshine City has parking.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Ikebukuro (Toshima) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Mutekiya Ramen"],
+    "cafes": ["Milky Way Cafe"],
+    "notes": "Excellent choice for rainy days due to Sunshine City and massive underground networks.",
+    "schemaVersion": 2
   },
   {
     "id": "imperial-palace-chiyoda",
@@ -1657,8 +2951,57 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Imperial Palace (Chiyoda)"],
-    "description": "Imperial Palace (Chiyoda) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "East Gardens",
+      "Nijubashi Bridge",
+      "Chidorigafuchi (Spring)"
+    ],
+    "description": "Imperial Palace (Chiyoda) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 1600,
+      "food": 700,
+      "cafe": 300
+    },
+    "reservation": "Required for inner grounds tour.",
+    "parking": "Very limited.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Imperial Palace (Chiyoda) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary history attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Imperial Palace (Chiyoda) Traditional Dining",
+      "Local Tokyo Specialty Restaurant",
+      "The Imperial Grill & Izakaya"
+    ],
+    "cafes": ["Wadakura Fountain Park Cafe"],
+    "notes": "East Gardens are closed on Mondays and Fridays.",
+    "schemaVersion": 2
   },
   {
     "id": "inuyama",
@@ -1715,7 +3058,41 @@
       "lat": 35.3853,
       "lng": 136.9405
     },
-    "description": "Inuyama is a scenic destination in the Aichi region of Japan, offering rich history and cultural attractions."
+    "description": "Step back in time in Inuyama. Overlooking the scenic Kiso River, Inuyama Castle is one of only five castles designated as a National Treasure. The surrounding castle town offers fantastic street food and traditional atmosphere.",
+    "reservation": "Not required",
+    "parking": "Available near the castle",
+    "itineraries": [
+      {
+        "name": "Castle and River Views",
+        "description": "Historical architecture and traditional river sights.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive at Inuyama and walk the historic Honmachi-dori Street."
+          },
+          {
+            "time": "10:30",
+            "activity": "Climb Inuyama Castle, a National Treasure, for views of the Kiso River."
+          },
+          {
+            "time": "12:00",
+            "activity": "Enjoy street food snacks or traditional soba for lunch."
+          },
+          {
+            "time": "13:30",
+            "activity": "Stroll through Urakuen Garden and enjoy matcha at the Joan tea house."
+          },
+          {
+            "time": "15:30",
+            "activity": "Take a boat ride on the Kiso River."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Inuyama Castle Town Food Stalls", "Kiso River Dining"],
+    "cafes": ["Honmachi Tea House"],
+    "notes": "A perfect extension to a Nagoya trip, offering one of Japan's oldest surviving wooden castles.",
+    "schemaVersion": 2
   },
   {
     "id": "ito",
@@ -1776,7 +3153,41 @@
       "lat": 34.9734,
       "lng": 139.0924
     },
-    "description": "Ito is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions."
+    "description": "Ito offers the quintessential Izu Peninsula experience. Soak in historic hot springs, marvel at the dramatic jagged cliffs of the Jogasaki Coast, and indulge in incredibly fresh local seafood.",
+    "reservation": "Book ryokans in advance",
+    "parking": "Widely available",
+    "itineraries": [
+      {
+        "name": "Coastal Drama and Onsen",
+        "description": "Cliffs, ocean views, and relaxing hot springs.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Hike the Jogasaki Coast and cross the Kadowakizaki Suspension Bridge."
+          },
+          {
+            "time": "12:30",
+            "activity": "Seafood lunch featuring fresh local catch."
+          },
+          {
+            "time": "14:00",
+            "activity": "Take the chairlift up Mount Omuro for 360-degree views of Izu and Mt. Fuji."
+          },
+          {
+            "time": "16:00",
+            "activity": "Explore the historic Tokai-kan hostel in central Ito."
+          },
+          {
+            "time": "17:30",
+            "activity": "Unwind in a local hot spring (onsen) before dinner."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Ito Marine Town Seafood", "Kaisen-don Ito"],
+    "cafes": ["Tokai Kan Cafe", "Jogasaki Ocean View Cafe"],
+    "notes": "A classic Izu Peninsula getaway, very accessible from Yokohama.",
+    "schemaVersion": 2
   },
   {
     "id": "izu",
@@ -1830,9 +3241,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Izu Peninsula"],
-    "description": "Izu Peninsula is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated coast locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Izu Peninsula, a prominent destination in Shizuoka. With its rich mix of beaches, onsen, scuba, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4800,
+      "tickets": 2400,
+      "food": 3600,
+      "cafe": 1200
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Izu Peninsula in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary coast attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Izu Peninsula Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Izu Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Izu Peninsula",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Izu Peninsula. Known for its beaches and onsen vibes, it offers a great escape with an overall score of 8.6.",
+    "schemaVersion": 2
   },
   {
     "id": "jogashima",
@@ -1885,9 +3351,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Miura Peninsula & Jogashima"],
-    "description": "Miura Peninsula & Jogashima is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated coast locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Miura Peninsula & Jogashima, a prominent destination in Kanagawa. With its rich mix of ocean, scenic, hiking, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 2000,
+      "tickets": 1000,
+      "food": 1500,
+      "cafe": 500
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Miura Peninsula & Jogashima in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary coast attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Miura Peninsula Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Miura Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Miura Peninsula",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Miura Peninsula & Jogashima. Known for its ocean and scenic vibes, it offers a great escape with an overall score of 8.",
+    "schemaVersion": 2
   },
   {
     "id": "joypolis",
@@ -1942,8 +3463,83 @@
     "transportOptions": {
       "train": 90
     },
-    "highlights": ["Joypolis Odaiba"],
-    "description": "Joypolis Odaiba is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Halfpipe Tokyo", "VR Attractions"],
+    "description": "Joypolis Odaiba is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 10000,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "",
+    "parking": "Yes",
+    "itineraries": [
+      {
+        "name": "Plan A: Thrills & Coasters",
+        "description": "Tackle the most intense, adrenaline-pumping rides the indoor park has to offer.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Arrive at Decks Tokyo Beach and head into Joypolis."
+          },
+          {
+            "time": "11:30",
+            "activity": "Ride the Gekion Live Coaster, a rhythm game combined with a rollercoaster."
+          },
+          {
+            "time": "13:00",
+            "activity": "Compete against friends on the Halfpipe Tokyo spinning ride."
+          },
+          {
+            "time": "14:30",
+            "activity": "Quick lunch at the Frame Cafe inside the park overlooking the bay."
+          },
+          {
+            "time": "16:00",
+            "activity": "Ride the Transformers 360-degree spinning simulator."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Horror & Virtual Reality",
+        "description": "Focus on the immersive walk-through attractions and cutting-edge VR.",
+        "steps": [
+          {
+            "time": "12:00",
+            "activity": "Start with the Zero Latency VR free-roaming experience (book in advance!)."
+          },
+          {
+            "time": "14:00",
+            "activity": "Grab lunch at a restaurant in Odaiba outside the park."
+          },
+          {
+            "time": "15:30",
+            "activity": "Experience the Room of the Living Doll 3D sound horror attraction."
+          },
+          {
+            "time": "16:30",
+            "activity": "Play the interactive Phoenix Wright: Ace Attorney investigation game."
+          },
+          {
+            "time": "18:00",
+            "activity": "Watch the main stage projection mapping show before leaving."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Joypolis Odaiba Traditional Dining",
+      "Local Tokyo Specialty Restaurant",
+      "The Joypolis Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Joypolis Odaiba",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Combine with Odaiba",
+    "schemaVersion": 2
   },
   {
     "id": "kamakura-history",
@@ -1998,8 +3594,79 @@
     "transportOptions": {
       "train": 60
     },
-    "highlights": ["Kamakura"],
-    "description": "Kamakura , officially Kamakura City , is a city of Kanagawa Prefecture in Japan. It is located in the Kantō region on the island of Honshu. The city has an estimated population of 172,929 and a population density of 4,359 people per km2 over the total area of 39.67 km2 (15.32 sq mi). Kamakura was designated as a city on 3 November 1939."
+    "highlights": [
+      "Great Buddha (Daibutsu)",
+      "Hasedera Temple",
+      "Komachi-dori Street"
+    ],
+    "description": "Kamakura , officially Kamakura City , is a city of Kanagawa Prefecture in Japan. It is located in the Kantō region on the island of Honshu. The city has an estimated population of 172,929 and a population density of 4,359 people per km2 over the total area of 39.67 km2 (15.32 sq mi). Kamakura was designated as a city on 3 November 1939.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 2000,
+      "food": 3500,
+      "cafe": 1500
+    },
+    "reservation": "Not required for day trips.",
+    "parking": "Extremely congested on weekends.",
+    "itineraries": [
+      {
+        "name": "Plan A: Samurai Heritage Tour",
+        "description": "The classic Kamakura route focusing on the most famous shrines and the Great Buddha.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive at Kamakura Station and walk up the iconic Wakamiya Oji approach."
+          },
+          {
+            "time": "10:00",
+            "activity": "Visit Tsurugaoka Hachimangu, the most important Shinto shrine in Kamakura."
+          },
+          {
+            "time": "11:30",
+            "activity": "Street food and souvenir shopping along Komachi-dori street."
+          },
+          {
+            "time": "13:30",
+            "activity": "Take the Enoden train to Hase Station. Visit the giant bronze Great Buddha."
+          },
+          {
+            "time": "15:00",
+            "activity": "Explore Hase-dera temple and its beautiful hillside gardens and ocean views."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Bamboo Groves & Ocean Breezes",
+        "description": "Avoid the main crowds by exploring eastern Kamakura and the nearby island of Enoshima.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Take a bus to Hokoku-ji Temple. Enjoy matcha tea in the serene bamboo grove."
+          },
+          {
+            "time": "12:00",
+            "activity": "Lunch at a quiet local cafe in the Jomyoji area."
+          },
+          {
+            "time": "14:00",
+            "activity": "Ride the Enoden train all the way to Enoshima."
+          },
+          {
+            "time": "15:30",
+            "activity": "Walk across the bridge to Enoshima Island and explore the shrine and caves."
+          },
+          {
+            "time": "18:00",
+            "activity": "Watch the sunset over Mt. Fuji from the Enoshima Sea Candle."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Kamakura Matsubaraan", "Caraway Curry"],
+    "cafes": ["Iwata Coffee", "Starbucks Kamakura Onarimachi"],
+    "notes": "Wear comfortable walking shoes. Enoden line can be very crowded.",
+    "schemaVersion": 2
   },
   {
     "id": "kamikochi",
@@ -2052,9 +3719,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kamikochi"],
-    "description": "Kamikochi is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated nature locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Kamikochi, a prominent destination in Shizuoka. With its rich mix of hiking, alps, pristine, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kamikochi_-_Kamikochi6538.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4800,
+      "tickets": 2400,
+      "food": 3600,
+      "cafe": 1200
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kamikochi in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kamikochi Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Kamikochi Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Kamikochi",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Kamikochi. Known for its hiking and alps vibes, it offers a great escape with an overall score of 9.5.",
+    "schemaVersion": 2
   },
   {
     "id": "kanazawa",
@@ -2107,9 +3829,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kanazawa"],
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
     "description": "Kanazawa is the capital of Ishikawa Prefecture in central Japan. As of 1 January 2018, the city had an estimated population of 466,029 in 203,271 households, and a population density of 990 persons per km2. The total area of the city was 468.64 square kilometres (180.94 sq mi).",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4800,
+      "tickets": 2400,
+      "food": 3600,
+      "cafe": 1200
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kanazawa in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kanazawa Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Kanazawa Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Kanazawa",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Kanazawa. Known for its kenrokuen and gold leaf vibes, it offers a great escape with an overall score of 9.4.",
+    "schemaVersion": 2
   },
   {
     "id": "karuizawa",
@@ -2167,8 +3944,83 @@
       "shinkansen": 42,
       "bus": 180
     },
-    "highlights": ["Karuizawa"],
-    "description": "Karuizawa is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Kyu-Karuizawa", "Shiraito Falls", "Prince Shopping Plaza"],
+    "description": "Karuizawa is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "",
+    "parking": "Yes",
+    "itineraries": [
+      {
+        "name": "Plan A: The Classic Resort",
+        "description": "Shopping, dining, and scenic walks in the famous mountain resort.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Rent a bicycle near Karuizawa Station."
+          },
+          {
+            "time": "10:30",
+            "activity": "Cycle to Kumoba Pond (Swan Lake) for a beautiful nature walk."
+          },
+          {
+            "time": "12:00",
+            "activity": "Explore the Kyu-Karuizawa Ginza street. Eat local breads and jams."
+          },
+          {
+            "time": "14:00",
+            "activity": "Cycle to the historic Shaw Memorial Church and the deep forest."
+          },
+          {
+            "time": "16:00",
+            "activity": "Finish the day shopping at the massive Prince Shopping Plaza outlet mall."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Art & Architecture",
+        "description": "Discover the elegant modern architecture and waterfalls of the area.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Take a bus to the breathtaking Shiraito Falls."
+          },
+          {
+            "time": "12:00",
+            "activity": "Head to Harunire Terrace for a stylish lunch in the forest."
+          },
+          {
+            "time": "14:00",
+            "activity": "Walk to the Stone Church and the Karuizawa Kogen Church."
+          },
+          {
+            "time": "15:30",
+            "activity": "Visit the Hiroshi Senju Museum, a stunning piece of modern architecture."
+          },
+          {
+            "time": "17:30",
+            "activity": "Relax at the Tombo-no-yu hot springs."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Karuizawa Traditional Dining",
+      "Local Nagano Specialty Restaurant",
+      "The Karuizawa Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Karuizawa",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Cool escape from Tokyo summer",
+    "schemaVersion": 2
   },
   {
     "id": "kawagoe-edo",
@@ -2223,8 +4075,79 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Kawagoe"],
-    "description": "Kawagoe is a scenic destination in the Saitama region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "Kurazukuri Zone",
+      "Toki no Kane (Time Bell Tower)",
+      "Penny Candy Alley"
+    ],
+    "description": "Kawagoe is a scenic destination in the Saitama region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 1600,
+      "food": 4900,
+      "cafe": 2000
+    },
+    "reservation": "Not required.",
+    "parking": "Available but traffic can be slow in town.",
+    "itineraries": [
+      {
+        "name": "Plan A: Little Edo Walk",
+        "description": "Experience the historic warehouse district and famous candy alley.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Arrive at Kawagoe Station and take the retro loop bus."
+          },
+          {
+            "time": "11:00",
+            "activity": "Stroll the Kurazukuri Zone (Warehouse District) and photograph the Toki no Kane (Time Bell Tower)."
+          },
+          {
+            "time": "12:30",
+            "activity": "Enjoy local sweet potato treats and traditional eel (unagi) for lunch."
+          },
+          {
+            "time": "14:00",
+            "activity": "Explore Kashiya Yokocho (Candy Alley) for retro Japanese sweets."
+          },
+          {
+            "time": "16:00",
+            "activity": "Visit Kitain Temple, featuring the only remaining buildings of the original Edo Castle."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Shrines & Culture",
+        "description": "A deeper dive into local traditions, focusing on the famous Hikawa Shrine.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Visit Hikawa Shrine. Walk through the tunnel of wind chimes (in summer) or ema."
+          },
+          {
+            "time": "12:00",
+            "activity": "Fish for your fortune using a small fishing rod at the shrine."
+          },
+          {
+            "time": "13:30",
+            "activity": "Lunch at a traditional Japanese restaurant near the Honmaru Goten."
+          },
+          {
+            "time": "15:00",
+            "activity": "Tour Kawagoe Castle Honmaru Goten, the former samurai lord's residence."
+          },
+          {
+            "time": "16:30",
+            "activity": "Relax at a retro coffee shop on Taisho-roman Street."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Ichinoya", "Ogakiku"],
+    "cafes": ["Starbucks Kawagoe Kanetsuki Dori", "Glayt"],
+    "notes": "Famous for sweet potato snacks and traditional unagi.",
+    "schemaVersion": 2
   },
   {
     "id": "kawasaki",
@@ -2277,9 +4200,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kawasaki"],
-    "description": "Kawasaki is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Kawasaki, a prominent destination in Kanagawa. With its rich mix of night factory, doraemon, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/10/Kawasaki_Techno-peer_from_Tama-river.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 2000,
+      "tickets": 1000,
+      "food": 1500,
+      "cafe": 500
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kawasaki in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kawasaki Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Kawasaki Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Kawasaki",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Kawasaki. Known for its night factory and doraemon vibes, it offers a great escape with an overall score of 7.9.",
+    "schemaVersion": 2
   },
   {
     "id": "kinugawa-onsen",
@@ -2333,9 +4311,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kinugawa Onsen"],
-    "description": "Kinugawa Onsen is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated hot spring locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Kinugawa Onsen, a prominent destination in Kanagawa. With its rich mix of onsen, edo wonderland, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG"
+    ],
+    "budgetBreakdown": {
+      "transport": 5200,
+      "tickets": 6000,
+      "food": 3900,
+      "cafe": 1300
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kinugawa Onsen in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary hot spring attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kinugawa Onsen Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Kinugawa Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Kinugawa Onsen",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Kinugawa Onsen. Known for its onsen and edo wonderland vibes, it offers a great escape with an overall score of 8.",
+    "schemaVersion": 2
   },
   {
     "id": "kiso",
@@ -2388,9 +4421,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kiso Valley"],
-    "description": "Kiso Valley is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated town locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Kiso Valley, a prominent destination in Shizuoka. With its rich mix of nakasendo, post towns, tsumago, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4000,
+      "tickets": 2000,
+      "food": 3000,
+      "cafe": 1000
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kiso Valley in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary town attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kiso Valley Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Kiso Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Kiso Valley",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Kiso Valley. Known for its nakasendo and post towns vibes, it offers a great escape with an overall score of 9.1.",
+    "schemaVersion": 2
   },
   {
     "id": "kofu",
@@ -2444,9 +4532,60 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kofu"],
-    "description": "Kofu is a scenic destination in the Yamanashi region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Kofu, a prominent destination in Shizuoka. With its rich mix of takeda shingen, wine, gorges, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "budgetBreakdown": {
+      "transport": 3200,
+      "tickets": 1600,
+      "food": 2400,
+      "cafe": 800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kofu in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kofu Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Kofu Grill & Izakaya"
+    ],
+    "cafes": ["Café de Kofu", "Riverside Roasters", "Station Matcha & Sweets"],
+    "notes": "A fantastic trip to Kofu. Known for its takeda shingen and wine vibes, it offers a great escape with an overall score of 7.8.",
+    "schemaVersion": 2
   },
   {
     "id": "kurobe-gorge",
@@ -2500,9 +4639,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kurobe Gorge"],
-    "description": "Kurobe Gorge is a scenic destination in the Toyama region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated nature locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Kurobe Gorge, a prominent destination in Shizuoka. With its rich mix of scenic railway, ravine, onsen, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "budgetBreakdown": {
+      "transport": 6000,
+      "tickets": 8000,
+      "food": 4500,
+      "cafe": 1500
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kurobe Gorge in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kurobe Gorge Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Kurobe Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Kurobe Gorge",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Kurobe Gorge. Known for its scenic railway and ravine vibes, it offers a great escape with an overall score of 8.9.",
+    "schemaVersion": 2
   },
   {
     "id": "kusatsu-onsen",
@@ -2556,9 +4750,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kusatsu & Shima Onsen"],
-    "description": "Kusatsu & Shima Onsen is a scenic destination in the Gunma region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated hot spring locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Kusatsu & Shima Onsen, a prominent destination in Kanagawa. With its rich mix of onsen, yubatake, mountains, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/99/Kusatsu%2C_Gunma.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 6000,
+      "tickets": 3000,
+      "food": 4500,
+      "cafe": 1500
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kusatsu & Shima Onsen in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary hot spring attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Kusatsu Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Kusatsu Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Kusatsu",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Kusatsu & Shima Onsen. Known for its onsen and yubatake vibes, it offers a great escape with an overall score of 9.2.",
+    "schemaVersion": 2
   },
   {
     "id": "lake-hamanako",
@@ -2613,9 +4862,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Lake Hamanako"],
-    "description": "Lake Hamanako is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated lake locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Lake Hamanako, a prominent destination in Shizuoka. With its rich mix of eel, cycling, onsen, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4000,
+      "tickets": 2000,
+      "food": 3000,
+      "cafe": 1000
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Lake Hamanako in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary lake attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Lake Hamanako Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Lake Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Lake Hamanako",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Lake Hamanako. Known for its eel and cycling vibes, it offers a great escape with an overall score of 8.2.",
+    "schemaVersion": 2
   },
   {
     "id": "lake-sagami",
@@ -2669,9 +4973,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Lake Sagami"],
-    "description": "Lake Sagami is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated lake locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Lake Sagami, a prominent destination in Kanagawa. With its rich mix of illumination, outdoors, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 3600,
+      "tickets": 1800,
+      "food": 2700,
+      "cafe": 900
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Lake Sagami in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary lake attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Lake Sagami Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Lake Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Lake Sagami",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Lake Sagami. Known for its illumination and outdoors vibes, it offers a great escape with an overall score of 8.1.",
+    "schemaVersion": 2
   },
   {
     "id": "machida-tokyo",
@@ -2735,7 +5094,8 @@
     "coordinates": {
       "lat": 35.5466803,
       "lng": 139.4386999
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "matsumoto",
@@ -2790,8 +5150,83 @@
     "transportOptions": {
       "car": 210
     },
-    "highlights": ["Matsumoto"],
-    "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Matsumoto Castle", "Nawate Dori"],
+    "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 1600,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "",
+    "parking": "Available",
+    "itineraries": [
+      {
+        "name": "Plan A: The Black Castle",
+        "description": "Focus on the historic samurai history of Matsumoto.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Arrive in Matsumoto. Head straight to Matsumoto Castle, one of Japan's oldest."
+          },
+          {
+            "time": "13:00",
+            "activity": "Have Shinshu Soba for lunch, a local specialty."
+          },
+          {
+            "time": "14:30",
+            "activity": "Stroll along Nakamachi-dori, known for its historic black-and-white storehouses."
+          },
+          {
+            "time": "16:00",
+            "activity": "Wander Nawate-dori (Frog Street) for quirky shops and street food."
+          },
+          {
+            "time": "17:30",
+            "activity": "Visit a local sake brewery for tasting before dinner."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Art & Alps",
+        "description": "A cultural day featuring famous contemporary art and mountain views.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Visit the Matsumoto City Museum of Art to see the permanent Yayoi Kusama exhibition."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch at a trendy cafe near the museum district."
+          },
+          {
+            "time": "14:30",
+            "activity": "Take a short bus or taxi ride up to Alps Park."
+          },
+          {
+            "time": "16:00",
+            "activity": "Enjoy panoramic views of the Japan Alps and explore the nature trails."
+          },
+          {
+            "time": "18:00",
+            "activity": "Head back to town for a cozy dinner."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Matsumoto Traditional Dining",
+      "Local Nagano Specialty Restaurant",
+      "The Matsumoto Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Matsumoto",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Long drive but rewarding",
+    "schemaVersion": 2
   },
   {
     "id": "meguro-ward",
@@ -2846,8 +5281,53 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Meguro"],
-    "description": "Meguro is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "Meguro River",
+      "Starbucks Reserve Roastery",
+      "Tokyo Photographic Art Museum"
+    ],
+    "description": "Famous worldwide for the Meguro River cherry blossoms. Features trendy cafes, boutiques, and a relaxed atmosphere.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Not required, but cafes fill up.",
+    "parking": "Limited.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Meguro in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Tonki (Tonkatsu)"],
+    "cafes": ["Starbucks Reserve Roastery Tokyo"],
+    "notes": "Spring cherry blossoms are incredibly beautiful but completely packed with people.",
+    "schemaVersion": 2
   },
   {
     "id": "mito",
@@ -2901,9 +5381,60 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Mito"],
-    "description": "Mito is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Mito, a prominent destination in Kanagawa. With its rich mix of kairakuen, plum blossoms, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "budgetBreakdown": {
+      "transport": 2400,
+      "tickets": 1200,
+      "food": 1800,
+      "cafe": 600
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Mito in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Mito Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Mito Grill & Izakaya"
+    ],
+    "cafes": ["Café de Mito", "Riverside Roasters", "Station Matcha & Sweets"],
+    "notes": "A fantastic trip to Mito. Known for its kairakuen and plum blossoms vibes, it offers a great escape with an overall score of 7.8.",
+    "schemaVersion": 2
   },
   {
     "id": "mother-farm-chiba",
@@ -2962,7 +5493,8 @@
     "coordinates": {
       "lat": 35.2459214,
       "lng": 139.9340832
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "mount-fuji",
@@ -3015,9 +5547,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Mount Fuji"],
+    "highlights": [
+      "Explore top-rated mountain locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
     "description": "Mount Fuji is an active stratovolcano located on the Japanese island of Honshu, with a summit elevation of 3,776.24 m. It is the highest mountain in Japan, the second-highest volcano on any Asian island, and the seventh-highest peak of an island on Earth. Mount Fuji last erupted from 1707 to 1708.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 2000,
+      "tickets": 1000,
+      "food": 1500,
+      "cafe": 500
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Mount Fuji in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary mountain attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Mount Fuji Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Mount Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Mount Fuji",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Mount Fuji. Known for its iconic and climbing vibes, it offers a great escape with an overall score of 9.6.",
+    "schemaVersion": 2
   },
   {
     "id": "nagano-city",
@@ -3072,9 +5659,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Nagano & Snow Monkeys"],
-    "description": "Nagano & Snow Monkeys is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Nagano & Snow Monkeys, a prominent destination in Shizuoka. With its rich mix of zenkoji, olympics, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 3600,
+      "tickets": 1800,
+      "food": 2700,
+      "cafe": 900
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Nagano & Snow Monkeys in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Nagano Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Nagano Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Nagano",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Nagano & Snow Monkeys. Known for its zenkoji and olympics vibes, it offers a great escape with an overall score of 8.2.",
+    "schemaVersion": 2
   },
   {
     "id": "nagatoro-saitama",
@@ -3137,7 +5779,8 @@
     "coordinates": {
       "lat": 36.1146759,
       "lng": 139.1096479
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "nagoya",
@@ -3195,7 +5838,45 @@
       "lat": 35.1815,
       "lng": 136.9066
     },
-    "description": "Nagoya is a scenic destination in the Aichi region of Japan, offering rich history and cultural attractions."
+    "description": "Explore Nagoya, a vibrant metropolis mixing samurai history with industrial innovation. Famous for Nagoya Castle, Atsuta Shrine, and an incredible local food scene featuring hitsumabushi (grilled eel) and red miso katsu.",
+    "reservation": "Recommended for Shinkansen",
+    "parking": "Available in city center (expensive)",
+    "itineraries": [
+      {
+        "name": "Classic Nagoya Core",
+        "description": "The essentials of Nagoya history and cuisine.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Visit Nagoya Castle and see the golden shachihoko."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch: Hitsumabushi (grilled eel over rice) in the Sakae district."
+          },
+          {
+            "time": "14:30",
+            "activity": "Explore Atsuta Jingu, one of Japan's most important shrines."
+          },
+          {
+            "time": "16:00",
+            "activity": "Walk around Osu Kannon shopping arcade and grab street food."
+          },
+          {
+            "time": "18:30",
+            "activity": "Dinner: Miso Katsu (pork cutlet with rich red miso sauce)."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Hitsumabushi Bincho",
+      "Yabaton Miso Katsu",
+      "Yamamotoya Honten"
+    ],
+    "cafes": ["Komeda Coffee", "Cafe de Ciel"],
+    "notes": "Nagoya is the heart of Chubu. A fast bullet train ride from Tokyo or Yokohama, famous for its unique rich food culture.",
+    "schemaVersion": 2
   },
   {
     "id": "narita",
@@ -3249,9 +5930,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Narita"],
-    "description": "Narita is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated shrine locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Narita, a prominent destination in Kanagawa. With its rich mix of temple, eel, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Narita_Nemzetk%C3%B6zi_Rep%C3%BCl%C5%91t%C3%A9r.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 3200,
+      "tickets": 1600,
+      "food": 2400,
+      "cafe": 800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Narita in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary shrine attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Narita Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Narita Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Narita",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Narita. Known for its temple and eel vibes, it offers a great escape with an overall score of 8.1.",
+    "schemaVersion": 2
   },
   {
     "id": "nikko-heritage",
@@ -3307,8 +6043,75 @@
       "train": 120,
       "car": 130
     },
-    "highlights": ["Nikko"],
-    "description": "Nikko is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Toshogu Shrine", "Lake Chuzenji", "Kegon Falls"],
+    "description": "Nikko is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 3000,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Required for limited express trains and ryokans.",
+    "parking": "Extremely crowded during autumn leaves season.",
+    "itineraries": [
+      {
+        "name": "Plan A: World Heritage Sanctuaries",
+        "description": "A focused tour of the elaborately decorated shrines and temples.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Arrive in Nikko. Photograph the iconic red Shinkyo Bridge."
+          },
+          {
+            "time": "10:30",
+            "activity": "Explore Toshogu Shrine, the incredibly ornate mausoleum of Tokugawa Ieyasu."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch featuring local Nikko Yuba (tofu skin) delicacies."
+          },
+          {
+            "time": "14:30",
+            "activity": "Visit Rinno-ji Temple and the quiet Futarasan Shrine."
+          },
+          {
+            "time": "16:30",
+            "activity": "Stroll along the Kanmangafuchi Abyss to see the row of stone Jizo statues."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Okunikko Nature Escape",
+        "description": "Skip the shrines and head higher up the mountains for waterfalls and lakes.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Take the bus up the winding Irohazaka Route to Okunikko."
+          },
+          {
+            "time": "10:30",
+            "activity": "Ride the elevator down to the base of Kegon Falls, one of Japan's top 3 waterfalls."
+          },
+          {
+            "time": "12:00",
+            "activity": "Lunch overlooking the beautiful Lake Chuzenji."
+          },
+          {
+            "time": "13:30",
+            "activity": "Hike the wooden boardwalks of the Senjogahara Marshland."
+          },
+          {
+            "time": "16:00",
+            "activity": "Soak your feet in the public footbaths at Yumoto Onsen before returning."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Nikko Yuba Maki", "Meiji no Yakata"],
+    "cafes": ["Hongu Cafe", "Nikko Coffee"],
+    "notes": "Traffic jams to Okunikko are severe in October.",
+    "schemaVersion": 2
   },
   {
     "id": "noto",
@@ -3361,9 +6164,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Noto Peninsula"],
-    "description": "Noto Peninsula is a scenic destination in the Ishikawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated coast locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Noto Peninsula, a prominent destination in Shizuoka. With its rich mix of scenic drive, seafood, rugged, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 4400,
+      "tickets": 2200,
+      "food": 3300,
+      "cafe": 1100
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Noto Peninsula in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary coast attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Noto Peninsula Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Noto Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Noto Peninsula",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Noto Peninsula. Known for its scenic drive and seafood vibes, it offers a great escape with an overall score of 8.6.",
+    "schemaVersion": 2
   },
   {
     "id": "odaiba-minato",
@@ -3418,8 +6276,53 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Odaiba (Minato)"],
-    "description": "Odaiba (Minato) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "Gundam Statue",
+      "Odaiba Seaside Park",
+      "Rainbow Bridge View"
+    ],
+    "description": "A high-tech entertainment hub on an artificial island in Tokyo Bay, featuring shopping malls, beaches, and a giant Gundam.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 8000,
+      "food": 2100,
+      "cafe": 900
+    },
+    "reservation": "Not required.",
+    "parking": "Plenty of paid parking in malls.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Odaiba (Minato) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Aqua City Dining"],
+    "cafes": ["Bills Odaiba"],
+    "notes": "Take the Yurikamome line for an automated scenic ride across the bay.",
+    "schemaVersion": 2
   },
   {
     "id": "odawara",
@@ -3472,9 +6375,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Odawara & Manazuru"],
-    "description": "Odawara & Manazuru is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated castle locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Odawara & Manazuru, a prominent destination in Kanagawa. With its rich mix of historic, seafood, relaxing, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG"
+    ],
+    "budgetBreakdown": {
+      "transport": 3200,
+      "tickets": 1600,
+      "food": 2400,
+      "cafe": 800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Odawara & Manazuru in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary castle attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Odawara Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Odawara Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Odawara",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Odawara & Manazuru. Known for its historic and seafood vibes, it offers a great escape with an overall score of 8.2.",
+    "schemaVersion": 2
   },
   {
     "id": "okuhida",
@@ -3528,9 +6486,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Okuhida"],
-    "description": "Okuhida is a scenic destination in the Gifu region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated hot spring locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Okuhida, a prominent destination in Shizuoka. With its rich mix of onsen, ropeway, alps, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 7200,
+      "tickets": 3600,
+      "food": 5400,
+      "cafe": 1800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Okuhida in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary hot spring attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Okuhida Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Okuhida Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Okuhida",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Okuhida. Known for its onsen and ropeway vibes, it offers a great escape with an overall score of 8.9.",
+    "schemaVersion": 2
   },
   {
     "id": "okutama-tokyo",
@@ -3589,7 +6602,8 @@
     "coordinates": {
       "lat": 35.8100778,
       "lng": 139.0954588
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "ome-tokyo",
@@ -3652,7 +6666,8 @@
     "coordinates": {
       "lat": 35.7880531,
       "lng": 139.2753553
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "omiya-railway",
@@ -3707,8 +6722,83 @@
     "transportOptions": {
       "train": 100
     },
-    "highlights": ["Omiya Railway Museum"],
-    "description": "Ōmiya is one of ten wards of the city of Saitama, in Saitama Prefecture, Japan, and is located in the northeastern part of the city. As of 1 March 2021, the ward had an estimated population of 119,298 and a population density of 9,300 persons per km2. Its total area was 12.80 square kilometres (4.94 sq mi). Although Urawa-ku is the governmental center of Saitama City, Ōmiya-ku is the most active commercial and business centre in both Saitama City and Saitama Prefecture thanks to its transport infrastructure, especially railways connected at Ōmiya Station."
+    "highlights": ["Train Simulators", "Historic Cars"],
+    "description": "Ōmiya is one of ten wards of the city of Saitama, in Saitama Prefecture, Japan, and is located in the northeastern part of the city. As of 1 March 2021, the ward had an estimated population of 119,298 and a population density of 9,300 persons per km2. Its total area was 12.80 square kilometres (4.94 sq mi). Although Urawa-ku is the governmental center of Saitama City, Ōmiya-ku is the most active commercial and business centre in both Saitama City and Saitama Prefecture thanks to its transport infrastructure, especially railways connected at Ōmiya Station.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 2800,
+      "food": 4900,
+      "cafe": 2000
+    },
+    "reservation": "",
+    "parking": "Yes",
+    "itineraries": [
+      {
+        "name": "Plan A: The Train Otaku",
+        "description": "A deep dive into the history and mechanics of Japan's legendary railway system.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Arrive at the museum and head straight to the massive Rolling Stock Station."
+          },
+          {
+            "time": "11:30",
+            "activity": "Book and experience the Steam Locomotive or Shinkansen Simulator."
+          },
+          {
+            "time": "13:00",
+            "activity": "Eat an authentic 'Ekiben' (station bento) inside a retired train car."
+          },
+          {
+            "time": "14:30",
+            "activity": "Watch the massive Railway Diorama show."
+          },
+          {
+            "time": "16:00",
+            "activity": "Explore the History Zone and learn about the evolution of the Shinkansen."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Family Fun Day",
+        "description": "A relaxed pace focused on interactive exhibits perfect for kids.",
+        "steps": [
+          {
+            "time": "10:30",
+            "activity": "Arrive and immediately head to the Mini Driving Train area."
+          },
+          {
+            "time": "12:00",
+            "activity": "Lunch at the Kids Cafe, which has train-themed meals."
+          },
+          {
+            "time": "13:30",
+            "activity": "Let the kids play in the Teppaku Playroom and outdoor park."
+          },
+          {
+            "time": "15:00",
+            "activity": "Take family photos with the historic steam engines."
+          },
+          {
+            "time": "16:30",
+            "activity": "Buy exclusive train toys at the museum shop before leaving."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Omiya Railway Museum Traditional Dining",
+      "Local Saitama Specialty Restaurant",
+      "The Omiya Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Omiya Railway Museum",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Excellent hot-day option",
+    "schemaVersion": 2
   },
   {
     "id": "oze-national-park",
@@ -3761,9 +6851,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Oze National Park"],
+    "highlights": [
+      "Explore top-rated nature locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
     "description": "Oze National Park , is an area consisting of open greenland in Fukushima, Tochigi, Gunma and Niigata Prefectures in Japan. The park is 372 km2 in area and is the 29th national park in Japan.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 3200,
+      "tickets": 0,
+      "food": 2400,
+      "cafe": 800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Oze National Park in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Oze National Park Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Oze Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Oze National Park",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Oze National Park. Known for its hiking and marshlands vibes, it offers a great escape with an overall score of 8.8.",
+    "schemaVersion": 2
   },
   {
     "id": "sado-island",
@@ -3816,9 +6961,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Sado Island"],
+    "highlights": [
+      "Explore top-rated island locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
     "description": "Sado Island is an island located in the eastern part of the Sea of Japan, under the jurisdiction of Sado City, Niigata Prefecture, Japan, with a coastline of 262.7 kilometres (163.2 mi). In October 2017, Sado Island had a population of 55,212 people. Sado Island covers an area of 854.76 km2 (330.02 sq mi), and is the sixth largest island in Japan, excluding the disputed Southern Kurils. The shortest distance between Sado Island and Honshu is 32 km (20 mi). The highest peak on Sado Island is Mount Kinpoku, with an elevation of 1,172 m (3,845 ft).",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png"
+    ],
+    "budgetBreakdown": {
+      "transport": 6000,
+      "tickets": 3000,
+      "food": 4500,
+      "cafe": 1500
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Sado Island in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary island attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Sado Island Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Sado Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Sado Island",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Sado Island. Known for its gold mine and tub boats vibes, it offers a great escape with an overall score of 8.4.",
+    "schemaVersion": 2
   },
   {
     "id": "saitama-city",
@@ -3871,9 +7071,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Saitama City"],
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
     "description": "Saitama is the capital and largest city of Saitama Prefecture, Japan. Its area incorporates the former cities of Urawa, Ōmiya, Yono and Iwatsuki. It is a city designated by government ordinance. As of 1 February 2021, the city had an estimated population of 1,324,854, and a population density of 6,093 people per km2. Its total area is 217.43 square kilometres (83.95 sq mi).",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 2400,
+      "tickets": 1200,
+      "food": 1800,
+      "cafe": 600
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Saitama City in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Saitama City Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Saitama Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Saitama City",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Saitama City. Known for its bonsai and railway museum vibes, it offers a great escape with an overall score of 7.8.",
+    "schemaVersion": 2
   },
   {
     "id": "shibuya-ward",
@@ -3928,8 +7183,49 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Shibuya"],
-    "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station."
+    "highlights": ["Scramble Crossing", "Shibuya Sky", "Miyashita Park"],
+    "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Required for Shibuya Sky.",
+    "parking": "Extremely difficult.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Shibuya in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Katsumidori Seibu Shibuya"],
+    "cafes": ["Fuglen Tokyo"],
+    "notes": "Book Shibuya Sky tickets for sunset at least 2 weeks in advance.",
+    "schemaVersion": 2
   },
   {
     "id": "shinjuku-ward",
@@ -3984,8 +7280,53 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Shinjuku"],
-    "description": "Shinjuku , officially called Shinjuku City, is one of the 23 special wards of Tokyo."
+    "highlights": [
+      "Shinjuku Gyoen",
+      "Kabukicho",
+      "Tokyo Metropolitan Government Building (Free View)"
+    ],
+    "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Highly recommended for dinners.",
+    "parking": "Available in major towers, very expensive.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Shinjuku in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Omoide Yokocho"],
+    "cafes": ["Blue Bottle Coffee Shinjuku"],
+    "notes": "Shinjuku Station is a maze. Meet at the East Exit Studio Alta or South Exit.",
+    "schemaVersion": 2
   },
   {
     "id": "shizuoka",
@@ -4040,9 +7381,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Shizuoka City"],
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
     "description": "Shizuoka is the capital city of Shizuoka Prefecture, Japan, and the prefecture's second-largest city in both population and area. It has been populated since prehistoric times. As of 1 September 2023, the city had an estimated population of 677,867 in 106,087 households, and a population density of 480 inhabitants per square kilometre (1,200/sq mi).",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 3200,
+      "tickets": 1600,
+      "food": 2400,
+      "cafe": 800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Shizuoka City in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Shizuoka City Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Shizuoka Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Shizuoka City",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Shizuoka City. Known for its green tea and castle ruins vibes, it offers a great escape with an overall score of 8.",
+    "schemaVersion": 2
   },
   {
     "id": "suwa-nagano",
@@ -4106,7 +7502,8 @@
     "coordinates": {
       "lat": 36.0479452,
       "lng": 138.0832846
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "tachikawa-tokyo",
@@ -4169,7 +7566,8 @@
     "coordinates": {
       "lat": 35.7139057,
       "lng": 139.4077701
-    }
+    },
+    "schemaVersion": 2
   },
   {
     "id": "takaoka",
@@ -4222,9 +7620,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Takaoka"],
-    "description": "Takaoka is a scenic destination in the Toyama region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated city locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Takaoka, a prominent destination in Shizuoka. With its rich mix of great buddha, doraemon, crafts, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://images.unsplash.com/photo-1513681424911-396eb093ec89?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1513681424911-396eb093ec89?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1513681424911-396eb093ec89?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "budgetBreakdown": {
+      "transport": 3200,
+      "tickets": 1600,
+      "food": 2400,
+      "cafe": 800
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Takaoka in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary city attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Takaoka Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Takaoka Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Takaoka",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Takaoka. Known for its great buddha and doraemon vibes, it offers a great escape with an overall score of 7.7.",
+    "schemaVersion": 2
   },
   {
     "id": "takayama",
@@ -4278,9 +7731,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Takayama & Shirakawa-go"],
-    "description": "Takayama & Shirakawa-go is a scenic destination in the Gifu region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated town locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Takayama & Shirakawa-go, a prominent destination in Shizuoka. With its rich mix of old town, hida beef, sake, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "budgetBreakdown": {
+      "transport": 4800,
+      "tickets": 2400,
+      "food": 3600,
+      "cafe": 1200
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Takayama & Shirakawa-go in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary town attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Takayama Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Takayama Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Takayama",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Takayama & Shirakawa-go. Known for its old town and hida beef vibes, it offers a great escape with an overall score of 9.",
+    "schemaVersion": 2
   },
   {
     "id": "teamlab-planets",
@@ -4335,8 +7843,57 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["teamLab Planets"],
-    "description": "teamLab Planets is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": [
+      "Infinite Crystal Universe",
+      "Floating Flower Garden",
+      "Water Installations"
+    ],
+    "description": "teamLab Planets is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 7600,
+      "food": 4200,
+      "cafe": 1800
+    },
+    "reservation": "Required well in advance.",
+    "parking": "Not recommended.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of teamLab Planets in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary art attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Vegan Ramen UZU Tokyo"],
+    "cafes": [
+      "Café de teamLab Planets",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "You will walk barefoot and water goes up to your knees. Wear shorts or pants that can be rolled up.",
+    "schemaVersion": 2
   },
   {
     "id": "toyama-alpine",
@@ -4389,9 +7946,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Tateyama Kurobe Alpine Route"],
-    "description": "Tateyama Kurobe Alpine Route is a scenic destination in the Toyama region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated nature locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Tateyama Kurobe Alpine Route, a prominent destination in Shizuoka. With its rich mix of snow wall, dam, scenic, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 10000,
+      "tickets": 5000,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Tateyama Kurobe Alpine Route in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary nature attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Tateyama Kurobe Alpine Route Traditional Dining",
+      "Local Shizuoka Specialty Restaurant",
+      "The Tateyama Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Tateyama Kurobe Alpine Route",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Tateyama Kurobe Alpine Route. Known for its snow wall and dam vibes, it offers a great escape with an overall score of 9.3.",
+    "schemaVersion": 2
   },
   {
     "id": "tsukuba",
@@ -4447,8 +8059,83 @@
       "train": 120,
       "car": 150
     },
-    "highlights": ["Mt. Tsukuba"],
-    "description": "Mt. Tsukuba is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Tsukubasan Shrine", "Ropeway"],
+    "description": "Mt. Tsukuba is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 5000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "",
+    "parking": "Yes",
+    "itineraries": [
+      {
+        "name": "Plan A: The Twin Peak Hike",
+        "description": "A moderately challenging hike to the summits for incredible Kanto Plain views.",
+        "steps": [
+          {
+            "time": "09:00",
+            "activity": "Take the Tsukuba Express, then a bus to the Tsukubasan Shrine."
+          },
+          {
+            "time": "10:00",
+            "activity": "Take the Cable Car up to Miyukigahara (the plateau between peaks)."
+          },
+          {
+            "time": "11:00",
+            "activity": "Hike to the summit of Mt. Nantai, then traverse to Mt. Nyotai."
+          },
+          {
+            "time": "13:30",
+            "activity": "Enjoy a bowl of Tsukuba Udon at the mountaintop restaurant."
+          },
+          {
+            "time": "15:00",
+            "activity": "Take the Ropeway down to the Tsutsujigaoka station."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Science & Shrines",
+        "description": "Mix the natural beauty of the shrine with Tsukuba's famous Space Center.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Visit the JAXA Tsukuba Space Center. See the rocket displays."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch in Tsukuba city center."
+          },
+          {
+            "time": "14:00",
+            "activity": "Take the bus to Tsukubasan Shrine and explore the ancient grounds."
+          },
+          {
+            "time": "15:30",
+            "activity": "Take the cable car up for a quick panoramic view without the hiking."
+          },
+          {
+            "time": "17:00",
+            "activity": "Relax at an onsen near the base of the mountain."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Mt. Tsukuba Traditional Dining",
+      "Local Ibaraki Specialty Restaurant",
+      "The Mt. Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Mt. Tsukuba",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Use ropeway to save time",
+    "schemaVersion": 2
   },
   {
     "id": "ueno-taito",
@@ -4503,8 +8190,49 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Ueno (Taito)"],
-    "description": "Ueno (Taito) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Tokyo National Museum", "Ueno Zoo", "Ameyoko Street"],
+    "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 2000,
+      "food": 3500,
+      "cafe": 1500
+    },
+    "reservation": "Required for special exhibitions.",
+    "parking": "Limited.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Ueno (Taito) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary history attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Minatoya (Takoyaki)"],
+    "cafes": ["Starbucks Ueno Park"],
+    "notes": "In spring, the park is one of Tokyo's most crowded cherry blossom spots.",
+    "schemaVersion": 2
   },
   {
     "id": "ushiku-daibutsu",
@@ -4558,9 +8286,64 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Ushiku Daibutsu"],
-    "description": "Ushiku Daibutsu is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated shrine locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Ushiku Daibutsu, a prominent destination in Kanagawa. With its rich mix of giant statue, record breaking, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg"
+    ],
+    "budgetBreakdown": {
+      "transport": 2600,
+      "tickets": 1300,
+      "food": 1950,
+      "cafe": 650
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Ushiku Daibutsu in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary shrine attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Ushiku Daibutsu Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Ushiku Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Ushiku Daibutsu",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "A fantastic trip to Ushiku Daibutsu. Known for its giant statue and record breaking vibes, it offers a great escape with an overall score of 7.6.",
+    "schemaVersion": 2
   },
   {
     "id": "utsunomiya-oya",
@@ -4616,8 +8399,83 @@
       "train": 100,
       "car": 150
     },
-    "highlights": ["Utsunomiya & Oya"],
-    "description": "Utsunomiya & Oya is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Oya History Museum", "Utsunomiya Gyoza"],
+    "description": "Utsunomiya & Oya is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 1600,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "",
+    "parking": "Yes",
+    "itineraries": [
+      {
+        "name": "Plan A: Stone & Gyoza",
+        "description": "The perfect mix of exploring massive underground caves and eating famous local food.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Take a bus from Utsunomiya Station to the Oya History Museum."
+          },
+          {
+            "time": "10:30",
+            "activity": "Explore the massive, atmospheric underground stone quarry."
+          },
+          {
+            "time": "12:30",
+            "activity": "Visit the nearby Oya-ji Temple and the giant Heiwa Kannon statue."
+          },
+          {
+            "time": "14:00",
+            "activity": "Head back to central Utsunomiya."
+          },
+          {
+            "time": "15:00",
+            "activity": "Go 'Gyoza Hopping' – try 3 different famous gyoza shops for a late lunch/dinner."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Scenic Cycling",
+        "description": "Rent a bike and explore the rural beauty surrounding the stone town.",
+        "steps": [
+          {
+            "time": "09:30",
+            "activity": "Rent a bicycle near Utsunomiya Station."
+          },
+          {
+            "time": "11:00",
+            "activity": "Cycle through the scenic countryside towards the Oya district."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch at a stylish cafe built into an old stone warehouse."
+          },
+          {
+            "time": "14:00",
+            "activity": "Explore the ancient cliff carvings at Oya-ji Temple."
+          },
+          {
+            "time": "16:00",
+            "activity": "Cycle back, drop off the bike, and reward yourself with gyoza."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Utsunomiya Traditional Dining",
+      "Local Tochigi Specialty Restaurant",
+      "The Utsunomiya Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Utsunomiya",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Oya museum is very cool in summer",
+    "schemaVersion": 2
   },
   {
     "id": "yokohama-city",
@@ -4672,8 +8530,75 @@
     "transportOptions": {
       "train": 30
     },
-    "highlights": ["Yokohama"],
-    "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
+    "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
+    "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 3000,
+      "tickets": 0,
+      "food": 6000,
+      "cafe": 2000
+    },
+    "reservation": "Dinners with night views require booking.",
+    "parking": "Plenty of paid parking in Minatomirai.",
+    "itineraries": [
+      {
+        "name": "Plan A: Minatomirai Classics",
+        "description": "The ultimate waterfront date or family trip hitting all major landmarks.",
+        "steps": [
+          {
+            "time": "11:00",
+            "activity": "Design your own custom cup noodles at the Cup Noodle Museum."
+          },
+          {
+            "time": "13:00",
+            "activity": "Lunch and shopping at the historic Red Brick Warehouse."
+          },
+          {
+            "time": "15:00",
+            "activity": "Take a ride on the Cosmo Clock 21 Ferris wheel."
+          },
+          {
+            "time": "16:30",
+            "activity": "Take the Yokohama Air Cabin ropeway across the bay."
+          },
+          {
+            "time": "18:00",
+            "activity": "Dinner in Yokohama Chinatown, the largest in Japan."
+          }
+        ]
+      },
+      {
+        "name": "Plan B: Gardens & History",
+        "description": "A quieter side of Yokohama, focusing on classic Japanese gardens and port history.",
+        "steps": [
+          {
+            "time": "10:00",
+            "activity": "Explore Sankeien Garden, featuring historic buildings relocated from across Japan."
+          },
+          {
+            "time": "12:30",
+            "activity": "Lunch in the elegant Motomachi Shopping Street."
+          },
+          {
+            "time": "14:00",
+            "activity": "Stroll up to the Yamate Bluffs to see the historic Western-style diplomatic houses."
+          },
+          {
+            "time": "16:00",
+            "activity": "Walk through Yamashita Park and tour the NYK Hikawa Maru ocean liner."
+          },
+          {
+            "time": "18:30",
+            "activity": "Cocktails at a high-rise bar in the Landmark Tower."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Manchinro", "Bills Red Brick Warehouse"],
+    "cafes": ["Zebracoffee", "Koku Kafe"],
+    "notes": "Extremely easy access from central Tokyo.",
+    "schemaVersion": 2
   },
   {
     "id": "yomiuriland",
@@ -4729,8 +8654,61 @@
       "train": 60,
       "car": 60
     },
-    "highlights": ["Yomiuriland"],
-    "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings."
+    "highlights": [
+      "Jewellumination (Winter)",
+      "Bandit Roller Coaster",
+      "Goodjoba!! Zone"
+    ],
+    "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings.",
+    "gallery": [],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 8000,
+      "food": 2100,
+      "cafe": 900
+    },
+    "reservation": "Recommended during winter illumination.",
+    "parking": "Available, but crowded in winter.",
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Yomiuriland in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary theme park attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Yomiuriland Traditional Dining",
+      "Local Tokyo Specialty Restaurant",
+      "The Yomiuriland Grill & Izakaya"
+    ],
+    "cafes": [
+      "Café de Yomiuriland",
+      "Riverside Roasters",
+      "Station Matcha & Sweets"
+    ],
+    "notes": "Winter Jewellumination is incredibly famous and romantic.",
+    "schemaVersion": 2
   },
   {
     "id": "zushi",
@@ -4784,9 +8762,60 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Zushi & Yokosuka"],
-    "description": "Zushi & Yokosuka is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-    "bestMonths": [3, 4, 5, 9, 10, 11]
+    "highlights": [
+      "Explore top-rated coast locations",
+      "Enjoy regional specialties and local culture",
+      "Perfect for a active day out"
+    ],
+    "description": "Discover Zushi & Yokosuka, a prominent destination in Kanagawa. With its rich mix of surfing, cafes, sunset, it's a highly recommended spot for a 8-hour getaway.",
+    "bestMonths": [3, 4, 5, 9, 10, 11],
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG"
+    ],
+    "budgetBreakdown": {
+      "transport": 2400,
+      "tickets": 1200,
+      "food": 1800,
+      "cafe": 600
+    },
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Zushi & Yokosuka in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at the main station and get oriented."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Visit the primary coast attraction."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Grab a delicious regional lunch."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic sights."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a local café before heading back."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Zushi Traditional Dining",
+      "Local Kanagawa Specialty Restaurant",
+      "The Zushi Grill & Izakaya"
+    ],
+    "cafes": ["Café de Zushi", "Riverside Roasters", "Station Matcha & Sweets"],
+    "notes": "A fantastic trip to Zushi & Yokosuka. Known for its surfing and cafes vibes, it offers a great escape with an overall score of 8.",
+    "schemaVersion": 2
   },
   {
     "id": "tokyo-okutama",

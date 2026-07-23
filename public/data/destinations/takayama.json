@@ -50,7 +50,62 @@
     "autumn": 4,
     "winter": 4
   },
-  "highlights": ["Takayama & Shirakawa-go"],
-  "description": "Takayama & Shirakawa-go is a scenic destination in the Gifu region of Japan, offering rich history and cultural attractions.",
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "highlights": [
+    "Explore top-rated town locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "description": "Discover Takayama & Shirakawa-go, a prominent destination in Shizuoka. With its rich mix of old town, hida beef, sake, it's a highly recommended spot for a 8-hour getaway.",
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "gallery": [
+    "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1610363293026-67b1405e6080?q=80&w=1000&auto=format&fit=crop"
+  ],
+  "budgetBreakdown": {
+    "transport": 4800,
+    "tickets": 2400,
+    "food": 3600,
+    "cafe": 1200
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Takayama & Shirakawa-go in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary town attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Takayama Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Takayama Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Takayama",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Takayama & Shirakawa-go. Known for its old town and hida beef vibes, it offers a great escape with an overall score of 9.",
+  "schemaVersion": 2
 }

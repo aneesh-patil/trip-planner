@@ -49,7 +49,62 @@
     "autumn": 4,
     "winter": 4
   },
-  "highlights": ["Kiso Valley"],
-  "description": "Kiso Valley is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "highlights": [
+    "Explore top-rated town locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "description": "Discover Kiso Valley, a prominent destination in Shizuoka. With its rich mix of nakasendo, post towns, tsumago, it's a highly recommended spot for a 8-hour getaway.",
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg"
+  ],
+  "budgetBreakdown": {
+    "transport": 4000,
+    "tickets": 2000,
+    "food": 3000,
+    "cafe": 1000
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Kiso Valley in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary town attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Kiso Valley Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Kiso Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Kiso Valley",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Kiso Valley. Known for its nakasendo and post towns vibes, it offers a great escape with an overall score of 9.1.",
+  "schemaVersion": 2
 }

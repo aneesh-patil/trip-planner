@@ -51,6 +51,73 @@
   "transportOptions": {
     "train": 85
   },
-  "highlights": ["Hakone"],
-  "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
+  "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
+  "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 8200,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "reservation": "Required well in advance for ryokans.",
+  "parking": "Limited and expensive.",
+  "itineraries": [
+    {
+      "name": "Plan A: The Classic Hakone Loop",
+      "description": "Experience all modes of transport and the best views of Mt. Fuji.",
+      "steps": [
+        {
+          "time": "09:00",
+          "activity": "Arrive at Hakone-Yumoto and take the scenic Tozan Mountain Railway to Gora."
+        },
+        {
+          "time": "10:30",
+          "activity": "Transfer to the Hakone Ropeway at Sounzan. Enjoy views over the volcanic Owakudani valley."
+        },
+        {
+          "time": "11:30",
+          "activity": "Eat black eggs (Kuro-tamago) boiled in the hot springs at Owakudani."
+        },
+        {
+          "time": "13:00",
+          "activity": "Take the Pirate Ship cruise across Lake Ashi to Motohakone."
+        },
+        {
+          "time": "15:00",
+          "activity": "Walk the old Cedar Avenue and visit Hakone Shrine."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Art & Relaxation",
+      "description": "A laid-back day focusing on world-class museums and high-end hot springs.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Explore the Hakone Open-Air Museum, featuring Picasso and massive outdoor sculptures."
+        },
+        {
+          "time": "12:30",
+          "activity": "Lunch at a traditional soba restaurant in Gora."
+        },
+        {
+          "time": "14:00",
+          "activity": "Visit the Pola Museum of Art, nestled deep in the forest."
+        },
+        {
+          "time": "16:30",
+          "activity": "Enjoy a premium day-use Onsen (hot spring) with mountain views."
+        },
+        {
+          "time": "18:30",
+          "activity": "Dinner in Hakone-Yumoto before heading back to Yokohama."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Hakone Gindofu", "Bakery & Table Hakone"],
+  "cafes": ["Naraya Cafe", "Amazake Chaya"],
+  "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport.",
+  "schemaVersion": 2
 }

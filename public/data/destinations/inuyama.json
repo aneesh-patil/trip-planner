@@ -53,5 +53,39 @@
     "lat": 35.3853,
     "lng": 136.9405
   },
-  "description": "Inuyama is a scenic destination in the Aichi region of Japan, offering rich history and cultural attractions."
+  "description": "Step back in time in Inuyama. Overlooking the scenic Kiso River, Inuyama Castle is one of only five castles designated as a National Treasure. The surrounding castle town offers fantastic street food and traditional atmosphere.",
+  "reservation": "Not required",
+  "parking": "Available near the castle",
+  "itineraries": [
+    {
+      "name": "Castle and River Views",
+      "description": "Historical architecture and traditional river sights.",
+      "steps": [
+        {
+          "time": "09:30",
+          "activity": "Arrive at Inuyama and walk the historic Honmachi-dori Street."
+        },
+        {
+          "time": "10:30",
+          "activity": "Climb Inuyama Castle, a National Treasure, for views of the Kiso River."
+        },
+        {
+          "time": "12:00",
+          "activity": "Enjoy street food snacks or traditional soba for lunch."
+        },
+        {
+          "time": "13:30",
+          "activity": "Stroll through Urakuen Garden and enjoy matcha at the Joan tea house."
+        },
+        {
+          "time": "15:30",
+          "activity": "Take a boat ride on the Kiso River."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Inuyama Castle Town Food Stalls", "Kiso River Dining"],
+  "cafes": ["Honmachi Tea House"],
+  "notes": "A perfect extension to a Nagoya trip, offering one of Japan's oldest surviving wooden castles.",
+  "schemaVersion": 2
 }

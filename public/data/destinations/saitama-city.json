@@ -49,7 +49,62 @@
     "autumn": 4,
     "winter": 4
   },
-  "highlights": ["Saitama City"],
+  "highlights": [
+    "Explore top-rated city locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
   "description": "Saitama is the capital and largest city of Saitama Prefecture, Japan. Its area incorporates the former cities of Urawa, Ōmiya, Yono and Iwatsuki. It is a city designated by government ordinance. As of 1 February 2021, the city had an estimated population of 1,324,854, and a population density of 6,093 people per km2. Its total area is 217.43 square kilometres (83.95 sq mi).",
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg"
+  ],
+  "budgetBreakdown": {
+    "transport": 2400,
+    "tickets": 1200,
+    "food": 1800,
+    "cafe": 600
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Saitama City in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Saitama City Traditional Dining",
+    "Local Kanagawa Specialty Restaurant",
+    "The Saitama Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Saitama City",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Saitama City. Known for its bonsai and railway museum vibes, it offers a great escape with an overall score of 7.8.",
+  "schemaVersion": 2
 }

@@ -51,6 +51,47 @@
   "transportOptions": {
     "train": 40
   },
-  "highlights": ["Shibuya"],
-  "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station."
+  "highlights": ["Scramble Crossing", "Shibuya Sky", "Miyashita Park"],
+  "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 0,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "reservation": "Required for Shibuya Sky.",
+  "parking": "Extremely difficult.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Shibuya in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Katsumidori Seibu Shibuya"],
+  "cafes": ["Fuglen Tokyo"],
+  "notes": "Book Shibuya Sky tickets for sunset at least 2 weeks in advance.",
+  "schemaVersion": 2
 }

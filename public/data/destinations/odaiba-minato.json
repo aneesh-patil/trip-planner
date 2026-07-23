@@ -51,6 +51,47 @@
   "transportOptions": {
     "train": 50
   },
-  "highlights": ["Odaiba (Minato)"],
-  "description": "Odaiba (Minato) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+  "highlights": ["Gundam Statue", "Odaiba Seaside Park", "Rainbow Bridge View"],
+  "description": "A high-tech entertainment hub on an artificial island in Tokyo Bay, featuring shopping malls, beaches, and a giant Gundam.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 8000,
+    "food": 2100,
+    "cafe": 900
+  },
+  "reservation": "Not required.",
+  "parking": "Plenty of paid parking in malls.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Odaiba (Minato) in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Aqua City Dining"],
+  "cafes": ["Bills Odaiba"],
+  "notes": "Take the Yurikamome line for an automated scenic ride across the bay.",
+  "schemaVersion": 2
 }

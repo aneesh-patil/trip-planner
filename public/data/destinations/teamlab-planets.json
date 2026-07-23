@@ -51,6 +51,55 @@
   "transportOptions": {
     "train": 50
   },
-  "highlights": ["teamLab Planets"],
-  "description": "teamLab Planets is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+  "highlights": [
+    "Infinite Crystal Universe",
+    "Floating Flower Garden",
+    "Water Installations"
+  ],
+  "description": "teamLab Planets is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 7600,
+    "food": 4200,
+    "cafe": 1800
+  },
+  "reservation": "Required well in advance.",
+  "parking": "Not recommended.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of teamLab Planets in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary art attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Vegan Ramen UZU Tokyo"],
+  "cafes": [
+    "Café de teamLab Planets",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "You will walk barefoot and water goes up to your knees. Wear shorts or pants that can be rolled up.",
+  "schemaVersion": 2
 }

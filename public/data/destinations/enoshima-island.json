@@ -51,6 +51,47 @@
   "transportOptions": {
     "train": 60
   },
-  "highlights": ["Enoshima"],
-  "description": "Enoshima is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
+  "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
+  "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 3000,
+    "food": 3500,
+    "cafe": 1500
+  },
+  "reservation": "Not required.",
+  "parking": "Gets full quickly in summer.",
+  "itineraries": [
+    {
+      "name": "Plan A: Ocean Breeze & Shrines",
+      "description": "Hike over the island from the bustling shrine approach to the dramatic southern cliffs.",
+      "steps": [
+        {
+          "time": "11:00",
+          "activity": "Walk across the bridge to Enoshima. Grab a giant senbei cracker on the approach."
+        },
+        {
+          "time": "11:30",
+          "activity": "Visit Enoshima Shrine. Take the escalators up if you want to skip the stairs."
+        },
+        {
+          "time": "12:30",
+          "activity": "Eat fresh Shirasu-don for lunch."
+        },
+        {
+          "time": "14:00",
+          "activity": "Visit the Samuel Cocking Garden and Sea Candle for panoramic views."
+        },
+        {
+          "time": "15:30",
+          "activity": "Walk down to the Iwaya Caves on the rocky southern coast."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Tobiccho (Shirasu Don)"],
+  "cafes": ["Loncafe"],
+  "notes": "Try the local specialty: Shirasu (whitebait) bowl.",
+  "schemaVersion": 2
 }

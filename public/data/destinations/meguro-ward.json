@@ -51,6 +51,51 @@
   "transportOptions": {
     "train": 45
   },
-  "highlights": ["Meguro"],
-  "description": "Meguro is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+  "highlights": [
+    "Meguro River",
+    "Starbucks Reserve Roastery",
+    "Tokyo Photographic Art Museum"
+  ],
+  "description": "Famous worldwide for the Meguro River cherry blossoms. Features trendy cafes, boutiques, and a relaxed atmosphere.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 0,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "reservation": "Not required, but cafes fill up.",
+  "parking": "Limited.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Meguro in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary nature attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Tonki (Tonkatsu)"],
+  "cafes": ["Starbucks Reserve Roastery Tokyo"],
+  "notes": "Spring cherry blossoms are incredibly beautiful but completely packed with people.",
+  "schemaVersion": 2
 }

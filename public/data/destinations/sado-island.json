@@ -49,7 +49,62 @@
     "autumn": 4,
     "winter": 4
   },
-  "highlights": ["Sado Island"],
+  "highlights": [
+    "Explore top-rated island locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
   "description": "Sado Island is an island located in the eastern part of the Sea of Japan, under the jurisdiction of Sado City, Niigata Prefecture, Japan, with a coastline of 262.7 kilometres (163.2 mi). In October 2017, Sado Island had a population of 55,212 people. Sado Island covers an area of 854.76 km2 (330.02 sq mi), and is the sixth largest island in Japan, excluding the disputed Southern Kurils. The shortest distance between Sado Island and Honshu is 32 km (20 mi). The highest peak on Sado Island is Mount Kinpoku, with an elevation of 1,172 m (3,845 ft).",
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png"
+  ],
+  "budgetBreakdown": {
+    "transport": 6000,
+    "tickets": 3000,
+    "food": 4500,
+    "cafe": 1500
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Sado Island in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary island attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Sado Island Traditional Dining",
+    "Local Shizuoka Specialty Restaurant",
+    "The Sado Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Sado Island",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "A fantastic trip to Sado Island. Known for its gold mine and tub boats vibes, it offers a great escape with an overall score of 8.4.",
+  "schemaVersion": 2
 }

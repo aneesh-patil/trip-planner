@@ -50,7 +50,58 @@
     "autumn": 4,
     "winter": 4
   },
-  "highlights": ["Zushi & Yokosuka"],
-  "description": "Zushi & Yokosuka is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "highlights": [
+    "Explore top-rated coast locations",
+    "Enjoy regional specialties and local culture",
+    "Perfect for a active day out"
+  ],
+  "description": "Discover Zushi & Yokosuka, a prominent destination in Kanagawa. With its rich mix of surfing, cafes, sunset, it's a highly recommended spot for a 8-hour getaway.",
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG"
+  ],
+  "budgetBreakdown": {
+    "transport": 2400,
+    "tickets": 1200,
+    "food": 1800,
+    "cafe": 600
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Zushi & Yokosuka in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary coast attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Zushi Traditional Dining",
+    "Local Kanagawa Specialty Restaurant",
+    "The Zushi Grill & Izakaya"
+  ],
+  "cafes": ["Café de Zushi", "Riverside Roasters", "Station Matcha & Sweets"],
+  "notes": "A fantastic trip to Zushi & Yokosuka. Known for its surfing and cafes vibes, it offers a great escape with an overall score of 8.",
+  "schemaVersion": 2
 }

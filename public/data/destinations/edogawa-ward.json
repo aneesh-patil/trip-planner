@@ -52,6 +52,51 @@
     "train": 60,
     "car": 50
   },
-  "highlights": ["Edogawa"],
-  "description": "Edogawa is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
+  "highlights": [
+    "Kasai Rinkai Park",
+    "Tokyo Sea Life Park",
+    "Diamond and Flower Ferris Wheel"
+  ],
+  "description": "Known for Kasai Rinkai Park on Tokyo Bay, featuring a giant Ferris wheel, aquarium, and peaceful riverbank cycling.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 0,
+    "food": 2800,
+    "cafe": 1200
+  },
+  "reservation": "Not required.",
+  "parking": "Ample parking at Kasai Rinkai Park.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Edogawa in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary nature attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Park Cafes"],
+  "cafes": ["Café de Edogawa", "Riverside Roasters", "Station Matcha & Sweets"],
+  "notes": "Great sunset views of Mt. Fuji and Tokyo Disneyland from the park.",
+  "schemaVersion": 2
 }

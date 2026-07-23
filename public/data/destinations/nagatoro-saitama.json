@@ -59,5 +59,6 @@
   "coordinates": {
     "lat": 36.1146759,
     "lng": 139.1096479
-  }
+  },
+  "schemaVersion": 2
 }

@@ -51,6 +51,73 @@
   "transportOptions": {
     "train": 30
   },
-  "highlights": ["Yokohama"],
-  "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
+  "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
+  "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 3000,
+    "tickets": 0,
+    "food": 6000,
+    "cafe": 2000
+  },
+  "reservation": "Dinners with night views require booking.",
+  "parking": "Plenty of paid parking in Minatomirai.",
+  "itineraries": [
+    {
+      "name": "Plan A: Minatomirai Classics",
+      "description": "The ultimate waterfront date or family trip hitting all major landmarks.",
+      "steps": [
+        {
+          "time": "11:00",
+          "activity": "Design your own custom cup noodles at the Cup Noodle Museum."
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch and shopping at the historic Red Brick Warehouse."
+        },
+        {
+          "time": "15:00",
+          "activity": "Take a ride on the Cosmo Clock 21 Ferris wheel."
+        },
+        {
+          "time": "16:30",
+          "activity": "Take the Yokohama Air Cabin ropeway across the bay."
+        },
+        {
+          "time": "18:00",
+          "activity": "Dinner in Yokohama Chinatown, the largest in Japan."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Gardens & History",
+      "description": "A quieter side of Yokohama, focusing on classic Japanese gardens and port history.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Explore Sankeien Garden, featuring historic buildings relocated from across Japan."
+        },
+        {
+          "time": "12:30",
+          "activity": "Lunch in the elegant Motomachi Shopping Street."
+        },
+        {
+          "time": "14:00",
+          "activity": "Stroll up to the Yamate Bluffs to see the historic Western-style diplomatic houses."
+        },
+        {
+          "time": "16:00",
+          "activity": "Walk through Yamashita Park and tour the NYK Hikawa Maru ocean liner."
+        },
+        {
+          "time": "18:30",
+          "activity": "Cocktails at a high-rise bar in the Landmark Tower."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Manchinro", "Bills Red Brick Warehouse"],
+  "cafes": ["Zebracoffee", "Koku Kafe"],
+  "notes": "Extremely easy access from central Tokyo.",
+  "schemaVersion": 2
 }

@@ -52,6 +52,59 @@
     "train": 60,
     "car": 60
   },
-  "highlights": ["Yomiuriland"],
-  "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings."
+  "highlights": [
+    "Jewellumination (Winter)",
+    "Bandit Roller Coaster",
+    "Goodjoba!! Zone"
+  ],
+  "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings.",
+  "gallery": [],
+  "budgetBreakdown": {
+    "transport": 1000,
+    "tickets": 8000,
+    "food": 2100,
+    "cafe": 900
+  },
+  "reservation": "Recommended during winter illumination.",
+  "parking": "Available, but crowded in winter.",
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Yomiuriland in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary theme park attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ],
+  "restaurants": [
+    "Yomiuriland Traditional Dining",
+    "Local Tokyo Specialty Restaurant",
+    "The Yomiuriland Grill & Izakaya"
+  ],
+  "cafes": [
+    "Café de Yomiuriland",
+    "Riverside Roasters",
+    "Station Matcha & Sweets"
+  ],
+  "notes": "Winter Jewellumination is incredibly famous and romantic.",
+  "schemaVersion": 2
 }
