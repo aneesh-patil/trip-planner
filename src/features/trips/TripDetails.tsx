@@ -105,6 +105,7 @@ export default function TripDetails({
             <Button
               variant="outline"
               size="icon"
+              aria-label="Export to calendar options"
               onClick={() => setIsCalendarOpen(!isCalendarOpen)}
               className="rounded-full border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
             >
@@ -148,6 +149,7 @@ export default function TripDetails({
           <Button
             variant="outline"
             size="icon"
+            aria-label="Print or save trip to PDF"
             onClick={triggerPdfPrint}
             className="rounded-full border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
           >
@@ -158,6 +160,7 @@ export default function TripDetails({
           <Button
             variant="outline"
             size="icon"
+            aria-label="Share trip link"
             onClick={handleShareTrip}
             className="rounded-full border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
           >

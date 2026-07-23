@@ -206,6 +206,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
+                  aria-label="Open destination roulette wheel"
                   onClick={() => setRouletteOpen(true)}
                   className="w-full sm:w-auto h-14 px-6 text-base font-bold rounded-full bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800"
                 >

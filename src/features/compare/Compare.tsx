@@ -123,6 +123,7 @@ export default function Compare() {
                 >
                   <button
                     onClick={() => toggleCompare(dest.id)}
+                    aria-label="Remove destination from comparison list"
                     className="absolute top-2 right-2 p-1 text-slate-400 hover:text-red-500 rounded-md opacity-0 group-hover:opacity-100 transition-opacity"
                     title="Remove from comparison"
                   >
@@ -340,6 +341,7 @@ export default function Compare() {
             >
               <button
                 onClick={() => toggleCompare(dest.id)}
+                aria-label="Remove destination from comparison list"
                 className="absolute top-4 right-4 p-1.5 bg-red-50 dark:bg-red-950/50 text-red-500 rounded-full hover:scale-105 transition-transform"
                 title="Remove"
               >

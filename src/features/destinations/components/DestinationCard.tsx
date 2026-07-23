@@ -86,6 +86,9 @@ export default function DestinationCard({
         <div className="absolute top-3 right-3 flex flex-col gap-2 z-10">
           <button
             onClick={() => toggleFavorite(destination.id)}
+            aria-label={
+              favorite ? "Remove from bucket list" : "Add to bucket list"
+            }
             className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-colors shadow-sm text-slate-700"
             title="Want to Visit"
           >
@@ -95,6 +98,11 @@ export default function DestinationCard({
           </button>
           <button
             onClick={() => toggleVisited(destination.id)}
+            aria-label={
+              visited
+                ? "Mark destination as unvisited"
+                : "Mark destination as visited"
+            }
             className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-colors shadow-sm text-slate-700"
             title="Mark as Visited"
           >
