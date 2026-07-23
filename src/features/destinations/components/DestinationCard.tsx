@@ -58,7 +58,7 @@ export default function DestinationCard({
       : undefined;
 
   return (
-    <Card className="overflow-hidden flex flex-col h-full group rounded-card shadow-card hover:shadow-hover transition-all duration-300 border-slate-200 dark:border-slate-800">
+    <Card className="overflow-hidden flex flex-col h-full group rounded-card shadow-card hover:shadow-hover hover:-translate-y-1 transition-all duration-300 border-slate-200 dark:border-slate-800">
       <div className="relative h-56 overflow-hidden">
         <img
           src={destination.heroImage}
@@ -91,7 +91,7 @@ export default function DestinationCard({
             aria-label={
               favorite ? "Remove from bucket list" : "Add to bucket list"
             }
-            className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-colors shadow-sm text-slate-700"
+            className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-all active:scale-95 duration-150 shadow-sm text-slate-700"
             title="Want to Visit"
           >
             <Bookmark
@@ -105,7 +105,7 @@ export default function DestinationCard({
                 ? "Mark destination as unvisited"
                 : "Mark destination as visited"
             }
-            className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-colors shadow-sm text-slate-700"
+            className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-all active:scale-95 duration-150 shadow-sm text-slate-700"
             title="Mark as Visited"
           >
             <CheckCircle2
