@@ -3,6 +3,8 @@ import { useParams, Link, useLocation } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { getDestination } from "@/shared/services/destination/DestinationService";
+import destinationsData from "@/shared/data/destinations-index.json";
+import DestinationCard from "./components/DestinationCard";
 import type { Destination } from "@/shared/types/destination";
 import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
 import { calculateScore } from "@/shared/services/recommendation/RecommendationScorer";
@@ -188,6 +190,27 @@ export default function DestinationDetails() {
     const { score } = calculateScore(destination, context);
     return createRecommendationMatch(destination, context, score);
   }, [destination, navState, user, forecast, homeStationCoords]);
+
+  const nearbyDestinations = useMemo(() => {
+    if (!destination?.coordinates) return [];
+    const all = destinationsData as Destination[];
+    return all
+      .filter(
+        (d: Destination) => d.id !== destination.id && Boolean(d.coordinates),
+      )
+      .map((d: Destination) => ({
+        destination: d,
+        distance: getDistance(
+          destination.coordinates!.lat,
+          destination.coordinates!.lng,
+          d.coordinates!.lat,
+          d.coordinates!.lng,
+        ),
+      }))
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, 3)
+      .map((item) => item.destination);
+  }, [destination]);
 
   const activeModes = useMemo(() => {
     if (!destination) return null;
@@ -1090,6 +1113,36 @@ export default function DestinationDetails() {
               </CardContent>
             </Card>
           </div>
+          {/* Nearby Destinations Section */}
+          {nearbyDestinations.length > 0 && (
+            <div className="mt-16 pt-12 border-t border-slate-200 dark:border-slate-800">
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h3 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+                    <MapPin className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                    Nearby Destinations
+                  </h3>
+                  <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                    Other great places to visit close to {destination.name}.
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {nearbyDestinations.map((dest: Destination) => (
+                  <DestinationCard
+                    key={dest.id}
+                    destination={dest}
+                    partySize={partySize}
+                    carMode={navState?.carMode || "none"}
+                    publicModes={
+                      navState?.publicModes || ["train", "shinkansen", "bus"]
+                    }
+                    activeTransportMode="all"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
