@@ -76,5 +76,33 @@
   "restaurants": ["Wild Boar Grill", "Chichibu Soba House"],
   "cafes": ["Jiyuan Tea House"],
   "notes": "Chichibu Night Festival is registered as a UNESCO Intangible Cultural Heritage.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Chichibu in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at Chichibu and get oriented at the base area."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Explore the primary sights: Chichibu Shrine and Hitsujiyama Park (Shibazakura)."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Enjoy a local lunch featuring regional specialties."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic landmarks: Mitsumine Shrine and Chichibu Night Festival."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a nearby local café or park before heading back."
+        }
+      ]
+    }
+  ]
 }

@@ -857,7 +857,35 @@
       "lat": 35.6506036,
       "lng": 139.5407066
     },
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Chofu in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Chofu and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Jindaiji Temple and Jindai Botanical Gardens."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Kitaro Chaya Soba."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "choshi-chiba",
@@ -925,7 +953,35 @@
       "lat": 35.7345338,
       "lng": 140.8272667
     },
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Choshi in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Choshi and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Inubosaki Lighthouse and Choshi Electric Railway."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Byobugaura Cliffs."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "disneyland",
@@ -2103,7 +2159,35 @@
       "lat": 35.6663595,
       "lng": 139.3163653
     },
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Hachioji in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Hachioji and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Mount Takao Cable Car and Hachioji Castle Ruins."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Takao 599 Museum."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "hakkeijima",
@@ -4593,7 +4677,35 @@
       "lat": 35.5466803,
       "lng": 139.4386999
     },
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Machida in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Machida and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Machida Squirrel Garden and Serigaya Park."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Grandberry Park and Nakamachi Shopping Street."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "matsumoto",
@@ -5004,7 +5116,35 @@
       "lat": 35.2459214,
       "lng": 139.9340832
     },
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Mother Farm (Futtsu) in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Mother Farm (Futtsu) and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Sheep Shearing Show and Alpaca Farm."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Flower Fields."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mount-fuji",
@@ -6070,7 +6210,35 @@
       "lat": 35.7880531,
       "lng": 139.2753553
     },
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Ome in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Ome and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Mitake Gorge and Ome Retro Movie Poster Street."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Gyokudo Art Museum."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "omiya-railway",
@@ -6921,7 +7089,35 @@
       "lat": 35.7139057,
       "lng": 139.4077701
     },
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Tachikawa in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Tachikawa and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Showa Kinen Park and GREEN SPRINGS Complex."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Tachikawa Anime Mall."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "takaoka",
@@ -8026,7 +8222,35 @@
     "restaurants": ["Okutama Beer Cafe", "Hatonosu Soba"],
     "cafes": ["Goraikou Cafe"],
     "notes": "Bring stout shoes for hiking trails. The Nippara caves maintain a cool 11°C temperature year-round.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Okutama in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Okutama and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Lake Okutama and Nippara Limestone Cave."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Mount Mitake Trail and Hatonosu Gorge."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "tokyo-mt-mitake",
@@ -8106,7 +8330,35 @@
     "restaurants": ["Mitake Sobadokoro", "Shrine Lodge Dining"],
     "cafes": ["Cafe Comon"],
     "notes": "Mitake cable car cuts out the steepest initial climb, making it accessible for families.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Mt. Mitake in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Mt. Mitake and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Musashi Mitake Shrine and Rock Garden Trail."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Mitake Cable Car and Anago Falls."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "tokyo-hinohara",
@@ -8186,7 +8438,35 @@
     "restaurants": ["Hinohara Tofu Shop", "Sansui Local Soba"],
     "cafes": ["Cafe Kazuma"],
     "notes": "Hossawa Falls is selected as one of Japan's Top 100 waterfalls.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Hinohara in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Hinohara and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Hossawa Falls and Kanoto Rock."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Hinohara Tokyo Citizens Forest and Kazuma Hot Spring."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "saitama-chichibu",
@@ -8266,7 +8546,35 @@
     "restaurants": ["Wild Boar Grill", "Chichibu Soba House"],
     "cafes": ["Jiyuan Tea House"],
     "notes": "Chichibu Night Festival is registered as a UNESCO Intangible Cultural Heritage.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Chichibu in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Chichibu and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Chichibu Shrine and Hitsujiyama Park (Shibazakura)."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Mitsumine Shrine and Chichibu Night Festival."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "saitama-nagatoro",
@@ -8346,7 +8654,35 @@
     "restaurants": ["Nagatoro Soba", "Asami Reika Kakigori"],
     "cafes": ["Urushi Cafe"],
     "notes": "The boat cruise doesn't run during heavy rains or high river levels.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Nagatoro in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Nagatoro and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Nagatoro Line Kudari (Boat Cruise) and Iwadatami Rock Terrace."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Hodosan Shrine and Mount Hodo Ropeway."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "chiba-sawara",
@@ -8426,7 +8762,35 @@
     "restaurants": ["Sawara Unagi Yado", "Kanoya Soba"],
     "cafes": ["Cafe Deko"],
     "notes": "Toyohashi Bridge spills water into the canal twice an hour, making a pleasant 'ja-ja' sound.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Sawara in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Sawara and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Ono River Historic District and Toyohashi Ja-Ja Bridge."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Ino Tadataka Museum and Sawara Canal Boat Tour."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "chiba-nokogiriyama",
@@ -8506,7 +8870,35 @@
     "restaurants": ["Kanaya Seafood", "Boso Fish Grill"],
     "cafes": ["Nokogiri Coffee"],
     "notes": "Hell Peek viewpoint is extremely high and does not suit travellers prone to vertigo.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Nokogiriyama in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Nokogiriyama and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Jigoku Nozoki (Hell Peek) and Nihon-ji Great Buddha."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Nokogiriyama Ropeway and Hyaku-shaku Kannon."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "chiba-yoro-valley",
@@ -8586,7 +8978,35 @@
     "restaurants": ["Yoro River Soba", "Gorge Dining Hall"],
     "cafes": ["Valley Cafe"],
     "notes": "Chiba's most famous spot for late autumn colors, peaking around late November.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Yoro Valley in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Yoro Valley and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Awamata Falls and Yoro River Trail."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Kannon Bridge and Yoro Gorge Onsen."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gunma-kusatsu-onsen",
@@ -8667,7 +9087,35 @@
     "restaurants": ["Kusatsu Udon", "Onsen Tamago House"],
     "cafes": ["Yubatake Cafe"],
     "notes": "Kusatsu's hot springs have highly acidic water with strong antibacterial benefits.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kusatsu Onsen in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Kusatsu Onsen and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Yubatake (Hot Water Field) and Netsunoyu (Yumomi Show)."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Sainokawara Park and Otowanoyu Public Baths."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gunma-ikaho-onsen",
@@ -8748,7 +9196,35 @@
     "restaurants": ["Mizusawa Udon Shops", "Steps Soba"],
     "cafes": ["Steps Tea Room"],
     "notes": "Mizusawa Udon, served nearby, is considered one of Japan's top three udon types.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Ikaho Onsen in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Ikaho Onsen and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: 365 Stone Steps (Stone Stairs) and Ikaho Shrine."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Kogane-no-yu (Golden Water) Baths and Kajika Bridge."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gunma-shima-onsen",
@@ -8828,7 +9304,35 @@
     "restaurants": ["Shima Tonkatsu", "Onsen Soba"],
     "cafes": ["Kashiwaya Cafe"],
     "notes": "Sekizenkan's red bridge and front wooden facade is famously noted to resemble the bathhouse in Spirited Away.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Shima Onsen in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Shima Onsen and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Sekizenkan Ryokan (Spirited Away Inspiration) and Lake Okushima (Shima Blue)."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Shima River Trail and Monomitayu Bathhouse."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ibaraki-mount-tsukuba",
@@ -8908,7 +9412,35 @@
     "restaurants": ["Mount Tsukuba Soba", "Tsukuba Udon"],
     "cafes": ["Summit Observatory Tea House"],
     "notes": "Unlike Fuji, Tsukuba is known for turning purple and changing color over the course of the day.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Mount Tsukuba in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Mount Tsukuba and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Tsukuba Shrine and Mount Tsukuba Ropeway & Cable Car."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Nantaimasan Peak Trail and Benten Rock Path."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ibaraki-fukuroda-falls",
@@ -8988,7 +9520,35 @@
     "restaurants": ["Fukuroda Soba", "Kenyaki Grill"],
     "cafes": ["Falls Lookout Cafe"],
     "notes": "In autumn, the surrounding forest turns vibrant gold and crimson, framing the water cascades.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Fukuroda Falls in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Fukuroda Falls and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Fukuroda Falls Tunnel & Deck and Tada Falls Suspension Bridge."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Nagare-no-Kannon Shrine and Fukuroda Hot Springs (nearby)."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ibaraki-hitachi-seaside-park",
@@ -9068,7 +9628,35 @@
     "restaurants": ["Park Curry House", "Seaside Bento"],
     "cafes": ["Glass House Cafe"],
     "notes": "Renting a bicycle inside the park is highly recommended to cover the vast park grounds.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Hitachi Seaside Park in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Hitachi Seaside Park and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Miharashi Hill and Pleasure Garden Ferris Wheel."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Seaside Biking Trail and Dune Garden."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "nagano-kamikochi",
@@ -9148,7 +9736,35 @@
     "restaurants": ["Kamikochi Diner", "Kappa Bridge Soba"],
     "cafes": ["Alps Cafe"],
     "notes": "Closed completely from mid-November to mid-April due to heavy snow.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Kamikochi in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Kamikochi and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Kappa Bridge (Kappabashi) and Taisho Pond."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Myojin Pond and Hotaka Mountain Range views."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gifu-takayama",
@@ -9229,7 +9845,35 @@
     "restaurants": ["Hida Beef Center", "Maruaki Steakhouse"],
     "cafes": ["Old Town Tea House"],
     "notes": "Try Hida beef skewers sold fresh along the merchant streets.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Takayama in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Takayama and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Sanmachi Suji (Old Town) and Miyagawa Morning Market."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Takayama Jinya (Government House) and Takayama Matsuri Festival."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gifu-shirakawa-go",
@@ -9309,7 +9953,35 @@
     "restaurants": ["Irori Diner", "Shirakawago Soba"],
     "cafes": ["Ochiudo Coffee"],
     "notes": "Wada House is the largest Gassho-style farmhouse in Ogimachi.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Shirakawa-go in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Shirakawa-go and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Ogimachi Castle Observatory and Wada House (Wada-ke)."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Myozenji Temple Museum and Deai Suspension Bridge."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gifu-gujo-hachiman",
@@ -9389,7 +10061,35 @@
     "restaurants": ["Gujo Ayu Sweetfish Grill", "Sogisui Soba"],
     "cafes": ["Canal Tea Room"],
     "notes": "Sogisui Spring is designated by the government as one of Japan's 100 remarkable waters.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Gujo Hachiman in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Gujo Hachiman and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Gujo Hachiman Castle and Sogisui Spring Canal."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Yanagimachi Street and Gujo Odori Dance Museum."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "nagano-narai-juku",
@@ -9469,7 +10169,35 @@
     "restaurants": ["Gohyaku-man-goku Soba", "Kiso Rice Bowls"],
     "cafes": ["Nakasendo Tea Salon"],
     "notes": "Beautifully preserved wooden street facade stretching for over a kilometer.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Narai-juku in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Narai-juku and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Nakasendo Historic Street and Kiso Bridge (Wooden)."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Narai Juku Museum and Nakamura House."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "nagano-tsumago-juku",
@@ -9549,7 +10277,35 @@
     "restaurants": ["Tsumago Soba", "Chestnut Rice House"],
     "cafes": ["Tsumago Tea Room"],
     "notes": "No power lines or phone cables are visible along the street to preserve the historical atmosphere.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Tsumago-juku in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Tsumago-juku and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Waki-Honjin Okuya Inn and Tsumago Honjin."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Kotoku-ji Temple and Tsumago-Magome Nakasendo Trail."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gifu-magome-juku",
@@ -9629,7 +10385,35 @@
     "restaurants": ["Magome Gohei Mochi", "Magome Soba House"],
     "cafes": ["Hillside Cafe"],
     "notes": "Try Gohei Mochi, a skewered sticky rice cake covered in walnut/sesame paste.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Magome-juku in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Magome-juku and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Magome Waterwheel and Toson Memorial Museum."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Magome Lookout Point and Nakasendo stone steps path."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "nagano-suwa",
@@ -9709,7 +10493,35 @@
     "restaurants": ["Suwa Lake Eel (Unagi)", "Sake Brew Dining"],
     "cafes": ["Lakefront Coffee"],
     "notes": "Tateishi Park offers panoramic lake views that inspired scenes in the movie 'Your Name'.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Suwa in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Suwa and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Lake Suwa Geyser Center and Suwa Taisha Grand Shrine."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Tateishi Park (anime lake view) and Suwa Lakefront Footbaths."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "nagano-bessho-onsen",
@@ -9789,7 +10601,35 @@
     "restaurants": ["Bessho Soba", "Local Hotpot Diner"],
     "cafes": ["Bessho Cafe"],
     "notes": "Anraku-ji's octagonal three-storied pagoda is a national treasure and the only one of its kind in Japan.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Bessho Onsen in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Bessho Onsen and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Anraku-ji Temple (Octagonal Pagoda) and Kitamuki Kannon Temple."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Oyu Public Bathhouse and Bessho Forest Trails."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yamanashi-shosenkyo-gorge",
@@ -9869,7 +10709,35 @@
     "restaurants": ["Yamanashi Hoto Noodles", "Gorge Grilled Trout"],
     "cafes": ["Ropeway Summit Cafe"],
     "notes": "Hoto noodles are flat wheat noodles stewed with pumpkin and seasonal veggies in miso broth.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Shosenkyo Gorge in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Shosenkyo Gorge and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Senga Falls and Kakusenmei Suspension Bridge."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Shosenkyo Ropeway (Panorama view) and Kakutozan Rock Pinnacle."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yamanashi-nishizawa-valley",
@@ -9949,7 +10817,35 @@
     "restaurants": ["Valley Trailhead Grill", "Hoto Stew"],
     "cafes": ["Trailhead Tea Stall"],
     "notes": "The loop hike takes about 4 hours. Good hiking boots are absolutely essential.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Nishizawa Valley in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Nishizawa Valley and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Nanatsugama Godan Falls (Five-Tier Cascades) and Nishizawa Valley suspension bridge."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Kobutori Rock and Valley forest trail."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yamanashi-fujiyoshida",
@@ -10029,6 +10925,34 @@
     "restaurants": ["Yoshida Udon Shops", "Fuji View Grill"],
     "cafes": ["Chureito Tea House"],
     "notes": "Chureito Pagoda offers one of Japan's most famous postcard views framing Mt. Fuji in cherry blossoms or red maple leaves.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "itineraries": [
+      {
+        "name": "Classic Day Trip",
+        "description": "The most efficient way to see the highlights of Fujiyoshida in one day.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Fujiyoshida and get oriented at the base area."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Explore the primary sights: Arakurayama Sengen Park (Chureito Pagoda) and Fuji-Q Highland."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Enjoy a local lunch featuring regional specialties."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Continue exploring the scenic landmarks: Kitaguchi Hongu Fuji Sengen Shrine and Kaneyama Onsen."
+          },
+          {
+            "time": "4:30 PM",
+            "activity": "Relax at a nearby local café or park before heading back."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -76,5 +76,33 @@
   "restaurants": ["Kanaya Seafood", "Boso Fish Grill"],
   "cafes": ["Nokogiri Coffee"],
   "notes": "Hell Peek viewpoint is extremely high and does not suit travellers prone to vertigo.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Nokogiriyama in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at Nokogiriyama and get oriented at the base area."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Explore the primary sights: Jigoku Nozoki (Hell Peek) and Nihon-ji Great Buddha."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Enjoy a local lunch featuring regional specialties."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic landmarks: Nokogiriyama Ropeway and Hyaku-shaku Kannon."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a nearby local café or park before heading back."
+        }
+      ]
+    }
+  ]
 }

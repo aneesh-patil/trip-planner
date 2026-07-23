@@ -64,5 +64,33 @@
     "lat": 35.7139057,
     "lng": 139.4077701
   },
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Tachikawa in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at Tachikawa and get oriented at the base area."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Explore the primary sights: Showa Kinen Park and GREEN SPRINGS Complex."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Enjoy a local lunch featuring regional specialties."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic landmarks: Tachikawa Anime Mall."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a nearby local café or park before heading back."
+        }
+      ]
+    }
+  ]
 }

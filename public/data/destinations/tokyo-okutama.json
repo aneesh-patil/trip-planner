@@ -76,5 +76,33 @@
   "restaurants": ["Okutama Beer Cafe", "Hatonosu Soba"],
   "cafes": ["Goraikou Cafe"],
   "notes": "Bring stout shoes for hiking trails. The Nippara caves maintain a cool 11°C temperature year-round.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Okutama in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at Okutama and get oriented at the base area."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Explore the primary sights: Lake Okutama and Nippara Limestone Cave."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Enjoy a local lunch featuring regional specialties."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic landmarks: Mount Mitake Trail and Hatonosu Gorge."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a nearby local café or park before heading back."
+        }
+      ]
+    }
+  ]
 }

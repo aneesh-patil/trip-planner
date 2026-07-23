@@ -76,5 +76,33 @@
   "restaurants": ["Yoro River Soba", "Gorge Dining Hall"],
   "cafes": ["Valley Cafe"],
   "notes": "Chiba's most famous spot for late autumn colors, peaking around late November.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Yoro Valley in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at Yoro Valley and get oriented at the base area."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Explore the primary sights: Awamata Falls and Yoro River Trail."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Enjoy a local lunch featuring regional specialties."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic landmarks: Kannon Bridge and Yoro Gorge Onsen."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a nearby local café or park before heading back."
+        }
+      ]
+    }
+  ]
 }
