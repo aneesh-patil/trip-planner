@@ -254,25 +254,23 @@ export default function DestinationCard({
                 if (mode === "bus") Icon = Bus;
                 if (mode === "shinkansen") Icon = TrainFront;
 
+                const formattedTime =
+                  time > 0
+                    ? time >= 60
+                      ? `${Math.floor(time / 60)}h ${time % 60}m`
+                      : `${time}m trip`
+                    : "N/A";
+
                 return (
-                  <div
-                    className={`flex items-center ${activeTransportMode !== "all" ? "bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-2 py-1 rounded-md -ml-2" : ""}`}
-                  >
-                    <Icon
-                      className={`w-4 h-4 mr-2 ${activeTransportMode !== "all" ? "text-emerald-600 dark:text-emerald-500" : "text-slate-400"}`}
-                    />
-                    <span>{time > 0 ? `${time}m trip` : "N/A"}</span>
-                    {activeTransportMode !== "all" && (
-                      <span className="text-[10px] font-extrabold uppercase tracking-widest ml-2 bg-emerald-100 dark:bg-emerald-800/60 px-1.5 py-0.5 rounded-sm">
-                        Cheapest
-                      </span>
-                    )}
+                  <div className="flex items-center whitespace-nowrap min-w-0">
+                    <Icon className="w-4 h-4 mr-1.5 text-slate-400 shrink-0" />
+                    <span className="truncate">{formattedTime}</span>
                   </div>
                 );
               })()}
-              <div className="flex items-center">
-                <DollarSign className="w-4 h-4 mr-2 text-slate-400" />
-                <span>
+              <div className="flex items-center whitespace-nowrap min-w-0">
+                <DollarSign className="w-4 h-4 mr-1.5 text-slate-400 shrink-0" />
+                <span className="truncate">
                   ¥
                   {(
                     getAdjustedBudget(
@@ -284,15 +282,17 @@ export default function DestinationCard({
                   k est.
                 </span>
               </div>
-              <div className="flex items-center">
-                <Sun className="w-4 h-4 mr-2 text-slate-400" />
-                <span>
+              <div className="flex items-center whitespace-nowrap min-w-0">
+                <Sun className="w-4 h-4 mr-1.5 text-slate-400 shrink-0" />
+                <span className="truncate">
                   {destination.walkingSunMin < 3000 ? "Low sun" : "High sun"}
                 </span>
               </div>
-              <div className="flex items-center">
-                <Bookmark className="w-4 h-4 mr-2 text-slate-400" />
-                <span>Couple {destination.ratings.couple}/10</span>
+              <div className="flex items-center whitespace-nowrap min-w-0">
+                <Bookmark className="w-4 h-4 mr-1.5 text-slate-400 shrink-0" />
+                <span className="truncate">
+                  Couple {destination.ratings.couple}/10
+                </span>
               </div>
             </div>
 
