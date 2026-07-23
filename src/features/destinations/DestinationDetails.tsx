@@ -1113,37 +1113,38 @@ export default function DestinationDetails() {
               </CardContent>
             </Card>
           </div>
-          {/* Nearby Destinations Section */}
-          {nearbyDestinations.length > 0 && (
-            <div className="mt-16 pt-12 border-t border-slate-200 dark:border-slate-800">
-              <div className="flex items-center justify-between mb-8">
-                <div>
-                  <h3 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-                    <MapPin className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
-                    Nearby Destinations
-                  </h3>
-                  <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
-                    Other great places to visit close to {destination.name}.
-                  </p>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {nearbyDestinations.map((dest: Destination) => (
-                  <DestinationCard
-                    key={dest.id}
-                    destination={dest}
-                    partySize={partySize}
-                    carMode={navState?.carMode || "none"}
-                    publicModes={
-                      navState?.publicModes || ["train", "shinkansen", "bus"]
-                    }
-                    activeTransportMode="all"
-                  />
-                ))}
+        </div>
+
+        {/* Nearby Destinations Section */}
+        {nearbyDestinations.length > 0 && (
+          <div className="mt-16 pt-12 border-t border-slate-200 dark:border-slate-800">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <h3 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+                  <MapPin className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                  Nearby Destinations
+                </h3>
+                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                  Other great places to visit close to {destination.name}.
+                </p>
               </div>
             </div>
-          )}
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {nearbyDestinations.map((dest: Destination) => (
+                <DestinationCard
+                  key={dest.id}
+                  destination={dest}
+                  partySize={partySize}
+                  carMode={navState?.carMode || "none"}
+                  publicModes={
+                    navState?.publicModes || ["train", "shinkansen", "bus"]
+                  }
+                  activeTransportMode="all"
+                />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
