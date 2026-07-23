@@ -4,6 +4,8 @@ import { useLocalStorage } from "./useLocalStorage";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { useTripSync } from "@/shared/hooks/useTripSync";
 import destinationsIndex from "@/shared/data/destinations-index.json";
+import type { Trip, TripStop } from "@/shared/types/trip";
+import * as TripService from "@/shared/services/trips/TripService";
 
 interface TripStoreContextType {
   favorites: string[];
@@ -28,6 +30,24 @@ interface TripStoreContextType {
   toggleCompare: (id: string) => void;
   isComparing: (id: string) => boolean;
   clearCompare: () => void;
+
+  trips: Trip[];
+  setTrips: (val: Trip[] | ((prev: Trip[]) => Trip[])) => void;
+  addTrip: (title: string, startDate?: string, endDate?: string) => void;
+  updateTrip: (id: string, updates: Partial<Trip>) => void;
+  deleteTrip: (id: string) => void;
+  addStopToTrip: (tripId: string, stop: Omit<TripStop, "id">) => void;
+  removeStopFromTrip: (tripId: string, stopId: string) => void;
+  updateTripStop: (
+    tripId: string,
+    stopId: string,
+    updates: Partial<TripStop>,
+  ) => void;
+  reorderTripStops: (
+    tripId: string,
+    startIndex: number,
+    endIndex: number,
+  ) => void;
 }
 
 const TripStoreContext = createContext<TripStoreContextType | undefined>(
@@ -65,6 +85,8 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     { lat: 35.6812, lng: 139.7671 }, // Tokyo Station default
   );
 
+  const [trips, setTrips] = useLocalStorage<Trip[]>("trip-planner-trips", []);
+
   // Modular cloud persistence & initial load hook
   useTripSync({
     user,
@@ -79,6 +101,8 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     homeStation,
     setHomeStation,
     setHomeStationCoords,
+    trips,
+    setTrips,
   });
 
   const toggleFavorite = (id: string) => {
@@ -150,6 +174,80 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
   const clearCompare = () => setCompareList([]);
 
+  // Trip Management Actions
+  const addTrip = (title: string, startDate?: string, endDate?: string) => {
+    const errors = TripService.validateTrip(title, startDate, endDate);
+    if (errors.length > 0) {
+      throw new Error(errors.join(" "));
+    }
+    const newTrip: Trip = {
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      userId: user?.id || "guest",
+      title,
+      startDate,
+      endDate,
+      status: "draft",
+      stops: [],
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    setTrips((prev) => [...prev, newTrip]);
+  };
+
+  const updateTrip = (id: string, updates: Partial<Trip>) => {
+    setTrips((prev) =>
+      prev.map((t) =>
+        t.id === id
+          ? { ...t, ...updates, updatedAt: new Date().toISOString() }
+          : t,
+      ),
+    );
+  };
+
+  const deleteTrip = (id: string) => {
+    setTrips((prev) => prev.filter((t) => t.id !== id));
+  };
+
+  const addStopToTrip = (tripId: string, stop: Omit<TripStop, "id">) => {
+    setTrips((prev) =>
+      prev.map((t) =>
+        t.id === tripId ? TripService.addStopToTrip(t, stop) : t,
+      ),
+    );
+  };
+
+  const removeStopFromTrip = (tripId: string, stopId: string) => {
+    setTrips((prev) =>
+      prev.map((t) =>
+        t.id === tripId ? TripService.removeStopFromTrip(t, stopId) : t,
+      ),
+    );
+  };
+
+  const updateTripStop = (
+    tripId: string,
+    stopId: string,
+    updates: Partial<TripStop>,
+  ) => {
+    setTrips((prev) =>
+      prev.map((t) =>
+        t.id === tripId ? TripService.updateTripStop(t, stopId, updates) : t,
+      ),
+    );
+  };
+
+  const reorderTripStops = (
+    tripId: string,
+    startIndex: number,
+    endIndex: number,
+  ) => {
+    setTrips((prev) =>
+      prev.map((t) =>
+        t.id === tripId ? TripService.reorderStops(t, startIndex, endIndex) : t,
+      ),
+    );
+  };
+
   return (
     <TripStoreContext.Provider
       value={{
@@ -170,6 +268,15 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         setHomeStation,
         homeStationCoords,
         setHomeStationCoords,
+        trips,
+        setTrips,
+        addTrip,
+        updateTrip,
+        deleteTrip,
+        addStopToTrip,
+        removeStopFromTrip,
+        updateTripStop,
+        reorderTripStops,
       }}
     >
       {children}

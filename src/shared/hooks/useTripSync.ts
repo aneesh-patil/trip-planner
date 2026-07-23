@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import type { User } from "@supabase/supabase-js";
 import { supabase } from "@/lib/supabase";
 import { toast } from "sonner";
+import type { Trip } from "@/shared/types/trip";
+import { SupabaseTripRepository } from "@/shared/services/trips/TripRepository";
 
 interface UseTripSyncProps {
   user: User | null;
@@ -25,6 +27,8 @@ interface UseTripSyncProps {
           prev: { lat: number; lng: number } | null,
         ) => { lat: number; lng: number } | null),
   ) => void;
+  trips?: Trip[];
+  setTrips?: (val: Trip[] | ((prev: Trip[]) => Trip[])) => void;
 }
 
 export function useTripSync({
@@ -39,12 +43,15 @@ export function useTripSync({
   homeStation,
   setHomeStation,
   setHomeStationCoords,
+  trips = [],
+  setTrips,
 }: UseTripSyncProps) {
   const isLoadedRef = useRef(false);
   const prevUserIdRef = useRef(user?.id);
   const syncTimeoutRef = useRef<number | ReturnType<typeof setTimeout> | null>(
     null,
   );
+  const prevTripsRef = useRef<Trip[]>(trips);
 
   // Clear data on logout, reset load state on user change
   useEffect(() => {
@@ -53,6 +60,7 @@ export function useTripSync({
       setVisited([]);
       setVisitedPrefectures([]);
       setCompareList([]);
+      if (setTrips) setTrips([]);
       isLoadedRef.current = false;
     } else if (user?.id && user.id !== prevUserIdRef.current) {
       isLoadedRef.current = false;
@@ -64,12 +72,15 @@ export function useTripSync({
     setVisited,
     setVisitedPrefectures,
     setCompareList,
+    setTrips,
   ]);
 
   // Fetch initial data on login
   useEffect(() => {
     if (user?.id && !isLoadedRef.current) {
       if (!supabase) return;
+
+      // Load user metadata
       supabase
         .from("user_data")
         .select("favorites, visited, visited_prefectures, home_station")
@@ -121,6 +132,25 @@ export function useTripSync({
               }
             }
           }
+        });
+
+      // Load trips using repository
+      const tripRepo = new SupabaseTripRepository();
+      tripRepo
+        .fetchTrips(user.id)
+        .then((fetchedTrips) => {
+          if (fetchedTrips && fetchedTrips.length > 0 && setTrips) {
+            setTrips(fetchedTrips);
+            prevTripsRef.current = fetchedTrips;
+          }
+        })
+        .catch((err) => {
+          console.warn(
+            "Could not load trips from server, using local copy.",
+            err,
+          );
+        })
+        .finally(() => {
           setTimeout(() => {
             isLoadedRef.current = true;
           }, 0);
@@ -133,9 +163,10 @@ export function useTripSync({
     setVisitedPrefectures,
     setHomeStation,
     setHomeStationCoords,
+    setTrips,
   ]);
 
-  // Sync back to db when state changes
+  // Sync user metadata back to db when state changes
   useEffect(() => {
     if (user?.id && isLoadedRef.current) {
       const client = supabase;
@@ -156,7 +187,7 @@ export function useTripSync({
           .then(({ error }) => {
             if (error) {
               console.error("Failed to sync user data", error);
-              toast.error("Failed to sync to cloud. Saved locally.");
+              toast.error("Failed to sync profile to cloud. Saved locally.");
             }
           });
       }, 1000);
@@ -166,4 +197,28 @@ export function useTripSync({
       if (syncTimeoutRef.current) clearTimeout(syncTimeoutRef.current);
     };
   }, [favorites, visited, visitedPrefectures, homeStation, user?.id]);
+
+  // Sync trips back to db when trips state changes
+  useEffect(() => {
+    if (user?.id && isLoadedRef.current) {
+      const tripRepo = new SupabaseTripRepository();
+
+      // Handle deleted trips
+      const deletedTrips = prevTripsRef.current.filter(
+        (prevTrip) => !trips.some((t) => t.id === prevTrip.id),
+      );
+      deletedTrips.forEach((t) => {
+        tripRepo.deleteTrip(t.id).catch((err) => {
+          console.error("Failed to delete trip from cloud", err);
+        });
+      });
+
+      // Upsert current trips
+      Promise.all(trips.map((t) => tripRepo.saveTrip(t))).catch((err) => {
+        console.error("Failed to sync trips to cloud", err);
+      });
+
+      prevTripsRef.current = trips;
+    }
+  }, [trips, user?.id]);
 }

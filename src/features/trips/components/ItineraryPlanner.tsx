@@ -1,0 +1,284 @@
+import { useState } from "react";
+import type { Trip, TripStop } from "@/shared/types/trip";
+import { TripStopType } from "@/shared/types/trip";
+import { getDestinationList } from "@/shared/services/destination/DestinationService";
+import type { Destination } from "@/shared/types/destination";
+import { Button } from "@/shared/components/ui/button";
+import { Input } from "@/shared/components/ui/input";
+import { ArrowDown, ArrowUp, Plus, Trash2 } from "lucide-react";
+
+interface ItineraryPlannerProps {
+  trip: Trip;
+  onAddStop: (stop: Omit<TripStop, "id">) => void;
+  onRemoveStop: (stopId: string) => void;
+  onReorderStops: (startIndex: number, endIndex: number) => void;
+}
+
+export default function ItineraryPlanner({
+  trip,
+  onAddStop,
+  onRemoveStop,
+  onReorderStops,
+}: ItineraryPlannerProps) {
+  const [stopType, setStopType] = useState<TripStopType>("destination");
+  const [selectedDestId, setSelectedDestId] = useState("");
+  const [customName, setCustomName] = useState("");
+  const [notes, setNotes] = useState("");
+  const [arrivalTime, setArrivalTime] = useState("");
+  const [departureTime, setDepartureTime] = useState("");
+  const [estimatedCost, setEstimatedCost] = useState("");
+
+  const destinations = getDestinationList() as Destination[];
+
+  const handleAddStop = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (stopType === "destination") {
+      const dest = destinations.find((d) => d.id === selectedDestId);
+      if (!dest) return;
+      onAddStop({
+        type: "destination",
+        destinationId: dest.id,
+        name: dest.name,
+        notes: notes || undefined,
+        arrivalTime: arrivalTime || undefined,
+        departureTime: departureTime || undefined,
+        estimatedCost: estimatedCost ? parseFloat(estimatedCost) : undefined,
+      });
+    } else {
+      if (!customName || customName.trim() === "") return;
+      onAddStop({
+        type: "custom",
+        name: customName,
+        notes: notes || undefined,
+        arrivalTime: arrivalTime || undefined,
+        departureTime: departureTime || undefined,
+        estimatedCost: estimatedCost ? parseFloat(estimatedCost) : undefined,
+      });
+    }
+
+    // Reset Form
+    setSelectedDestId("");
+    setCustomName("");
+    setNotes("");
+    setArrivalTime("");
+    setDepartureTime("");
+    setEstimatedCost("");
+  };
+
+  return (
+    <div className="space-y-8">
+      {/* Add Stop Form */}
+      <form
+        onSubmit={handleAddStop}
+        className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-3xl space-y-4"
+      >
+        <h4 className="text-md font-bold text-slate-950 dark:text-white mb-2">
+          Add Itinerary Stop
+        </h4>
+
+        <div className="flex gap-4">
+          <button
+            type="button"
+            onClick={() => setStopType("destination")}
+            className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all border ${
+              stopType === "destination"
+                ? "bg-slate-900 text-white dark:bg-emerald-600 border-transparent"
+                : "bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400"
+            }`}
+          >
+            TabiMap Place
+          </button>
+          <button
+            type="button"
+            onClick={() => setStopType("custom")}
+            className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all border ${
+              stopType === "custom"
+                ? "bg-slate-900 text-white dark:bg-emerald-600 border-transparent"
+                : "bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400"
+            }`}
+          >
+            Custom Location
+          </button>
+        </div>
+
+        {stopType === "destination" ? (
+          <div>
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+              Select Place
+            </label>
+            <select
+              value={selectedDestId}
+              onChange={(e) => setSelectedDestId(e.target.value)}
+              className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500"
+            >
+              <option value="">-- Choose a Destination --</option>
+              {destinations.map((d) => (
+                <option key={d.id} value={d.id}>
+                  {d.name} ({d.prefecture})
+                </option>
+              ))}
+            </select>
+          </div>
+        ) : (
+          <div>
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+              Location Name
+            </label>
+            <Input
+              type="text"
+              value={customName}
+              onChange={(e) => setCustomName(e.target.value)}
+              placeholder="e.g. Hotel Sunroute Plaza Shinjuku"
+              className="bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-xl"
+            />
+          </div>
+        )}
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+              Arrival Time
+            </label>
+            <Input
+              type="text"
+              value={arrivalTime}
+              onChange={(e) => setArrivalTime(e.target.value)}
+              placeholder="e.g. 10:00 AM"
+              className="bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-xl"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+              Departure Time
+            </label>
+            <Input
+              type="text"
+              value={departureTime}
+              onChange={(e) => setDepartureTime(e.target.value)}
+              placeholder="e.g. 12:30 PM"
+              className="bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-xl"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+              Cost (¥)
+            </label>
+            <Input
+              type="number"
+              value={estimatedCost}
+              onChange={(e) => setEstimatedCost(e.target.value)}
+              placeholder="e.g. 1500"
+              className="bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-xl"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+            Notes / Activity Description
+          </label>
+          <Input
+            type="text"
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            placeholder="e.g. Try local spicy noodles"
+            className="bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-xl"
+          />
+        </div>
+
+        <Button
+          type="submit"
+          disabled={stopType === "destination" ? !selectedDestId : !customName}
+          className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-bold px-6"
+        >
+          <Plus className="w-4 h-4 mr-1.5" />
+          <span>Add Stop</span>
+        </Button>
+      </form>
+
+      {/* Stops List */}
+      <div className="space-y-4">
+        <h4 className="text-lg font-bold text-slate-950 dark:text-white">
+          Itinerary Order
+        </h4>
+
+        {trip.stops.length === 0 ? (
+          <p className="text-slate-400 dark:text-slate-500 text-sm italic">
+            No stops added yet. Use the form above to add places or hotel
+            details to this itinerary.
+          </p>
+        ) : (
+          <div className="space-y-3">
+            {trip.stops.map((stop, index) => (
+              <div
+                key={stop.id}
+                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4 rounded-2xl flex items-center justify-between shadow-sm"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center font-black text-sm text-slate-700 dark:text-slate-300">
+                    {index + 1}
+                  </div>
+
+                  <div>
+                    <h5 className="font-bold text-slate-900 dark:text-white text-base">
+                      {stop.name}
+                    </h5>
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-xs text-slate-500 dark:text-slate-400">
+                      <span className="inline-block px-1.5 py-0.5 rounded bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 font-bold uppercase tracking-wider text-[9px]">
+                        {stop.type}
+                      </span>
+                      {(stop.arrivalTime || stop.departureTime) && (
+                        <span>
+                          {stop.arrivalTime || "--"} -{" "}
+                          {stop.departureTime || "--"}
+                        </span>
+                      )}
+                      {stop.estimatedCost !== undefined && (
+                        <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                          ¥{stop.estimatedCost.toLocaleString()}
+                        </span>
+                      )}
+                      {stop.notes && (
+                        <span className="italic">"{stop.notes}"</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-1">
+                  {/* Reorder Buttons */}
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    disabled={index === 0}
+                    onClick={() => onReorderStops(index, index - 1)}
+                    className="h-8 w-8 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 disabled:opacity-20 rounded-full"
+                  >
+                    <ArrowUp className="w-4 h-4" />
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    disabled={index === trip.stops.length - 1}
+                    onClick={() => onReorderStops(index, index + 1)}
+                    className="h-8 w-8 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 disabled:opacity-20 rounded-full"
+                  >
+                    <ArrowDown className="w-4 h-4" />
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    onClick={() => onRemoveStop(stop.id)}
+                    className="h-8 w-8 text-slate-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 rounded-full"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

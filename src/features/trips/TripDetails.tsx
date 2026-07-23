@@ -1,0 +1,143 @@
+import { useState } from "react";
+import type { Trip, TripStop } from "@/shared/types/trip";
+import ItineraryPlanner from "./components/ItineraryPlanner";
+import ExportDialog from "./components/ExportDialog";
+import { Button } from "@/shared/components/ui/button";
+import { ArrowLeft, Edit3, Share2 } from "lucide-react";
+
+interface TripDetailsProps {
+  trip: Trip;
+  onBack: () => void;
+  onUpdateTrip: (updates: Partial<Trip>) => void;
+  onAddStop: (stop: Omit<TripStop, "id">) => void;
+  onRemoveStop: (stopId: string) => void;
+  onReorderStops: (startIndex: number, endIndex: number) => void;
+}
+
+export default function TripDetails({
+  trip,
+  onBack,
+  onUpdateTrip,
+  onAddStop,
+  onRemoveStop,
+  onReorderStops,
+}: TripDetailsProps) {
+  const [journal, setJournal] = useState(trip.journalNotes || "");
+  const [isEditingTitle, setIsEditingTitle] = useState(false);
+  const [titleInput, setTitleInput] = useState(trip.title);
+  const [showExport, setShowExport] = useState(false);
+
+  const handleSaveTitle = () => {
+    if (titleInput.trim() !== "") {
+      onUpdateTrip({ title: titleInput });
+      setIsEditingTitle(false);
+    }
+  };
+
+  const handleSaveJournal = () => {
+    onUpdateTrip({ journalNotes: journal });
+  };
+
+  return (
+    <div className="space-y-8">
+      {/* Header Bar */}
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pb-6 border-b border-slate-200 dark:border-slate-800">
+        <div className="flex items-center gap-3">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={onBack}
+            className="text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 rounded-full"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </Button>
+
+          <div>
+            {isEditingTitle ? (
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={titleInput}
+                  onChange={(e) => setTitleInput(e.target.value)}
+                  className="text-3xl font-extrabold bg-transparent border-b border-slate-300 focus:outline-none text-slate-900 dark:text-white"
+                />
+                <Button
+                  onClick={handleSaveTitle}
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-semibold px-4 text-xs h-8"
+                >
+                  Save
+                </Button>
+              </div>
+            ) : (
+              <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                <span>{trip.title}</span>
+                <button
+                  onClick={() => setIsEditingTitle(true)}
+                  className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                >
+                  <Edit3 className="w-4 h-4" />
+                </button>
+              </h1>
+            )}
+            <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+              Status:{" "}
+              <span className="font-bold capitalize text-emerald-600 dark:text-emerald-400">
+                {trip.status}
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <Button
+          onClick={() => setShowExport(true)}
+          className="bg-slate-900 hover:bg-slate-850 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white rounded-full font-bold px-6 inline-flex items-center gap-2 self-stretch md:self-auto justify-center"
+        >
+          <Share2 className="w-4 h-4" />
+          <span>Export Itinerary</span>
+        </Button>
+      </div>
+
+      {/* Main Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Planner Left Area */}
+        <div className="lg:col-span-2 space-y-6">
+          <ItineraryPlanner
+            trip={trip}
+            onAddStop={onAddStop}
+            onRemoveStop={onRemoveStop}
+            onReorderStops={onReorderStops}
+          />
+        </div>
+
+        {/* Journal Right Area */}
+        <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-3xl h-fit space-y-4">
+          <h4 className="text-md font-bold text-slate-950 dark:text-white">
+            Trip Journal Notes
+          </h4>
+          <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Record memories, list tickets, notes about dining places, or write
+            journal updates during your journey.
+          </p>
+
+          <textarea
+            value={journal}
+            onChange={(e) => setJournal(e.target.value)}
+            placeholder="Write details about reservation confirmations, train links, ticket info..."
+            className="w-full h-48 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500"
+          />
+
+          <Button
+            onClick={handleSaveJournal}
+            className="w-full bg-slate-900 hover:bg-slate-850 dark:bg-emerald-600 dark:hover:bg-emerald-700 text-white rounded-full font-bold"
+          >
+            Save Journal
+          </Button>
+        </div>
+      </div>
+
+      {showExport && (
+        <ExportDialog trip={trip} onClose={() => setShowExport(false)} />
+      )}
+    </div>
+  );
+}

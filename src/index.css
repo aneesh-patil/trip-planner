@@ -101,3 +101,35 @@
 .custom-popup .leaflet-popup-tip {
   box-shadow: none;
 }
+
+@media print {
+  header,
+  footer,
+  nav,
+  button,
+  form,
+  .fixed,
+  .absolute,
+  .z-50,
+  select,
+  input {
+    display: none !important;
+  }
+  body,
+  main,
+  .container {
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+  .grid {
+    display: block !important;
+  }
+  .bg-slate-50,
+  .dark\:bg-slate-900 {
+    background: white !important;
+    border: none !important;
+  }
+}
