@@ -125,29 +125,36 @@ export default function DestinationCard({
       </CardHeader>
 
       <CardContent className="pb-5 flex-grow">
-        {destination.matchScore ? (
+        {(destination as any).match ? (
           // SMART MATCH VIEW (Homepage Recommendation)
           <div className="space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
               <span className="font-bold text-slate-700 dark:text-slate-300">
-                Weekend Match
+                Match Confidence
               </span>
               <span className="text-2xl font-black text-emerald-500">
-                {Number(destination.matchScore).toFixed(1)}%
+                {(destination as any).match.confidence}%
               </span>
             </div>
 
             <div className="space-y-2.5">
               <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
-                Why you should go:
+                Why this matches you:
               </p>
-              {destination.matchReasons?.map((r, i) => (
+              {(destination as any).match.reasons.map((r: any, i: number) => (
                 <div
                   key={i}
                   className="flex items-start text-sm font-medium text-slate-700 dark:text-slate-300"
                 >
                   <CheckCircle2 className="w-4 h-4 mr-2.5 text-emerald-500 shrink-0 mt-0.5" />
-                  <span>{r}</span>
+                  <div>
+                    <span className="font-bold block">{r.title}</span>
+                    {r.description && (
+                      <span className="text-xs text-slate-500 dark:text-slate-400">
+                        {r.description}
+                      </span>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

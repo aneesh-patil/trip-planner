@@ -41,6 +41,10 @@ interface DestinationFiltersProps {
   setWeather: (val: string) => void;
   maxWalking: number;
   setMaxWalking: (val: number) => void;
+  suitabilities: string[];
+  setSuitabilities: (val: string[] | ((prev: string[]) => string[])) => void;
+  interests: string[];
+  setInterests: (val: string[] | ((prev: string[]) => string[])) => void;
   totalMatches?: number;
   onSearch?: () => void;
   onReset: () => void;
@@ -63,6 +67,10 @@ export default function DestinationFilters({
   setWeather,
   maxWalking,
   setMaxWalking,
+  suitabilities,
+  setSuitabilities,
+  interests,
+  setInterests,
   totalMatches,
   onSearch,
   onReset,
@@ -477,6 +485,84 @@ export default function DestinationFilters({
             <div className="flex justify-between text-xs text-slate-400 font-medium">
               <span>2k steps</span>
               <span>25k+</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Suitability & Interests Checkboxes */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full pt-6 border-t border-slate-100 dark:border-slate-800">
+          <div className="space-y-3">
+            <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
+              Suitability
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { id: "solo", label: "Solo Friendly" },
+                { id: "couple", label: "Couple Friendly" },
+                { id: "family", label: "Family Friendly" },
+                { id: "accessible", label: "Accessible (Low Intensity)" },
+              ].map((s) => {
+                const active = suitabilities.includes(s.id);
+                return (
+                  <button
+                    key={s.id}
+                    type="button"
+                    onClick={() =>
+                      setSuitabilities((prev) =>
+                        prev.includes(s.id)
+                          ? prev.filter((x) => x !== s.id)
+                          : [...prev, s.id],
+                      )
+                    }
+                    className={`py-2 px-3.5 rounded-xl border text-xs font-bold transition-all ${
+                      active
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900"
+                    }`}
+                  >
+                    {active ? "✓ " : ""}
+                    {s.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
+              Interests
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { id: "nature", label: "Nature" },
+                { id: "history", label: "History" },
+                { id: "food", label: "Food" },
+                { id: "hiking", label: "Hiking" },
+                { id: "photography", label: "Photography" },
+              ].map((interest) => {
+                const active = interests.includes(interest.id);
+                return (
+                  <button
+                    key={interest.id}
+                    type="button"
+                    onClick={() =>
+                      setInterests((prev) =>
+                        prev.includes(interest.id)
+                          ? prev.filter((x) => x !== interest.id)
+                          : [...prev, interest.id],
+                      )
+                    }
+                    className={`py-2 px-3.5 rounded-xl border text-xs font-bold transition-all ${
+                      active
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
+                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900"
+                    }`}
+                  >
+                    {active ? "✓ " : ""}
+                    {interest.label}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>

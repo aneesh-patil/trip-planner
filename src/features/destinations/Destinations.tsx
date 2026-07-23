@@ -21,6 +21,16 @@ import {
 } from "@/shared/utils/distance";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
+import {
+  tokenizeQuery,
+  matchesDestination,
+} from "@/shared/services/recommendation/DestinationSearch";
+import {
+  isCoupleFriendly,
+  isFamilyFriendly,
+  isSoloFriendly,
+  isAccessible,
+} from "@/shared/services/recommendation/RecommendationFilters";
 
 export default function Destinations() {
   const { homeStationCoords } = useTripStore();
@@ -34,6 +44,8 @@ export default function Destinations() {
   const [partySize, setPartySize] = useState(2);
   const [weather, setWeather] = useState("all");
   const [maxWalking, setMaxWalking] = useState(25000);
+  const [suitabilities, setSuitabilities] = useState<string[]>([]);
+  const [interests, setInterests] = useState<string[]>([]);
   const [viewMode, setViewMode] = useState<"grid" | "map">("grid");
   const [currentPage, setCurrentPage] = useState(1);
   const ITEMS_PER_PAGE = 20;
@@ -61,6 +73,8 @@ export default function Destinations() {
     partySize,
     weather,
     maxWalking,
+    suitabilities,
+    interests,
   ]);
 
   // Filter and sort destinations
@@ -85,17 +99,8 @@ export default function Destinations() {
 
     // 1. Search
     if (query) {
-      result = result.filter(
-        (dest) =>
-          dest.name.toLowerCase().includes(query) ||
-          dest.prefecture.toLowerCase().includes(query) ||
-          dest.region.toLowerCase().includes(query) ||
-          (dest.tags ?? []).some((t) => t.toLowerCase().includes(query)) ||
-          (dest.categories ?? []).some((c) =>
-            c.toLowerCase().includes(query),
-          ) ||
-          (dest.highlights ?? []).some((h) => h.toLowerCase().includes(query)),
-      );
+      const tokens = tokenizeQuery(searchQuery);
+      result = result.filter((dest) => matchesDestination(dest, tokens));
     }
 
     // 2. Filter by budget and Transport availability
@@ -111,7 +116,33 @@ export default function Destinations() {
       return lowest <= maxBudget;
     });
 
-    // 4. Filter by Weather
+    // 3. Suitability filters
+    if (suitabilities.length > 0) {
+      result = result.filter((dest) => {
+        return suitabilities.every((suit) => {
+          if (suit === "solo") return isSoloFriendly(dest);
+          if (suit === "couple") return isCoupleFriendly(dest);
+          if (suit === "family") return isFamilyFriendly(dest);
+          if (suit === "accessible") return isAccessible(dest);
+          return true;
+        });
+      });
+    }
+
+    // 4. Interests filters
+    if (interests.length > 0) {
+      result = result.filter((dest) => {
+        const allAttributes = [
+          ...(dest.categories || []),
+          ...(dest.tags || []),
+        ].map((x) => x.toLowerCase());
+        return interests.every((interest) =>
+          allAttributes.some((attr) => attr.includes(interest)),
+        );
+      });
+    }
+
+    // 5. Filter by Weather
     if (weather === "indoor") {
       result = result.filter(
         (dest) => dest.indoorPercent >= 50 || dest.ratings.rain >= 8,
@@ -122,7 +153,7 @@ export default function Destinations() {
       result = result.filter((dest) => dest.ratings.winter >= 8);
     }
 
-    // 5. Filter by Max Walking
+    // 6. Filter by Max Walking
     result = result.filter((dest) => dest.walkingMin <= maxWalking);
 
     // 6. Sort
@@ -189,6 +220,8 @@ export default function Destinations() {
     setPartySize(2);
     setWeather("all");
     setMaxWalking(25000);
+    setSuitabilities([]);
+    setInterests([]);
   };
 
   const handleSearchSubmit = () => {
@@ -258,6 +291,10 @@ export default function Destinations() {
         setWeather={setWeather}
         maxWalking={maxWalking}
         setMaxWalking={setMaxWalking}
+        suitabilities={suitabilities}
+        setSuitabilities={setSuitabilities}
+        interests={interests}
+        setInterests={setInterests}
         totalMatches={filteredAndSortedDestinations.length}
         onSearch={handleSearchSubmit}
         onReset={resetFilters}

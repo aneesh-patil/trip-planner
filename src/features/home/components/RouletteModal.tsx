@@ -150,7 +150,13 @@ export default function RouletteModal({
                   {/* Badge */}
                   <div className="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full shadow-md flex items-center gap-1">
                     <Sparkles className="w-3 h-3" />
-                    <span>{spinning ? "Spinning..." : "Surprise Match"}</span>
+                    <span>
+                      {spinning
+                        ? "Spinning..."
+                        : (currentDisplay as any).match
+                          ? `${(currentDisplay as any).match.confidence}% Match`
+                          : "Surprise Match"}
+                    </span>
                   </div>
 
                   {/* Rating */}

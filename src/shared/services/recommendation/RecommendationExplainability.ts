@@ -1,0 +1,267 @@
+import type { Destination } from "@/shared/types/destination";
+import type { RecommendationContext } from "./RecommendationContext";
+import type { MatchReason, RecommendationMatch } from "./RecommendationTypes";
+import { calculateConfidence, getValidModes } from "./RecommendationScorer";
+import { getAdjustedBudget } from "@/shared/services/budget/BudgetService";
+
+export function createRecommendationMatch(
+  dest: Destination,
+  context: RecommendationContext,
+  score: number,
+): RecommendationMatch {
+  const {
+    tripType,
+    budget,
+    carMode,
+    publicModes,
+    partySize,
+    currentWeatherCondition,
+    currentWeather,
+  } = context;
+
+  const reasons: MatchReason[] = [];
+  const matchedPreferences: string[] = [];
+  const unmatchedPreferences: string[] = [];
+
+  const confidence = calculateConfidence(score);
+  const validModesForDest = getValidModes(dest, carMode, publicModes);
+
+  // 1. Budget and Transport Explainability
+  let bestMode = validModesForDest[0];
+  let bestModeBudget = 999999;
+  let hasFastTrain = false;
+  let hasEasyDrive = false;
+
+  for (const mode of validModesForDest) {
+    let adjustedBudget = 999999;
+    if (dest.budgetRecommended) {
+      adjustedBudget = getAdjustedBudget(dest, mode, partySize);
+    }
+
+    if (adjustedBudget <= budget && adjustedBudget < bestModeBudget) {
+      bestModeBudget = adjustedBudget;
+      bestMode = mode;
+    }
+
+    if (mode === "train") {
+      const time = dest.transportOptions?.train;
+      if (time && time <= 60) {
+        hasFastTrain = true;
+      }
+    } else if (
+      (mode === "car" || mode === "my_car") &&
+      dest.transportOptions?.car
+    ) {
+      const time = dest.transportOptions.car;
+      if (time && time <= 60) {
+        hasEasyDrive = true;
+      }
+    }
+  }
+
+  // Budget Reason
+  if (dest.budgetRecommended) {
+    if (bestModeBudget <= budget) {
+      matchedPreferences.push("budget");
+      if (budget - bestModeBudget >= 5000) {
+        reasons.push({
+          type: "Budget",
+          title: "Great Value",
+          description: `Well under budget (est. ¥${bestModeBudget.toLocaleString()})`,
+        });
+      } else {
+        reasons.push({
+          type: "Budget",
+          title: "Within Budget",
+          description: `Est. ¥${bestModeBudget.toLocaleString()} is within your range`,
+        });
+      }
+    } else {
+      unmatchedPreferences.push("budget");
+    }
+  }
+
+  // Transport Reasons
+  if (hasFastTrain) {
+    reasons.push({
+      type: "Transport",
+      title: "Fast Train Access",
+      description: `Only ${dest.transportOptions?.train}m by train`,
+    });
+  }
+  if (hasEasyDrive) {
+    reasons.push({
+      type: "Transport",
+      title: "Easy Drive",
+      description: `Only ${dest.transportOptions?.car}m driving distance`,
+    });
+  }
+  if (bestMode === "shinkansen") {
+    reasons.push({
+      type: "Transport",
+      title: "Shinkansen Connected",
+      description: `Quick shinkansen access (${dest.transportOptions?.shinkansen}m)`,
+    });
+  }
+
+  // 2. Trip Type Explainability
+  const ratings = dest.ratings || {
+    food: 5,
+    photography: 5,
+    summer: 5,
+    winter: 5,
+    overall: 5,
+  };
+  const cats = dest.categories || [];
+  const tags = dest.tags || [];
+
+  switch (tripType) {
+    case "food":
+      if (ratings.food >= 8.5) {
+        matchedPreferences.push("food");
+        reasons.push({
+          type: "Interest",
+          title: "Top-tier Food Scene",
+          description: "Famous for exceptional local culinary experiences",
+        });
+      }
+      break;
+    case "nature":
+      if (tags.includes("Nature") || cats.includes("Mountain")) {
+        matchedPreferences.push("nature");
+        reasons.push({
+          type: "Interest",
+          title: "Nature Escape",
+          description: "Beautiful scenic landscapes and nature views",
+        });
+      } else {
+        unmatchedPreferences.push("nature");
+      }
+      break;
+    case "history":
+      if (
+        cats.includes("History") ||
+        cats.includes("Shrine") ||
+        tags.includes("Historic")
+      ) {
+        matchedPreferences.push("history");
+        reasons.push({
+          type: "Interest",
+          title: "Deep History",
+          description: "Rich historical background and monuments",
+        });
+      } else {
+        unmatchedPreferences.push("history");
+      }
+      break;
+    case "art":
+      if (cats.includes("Museum") || cats.includes("Art")) {
+        matchedPreferences.push("art");
+        reasons.push({
+          type: "Interest",
+          title: "Rich in Art & Culture",
+          description: "Excellent museums and galleries to explore",
+        });
+      } else {
+        unmatchedPreferences.push("art");
+      }
+      break;
+    case "sea":
+      if (
+        cats.includes("Coast") ||
+        cats.includes("Sea") ||
+        cats.includes("Beach")
+      ) {
+        matchedPreferences.push("sea");
+        reasons.push({
+          type: "Interest",
+          title: "Coastal Vibe",
+          description: "Refreshing oceanside beaches and views",
+        });
+      } else {
+        unmatchedPreferences.push("sea");
+      }
+      break;
+    case "cool":
+      if (ratings.summer >= 8.5) {
+        matchedPreferences.push("cool");
+        reasons.push({
+          type: "Weather",
+          title: "Cool Retreat",
+          description: "Refreshing climate perfect for hot days",
+        });
+      }
+      break;
+    case "themepark":
+      if (cats.includes("Theme Park")) {
+        matchedPreferences.push("themepark");
+        reasons.push({
+          type: "Interest",
+          title: "Theme Park Fun",
+          description: "Exciting attractions and theme park rides",
+        });
+      } else {
+        unmatchedPreferences.push("themepark");
+      }
+      break;
+  }
+
+  // 3. Environmental Explainability
+  const isRaining =
+    (currentWeather &&
+      (currentWeather.desc === "Rainy" || currentWeather.desc === "Stormy")) ||
+    currentWeatherCondition === "rainy";
+  const isHot =
+    (currentWeather && currentWeather.temp >= 30) ||
+    currentWeatherCondition === "summer";
+  const isCold =
+    (currentWeather && currentWeather.temp <= 10) ||
+    currentWeatherCondition === "winter";
+
+  if (isRaining) {
+    const indoor = dest.indoorPercent || 0;
+    if (indoor >= 70) {
+      reasons.push({
+        type: "Weather",
+        title: "Rain Friendly",
+        description: `${Math.round(indoor)}% indoor space, perfect for rain`,
+      });
+    }
+  }
+  if (isHot && ratings.summer >= 8.5) {
+    reasons.push({
+      type: "Weather",
+      title: "Cool Mountain Air",
+      description: "A cool escape from the hot city temperatures",
+    });
+  }
+  if (isCold && ratings.winter >= 8.5) {
+    reasons.push({
+      type: "Weather",
+      title: "Winter Comfort",
+      description: "Excellent cold weather/onsen getaway spot",
+    });
+  }
+
+  if (reasons.length === 0) {
+    reasons.push({
+      type: "General",
+      title: ratings.overall >= 8.5 ? "Highly Rated Choice" : "Solid Match",
+      description:
+        ratings.overall >= 8.5
+          ? "Highly recommended by other travelers"
+          : "A solid match matching your base criteria",
+    });
+  }
+
+  // Construct structured summary
+  const summary = reasons[0]?.description || "A recommended trip choice";
+
+  return {
+    confidence,
+    reasons,
+    matchedPreferences,
+    unmatchedPreferences,
+    summary,
+  };
+}

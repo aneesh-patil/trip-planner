@@ -45,7 +45,7 @@ export function useTripRecommendations({
       carMode,
       publicModes,
       partySize,
-      weather: activeWeatherStr,
+      currentWeatherCondition: activeWeatherStr,
       visitedIds: [],
       homeStationCoords: homeStationCoords || { lat: 35.6812, lng: 139.7671 },
     });
@@ -69,7 +69,7 @@ export function useTripRecommendations({
       carMode,
       publicModes,
       partySize,
-      weather: "any",
+      currentWeatherCondition: "any",
       visitedIds: allDestinations
         .filter((d) => isVisited(d.id))
         .map((d) => d.id),

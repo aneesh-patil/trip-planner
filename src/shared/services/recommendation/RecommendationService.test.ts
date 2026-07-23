@@ -2,11 +2,12 @@ import { describe, it, expect } from "vitest";
 import { getRecommendations, getValidModes } from "./RecommendationService";
 import type { Destination } from "@/shared/types/destination";
 
-const mockDestinations: Partial<Destination>[] = [
+const mockDestinations = [
   {
     id: "hakone-onsen",
     name: "Hakone Onsen",
     prefecture: "Kanagawa",
+    region: "Kanto",
     description: "Relaxing hot spring town with scenic mountain views",
     categories: ["Onsen", "Relaxing"],
     tags: ["Onsen", "Mountains", "Relaxing"],
@@ -29,7 +30,6 @@ const mockDestinations: Partial<Destination>[] = [
       uniqueness: 4.0,
     },
     bestSeason: "Autumn",
-
     coordinates: { lat: 35.2323, lng: 139.1069 },
     transportOptions: {
       train: 85,
@@ -48,6 +48,7 @@ const mockDestinations: Partial<Destination>[] = [
     id: "kamakura-history",
     name: "Kamakura Temples",
     prefecture: "Kanagawa",
+    region: "Kanto",
     description: "Historic coastal town known for its Great Buddha",
     categories: ["Historic", "Culture"],
     tags: ["Historic", "Temples", "Culture"],
@@ -70,7 +71,6 @@ const mockDestinations: Partial<Destination>[] = [
       uniqueness: 4.0,
     },
     bestSeason: "Spring",
-
     coordinates: { lat: 35.319, lng: 139.5467 },
     transportOptions: {
       train: 55,
@@ -89,6 +89,7 @@ const mockDestinations: Partial<Destination>[] = [
     id: "fuji-climbing",
     name: "Mount Fuji Summit",
     prefecture: "Shizuoka",
+    region: "Chubu",
     description: "Challenging mountain hike to the top of Japan",
     categories: ["Nature", "Adventure"],
     tags: ["Mountains", "Hiking", "Adventure"],
@@ -111,7 +112,6 @@ const mockDestinations: Partial<Destination>[] = [
       uniqueness: 4.0,
     },
     bestSeason: "Summer",
-
     coordinates: { lat: 35.3606, lng: 138.7274 },
     transportOptions: {
       bus: 150,
@@ -125,7 +125,7 @@ const mockDestinations: Partial<Destination>[] = [
     crowd: { weekday: 4, weekend: 5, holiday: 5 },
     season: { spring: 1, summer: 5, autumn: 2, winter: 1 },
   },
-];
+] as unknown as Destination[];
 
 describe("RecommendationService Unit Tests", () => {
   const homeCoords = { lat: 35.6812, lng: 139.7671 }; // Tokyo Station
@@ -137,7 +137,7 @@ describe("RecommendationService Unit Tests", () => {
       carMode: "none",
       publicModes: ["train"],
       partySize: 2,
-      weather: "any",
+      currentWeatherCondition: "any",
       visitedIds: [],
       currentWeather: null,
       homeStationCoords: homeCoords,
@@ -156,7 +156,7 @@ describe("RecommendationService Unit Tests", () => {
       carMode: "none",
       publicModes: ["train", "bus", "shinkansen"],
       partySize: 2,
-      weather: "Rainy",
+      currentWeatherCondition: "Rainy",
       visitedIds: [],
       currentWeather: { temp: 18, desc: "Rainy" },
       homeStationCoords: homeCoords,
@@ -173,7 +173,7 @@ describe("RecommendationService Unit Tests", () => {
       carMode: "none",
       publicModes: ["train", "bus", "shinkansen"],
       partySize: 2,
-      weather: "any",
+      currentWeatherCondition: "any",
       visitedIds: [],
       currentWeather: null,
       homeStationCoords: homeCoords,
@@ -191,7 +191,7 @@ describe("RecommendationService Unit Tests", () => {
       carMode: "none",
       publicModes: ["train", "bus", "shinkansen"],
       partySize: 2,
-      weather: "any",
+      currentWeatherCondition: "any",
       visitedIds: ["hakone-onsen"],
       currentWeather: null,
       homeStationCoords: homeCoords,
