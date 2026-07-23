@@ -1,0 +1,63 @@
+{
+  "id": "hachioji-tokyo",
+  "name": "Hachioji",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Nature", "Hiking", "Culture"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+  "gallery": [],
+  "description": "Historic castle town and mountain gateway at the base of Mt. Takao, offering scenic nature trails and Yakiniku food culture.",
+  "highlights": [
+    "Mount Takao Cable Car",
+    "Hachioji Castle Ruins",
+    "Takao 599 Museum"
+  ],
+  "budgetMin": 6500,
+  "budgetMax": 15000,
+  "budgetRecommended": 10750,
+  "transportOptions": {
+    "train": 40,
+    "car": 50
+  },
+  "totalTripHours": 7,
+  "walkingMin": 60,
+  "walkingSunMin": 35,
+  "walkingShadeMin": 25,
+  "indoorPercent": 30,
+  "ratings": {
+    "overall": 8.6,
+    "couple": 8.6,
+    "summer": 8,
+    "winter": 8.2,
+    "rain": 7.5,
+    "food": 8.4,
+    "photography": 8.7,
+    "relaxation": 8.6,
+    "value": 8.7,
+    "uniqueness": 8.4
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 5,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 5,
+    "summer": 4,
+    "autumn": 5,
+    "winter": 3
+  },
+  "bestMonths": [4, 5, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "moderate",
+  "tags": ["Hiking", "Mt. Takao", "Nature"],
+  "reservation": "Not required",
+  "parking": "Available at Takaosanguchi",
+  "restaurants": ["Takahashi Soba", "Ukai Toriyama"],
+  "cafes": ["Takao 599 Cafe"],
+  "notes": "Direct Keio line express trains from Shinjuku.",
+  "coordinates": {
+    "lat": 35.6663595,
+    "lng": 139.3163653
+  }
+}

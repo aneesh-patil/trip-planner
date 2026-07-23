@@ -1,0 +1,63 @@
+{
+  "id": "choshi-chiba",
+  "name": "Choshi",
+  "prefecture": "Chiba",
+  "region": "Kanto",
+  "categories": ["Nature", "Food", "Ocean"],
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+  "gallery": [],
+  "description": "Easternmost coastal cape of the Kanto region, renowned for first sunrises, Inubosaki Lighthouse, and fresh seafood markets.",
+  "highlights": [
+    "Inubosaki Lighthouse",
+    "Choshi Electric Railway",
+    "Byobugaura Cliffs"
+  ],
+  "budgetMin": 9000,
+  "budgetMax": 20000,
+  "budgetRecommended": 14500,
+  "transportOptions": {
+    "train": 110,
+    "car": 110
+  },
+  "totalTripHours": 9,
+  "walkingMin": 45,
+  "walkingSunMin": 30,
+  "walkingShadeMin": 15,
+  "indoorPercent": 30,
+  "ratings": {
+    "overall": 8.5,
+    "couple": 8.6,
+    "summer": 8.6,
+    "winter": 8,
+    "rain": 7,
+    "food": 9.1,
+    "photography": 8.9,
+    "relaxation": 8.6,
+    "value": 8.4,
+    "uniqueness": 8.7
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 4,
+    "holiday": 4
+  },
+  "season": {
+    "spring": 4,
+    "summer": 5,
+    "autumn": 4,
+    "winter": 4
+  },
+  "bestMonths": [1, 5, 7, 8, 10],
+  "bestSeason": "Summer",
+  "weatherDependence": "moderate",
+  "tags": ["Lighthouse", "Seafood", "Coastline"],
+  "reservation": "Not required",
+  "parking": "Available at Inubosaki",
+  "restaurants": ["Choshi Port Seafood Market", "Ichibanzushi"],
+  "cafes": ["Inubosaki Lighthouse Cafe"],
+  "notes": "Inubosaki is famous for being the first place on mainland Japan to see the New Year sunrise.",
+  "coordinates": {
+    "lat": 35.7345338,
+    "lng": 140.8272667
+  }
+}

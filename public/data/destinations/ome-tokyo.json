@@ -1,0 +1,63 @@
+{
+  "id": "ome-tokyo",
+  "name": "Ome",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Nature", "Culture", "Hiking"],
+  "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1000",
+  "gallery": [],
+  "description": "Nostalgic Showa-era movie poster town in western Tokyo surrounded by Mitake Gorge, river rafting, and mountain shrines.",
+  "highlights": [
+    "Mitake Gorge",
+    "Ome Retro Movie Poster Street",
+    "Gyokudo Art Museum"
+  ],
+  "budgetMin": 7000,
+  "budgetMax": 16000,
+  "budgetRecommended": 11500,
+  "transportOptions": {
+    "train": 65,
+    "car": 75
+  },
+  "totalTripHours": 8,
+  "walkingMin": 55,
+  "walkingSunMin": 30,
+  "walkingShadeMin": 25,
+  "indoorPercent": 35,
+  "ratings": {
+    "overall": 8.3,
+    "couple": 8.3,
+    "summer": 8.5,
+    "winter": 7.8,
+    "rain": 7.5,
+    "food": 8.2,
+    "photography": 8.6,
+    "relaxation": 8.7,
+    "value": 8.6,
+    "uniqueness": 8.5
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 4,
+    "holiday": 4
+  },
+  "season": {
+    "spring": 4,
+    "summer": 5,
+    "autumn": 5,
+    "winter": 3
+  },
+  "bestMonths": [4, 5, 10, 11],
+  "bestSeason": "Autumn",
+  "weatherDependence": "moderate",
+  "tags": ["River Gorge", "Showa Retro", "Hiking"],
+  "reservation": "Not required",
+  "parking": "Available near Mitake Station",
+  "restaurants": ["Mitake Soba", "Sawanoi Sake Brewery Bar"],
+  "cafes": ["Gorge Side Cafe"],
+  "notes": "Visit Ozawa Brewery (Sawanoi) for sake tasting along the river.",
+  "coordinates": {
+    "lat": 35.7880531,
+    "lng": 139.2753553
+  }
+}

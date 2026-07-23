@@ -1,0 +1,59 @@
+{
+  "id": "mother-farm-chiba",
+  "name": "Mother Farm (Futtsu)",
+  "prefecture": "Chiba",
+  "region": "Kanto",
+  "categories": ["Nature", "Family", "Animals"],
+  "heroImage": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1000",
+  "gallery": [],
+  "description": "Sprawling 250-hectare mountain farm overlooking Tokyo Bay with alpaca feeding, sheep shearing shows, and flower fields.",
+  "highlights": ["Sheep Shearing Show", "Alpaca Farm", "Flower Fields"],
+  "budgetMin": 8000,
+  "budgetMax": 18000,
+  "budgetRecommended": 13000,
+  "transportOptions": {
+    "train": 95,
+    "car": 75
+  },
+  "totalTripHours": 8,
+  "walkingMin": 55,
+  "walkingSunMin": 40,
+  "walkingShadeMin": 15,
+  "indoorPercent": 25,
+  "ratings": {
+    "overall": 8.6,
+    "couple": 8.8,
+    "summer": 8.4,
+    "winter": 7.8,
+    "rain": 7.2,
+    "food": 8.3,
+    "photography": 8.8,
+    "relaxation": 8.7,
+    "value": 8.5,
+    "uniqueness": 8.6
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 5,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 5,
+    "summer": 4,
+    "autumn": 5,
+    "winter": 3
+  },
+  "bestMonths": [3, 4, 5, 9, 10],
+  "bestSeason": "Spring",
+  "weatherDependence": "high",
+  "tags": ["Animals", "Farm", "Family"],
+  "reservation": "Not required",
+  "parking": "Large parking lot available",
+  "restaurants": ["Farm BBQ Restaurant", "Soft Cream Bar"],
+  "cafes": ["Mother Farm Dairy Cafe"],
+  "notes": "Famous for fresh dairy ice cream and seasonal petunia and nemophila blooms.",
+  "coordinates": {
+    "lat": 35.2459214,
+    "lng": 139.9340832
+  }
+}

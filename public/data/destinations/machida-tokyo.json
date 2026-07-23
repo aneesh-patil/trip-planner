@@ -1,0 +1,64 @@
+{
+  "id": "machida-tokyo",
+  "name": "Machida",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Urban", "Shopping", "Parks"],
+  "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000",
+  "gallery": [],
+  "description": "Vibrant shopping and commercial hub in western Tokyo bordering Kanagawa, famous for Serigaya Park and Squirrel Garden.",
+  "highlights": [
+    "Machida Squirrel Garden",
+    "Serigaya Park",
+    "Grandberry Park",
+    "Nakamachi Shopping Street"
+  ],
+  "budgetMin": 5000,
+  "budgetMax": 12000,
+  "budgetRecommended": 8500,
+  "transportOptions": {
+    "train": 35,
+    "car": 45
+  },
+  "totalTripHours": 6,
+  "walkingMin": 45,
+  "walkingSunMin": 30,
+  "walkingShadeMin": 15,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 8,
+    "couple": 8.2,
+    "summer": 7.8,
+    "winter": 7.8,
+    "rain": 8.5,
+    "food": 8.5,
+    "photography": 8,
+    "relaxation": 8,
+    "value": 8.8,
+    "uniqueness": 7.8
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 3,
+    "autumn": 4,
+    "winter": 3
+  },
+  "bestMonths": [3, 4, 10, 11],
+  "bestSeason": "Spring",
+  "weatherDependence": "low",
+  "tags": ["Shopping", "Parks", "Family"],
+  "reservation": "Not required",
+  "parking": "Available at shopping centers",
+  "restaurants": ["Machida Ramen", "Kurobekko"],
+  "cafes": ["Cafe Katsura"],
+  "notes": "Easy train access via Odakyu or JR Yokohama Line.",
+  "coordinates": {
+    "lat": 35.5466803,
+    "lng": 139.4386999
+  }
+}

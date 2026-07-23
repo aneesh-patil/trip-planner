@@ -1,0 +1,64 @@
+{
+  "id": "suwa-nagano",
+  "name": "Lake Suwa",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["Nature", "Onsen", "Culture"],
+  "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000",
+  "gallery": [],
+  "description": "High-altitude lake surrounded by mountains, famous for Suwa Taisha shrine complex, fireworks, lakeside hot springs, and winter ice phenomena.",
+  "highlights": [
+    "Suwa Taisha Shrine",
+    "Lake Suwa Geyser Center",
+    "Tateishi Park Observatory"
+  ],
+  "budgetMin": 15000,
+  "budgetMax": 30000,
+  "budgetRecommended": 22500,
+  "transportOptions": {
+    "train": 130,
+    "car": 140,
+    "shinkansen": 110
+  },
+  "totalTripHours": 10,
+  "walkingMin": 45,
+  "walkingSunMin": 30,
+  "walkingShadeMin": 15,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 8.8,
+    "couple": 9,
+    "summer": 9,
+    "winter": 8.8,
+    "rain": 8,
+    "food": 8.7,
+    "photography": 9.2,
+    "relaxation": 9.2,
+    "value": 8.6,
+    "uniqueness": 9
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 5,
+    "autumn": 4,
+    "winter": 4
+  },
+  "bestMonths": [7, 8, 9, 12, 1, 2],
+  "bestSeason": "Summer",
+  "weatherDependence": "moderate",
+  "tags": ["Lake", "Shrine", "Fireworks"],
+  "reservation": "Required for summer fireworks festival",
+  "parking": "Lakeside parking available",
+  "restaurants": ["Suwa Miso Ramen", "Katakura 館 Dining"],
+  "cafes": ["Lake View Cafe Suwa"],
+  "notes": "Tateishi Park offers breathtaking sunset views inspired by anime scenery.",
+  "coordinates": {
+    "lat": 36.0479452,
+    "lng": 138.0832846
+  }
+}

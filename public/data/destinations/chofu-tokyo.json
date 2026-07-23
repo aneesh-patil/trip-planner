@@ -1,0 +1,63 @@
+{
+  "id": "chofu-tokyo",
+  "name": "Chofu",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Culture", "Nature", "Food"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+  "gallery": [],
+  "description": "Leafy suburban Tokyo town famous for Jindaiji Temple, hand-made Soba noodles, and GeGeGe no Kitaro anime heritage.",
+  "highlights": [
+    "Jindaiji Temple",
+    "Jindai Botanical Gardens",
+    "Kitaro Chaya Soba"
+  ],
+  "budgetMin": 5500,
+  "budgetMax": 13000,
+  "budgetRecommended": 9250,
+  "transportOptions": {
+    "train": 25,
+    "car": 35
+  },
+  "totalTripHours": 5,
+  "walkingMin": 40,
+  "walkingSunMin": 25,
+  "walkingShadeMin": 15,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 8.3,
+    "couple": 8.5,
+    "summer": 8,
+    "winter": 8,
+    "rain": 8,
+    "food": 8.8,
+    "photography": 8.4,
+    "relaxation": 8.6,
+    "value": 8.7,
+    "uniqueness": 8.2
+  },
+  "crowd": {
+    "weekday": 2,
+    "weekend": 4,
+    "holiday": 4
+  },
+  "season": {
+    "spring": 5,
+    "summer": 3,
+    "autumn": 5,
+    "winter": 3
+  },
+  "bestMonths": [3, 4, 10, 11],
+  "bestSeason": "Spring",
+  "weatherDependence": "low",
+  "tags": ["Temple", "Soba Noodles", "Botanical Gardens"],
+  "reservation": "Not required",
+  "parking": "Available at Jindaiji",
+  "restaurants": ["Jindaiji Soba Ikkyu", "Kitaro Chaya"],
+  "cafes": ["Botanical Garden Tea House"],
+  "notes": "Jindaiji is Tokyo second oldest temple after Asakusa Sensoji.",
+  "coordinates": {
+    "lat": 35.6506036,
+    "lng": 139.5407066
+  }
+}
