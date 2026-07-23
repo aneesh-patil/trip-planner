@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { Trip, TripStop } from "@/shared/types/trip";
 import ItineraryPlanner from "./components/ItineraryPlanner";
 import { Button } from "@/shared/components/ui/button";
-import { ArrowLeft, Edit3, Share2, Calendar, FileText } from "lucide-react";
+import { ArrowLeft, Edit3, Share2, Calendar, Printer } from "lucide-react";
 import {
   downloadIcsFile,
   openGoogleCalendar,
@@ -139,20 +139,20 @@ export default function TripDetails({
                     <Calendar className="w-4 h-4 text-purple-600" />
                     <span>Export to Calendar (.ics)</span>
                   </button>
-                  <button
-                    onClick={() => {
-                      triggerPdfPrint();
-                      setIsCalendarOpen(false);
-                    }}
-                    className="flex items-center gap-3 w-full p-2.5 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-left text-sm font-semibold text-slate-800 dark:text-slate-200 transition-colors"
-                  >
-                    <FileText className="w-4 h-4 text-emerald-600" />
-                    <span>Print or Save to PDF</span>
-                  </button>
                 </div>
               </>
             )}
           </div>
+
+          {/* Print / Save to PDF Button */}
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={triggerPdfPrint}
+            className="rounded-full border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <Printer className="w-5 h-5 text-slate-600 dark:text-slate-400" />
+          </Button>
 
           {/* Share Button */}
           <Button
