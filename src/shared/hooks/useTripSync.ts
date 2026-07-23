@@ -216,6 +216,7 @@ export function useTripSync({
       // Upsert current trips
       Promise.all(trips.map((t) => tripRepo.saveTrip(t))).catch((err) => {
         console.error("Failed to sync trips to cloud", err);
+        toast.error("Failed to sync trips to cloud. Saved locally.");
       });
 
       prevTripsRef.current = trips;
