@@ -251,6 +251,7 @@ export default function Destinations() {
         <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-lg">
           <button
             onClick={() => setViewMode("grid")}
+            aria-label="Switch to grid view"
             className={`flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors ${
               viewMode === "grid"
                 ? "bg-white dark:bg-slate-900 shadow-sm text-emerald-600"
@@ -262,6 +263,7 @@ export default function Destinations() {
           </button>
           <button
             onClick={() => setViewMode("map")}
+            aria-label="Switch to map view"
             className={`flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors ${
               viewMode === "map"
                 ? "bg-white dark:bg-slate-900 shadow-sm text-emerald-600"
@@ -302,12 +304,83 @@ export default function Destinations() {
 
       <div
         id="results-grid"
-        className="mb-6 flex items-center justify-between text-slate-600 dark:text-slate-400 font-medium scroll-mt-24"
+        className="mb-6 flex flex-wrap items-center justify-between gap-4 text-slate-600 dark:text-slate-400 font-medium scroll-mt-24"
       >
-        <span>
-          Found {filteredAndSortedDestinations.length} destination
-          {filteredAndSortedDestinations.length === 1 ? "" : "s"}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-bold text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full border border-slate-200 dark:border-slate-700">
+            {filteredAndSortedDestinations.length} destination
+            {filteredAndSortedDestinations.length === 1 ? "" : "s"} matching
+          </span>
+        </div>
+
+        {(searchQuery ||
+          maxBudget < 100000 ||
+          weather !== "all" ||
+          suitabilities.length > 0 ||
+          interests.length > 0) && (
+          <div className="flex items-center gap-2 flex-wrap">
+            {searchQuery && (
+              <span className="inline-flex items-center text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-2.5 py-1 rounded-full">
+                Search: "{searchQuery}"
+                <button
+                  onClick={() => setSearchQuery("")}
+                  aria-label="Clear search query"
+                  className="ml-1.5 hover:text-emerald-900 dark:hover:text-emerald-100 font-bold"
+                >
+                  ×
+                </button>
+              </span>
+            )}
+            {maxBudget < 100000 && (
+              <span className="inline-flex items-center text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-2.5 py-1 rounded-full">
+                Budget ≤ ¥{maxBudget.toLocaleString()}
+                <button
+                  onClick={() => setMaxBudget(100000)}
+                  aria-label="Clear budget filter"
+                  className="ml-1.5 hover:text-emerald-900 dark:hover:text-emerald-100 font-bold"
+                >
+                  ×
+                </button>
+              </span>
+            )}
+            {weather !== "all" && (
+              <span className="inline-flex items-center text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-2.5 py-1 rounded-full capitalize">
+                Weather: {weather}
+                <button
+                  onClick={() => setWeather("all")}
+                  aria-label="Clear weather filter"
+                  className="ml-1.5 hover:text-emerald-900 dark:hover:text-emerald-100 font-bold"
+                >
+                  ×
+                </button>
+              </span>
+            )}
+            {suitabilities.map((suit) => (
+              <span
+                key={suit}
+                className="inline-flex items-center text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-2.5 py-1 rounded-full capitalize"
+              >
+                {suit}
+                <button
+                  onClick={() =>
+                    setSuitabilities(suitabilities.filter((s) => s !== suit))
+                  }
+                  aria-label={`Remove ${suit} filter`}
+                  className="ml-1.5 hover:text-emerald-900 dark:hover:text-emerald-100 font-bold"
+                >
+                  ×
+                </button>
+              </span>
+            ))}
+            <button
+              onClick={resetFilters}
+              aria-label="Reset all filters"
+              className="text-xs font-bold text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 underline ml-2"
+            >
+              Reset All
+            </button>
+          </div>
+        )}
       </div>
 
       {filteredAndSortedDestinations.length === 0 ? (
