@@ -11181,5 +11181,1080 @@
     "schemaVersion": 2,
     "bestSeason": "All Year",
     "weatherDependence": "low"
+  },
+  {
+    "id": "tokyo-skytree-sumida",
+    "name": "Tokyo Skytree",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Tower", "Landmark", "Observation Deck", "Shopping"],
+    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 4000,
+    "budgetRecommended": 8500,
+    "budgetMax": 15000,
+    "walkingMin": 4500,
+    "walkingSunMin": 1500,
+    "walkingShadeMin": 3000,
+    "indoorPercent": 90,
+    "ratings": {
+      "overall": 9.6,
+      "couple": 9.5,
+      "summer": 9,
+      "winter": 9.2,
+      "rain": 9.8,
+      "food": 9.2,
+      "photography": 9.9,
+      "relaxation": 8.5,
+      "value": 8.7,
+      "uniqueness": 9.9
+    },
+    "crowd": {
+      "weekday": 8,
+      "weekend": 9,
+      "holiday": 10
+    },
+    "season": {
+      "spring": 9,
+      "summer": 9,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": ["World Record", "Panoramas", "Solamachi", "Observation Deck"],
+    "coordinates": {
+      "lat": 35.710063,
+      "lng": 139.8107
+    },
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 10,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 25
+    },
+    "highlights": [
+      "Tembo Deck (350m)",
+      "Tembo Galleria (450m)",
+      "Tokyo Solamachi Shopping Center",
+      "Planetarium Ten"
+    ],
+    "description": "Rising 634 meters over Tokyo, Tokyo Skytree is the world's tallest broadcasting tower, offering breath-taking 360-degree views of Mt. Fuji and the Kanto Plain from two observation decks.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 500,
+      "tickets": 3100,
+      "food": 3500,
+      "cafe": 1400
+    },
+    "reservation": "Advance online booking recommended to skip ticket queues.",
+    "parking": "Paid underground parking structure at Tokyo Solamachi complex.",
+    "itineraries": [
+      {
+        "name": "Skytree Heights & Solamachi Experience",
+        "description": "Ascend Japan's highest tower deck and explore over 300 shops and cafes in Solamachi.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Arrive at Oshiage Station and ride the high-speed shuttle lift to the 350m Tembo Deck."
+          },
+          {
+            "time": "11:30 AM",
+            "activity": "Walk up the glass-slotted spiral Tembo Galleria at 450 meters."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Savor a sushi or tendon lunch at Tokyo Solamachi dining hall."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Explore the Sumida Aquarium or Planetarium inside the Solamachi complex."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Sky Restaurant 634", "Solamachi Dining Town"],
+    "cafes": ["Skytree Cafe 350", "Nana's Green Tea Solamachi"],
+    "notes": "Best visibility of Mt. Fuji occurs on crisp, clear winter mornings.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "tokyo-tower-minato",
+    "name": "Tokyo Tower",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["Tower", "Landmark", "History", "Entertainment"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 3500,
+    "budgetRecommended": 7000,
+    "budgetMax": 12000,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 85,
+    "ratings": {
+      "overall": 9.5,
+      "couple": 9.6,
+      "summer": 8.8,
+      "winter": 9.3,
+      "rain": 9.2,
+      "food": 8.8,
+      "photography": 9.8,
+      "relaxation": 8.4,
+      "value": 8.8,
+      "uniqueness": 9.7
+    },
+    "crowd": {
+      "weekday": 7,
+      "weekend": 9,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": ["Iconic", "Eiffel-Inspired", "Night Illumination", "Romance"],
+    "coordinates": {
+      "lat": 35.658581,
+      "lng": 139.745433
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 9,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 20
+    },
+    "highlights": [
+      "Main Deck (150m)",
+      "Top Deck Tour (250m)",
+      "RED° TOKYO TOWER e-sports park",
+      "Landmark Light Night Illumination"
+    ],
+    "description": "Built in 1958 and standing 332.9 meters tall, Tokyo Tower is the beloved red-and-white lattice symbol of post-war Tokyo, offering glass-floor lookouts and romantic night views.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 400,
+      "tickets": 1200,
+      "food": 4000,
+      "cafe": 1400
+    },
+    "reservation": "Top Deck Tour requires reserved time-slot tickets.",
+    "parking": "Paid parking lot adjacent to Shiba Park at the tower base.",
+    "itineraries": [
+      {
+        "name": "Classic Tokyo Tower & Shiba Park Sunset Walk",
+        "description": "Visit the iconic lattice tower and enjoy Zojoji Temple sunset views.",
+        "steps": [
+          {
+            "time": "3:00 PM",
+            "activity": "Arrive at Akabanebashi Station and walk through Shiba Park."
+          },
+          {
+            "time": "4:00 PM",
+            "activity": "Take the main elevator up to the 150m Main Deck and stand on the Lookdown Window glass floor."
+          },
+          {
+            "time": "5:30 PM",
+            "activity": "Watch the sun set over the Tokyo skyline as the tower lights switch on."
+          },
+          {
+            "time": "7:00 PM",
+            "activity": "Dine at FootTown food hall before taking night photos of Zojoji Temple."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Tokyo Tower Club333", "Tofuya Ukai (nearby)"],
+    "cafes": ["Cafe La Tour", "Marion Crepes FootTown"],
+    "notes": "Special illumination colors light up the tower on Friday and Saturday evenings.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "yokohama-marine-tower",
+    "name": "Yokohama Marine Tower",
+    "prefecture": "Kanagawa",
+    "region": "Kanto",
+    "categories": ["Tower", "Landmark", "Observation Deck", "Port"],
+    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 3000,
+    "budgetRecommended": 6000,
+    "budgetMax": 10000,
+    "walkingMin": 4000,
+    "walkingSunMin": 1500,
+    "walkingShadeMin": 2500,
+    "indoorPercent": 75,
+    "ratings": {
+      "overall": 8.8,
+      "couple": 9.2,
+      "summer": 8.6,
+      "winter": 8.8,
+      "rain": 8.5,
+      "food": 8.5,
+      "photography": 9,
+      "relaxation": 8.8,
+      "value": 8.5,
+      "uniqueness": 8.7
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 7,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": ["Lighthouse", "Port View", "Yamashita Park", "Chinatown"],
+    "coordinates": {
+      "lat": 35.4439,
+      "lng": 139.6508
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 25
+    },
+    "highlights": [
+      "106m Observation Deck",
+      "Media Art Illumination",
+      "Yamashita Park Promenade",
+      "Chinatown Proximity"
+    ],
+    "description": "Built in 1961 to mark Yokohama Port's 100th anniversary, this 106-meter historic steel lattice lighthouse tower offers sweeping vistas over Yokohama Bay Bridge and Minato Mirai.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 600,
+      "tickets": 1200,
+      "food": 3000,
+      "cafe": 1200
+    },
+    "reservation": "No advance reservation required.",
+    "parking": "Municipal paid parking spaces along Yamashita Park waterfront.",
+    "itineraries": [
+      {
+        "name": "Yokohama Harbor & Marine Tower Promenade",
+        "description": "Stroll Yamashita Park waterfront and ascend the lighthouse observation deck.",
+        "steps": [
+          {
+            "time": "2:00 PM",
+            "activity": "Arrive at Motomachi-Chukagai Station and walk through Yamashita Park."
+          },
+          {
+            "time": "3:30 PM",
+            "activity": "Ride the glass elevator to the 106m observation floor for 360-degree port views."
+          },
+          {
+            "time": "5:00 PM",
+            "activity": "Enjoy afternoon tea at the tower concourse lounge."
+          },
+          {
+            "time": "6:30 PM",
+            "activity": "Walk 5 minutes into Yokohama Chinatown for dinner."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["The Terrace Yokohama Marine Tower", "Chinatown Manchinro"],
+    "cafes": ["Mizamito Cafe", "Marine Tower Bar"],
+    "notes": "Recognized as a Lover's Sanctuary with special romantic evening light projections.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "chiba-port-tower",
+    "name": "Chiba Port Tower",
+    "prefecture": "Chiba",
+    "region": "Kanto",
+    "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
+    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 8500,
+    "walkingMin": 3500,
+    "walkingSunMin": 1500,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 8.8,
+      "summer": 8.4,
+      "winter": 8.6,
+      "rain": 8.2,
+      "food": 8,
+      "photography": 8.9,
+      "relaxation": 8.7,
+      "value": 9,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 8,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": ["Mirror Glass", "Tokyo Bay View", "Sunset", "Lovers Sanctuary"],
+    "coordinates": {
+      "lat": 35.6006,
+      "lng": 140.1022
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 45,
+      "car": 35
+    },
+    "highlights": [
+      "125m Mirror Glass Facade",
+      "Tokyo Bay Sunset Panorama",
+      "Lover's Sanctuary Promenade",
+      "Chiba Port Park Beach"
+    ],
+    "description": "Clad in over 5,500 heat-reflecting glass mirrors, this 125-meter waterfront tower stands in Chiba Port Park, offering panoramic sunset views across Tokyo Bay to Mt. Fuji.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 800,
+      "tickets": 420,
+      "food": 2800,
+      "cafe": 980
+    },
+    "reservation": "No reservation required.",
+    "parking": "Free parking lot at Chiba Port Park (over 200 spaces).",
+    "itineraries": [
+      {
+        "name": "Chiba Waterfront & Mirror Tower Sunset",
+        "description": "Relax in Chiba Port Park and photograph sunset reflection over Tokyo Bay.",
+        "steps": [
+          {
+            "time": "2:30 PM",
+            "activity": "Arrive at Chiba-Minato Station and walk through Chiba Port Park."
+          },
+          {
+            "time": "3:30 PM",
+            "activity": "Take the glass elevator up to the 4th floor observation deck (113m)."
+          },
+          {
+            "time": "5:00 PM",
+            "activity": "Watch sunset over Tokyo Bay and Mt. Fuji from the oceanview cafe."
+          },
+          {
+            "time": "6:30 PM",
+            "activity": "Stroll through illuminated park gardens before returning."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Ocean View Restaurant SEAGULL", "Port Park Dining"],
+    "cafes": ["Tower Cafe 3F"],
+    "notes": "Special Christmas illumination features a giant 100m tall light-bulb tree on the glass facade.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "oarai-marine-tower",
+    "name": "Oarai Marine Tower",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2000,
+    "budgetRecommended": 4500,
+    "budgetMax": 8000,
+    "walkingMin": 3000,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 1800,
+    "indoorPercent": 75,
+    "ratings": {
+      "overall": 8.4,
+      "couple": 8.5,
+      "summer": 8.8,
+      "winter": 8,
+      "rain": 8,
+      "food": 8.4,
+      "photography": 8.9,
+      "relaxation": 8.6,
+      "value": 9,
+      "uniqueness": 8.4
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [3, 4, 5, 6, 7, 8, 9, 10],
+    "bestSeason": "Summer",
+    "weatherDependence": "low",
+    "tags": [
+      "Pacific Ocean",
+      "Triangular Glass",
+      "Seafood",
+      "Anime Pilgrimage"
+    ],
+    "coordinates": {
+      "lat": 36.3115,
+      "lng": 140.5732
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 90,
+      "car": 75
+    },
+    "highlights": [
+      "60m Triangular Glass Tower",
+      "360-Degree Pacific Ocean Horizon",
+      "Panzer Cafe (Girls und Panzer)",
+      "Oarai Seafood Market (nearby)"
+    ],
+    "description": "Standing 60 meters tall on the Ibaraki coastline, this distinctive triangular glass observation tower overlooks Oarai Port and the vast Pacific Ocean.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1200,
+      "tickets": 340,
+      "food": 2200,
+      "cafe": 760
+    },
+    "reservation": "No reservation required.",
+    "parking": "Free parking lot at Oarai Marine Tower plaza.",
+    "itineraries": [
+      {
+        "name": "Oarai Coastal Tower & Seafood Excursion",
+        "description": "Enjoy Pacific ocean views and fresh seafood near Oarai shrine.",
+        "steps": [
+          {
+            "time": "11:00 AM",
+            "activity": "Arrive at Oarai Station and walk 15 mins to Marine Tower plaza."
+          },
+          {
+            "time": "11:30 AM",
+            "activity": "Ascend 55 meters to the top glass observation deck for ocean views."
+          },
+          {
+            "time": "1:00 PM",
+            "activity": "Walk 3 minutes to Oarai Fish Market for fresh grilled oysters and kaisen-don."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Visit nearby Oarai Isosaki Shrine ocean Torii gate on the rocky coast."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Oarai Kaisen Kaisen-don", "Kaki-goya Oarai"],
+    "cafes": ["Panzer Cafe 2F"],
+    "notes": "Famous among anime fans as a key setting in Girls und Panzer.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "art-tower-mito",
+    "name": "Art Tower Mito",
+    "prefecture": "Ibaraki",
+    "region": "Kanto",
+    "categories": ["Tower", "Architecture", "Art", "Landmark"],
+    "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 9000,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 85,
+    "ratings": {
+      "overall": 8.9,
+      "couple": 8.7,
+      "summer": 8.5,
+      "winter": 8.7,
+      "rain": 9,
+      "food": 8.2,
+      "photography": 9.6,
+      "relaxation": 8.8,
+      "value": 8.8,
+      "uniqueness": 9.8
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 6,
+      "holiday": 6
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": ["Arata Isozaki", "Helix Geometry", "Modern Art", "Concert Hall"],
+    "coordinates": {
+      "lat": 36.3813,
+      "lng": 140.4632
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 9,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 75,
+      "car": 65
+    },
+    "highlights": [
+      "100m Titanium Helix Tower",
+      "Arata Isozaki Architecture",
+      "Contemporary Art Gallery Mito",
+      "Concert Hall & Theater"
+    ],
+    "description": "Designed by Pritzker Prize laureate Arata Isozaki to commemorate Mito's 100th municipal anniversary, this 100-meter helix tower is composed of 57 titanium tetrahedrons spiraling skyward.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1500,
+      "tickets": 200,
+      "food": 2300,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required for tower lookout.",
+    "parking": "Underground paid parking lot below Art Tower Mito plaza.",
+    "itineraries": [
+      {
+        "name": "Architectural & Art Discovery in Mito",
+        "description": "Ascend the spiral titanium tower and browse contemporary art galleries.",
+        "steps": [
+          {
+            "time": "1:00 PM",
+            "activity": "Arrive at Mito Station and bus 10 mins to Art Tower Mito."
+          },
+          {
+            "time": "1:30 PM",
+            "activity": "Ride the central glass elevator inside the helix tower to the 86m lookout."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Explore the Contemporary Art Gallery Mito exhibitions."
+          },
+          {
+            "time": "4:00 PM",
+            "activity": "Enjoy coffee and cake at the plaza cafe overlooking the pipe organ hall."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Chez Yoshi Mito", "Mito Plaza Dining"],
+    "cafes": ["Cafe ATM", "Saza Coffee Mito"],
+    "notes": "The tower contains round porthole windows providing unique framed perspectives of Mito City.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "mirai-tower-nagoya",
+    "name": "Chubu Electric Power MIRAI TOWER",
+    "prefecture": "Aichi",
+    "region": "Chubu",
+    "categories": ["Tower", "Landmark", "History", "Observation Deck"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 3000,
+    "budgetRecommended": 6000,
+    "budgetMax": 11000,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 9.1,
+      "couple": 9.3,
+      "summer": 8.6,
+      "winter": 9,
+      "rain": 8.8,
+      "food": 8.6,
+      "photography": 9.4,
+      "relaxation": 8.6,
+      "value": 8.8,
+      "uniqueness": 9.3
+    },
+    "crowd": {
+      "weekday": 6,
+      "weekend": 8,
+      "holiday": 8
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": [
+      "Nagoya TV Tower",
+      "Historic 1954",
+      "Hisaya Odori Park",
+      "Cultural Property"
+    ],
+    "coordinates": {
+      "lat": 35.1724,
+      "lng": 136.9083
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 9,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 90,
+      "car": 110
+    },
+    "highlights": [
+      "Indoor Sky Deck (90m)",
+      "Sky Balcony Outdoor Deck (100m)",
+      "Hisaya-odori Park Zone",
+      "Tower Hotel Nagoya"
+    ],
+    "description": "Completed in 1954 as Japan's first TV broadcasting tower, this 180-meter Registered Tangible Cultural Property in Nagoya's Hisaya-odori Park features outdoor observation decks and projection mapping art.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1200,
+      "tickets": 1300,
+      "food": 2700,
+      "cafe": 800
+    },
+    "reservation": "No reservation required for observation decks.",
+    "parking": "Underground paid parking structure at Hisaya-odori Park.",
+    "itineraries": [
+      {
+        "name": "Sakae Park & MIRAI TOWER Evening Exploration",
+        "description": "Stroll Hisaya-odori Park and watch Sakae night lights from the 100m Sky Balcony.",
+        "steps": [
+          {
+            "time": "4:00 PM",
+            "activity": "Arrive at Sakae Station and walk through RAYARD Hisaya-odori Park."
+          },
+          {
+            "time": "5:00 PM",
+            "activity": "Ascend to the 90m Indoor Sky Deck for sunset views."
+          },
+          {
+            "time": "6:00 PM",
+            "activity": "Step onto the 100m outdoor Sky Balcony to feel open breezes."
+          },
+          {
+            "time": "7:30 PM",
+            "activity": "Dine at Oasis 21 subterranean dining arcade."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Glycine Tower Hotel Nagoya", "Oasis 21 Gourmet Arcade"],
+    "cafes": ["Farm& Cafe Nagoya", "Starbucks Hisaya-odori"],
+    "notes": "Illuminated every night with energy-efficient LED light displays.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "higashiyama-sky-tower-nagoya",
+    "name": "Higashiyama Sky Tower",
+    "prefecture": "Aichi",
+    "region": "Chubu",
+    "categories": ["Tower", "Landmark", "Observation Deck", "Nature"],
+    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 8500,
+    "walkingMin": 4000,
+    "walkingSunMin": 1500,
+    "walkingShadeMin": 2500,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 8.6,
+      "couple": 8.9,
+      "summer": 8.4,
+      "winter": 8.6,
+      "rain": 8.4,
+      "food": 8.2,
+      "photography": 9.1,
+      "relaxation": 8.8,
+      "value": 9,
+      "uniqueness": 8.5
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 7,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": [
+      "Zoo & Botanical",
+      "Night Views 100",
+      "Alps Panorama",
+      "Elevation 214m"
+    ],
+    "coordinates": {
+      "lat": 35.1565,
+      "lng": 136.9815
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 8,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 95,
+      "car": 105
+    },
+    "highlights": [
+      "134m Pencil Sky Tower",
+      "Higashiyama Zoo & Botanical Gardens",
+      "Sky Restaurant NAGOYA758",
+      "Japan Top 100 Night Views"
+    ],
+    "description": "Perched atop an 80m hill inside Higashiyama Zoo & Botanical Gardens, this 134-meter pencil tower reaches a total elevation of 214 meters, offering panoramic views of Central Japan Alps.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1000,
+      "tickets": 300,
+      "food": 2700,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required.",
+    "parking": "Large paid parking lots serving Higashiyama Zoo & Sky Tower.",
+    "itineraries": [
+      {
+        "name": "Higashiyama Gardens & Sky Tower Sunset",
+        "description": "Explore botanical gardens and take in Japan Top 100 night views.",
+        "steps": [
+          {
+            "time": "2:00 PM",
+            "activity": "Arrive at Higashiyama Koen Station and walk through botanical gardens."
+          },
+          {
+            "time": "3:30 PM",
+            "activity": "Ascend the Sky Tower elevator to the 100m observation deck."
+          },
+          {
+            "time": "5:00 PM",
+            "activity": "Dine at Sky Restaurant NAGOYA758 overlooking Nagoya city lights."
+          },
+          {
+            "time": "6:30 PM",
+            "activity": "Photograph the illuminated night panorama certified among Japan Top 100 Night Views."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Sky Restaurant NAGOYA758", "Zoo Terrace Dining"],
+    "cafes": ["Sky Tower Lounge 5F"],
+    "notes": "Combination tickets available for both Higashiyama Zoo and Sky Tower.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "toki-messe-tower-niigata",
+    "name": "Befco Bakauke Observatory (Toki Messe)",
+    "prefecture": "Niigata",
+    "region": "Chubu",
+    "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
+    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2000,
+    "budgetRecommended": 4500,
+    "budgetMax": 8000,
+    "walkingMin": 3000,
+    "walkingSunMin": 1000,
+    "walkingShadeMin": 2000,
+    "indoorPercent": 90,
+    "ratings": {
+      "overall": 8.7,
+      "couple": 8.9,
+      "summer": 8.5,
+      "winter": 8.5,
+      "rain": 9.2,
+      "food": 8.4,
+      "photography": 9.2,
+      "relaxation": 8.7,
+      "value": 9.5,
+      "uniqueness": 8.6
+    },
+    "crowd": {
+      "weekday": 4,
+      "weekend": 6,
+      "holiday": 6
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": [
+      "Sea of Japan",
+      "Free Admission",
+      "360 Observatory",
+      "Shinano River"
+    ],
+    "coordinates": {
+      "lat": 37.9255,
+      "lng": 139.0601
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 10,
+      "walkingIntensity": 2
+    },
+    "transportOptions": {
+      "train": 130,
+      "shinkansen": 110
+    },
+    "highlights": [
+      "140.5m Free Observatory Deck",
+      "Shinano River Estuary Panorama",
+      "Sado Island Horizon",
+      "Hotel Nikko Niigata Lounge"
+    ],
+    "description": "Located on the 31st floor of Toki Messe (140.5m high), this free-admission 360-degree observation deck is the highest viewpoint along the Sea of Japan coast.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1500,
+      "tickets": 0,
+      "food": 2200,
+      "cafe": 800
+    },
+    "reservation": "No reservation required (Free entry).",
+    "parking": "Multilevel paid parking garage at Toki Messe convention complex.",
+    "itineraries": [
+      {
+        "name": "Niigata Port & Toki Messe Sky Walk",
+        "description": "Enjoy free 360-degree views over Shinano River and Sado Island.",
+        "steps": [
+          {
+            "time": "2:00 PM",
+            "activity": "Arrive at Niigata Station and bus 10 mins to Toki Messe."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Take the express elevator to the 31st floor Befco Bakauke Observatory Deck."
+          },
+          {
+            "time": "3:30 PM",
+            "activity": "Spot Sado Island across the Sea of Japan and watch ships enter Shinano River."
+          },
+          {
+            "time": "5:00 PM",
+            "activity": "Enjoy coffee and local Niigata rice cracker snacks at Sky Lounge Panorama."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Serena Hotel Nikko Niigata",
+      "Pia Bandai Seafood Market (nearby)"
+    ],
+    "cafes": ["Sky Lounge Panorama 31F"],
+    "notes": "Entry is completely free of charge 365 days a year.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "nagoya-port-tower",
+    "name": "Nagoya Port Building (Maritime Tower)",
+    "prefecture": "Aichi",
+    "region": "Chubu",
+    "categories": ["Tower", "Landmark", "Maritime", "Observation Deck"],
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "totalTripHours": 3,
+    "budgetMin": 2500,
+    "budgetRecommended": 5000,
+    "budgetMax": 8500,
+    "walkingMin": 3500,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 2300,
+    "indoorPercent": 85,
+    "ratings": {
+      "overall": 8.5,
+      "couple": 8.7,
+      "summer": 8.6,
+      "winter": 8.3,
+      "rain": 8.8,
+      "food": 8.2,
+      "photography": 8.8,
+      "relaxation": 8.6,
+      "value": 9,
+      "uniqueness": 8.6
+    },
+    "crowd": {
+      "weekday": 3,
+      "weekend": 6,
+      "holiday": 7
+    },
+    "season": {
+      "spring": 8,
+      "summer": 9,
+      "autumn": 8,
+      "winter": 7
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "bestSeason": "All Year",
+    "weatherDependence": "low",
+    "tags": [
+      "Sailboat Shape",
+      "Nagoya Port",
+      "Maritime Museum",
+      "Fuji Icebreaker"
+    ],
+    "coordinates": {
+      "lat": 35.0924,
+      "lng": 136.8812
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 9,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 100,
+      "car": 115
+    },
+    "highlights": [
+      "63m Sailboat Architecture Tower",
+      "53m Observation Deck",
+      "Nagoya Maritime Museum (3F/4F)",
+      "Antarctic Research Ship Fuji"
+    ],
+    "description": "Designed in the shape of a white ocean sailboat, this 63-meter maritime tower offers 360-degree views over Nagoya Port, Meiko Triton bridges, and cargo container docks.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 1100,
+      "tickets": 300,
+      "food": 2600,
+      "cafe": 1000
+    },
+    "reservation": "No reservation required.",
+    "parking": "Paid parking lot at Nagoya Port Garden plaza.",
+    "itineraries": [
+      {
+        "name": "Nagoya Port & Maritime Heritage Walk",
+        "description": "Ascend the sailboat tower and tour the historic Antarctic icebreaker ship Fuji.",
+        "steps": [
+          {
+            "time": "1:00 PM",
+            "activity": "Arrive at Nagoyako Station and walk 3 mins to Nagoya Port Building."
+          },
+          {
+            "time": "1:30 PM",
+            "activity": "Ride the elevator to the 53m top observation deck for harbor vistas."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Tour the Nagoya Maritime Museum inside the tower complex."
+          },
+          {
+            "time": "4:00 PM",
+            "activity": "Step aboard the permanently docked Antarctic icebreaker ship Fuji."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Nagoya Port Restaurant", "JETTY Food Court"],
+    "cafes": ["Port Building Cafe"],
+    "notes": "Four-facility discount ticket available combining Port Building, Icebreaker Fuji, Aquarium, and Maritime Museum.",
+    "schemaVersion": 2
   }
 ]

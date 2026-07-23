@@ -1,0 +1,105 @@
+{
+  "id": "art-tower-mito",
+  "name": "Art Tower Mito",
+  "prefecture": "Ibaraki",
+  "region": "Kanto",
+  "categories": ["Tower", "Architecture", "Art", "Landmark"],
+  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 2500,
+  "budgetRecommended": 5000,
+  "budgetMax": 9000,
+  "walkingMin": 3500,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 2300,
+  "indoorPercent": 85,
+  "ratings": {
+    "overall": 8.9,
+    "couple": 8.7,
+    "summer": 8.5,
+    "winter": 8.7,
+    "rain": 9,
+    "food": 8.2,
+    "photography": 9.6,
+    "relaxation": 8.8,
+    "value": 8.8,
+    "uniqueness": 9.8
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 6,
+    "holiday": 6
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Arata Isozaki", "Helix Geometry", "Modern Art", "Concert Hall"],
+  "coordinates": {
+    "lat": 36.3813,
+    "lng": 140.4632
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 75,
+    "car": 65
+  },
+  "highlights": [
+    "100m Titanium Helix Tower",
+    "Arata Isozaki Architecture",
+    "Contemporary Art Gallery Mito",
+    "Concert Hall & Theater"
+  ],
+  "description": "Designed by Pritzker Prize laureate Arata Isozaki to commemorate Mito's 100th municipal anniversary, this 100-meter helix tower is composed of 57 titanium tetrahedrons spiraling skyward.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1500,
+    "tickets": 200,
+    "food": 2300,
+    "cafe": 1000
+  },
+  "reservation": "No reservation required for tower lookout.",
+  "parking": "Underground paid parking lot below Art Tower Mito plaza.",
+  "itineraries": [
+    {
+      "name": "Architectural & Art Discovery in Mito",
+      "description": "Ascend the spiral titanium tower and browse contemporary art galleries.",
+      "steps": [
+        {
+          "time": "1:00 PM",
+          "activity": "Arrive at Mito Station and bus 10 mins to Art Tower Mito."
+        },
+        {
+          "time": "1:30 PM",
+          "activity": "Ride the central glass elevator inside the helix tower to the 86m lookout."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Explore the Contemporary Art Gallery Mito exhibitions."
+        },
+        {
+          "time": "4:00 PM",
+          "activity": "Enjoy coffee and cake at the plaza cafe overlooking the pipe organ hall."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Chez Yoshi Mito", "Mito Plaza Dining"],
+  "cafes": ["Cafe ATM", "Saza Coffee Mito"],
+  "notes": "The tower contains round porthole windows providing unique framed perspectives of Mito City.",
+  "schemaVersion": 2
+}

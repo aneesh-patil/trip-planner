@@ -1,0 +1,105 @@
+{
+  "id": "oarai-marine-tower",
+  "name": "Oarai Marine Tower",
+  "prefecture": "Ibaraki",
+  "region": "Kanto",
+  "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 2000,
+  "budgetRecommended": 4500,
+  "budgetMax": 8000,
+  "walkingMin": 3000,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 1800,
+  "indoorPercent": 75,
+  "ratings": {
+    "overall": 8.4,
+    "couple": 8.5,
+    "summer": 8.8,
+    "winter": 8,
+    "rain": 8,
+    "food": 8.4,
+    "photography": 8.9,
+    "relaxation": 8.6,
+    "value": 9,
+    "uniqueness": 8.4
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 6,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 8,
+    "winter": 7
+  },
+  "bestMonths": [3, 4, 5, 6, 7, 8, 9, 10],
+  "bestSeason": "Summer",
+  "weatherDependence": "low",
+  "tags": ["Pacific Ocean", "Triangular Glass", "Seafood", "Anime Pilgrimage"],
+  "coordinates": {
+    "lat": 36.3115,
+    "lng": 140.5732
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 90,
+    "car": 75
+  },
+  "highlights": [
+    "60m Triangular Glass Tower",
+    "360-Degree Pacific Ocean Horizon",
+    "Panzer Cafe (Girls und Panzer)",
+    "Oarai Seafood Market (nearby)"
+  ],
+  "description": "Standing 60 meters tall on the Ibaraki coastline, this distinctive triangular glass observation tower overlooks Oarai Port and the vast Pacific Ocean.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1200,
+    "tickets": 340,
+    "food": 2200,
+    "cafe": 760
+  },
+  "reservation": "No reservation required.",
+  "parking": "Free parking lot at Oarai Marine Tower plaza.",
+  "itineraries": [
+    {
+      "name": "Oarai Coastal Tower & Seafood Excursion",
+      "description": "Enjoy Pacific ocean views and fresh seafood near Oarai shrine.",
+      "steps": [
+        {
+          "time": "11:00 AM",
+          "activity": "Arrive at Oarai Station and walk 15 mins to Marine Tower plaza."
+        },
+        {
+          "time": "11:30 AM",
+          "activity": "Ascend 55 meters to the top glass observation deck for ocean views."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Walk 3 minutes to Oarai Fish Market for fresh grilled oysters and kaisen-don."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Visit nearby Oarai Isosaki Shrine ocean Torii gate on the rocky coast."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Oarai Kaisen Kaisen-don", "Kaki-goya Oarai"],
+  "cafes": ["Panzer Cafe 2F"],
+  "notes": "Famous among anime fans as a key setting in Girls und Panzer.",
+  "schemaVersion": 2
+}

@@ -1,0 +1,104 @@
+{
+  "id": "tokyo-tower-minato",
+  "name": "Tokyo Tower",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Tower", "Landmark", "History", "Entertainment"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 3500,
+  "budgetRecommended": 7000,
+  "budgetMax": 12000,
+  "walkingMin": 3500,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 2300,
+  "indoorPercent": 85,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.6,
+    "summer": 8.8,
+    "winter": 9.3,
+    "rain": 9.2,
+    "food": 8.8,
+    "photography": 9.8,
+    "relaxation": 8.4,
+    "value": 8.8,
+    "uniqueness": 9.7
+  },
+  "crowd": {
+    "weekday": 7,
+    "weekend": 9,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Iconic", "Eiffel-Inspired", "Night Illumination", "Romance"],
+  "coordinates": {
+    "lat": 35.658581,
+    "lng": 139.745433
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 20
+  },
+  "highlights": [
+    "Main Deck (150m)",
+    "Top Deck Tour (250m)",
+    "RED° TOKYO TOWER e-sports park",
+    "Landmark Light Night Illumination"
+  ],
+  "description": "Built in 1958 and standing 332.9 meters tall, Tokyo Tower is the beloved red-and-white lattice symbol of post-war Tokyo, offering glass-floor lookouts and romantic night views.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 400,
+    "tickets": 1200,
+    "food": 4000,
+    "cafe": 1400
+  },
+  "reservation": "Top Deck Tour requires reserved time-slot tickets.",
+  "parking": "Paid parking lot adjacent to Shiba Park at the tower base.",
+  "itineraries": [
+    {
+      "name": "Classic Tokyo Tower & Shiba Park Sunset Walk",
+      "description": "Visit the iconic lattice tower and enjoy Zojoji Temple sunset views.",
+      "steps": [
+        {
+          "time": "3:00 PM",
+          "activity": "Arrive at Akabanebashi Station and walk through Shiba Park."
+        },
+        {
+          "time": "4:00 PM",
+          "activity": "Take the main elevator up to the 150m Main Deck and stand on the Lookdown Window glass floor."
+        },
+        {
+          "time": "5:30 PM",
+          "activity": "Watch the sun set over the Tokyo skyline as the tower lights switch on."
+        },
+        {
+          "time": "7:00 PM",
+          "activity": "Dine at FootTown food hall before taking night photos of Zojoji Temple."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Tokyo Tower Club333", "Tofuya Ukai (nearby)"],
+  "cafes": ["Cafe La Tour", "Marion Crepes FootTown"],
+  "notes": "Special illumination colors light up the tower on Friday and Saturday evenings.",
+  "schemaVersion": 2
+}

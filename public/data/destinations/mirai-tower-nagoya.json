@@ -1,0 +1,110 @@
+{
+  "id": "mirai-tower-nagoya",
+  "name": "Chubu Electric Power MIRAI TOWER",
+  "prefecture": "Aichi",
+  "region": "Chubu",
+  "categories": ["Tower", "Landmark", "History", "Observation Deck"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 3000,
+  "budgetRecommended": 6000,
+  "budgetMax": 11000,
+  "walkingMin": 3500,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 2300,
+  "indoorPercent": 80,
+  "ratings": {
+    "overall": 9.1,
+    "couple": 9.3,
+    "summer": 8.6,
+    "winter": 9,
+    "rain": 8.8,
+    "food": 8.6,
+    "photography": 9.4,
+    "relaxation": 8.6,
+    "value": 8.8,
+    "uniqueness": 9.3
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 8,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": [
+    "Nagoya TV Tower",
+    "Historic 1954",
+    "Hisaya Odori Park",
+    "Cultural Property"
+  ],
+  "coordinates": {
+    "lat": 35.1724,
+    "lng": 136.9083
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 90,
+    "car": 110
+  },
+  "highlights": [
+    "Indoor Sky Deck (90m)",
+    "Sky Balcony Outdoor Deck (100m)",
+    "Hisaya-odori Park Zone",
+    "Tower Hotel Nagoya"
+  ],
+  "description": "Completed in 1954 as Japan's first TV broadcasting tower, this 180-meter Registered Tangible Cultural Property in Nagoya's Hisaya-odori Park features outdoor observation decks and projection mapping art.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1200,
+    "tickets": 1300,
+    "food": 2700,
+    "cafe": 800
+  },
+  "reservation": "No reservation required for observation decks.",
+  "parking": "Underground paid parking structure at Hisaya-odori Park.",
+  "itineraries": [
+    {
+      "name": "Sakae Park & MIRAI TOWER Evening Exploration",
+      "description": "Stroll Hisaya-odori Park and watch Sakae night lights from the 100m Sky Balcony.",
+      "steps": [
+        {
+          "time": "4:00 PM",
+          "activity": "Arrive at Sakae Station and walk through RAYARD Hisaya-odori Park."
+        },
+        {
+          "time": "5:00 PM",
+          "activity": "Ascend to the 90m Indoor Sky Deck for sunset views."
+        },
+        {
+          "time": "6:00 PM",
+          "activity": "Step onto the 100m outdoor Sky Balcony to feel open breezes."
+        },
+        {
+          "time": "7:30 PM",
+          "activity": "Dine at Oasis 21 subterranean dining arcade."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Glycine Tower Hotel Nagoya", "Oasis 21 Gourmet Arcade"],
+  "cafes": ["Farm& Cafe Nagoya", "Starbucks Hisaya-odori"],
+  "notes": "Illuminated every night with energy-efficient LED light displays.",
+  "schemaVersion": 2
+}

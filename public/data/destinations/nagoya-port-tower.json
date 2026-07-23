@@ -1,0 +1,110 @@
+{
+  "id": "nagoya-port-tower",
+  "name": "Nagoya Port Building (Maritime Tower)",
+  "prefecture": "Aichi",
+  "region": "Chubu",
+  "categories": ["Tower", "Landmark", "Maritime", "Observation Deck"],
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 2500,
+  "budgetRecommended": 5000,
+  "budgetMax": 8500,
+  "walkingMin": 3500,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 2300,
+  "indoorPercent": 85,
+  "ratings": {
+    "overall": 8.5,
+    "couple": 8.7,
+    "summer": 8.6,
+    "winter": 8.3,
+    "rain": 8.8,
+    "food": 8.2,
+    "photography": 8.8,
+    "relaxation": 8.6,
+    "value": 9,
+    "uniqueness": 8.6
+  },
+  "crowd": {
+    "weekday": 3,
+    "weekend": 6,
+    "holiday": 7
+  },
+  "season": {
+    "spring": 8,
+    "summer": 9,
+    "autumn": 8,
+    "winter": 7
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": [
+    "Sailboat Shape",
+    "Nagoya Port",
+    "Maritime Museum",
+    "Fuji Icebreaker"
+  ],
+  "coordinates": {
+    "lat": 35.0924,
+    "lng": 136.8812
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 100,
+    "car": 115
+  },
+  "highlights": [
+    "63m Sailboat Architecture Tower",
+    "53m Observation Deck",
+    "Nagoya Maritime Museum (3F/4F)",
+    "Antarctic Research Ship Fuji"
+  ],
+  "description": "Designed in the shape of a white ocean sailboat, this 63-meter maritime tower offers 360-degree views over Nagoya Port, Meiko Triton bridges, and cargo container docks.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 1100,
+    "tickets": 300,
+    "food": 2600,
+    "cafe": 1000
+  },
+  "reservation": "No reservation required.",
+  "parking": "Paid parking lot at Nagoya Port Garden plaza.",
+  "itineraries": [
+    {
+      "name": "Nagoya Port & Maritime Heritage Walk",
+      "description": "Ascend the sailboat tower and tour the historic Antarctic icebreaker ship Fuji.",
+      "steps": [
+        {
+          "time": "1:00 PM",
+          "activity": "Arrive at Nagoyako Station and walk 3 mins to Nagoya Port Building."
+        },
+        {
+          "time": "1:30 PM",
+          "activity": "Ride the elevator to the 53m top observation deck for harbor vistas."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Tour the Nagoya Maritime Museum inside the tower complex."
+        },
+        {
+          "time": "4:00 PM",
+          "activity": "Step aboard the permanently docked Antarctic icebreaker ship Fuji."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Nagoya Port Restaurant", "JETTY Food Court"],
+  "cafes": ["Port Building Cafe"],
+  "notes": "Four-facility discount ticket available combining Port Building, Icebreaker Fuji, Aquarium, and Maritime Museum.",
+  "schemaVersion": 2
+}
