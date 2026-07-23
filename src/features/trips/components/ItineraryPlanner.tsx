@@ -208,66 +208,69 @@ export default function ItineraryPlanner({
             details to this itinerary.
           </p>
         ) : (
-          <div className="space-y-3">
+          <div className="relative pl-6 space-y-6 before:absolute before:left-[1.125rem] before:top-4 before:bottom-4 before:w-0.5 before:bg-emerald-500/30 dark:before:bg-emerald-500/40">
             {trip.stops.map((stop, index) => (
               <div
                 key={stop.id}
-                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4 rounded-2xl flex items-center justify-between shadow-sm"
+                className="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4.5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="flex items-center gap-4">
-                  <div className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center font-black text-sm text-slate-700 dark:text-slate-300">
-                    {index + 1}
-                  </div>
+                <div className="absolute -left-[2.25rem] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-black text-sm shadow-md ring-4 ring-slate-50 dark:ring-background">
+                  {index + 1}
+                </div>
 
-                  <div>
-                    <h5 className="font-bold text-slate-900 dark:text-white text-base">
-                      {stop.name}
-                    </h5>
-                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-xs text-slate-500 dark:text-slate-400">
-                      <span className="inline-block px-1.5 py-0.5 rounded bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 font-bold uppercase tracking-wider text-[9px]">
-                        {stop.type}
+                <div className="flex-grow pl-2">
+                  <h5 className="font-extrabold text-slate-900 dark:text-white text-base">
+                    {stop.name}
+                  </h5>
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5 text-xs text-slate-500 dark:text-slate-400">
+                    <span className="inline-block px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-wider text-[10px]">
+                      {stop.type}
+                    </span>
+                    {(stop.arrivalTime || stop.departureTime) && (
+                      <span className="font-medium text-slate-600 dark:text-slate-300">
+                        {stop.arrivalTime || "--"} -{" "}
+                        {stop.departureTime || "--"}
                       </span>
-                      {(stop.arrivalTime || stop.departureTime) && (
-                        <span>
-                          {stop.arrivalTime || "--"} -{" "}
-                          {stop.departureTime || "--"}
-                        </span>
-                      )}
-                      {stop.estimatedCost !== undefined && (
-                        <span className="font-bold text-emerald-600 dark:text-emerald-400">
-                          ¥{stop.estimatedCost.toLocaleString()}
-                        </span>
-                      )}
-                      {stop.notes && (
-                        <span className="italic">"{stop.notes}"</span>
-                      )}
-                    </div>
+                    )}
+                    {stop.estimatedCost !== undefined && (
+                      <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                        ¥{stop.estimatedCost.toLocaleString()}
+                      </span>
+                    )}
+                    {stop.notes && (
+                      <span className="italic text-slate-500">
+                        "{stop.notes}"
+                      </span>
+                    )}
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1 shrink-0 ml-4">
                   {/* Reorder Buttons */}
                   <Button
                     variant="ghost"
                     size="icon"
+                    aria-label="Move stop up"
                     disabled={index === 0}
                     onClick={() => onReorderStops(index, index - 1)}
-                    className="h-8 w-8 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 disabled:opacity-20 rounded-full"
+                    className="h-8 w-8 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 disabled:opacity-20 rounded-full"
                   >
                     <ArrowUp className="w-4 h-4" />
                   </Button>
                   <Button
                     variant="ghost"
                     size="icon"
+                    aria-label="Move stop down"
                     disabled={index === trip.stops.length - 1}
                     onClick={() => onReorderStops(index, index + 1)}
-                    className="h-8 w-8 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 disabled:opacity-20 rounded-full"
+                    className="h-8 w-8 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 disabled:opacity-20 rounded-full"
                   >
                     <ArrowDown className="w-4 h-4" />
                   </Button>
                   <Button
                     variant="ghost"
                     size="icon"
+                    aria-label="Remove stop from itinerary"
                     onClick={() => onRemoveStop(stop.id)}
                     className="h-8 w-8 text-slate-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 rounded-full"
                   >
