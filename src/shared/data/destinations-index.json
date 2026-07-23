@@ -10954,5 +10954,228 @@
         ]
       }
     ]
+  },
+  {
+    "id": "tokyo-station-chiyoda",
+    "name": "Tokyo Station",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["City", "History", "Food", "Shopping"],
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "totalTripHours": 4,
+    "budgetMin": 5000,
+    "budgetRecommended": 9000,
+    "budgetMax": 15000,
+    "walkingMin": 4000,
+    "walkingSunMin": 1500,
+    "walkingShadeMin": 2500,
+    "indoorPercent": 85,
+    "ratings": {
+      "overall": 9.2,
+      "couple": 8.8,
+      "summer": 8.5,
+      "winter": 9,
+      "rain": 9.5,
+      "food": 9.8,
+      "photography": 9.3,
+      "relaxation": 8,
+      "value": 8.8,
+      "uniqueness": 9.5
+    },
+    "crowd": {
+      "weekday": 9,
+      "weekend": 9,
+      "holiday": 9
+    },
+    "season": {
+      "spring": 9,
+      "summer": 8,
+      "autumn": 9,
+      "winter": 9
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": [
+      "Iconic",
+      "Historic Architecture",
+      "Ramen Street",
+      "Shinkansen Hub"
+    ],
+    "coordinates": {
+      "lat": 35.681236,
+      "lng": 139.767125
+    },
+    "comfort": {
+      "heatTolerance": 9,
+      "rainFriendly": 9,
+      "walkingIntensity": 4
+    },
+    "transportOptions": {
+      "train": 0,
+      "shinkansen": 0
+    },
+    "highlights": [
+      "Marunouchi Red Brick Building",
+      "Tokyo Ramen Street",
+      "Imperial Palace East Gardens (nearby)",
+      "Character Street"
+    ],
+    "description": "Japans premier railway terminal, featuring the restored 1914 Marunouchi red-brick facade, subterranean shopping passages, world-class ramen eateries, and immediate proximity to the Imperial Palace grounds.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 500,
+      "tickets": 0,
+      "food": 5500,
+      "cafe": 1500
+    },
+    "reservation": "Not required for public station concourses; reservations recommended for high-end Marunouchi dining.",
+    "parking": "Paid underground parking garages available throughout the Marunouchi and Yaesu districts.",
+    "itineraries": [
+      {
+        "name": "Marunouchi & Station Heritage Walk",
+        "description": "Explore red-brick architecture, underground gourmet streets, and Imperial Palace gardens.",
+        "steps": [
+          {
+            "time": "10:00 AM",
+            "activity": "Admire the restored 1914 Marunouchi station dome and grand atrium."
+          },
+          {
+            "time": "11:00 AM",
+            "activity": "Walk through Tokyo Character Street and shop for regional souvenirs."
+          },
+          {
+            "time": "12:30 PM",
+            "activity": "Enjoy lunch at Tokyo Ramen Street in First Avenue station underground."
+          },
+          {
+            "time": "2:00 PM",
+            "activity": "Stroll down Marunouchi Naka-dori boulevard to the Imperial Palace East Gardens."
+          },
+          {
+            "time": "4:00 PM",
+            "activity": "Relax at a rooftop station cafe with views of incoming Shinkansen trains."
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      "Rokurinsha (Ramen Street)",
+      "Ecsotto Marunouchi",
+      "Kitte Granche Dining"
+    ],
+    "cafes": ["TORAYA TOKYO (Tokyo Station Hotel)", "Sembikiya Fruit Parlor"],
+    "notes": "Direct access to Narita Express and all Shinkansen lines. Excellent rain-proof indoor routing.",
+    "schemaVersion": 2
+  },
+  {
+    "id": "takanawa-gateway-minato",
+    "name": "Takanawa Gateway",
+    "prefecture": "Tokyo",
+    "region": "Kanto",
+    "categories": ["City", "Architecture", "Technology"],
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Takanawa_Gateway_Station_20200314.jpg/960px-Takanawa_Gateway_Station_20200314.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Takanawa_Gateway_Station_20200314.jpg/960px-Takanawa_Gateway_Station_20200314.jpg",
+    "totalTripHours": 3,
+    "budgetMin": 3000,
+    "budgetRecommended": 6000,
+    "budgetMax": 10000,
+    "walkingMin": 3000,
+    "walkingSunMin": 1200,
+    "walkingShadeMin": 1800,
+    "indoorPercent": 80,
+    "ratings": {
+      "overall": 8.4,
+      "couple": 8.3,
+      "summer": 8.2,
+      "winter": 8.4,
+      "rain": 9,
+      "food": 8,
+      "photography": 9.1,
+      "relaxation": 8.6,
+      "value": 8.5,
+      "uniqueness": 9.2
+    },
+    "crowd": {
+      "weekday": 5,
+      "weekend": 6,
+      "holiday": 5
+    },
+    "season": {
+      "spring": 8,
+      "summer": 8,
+      "autumn": 8,
+      "winter": 8
+    },
+    "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "tags": [
+      "Modern Architecture",
+      "Kengo Kuma",
+      "Yamanote Line",
+      "AI Innovation"
+    ],
+    "coordinates": {
+      "lat": 35.6355,
+      "lng": 139.7407
+    },
+    "comfort": {
+      "heatTolerance": 8,
+      "rainFriendly": 9,
+      "walkingIntensity": 3
+    },
+    "transportOptions": {
+      "train": 15
+    },
+    "highlights": [
+      "Kengo Kuma Origami Roof Structure",
+      "TOUCH TO GO Automated Convenience Store",
+      "TAKANAWA GATEWAY CITY Development",
+      "Sengakuji Temple (nearby)"
+    ],
+    "description": "Designed by world-renowned architect Kengo Kuma, Takanawa Gateway is the newest station on Tokyos iconic Yamanote Line, featuring a dramatic paper-origami glass roof, AI-powered unmanned stores, and futuristic urban planning.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    ],
+    "budgetBreakdown": {
+      "transport": 400,
+      "tickets": 0,
+      "food": 3500,
+      "cafe": 1200
+    },
+    "reservation": "No reservation required.",
+    "parking": "Short-term parking garages available nearby at Shinagawa Station and Takanawa Gateway City development.",
+    "itineraries": [
+      {
+        "name": "Architectural & Innovation Discovery Walk",
+        "description": "Experience futuristic Tokyo transit architecture and automated shopping in Minato ward.",
+        "steps": [
+          {
+            "time": "1:00 PM",
+            "activity": "Arrive via JR Yamanote Line and marvel at the massive timber-framed origami roof canopy."
+          },
+          {
+            "time": "1:45 PM",
+            "activity": "Experience TOUCH TO GO, Japans pioneer self-checkout AI convenience store."
+          },
+          {
+            "time": "2:30 PM",
+            "activity": "Walk to nearby Sengakuji Temple, famous burial site of the 47 Ronin."
+          },
+          {
+            "time": "4:00 PM",
+            "activity": "Enjoy artisan coffee at the elevated station concourse cafe overlooking train tracks."
+          }
+        ]
+      }
+    ],
+    "restaurants": ["Takanawa Gateway City Dining", "Sengakuji Monzen Soba"],
+    "cafes": ["MAISON KAYSER Takanawa", "Starbucks Reserve Takanawa Gateway"],
+    "notes": "Station opened in 2020 as the 30th Yamanote Line station. Beautiful night illumination of the cedar wood roof structure.",
+    "schemaVersion": 2
   }
 ]
