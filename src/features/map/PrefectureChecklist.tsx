@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import Japan from "@react-map/japan";
 import { CheckSquare } from "lucide-react";
@@ -94,6 +95,19 @@ export default function PrefectureChecklist() {
   const { visitedPrefectures, toggleVisitedPrefecture, isPrefectureVisited } =
     useTripStore();
 
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1200,
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const mapSize = windowWidth < 640 ? Math.min(windowWidth - 80, 320) : 550;
+
   const cityColors = visitedPrefectures.reduce(
     (acc, pref) => {
       acc[pref] = "#10b981"; // emerald-500
@@ -174,7 +188,7 @@ export default function PrefectureChecklist() {
             <div className="w-full max-w-[600px] aspect-square flex items-center justify-center">
               <Japan
                 type="select-multiple"
-                size={550}
+                size={mapSize}
                 mapColor="#cbd5e1"
                 strokeColor="#ffffff"
                 strokeWidth={1.5}

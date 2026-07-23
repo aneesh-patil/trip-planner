@@ -109,7 +109,7 @@ export default function Compare() {
         </div>
       </div>
 
-      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-x-auto">
+      <div className="hidden md:block bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow className="hover:bg-transparent">
@@ -319,6 +319,118 @@ export default function Compare() {
             </TableRow>
           </TableBody>
         </Table>
+      </div>
+
+      {/* Mobile Stacked View */}
+      <div className="grid grid-cols-1 gap-6 md:hidden">
+        {compareDestinations.map((dest) => {
+          const budgetVal = getAdjustedBudget(dest, "all");
+          const travelTimesForDest = Object.values(
+            dest.transportOptions || {},
+          ).filter((t): t is number => t !== undefined);
+          const travelTime =
+            travelTimesForDest.length > 0
+              ? Math.min(...travelTimesForDest)
+              : 999;
+
+          return (
+            <div
+              key={dest.id}
+              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-5 shadow-sm relative space-y-4"
+            >
+              <button
+                onClick={() => toggleCompare(dest.id)}
+                className="absolute top-4 right-4 p-1.5 bg-red-50 dark:bg-red-950/50 text-red-500 rounded-full hover:scale-105 transition-transform"
+                title="Remove"
+              >
+                <Trash2 className="w-4 h-4" />
+              </button>
+
+              <div className="flex gap-4">
+                <img
+                  src={dest.heroImage}
+                  alt={dest.name}
+                  className="w-24 h-24 object-cover rounded-2xl"
+                />
+                <div>
+                  <h3 className="font-bold text-lg text-slate-950 dark:text-white">
+                    {dest.name}
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    {dest.prefecture}
+                  </p>
+                  <Link
+                    to={`/destinations/${dest.id}`}
+                    className="inline-block mt-2"
+                  >
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="h-7 text-xs px-3"
+                    >
+                      View Details
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="border-t border-slate-100 dark:border-slate-800 pt-4 grid grid-cols-2 gap-3 text-xs">
+                <div>
+                  <p className="text-slate-400 font-semibold mb-0.5">
+                    Overall Score
+                  </p>
+                  <p className="font-bold text-slate-900 dark:text-white flex items-center">
+                    {dest.ratings.overall}
+                    {dest.ratings.overall === maxOverall && (
+                      <span className="ml-1 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950 px-1.5 py-0.5 rounded">
+                        Best
+                      </span>
+                    )}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-slate-400 font-semibold mb-0.5">
+                    Budget (Recommended)
+                  </p>
+                  <p className="font-bold text-slate-900 dark:text-white">
+                    ¥{(budgetVal / 1000).toFixed(0)}k
+                    {budgetVal === minBudget && (
+                      <span className="ml-1 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950 px-1.5 py-0.5 rounded">
+                        Lowest
+                      </span>
+                    )}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-slate-400 font-semibold mb-0.5">
+                    Travel Time
+                  </p>
+                  <p className="font-bold text-slate-900 dark:text-white">
+                    {travelTime === 999 ? "N/A" : `${travelTime} min`}
+                    {travelTime === minTravelTime && travelTime !== 999 && (
+                      <span className="ml-1 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950 px-1.5 py-0.5 rounded">
+                        Fastest
+                      </span>
+                    )}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-slate-400 font-semibold mb-0.5">
+                    Walking Minutes
+                  </p>
+                  <p className="font-bold text-slate-900 dark:text-white">
+                    {dest.walkingMin} min
+                    {dest.walkingMin === minWalking && (
+                      <span className="ml-1 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950 px-1.5 py-0.5 rounded">
+                        Min
+                      </span>
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
