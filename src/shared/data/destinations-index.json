@@ -10961,8 +10961,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "History", "Food", "Shopping"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tokyo_Station_Marunouchi_Building_2020.jpg/960px-Tokyo_Station_Marunouchi_Building_2020.jpg",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tokyo_Station_Marunouchi_Building_2020.jpg/960px-Tokyo_Station_Marunouchi_Building_2020.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
     "totalTripHours": 4,
     "budgetMin": 5000,
     "budgetRecommended": 9000,
@@ -11022,9 +11022,9 @@
     ],
     "description": "Japans premier railway terminal, featuring the restored 1914 Marunouchi red-brick facade, subterranean shopping passages, world-class ramen eateries, and immediate proximity to the Imperial Palace grounds.",
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tokyo_Station_Marunouchi_Building_at_Night_202105.jpg/960px-Tokyo_Station_Marunouchi_Building_at_Night_202105.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tokyo_Ramen_Street_2019.jpg/960px-Tokyo_Ramen_Street_2019.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Marunouchi_Naka-dori_in_Winter.jpg/960px-Marunouchi_Naka-dori_in_Winter.jpg"
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=600",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 500,
@@ -11069,7 +11069,9 @@
     ],
     "cafes": ["TORAYA TOKYO (Tokyo Station Hotel)", "Sembikiya Fruit Parlor"],
     "notes": "Direct access to Narita Express and all Shinkansen lines. Excellent rain-proof indoor routing.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "bestSeason": "All Year",
+    "weatherDependence": "low"
   },
   {
     "id": "takanawa-gateway-minato",
@@ -11077,8 +11079,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Architecture", "Technology"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Takanawa_Gateway_Station_20200314.jpg/960px-Takanawa_Gateway_Station_20200314.jpg",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Takanawa_Gateway_Station_20200314.jpg/960px-Takanawa_Gateway_Station_20200314.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 6000,
@@ -11137,9 +11139,9 @@
     ],
     "description": "Designed by world-renowned architect Kengo Kuma, Takanawa Gateway is the newest station on Tokyos iconic Yamanote Line, featuring a dramatic paper-origami glass roof, AI-powered unmanned stores, and futuristic urban planning.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
     "budgetBreakdown": {
       "transport": 400,
@@ -11176,6 +11178,8 @@
     "restaurants": ["Takanawa Gateway City Dining", "Sengakuji Monzen Soba"],
     "cafes": ["MAISON KAYSER Takanawa", "Starbucks Reserve Takanawa Gateway"],
     "notes": "Station opened in 2020 as the 30th Yamanote Line station. Beautiful night illumination of the cedar wood roof structure.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "bestSeason": "All Year",
+    "weatherDependence": "low"
   }
 ]
