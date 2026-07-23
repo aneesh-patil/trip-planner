@@ -120,15 +120,30 @@ export default function DestinationCard({
             </Badge>
           </div>
         )}
-        <div className="absolute top-3 left-3 flex gap-2 flex-wrap z-10">
-          {destination.tags.slice(0, 2).map((tag) => (
-            <Badge
-              key={tag}
-              className="bg-slate-900/70 hover:bg-slate-900 text-white backdrop-blur-md border border-white/20"
-            >
-              {tag}
-            </Badge>
-          ))}
+        <div className="absolute top-3 left-3 flex gap-2 flex-wrap z-10 max-w-[80%]">
+          {destination.tags.slice(0, 2).map((tag) => {
+            let badgeStyle =
+              "bg-slate-900/70 hover:bg-slate-900 text-white backdrop-blur-md border border-white/20";
+            if (tag === "12 Original Keeps") {
+              badgeStyle =
+                "bg-amber-500 hover:bg-amber-600 text-white border-amber-300 font-bold shadow-md";
+            } else if (tag === "World's Tallest Tower") {
+              badgeStyle =
+                "bg-sky-600 hover:bg-sky-700 text-white border-sky-300 font-bold shadow-md";
+            } else if (tag === "Top 100 Castle") {
+              badgeStyle =
+                "bg-rose-600 hover:bg-rose-700 text-white border-rose-300 font-bold shadow-md";
+            } else if (tag === "Free Observatory") {
+              badgeStyle =
+                "bg-emerald-600 hover:bg-emerald-700 text-white border-emerald-300 font-bold shadow-md";
+            }
+
+            return (
+              <Badge key={tag} className={badgeStyle}>
+                {tag}
+              </Badge>
+            );
+          })}
         </div>
         <div className="absolute top-3 right-3 flex flex-col gap-2 z-10">
           <button

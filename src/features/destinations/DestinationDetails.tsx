@@ -374,6 +374,50 @@ export default function DestinationDetails() {
             <Badge className="bg-emerald-600 hover:bg-emerald-500 border-none">
               {destination.region}
             </Badge>
+            {destination.tags &&
+              destination.tags.map((tag) => {
+                if (tag === "12 Original Keeps") {
+                  return (
+                    <Badge
+                      key={tag}
+                      className="bg-amber-500 hover:bg-amber-600 text-white font-bold border-amber-300 shadow-md"
+                    >
+                      🏰 12 Original Keeps
+                    </Badge>
+                  );
+                }
+                if (tag === "World's Tallest Tower") {
+                  return (
+                    <Badge
+                      key={tag}
+                      className="bg-sky-600 hover:bg-sky-700 text-white font-bold border-sky-300 shadow-md"
+                    >
+                      🗼 World's Tallest Tower
+                    </Badge>
+                  );
+                }
+                if (tag === "Top 100 Castle") {
+                  return (
+                    <Badge
+                      key={tag}
+                      className="bg-rose-600 hover:bg-rose-700 text-white font-bold border-rose-300 shadow-md"
+                    >
+                      🏯 Top 100 Castle
+                    </Badge>
+                  );
+                }
+                if (tag === "Free Observatory") {
+                  return (
+                    <Badge
+                      key={tag}
+                      className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold border-emerald-300 shadow-md"
+                    >
+                      🏙️ Free Observatory
+                    </Badge>
+                  );
+                }
+                return null;
+              })}
             {destination.categories.map((cat) => (
               <Badge
                 key={cat}

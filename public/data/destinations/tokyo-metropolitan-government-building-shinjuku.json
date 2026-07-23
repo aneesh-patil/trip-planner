@@ -1,0 +1,109 @@
+{
+  "id": "tokyo-metropolitan-government-building-shinjuku",
+  "name": "Tokyo Metropolitan Government Building Observatories",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Observation Deck", "Landmark", "Architecture", "Free"],
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 1500,
+  "budgetRecommended": 3500,
+  "budgetMax": 7000,
+  "walkingMin": 3000,
+  "walkingSunMin": 1000,
+  "walkingShadeMin": 2000,
+  "indoorPercent": 95,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.4,
+    "summer": 9,
+    "winter": 9.2,
+    "rain": 9.8,
+    "food": 8.5,
+    "photography": 9.7,
+    "relaxation": 9,
+    "value": 10,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 8,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 9,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": [
+    "Free Observatory",
+    "202m Height",
+    "Mt Fuji View",
+    "Shinjuku Skyline"
+  ],
+  "coordinates": {
+    "lat": 35.6896,
+    "lng": 139.6917
+  },
+  "comfort": {
+    "heatTolerance": 9,
+    "rainFriendly": 10,
+    "walkingIntensity": 2
+  },
+  "transportOptions": {
+    "train": 10
+  },
+  "highlights": [
+    "45F Free Observatory Decks (202m)",
+    "360-Degree Tokyo & Mt. Fuji Panorama",
+    "Yellow Memory Piano (South Deck)",
+    "Toyo Ito Architecture"
+  ],
+  "description": "Perched 202 meters above Shinjuku on the 45th floors of Kenzo Tange iconic twin-tower skyscraper, offering free 360-degree views of Mt. Fuji and Tokyo lights.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 300,
+    "tickets": 0,
+    "food": 2200,
+    "cafe": 1000
+  },
+  "reservation": "No reservation required (Free admission).",
+  "parking": "Underground paid parking garage at Tokyo Metropolitan Government Building.",
+  "itineraries": [
+    {
+      "name": "Free Shinjuku Sky Observatory & Sunset",
+      "description": "Enjoy free 360-degree vistas over Tokyo skyline and Mt. Fuji from 202 meters high.",
+      "steps": [
+        {
+          "time": "4:00 PM",
+          "activity": "Arrive at Tochomae Station and ride express elevator to 45F South Deck."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Watch sunset over Mt. Fuji from the high-altitude glass perimeter."
+        },
+        {
+          "time": "5:30 PM",
+          "activity": "Listen to street piano performances on the famous memory piano."
+        },
+        {
+          "time": "6:30 PM",
+          "activity": "Dine at the 45th floor sky dining lounge overlooking evening city lights."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Good View Tokyo 45F", "Tocho Staff Cafeteria"],
+  "cafes": ["South Observatory Cafe 45F"],
+  "notes": "Free entry 365 days a year. South Deck open until 10:00 PM.",
+  "schemaVersion": 2
+}

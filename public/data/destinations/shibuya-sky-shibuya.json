@@ -1,0 +1,109 @@
+{
+  "id": "shibuya-sky-shibuya",
+  "name": "Shibuya Sky (Rooftop Observatory)",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Observation Deck", "Landmark", "Modern", "Entertainment"],
+  "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 3500,
+  "budgetRecommended": 7000,
+  "budgetMax": 13000,
+  "walkingMin": 3500,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2000,
+  "indoorPercent": 70,
+  "ratings": {
+    "overall": 9.8,
+    "couple": 9.8,
+    "summer": 9.2,
+    "winter": 9.5,
+    "rain": 8.8,
+    "food": 8.8,
+    "photography": 9.9,
+    "relaxation": 9,
+    "value": 9,
+    "uniqueness": 9.9
+  },
+  "crowd": {
+    "weekday": 8,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 9,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "medium",
+  "tags": [
+    "229m Rooftop",
+    "Shibuya Scramble View",
+    "Open-Air Glass Edge",
+    "Sky Edge"
+  ],
+  "coordinates": {
+    "lat": 35.659,
+    "lng": 139.7006
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 5
+  },
+  "highlights": [
+    "Sky Edge Glass Corner",
+    "Cloud Hammocks Rooftop Lawn",
+    "Geo Compass 360 Horizon",
+    "Paradise Lounge Bar"
+  ],
+  "description": "Perched 229 meters directly above Shibuya Crossing atop Shibuya Scramble Square, featuring an open-air rooftop glass-edge deck with 360-degree views of Tokyo Tower and Mt. Fuji.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 200,
+    "tickets": 2500,
+    "food": 3200,
+    "cafe": 1100
+  },
+  "reservation": "Advance online ticket booking required 2 to 4 weeks prior.",
+  "parking": "Underground paid parking at Shibuya Scramble Square.",
+  "itineraries": [
+    {
+      "name": "Shibuya Open-Air Sky Deck & Scramble View",
+      "description": "Experience Japan's famous open-air rooftop observatory over Shibuya Scramble.",
+      "steps": [
+        {
+          "time": "4:30 PM",
+          "activity": "Arrive at Shibuya Station and take express elevator to 14F ticket gate."
+        },
+        {
+          "time": "5:00 PM",
+          "activity": "Step onto the 47F open-air rooftop lawn and pose at the glass Sky Edge corner."
+        },
+        {
+          "time": "6:00 PM",
+          "activity": "Watch sunset over Mt. Fuji and Shibuya Crossing lights coming alive below."
+        },
+        {
+          "time": "7:30 PM",
+          "activity": "Enjoy cocktails at Paradise Lounge 46F."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Paradise Lounge 46F", "Tsurutontan Udon Scramble"],
+  "cafes": ["The Roof at Shibuya Sky", "Starbucks Scramble"],
+  "notes": "Rooftop deck may close temporarily during heavy rain or strong wind.",
+  "schemaVersion": 2
+}

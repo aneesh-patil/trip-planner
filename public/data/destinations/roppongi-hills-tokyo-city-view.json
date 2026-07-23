@@ -1,0 +1,109 @@
+{
+  "id": "roppongi-hills-tokyo-city-view",
+  "name": "Roppongi Hills Observation Deck (Tokyo City View)",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Observation Deck", "Landmark", "Art", "Night View"],
+  "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 3500,
+  "budgetRecommended": 7000,
+  "budgetMax": 13000,
+  "walkingMin": 3500,
+  "walkingSunMin": 1200,
+  "walkingShadeMin": 2300,
+  "indoorPercent": 85,
+  "ratings": {
+    "overall": 9.7,
+    "couple": 9.8,
+    "summer": 9,
+    "winter": 9.6,
+    "rain": 9.2,
+    "food": 8.8,
+    "photography": 9.9,
+    "relaxation": 9.1,
+    "value": 8.8,
+    "uniqueness": 9.7
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": [
+    "270m Sky Deck",
+    "Tokyo Tower Front View",
+    "Mori Art Museum",
+    "Roppongi Hills"
+  ],
+  "coordinates": {
+    "lat": 35.6605,
+    "lng": 139.7292
+  },
+  "comfort": {
+    "heatTolerance": 9,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 15
+  },
+  "highlights": [
+    "52F Glass Indoor Observation Deck",
+    "Open-Air Sky Deck (270m)",
+    "Front-Row Tokyo Tower Night View",
+    "Mori Art Museum Access"
+  ],
+  "description": "Located on the 52nd floor and rooftop of Mori Tower (270m height), offering the iconic front-row view of Tokyo Tower framed against the Tokyo Bay skyline.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 300,
+    "tickets": 2000,
+    "food": 3500,
+    "cafe": 1200
+  },
+  "reservation": "Online advance tickets save 200 JPY.",
+  "parking": "Paid underground parking structure at Roppongi Hills Mori Tower.",
+  "itineraries": [
+    {
+      "name": "Tokyo Tower Skyline Sunset & Mori Art Museum",
+      "description": "Combine contemporary art with Tokyo's premier Tokyo Tower night view.",
+      "steps": [
+        {
+          "time": "3:30 PM",
+          "activity": "Arrive at Roppongi Station and ascend Mori Tower to 53F Mori Art Museum."
+        },
+        {
+          "time": "5:00 PM",
+          "activity": "Walk down to 52F Tokyo City View as twilight illuminates Tokyo Tower."
+        },
+        {
+          "time": "6:30 PM",
+          "activity": "Take open-air Sky Deck helipad elevator to feel 270m breezes."
+        },
+        {
+          "time": "8:00 PM",
+          "activity": "Dine at Roppongi Hills Hillside gourmet arcade."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["The Sun & The Moon 52F", "Roppongi Hills Club"],
+  "cafes": ["Museum Cafe 52F"],
+  "notes": "The ticket includes entry to both Tokyo City View and Mori Art Museum exhibitions.",
+  "schemaVersion": 2
+}

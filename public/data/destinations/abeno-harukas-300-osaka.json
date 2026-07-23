@@ -1,0 +1,110 @@
+{
+  "id": "abeno-harukas-300-osaka",
+  "name": "Abeno Harukas 300 (Osaka Skyline)",
+  "prefecture": "Osaka",
+  "region": "Kansai",
+  "categories": ["Observation Deck", "Landmark", "Modern", "Skyscraper"],
+  "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 3500,
+  "budgetRecommended": 7500,
+  "budgetMax": 14000,
+  "walkingMin": 3500,
+  "walkingSunMin": 1000,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 90,
+  "ratings": {
+    "overall": 9.8,
+    "couple": 9.7,
+    "summer": 9.2,
+    "winter": 9.5,
+    "rain": 9.6,
+    "food": 9,
+    "photography": 9.9,
+    "relaxation": 9.2,
+    "value": 9.2,
+    "uniqueness": 9.8
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": [
+    "300m Skyscraper",
+    "Harukas 300",
+    "Osaka Panorama",
+    "58F Open Atrium"
+  ],
+  "coordinates": {
+    "lat": 34.6461,
+    "lng": 135.5133
+  },
+  "comfort": {
+    "heatTolerance": 9,
+    "rainFriendly": 10,
+    "walkingIntensity": 2
+  },
+  "transportOptions": {
+    "train": 180,
+    "shinkansen": 150
+  },
+  "highlights": [
+    "58F-60F Harukas 300 Observatory (300m)",
+    "58F Open-Air Wood Deck Atrium",
+    "Sky Garden Dining",
+    "Abeno Harukas Kintetsu Department Store"
+  ],
+  "description": "Rising 300 meters above Osaka, Abeno Harukas is Japan's tallest skyscraper, featuring a 3-story glass observatory and open-air wooden atrium garden.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 2500,
+    "tickets": 1800,
+    "food": 3200,
+    "cafe": 1000
+  },
+  "reservation": "No advance reservation required.",
+  "parking": "Paid parking garage at Abeno Harukas building.",
+  "itineraries": [
+    {
+      "name": "Osaka 300m Sky High Vista & Dining",
+      "description": "Stand 300 meters above Osaka plain and dine at the open-air wooden atrium.",
+      "steps": [
+        {
+          "time": "3:00 PM",
+          "activity": "Arrive at Osaka-Abenobashi Station and take shuttle elevator to 16F."
+        },
+        {
+          "time": "3:30 PM",
+          "activity": "Ride express elevator to 60F 360-degree glass corridor."
+        },
+        {
+          "time": "5:00 PM",
+          "activity": "Relax at 58F open-air wooden deck garden with gelato or craft beer."
+        },
+        {
+          "time": "7:00 PM",
+          "activity": "Dine at Abeno Harukas Kintetsu gourmet dining hall 12F-14F."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Sky Garden 300 58F", "Kintetsu Gourmet City 14F"],
+  "cafes": ["Caffe Ciao Press 16F", "Harukas 300 Cafe"],
+  "notes": "Features 360-degree glass floor-to-ceiling perimeter views.",
+  "schemaVersion": 2
+}

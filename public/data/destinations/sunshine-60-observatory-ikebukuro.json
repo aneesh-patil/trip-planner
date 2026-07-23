@@ -1,0 +1,104 @@
+{
+  "id": "sunshine-60-observatory-ikebukuro",
+  "name": "Sunshine 60 Observatory (Tenbou Park)",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Observation Deck", "Landmark", "Family", "Park"],
+  "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200",
+  "totalTripHours": 3,
+  "budgetMin": 2500,
+  "budgetRecommended": 5000,
+  "budgetMax": 9000,
+  "walkingMin": 3000,
+  "walkingSunMin": 800,
+  "walkingShadeMin": 2200,
+  "indoorPercent": 95,
+  "ratings": {
+    "overall": 9.2,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.8,
+    "food": 8.4,
+    "photography": 9.4,
+    "relaxation": 9.5,
+    "value": 9,
+    "uniqueness": 9.3
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 9,
+    "summer": 9,
+    "autumn": 9,
+    "winter": 9
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["251m Sky Park", "Indoor Lawn", "Ikebukuro Skyline", "Tenbou Park"],
+  "coordinates": {
+    "lat": 35.7288,
+    "lng": 139.7194
+  },
+  "comfort": {
+    "heatTolerance": 9,
+    "rainFriendly": 10,
+    "walkingIntensity": 2
+  },
+  "transportOptions": {
+    "train": 15
+  },
+  "highlights": [
+    "251m High-Altitude Artificial Lawn Hill",
+    "Tenbou Park Cafe",
+    "Sunshine Aquarium (nearby)",
+    "360-Degree Kanto View"
+  ],
+  "description": "Located on the 60th floor of Sunshine 60 (251m height) in Ikebukuro, featuring an indoor sky park with real turf lawns, picnic mats, and panoramic vistas.",
+  "gallery": [
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+  ],
+  "budgetBreakdown": {
+    "transport": 400,
+    "tickets": 900,
+    "food": 2700,
+    "cafe": 1000
+  },
+  "reservation": "No advance reservation required.",
+  "parking": "Paid parking garage inside Sunshine City complex.",
+  "itineraries": [
+    {
+      "name": "Ikebukuro Indoor Sky Picnic & Aquarium",
+      "description": "Relax on high-altitude turf lawns and visit Sunshine City rooftop aquarium.",
+      "steps": [
+        {
+          "time": "1:00 PM",
+          "activity": "Arrive at Ikebukuro Station and walk 8 mins through Sunshine 60 Street."
+        },
+        {
+          "time": "1:30 PM",
+          "activity": "Ride the high-speed elevator to the 60th floor Tenbou Park observatory."
+        },
+        {
+          "time": "2:00 PM",
+          "activity": "Relax on the indoor artificial grass hill with seasonal drinks from Tenbou Cafe."
+        },
+        {
+          "time": "4:00 PM",
+          "activity": "Visit Sunshine Aquarium on the rooftop of the main building."
+        }
+      ]
+    }
+  ],
+  "restaurants": ["Tenbou Park Cafe 60F", "Sunshine City Alpa Gourmet"],
+  "cafes": ["Tenbou Cafe Lawn Bar"],
+  "notes": "Completely indoor and rainproof; perfect for families with young children.",
+  "schemaVersion": 2
+}
