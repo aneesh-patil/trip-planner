@@ -52,7 +52,8 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Akasaka (Minato)"]
+    "highlights": ["Akasaka (Minato)"],
+    "description": "Minato is a special ward of Tokyo, Japan. It is also called Minato City in English."
   },
   {
     "id": "akihabara-chiyoda",
@@ -107,7 +108,8 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Akihabara (Chiyoda)"]
+    "highlights": ["Akihabara (Chiyoda)"],
+    "description": "Akihabara is a neighborhood in the Chiyoda ward of Tokyo, Japan, generally considered to be the area surrounding Akihabara Station. This area is part of the Sotokanda (外神田) and Kanda-Sakumachō districts of Chiyoda. There is an administrative district called Akihabara, located north of Akihabara Electric Town surrounding Akihabara Neribei Park."
   },
   {
     "id": "asakusa-taito",
@@ -162,7 +164,8 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Asakusa (Taito)"]
+    "highlights": ["Asakusa (Taito)"],
+    "description": "Asakusa is a district in Taitō, Tokyo, Japan. It is known for Sensō-ji, a Buddhist temple dedicated to the bodhisattva Kannon. There are several other temples in Asakusa, as well as various festivals, such as Sanja Matsuri."
   },
   {
     "id": "ashigara",
@@ -215,7 +218,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Ashigara"]
+    "highlights": ["Ashigara"],
+    "description": "Ashigara is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "atami-resort",
@@ -272,7 +277,8 @@
       "shinkansen": 45,
       "car": 90
     },
-    "highlights": ["Atami"]
+    "highlights": ["Atami"],
+    "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "boso-peninsula",
@@ -327,7 +333,8 @@
     "transportOptions": {
       "car": 90
     },
-    "highlights": ["Boso Peninsula"]
+    "highlights": ["Boso Peninsula"],
+    "description": "Boso Peninsula is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "chiba-city",
@@ -381,7 +388,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Chiba City"]
+    "highlights": ["Chiba City"],
+    "description": "Chiba City is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "chichibu",
@@ -435,7 +444,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Chichibu"]
+    "highlights": ["Chichibu"],
+    "description": "Chichibu is a scenic destination in the Saitama region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "chofu-tokyo",
@@ -616,7 +627,8 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Tokyo Disneyland"]
+    "highlights": ["Tokyo Disneyland"],
+    "description": "Tokyo Disneyland is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "disneysea",
@@ -671,7 +683,8 @@
     "transportOptions": {
       "train": 90
     },
-    "highlights": ["DisneySea"]
+    "highlights": ["DisneySea"],
+    "description": "DisneySea is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "edogawa-ward",
@@ -727,7 +740,8 @@
       "train": 60,
       "car": 50
     },
-    "highlights": ["Edogawa"]
+    "highlights": ["Edogawa"],
+    "description": "Edogawa is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "enoshima-island",
@@ -782,7 +796,8 @@
     "transportOptions": {
       "train": 60
     },
-    "highlights": ["Enoshima"]
+    "highlights": ["Enoshima"],
+    "description": "Enoshima is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "fuji-5-lake",
@@ -837,7 +852,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Fuji Five Lakes"]
+    "highlights": ["Fuji Five Lakes"],
+    "description": "Fuji Five Lakes is a scenic destination in the Yamanashi region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "fujinomiya",
@@ -891,7 +908,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Fujinomiya"]
+    "highlights": ["Fujinomiya"],
+    "description": "Fujinomiya is a city located in central Shizuoka Prefecture, Japan. As of 1 July 2019, the city had an estimated population of 132,507 in 56,655 households, and a population density of 340 persons per km2. The total area of the city is 388.99 square kilometres (150.19 sq mi).",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "fukui",
@@ -944,7 +963,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Fukui"]
+    "highlights": ["Fukui"],
+    "description": "Fukui is a scenic destination in the Fukui region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "gala-yuzawa",
@@ -998,7 +1019,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Gala Yuzawa"]
+    "highlights": ["Gala Yuzawa"],
+    "description": "Gala Yuzawa is a scenic destination in the Niigata region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "ghibli-museum",
@@ -1053,7 +1076,8 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Ghibli Museum"]
+    "highlights": ["Ghibli Museum"],
+    "description": "Ghibli Museum is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "ginza-urban",
@@ -1108,7 +1132,8 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Ginza"]
+    "highlights": ["Ginza"],
+    "description": "Ginza is a district of Chūō, Tokyo, located south of Yaesu and Kyōbashi, west of Tsukiji, east of Yūrakuchō and Uchisaiwaichō, and north of Shinbashi. It is a popular upscale shopping area of Tokyo, with numerous internationally renowned department stores, boutiques, restaurants and coffeehouses located in the vicinity."
   },
   {
     "id": "gujo",
@@ -1169,7 +1194,8 @@
     "coordinates": {
       "lat": 35.7483,
       "lng": 136.9582
-    }
+    },
+    "description": "Gujo Hachiman is a scenic destination in the Gifu region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "hachioji-tokyo",
@@ -1286,7 +1312,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Hakkeijima Sea Paradise"]
+    "highlights": ["Hakkeijima Sea Paradise"],
+    "description": "Hakkeijima Sea Paradise is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "hakone-onsen",
@@ -1341,7 +1369,8 @@
     "transportOptions": {
       "train": 85
     },
-    "highlights": ["Hakone"]
+    "highlights": ["Hakone"],
+    "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "harry-potter-studio",
@@ -1396,7 +1425,8 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Harry Potter Studio"]
+    "highlights": ["Harry Potter Studio"],
+    "description": "Harry Potter Studio is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "hitachi-park",
@@ -1450,7 +1480,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Hitachi Seaside Park"]
+    "highlights": ["Hitachi Seaside Park"],
+    "description": "Hitachi Seaside Park is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "ikaho-onsen-gunma",
@@ -1569,7 +1601,8 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Ikebukuro (Toshima)"]
+    "highlights": ["Ikebukuro (Toshima)"],
+    "description": "Ikebukuro (Toshima) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "imperial-palace-chiyoda",
@@ -1624,7 +1657,8 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Imperial Palace (Chiyoda)"]
+    "highlights": ["Imperial Palace (Chiyoda)"],
+    "description": "Imperial Palace (Chiyoda) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "inuyama",
@@ -1680,7 +1714,8 @@
     "coordinates": {
       "lat": 35.3853,
       "lng": 136.9405
-    }
+    },
+    "description": "Inuyama is a scenic destination in the Aichi region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "ito",
@@ -1740,7 +1775,8 @@
     "coordinates": {
       "lat": 34.9734,
       "lng": 139.0924
-    }
+    },
+    "description": "Ito is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "izu",
@@ -1794,7 +1830,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Izu Peninsula"]
+    "highlights": ["Izu Peninsula"],
+    "description": "Izu Peninsula is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "jogashima",
@@ -1847,7 +1885,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Miura Peninsula & Jogashima"]
+    "highlights": ["Miura Peninsula & Jogashima"],
+    "description": "Miura Peninsula & Jogashima is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "joypolis",
@@ -1902,7 +1942,8 @@
     "transportOptions": {
       "train": 90
     },
-    "highlights": ["Joypolis Odaiba"]
+    "highlights": ["Joypolis Odaiba"],
+    "description": "Joypolis Odaiba is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "kamakura-history",
@@ -1957,7 +1998,8 @@
     "transportOptions": {
       "train": 60
     },
-    "highlights": ["Kamakura"]
+    "highlights": ["Kamakura"],
+    "description": "Kamakura , officially Kamakura City , is a city of Kanagawa Prefecture in Japan. It is located in the Kantō region on the island of Honshu. The city has an estimated population of 172,929 and a population density of 4,359 people per km2 over the total area of 39.67 km2 (15.32 sq mi). Kamakura was designated as a city on 3 November 1939."
   },
   {
     "id": "kamikochi",
@@ -2010,7 +2052,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kamikochi"]
+    "highlights": ["Kamikochi"],
+    "description": "Kamikochi is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "kanazawa",
@@ -2063,7 +2107,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kanazawa"]
+    "highlights": ["Kanazawa"],
+    "description": "Kanazawa is the capital of Ishikawa Prefecture in central Japan. As of 1 January 2018, the city had an estimated population of 466,029 in 203,271 households, and a population density of 990 persons per km2. The total area of the city was 468.64 square kilometres (180.94 sq mi).",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "karuizawa",
@@ -2121,7 +2167,8 @@
       "shinkansen": 42,
       "bus": 180
     },
-    "highlights": ["Karuizawa"]
+    "highlights": ["Karuizawa"],
+    "description": "Karuizawa is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "kawagoe-edo",
@@ -2176,7 +2223,8 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Kawagoe"]
+    "highlights": ["Kawagoe"],
+    "description": "Kawagoe is a scenic destination in the Saitama region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "kawasaki",
@@ -2229,7 +2277,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kawasaki"]
+    "highlights": ["Kawasaki"],
+    "description": "Kawasaki is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "kinugawa-onsen",
@@ -2283,7 +2333,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kinugawa Onsen"]
+    "highlights": ["Kinugawa Onsen"],
+    "description": "Kinugawa Onsen is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "kiso",
@@ -2336,7 +2388,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kiso Valley"]
+    "highlights": ["Kiso Valley"],
+    "description": "Kiso Valley is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "kofu",
@@ -2390,7 +2444,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kofu"]
+    "highlights": ["Kofu"],
+    "description": "Kofu is a scenic destination in the Yamanashi region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "kurobe-gorge",
@@ -2444,7 +2500,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kurobe Gorge"]
+    "highlights": ["Kurobe Gorge"],
+    "description": "Kurobe Gorge is a scenic destination in the Toyama region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "kusatsu-onsen",
@@ -2498,7 +2556,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Kusatsu & Shima Onsen"]
+    "highlights": ["Kusatsu & Shima Onsen"],
+    "description": "Kusatsu & Shima Onsen is a scenic destination in the Gunma region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "lake-hamanako",
@@ -2553,7 +2613,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Lake Hamanako"]
+    "highlights": ["Lake Hamanako"],
+    "description": "Lake Hamanako is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "lake-sagami",
@@ -2607,7 +2669,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Lake Sagami"]
+    "highlights": ["Lake Sagami"],
+    "description": "Lake Sagami is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "machida-tokyo",
@@ -2726,7 +2790,8 @@
     "transportOptions": {
       "car": 210
     },
-    "highlights": ["Matsumoto"]
+    "highlights": ["Matsumoto"],
+    "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "meguro-ward",
@@ -2781,7 +2846,8 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Meguro"]
+    "highlights": ["Meguro"],
+    "description": "Meguro is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "mito",
@@ -2835,7 +2901,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Mito"]
+    "highlights": ["Mito"],
+    "description": "Mito is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "mother-farm-chiba",
@@ -2947,7 +3015,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Mount Fuji"]
+    "highlights": ["Mount Fuji"],
+    "description": "Mount Fuji is an active stratovolcano located on the Japanese island of Honshu, with a summit elevation of 3,776.24 m. It is the highest mountain in Japan, the second-highest volcano on any Asian island, and the seventh-highest peak of an island on Earth. Mount Fuji last erupted from 1707 to 1708.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "nagano-city",
@@ -3002,7 +3072,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Nagano & Snow Monkeys"]
+    "highlights": ["Nagano & Snow Monkeys"],
+    "description": "Nagano & Snow Monkeys is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "nagatoro-saitama",
@@ -3122,7 +3194,8 @@
     "coordinates": {
       "lat": 35.1815,
       "lng": 136.9066
-    }
+    },
+    "description": "Nagoya is a scenic destination in the Aichi region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "narita",
@@ -3176,7 +3249,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Narita"]
+    "highlights": ["Narita"],
+    "description": "Narita is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "nikko-heritage",
@@ -3232,7 +3307,8 @@
       "train": 120,
       "car": 130
     },
-    "highlights": ["Nikko"]
+    "highlights": ["Nikko"],
+    "description": "Nikko is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "noto",
@@ -3285,7 +3361,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Noto Peninsula"]
+    "highlights": ["Noto Peninsula"],
+    "description": "Noto Peninsula is a scenic destination in the Ishikawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "odaiba-minato",
@@ -3340,7 +3418,8 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["Odaiba (Minato)"]
+    "highlights": ["Odaiba (Minato)"],
+    "description": "Odaiba (Minato) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "odawara",
@@ -3393,7 +3472,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Odawara & Manazuru"]
+    "highlights": ["Odawara & Manazuru"],
+    "description": "Odawara & Manazuru is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "okuhida",
@@ -3447,7 +3528,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Okuhida"]
+    "highlights": ["Okuhida"],
+    "description": "Okuhida is a scenic destination in the Gifu region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "okutama-tokyo",
@@ -3624,7 +3707,8 @@
     "transportOptions": {
       "train": 100
     },
-    "highlights": ["Omiya Railway Museum"]
+    "highlights": ["Omiya Railway Museum"],
+    "description": "Ōmiya is one of ten wards of the city of Saitama, in Saitama Prefecture, Japan, and is located in the northeastern part of the city. As of 1 March 2021, the ward had an estimated population of 119,298 and a population density of 9,300 persons per km2. Its total area was 12.80 square kilometres (4.94 sq mi). Although Urawa-ku is the governmental center of Saitama City, Ōmiya-ku is the most active commercial and business centre in both Saitama City and Saitama Prefecture thanks to its transport infrastructure, especially railways connected at Ōmiya Station."
   },
   {
     "id": "oze-national-park",
@@ -3677,7 +3761,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Oze National Park"]
+    "highlights": ["Oze National Park"],
+    "description": "Oze National Park , is an area consisting of open greenland in Fukushima, Tochigi, Gunma and Niigata Prefectures in Japan. The park is 372 km2 in area and is the 29th national park in Japan.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "sado-island",
@@ -3730,7 +3816,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Sado Island"]
+    "highlights": ["Sado Island"],
+    "description": "Sado Island is an island located in the eastern part of the Sea of Japan, under the jurisdiction of Sado City, Niigata Prefecture, Japan, with a coastline of 262.7 kilometres (163.2 mi). In October 2017, Sado Island had a population of 55,212 people. Sado Island covers an area of 854.76 km2 (330.02 sq mi), and is the sixth largest island in Japan, excluding the disputed Southern Kurils. The shortest distance between Sado Island and Honshu is 32 km (20 mi). The highest peak on Sado Island is Mount Kinpoku, with an elevation of 1,172 m (3,845 ft).",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "saitama-city",
@@ -3783,7 +3871,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Saitama City"]
+    "highlights": ["Saitama City"],
+    "description": "Saitama is the capital and largest city of Saitama Prefecture, Japan. Its area incorporates the former cities of Urawa, Ōmiya, Yono and Iwatsuki. It is a city designated by government ordinance. As of 1 February 2021, the city had an estimated population of 1,324,854, and a population density of 6,093 people per km2. Its total area is 217.43 square kilometres (83.95 sq mi).",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "shibuya-ward",
@@ -3838,7 +3928,8 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Shibuya"]
+    "highlights": ["Shibuya"],
+    "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station."
   },
   {
     "id": "shinjuku-ward",
@@ -3893,7 +3984,8 @@
     "transportOptions": {
       "train": 40
     },
-    "highlights": ["Shinjuku"]
+    "highlights": ["Shinjuku"],
+    "description": "Shinjuku , officially called Shinjuku City, is one of the 23 special wards of Tokyo."
   },
   {
     "id": "shizuoka",
@@ -3948,7 +4040,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Shizuoka City"]
+    "highlights": ["Shizuoka City"],
+    "description": "Shizuoka is the capital city of Shizuoka Prefecture, Japan, and the prefecture's second-largest city in both population and area. It has been populated since prehistoric times. As of 1 September 2023, the city had an estimated population of 677,867 in 106,087 households, and a population density of 480 inhabitants per square kilometre (1,200/sq mi).",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "suwa-nagano",
@@ -4128,7 +4222,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Takaoka"]
+    "highlights": ["Takaoka"],
+    "description": "Takaoka is a scenic destination in the Toyama region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "takayama",
@@ -4182,7 +4278,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Takayama & Shirakawa-go"]
+    "highlights": ["Takayama & Shirakawa-go"],
+    "description": "Takayama & Shirakawa-go is a scenic destination in the Gifu region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "teamlab-planets",
@@ -4237,7 +4335,8 @@
     "transportOptions": {
       "train": 50
     },
-    "highlights": ["teamLab Planets"]
+    "highlights": ["teamLab Planets"],
+    "description": "teamLab Planets is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "toyama-alpine",
@@ -4290,7 +4389,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Tateyama Kurobe Alpine Route"]
+    "highlights": ["Tateyama Kurobe Alpine Route"],
+    "description": "Tateyama Kurobe Alpine Route is a scenic destination in the Toyama region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "tsukuba",
@@ -4346,7 +4447,8 @@
       "train": 120,
       "car": 150
     },
-    "highlights": ["Mt. Tsukuba"]
+    "highlights": ["Mt. Tsukuba"],
+    "description": "Mt. Tsukuba is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "ueno-taito",
@@ -4401,7 +4503,8 @@
     "transportOptions": {
       "train": 45
     },
-    "highlights": ["Ueno (Taito)"]
+    "highlights": ["Ueno (Taito)"],
+    "description": "Ueno (Taito) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "ushiku-daibutsu",
@@ -4455,7 +4558,9 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Ushiku Daibutsu"]
+    "highlights": ["Ushiku Daibutsu"],
+    "description": "Ushiku Daibutsu is a scenic destination in the Ibaraki region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   },
   {
     "id": "utsunomiya-oya",
@@ -4511,7 +4616,8 @@
       "train": 100,
       "car": 150
     },
-    "highlights": ["Utsunomiya & Oya"]
+    "highlights": ["Utsunomiya & Oya"],
+    "description": "Utsunomiya & Oya is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "yokohama-city",
@@ -4566,7 +4672,8 @@
     "transportOptions": {
       "train": 30
     },
-    "highlights": ["Yokohama"]
+    "highlights": ["Yokohama"],
+    "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions."
   },
   {
     "id": "yomiuriland",
@@ -4622,7 +4729,8 @@
       "train": 60,
       "car": 60
     },
-    "highlights": ["Yomiuriland"]
+    "highlights": ["Yomiuriland"],
+    "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings."
   },
   {
     "id": "zushi",
@@ -4676,6 +4784,8 @@
       "autumn": 4,
       "winter": 4
     },
-    "highlights": ["Zushi & Yokosuka"]
+    "highlights": ["Zushi & Yokosuka"],
+    "description": "Zushi & Yokosuka is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
+    "bestMonths": [3, 4, 5, 9, 10, 11]
   }
 ]
