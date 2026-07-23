@@ -107,5 +107,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Chiba City. Known for its urban and shopping vibes, it offers a great escape with an overall score of 7.5.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Chiba City via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chiba%20City"
+  }
 }

@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["City", "Shopping"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/960px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/3840px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
   "totalTripHours": 6,
   "budgetMin": 6000,
   "budgetRecommended": 10000,
@@ -47,14 +47,14 @@
     "rainFriendly": 6,
     "walkingIntensity": 8
   },
-  "image": "https://loremflickr.com/1000/800/japan,akihabara/all?lock=1021",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/3840px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
   "transportOptions": {
     "train": 40
   },
   "highlights": ["Electric Town", "Maid Cafes", "Radio Kaikan"],
   "description": "Akihabara is a neighborhood in the Chiyoda ward of Tokyo, Japan, generally considered to be the area surrounding Akihabara Station. This area is part of the Sotokanda (外神田) and Kanda-Sakumachō districts of Chiyoda. There is an administrative district called Akihabara, located north of Akihabara Electric Town surrounding Akihabara Neribei Park.",
   "gallery": [
-    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/3840px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
     "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
   ],
@@ -97,5 +97,11 @@
   "restaurants": ["GoGo Curry", "Gyu-Kaku"],
   "cafes": ["Maidreamin"],
   "notes": "Sunday afternoons have a pedestrian paradise on Chuo-dori.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Akihabara via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Akihabara"
+  }
 }

@@ -4,7 +4,7 @@
   "prefecture": "Nagano",
   "region": "Chubu",
   "categories": ["Castle", "History"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/960px-Matsumoto_Castle_Keep_Tower.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
   "totalTripHours": 12,
   "budgetMin": 11600,
   "budgetRecommended": 15600,
@@ -47,14 +47,14 @@
     "rainFriendly": 3,
     "walkingIntensity": 8
   },
-  "image": "https://loremflickr.com/1000/800/japan,matsumoto/all?lock=1007",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
   "transportOptions": {
     "car": 210
   },
   "highlights": ["Matsumoto Castle", "Nawate Dori"],
   "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
     "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
   ],
@@ -131,5 +131,11 @@
     "Station Matcha & Sweets"
   ],
   "notes": "Long drive but rewarding",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Matsumoto Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Matsumoto%20Castle"
+  }
 }

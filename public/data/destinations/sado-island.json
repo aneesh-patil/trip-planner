@@ -106,5 +106,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Sado Island. Known for its gold mine and tub boats vibes, it offers a great escape with an overall score of 8.4.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Sado Island via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sado%20Island"
+  }
 }

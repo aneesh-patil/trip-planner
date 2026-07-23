@@ -4,9 +4,9 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Nature", "Relaxation"],
-  "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hinohara_Vill_Office.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hinohara_Vill_Office.jpg",
     "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
     "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
   ],
@@ -104,5 +104,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hinohara_Vill_Office.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Hinohara via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hinohara"
+  }
 }

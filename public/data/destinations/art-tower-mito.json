@@ -4,8 +4,8 @@
   "prefecture": "Ibaraki",
   "region": "Kanto",
   "categories": ["Tower", "Architecture", "Art", "Landmark"],
-  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mito_Art_Tower.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mito_Art_Tower.JPG",
   "totalTripHours": 3,
   "budgetMin": 2500,
   "budgetRecommended": 5000,
@@ -62,7 +62,7 @@
   ],
   "description": "Designed by Pritzker Prize laureate Arata Isozaki to commemorate Mito's 100th municipal anniversary, this 100-meter helix tower is composed of 57 titanium tetrahedrons spiraling skyward.",
   "gallery": [
-    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mito_Art_Tower.JPG",
     "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
   ],
@@ -101,5 +101,11 @@
   "restaurants": ["Chez Yoshi Mito", "Mito Plaza Dining"],
   "cafes": ["Cafe ATM", "Saza Coffee Mito"],
   "notes": "The tower contains round porthole windows providing unique framed perspectives of Mito City.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Art Tower Mito via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Art%20Tower%20Mito"
+  }
 }

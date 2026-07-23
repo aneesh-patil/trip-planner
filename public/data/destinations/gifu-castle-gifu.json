@@ -4,8 +4,8 @@
   "prefecture": "Gifu",
   "region": "Chubu",
   "categories": ["Castle", "History", "Mountain", "Landmark"],
-  "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
   "totalTripHours": 4,
   "budgetMin": 3000,
   "budgetRecommended": 6000,
@@ -67,7 +67,7 @@
   ],
   "description": "Perched 329 meters atop Mt. Kinka, Gifu Castle was Oda Nobunaga's formidable mountain stronghold, offering panoramic views over the Nagara River and Nobi Plain.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
   ],
@@ -106,5 +106,11 @@
   "restaurants": ["Kinka-zan Rest House", "Gifu Park Ayu Dining"],
   "cafes": ["Ropeway Summit Cafe"],
   "notes": "Top 100 Castle of Japan #39. Special night ropeway operates during summer weekends for night views.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Gifu Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Gifu%20Castle"
+  }
 }

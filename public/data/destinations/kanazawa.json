@@ -22,7 +22,7 @@
     "lat": 36.5613,
     "lng": 136.6562
   },
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stone_lantern_Kenrokuen.jpg/3840px-Stone_lantern_Kenrokuen.jpg",
   "prefecture": "Ishikawa",
   "budgetMin": 9000,
   "budgetMax": 17000,
@@ -57,7 +57,7 @@
   "description": "Kanazawa is the capital of Ishikawa Prefecture in central Japan. As of 1 January 2018, the city had an estimated population of 466,029 in 203,271 households, and a population density of 990 persons per km2. The total area of the city was 468.64 square kilometres (180.94 sq mi).",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stone_lantern_Kenrokuen.jpg/3840px-Stone_lantern_Kenrokuen.jpg",
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
   ],
@@ -106,5 +106,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Kanazawa. Known for its kenrokuen and gold leaf vibes, it offers a great escape with an overall score of 9.4.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stone_lantern_Kenrokuen.jpg/3840px-Stone_lantern_Kenrokuen.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Kenroku-en via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kenroku-en"
+  }
 }

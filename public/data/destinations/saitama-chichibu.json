@@ -4,9 +4,9 @@
   "prefecture": "Saitama",
   "region": "Kanto",
   "categories": ["History", "Nature", "Mountains"],
-  "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
   ],
@@ -104,5 +104,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Chichibu via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chichibu"
+  }
 }

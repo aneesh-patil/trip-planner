@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["City", "Shopping", "Theme Park"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/960px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/3840px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
   "totalTripHours": 8,
   "budgetMin": 9000,
   "budgetRecommended": 13000,
@@ -47,7 +47,7 @@
     "rainFriendly": 8,
     "walkingIntensity": 8
   },
-  "image": "https://loremflickr.com/1000/800/japan,ikebukuro/all?lock=1024",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/3840px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
   "transportOptions": {
     "train": 50
   },
@@ -58,7 +58,7 @@
   ],
   "description": "Ikebukuro (Toshima) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/3840px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
     "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
     "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600"
   ],
@@ -101,5 +101,11 @@
   "restaurants": ["Mutekiya Ramen"],
   "cafes": ["Milky Way Cafe"],
   "notes": "Excellent choice for rainy days due to Sunshine City and massive underground networks.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Ikebukuro via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ikebukuro"
+  }
 }

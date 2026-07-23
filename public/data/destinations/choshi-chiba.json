@@ -4,9 +4,9 @@
   "prefecture": "Chiba",
   "region": "Kanto",
   "categories": ["Nature", "Food", "Ocean"],
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
     "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
   ],
@@ -92,5 +92,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Choshi via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Choshi"
+  }
 }

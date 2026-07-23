@@ -4,9 +4,9 @@
   "prefecture": "Gifu",
   "region": "Chubu",
   "categories": ["History", "Food", "Urban"],
-  "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
   ],
@@ -105,5 +105,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Takayama, Gifu via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Takayama%2C%20Gifu"
+  }
 }

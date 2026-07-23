@@ -4,7 +4,7 @@
   "prefecture": "Nagano",
   "region": "Chubu",
   "categories": ["Nature", "Shopping", "Resort"],
-  "heroImage": "/images/karuizawa.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Street_in_Karuizawa.jpg",
   "totalTripHours": 12,
   "budgetMin": 8000,
   "budgetRecommended": 12000,
@@ -47,7 +47,7 @@
     "rainFriendly": 4,
     "walkingIntensity": 8
   },
-  "image": "https://loremflickr.com/1000/800/japan,karuizawa/all?lock=1009",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Street_in_Karuizawa.jpg",
   "transportOptions": {
     "train": 70,
     "car": 180,
@@ -57,7 +57,7 @@
   "highlights": ["Kyu-Karuizawa", "Shiraito Falls", "Prince Shopping Plaza"],
   "description": "Karuizawa is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/d/d8/Street_in_Karuizawa.jpg",
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
     "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
   ],
@@ -134,5 +134,11 @@
     "Station Matcha & Sweets"
   ],
   "notes": "Cool escape from Tokyo summer",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Karuizawa via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Karuizawa"
+  }
 }

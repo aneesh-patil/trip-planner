@@ -4,7 +4,7 @@
   "prefecture": "Chiba",
   "region": "Kanto",
   "categories": ["Theme Park"],
-  "heroImage": "/images/disneysea.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tokyo_DisneySea_logo.svg/330px-Tokyo_DisneySea_logo.svg.png",
   "totalTripHours": 13,
   "budgetMin": 26800,
   "budgetRecommended": 30800,
@@ -47,14 +47,14 @@
     "rainFriendly": 4,
     "walkingIntensity": 20
   },
-  "image": "https://loremflickr.com/1000/800/japan,disneysea/all?lock=1011",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tokyo_DisneySea_logo.svg/330px-Tokyo_DisneySea_logo.svg.png",
   "transportOptions": {
     "train": 90
   },
   "highlights": ["DisneySea Transit Steamer", "Soaring"],
   "description": "DisneySea is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tokyo_DisneySea_logo.svg/330px-Tokyo_DisneySea_logo.svg.png",
     "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
     "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
   ],
@@ -131,5 +131,11 @@
     "Station Matcha & Sweets"
   ],
   "notes": "Avoid hottest days",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Tokyo DisneySea via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20DisneySea"
+  }
 }

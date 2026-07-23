@@ -4,7 +4,7 @@
   "prefecture": "Shizuoka",
   "region": "Chubu",
   "categories": ["Onsen", "Beach", "Retro"],
-  "heroImage": "/images/atami_hero.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Atami_20170211-1.jpg/3840px-Atami_20170211-1.jpg",
   "totalTripHours": 24,
   "budgetMin": 13400,
   "budgetRecommended": 17400,
@@ -47,7 +47,7 @@
     "rainFriendly": 4,
     "walkingIntensity": 5
   },
-  "image": "https://loremflickr.com/1000/800/japan,atami/all?lock=1005",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Atami_20170211-1.jpg/3840px-Atami_20170211-1.jpg",
   "transportOptions": {
     "train": 87,
     "shinkansen": 45,
@@ -56,7 +56,7 @@
   "highlights": ["Sun Beach", "Atami Castle", "Kiunkaku"],
   "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Atami_20170211-1.jpg/3840px-Atami_20170211-1.jpg",
     "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
     "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
   ],
@@ -125,5 +125,11 @@
   "restaurants": ["Atami Osakana Shokudo", "Restaurant Scott"],
   "cafes": ["Café RoCA", "Atami Pudding"],
   "notes": "Check the schedule for Atami's year-round fireworks displays!",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Atami via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Atami"
+  }
 }

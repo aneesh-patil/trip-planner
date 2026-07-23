@@ -4,9 +4,9 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Culture", "Nature", "Food"],
-  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
     "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
   ],
@@ -92,5 +92,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Chofu via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chofu"
+  }
 }

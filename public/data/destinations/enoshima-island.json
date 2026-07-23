@@ -4,7 +4,7 @@
   "prefecture": "Kanagawa",
   "region": "Kanto",
   "categories": ["Sea", "Coast", "History", "Nature"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/EnoshimaAeralPhoto1988JP14.jpg/960px-EnoshimaAeralPhoto1988JP14.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
   "totalTripHours": 8,
   "budgetMin": 8000,
   "budgetRecommended": 12000,
@@ -47,14 +47,14 @@
     "rainFriendly": 1,
     "walkingIntensity": 12
   },
-  "image": "https://loremflickr.com/1000/800/japan,enoshima/all?lock=1020",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
   "transportOptions": {
     "train": 60
   },
   "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
   "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
   "gallery": [
-    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
     "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
     "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
   ],
@@ -97,5 +97,11 @@
   "restaurants": ["Tobiccho (Shirasu Don)"],
   "cafes": ["Loncafe"],
   "notes": "Try the local specialty: Shirasu (whitebait) bowl.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Enoshima via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Enoshima"
+  }
 }

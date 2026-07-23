@@ -4,8 +4,8 @@
   "prefecture": "Aichi",
   "region": "Chubu",
   "categories": ["Tower", "Landmark", "Maritime", "Observation Deck"],
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Nagoya_Port_Aichi_pref_Japan01s8.jpg/3840px-Nagoya_Port_Aichi_pref_Japan01s8.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Nagoya_Port_Aichi_pref_Japan01s8.jpg/3840px-Nagoya_Port_Aichi_pref_Japan01s8.jpg",
   "totalTripHours": 3,
   "budgetMin": 2500,
   "budgetRecommended": 5000,
@@ -67,7 +67,7 @@
   ],
   "description": "Designed in the shape of a white ocean sailboat, this 63-meter maritime tower offers 360-degree views over Nagoya Port, Meiko Triton bridges, and cargo container docks.",
   "gallery": [
-    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Nagoya_Port_Aichi_pref_Japan01s8.jpg/3840px-Nagoya_Port_Aichi_pref_Japan01s8.jpg",
     "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
   ],
@@ -106,5 +106,11 @@
   "restaurants": ["Nagoya Port Restaurant", "JETTY Food Court"],
   "cafes": ["Port Building Cafe"],
   "notes": "Four-facility discount ticket available combining Port Building, Icebreaker Fuji, Aquarium, and Maritime Museum.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Port of Nagoya via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Port%20of%20Nagoya"
+  }
 }

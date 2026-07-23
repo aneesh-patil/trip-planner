@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["History", "Art", "Museum", "Parks"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ueno_park.jpg/960px-Ueno_park.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ueno_park.jpg",
   "totalTripHours": 8,
   "budgetMin": 5000,
   "budgetRecommended": 9000,
@@ -47,14 +47,14 @@
     "rainFriendly": 5,
     "walkingIntensity": 12
   },
-  "image": "https://loremflickr.com/1000/800/japan,ueno/all?lock=1025",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ueno_park.jpg",
   "transportOptions": {
     "train": 45
   },
   "highlights": ["Tokyo National Museum", "Ueno Zoo", "Ameyoko Street"],
   "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
   "gallery": [
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/1/18/Ueno_park.jpg",
     "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
     "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
   ],
@@ -97,5 +97,11 @@
   "restaurants": ["Minatoya (Takoyaki)"],
   "cafes": ["Starbucks Ueno Park"],
   "notes": "In spring, the park is one of Tokyo's most crowded cherry blossom spots.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Ueno via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ueno"
+  }
 }

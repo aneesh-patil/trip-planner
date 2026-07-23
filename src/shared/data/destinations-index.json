@@ -106,7 +106,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Shopping"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/960px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/3840px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
     "totalTripHours": 6,
     "budgetMin": 6000,
     "budgetRecommended": 10000,
@@ -149,14 +149,14 @@
       "rainFriendly": 6,
       "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,akihabara/all?lock=1021",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/3840px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
     "transportOptions": {
       "train": 40
     },
     "highlights": ["Electric Town", "Maid Cafes", "Radio Kaikan"],
     "description": "Akihabara is a neighborhood in the Chiyoda ward of Tokyo, Japan, generally considered to be the area surrounding Akihabara Station. This area is part of the Sotokanda (外神田) and Kanda-Sakumachō districts of Chiyoda. There is an administrative district called Akihabara, located north of Akihabara Electric Town surrounding Akihabara Neribei Park.",
     "gallery": [
-      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/3840px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
     ],
@@ -199,7 +199,13 @@
     "restaurants": ["GoGo Curry", "Gyu-Kaku"],
     "cafes": ["Maidreamin"],
     "notes": "Sunday afternoons have a pedestrian paradise on Chuo-dori.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Akihabara via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Akihabara"
+    }
   },
   {
     "id": "asakusa-taito",
@@ -207,7 +213,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["History", "City"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/960px-Sensoji_2023.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Day2-2_%2840909714314%29.jpg/3840px-Day2-2_%2840909714314%29.jpg",
     "totalTripHours": 5,
     "budgetMin": 6500,
     "budgetRecommended": 10500,
@@ -250,7 +256,7 @@
       "rainFriendly": 2,
       "walkingIntensity": 7
     },
-    "image": "https://loremflickr.com/1000/800/japan,asakusa/all?lock=1029",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Day2-2_%2840909714314%29.jpg/3840px-Day2-2_%2840909714314%29.jpg",
     "transportOptions": {
       "train": 50
     },
@@ -261,7 +267,7 @@
     ],
     "description": "Asakusa is a district in Taitō, Tokyo, Japan. It is known for Sensō-ji, a Buddhist temple dedicated to the bodhisattva Kannon. There are several other temples in Asakusa, as well as various festivals, such as Sanja Matsuri.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Day2-2_%2840909714314%29.jpg/3840px-Day2-2_%2840909714314%29.jpg",
       "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
@@ -304,7 +310,13 @@
     "restaurants": ["Asakusa Imahan (Sukiyaki)", "Daikokuya (Tempura)"],
     "cafes": ["Suzukien (Matcha Gelato)"],
     "notes": "Go early morning (before 9 AM) to photograph Kaminarimon without crowds.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Asakusa via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asakusa"
+    }
   },
   {
     "id": "ashigara",
@@ -422,7 +434,7 @@
     "prefecture": "Shizuoka",
     "region": "Chubu",
     "categories": ["Onsen", "Beach", "Retro"],
-    "heroImage": "/images/atami_hero.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Atami_20170211-1.jpg/3840px-Atami_20170211-1.jpg",
     "totalTripHours": 24,
     "budgetMin": 13400,
     "budgetRecommended": 17400,
@@ -465,7 +477,7 @@
       "rainFriendly": 4,
       "walkingIntensity": 5
     },
-    "image": "https://loremflickr.com/1000/800/japan,atami/all?lock=1005",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Atami_20170211-1.jpg/3840px-Atami_20170211-1.jpg",
     "transportOptions": {
       "train": 87,
       "shinkansen": 45,
@@ -474,7 +486,7 @@
     "highlights": ["Sun Beach", "Atami Castle", "Kiunkaku"],
     "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Atami_20170211-1.jpg/3840px-Atami_20170211-1.jpg",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
       "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
     ],
@@ -543,7 +555,13 @@
     "restaurants": ["Atami Osakana Shokudo", "Restaurant Scott"],
     "cafes": ["Café RoCA", "Atami Pudding"],
     "notes": "Check the schedule for Atami's year-round fireworks displays!",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Atami via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Atami"
+    }
   },
   {
     "id": "boso-peninsula",
@@ -551,7 +569,7 @@
     "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["Coast", "Nature", "Drive"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/960px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/3840px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
     "totalTripHours": 12,
     "budgetMin": 12000,
     "budgetRecommended": 16000,
@@ -594,14 +612,14 @@
       "rainFriendly": 2,
       "walkingIntensity": 5
     },
-    "image": "https://loremflickr.com/1000/800/japan,boso/all?lock=1006",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/3840px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
     "transportOptions": {
       "car": 90
     },
     "highlights": ["Coastal Drive", "Seafood", "Nokogiriyama"],
     "description": "Boso Peninsula is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/3840px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
       "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
       "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
@@ -678,7 +696,13 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Boso Peninsula. Known for its road trip and ocean vibes, it offers a great escape with an overall score of 9.7.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Boso Peninsula via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Boso%20Peninsula"
+    }
   },
   {
     "id": "chiba-city",
@@ -789,7 +813,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Chiba City. Known for its urban and shopping vibes, it offers a great escape with an overall score of 7.5.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chiba_montage.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Chiba City via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chiba%20City"
+    }
   },
   {
     "id": "chofu-tokyo",
@@ -797,9 +828,9 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Culture", "Nature", "Food"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
       "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
     ],
@@ -885,7 +916,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Chofu via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chofu"
+    }
   },
   {
     "id": "choshi-chiba",
@@ -893,9 +931,9 @@
     "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["Nature", "Food", "Ocean"],
-    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
     ],
@@ -981,7 +1019,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Choshi via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choshi"
+    }
   },
   {
     "id": "disneyland",
@@ -989,7 +1034,7 @@
     "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg/960px-Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg/1920px-Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg",
     "totalTripHours": 12,
     "budgetMin": 26800,
     "budgetRecommended": 30800,
@@ -1032,14 +1077,14 @@
       "rainFriendly": 4,
       "walkingIntensity": 12
     },
-    "image": "https://loremflickr.com/1000/800/japan,tokyo/all?lock=1015",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg/1920px-Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg",
     "transportOptions": {
       "train": 45
     },
     "highlights": ["Cinderella Castle", "Space Mountain", "Electrical Parade"],
     "description": "Tokyo Disneyland is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg/1920px-Tokyo_Disneyland_Cinderella_Castle_2023-07-02.jpg",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
       "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600"
     ],
@@ -1090,7 +1135,13 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Book tickets online up to 2 months in advance.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tokyo Disneyland via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Disneyland"
+    }
   },
   {
     "id": "disneysea",
@@ -1098,7 +1149,7 @@
     "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["Theme Park"],
-    "heroImage": "/images/disneysea.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tokyo_DisneySea_logo.svg/330px-Tokyo_DisneySea_logo.svg.png",
     "totalTripHours": 13,
     "budgetMin": 26800,
     "budgetRecommended": 30800,
@@ -1141,14 +1192,14 @@
       "rainFriendly": 4,
       "walkingIntensity": 20
     },
-    "image": "https://loremflickr.com/1000/800/japan,disneysea/all?lock=1011",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tokyo_DisneySea_logo.svg/330px-Tokyo_DisneySea_logo.svg.png",
     "transportOptions": {
       "train": 90
     },
     "highlights": ["DisneySea Transit Steamer", "Soaring"],
     "description": "DisneySea is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tokyo_DisneySea_logo.svg/330px-Tokyo_DisneySea_logo.svg.png",
       "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
       "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
     ],
@@ -1225,7 +1276,13 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Avoid hottest days",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tokyo DisneySea via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20DisneySea"
+    }
   },
   {
     "id": "edogawa-ward",
@@ -1343,7 +1400,7 @@
     "prefecture": "Kanagawa",
     "region": "Kanto",
     "categories": ["Sea", "Coast", "History", "Nature"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/EnoshimaAeralPhoto1988JP14.jpg/960px-EnoshimaAeralPhoto1988JP14.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
     "totalTripHours": 8,
     "budgetMin": 8000,
     "budgetRecommended": 12000,
@@ -1386,14 +1443,14 @@
       "rainFriendly": 1,
       "walkingIntensity": 12
     },
-    "image": "https://loremflickr.com/1000/800/japan,enoshima/all?lock=1020",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
     "transportOptions": {
       "train": 60
     },
     "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
     "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
     "gallery": [
-      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
       "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
       "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
     ],
@@ -1436,7 +1493,13 @@
     "restaurants": ["Tobiccho (Shirasu Don)"],
     "cafes": ["Loncafe"],
     "notes": "Try the local specialty: Shirasu (whitebait) bowl.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Enoshima via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Enoshima"
+    }
   },
   {
     "id": "fuji-5-lake",
@@ -1548,7 +1611,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Fuji Five Lakes. Known for its fuji views and fuji-q vibes, it offers a great escape with an overall score of 9.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Fuji Five Lakes via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fuji%20Five%20Lakes"
+    }
   },
   {
     "id": "fujinomiya",
@@ -1659,7 +1729,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Fujinomiya. Known for its mt fuji and yakisoba vibes, it offers a great escape with an overall score of 8.4.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Fujinomiya via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fujinomiya"
+    }
   },
   {
     "id": "fukui",
@@ -1884,7 +1961,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Theme Park", "Museum", "Art"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/960px-Ghibli_Museum_2024.JPG",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/3840px-Ghibli_Museum_2024.JPG",
     "totalTripHours": 6,
     "budgetMin": 6900,
     "budgetRecommended": 10900,
@@ -1927,7 +2004,7 @@
       "rainFriendly": 9,
       "walkingIntensity": 5
     },
-    "image": "https://loremflickr.com/1000/800/japan,ghibli/all?lock=1016",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/3840px-Ghibli_Museum_2024.JPG",
     "transportOptions": {
       "train": 50
     },
@@ -1938,7 +2015,7 @@
     ],
     "description": "Ghibli Museum is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/3840px-Ghibli_Museum_2024.JPG",
       "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -1985,7 +2062,13 @@
     ],
     "cafes": ["Straw Hat Cafe"],
     "notes": "No photography allowed inside the museum.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Ghibli Museum via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ghibli%20Museum"
+    }
   },
   {
     "id": "ginza-urban",
@@ -1993,7 +2076,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Shopping", "Art", "History"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ginza-WAKO_at_night.jpg/960px-Ginza-WAKO_at_night.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Ginza-WAKO_at_night.jpg",
     "totalTripHours": 6,
     "budgetMin": 8000,
     "budgetRecommended": 12000,
@@ -2036,7 +2119,7 @@
       "rainFriendly": 8,
       "walkingIntensity": 7
     },
-    "image": "https://loremflickr.com/1000/800/japan,ginza/all?lock=1019",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Ginza-WAKO_at_night.jpg",
     "transportOptions": {
       "train": 40
     },
@@ -2048,7 +2131,7 @@
     ],
     "description": "Ginza is a district of Chūō, Tokyo, located south of Yaesu and Kyōbashi, west of Tsukiji, east of Yūrakuchō and Uchisaiwaichō, and north of Shinbashi. It is a popular upscale shopping area of Tokyo, with numerous internationally renowned department stores, boutiques, restaurants and coffeehouses located in the vicinity.",
     "gallery": [
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5b/Ginza-WAKO_at_night.jpg",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -2091,7 +2174,13 @@
     "restaurants": ["Kyubey Sushi", "Ginza Ukai-tei"],
     "cafes": ["Cafe de L'Ambre", "Shiseido Parlour"],
     "notes": "Main street is closed to traffic on weekends (Pedestrian Paradise).",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Ginza via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ginza"
+    }
   },
   {
     "id": "hachioji-tokyo",
@@ -2099,9 +2188,9 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Nature", "Hiking", "Culture"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hachioji_Castle_Gosyuden_entrance.JPG",
     "gallery": [
-      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hachioji_Castle_Gosyuden_entrance.JPG",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
     ],
@@ -2187,7 +2276,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hachioji_Castle_Gosyuden_entrance.JPG",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Hachiōji Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hachi%C5%8Dji%20Castle"
+    }
   },
   {
     "id": "hakkeijima",
@@ -2306,7 +2402,7 @@
     "prefecture": "Kanagawa",
     "region": "Kanto",
     "categories": ["Onsen", "Nature", "Museums"],
-    "heroImage": "/images/hakone_hero.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Fuji_from_Lake_Ashi.jpg/3840px-View_of_Mount_Fuji_from_Lake_Ashi.jpg",
     "totalTripHours": 24,
     "budgetMin": 16200,
     "budgetRecommended": 20200,
@@ -2349,14 +2445,14 @@
       "rainFriendly": 4,
       "walkingIntensity": 4
     },
-    "image": "https://loremflickr.com/1000/800/japan,hakone/all?lock=1000",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Fuji_from_Lake_Ashi.jpg/3840px-View_of_Mount_Fuji_from_Lake_Ashi.jpg",
     "transportOptions": {
       "train": 85
     },
     "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
     "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Fuji_from_Lake_Ashi.jpg/3840px-View_of_Mount_Fuji_from_Lake_Ashi.jpg",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
     ],
@@ -2425,7 +2521,13 @@
     "restaurants": ["Hakone Gindofu", "Bakery & Table Hakone"],
     "cafes": ["Naraya Cafe", "Amazake Chaya"],
     "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Hakone via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hakone"
+    }
   },
   {
     "id": "harry-potter-studio",
@@ -2568,7 +2670,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Shopping", "Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/960px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/3840px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
     "totalTripHours": 8,
     "budgetMin": 9000,
     "budgetRecommended": 13000,
@@ -2611,7 +2713,7 @@
       "rainFriendly": 8,
       "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,ikebukuro/all?lock=1024",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/3840px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
     "transportOptions": {
       "train": 50
     },
@@ -2622,7 +2724,7 @@
     ],
     "description": "Ikebukuro (Toshima) is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg/3840px-Sunshine_60_Observatory_%40_Sunshine_Building_%40_Ikebukuro_%2811547419543%29.jpg",
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
       "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600"
     ],
@@ -2665,7 +2767,13 @@
     "restaurants": ["Mutekiya Ramen"],
     "cafes": ["Milky Way Cafe"],
     "notes": "Excellent choice for rainy days due to Sunshine City and massive underground networks.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Ikebukuro via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ikebukuro"
+    }
   },
   {
     "id": "imperial-palace-chiyoda",
@@ -2782,7 +2890,7 @@
     "prefecture": "Aichi",
     "region": "Chubu",
     "categories": ["History", "Nature", "Castle"],
-    "heroImage": "/images/inuyama_hero.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
     "totalTripHours": 12,
     "budgetMin": 12000,
     "budgetRecommended": 17000,
@@ -2873,10 +2981,17 @@
     "notes": "A perfect extension to a Nagoya trip, offering one of Japan's oldest surviving wooden castles.",
     "schemaVersion": 2,
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Inuyama Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Inuyama%20Castle"
+    }
   },
   {
     "id": "ito",
@@ -3087,7 +3202,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Izu Peninsula. Known for its beaches and onsen vibes, it offers a great escape with an overall score of 8.6.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Izu Peninsula via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Izu%20Peninsula"
+    }
   },
   {
     "id": "jogashima",
@@ -3340,7 +3462,7 @@
     "prefecture": "Kanagawa",
     "region": "Kanto",
     "categories": ["History", "Temples", "Beach"],
-    "heroImage": "/images/kamakura_hero.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/TsurugaokaHachiman-M8867.jpg",
     "totalTripHours": 8,
     "budgetMin": 7000,
     "budgetRecommended": 11000,
@@ -3383,7 +3505,7 @@
       "rainFriendly": 1.5,
       "walkingIntensity": 10
     },
-    "image": "https://loremflickr.com/1000/800/japan,kamakura/all?lock=1001",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/TsurugaokaHachiman-M8867.jpg",
     "transportOptions": {
       "train": 60
     },
@@ -3394,7 +3516,7 @@
     ],
     "description": "Kamakura , officially Kamakura City , is a city of Kanagawa Prefecture in Japan. It is located in the Kantō region on the island of Honshu. The city has an estimated population of 172,929 and a population density of 4,359 people per km2 over the total area of 39.67 km2 (15.32 sq mi). Kamakura was designated as a city on 3 November 1939.",
     "gallery": [
-      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/TsurugaokaHachiman-M8867.jpg",
       "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
@@ -3463,7 +3585,13 @@
     "restaurants": ["Kamakura Matsubaraan", "Caraway Curry"],
     "cafes": ["Iwata Coffee", "Starbucks Kamakura Onarimachi"],
     "notes": "Wear comfortable walking shoes. Enoden line can be very crowded.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kamakura via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kamakura"
+    }
   },
   {
     "id": "kanazawa",
@@ -3489,7 +3617,7 @@
       "lat": 36.5613,
       "lng": 136.6562
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stone_lantern_Kenrokuen.jpg/3840px-Stone_lantern_Kenrokuen.jpg",
     "prefecture": "Ishikawa",
     "budgetMin": 9000,
     "budgetMax": 17000,
@@ -3524,7 +3652,7 @@
     "description": "Kanazawa is the capital of Ishikawa Prefecture in central Japan. As of 1 January 2018, the city had an estimated population of 466,029 in 203,271 households, and a population density of 990 persons per km2. The total area of the city was 468.64 square kilometres (180.94 sq mi).",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/23/%E6%9C%9B%E6%B9%96%E5%8F%B0%EF%BC%92.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stone_lantern_Kenrokuen.jpg/3840px-Stone_lantern_Kenrokuen.jpg",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
     ],
@@ -3573,7 +3701,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Kanazawa. Known for its kenrokuen and gold leaf vibes, it offers a great escape with an overall score of 9.4.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stone_lantern_Kenrokuen.jpg/3840px-Stone_lantern_Kenrokuen.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kenroku-en via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kenroku-en"
+    }
   },
   {
     "id": "karuizawa",
@@ -3581,7 +3716,7 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["Nature", "Shopping", "Resort"],
-    "heroImage": "/images/karuizawa.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Street_in_Karuizawa.jpg",
     "totalTripHours": 12,
     "budgetMin": 8000,
     "budgetRecommended": 12000,
@@ -3624,7 +3759,7 @@
       "rainFriendly": 4,
       "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,karuizawa/all?lock=1009",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Street_in_Karuizawa.jpg",
     "transportOptions": {
       "train": 70,
       "car": 180,
@@ -3634,7 +3769,7 @@
     "highlights": ["Kyu-Karuizawa", "Shiraito Falls", "Prince Shopping Plaza"],
     "description": "Karuizawa is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d8/Street_in_Karuizawa.jpg",
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
       "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
     ],
@@ -3711,7 +3846,13 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Cool escape from Tokyo summer",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Karuizawa via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Karuizawa"
+    }
   },
   {
     "id": "kawagoe-edo",
@@ -4063,7 +4204,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Kinugawa Onsen. Known for its onsen and edo wonderland vibes, it offers a great escape with an overall score of 8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kinugawa Onsen via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kinugawa%20Onsen"
+    }
   },
   {
     "id": "kiso",
@@ -4173,7 +4321,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Kiso Valley. Known for its nakasendo and post towns vibes, it offers a great escape with an overall score of 9.1.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kiso_Valley_from_Doppyo.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kiso Valley via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kiso%20Valley"
+    }
   },
   {
     "id": "kofu",
@@ -4199,7 +4354,7 @@
       "lat": 35.6622,
       "lng": 138.5683
     },
-    "heroImage": "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kofu_montage.jpg",
     "prefecture": "Yamanashi",
     "budgetMin": 5000,
     "budgetMax": 13000,
@@ -4235,7 +4390,7 @@
     "description": "Discover Kofu, a prominent destination in Shizuoka. With its rich mix of takeda shingen, wine, gorges, it's a highly recommended spot for a 8-hour getaway.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://images.unsplash.com/photo-1582050041567-9cfdd330d545?q=80&w=1000&auto=format&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/1/17/Kofu_montage.jpg",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
     ],
@@ -4280,7 +4435,14 @@
     ],
     "cafes": ["Café de Kofu", "Riverside Roasters", "Station Matcha & Sweets"],
     "notes": "A fantastic trip to Kofu. Known for its takeda shingen and wine vibes, it offers a great escape with an overall score of 7.8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kofu_montage.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kofu via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kofu"
+    }
   },
   {
     "id": "kurobe-gorge",
@@ -4342,7 +4504,7 @@
     "description": "Discover Kurobe Gorge, a prominent destination in Shizuoka. With its rich mix of scenic railway, ravine, onsen, it's a highly recommended spot for a 8-hour getaway.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
       "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
@@ -4391,7 +4553,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Kurobe Gorge. Known for its scenic railway and ravine vibes, it offers a great escape with an overall score of 8.9.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kurobe Gorge via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kurobe%20Gorge"
+    }
   },
   {
     "id": "lake-hamanako",
@@ -4529,7 +4698,7 @@
       "lat": 35.6131,
       "lng": 139.1917
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg/3840px-Lake_Sagami_-_2005_Nov_10_various_10.jpg",
     "prefecture": "Kanagawa",
     "budgetMin": 6000,
     "budgetMax": 14000,
@@ -4565,7 +4734,7 @@
     "description": "Discover Lake Sagami, a prominent destination in Kanagawa. With its rich mix of illumination, outdoors, it's a highly recommended spot for a 8-hour getaway.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg/3840px-Lake_Sagami_-_2005_Nov_10_various_10.jpg",
       "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
       "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
@@ -4614,7 +4783,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Lake Sagami. Known for its illumination and outdoors vibes, it offers a great escape with an overall score of 8.1.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg/3840px-Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Lake Sagami via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake%20Sagami"
+    }
   },
   {
     "id": "machida-tokyo",
@@ -4719,7 +4895,7 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["Castle", "History"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/960px-Matsumoto_Castle_Keep_Tower.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
     "totalTripHours": 12,
     "budgetMin": 11600,
     "budgetRecommended": 15600,
@@ -4762,14 +4938,14 @@
       "rainFriendly": 3,
       "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,matsumoto/all?lock=1007",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
     "transportOptions": {
       "car": 210
     },
     "highlights": ["Matsumoto Castle", "Nawate Dori"],
     "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
       "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
     ],
@@ -4846,7 +5022,13 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Long drive but rewarding",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Matsumoto Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Matsumoto%20Castle"
+    }
   },
   {
     "id": "meguro-ward",
@@ -4854,7 +5036,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Nature", "City"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Meguro_River_Spring_2014%282%29.jpg/960px-Meguro_River_Spring_2014%282%29.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg/3840px-Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg",
     "totalTripHours": 5,
     "budgetMin": 6000,
     "budgetRecommended": 10000,
@@ -4897,7 +5079,7 @@
       "rainFriendly": 4,
       "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,meguro/all?lock=1031",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg/3840px-Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg",
     "transportOptions": {
       "train": 45
     },
@@ -4908,7 +5090,7 @@
     ],
     "description": "Famous worldwide for the Meguro River cherry blossoms. Features trendy cafes, boutiques, and a relaxed atmosphere.",
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg/3840px-Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
     ],
@@ -4951,7 +5133,13 @@
     "restaurants": ["Tonki (Tonkatsu)"],
     "cafes": ["Starbucks Reserve Roastery Tokyo"],
     "notes": "Spring cherry blossoms are incredibly beautiful but completely packed with people.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Meguro via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Meguro"
+    }
   },
   {
     "id": "mito",
@@ -5176,7 +5364,7 @@
       "lat": 35.3606,
       "lng": 138.7274
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/3840px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
     "prefecture": "Shizuoka",
     "budgetMin": 2000,
     "budgetMax": 10000,
@@ -5211,7 +5399,7 @@
     "description": "Mount Fuji is an active stratovolcano located on the Japanese island of Honshu, with a summit elevation of 3,776.24 m. It is the highest mountain in Japan, the second-highest volcano on any Asian island, and the seventh-highest peak of an island on Earth. Mount Fuji last erupted from 1707 to 1708.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/3840px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
       "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
       "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
     ],
@@ -5260,7 +5448,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Mount Fuji. Known for its iconic and climbing vibes, it offers a great escape with an overall score of 9.6.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/3840px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Mount Fuji via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Fuji"
+    }
   },
   {
     "id": "nagano-city",
@@ -5286,7 +5481,7 @@
       "lat": 36.7,
       "lng": 138.3
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/160501_Zenkoji_Nagano_Japan06s3.jpg/3840px-160501_Zenkoji_Nagano_Japan06s3.jpg",
     "prefecture": "Nagano",
     "budgetMin": 6000,
     "budgetMax": 14000,
@@ -5323,7 +5518,7 @@
     "description": "Discover Nagano & Snow Monkeys, a prominent destination in Shizuoka. With its rich mix of zenkoji, olympics, it's a highly recommended spot for a 8-hour getaway.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Shiga-kogen_Ski-resort.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/160501_Zenkoji_Nagano_Japan06s3.jpg/3840px-160501_Zenkoji_Nagano_Japan06s3.jpg",
       "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
       "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
     ],
@@ -5372,7 +5567,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Nagano & Snow Monkeys. Known for its zenkoji and olympics vibes, it offers a great escape with an overall score of 8.2.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/160501_Zenkoji_Nagano_Japan06s3.jpg/3840px-160501_Zenkoji_Nagano_Japan06s3.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Zenkō-ji via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zenk%C5%8D-ji"
+    }
   },
   {
     "id": "nagoya",
@@ -5380,7 +5582,7 @@
     "prefecture": "Aichi",
     "region": "Chubu",
     "categories": ["City", "History", "Food"],
-    "heroImage": "/images/nagoya_hero.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Nagoya_Castle_7.jpg/3840px-Nagoya_Castle_7.jpg",
     "totalTripHours": 24,
     "budgetMin": 15000,
     "budgetRecommended": 22500,
@@ -5470,10 +5672,17 @@
     "notes": "Nagoya is the heart of Chubu. A fast bullet train ride from Tokyo or Yokohama, famous for its unique rich food culture.",
     "schemaVersion": 2,
     "gallery": [
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Nagoya_Castle_7.jpg/3840px-Nagoya_Castle_7.jpg",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Nagoya_Castle_7.jpg/3840px-Nagoya_Castle_7.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Nagoya Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nagoya%20Castle"
+    }
   },
   {
     "id": "narita",
@@ -5822,7 +6031,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Noto Peninsula. Known for its scenic drive and seafood vibes, it offers a great escape with an overall score of 8.6.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Noto Peninsula via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Noto%20Peninsula"
+    }
   },
   {
     "id": "odaiba-minato",
@@ -5830,7 +6046,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Sea", "Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/3840px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
     "totalTripHours": 8,
     "budgetMin": 9000,
     "budgetRecommended": 13000,
@@ -5873,7 +6089,7 @@
       "rainFriendly": 6,
       "walkingIntensity": 10
     },
-    "image": "https://loremflickr.com/1000/800/japan,odaiba/all?lock=1023",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/3840px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
     "transportOptions": {
       "train": 50
     },
@@ -5884,7 +6100,7 @@
     ],
     "description": "A high-tech entertainment hub on an artificial island in Tokyo Bay, featuring shopping malls, beaches, and a giant Gundam.",
     "gallery": [
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/3840px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -5927,7 +6143,13 @@
     "restaurants": ["Aqua City Dining"],
     "cafes": ["Bills Odaiba"],
     "notes": "Take the Yurikamome line for an automated scenic ride across the bay.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Odaiba via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Odaiba"
+    }
   },
   {
     "id": "odawara",
@@ -5953,7 +6175,7 @@
       "lat": 35.2,
       "lng": 139.14
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Odawara-jo.jpg",
     "prefecture": "Kanagawa",
     "budgetMin": 5000,
     "budgetMax": 13000,
@@ -5988,7 +6210,7 @@
     "description": "Discover Odawara & Manazuru, a prominent destination in Kanagawa. With its rich mix of historic, seafood, relaxing, it's a highly recommended spot for a 8-hour getaway.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Odawara_montage.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b0/Odawara-jo.jpg",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -6037,7 +6259,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Odawara & Manazuru. Known for its historic and seafood vibes, it offers a great escape with an overall score of 8.2.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Odawara-jo.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Odawara Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Odawara%20Castle"
+    }
   },
   {
     "id": "okuhida",
@@ -6489,7 +6718,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Oze National Park. Known for its hiking and marshlands vibes, it offers a great escape with an overall score of 8.8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mt.Shibutsu_16.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Oze National Park via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oze%20National%20Park"
+    }
   },
   {
     "id": "sado-island",
@@ -6599,7 +6835,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Sado Island. Known for its gold mine and tub boats vibes, it offers a great escape with an overall score of 8.4.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/MapSado.png",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Sado Island via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sado%20Island"
+    }
   },
   {
     "id": "saitama-city",
@@ -6709,7 +6952,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Saitama City. Known for its bonsai and railway museum vibes, it offers a great escape with an overall score of 7.8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Japanese_Saitama_Shintoshin_west_building.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Saitama City via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Saitama%20City"
+    }
   },
   {
     "id": "shibuya-ward",
@@ -6717,7 +6967,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Shopping"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/960px-Shibuya_Crossing%2C_Aerial.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
     "totalTripHours": 8,
     "budgetMin": 6000,
     "budgetRecommended": 10000,
@@ -6760,14 +7010,14 @@
       "rainFriendly": 5,
       "walkingIntensity": 10
     },
-    "image": "https://loremflickr.com/1000/800/japan,shibuya/all?lock=1027",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
     "transportOptions": {
       "train": 40
     },
     "highlights": ["Scramble Crossing", "Shibuya Sky", "Miyashita Park"],
     "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station.",
     "gallery": [
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
       "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
     ],
@@ -6810,7 +7060,13 @@
     "restaurants": ["Katsumidori Seibu Shibuya"],
     "cafes": ["Fuglen Tokyo"],
     "notes": "Book Shibuya Sky tickets for sunset at least 2 weeks in advance.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Shibuya via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shibuya"
+    }
   },
   {
     "id": "shinjuku-ward",
@@ -6818,7 +7074,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Shopping", "Parks"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/960px-Skyscrapers_of_Shinjuku_2009_January.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
     "totalTripHours": 8,
     "budgetMin": 6000,
     "budgetRecommended": 10000,
@@ -6861,7 +7117,7 @@
       "rainFriendly": 6,
       "walkingIntensity": 10
     },
-    "image": "https://loremflickr.com/1000/800/japan,shinjuku/all?lock=1026",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
     "transportOptions": {
       "train": 40
     },
@@ -6872,7 +7128,7 @@
     ],
     "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
     ],
@@ -6915,7 +7171,13 @@
     "restaurants": ["Omoide Yokocho"],
     "cafes": ["Blue Bottle Coffee Shinjuku"],
     "notes": "Shinjuku Station is a maze. Meet at the East Exit Studio Alta or South Exit.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Shinjuku via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shinjuku"
+    }
   },
   {
     "id": "shizuoka",
@@ -7027,7 +7289,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Shizuoka City. Known for its green tea and castle ruins vibes, it offers a great escape with an overall score of 8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Shizuoka City via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shizuoka%20City"
+    }
   },
   {
     "id": "tachikawa-tokyo",
@@ -7035,9 +7304,9 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Nature", "Parks", "Urban"],
-    "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg/3840px-Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg/3840px-Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg",
       "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
       "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
     ],
@@ -7123,7 +7392,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg/3840px-Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tachikawa via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tachikawa"
+    }
   },
   {
     "id": "takaoka",
@@ -7452,7 +7728,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Tateyama Kurobe Alpine Route. Known for its snow wall and dam vibes, it offers a great escape with an overall score of 9.3.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Murodoh.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tateyama Kurobe Alpine Route via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tateyama%20Kurobe%20Alpine%20Route"
+    }
   },
   {
     "id": "ueno-taito",
@@ -7460,7 +7743,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["History", "Art", "Museum", "Parks"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ueno_park.jpg/960px-Ueno_park.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ueno_park.jpg",
     "totalTripHours": 8,
     "budgetMin": 5000,
     "budgetRecommended": 9000,
@@ -7503,14 +7786,14 @@
       "rainFriendly": 5,
       "walkingIntensity": 12
     },
-    "image": "https://loremflickr.com/1000/800/japan,ueno/all?lock=1025",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ueno_park.jpg",
     "transportOptions": {
       "train": 45
     },
     "highlights": ["Tokyo National Museum", "Ueno Zoo", "Ameyoko Street"],
     "description": "A cultural hub featuring a massive park, Japan's oldest zoo, major national museums, and the bustling Ameyoko market.",
     "gallery": [
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/1/18/Ueno_park.jpg",
       "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -7553,7 +7836,13 @@
     "restaurants": ["Minatoya (Takoyaki)"],
     "cafes": ["Starbucks Ueno Park"],
     "notes": "In spring, the park is one of Tokyo's most crowded cherry blossom spots.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Ueno via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ueno"
+    }
   },
   {
     "id": "ushiku-daibutsu",
@@ -7664,7 +7953,14 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Ushiku Daibutsu. Known for its giant statue and record breaking vibes, it offers a great escape with an overall score of 7.6.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Ushiku Daibutsu via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ushiku%20Daibutsu"
+    }
   },
   {
     "id": "utsunomiya-oya",
@@ -7808,7 +8104,7 @@
     "prefecture": "Kanagawa",
     "region": "Kanto",
     "categories": ["City", "Food", "Shopping"],
-    "heroImage": "/images/yokohama_hero.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Minato_Mirai.jpg/3840px-Minato_Mirai.jpg",
     "totalTripHours": 8,
     "budgetMin": 8000,
     "budgetRecommended": 12000,
@@ -7851,14 +8147,14 @@
       "rainFriendly": 7,
       "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,yokohama/all?lock=1004",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Minato_Mirai.jpg/3840px-Minato_Mirai.jpg",
     "transportOptions": {
       "train": 30
     },
     "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
     "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Minato_Mirai.jpg/3840px-Minato_Mirai.jpg",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
     ],
@@ -7927,7 +8223,13 @@
     "restaurants": ["Manchinro", "Bills Red Brick Warehouse"],
     "cafes": ["Zebracoffee", "Koku Kafe"],
     "notes": "Extremely easy access from central Tokyo.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Yokohama via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama"
+    }
   },
   {
     "id": "yomiuriland",
@@ -7935,7 +8237,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Yomiuriland-20100411.jpg/960px-Yomiuriland-20100411.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Yomiuriland-20100411.jpg",
     "totalTripHours": 8,
     "budgetMin": 9000,
     "budgetRecommended": 13000,
@@ -7978,7 +8280,7 @@
       "rainFriendly": 2,
       "walkingIntensity": 8
     },
-    "image": "https://loremflickr.com/1000/800/japan,yomiuriland/all?lock=1017",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Yomiuriland-20100411.jpg",
     "transportOptions": {
       "train": 60,
       "car": 60
@@ -7990,7 +8292,7 @@
     ],
     "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Yomiuriland-20100411.jpg",
       "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
@@ -8041,7 +8343,13 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Winter Jewellumination is incredibly famous and romantic.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Yomiuriland via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yomiuriland"
+    }
   },
   {
     "id": "zushi",
@@ -8156,9 +8464,9 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Nature", "Hiking", "Lake"],
-    "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%E5%A5%A5%E5%A4%9A%E6%91%A9%E7%94%BA%E5%BD%B9%E5%A0%B42.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fd/%E5%A5%A5%E5%A4%9A%E6%91%A9%E7%94%BA%E5%BD%B9%E5%A0%B42.jpg",
       "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600",
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600"
     ],
@@ -8256,7 +8564,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%E5%A5%A5%E5%A4%9A%E6%91%A9%E7%94%BA%E5%BD%B9%E5%A0%B42.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Okutama via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Okutama"
+    }
   },
   {
     "id": "tokyo-mt-mitake",
@@ -8264,9 +8579,9 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["History", "Hiking", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mitake-san_shrine.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mitake-san_shrine.jpg",
       "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
     ],
@@ -8364,7 +8679,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mitake-san_shrine.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Mt. Mitake via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mt.%20Mitake"
+    }
   },
   {
     "id": "tokyo-hinohara",
@@ -8372,9 +8694,9 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Nature", "Relaxation"],
-    "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hinohara_Vill_Office.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hinohara_Vill_Office.jpg",
       "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
       "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
     ],
@@ -8472,7 +8794,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hinohara_Vill_Office.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Hinohara via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hinohara"
+    }
   },
   {
     "id": "saitama-chichibu",
@@ -8480,9 +8809,9 @@
     "prefecture": "Saitama",
     "region": "Kanto",
     "categories": ["History", "Nature", "Mountains"],
-    "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
     "gallery": [
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -8580,7 +8909,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Central_Chichibu_view_from_Hitsujiyama_Park.JPG",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Chichibu via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chichibu"
+    }
   },
   {
     "id": "saitama-nagatoro",
@@ -8588,9 +8924,9 @@
     "prefecture": "Saitama",
     "region": "Kanto",
     "categories": ["Nature", "River"],
-    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Nagatoro_Town_Office.JPG",
     "gallery": [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Nagatoro_Town_Office.JPG",
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
       "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
     ],
@@ -8688,7 +9024,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Nagatoro_Town_Office.JPG",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Nagatoro via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nagatoro"
+    }
   },
   {
     "id": "chiba-sawara",
@@ -8804,9 +9147,9 @@
     "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["History", "Hiking", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
@@ -8904,7 +9247,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Mount Nokogiri (Chiba) via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Nokogiri%20(Chiba)"
+    }
   },
   {
     "id": "chiba-yoro-valley",
@@ -9020,9 +9370,9 @@
     "prefecture": "Gunma",
     "region": "Kanto",
     "categories": ["Relaxation", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bath_in_kusatsu.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bath_in_kusatsu.jpg",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
@@ -9121,7 +9471,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bath_in_kusatsu.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kusatsu Onsen via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kusatsu%20Onsen"
+    }
   },
   {
     "id": "gunma-ikaho-onsen",
@@ -9238,9 +9595,9 @@
     "prefecture": "Gunma",
     "region": "Kanto",
     "categories": ["Relaxation", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/%E5%9B%9B%E4%B8%87%E6%B8%A9%E6%B3%89_%E4%B8%AD%E4%B9%8B%E6%9D%A1_2013_%289993444756%29.jpg/3840px-%E5%9B%9B%E4%B8%87%E6%B8%A9%E6%B3%89_%E4%B8%AD%E4%B9%8B%E6%9D%A1_2013_%289993444756%29.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/%E5%9B%9B%E4%B8%87%E6%B8%A9%E6%B3%89_%E4%B8%AD%E4%B9%8B%E6%9D%A1_2013_%289993444756%29.jpg/3840px-%E5%9B%9B%E4%B8%87%E6%B8%A9%E6%B3%89_%E4%B8%AD%E4%B9%8B%E6%9D%A1_2013_%289993444756%29.jpg",
       "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
       "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
     ],
@@ -9338,7 +9695,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/%E5%9B%9B%E4%B8%87%E6%B8%A9%E6%B3%89_%E4%B8%AD%E4%B9%8B%E6%9D%A1_2013_%289993444756%29.jpg/3840px-%E5%9B%9B%E4%B8%87%E6%B8%A9%E6%B3%89_%E4%B8%AD%E4%B9%8B%E6%9D%A1_2013_%289993444756%29.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Shima Onsen via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shima%20Onsen"
+    }
   },
   {
     "id": "ibaraki-mount-tsukuba",
@@ -9346,9 +9710,9 @@
     "prefecture": "Ibaraki",
     "region": "Kanto",
     "categories": ["Hiking", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mount_Tsukuba_seen_from_the_WSW_%282006%29.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mount_Tsukuba_seen_from_the_WSW_%282006%29.jpg",
       "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
     ],
@@ -9446,7 +9810,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mount_Tsukuba_seen_from_the_WSW_%282006%29.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Mount Tsukuba via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Tsukuba"
+    }
   },
   {
     "id": "ibaraki-fukuroda-falls",
@@ -9454,9 +9825,9 @@
     "prefecture": "Ibaraki",
     "region": "Kanto",
     "categories": ["Nature", "Waterfalls"],
-    "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fukuroda_Falls_-_%E8%A2%8B%E7%94%B0%E3%81%AE%E6%BB%9D%28%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%A0%E3%81%AE%E3%81%9F%E3%81%8D%29.jpg/3840px-Fukuroda_Falls_-_%E8%A2%8B%E7%94%B0%E3%81%AE%E6%BB%9D%28%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%A0%E3%81%AE%E3%81%9F%E3%81%8D%29.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fukuroda_Falls_-_%E8%A2%8B%E7%94%B0%E3%81%AE%E6%BB%9D%28%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%A0%E3%81%AE%E3%81%9F%E3%81%8D%29.jpg/3840px-Fukuroda_Falls_-_%E8%A2%8B%E7%94%B0%E3%81%AE%E6%BB%9D%28%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%A0%E3%81%AE%E3%81%9F%E3%81%8D%29.jpg",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
@@ -9554,7 +9925,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fukuroda_Falls_-_%E8%A2%8B%E7%94%B0%E3%81%AE%E6%BB%9D%28%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%A0%E3%81%AE%E3%81%9F%E3%81%8D%29.jpg/3840px-Fukuroda_Falls_-_%E8%A2%8B%E7%94%B0%E3%81%AE%E6%BB%9D%28%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%A0%E3%81%AE%E3%81%9F%E3%81%8D%29.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Fukuroda Falls via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fukuroda%20Falls"
+    }
   },
   {
     "id": "ibaraki-hitachi-seaside-park",
@@ -9562,9 +9940,9 @@
     "prefecture": "Ibaraki",
     "region": "Kanto",
     "categories": ["Nature", "Parks"],
-    "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
     ],
@@ -9662,7 +10040,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2025_Hitachi_Seaside_Park_2.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Hitachi Seaside Park via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hitachi%20Seaside%20Park"
+    }
   },
   {
     "id": "nagano-kamikochi",
@@ -9670,9 +10055,9 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["Nature", "Hiking", "Mountains"],
-    "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kamikochi_-_Kamikochi6538.jpg/3840px-Kamikochi_-_Kamikochi6538.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kamikochi_-_Kamikochi6538.jpg/3840px-Kamikochi_-_Kamikochi6538.jpg",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
     ],
@@ -9770,7 +10155,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kamikochi_-_Kamikochi6538.jpg/3840px-Kamikochi_-_Kamikochi6538.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kamikochi via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kamikochi"
+    }
   },
   {
     "id": "gifu-takayama",
@@ -9778,9 +10170,9 @@
     "prefecture": "Gifu",
     "region": "Chubu",
     "categories": ["History", "Food", "Urban"],
-    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -9879,7 +10271,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Takayama, Gifu via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Takayama%2C%20Gifu"
+    }
   },
   {
     "id": "gifu-shirakawa-go",
@@ -9887,9 +10286,9 @@
     "prefecture": "Gifu",
     "region": "Chubu",
     "categories": ["History", "Relaxation"],
-    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg",
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
       "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
     ],
@@ -9987,7 +10386,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Shirakawa-go via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shirakawa-go"
+    }
   },
   {
     "id": "gifu-gujo-hachiman",
@@ -9995,9 +10401,9 @@
     "prefecture": "Gifu",
     "region": "Chubu",
     "categories": ["History", "Waterfalls"],
-    "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/12/Gujo_hachiman_castle_P8117454.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/1/12/Gujo_hachiman_castle_P8117454.jpg",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
     ],
@@ -10095,7 +10501,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Gujo_hachiman_castle_P8117454.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Gujō Hachiman Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guj%C5%8D%20Hachiman%20Castle"
+    }
   },
   {
     "id": "nagano-narai-juku",
@@ -10103,9 +10516,9 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["History", "Urban"],
-    "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1_naraijuku_2024.jpg/3840px-1_naraijuku_2024.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1_naraijuku_2024.jpg/3840px-1_naraijuku_2024.jpg",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
     ],
@@ -10203,7 +10616,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1_naraijuku_2024.jpg/3840px-1_naraijuku_2024.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Narai-juku via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Narai-juku"
+    }
   },
   {
     "id": "nagano-tsumago-juku",
@@ -10211,9 +10631,9 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["History", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/1_tsumago_juku_2024.jpg/3840px-1_tsumago_juku_2024.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/1_tsumago_juku_2024.jpg/3840px-1_tsumago_juku_2024.jpg",
       "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
       "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
     ],
@@ -10311,7 +10731,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/1_tsumago_juku_2024.jpg/3840px-1_tsumago_juku_2024.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tsumago-juku via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tsumago-juku"
+    }
   },
   {
     "id": "gifu-magome-juku",
@@ -10319,9 +10746,9 @@
     "prefecture": "Gifu",
     "region": "Chubu",
     "categories": ["History", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/1_magome_juku_2024.jpg/3840px-1_magome_juku_2024.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/1_magome_juku_2024.jpg/3840px-1_magome_juku_2024.jpg",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
@@ -10419,7 +10846,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/1_magome_juku_2024.jpg/3840px-1_magome_juku_2024.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Magome-juku via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Magome-juku"
+    }
   },
   {
     "id": "nagano-suwa",
@@ -10427,9 +10861,9 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["History", "Nature", "Relaxation"],
-    "heroImage": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Lake_Suwa_as_seen_from_Tateishi_Park_%28east%29.jpg/3840px-Lake_Suwa_as_seen_from_Tateishi_Park_%28east%29.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Lake_Suwa_as_seen_from_Tateishi_Park_%28east%29.jpg/3840px-Lake_Suwa_as_seen_from_Tateishi_Park_%28east%29.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -10527,7 +10961,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Lake_Suwa_as_seen_from_Tateishi_Park_%28east%29.jpg/3840px-Lake_Suwa_as_seen_from_Tateishi_Park_%28east%29.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Lake Suwa via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake%20Suwa"
+    }
   },
   {
     "id": "nagano-bessho-onsen",
@@ -10859,9 +11300,9 @@
     "prefecture": "Yamanashi",
     "region": "Chubu",
     "categories": ["History", "Nature", "Theme Park"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Fujiyoshida_montage.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Fujiyoshida_montage.jpg",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
     ],
@@ -10959,7 +11400,14 @@
           }
         ]
       }
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Fujiyoshida_montage.jpg",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Fujiyoshida via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fujiyoshida"
+    }
   },
   {
     "id": "tokyo-station-chiyoda",
@@ -10967,8 +11415,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "History", "Food", "Shopping"],
-    "heroImage": "https://images.unsplash.com/photo-1690971324341-94fac8ec6873?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "image": "https://images.unsplash.com/photo-1690971324341-94fac8ec6873?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/3840px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/3840px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
     "totalTripHours": 4,
     "budgetMin": 5000,
     "budgetRecommended": 9000,
@@ -11028,7 +11476,7 @@
     ],
     "description": "Japans premier railway terminal, featuring the restored 1914 Marunouchi red-brick facade, subterranean shopping passages, world-class ramen eateries, and immediate proximity to the Imperial Palace grounds.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/3840px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -11077,7 +11525,13 @@
     "notes": "Direct access to Narita Express and all Shinkansen lines. Excellent rain-proof indoor routing.",
     "schemaVersion": 2,
     "bestSeason": "All Year",
-    "weatherDependence": "low"
+    "weatherDependence": "low",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tokyo Station via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Station"
+    }
   },
   {
     "id": "takanawa-gateway-minato",
@@ -11085,8 +11539,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["City", "Architecture", "Technology"],
-    "heroImage": "https://as2.ftcdn.net/v2/jpg/03/30/26/17/1000_F_330261739_wNnj4ie6L4bLDo3fss2euD83gD3urgIe.jpg",
-    "image": "https://as2.ftcdn.net/v2/jpg/03/30/26/17/1000_F_330261739_wNnj4ie6L4bLDo3fss2euD83gD3urgIe.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Takanawa-Gateway-City---2025-06-18_170.jpg/3840px-Takanawa-Gateway-City---2025-06-18_170.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Takanawa-Gateway-City---2025-06-18_170.jpg/3840px-Takanawa-Gateway-City---2025-06-18_170.jpg",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 6000,
@@ -11145,7 +11599,7 @@
     ],
     "description": "Designed by world-renowned architect Kengo Kuma, Takanawa Gateway is the newest station on Tokyos iconic Yamanote Line, featuring a dramatic paper-origami glass roof, AI-powered unmanned stores, and futuristic urban planning.",
     "gallery": [
-      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Takanawa-Gateway-City---2025-06-18_170.jpg/3840px-Takanawa-Gateway-City---2025-06-18_170.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -11186,7 +11640,13 @@
     "notes": "Station opened in 2020 as the 30th Yamanote Line station. Beautiful night illumination of the cedar wood roof structure.",
     "schemaVersion": 2,
     "bestSeason": "All Year",
-    "weatherDependence": "low"
+    "weatherDependence": "low",
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Takanawa Gateway Station via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Takanawa%20Gateway%20Station"
+    }
   },
   {
     "id": "tokyo-skytree-sumida",
@@ -11194,8 +11654,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Tower", "Landmark", "Observation Deck", "Shopping"],
-    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/84/Tokyo_Skytree_2014_%E2%85%A2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Tokyo_Skytree_2014_%E2%85%A2.jpg",
     "totalTripHours": 4,
     "budgetMin": 4000,
     "budgetRecommended": 8500,
@@ -11257,7 +11717,7 @@
     ],
     "description": "Rising 634 meters over Tokyo, Tokyo Skytree is the world's tallest broadcasting tower, offering breath-taking 360-degree views of Mt. Fuji and the Kanto Plain from two observation decks.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/8/84/Tokyo_Skytree_2014_%E2%85%A2.jpg",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -11296,7 +11756,13 @@
     "restaurants": ["Sky Restaurant 634", "Solamachi Dining Town"],
     "cafes": ["Skytree Cafe 350", "Nana's Green Tea Solamachi"],
     "notes": "Best visibility of Mt. Fuji occurs on crisp, clear winter mornings.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tokyo Skytree via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Skytree"
+    }
   },
   {
     "id": "tokyo-tower-minato",
@@ -11304,8 +11770,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Tower", "Landmark", "History", "Entertainment"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg",
     "totalTripHours": 3,
     "budgetMin": 3500,
     "budgetRecommended": 7000,
@@ -11361,7 +11827,7 @@
     ],
     "description": "Built in 1958 and standing 332.9 meters tall, Tokyo Tower is the beloved red-and-white lattice symbol of post-war Tokyo, offering glass-floor lookouts and romantic night views.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -11400,7 +11866,13 @@
     "restaurants": ["Tokyo Tower Club333", "Tofuya Ukai (nearby)"],
     "cafes": ["Cafe La Tour", "Marion Crepes FootTown"],
     "notes": "Special illumination colors light up the tower on Friday and Saturday evenings.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tokyo Tower via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Tower"
+    }
   },
   {
     "id": "yokohama-marine-tower",
@@ -11408,8 +11880,8 @@
     "prefecture": "Kanagawa",
     "region": "Kanto",
     "categories": ["Tower", "Landmark", "Observation Deck", "Port"],
-    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Yokohama_Marine_Tower_Dscn1518a.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Yokohama_Marine_Tower_Dscn1518a.jpg",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 6000,
@@ -11465,7 +11937,7 @@
     ],
     "description": "Built in 1961 to mark Yokohama Port's 100th anniversary, this 106-meter historic steel lattice lighthouse tower offers sweeping vistas over Yokohama Bay Bridge and Minato Mirai.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c9/Yokohama_Marine_Tower_Dscn1518a.jpg",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -11504,7 +11976,13 @@
     "restaurants": ["The Terrace Yokohama Marine Tower", "Chinatown Manchinro"],
     "cafes": ["Mizamito Cafe", "Marine Tower Bar"],
     "notes": "Recognized as a Lover's Sanctuary with special romantic evening light projections.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Yokohama Marine Tower via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama%20Marine%20Tower"
+    }
   },
   {
     "id": "chiba-port-tower",
@@ -11512,8 +11990,8 @@
     "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
-    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/15/Chiba_Port_Tower_2023-1.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Chiba_Port_Tower_2023-1.jpg",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -11570,7 +12048,7 @@
     ],
     "description": "Clad in over 5,500 heat-reflecting glass mirrors, this 125-meter waterfront tower stands in Chiba Port Park, offering panoramic sunset views across Tokyo Bay to Mt. Fuji.",
     "gallery": [
-      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/Chiba_Port_Tower_2023-1.jpg",
       "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -11609,7 +12087,13 @@
     "restaurants": ["Ocean View Restaurant SEAGULL", "Port Park Dining"],
     "cafes": ["Tower Cafe 3F"],
     "notes": "Special Christmas illumination features a giant 100m tall light-bulb tree on the glass facade.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Chiba Port Tower via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chiba%20Port%20Tower"
+    }
   },
   {
     "id": "oarai-marine-tower",
@@ -11617,8 +12101,8 @@
     "prefecture": "Ibaraki",
     "region": "Kanto",
     "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
-    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Oarai_Town_Hall.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Oarai_Town_Hall.jpg",
     "totalTripHours": 3,
     "budgetMin": 2000,
     "budgetRecommended": 4500,
@@ -11680,7 +12164,7 @@
     ],
     "description": "Standing 60 meters tall on the Ibaraki coastline, this distinctive triangular glass observation tower overlooks Oarai Port and the vast Pacific Ocean.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Oarai_Town_Hall.jpg",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -11719,7 +12203,13 @@
     "restaurants": ["Oarai Kaisen Kaisen-don", "Kaki-goya Oarai"],
     "cafes": ["Panzer Cafe 2F"],
     "notes": "Famous among anime fans as a key setting in Girls und Panzer.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Oarai, Ibaraki via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oarai%2C%20Ibaraki"
+    }
   },
   {
     "id": "art-tower-mito",
@@ -11727,8 +12217,8 @@
     "prefecture": "Ibaraki",
     "region": "Kanto",
     "categories": ["Tower", "Architecture", "Art", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mito_Art_Tower.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mito_Art_Tower.JPG",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -11785,7 +12275,7 @@
     ],
     "description": "Designed by Pritzker Prize laureate Arata Isozaki to commemorate Mito's 100th municipal anniversary, this 100-meter helix tower is composed of 57 titanium tetrahedrons spiraling skyward.",
     "gallery": [
-      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mito_Art_Tower.JPG",
       "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -11824,7 +12314,13 @@
     "restaurants": ["Chez Yoshi Mito", "Mito Plaza Dining"],
     "cafes": ["Cafe ATM", "Saza Coffee Mito"],
     "notes": "The tower contains round porthole windows providing unique framed perspectives of Mito City.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Art Tower Mito via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Art%20Tower%20Mito"
+    }
   },
   {
     "id": "mirai-tower-nagoya",
@@ -11832,8 +12328,8 @@
     "prefecture": "Aichi",
     "region": "Chubu",
     "categories": ["Tower", "Landmark", "History", "Observation Deck"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nagoya_TV_Tower2.jpg/3840px-Nagoya_TV_Tower2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nagoya_TV_Tower2.jpg/3840px-Nagoya_TV_Tower2.jpg",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 6000,
@@ -11895,7 +12391,7 @@
     ],
     "description": "Completed in 1954 as Japan's first TV broadcasting tower, this 180-meter Registered Tangible Cultural Property in Nagoya's Hisaya-odori Park features outdoor observation decks and projection mapping art.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nagoya_TV_Tower2.jpg/3840px-Nagoya_TV_Tower2.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -11934,7 +12430,13 @@
     "restaurants": ["Glycine Tower Hotel Nagoya", "Oasis 21 Gourmet Arcade"],
     "cafes": ["Farm& Cafe Nagoya", "Starbucks Hisaya-odori"],
     "notes": "Illuminated every night with energy-efficient LED light displays.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Nagoya TV Tower via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nagoya%20TV%20Tower"
+    }
   },
   {
     "id": "higashiyama-sky-tower-nagoya",
@@ -11942,8 +12444,8 @@
     "prefecture": "Aichi",
     "region": "Chubu",
     "categories": ["Tower", "Landmark", "Observation Deck", "Nature"],
-    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/70/Higashiyama_Sky_Tower_-_01.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Higashiyama_Sky_Tower_-_01.JPG",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -12005,7 +12507,7 @@
     ],
     "description": "Perched atop an 80m hill inside Higashiyama Zoo & Botanical Gardens, this 134-meter pencil tower reaches a total elevation of 214 meters, offering panoramic views of Central Japan Alps.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/7/70/Higashiyama_Sky_Tower_-_01.JPG",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -12044,7 +12546,13 @@
     "restaurants": ["Sky Restaurant NAGOYA758", "Zoo Terrace Dining"],
     "cafes": ["Sky Tower Lounge 5F"],
     "notes": "Combination tickets available for both Higashiyama Zoo and Sky Tower.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Higashiyama Sky Tower via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Higashiyama%20Sky%20Tower"
+    }
   },
   {
     "id": "toki-messe-tower-niigata",
@@ -12052,8 +12560,8 @@
     "prefecture": "Niigata",
     "region": "Chubu",
     "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
-    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/TOKI_MESSE.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/TOKI_MESSE.jpg",
     "totalTripHours": 3,
     "budgetMin": 2000,
     "budgetRecommended": 4500,
@@ -12115,7 +12623,7 @@
     ],
     "description": "Located on the 31st floor of Toki Messe (140.5m high), this free-admission 360-degree observation deck is the highest viewpoint along the Sea of Japan coast.",
     "gallery": [
-      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/TOKI_MESSE.jpg",
       "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -12157,7 +12665,13 @@
     ],
     "cafes": ["Sky Lounge Panorama 31F"],
     "notes": "Entry is completely free of charge 365 days a year.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Toki Messe via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toki%20Messe"
+    }
   },
   {
     "id": "nagoya-port-tower",
@@ -12165,8 +12679,8 @@
     "prefecture": "Aichi",
     "region": "Chubu",
     "categories": ["Tower", "Landmark", "Maritime", "Observation Deck"],
-    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Nagoya_Port_Aichi_pref_Japan01s8.jpg/3840px-Nagoya_Port_Aichi_pref_Japan01s8.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Nagoya_Port_Aichi_pref_Japan01s8.jpg/3840px-Nagoya_Port_Aichi_pref_Japan01s8.jpg",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -12228,7 +12742,7 @@
     ],
     "description": "Designed in the shape of a white ocean sailboat, this 63-meter maritime tower offers 360-degree views over Nagoya Port, Meiko Triton bridges, and cargo container docks.",
     "gallery": [
-      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Nagoya_Port_Aichi_pref_Japan01s8.jpg/3840px-Nagoya_Port_Aichi_pref_Japan01s8.jpg",
       "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -12267,7 +12781,13 @@
     "restaurants": ["Nagoya Port Restaurant", "JETTY Food Court"],
     "cafes": ["Port Building Cafe"],
     "notes": "Four-facility discount ticket available combining Port Building, Icebreaker Fuji, Aquarium, and Maritime Museum.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Port of Nagoya via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Port%20of%20Nagoya"
+    }
   },
   {
     "id": "edo-castle-tokyo",
@@ -12275,8 +12795,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Castle", "History", "Landmark", "Park"],
-    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edo_P_detail.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edo_P_detail.jpg",
     "totalTripHours": 4,
     "budgetMin": 2000,
     "budgetRecommended": 4500,
@@ -12337,7 +12857,7 @@
     ],
     "description": "The historic seat of the Tokugawa Shogunate and current Imperial Palace, featuring massive cyclopean stone ramparts, historic watchtowers, and the Imperial Palace East Gardens.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edo_P_detail.jpg",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -12376,7 +12896,13 @@
     "restaurants": ["Wadakura Dining Room", "Imperial Hotel Viking Sal"],
     "cafes": ["Wadakura Fountain Park Cafe", "Palace Hotel Lounge"],
     "notes": "Top 100 Castle of Japan #21. Free admission 5 days a week (closed Mondays and Fridays).",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Edo Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Edo%20Castle"
+    }
   },
   {
     "id": "kawagoe-castle-saitama",
@@ -12384,8 +12910,8 @@
     "prefecture": "Saitama",
     "region": "Kanto",
     "categories": ["Castle", "History", "Architecture", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kawagoejou.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kawagoejou.jpg",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -12441,7 +12967,7 @@
     ],
     "description": "Built in 1848, this rare structure is the only surviving original samurai lord's Honmaru Goten palace in eastern Japan, featuring tatami council chambers and garden verandas.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kawagoejou.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -12480,7 +13006,13 @@
     "restaurants": ["Ogakiku Unagi", "Ichiya Kawagoe"],
     "cafes": ["Kashya Yokocho Sweet Shop", "Elevato Coffee"],
     "notes": "Top 100 Castle of Japan #19. Admission is only 100 JPY.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kawagoe Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kawagoe%20Castle"
+    }
   },
   {
     "id": "sakura-castle-chiba",
@@ -12488,8 +13020,8 @@
     "prefecture": "Chiba",
     "region": "Kanto",
     "categories": ["Castle", "History", "Nature", "Park"],
-    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sakura_Castle_2.JPG/3840px-Sakura_Castle_2.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sakura_Castle_2.JPG/3840px-Sakura_Castle_2.JPG",
     "totalTripHours": 4,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -12551,7 +13083,7 @@
     ],
     "description": "Constructed in 1611 by Doi Toshikatsu, Sakura Castle features impressive preserved earthen ramparts, deep dry moats, and over 1,100 cherry trees surrounding Rekihaku museum.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sakura_Castle_2.JPG/3840px-Sakura_Castle_2.JPG",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -12590,7 +13122,13 @@
     "restaurants": ["Kaze no Mura Dining", "Sakura Soba-dokoro"],
     "cafes": ["Rekihaku Museum Cafe"],
     "notes": "Top 100 Castle of Japan #20. One of Kanto's finest cherry blossom viewing spots in early April.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Sakura Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sakura%20Castle"
+    }
   },
   {
     "id": "mito-castle-ibaraki",
@@ -12598,8 +13136,8 @@
     "prefecture": "Ibaraki",
     "region": "Kanto",
     "categories": ["Castle", "History", "Education", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mito_castle_sannomaru_karabori.jpg/3840px-Mito_castle_sannomaru_karabori.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mito_castle_sannomaru_karabori.jpg/3840px-Mito_castle_sannomaru_karabori.jpg",
     "totalTripHours": 4,
     "budgetMin": 3000,
     "budgetRecommended": 5500,
@@ -12661,7 +13199,7 @@
     ],
     "description": "The seat of the Mito Tokugawa family, featuring the restored wooden Otemon Gate, dry moat earthworks, and the 1841 Kodokan—Japan's largest Mito clan samurai school.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mito_castle_sannomaru_karabori.jpg/3840px-Mito_castle_sannomaru_karabori.jpg",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
     ],
@@ -12700,7 +13238,13 @@
     "restaurants": ["Mito Natto-ya", "Sazanka Dining"],
     "cafes": ["Kodokan Teahouse", "Saza Coffee Mito Station"],
     "notes": "Top 100 Castle of Japan #14. Beautiful plum blossoms bloom in Kodokan grounds every February-March.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Mito Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mito%20Castle"
+    }
   },
   {
     "id": "takeda-castle-yamanashi",
@@ -12708,8 +13252,8 @@
     "prefecture": "Yamanashi",
     "region": "Chubu",
     "categories": ["Castle", "History", "Shrine", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/KofuTakedaJinja3.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/KofuTakedaJinja3.jpg",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -12771,7 +13315,7 @@
     ],
     "description": "The fortified residence of legendary Sengoku warlord Takeda Shingen, featuring original earthwork ramparts, triple moats, and Takeda Shrine.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5c/KofuTakedaJinja3.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -12810,7 +13354,13 @@
     "restaurants": ["Koshu Houtou Fudo", "Kofu Torimotsu-ni"],
     "cafes": ["Shingen-mochi Cafe", "Kofu Station Teahouse"],
     "notes": "Top 100 Castle of Japan #24. Shingen-ko Festival held every April features 1,000 armor-clad samurai parade.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Takeda Shrine via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Takeda%20Shrine"
+    }
   },
   {
     "id": "hikone-castle-shiga",
@@ -12818,8 +13368,8 @@
     "prefecture": "Shiga",
     "region": "Chubu",
     "categories": ["Castle", "History", "National Treasure", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hikone_Castle_November_2016_-02.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hikone_Castle_November_2016_-02.jpg",
     "totalTripHours": 4,
     "budgetMin": 3500,
     "budgetRecommended": 7000,
@@ -12883,7 +13433,7 @@
     ],
     "description": "Completed in 1622, Hikone Castle is one of Japan's five original surviving National Treasure keeps, overlooking Lake Biwa with pristine feudal turrets and Genkyuen garden.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hikone_Castle_November_2016_-02.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -12926,7 +13476,13 @@
     "restaurants": ["Omi Beef Senryu", "Hikone Yume-kyobashi Dining"],
     "cafes": ["Genkyuen Tea House", "Hikonyan Sweet Cafe"],
     "notes": "Top 100 Castle of Japan #50. Steep wooden stairs inside keep require sturdy footwear.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Hikone Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hikone%20Castle"
+    }
   },
   {
     "id": "gifu-castle-gifu",
@@ -12934,8 +13490,8 @@
     "prefecture": "Gifu",
     "region": "Chubu",
     "categories": ["Castle", "History", "Mountain", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
     "totalTripHours": 4,
     "budgetMin": 3000,
     "budgetRecommended": 6000,
@@ -12997,7 +13553,7 @@
     ],
     "description": "Perched 329 meters atop Mt. Kinka, Gifu Castle was Oda Nobunaga's formidable mountain stronghold, offering panoramic views over the Nagara River and Nobi Plain.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -13036,7 +13592,13 @@
     "restaurants": ["Kinka-zan Rest House", "Gifu Park Ayu Dining"],
     "cafes": ["Ropeway Summit Cafe"],
     "notes": "Top 100 Castle of Japan #39. Special night ropeway operates during summer weekends for night views.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Gifu Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gifu%20Castle"
+    }
   },
   {
     "id": "ueda-castle-nagano",
@@ -13044,8 +13606,8 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["Castle", "History", "Landmark", "Park"],
-    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ueda_Castle_Amagafuchi.jpg/3840px-Ueda_Castle_Amagafuchi.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ueda_Castle_Amagafuchi.jpg/3840px-Ueda_Castle_Amagafuchi.jpg",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -13107,7 +13669,7 @@
     ],
     "description": "Built in 1583 by Sanada Masayuki, this impregnable fortress famously repelled the massive Tokugawa army twice, featuring surviving corner turrets and Sanada Shrine.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ueda_Castle_Amagafuchi.jpg/3840px-Ueda_Castle_Amagafuchi.jpg",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -13146,7 +13708,13 @@
     "restaurants": ["Ueda Soba-dokoro", "Shinshu Sanada Dining"],
     "cafes": ["Ueda Castle Park Teahouse"],
     "notes": "Top 100 Castle of Japan #27. Spectacular cherry blossom festival every mid-April.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Ueda Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ueda%20Castle"
+    }
   },
   {
     "id": "takato-castle-nagano",
@@ -13154,8 +13722,8 @@
     "prefecture": "Nagano",
     "region": "Chubu",
     "categories": ["Castle", "History", "Nature", "Park"],
-    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c4/TakatoCastle%EF%BC%88%E9%AB%98%E9%81%A0%E5%9F%8E%EF%BC%89.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/TakatoCastle%EF%BC%88%E9%AB%98%E9%81%A0%E5%9F%8E%EF%BC%89.JPG",
     "totalTripHours": 4,
     "budgetMin": 3000,
     "budgetRecommended": 6000,
@@ -13217,7 +13785,7 @@
     ],
     "description": "Renowned as one of Japan's top three cherry blossom viewing spots, Takato Castle ruins feature 1,500 rare reddish Kohigan cherry trees frame over ancient stone moats.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c4/TakatoCastle%EF%BC%88%E9%AB%98%E9%81%A0%E5%9F%8E%EF%BC%89.JPG",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -13256,7 +13824,13 @@
     "restaurants": ["Takato Soba-dokoro", "Ina Valley Dining"],
     "cafes": ["Takato Cherry Teahouse"],
     "notes": "Top 100 Castle of Japan #28. Cherry blossoms bloom mid-to-late April.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Takatō Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Takat%C5%8D%20Castle"
+    }
   },
   {
     "id": "kakegawa-castle-shizuoka",
@@ -13264,8 +13838,8 @@
     "prefecture": "Shizuoka",
     "region": "Chubu",
     "categories": ["Castle", "History", "National Treasure", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/44/Kakegawacastleapril2006.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Kakegawacastleapril2006.JPG",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 5500,
@@ -13327,7 +13901,7 @@
     ],
     "description": "Rebuilt in 1994 using traditional Japanese carpentry techniques, Kakegawa Castle is Japan's first authentically reconstructed wooden keep, featuring the original 1855 Ninomaru Goten palace.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/4/44/Kakegawacastleapril2006.JPG",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -13366,7 +13940,13 @@
     "restaurants": ["Kakegawa Green Tea Dining", "Unagi Honpo Kakegawa"],
     "cafes": ["Ninomaru Chashitsu", "Kakegawa Cha-bo"],
     "notes": "Top 100 Castle of Japan #42. Ninomaru Goten is an Important Cultural Property.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kakegawa Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kakegawa%20Castle"
+    }
   },
   {
     "id": "kanazawa-castle-ishikawa",
@@ -13374,8 +13954,8 @@
     "prefecture": "Ishikawa",
     "region": "Chubu",
     "categories": ["Castle", "History", "Landmark", "Park"],
-    "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kanazawa-M-5937.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kanazawa-M-5937.jpg",
     "totalTripHours": 4,
     "budgetMin": 3000,
     "budgetRecommended": 6500,
@@ -13437,7 +14017,7 @@
     ],
     "description": "The magnificent seat of the powerful Maeda clan (Kaga Domain), featuring meticulously reconstructed wooden turrets, white lead tile roofs, and Gyokusen'inmaru feudal garden adjacent to Kenrokuen.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/8/88/Kanazawa-M-5937.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -13476,7 +14056,13 @@
     "restaurants": ["Omicho Market Kaisen-don", "Kaga Cuisine Tsubajin"],
     "cafes": ["Gyokusen'an Teahouse", "Kenrokuen Chaya"],
     "notes": "Top 100 Castle of Japan #35. Beautiful night illumination of Gyokusen'inmaru garden on weekends.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Kanazawa Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kanazawa%20Castle"
+    }
   },
   {
     "id": "maruoka-castle-fukui",
@@ -13484,8 +14070,8 @@
     "prefecture": "Fukui",
     "region": "Chubu",
     "categories": ["Castle", "History", "National Treasure", "Landmark"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Maruoka_Castle_20100529-01.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Maruoka_Castle_20100529-01.jpg",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 5500,
@@ -13548,7 +14134,7 @@
     ],
     "description": "Built in 1576, Maruoka Castle is one of Japan's 12 original surviving castle keeps and features the oldest architectural keep style in Japan, complete with rare stone roof tiles.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Maruoka_Castle_20100529-01.jpg",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
     ],
@@ -13587,7 +14173,13 @@
     "restaurants": ["Maruoka Soba-dokoro", "Echizen Soba Kuraya"],
     "cafes": ["Kasumi Castle Teahouse"],
     "notes": "Top 100 Castle of Japan #36. Known as Kasumi-ga-jyo (Mist Castle) due to legend of fog concealing the tower from enemies.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Maruoka Castle via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Maruoka%20Castle"
+    }
   },
   {
     "id": "tokyo-metropolitan-government-building-shinjuku",
@@ -13595,8 +14187,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Observation Deck", "Landmark", "Architecture", "Free"],
-    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg",
     "totalTripHours": 3,
     "budgetMin": 1500,
     "budgetRecommended": 3500,
@@ -13657,7 +14249,7 @@
     ],
     "description": "Perched 202 meters above Shinjuku on the 45th floors of Kenzo Tange iconic twin-tower skyscraper, offering free 360-degree views of Mt. Fuji and Tokyo lights.",
     "gallery": [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -13696,7 +14288,13 @@
     "restaurants": ["Good View Tokyo 45F", "Tocho Staff Cafeteria"],
     "cafes": ["South Observatory Cafe 45F"],
     "notes": "Free entry 365 days a year. South Deck open until 10:00 PM.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Tokyo Metropolitan Government Building via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Metropolitan%20Government%20Building"
+    }
   },
   {
     "id": "shibuya-sky-shibuya",
@@ -13813,8 +14411,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Observation Deck", "Landmark", "Art", "Night View"],
-    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/47/Views_from_Azabudai_Hills_Mori_JP_Tower_13.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Views_from_Azabudai_Hills_Mori_JP_Tower_13.jpg",
     "totalTripHours": 3,
     "budgetMin": 3500,
     "budgetRecommended": 7000,
@@ -13875,7 +14473,7 @@
     ],
     "description": "Located on the 52nd floor and rooftop of Mori Tower (270m height), offering the iconic front-row view of Tokyo Tower framed against the Tokyo Bay skyline.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/4/47/Views_from_Azabudai_Hills_Mori_JP_Tower_13.jpg",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
     ],
@@ -13914,7 +14512,13 @@
     "restaurants": ["The Sun & The Moon 52F", "Roppongi Hills Club"],
     "cafes": ["Museum Cafe 52F"],
     "notes": "The ticket includes entry to both Tokyo City View and Mori Art Museum exhibitions.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Roppongi Hills Mori Tower via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Roppongi%20Hills%20Mori%20Tower"
+    }
   },
   {
     "id": "sunshine-60-observatory-ikebukuro",
@@ -13922,8 +14526,8 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Observation Deck", "Landmark", "Family", "Park"],
-    "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sunshine_60.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sunshine_60.JPG",
     "totalTripHours": 3,
     "budgetMin": 2500,
     "budgetRecommended": 5000,
@@ -13984,7 +14588,7 @@
     ],
     "description": "Located on the 60th floor of Sunshine 60 (251m height) in Ikebukuro, featuring an indoor sky park with real turf lawns, picnic mats, and panoramic vistas.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sunshine_60.JPG",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -14023,7 +14627,13 @@
     "restaurants": ["Tenbou Park Cafe 60F", "Sunshine City Alpa Gourmet"],
     "cafes": ["Tenbou Cafe Lawn Bar"],
     "notes": "Completely indoor and rainproof; perfect for families with young children.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Sunshine 60 via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sunshine%2060"
+    }
   },
   {
     "id": "yokohama-landmark-tower-sky-garden",
@@ -14031,8 +14641,8 @@
     "prefecture": "Kanagawa",
     "region": "Kanto",
     "categories": ["Observation Deck", "Landmark", "Port", "Modern"],
-    "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 6000,
@@ -14093,7 +14703,7 @@
     ],
     "description": "Ascend to the 69th floor (273m) in just 40 seconds aboard Japan's fastest elevator for 360-degree panoramas of Yokohama Bay Bridge, Minato Mirai, and Mt. Fuji.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -14132,7 +14742,13 @@
     "restaurants": ["Sirius Yokohama Royal Park 70F", "Dockyard Garden Dining"],
     "cafes": ["Sky Cafe 69F"],
     "notes": "Elevator reaches 69F in 40 seconds (750m/min top speed).",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Yokohama Landmark Tower via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama%20Landmark%20Tower"
+    }
   },
   {
     "id": "abeno-harukas-300-osaka",
@@ -14140,8 +14756,8 @@
     "prefecture": "Osaka",
     "region": "Kansai",
     "categories": ["Observation Deck", "Landmark", "Modern", "Skyscraper"],
-    "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1200",
-    "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1200",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
     "totalTripHours": 3,
     "budgetMin": 3500,
     "budgetRecommended": 7500,
@@ -14203,7 +14819,7 @@
     ],
     "description": "Rising 300 meters above Osaka, Abeno Harukas is Japan's tallest skyscraper, featuring a 3-story glass observatory and open-air wooden atrium garden.",
     "gallery": [
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
       "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
       "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
     ],
@@ -14242,6 +14858,12 @@
     "restaurants": ["Sky Garden 300 58F", "Kintetsu Gourmet City 14F"],
     "cafes": ["Caffe Ciao Press 16F", "Harukas 300 Cafe"],
     "notes": "Features 360-degree glass floor-to-ceiling perimeter views.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "imageMetadata": {
+      "source": "Wikimedia Commons / Wikipedia",
+      "license": "CC-BY-SA / Public Domain",
+      "attribution": "Lead photograph of Abeno Harukas via Wikipedia/Wikimedia Commons",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Abeno%20Harukas"
+    }
   }
 ]

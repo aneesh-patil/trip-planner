@@ -107,5 +107,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Fujinomiya. Known for its mt fuji and yakisoba vibes, it offers a great escape with an overall score of 8.4.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E5%86%99%E7%9C%9F.png",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Fujinomiya via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Fujinomiya"
+  }
 }

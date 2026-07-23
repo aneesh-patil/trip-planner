@@ -4,9 +4,9 @@
   "prefecture": "Saitama",
   "region": "Kanto",
   "categories": ["Nature", "River"],
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Nagatoro_Town_Office.JPG",
   "gallery": [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/b/b9/Nagatoro_Town_Office.JPG",
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
     "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
   ],
@@ -104,5 +104,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Nagatoro_Town_Office.JPG",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Nagatoro via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nagatoro"
+  }
 }

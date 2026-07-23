@@ -22,7 +22,7 @@
     "lat": 35.6131,
     "lng": 139.1917
   },
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg/3840px-Lake_Sagami_-_2005_Nov_10_various_10.jpg",
   "prefecture": "Kanagawa",
   "budgetMin": 6000,
   "budgetMax": 14000,
@@ -58,7 +58,7 @@
   "description": "Discover Lake Sagami, a prominent destination in Kanagawa. With its rich mix of illumination, outdoors, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg/3840px-Lake_Sagami_-_2005_Nov_10_various_10.jpg",
     "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
     "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
   ],
@@ -107,5 +107,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Lake Sagami. Known for its illumination and outdoors vibes, it offers a great escape with an overall score of 8.1.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lake_Sagami_-_2005_Nov_10_various_10.jpg/3840px-Lake_Sagami_-_2005_Nov_10_various_10.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Lake Sagami via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Lake%20Sagami"
+  }
 }

@@ -4,8 +4,8 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Observation Deck", "Landmark", "Architecture", "Free"],
-  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg",
   "totalTripHours": 3,
   "budgetMin": 1500,
   "budgetRecommended": 3500,
@@ -66,7 +66,7 @@
   ],
   "description": "Perched 202 meters above Shinjuku on the 45th floors of Kenzo Tange iconic twin-tower skyscraper, offering free 360-degree views of Mt. Fuji and Tokyo lights.",
   "gallery": [
-    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
   ],
@@ -105,5 +105,11 @@
   "restaurants": ["Good View Tokyo 45F", "Tocho Staff Cafeteria"],
   "cafes": ["South Observatory Cafe 45F"],
   "notes": "Free entry 365 days a year. South Deck open until 10:00 PM.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Tokyo Metropolitan Government Building via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Metropolitan%20Government%20Building"
+  }
 }

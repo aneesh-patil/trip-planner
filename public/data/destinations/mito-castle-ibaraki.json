@@ -4,8 +4,8 @@
   "prefecture": "Ibaraki",
   "region": "Kanto",
   "categories": ["Castle", "History", "Education", "Landmark"],
-  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mito_castle_sannomaru_karabori.jpg/3840px-Mito_castle_sannomaru_karabori.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mito_castle_sannomaru_karabori.jpg/3840px-Mito_castle_sannomaru_karabori.jpg",
   "totalTripHours": 4,
   "budgetMin": 3000,
   "budgetRecommended": 5500,
@@ -62,7 +62,7 @@
   ],
   "description": "The seat of the Mito Tokugawa family, featuring the restored wooden Otemon Gate, dry moat earthworks, and the 1841 Kodokan—Japan's largest Mito clan samurai school.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mito_castle_sannomaru_karabori.jpg/3840px-Mito_castle_sannomaru_karabori.jpg",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
   ],
@@ -101,5 +101,11 @@
   "restaurants": ["Mito Natto-ya", "Sazanka Dining"],
   "cafes": ["Kodokan Teahouse", "Saza Coffee Mito Station"],
   "notes": "Top 100 Castle of Japan #14. Beautiful plum blossoms bloom in Kodokan grounds every February-March.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Mito Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mito%20Castle"
+  }
 }

@@ -4,9 +4,9 @@
   "prefecture": "Chiba",
   "region": "Kanto",
   "categories": ["History", "Hiking", "Nature"],
-  "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
     "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
   ],
@@ -104,5 +104,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Mount Nokogiri (Chiba) via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Nokogiri%20(Chiba)"
+  }
 }

@@ -4,8 +4,8 @@
   "prefecture": "Aichi",
   "region": "Chubu",
   "categories": ["Tower", "Landmark", "Observation Deck", "Nature"],
-  "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/70/Higashiyama_Sky_Tower_-_01.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Higashiyama_Sky_Tower_-_01.JPG",
   "totalTripHours": 3,
   "budgetMin": 2500,
   "budgetRecommended": 5000,
@@ -67,7 +67,7 @@
   ],
   "description": "Perched atop an 80m hill inside Higashiyama Zoo & Botanical Gardens, this 134-meter pencil tower reaches a total elevation of 214 meters, offering panoramic views of Central Japan Alps.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/7/70/Higashiyama_Sky_Tower_-_01.JPG",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
   ],
@@ -106,5 +106,11 @@
   "restaurants": ["Sky Restaurant NAGOYA758", "Zoo Terrace Dining"],
   "cafes": ["Sky Tower Lounge 5F"],
   "notes": "Combination tickets available for both Higashiyama Zoo and Sky Tower.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Higashiyama Sky Tower via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Higashiyama%20Sky%20Tower"
+  }
 }

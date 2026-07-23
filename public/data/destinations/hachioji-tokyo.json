@@ -4,9 +4,9 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Nature", "Hiking", "Culture"],
-  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hachioji_Castle_Gosyuden_entrance.JPG",
   "gallery": [
-    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hachioji_Castle_Gosyuden_entrance.JPG",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
     "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
   ],
@@ -92,5 +92,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Hachioji_Castle_Gosyuden_entrance.JPG",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Hachiōji Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hachi%C5%8Dji%20Castle"
+  }
 }

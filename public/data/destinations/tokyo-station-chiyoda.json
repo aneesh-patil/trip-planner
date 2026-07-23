@@ -4,8 +4,8 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["City", "History", "Food", "Shopping"],
-  "heroImage": "https://images.unsplash.com/photo-1690971324341-94fac8ec6873?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "image": "https://images.unsplash.com/photo-1690971324341-94fac8ec6873?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/3840px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/3840px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
   "totalTripHours": 4,
   "budgetMin": 5000,
   "budgetRecommended": 9000,
@@ -60,7 +60,7 @@
   ],
   "description": "Japans premier railway terminal, featuring the restored 1914 Marunouchi red-brick facade, subterranean shopping passages, world-class ramen eateries, and immediate proximity to the Imperial Palace grounds.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/3840px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
     "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=600",
     "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
   ],
@@ -109,5 +109,11 @@
   "notes": "Direct access to Narita Express and all Shinkansen lines. Excellent rain-proof indoor routing.",
   "schemaVersion": 2,
   "bestSeason": "All Year",
-  "weatherDependence": "low"
+  "weatherDependence": "low",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Tokyo Station via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Station"
+  }
 }

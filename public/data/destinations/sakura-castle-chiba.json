@@ -4,8 +4,8 @@
   "prefecture": "Chiba",
   "region": "Kanto",
   "categories": ["Castle", "History", "Nature", "Park"],
-  "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sakura_Castle_2.JPG/3840px-Sakura_Castle_2.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sakura_Castle_2.JPG/3840px-Sakura_Castle_2.JPG",
   "totalTripHours": 4,
   "budgetMin": 2500,
   "budgetRecommended": 5000,
@@ -67,7 +67,7 @@
   ],
   "description": "Constructed in 1611 by Doi Toshikatsu, Sakura Castle features impressive preserved earthen ramparts, deep dry moats, and over 1,100 cherry trees surrounding Rekihaku museum.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sakura_Castle_2.JPG/3840px-Sakura_Castle_2.JPG",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
   ],
@@ -106,5 +106,11 @@
   "restaurants": ["Kaze no Mura Dining", "Sakura Soba-dokoro"],
   "cafes": ["Rekihaku Museum Cafe"],
   "notes": "Top 100 Castle of Japan #20. One of Kanto's finest cherry blossom viewing spots in early April.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Sakura Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sakura%20Castle"
+  }
 }

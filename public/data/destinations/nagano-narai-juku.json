@@ -4,9 +4,9 @@
   "prefecture": "Nagano",
   "region": "Chubu",
   "categories": ["History", "Urban"],
-  "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1_naraijuku_2024.jpg/3840px-1_naraijuku_2024.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1_naraijuku_2024.jpg/3840px-1_naraijuku_2024.jpg",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
     "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
   ],
@@ -104,5 +104,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1_naraijuku_2024.jpg/3840px-1_naraijuku_2024.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Narai-juku via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Narai-juku"
+  }
 }

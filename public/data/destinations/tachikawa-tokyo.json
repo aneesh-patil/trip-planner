@@ -4,9 +4,9 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Nature", "Parks", "Urban"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1000",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg/3840px-Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg/3840px-Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg",
     "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
     "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
   ],
@@ -92,5 +92,12 @@
         }
       ]
     }
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg/3840px-Tama_Intercity_Monorail_viewed_from_Green_Springs.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Tachikawa via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tachikawa"
+  }
 }

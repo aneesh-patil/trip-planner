@@ -108,5 +108,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Shizuoka City. Known for its green tea and castle ruins vibes, it offers a great escape with an overall score of 8.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mount_Fuji_and_Port_of_Shimizu_from_Nihondaira.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Shizuoka City via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Shizuoka%20City"
+  }
 }

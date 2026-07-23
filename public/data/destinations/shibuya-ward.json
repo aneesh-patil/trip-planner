@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["City", "Shopping"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/960px-Shibuya_Crossing%2C_Aerial.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
   "totalTripHours": 8,
   "budgetMin": 6000,
   "budgetRecommended": 10000,
@@ -47,14 +47,14 @@
     "rainFriendly": 5,
     "walkingIntensity": 10
   },
-  "image": "https://loremflickr.com/1000/800/japan,shibuya/all?lock=1027",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
   "transportOptions": {
     "train": 40
   },
   "highlights": ["Scramble Crossing", "Shibuya Sky", "Miyashita Park"],
   "description": "Shibuya is a special ward in Tokyo, Japan. A major commercial center, Shibuya houses two of the busiest railway stations in the world, Shibuya Station and Shinjuku Station.",
   "gallery": [
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
     "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
   ],
@@ -97,5 +97,11 @@
   "restaurants": ["Katsumidori Seibu Shibuya"],
   "cafes": ["Fuglen Tokyo"],
   "notes": "Book Shibuya Sky tickets for sunset at least 2 weeks in advance.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Shibuya via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Shibuya"
+  }
 }

@@ -107,5 +107,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Izu Peninsula. Known for its beaches and onsen vibes, it offers a great escape with an overall score of 8.6.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Izu_Peninsula_Shizuoka_Japan_SRTM.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Izu Peninsula via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Izu%20Peninsula"
+  }
 }

@@ -4,8 +4,8 @@
   "prefecture": "Ishikawa",
   "region": "Chubu",
   "categories": ["Castle", "History", "Landmark", "Park"],
-  "heroImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kanazawa-M-5937.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kanazawa-M-5937.jpg",
   "totalTripHours": 4,
   "budgetMin": 3000,
   "budgetRecommended": 6500,
@@ -67,7 +67,7 @@
   ],
   "description": "The magnificent seat of the powerful Maeda clan (Kaga Domain), featuring meticulously reconstructed wooden turrets, white lead tile roofs, and Gyokusen'inmaru feudal garden adjacent to Kenrokuen.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/8/88/Kanazawa-M-5937.jpg",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
     "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
   ],
@@ -106,5 +106,11 @@
   "restaurants": ["Omicho Market Kaisen-don", "Kaga Cuisine Tsubajin"],
   "cafes": ["Gyokusen'an Teahouse", "Kenrokuen Chaya"],
   "notes": "Top 100 Castle of Japan #35. Beautiful night illumination of Gyokusen'inmaru garden on weekends.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Kanazawa Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kanazawa%20Castle"
+  }
 }

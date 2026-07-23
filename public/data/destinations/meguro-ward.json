@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Nature", "City"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Meguro_River_Spring_2014%282%29.jpg/960px-Meguro_River_Spring_2014%282%29.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg/3840px-Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg",
   "totalTripHours": 5,
   "budgetMin": 6000,
   "budgetRecommended": 10000,
@@ -47,7 +47,7 @@
     "rainFriendly": 4,
     "walkingIntensity": 8
   },
-  "image": "https://loremflickr.com/1000/800/japan,meguro/all?lock=1031",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg/3840px-Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg",
   "transportOptions": {
     "train": 45
   },
@@ -58,7 +58,7 @@
   ],
   "description": "Famous worldwide for the Meguro River cherry blossoms. Features trendy cafes, boutiques, and a relaxed atmosphere.",
   "gallery": [
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg/3840px-Cherry_Blossoms_in_Meguro_River_Park_-_Lanterns_along_the_River_%2840844860114%29.jpg",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
     "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
   ],
@@ -101,5 +101,11 @@
   "restaurants": ["Tonki (Tonkatsu)"],
   "cafes": ["Starbucks Reserve Roastery Tokyo"],
   "notes": "Spring cherry blossoms are incredibly beautiful but completely packed with people.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Meguro via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Meguro"
+  }
 }

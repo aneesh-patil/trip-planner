@@ -4,8 +4,8 @@
   "prefecture": "Kanagawa",
   "region": "Kanto",
   "categories": ["Observation Deck", "Landmark", "Port", "Modern"],
-  "heroImage": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
   "totalTripHours": 3,
   "budgetMin": 3000,
   "budgetRecommended": 6000,
@@ -66,7 +66,7 @@
   ],
   "description": "Ascend to the 69th floor (273m) in just 40 seconds aboard Japan's fastest elevator for 360-degree panoramas of Yokohama Bay Bridge, Minato Mirai, and Mt. Fuji.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
   ],
@@ -105,5 +105,11 @@
   "restaurants": ["Sirius Yokohama Royal Park 70F", "Dockyard Garden Dining"],
   "cafes": ["Sky Cafe 69F"],
   "notes": "Elevator reaches 69F in 40 seconds (750m/min top speed).",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Yokohama Landmark Tower via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama%20Landmark%20Tower"
+  }
 }

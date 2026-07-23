@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["City", "Sea", "Theme Park"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/960px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/3840px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
   "totalTripHours": 8,
   "budgetMin": 9000,
   "budgetRecommended": 13000,
@@ -47,14 +47,14 @@
     "rainFriendly": 6,
     "walkingIntensity": 10
   },
-  "image": "https://loremflickr.com/1000/800/japan,odaiba/all?lock=1023",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/3840px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
   "transportOptions": {
     "train": 50
   },
   "highlights": ["Gundam Statue", "Odaiba Seaside Park", "Rainbow Bridge View"],
   "description": "A high-tech entertainment hub on an artificial island in Tokyo Bay, featuring shopping malls, beaches, and a giant Gundam.",
   "gallery": [
-    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg/3840px-Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg",
     "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
   ],
@@ -97,5 +97,11 @@
   "restaurants": ["Aqua City Dining"],
   "cafes": ["Bills Odaiba"],
   "notes": "Take the Yurikamome line for an automated scenic ride across the bay.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Odaiba via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Odaiba"
+  }
 }

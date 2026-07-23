@@ -4,7 +4,7 @@
   "prefecture": "Kanagawa",
   "region": "Kanto",
   "categories": ["Onsen", "Nature", "Museums"],
-  "heroImage": "/images/hakone_hero.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Fuji_from_Lake_Ashi.jpg/3840px-View_of_Mount_Fuji_from_Lake_Ashi.jpg",
   "totalTripHours": 24,
   "budgetMin": 16200,
   "budgetRecommended": 20200,
@@ -47,14 +47,14 @@
     "rainFriendly": 4,
     "walkingIntensity": 4
   },
-  "image": "https://loremflickr.com/1000/800/japan,hakone/all?lock=1000",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Fuji_from_Lake_Ashi.jpg/3840px-View_of_Mount_Fuji_from_Lake_Ashi.jpg",
   "transportOptions": {
     "train": 85
   },
   "highlights": ["Hakone Open-Air Museum", "Owakudani", "Lake Ashi Cruise"],
   "description": "Hakone is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_of_Mount_Fuji_from_Lake_Ashi.jpg/3840px-View_of_Mount_Fuji_from_Lake_Ashi.jpg",
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
     "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"
   ],
@@ -123,5 +123,11 @@
   "restaurants": ["Hakone Gindofu", "Bakery & Table Hakone"],
   "cafes": ["Naraya Cafe", "Amazake Chaya"],
   "notes": "Purchase the Hakone Free Pass for unlimited rides on local transport.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Hakone via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hakone"
+  }
 }

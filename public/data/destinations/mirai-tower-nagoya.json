@@ -4,8 +4,8 @@
   "prefecture": "Aichi",
   "region": "Chubu",
   "categories": ["Tower", "Landmark", "History", "Observation Deck"],
-  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nagoya_TV_Tower2.jpg/3840px-Nagoya_TV_Tower2.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nagoya_TV_Tower2.jpg/3840px-Nagoya_TV_Tower2.jpg",
   "totalTripHours": 3,
   "budgetMin": 3000,
   "budgetRecommended": 6000,
@@ -67,7 +67,7 @@
   ],
   "description": "Completed in 1954 as Japan's first TV broadcasting tower, this 180-meter Registered Tangible Cultural Property in Nagoya's Hisaya-odori Park features outdoor observation decks and projection mapping art.",
   "gallery": [
-    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nagoya_TV_Tower2.jpg/3840px-Nagoya_TV_Tower2.jpg",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
   ],
@@ -106,5 +106,11 @@
   "restaurants": ["Glycine Tower Hotel Nagoya", "Oasis 21 Gourmet Arcade"],
   "cafes": ["Farm& Cafe Nagoya", "Starbucks Hisaya-odori"],
   "notes": "Illuminated every night with energy-efficient LED light displays.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Nagoya TV Tower via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nagoya%20TV%20Tower"
+  }
 }

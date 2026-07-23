@@ -58,7 +58,7 @@
   "description": "Discover Kurobe Gorge, a prominent destination in Shizuoka. With its rich mix of scenic railway, ravine, onsen, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop",
+    "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
     "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
   ],
@@ -107,5 +107,12 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Kurobe Gorge. Known for its scenic railway and ravine vibes, it offers a great escape with an overall score of 8.9.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kurobe_kyokoku_view_from_Kurobe_Dam.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Kurobe Gorge via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kurobe%20Gorge"
+  }
 }

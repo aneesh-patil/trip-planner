@@ -4,7 +4,7 @@
   "prefecture": "Aichi",
   "region": "Chubu",
   "categories": ["History", "Nature", "Castle"],
-  "heroImage": "/images/inuyama_hero.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
   "totalTripHours": 12,
   "budgetMin": 12000,
   "budgetRecommended": 17000,
@@ -89,8 +89,15 @@
   "notes": "A perfect extension to a Nagoya trip, offering one of Japan's oldest surviving wooden castles.",
   "schemaVersion": 2,
   "gallery": [
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
     "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Inuyama Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Inuyama%20Castle"
+  }
 }

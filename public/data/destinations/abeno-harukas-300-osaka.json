@@ -4,8 +4,8 @@
   "prefecture": "Osaka",
   "region": "Kansai",
   "categories": ["Observation Deck", "Landmark", "Modern", "Skyscraper"],
-  "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
   "totalTripHours": 3,
   "budgetMin": 3500,
   "budgetRecommended": 7500,
@@ -67,7 +67,7 @@
   ],
   "description": "Rising 300 meters above Osaka, Abeno Harukas is Japan's tallest skyscraper, featuring a 3-story glass observatory and open-air wooden atrium garden.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
   ],
@@ -106,5 +106,11 @@
   "restaurants": ["Sky Garden 300 58F", "Kintetsu Gourmet City 14F"],
   "cafes": ["Caffe Ciao Press 16F", "Harukas 300 Cafe"],
   "notes": "Features 360-degree glass floor-to-ceiling perimeter views.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Abeno Harukas via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Abeno%20Harukas"
+  }
 }

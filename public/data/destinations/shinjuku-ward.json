@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["City", "Shopping", "Parks"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/960px-Skyscrapers_of_Shinjuku_2009_January.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
   "totalTripHours": 8,
   "budgetMin": 6000,
   "budgetRecommended": 10000,
@@ -47,7 +47,7 @@
     "rainFriendly": 6,
     "walkingIntensity": 10
   },
-  "image": "https://loremflickr.com/1000/800/japan,shinjuku/all?lock=1026",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
   "transportOptions": {
     "train": 40
   },
@@ -58,7 +58,7 @@
   ],
   "description": "Tokyo's vibrant core. Neon lights, skyscrapers, endless shopping, and the serene Shinjuku Gyoen National Garden.",
   "gallery": [
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
     "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
   ],
@@ -101,5 +101,11 @@
   "restaurants": ["Omoide Yokocho"],
   "cafes": ["Blue Bottle Coffee Shinjuku"],
   "notes": "Shinjuku Station is a maze. Meet at the East Exit Studio Alta or South Exit.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Shinjuku via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Shinjuku"
+  }
 }

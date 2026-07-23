@@ -4,7 +4,7 @@
   "prefecture": "Kanagawa",
   "region": "Kanto",
   "categories": ["History", "Temples", "Beach"],
-  "heroImage": "/images/kamakura_hero.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/TsurugaokaHachiman-M8867.jpg",
   "totalTripHours": 8,
   "budgetMin": 7000,
   "budgetRecommended": 11000,
@@ -47,7 +47,7 @@
     "rainFriendly": 1.5,
     "walkingIntensity": 10
   },
-  "image": "https://loremflickr.com/1000/800/japan,kamakura/all?lock=1001",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/TsurugaokaHachiman-M8867.jpg",
   "transportOptions": {
     "train": 60
   },
@@ -58,7 +58,7 @@
   ],
   "description": "Kamakura , officially Kamakura City , is a city of Kanagawa Prefecture in Japan. It is located in the Kantō region on the island of Honshu. The city has an estimated population of 172,929 and a population density of 4,359 people per km2 over the total area of 39.67 km2 (15.32 sq mi). Kamakura was designated as a city on 3 November 1939.",
   "gallery": [
-    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/5/5e/TsurugaokaHachiman-M8867.jpg",
     "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
   ],
@@ -127,5 +127,11 @@
   "restaurants": ["Kamakura Matsubaraan", "Caraway Curry"],
   "cafes": ["Iwata Coffee", "Starbucks Kamakura Onarimachi"],
   "notes": "Wear comfortable walking shoes. Enoden line can be very crowded.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Kamakura via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kamakura"
+  }
 }

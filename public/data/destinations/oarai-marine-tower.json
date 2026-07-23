@@ -4,8 +4,8 @@
   "prefecture": "Ibaraki",
   "region": "Kanto",
   "categories": ["Tower", "Landmark", "Observation Deck", "Coastal"],
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Oarai_Town_Hall.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Oarai_Town_Hall.jpg",
   "totalTripHours": 3,
   "budgetMin": 2000,
   "budgetRecommended": 4500,
@@ -62,7 +62,7 @@
   ],
   "description": "Standing 60 meters tall on the Ibaraki coastline, this distinctive triangular glass observation tower overlooks Oarai Port and the vast Pacific Ocean.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/4/4c/Oarai_Town_Hall.jpg",
     "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600",
     "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
   ],
@@ -101,5 +101,11 @@
   "restaurants": ["Oarai Kaisen Kaisen-don", "Kaki-goya Oarai"],
   "cafes": ["Panzer Cafe 2F"],
   "notes": "Famous among anime fans as a key setting in Girls und Panzer.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Oarai, Ibaraki via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Oarai%2C%20Ibaraki"
+  }
 }

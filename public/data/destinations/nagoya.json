@@ -4,7 +4,7 @@
   "prefecture": "Aichi",
   "region": "Chubu",
   "categories": ["City", "History", "Food"],
-  "heroImage": "/images/nagoya_hero.jpg",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Nagoya_Castle_7.jpg/3840px-Nagoya_Castle_7.jpg",
   "totalTripHours": 24,
   "budgetMin": 15000,
   "budgetRecommended": 22500,
@@ -94,8 +94,15 @@
   "notes": "Nagoya is the heart of Chubu. A fast bullet train ride from Tokyo or Yokohama, famous for its unique rich food culture.",
   "schemaVersion": 2,
   "gallery": [
-    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Nagoya_Castle_7.jpg/3840px-Nagoya_Castle_7.jpg",
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600"
-  ]
+  ],
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Nagoya_Castle_7.jpg/3840px-Nagoya_Castle_7.jpg",
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Nagoya Castle via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nagoya%20Castle"
+  }
 }

@@ -4,8 +4,8 @@
   "prefecture": "Yamanashi",
   "region": "Chubu",
   "categories": ["Castle", "History", "Shrine", "Landmark"],
-  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/KofuTakedaJinja3.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/KofuTakedaJinja3.jpg",
   "totalTripHours": 3,
   "budgetMin": 2500,
   "budgetRecommended": 5000,
@@ -62,7 +62,7 @@
   ],
   "description": "The fortified residence of legendary Sengoku warlord Takeda Shingen, featuring original earthwork ramparts, triple moats, and Takeda Shrine.",
   "gallery": [
-    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://upload.wikimedia.org/wikipedia/commons/5/5c/KofuTakedaJinja3.jpg",
     "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
     "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
   ],
@@ -101,5 +101,11 @@
   "restaurants": ["Koshu Houtou Fudo", "Kofu Torimotsu-ni"],
   "cafes": ["Shingen-mochi Cafe", "Kofu Station Teahouse"],
   "notes": "Top 100 Castle of Japan #24. Shingen-ko Festival held every April features 1,000 armor-clad samurai parade.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "imageMetadata": {
+    "source": "Wikimedia Commons / Wikipedia",
+    "license": "CC-BY-SA / Public Domain",
+    "attribution": "Lead photograph of Takeda Shrine via Wikipedia/Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Takeda%20Shrine"
+  }
 }
