@@ -20,7 +20,9 @@ import {
   PlusSquare,
   CheckSquare,
   Sun,
+  Plus,
 } from "lucide-react";
+import { toast } from "sonner";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { getAdjustedBudget } from "@/shared/utils/utils";
 
@@ -47,10 +49,53 @@ export default function DestinationCard({
     isComparing,
     toggleCompare,
     compareList,
+    trips,
+    addTrip,
+    addStopToTrip,
+    setTrips,
   } = useTripStore();
   const favorite = isFavorite(destination.id);
   const visited = isVisited(destination.id);
   const comparing = isComparing(destination.id);
+
+  const handleAddToItinerary = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (trips.length === 0) {
+      addTrip("My Japan Trip");
+      setTimeout(() => {
+        setTrips((prev) => {
+          if (prev.length === 0) return prev;
+          const target = prev[prev.length - 1];
+          return prev.map((t) =>
+            t.id === target.id
+              ? {
+                  ...t,
+                  stops: [
+                    ...t.stops,
+                    {
+                      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+                      name: destination.name,
+                      type: "destination",
+                      destinationId: destination.id,
+                    },
+                  ],
+                }
+              : t,
+          );
+        });
+      }, 50);
+      toast.success(`Created "My Japan Trip" & added ${destination.name}!`);
+    } else {
+      const targetTrip = trips[0];
+      addStopToTrip(targetTrip.id, {
+        name: destination.name,
+        type: "destination",
+        destinationId: destination.id,
+      });
+      toast.success(`Added ${destination.name} to ${targetTrip.title}!`);
+    }
+  };
 
   const linkState =
     carMode !== undefined || publicModes !== undefined
@@ -86,6 +131,14 @@ export default function DestinationCard({
           ))}
         </div>
         <div className="absolute top-3 right-3 flex flex-col gap-2 z-10">
+          <button
+            onClick={handleAddToItinerary}
+            aria-label="Add destination to itinerary"
+            className="p-2 bg-white/70 hover:bg-white backdrop-blur-sm rounded-full transition-all active:scale-95 duration-150 shadow-sm text-slate-700 hover:text-emerald-600"
+            title="Add to Itinerary"
+          >
+            <Plus className="w-5 h-5" />
+          </button>
           <button
             onClick={() => toggleFavorite(destination.id)}
             aria-label={

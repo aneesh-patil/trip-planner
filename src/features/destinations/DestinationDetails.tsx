@@ -33,6 +33,7 @@ import {
   Share2,
   Copy,
   ExternalLink,
+  Plus,
 } from "lucide-react";
 import { toast } from "sonner";
 import {
@@ -96,9 +97,51 @@ export default function DestinationDetails() {
     toggleVisited,
     homeStation,
     homeStationCoords,
+    trips,
+    addTrip,
+    addStopToTrip,
+    setTrips,
   } = useTripStore();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [destLoading, setDestLoading] = useState(true);
+
+  const handleAddToItinerary = () => {
+    if (!destination) return;
+    if (trips.length === 0) {
+      addTrip("My Japan Trip");
+      setTimeout(() => {
+        setTrips((prev) => {
+          if (prev.length === 0) return prev;
+          const target = prev[prev.length - 1];
+          return prev.map((t) =>
+            t.id === target.id
+              ? {
+                  ...t,
+                  stops: [
+                    ...t.stops,
+                    {
+                      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+                      name: destination.name,
+                      type: "destination",
+                      destinationId: destination.id,
+                    },
+                  ],
+                }
+              : t,
+          );
+        });
+      }, 50);
+      toast.success(`Created "My Japan Trip" & added ${destination.name}!`);
+    } else {
+      const targetTrip = trips[0];
+      addStopToTrip(targetTrip.id, {
+        name: destination.name,
+        type: "destination",
+        destinationId: destination.id,
+      });
+      toast.success(`Added ${destination.name} to ${targetTrip.title}!`);
+    }
+  };
 
   useEffect(() => {
     if (id) {
@@ -349,47 +392,74 @@ export default function DestinationDetails() {
               </span>
             )}
           </h1>
-          <div className="flex flex-wrap items-center gap-4 text-lg text-slate-200 mt-2">
-            <div className="flex items-center">
-              <MapPin className="w-5 h-5 mr-1" /> {destination.prefecture},
-              Japan
+          <div className="flex flex-wrap items-center gap-3 text-lg text-slate-200 mt-3">
+            <div className="flex items-center text-sm font-medium mr-1">
+              <MapPin className="w-4 h-4 mr-1 text-emerald-400" />{" "}
+              {destination.prefecture}, Japan
             </div>
+
+            {/* + Add to Itinerary Text Button */}
+            <button
+              onClick={handleAddToItinerary}
+              className="inline-flex items-center text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-xl transition-all active:scale-95 shadow-md"
+            >
+              <Plus className="w-4 h-4 mr-1.5" />
+              Add to Itinerary
+            </button>
+
+            {/* Symbol-Only Get Directions Button */}
             <a
               href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(homeStation)}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-sm font-medium bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg transition-colors"
+              aria-label="Get Directions"
+              title="Get Directions"
+              className="p-2.5 rounded-xl transition-all active:scale-95 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
             >
-              <MapPin className="w-4 h-4 mr-1.5" />
-              Get Directions
+              <MapPin className="w-4.5 h-4.5" />
             </a>
 
+            {/* Want to Visit / Bucket List Toggle */}
             <button
               onClick={() => toggleFavorite(destination.id)}
-              className={`inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors ${
+              aria-label={
+                isFavorite(destination.id)
+                  ? "Remove from bucket list"
+                  : "Add to bucket list"
+              }
+              title={
+                isFavorite(destination.id) ? "On Bucket List" : "Want to Visit"
+              }
+              className={`inline-flex items-center text-sm font-medium px-3 py-2 rounded-xl transition-all active:scale-95 ${
                 isFavorite(destination.id)
                   ? "bg-rose-500 text-white hover:bg-rose-600 shadow-md"
                   : "bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
               }`}
             >
               <Heart
-                className={`w-4 h-4 mr-1.5 ${isFavorite(destination.id) ? "fill-current" : ""}`}
+                className={`w-4 h-4 ${isFavorite(destination.id) ? "fill-current" : ""}`}
               />
-              {isFavorite(destination.id) ? "On Bucket List" : "Want to visit"}
             </button>
 
+            {/* Visited Toggle */}
             <button
               onClick={() => toggleVisited(destination.id)}
-              className={`inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors ${
+              aria-label={
+                isVisited(destination.id)
+                  ? "Mark destination as unvisited"
+                  : "Mark destination as visited"
+              }
+              title={isVisited(destination.id) ? "Visited" : "Mark as Visited"}
+              className={`inline-flex items-center text-sm font-medium px-3 py-2 rounded-xl transition-all active:scale-95 ${
                 isVisited(destination.id)
                   ? "bg-blue-500 text-white hover:bg-blue-600 shadow-md"
                   : "bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
               }`}
             >
-              <CheckCircle2 className="w-4 h-4 mr-1.5" />
-              {isVisited(destination.id) ? "Visited" : "Mark as Visited"}
+              <CheckCircle2 className="w-4 h-4" />
             </button>
 
+            {/* Symbol-Only Share Button */}
             <button
               onClick={async () => {
                 const cleanUrl = `${window.location.origin}/destinations/${destination.id}`;
@@ -412,13 +482,14 @@ export default function DestinationDetails() {
                   toast.success("Link copied to clipboard!");
                 }
               }}
-              className="inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
-              title="Share destination via native share sheet"
+              aria-label="Share destination"
+              title="Share destination"
+              className="p-2.5 rounded-xl transition-all active:scale-95 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
             >
-              <Share2 className="w-4 h-4 mr-1.5" />
-              Share
+              <Share2 className="w-4.5 h-4.5" />
             </button>
 
+            {/* Symbol-Only Copy Link Button */}
             <button
               onClick={async () => {
                 const cleanUrl = `${window.location.origin}/destinations/${destination.id}`;
@@ -429,11 +500,11 @@ export default function DestinationDetails() {
                   toast.error("Failed to copy link.");
                 }
               }}
-              className="inline-flex items-center text-sm font-medium px-3 py-1.5 rounded-lg transition-colors bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
-              title="Copy destination link to clipboard"
+              aria-label="Copy destination link"
+              title="Copy Link"
+              className="p-2.5 rounded-xl transition-all active:scale-95 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
             >
-              <Copy className="w-4 h-4 mr-1.5" />
-              Copy Link
+              <Copy className="w-4.5 h-4.5" />
             </button>
           </div>
         </div>
