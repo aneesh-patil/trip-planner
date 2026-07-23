@@ -407,16 +407,17 @@ export default function DestinationDetails() {
               Add to Itinerary
             </button>
 
-            {/* Symbol-Only Get Directions Button */}
+            {/* Get Directions Text Button */}
             <a
               href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(homeStation)}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Get Directions"
               title="Get Directions"
-              className="p-2.5 rounded-xl transition-all active:scale-95 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
+              className="inline-flex items-center text-sm font-medium px-3.5 py-2 rounded-xl transition-all active:scale-95 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
             >
-              <MapPin className="w-4.5 h-4.5" />
+              <MapPin className="w-4 h-4 mr-1.5" />
+              Get Directions
             </a>
 
             {/* Want to Visit / Bucket List Toggle */}
@@ -430,15 +431,16 @@ export default function DestinationDetails() {
               title={
                 isFavorite(destination.id) ? "On Bucket List" : "Want to Visit"
               }
-              className={`inline-flex items-center text-sm font-medium px-3 py-2 rounded-xl transition-all active:scale-95 ${
+              className={`inline-flex items-center text-sm font-medium px-3.5 py-2 rounded-xl transition-all active:scale-95 ${
                 isFavorite(destination.id)
                   ? "bg-rose-500 text-white hover:bg-rose-600 shadow-md"
                   : "bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
               }`}
             >
               <Heart
-                className={`w-4 h-4 ${isFavorite(destination.id) ? "fill-current" : ""}`}
+                className={`w-4 h-4 mr-1.5 ${isFavorite(destination.id) ? "fill-current" : ""}`}
               />
+              {isFavorite(destination.id) ? "Saved" : "Want to Visit"}
             </button>
 
             {/* Visited Toggle */}
@@ -450,13 +452,14 @@ export default function DestinationDetails() {
                   : "Mark destination as visited"
               }
               title={isVisited(destination.id) ? "Visited" : "Mark as Visited"}
-              className={`inline-flex items-center text-sm font-medium px-3 py-2 rounded-xl transition-all active:scale-95 ${
+              className={`inline-flex items-center text-sm font-medium px-3.5 py-2 rounded-xl transition-all active:scale-95 ${
                 isVisited(destination.id)
                   ? "bg-blue-500 text-white hover:bg-blue-600 shadow-md"
                   : "bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
               }`}
             >
-              <CheckCircle2 className="w-4 h-4" />
+              <CheckCircle2 className="w-4 h-4 mr-1.5" />
+              {isVisited(destination.id) ? "Visited" : "Mark Visited"}
             </button>
 
             {/* Symbol-Only Share Button */}
