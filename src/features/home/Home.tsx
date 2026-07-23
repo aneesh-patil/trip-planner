@@ -98,14 +98,6 @@ export default function Home() {
 
   const topRecommendations = recommendedDestinations.slice(0, 3);
 
-  const summerEscapes = useMemo(() => {
-    return allDestinations.filter((d) => d.ratings.summer >= 4.2).slice(0, 3);
-  }, [allDestinations]);
-
-  const hiddenGems = useMemo(() => {
-    return allDestinations.filter((d) => d.ratings.overall >= 4.4).slice(0, 3);
-  }, [allDestinations]);
-
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero & Planner Section */}
@@ -583,59 +575,6 @@ export default function Home() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Curated Inspirational Sections */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
-        <div className="container mx-auto px-4 space-y-16">
-          {/* Section 1: Summer Escapes */}
-          <div>
-            <div className="mb-8">
-              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-2 text-slate-900 dark:text-white">
-                ☀️ Summer Escapes
-              </h2>
-              <p className="text-slate-500 dark:text-slate-400">
-                Top-rated sun-soaked escapes, perfect for warmer days.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {summerEscapes.map((dest) => (
-                <DestinationCard
-                  key={dest.id}
-                  destination={dest}
-                  partySize={partySize}
-                  carMode={carMode}
-                  publicModes={publicModes}
-                  activeTransportMode="train"
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Section 2: Hidden Gems */}
-          <div>
-            <div className="mb-8">
-              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-2 text-slate-900 dark:text-white">
-                💎 Premium Hidden Gems
-              </h2>
-              <p className="text-slate-500 dark:text-slate-400">
-                Outstanding destinations highly rated by TabiMap explorers.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {hiddenGems.map((dest) => (
-                <DestinationCard
-                  key={dest.id}
-                  destination={dest}
-                  partySize={partySize}
-                  carMode={carMode}
-                  publicModes={publicModes}
-                  activeTransportMode="train"
-                />
-              ))}
-            </div>
           </div>
         </div>
       </section>
