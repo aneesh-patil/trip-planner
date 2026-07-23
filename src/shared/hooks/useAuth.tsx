@@ -1,20 +1,48 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import type { ReactNode } from "react";
-import type { User } from "@supabase/supabase-js";
+import type {
+  User,
+  Provider,
+  AuthResponse,
+  UserResponse,
+  AuthError,
+} from "@supabase/supabase-js";
 import { supabase } from "@/lib/supabase";
-
 import { toast } from "sonner";
+
+export interface UserPreferencesPayload {
+  partySize?: number;
+  carMode?: string;
+  publicModes?: string[];
+  preferences_set?: boolean;
+  [key: string]: unknown;
+}
+
+export interface UserProfileUpdateData {
+  username?: string;
+  home_city?: string;
+  dob?: string;
+  units?: string;
+  emailNotifications?: boolean;
+  preferences?: UserPreferencesPayload;
+  [key: string]: unknown;
+}
+
+export type OAuthResponse = {
+  data: { provider: string; url: string | null };
+  error: AuthError | null;
+};
 
 interface AuthContextType {
   user: User | null;
   loading: boolean;
-  signInWithGoogle: () => void;
-  signInWithTwitter: () => void;
-  signInWithLine: () => void;
-  signInWithEmail: (email: string, password: string) => Promise<any>;
-  signUpWithEmail: (email: string, password: string) => Promise<any>;
-  signOut: () => void;
-  updateUserProfile: (data: any) => Promise<any>;
+  signInWithGoogle: () => Promise<OAuthResponse> | undefined;
+  signInWithTwitter: () => Promise<OAuthResponse> | undefined;
+  signInWithLine: () => Promise<OAuthResponse> | undefined;
+  signInWithEmail: (email: string, password: string) => Promise<AuthResponse>;
+  signUpWithEmail: (email: string, password: string) => Promise<AuthResponse>;
+  signOut: () => Promise<{ error: AuthError | null }> | undefined;
+  updateUserProfile: (data: UserProfileUpdateData) => Promise<UserResponse>;
   deleteAccount: () => Promise<void>;
 }
 
@@ -61,7 +89,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signInWithLine = () =>
     supabase?.auth.signInWithOAuth({
-      provider: "line" as any,
+      provider: "line" as Provider,
       options: { redirectTo: window.location.origin },
     });
 
@@ -73,7 +101,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signOut = () => supabase?.auth.signOut();
 
-  const updateUserProfile = (data: any) => supabase!.auth.updateUser({ data });
+  const updateUserProfile = (data: UserProfileUpdateData) =>
+    supabase!.auth.updateUser({ data });
 
   const deleteAccount = async () => {
     if (user && supabase) {

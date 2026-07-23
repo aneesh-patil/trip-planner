@@ -5,7 +5,13 @@ export function getDestinationList(): Partial<Destination>[] {
   const list = destinationsIndex as Partial<Destination>[];
   return list.map((dest) => {
     if (dest.transportOptions?.car && !dest.transportOptions.my_car) {
-      dest.transportOptions.my_car = dest.transportOptions.car;
+      return {
+        ...dest,
+        transportOptions: {
+          ...dest.transportOptions,
+          my_car: dest.transportOptions.car,
+        },
+      };
     }
     return dest;
   });
@@ -17,7 +23,13 @@ export async function getDestination(id: string): Promise<Destination | null> {
     if (!response.ok) throw new Error(`Failed to fetch destination: ${id}`);
     const dest = await response.json();
     if (dest.transportOptions?.car && !dest.transportOptions.my_car) {
-      dest.transportOptions.my_car = dest.transportOptions.car;
+      return {
+        ...dest,
+        transportOptions: {
+          ...dest.transportOptions,
+          my_car: dest.transportOptions.car,
+        },
+      };
     }
     return dest;
   } catch (error) {

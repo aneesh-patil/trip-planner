@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import {
   Sparkles,
@@ -30,18 +30,13 @@ import {
 import { Slider } from "@/shared/components/ui/slider";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { useAuth } from "@/shared/hooks/useAuth";
-import {
-  fetchWeatherTabContext,
-  getTabWeatherSummary,
-  type WeatherTabContext,
-  type WeatherTab,
-} from "@/shared/services/weather/WeatherTabService";
-import {
-  getRecommendations,
-  getValidModes,
-} from "@/shared/services/recommendation/RecommendationService";
+import { getTabWeatherSummary } from "@/shared/services/weather/WeatherTabService";
 import StationInput from "@/shared/components/StationInput";
 import RouletteModal from "@/features/home/components/RouletteModal";
+
+import { useTripPlannerState } from "@/features/home/hooks/useTripPlannerState";
+import { useWeatherContext } from "@/features/home/hooks/useWeatherContext";
+import { useTripRecommendations } from "@/features/home/hooks/useTripRecommendations";
 
 export default function Home() {
   const allDestinations = getDestinationList() as Destination[];
@@ -49,135 +44,59 @@ export default function Home() {
   const { isVisited, homeStationCoords } = useTripStore();
   const { user } = useAuth();
 
-  // Smart Planner State
-  const [tripType, setTripType] = useState<string>("any");
-  const [budget, setBudget] = useState<number>(30000);
-  const [carMode, setCarMode] = useState<string>("none");
-  const [publicModes, setPublicModes] = useState<string[]>(["train"]);
-  const [partySize, setPartySize] = useState<number>(2);
-  const [weather, setWeather] = useState<string>("any");
+  const {
+    tripType,
+    setTripType,
+    budget,
+    setBudget,
+    carMode,
+    publicModes,
+    partySize,
+    weather,
+    setWeather,
+  } = useTripPlannerState(user);
 
-  // Sync preferences on load
-  useEffect(() => {
-    if (user?.user_metadata?.preferences) {
-      setCarMode(user.user_metadata.preferences.carMode || "none");
-      setPublicModes(user.user_metadata.preferences.publicModes || ["train"]);
-      setPartySize(user.user_metadata.preferences.partySize || 2);
-    }
-  }, [user]);
-
-  const [weatherContext, setWeatherContext] =
-    useState<WeatherTabContext | null>(null);
-  const [activeTabId, setActiveTabId] = useState<string>("today");
-  const [customDate, setCustomDate] = useState<string | null>(null);
-
-  useEffect(() => {
-    const lat = homeStationCoords?.lat || 35.6762;
-    const lng = homeStationCoords?.lng || 139.6503;
-    fetchWeatherTabContext(lat, lng)
-      .then((ctx) => {
-        setWeatherContext(ctx);
-        setActiveTabId(ctx.activeTabId);
-      })
-      .catch((err) => console.error("Weather tab fetch error:", err));
-  }, [homeStationCoords]);
-
-  const handleCustomDateSelect = (selectedDate: string) => {
-    if (!weatherContext) return;
-    const matchingPreset = weatherContext.tabs.find(
-      (t) => !t.isCustom && t.dates.includes(selectedDate),
-    );
-
-    if (matchingPreset) {
-      const cleanTabs = weatherContext.tabs.filter((t) => !t.isCustom);
-      setWeatherContext({
-        ...weatherContext,
-        tabs: cleanTabs,
-      });
-      setCustomDate(null);
-      setActiveTabId(matchingPreset.id);
-    } else {
-      const customTabId = `custom_${selectedDate}`;
-      const [y, m, d] = selectedDate.split("-").map(Number);
-      const dateObj = new Date(y, m - 1, d);
-      const label = dateObj.toLocaleDateString("en-US", {
-        month: "short",
-        day: "numeric",
-      });
-      const customTab: WeatherTab = {
-        id: customTabId,
-        label,
-        dates: [selectedDate],
-        isCustom: true,
-      };
-
-      const baseTabs = weatherContext.tabs.filter((t) => !t.isCustom);
-      setWeatherContext({
-        ...weatherContext,
-        tabs: [...baseTabs, customTab],
-      });
-      setActiveTabId(customTabId);
-    }
-  };
-
-  const currentTab = useMemo(() => {
-    if (!weatherContext) return null;
-    return (
-      weatherContext.tabs.find((t) => t.id === activeTabId) ||
-      weatherContext.tabs[0]
-    );
-  }, [weatherContext, activeTabId]);
+  const {
+    weatherContext,
+    setWeatherContext,
+    activeTabId,
+    setActiveTabId,
+    customDate,
+    setCustomDate,
+    currentTab,
+    handleCustomDateSelect,
+  } = useWeatherContext(homeStationCoords);
 
   const currentSituation = useMemo(() => {
     if (!weatherContext || !currentTab) return null;
     return getTabWeatherSummary(currentTab, weatherContext.forecastMap);
   }, [weatherContext, currentTab]);
 
-  // Calculate Smart Match Score using the new service
-  const scoredDestinations = useMemo(() => {
-    return getRecommendations(allDestinations, {
+  const { recommendedDestinations, rouletteCandidates } =
+    useTripRecommendations({
+      allDestinations,
+      currentTab: currentTab || undefined,
+      weatherContextMap: weatherContext?.forecastMap
+        ? (new Map(
+            Array.from(weatherContext.forecastMap.entries()).map(([k, v]) => [
+              k,
+              { desc: v.desc, icon: v.icon },
+            ]),
+          ) as Map<string, { desc: string; icon: string }>)
+        : undefined,
       tripType,
       budget,
       carMode,
       publicModes,
       partySize,
       weather,
-      visitedIds: allDestinations
-        .filter((d) => isVisited(d.id!))
-        .map((d) => d.id!),
-      currentWeather: currentSituation
-        ? {
-            temp: currentSituation.temp,
-            desc: currentSituation.desc,
-          }
-        : null,
-      homeStationCoords: homeStationCoords || null,
+      homeStationCoords,
+      isVisited,
     });
-  }, [
-    allDestinations,
-    tripType,
-    budget,
-    carMode,
-    publicModes,
-    partySize,
-    weather,
-    isVisited,
-    currentSituation,
-    homeStationCoords,
-  ]);
 
   const [rouletteOpen, setRouletteOpen] = useState(false);
 
-  const rouletteCandidates = useMemo(() => {
-    return scoredDestinations.filter((dest) => {
-      if (!dest.id || isVisited(dest.id)) return false;
-      const validModes = getValidModes(dest, carMode, publicModes);
-      if (validModes.length === 0) return false;
-      return true;
-    }) as Destination[];
-  }, [scoredDestinations, isVisited, carMode, publicModes]);
-
-  const topRecommendations = scoredDestinations.slice(0, 3);
+  const topRecommendations = recommendedDestinations.slice(0, 3);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -308,7 +227,7 @@ export default function Home() {
             <RouletteModal
               isOpen={rouletteOpen}
               onClose={() => setRouletteOpen(false)}
-              candidates={rouletteCandidates}
+              candidates={rouletteCandidates as Destination[]}
               partySize={partySize}
               carMode={carMode}
               publicModes={publicModes}
@@ -638,7 +557,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {topRecommendations.map((dest, index) => (
+            {topRecommendations.map((dest: any, index: number) => (
               <div key={dest.id} className="relative flex flex-col h-full">
                 <div className="absolute -top-4 -left-4 w-10 h-10 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full flex items-center justify-center font-black text-xl z-10 shadow-lg border-4 border-white dark:border-background">
                   #{index + 1}
