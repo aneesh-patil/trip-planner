@@ -32,34 +32,28 @@ export default function Navbar() {
   // Desktop dropdown state
   const [discoverOpen, setDiscoverOpen] = useState(false);
   const [planOpen, setPlanOpen] = useState(false);
-  const [passportOpen, setPassportOpen] = useState(false);
 
   // Mobile accordion state
   const [mobileDiscoverOpen, setMobileDiscoverOpen] = useState(true);
   const [mobilePlanOpen, setMobilePlanOpen] = useState(true);
-  const [mobilePassportOpen, setMobilePassportOpen] = useState(true);
 
   // DOM refs for click-outside and focus management
   const userMenuRef = useRef<HTMLDivElement>(null);
   const discoverRef = useRef<HTMLDivElement>(null);
   const planRef = useRef<HTMLDivElement>(null);
-  const passportRef = useRef<HTMLDivElement>(null);
 
   const discoverBtnRef = useRef<HTMLButtonElement>(null);
   const planBtnRef = useRef<HTMLButtonElement>(null);
-  const passportBtnRef = useRef<HTMLButtonElement>(null);
 
   // Hover grace window timers (180ms delay)
   const discoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const planTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const passportTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setMenuOpen(false);
     setUserMenuOpen(false);
     setDiscoverOpen(false);
     setPlanOpen(false);
-    setPassportOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -78,12 +72,6 @@ export default function Navbar() {
       }
       if (planRef.current && !planRef.current.contains(event.target as Node)) {
         setPlanOpen(false);
-      }
-      if (
-        passportRef.current &&
-        !passportRef.current.contains(event.target as Node)
-      ) {
-        setPassportOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -111,16 +99,6 @@ export default function Navbar() {
     }, 180);
   };
 
-  const handleMouseEnterPassport = () => {
-    if (passportTimerRef.current) clearTimeout(passportTimerRef.current);
-    setPassportOpen(true);
-  };
-  const handleMouseLeavePassport = () => {
-    passportTimerRef.current = setTimeout(() => {
-      setPassportOpen(false);
-    }, 180);
-  };
-
   // Keyboard accessibility
   const handleKeyDownDiscover = (e: React.KeyboardEvent) => {
     if (e.key === "Escape") {
@@ -133,13 +111,6 @@ export default function Navbar() {
     if (e.key === "Escape") {
       setPlanOpen(false);
       planBtnRef.current?.focus();
-    }
-  };
-
-  const handleKeyDownPassport = (e: React.KeyboardEvent) => {
-    if (e.key === "Escape") {
-      setPassportOpen(false);
-      passportBtnRef.current?.focus();
     }
   };
 
@@ -341,62 +312,18 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* 3. Passport Category */}
-            <div
-              className="relative group"
-              ref={passportRef}
-              onMouseEnter={handleMouseEnterPassport}
-              onMouseLeave={handleMouseLeavePassport}
-              onKeyDown={handleKeyDownPassport}
+            {/* 3. Passport Category (Direct Link) */}
+            <Link
+              to="/passport"
+              className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
+                isPassportActive
+                  ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
+                  : "text-slate-600 dark:text-slate-300 hover:text-emerald-600"
+              }`}
             >
-              <button
-                ref={passportBtnRef}
-                onClick={() => setPassportOpen((o) => !o)}
-                aria-expanded={passportOpen}
-                aria-haspopup="true"
-                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
-                  isPassportActive
-                    ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
-                    : "text-slate-600 dark:text-slate-300 hover:text-emerald-600"
-                }`}
-              >
-                <Compass className="w-4 h-4" />
-                <span>Passport</span>
-                <ChevronDown
-                  className={`w-3.5 h-3.5 opacity-70 transition-transform duration-200 ${
-                    passportOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {passportOpen && (
-                <div className="absolute top-full left-0 pt-1.5 w-64 z-50">
-                  <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 animate-in fade-in zoom-in-95 duration-150">
-                    <Link
-                      to="/passport"
-                      onClick={() => setPassportOpen(false)}
-                      className={`flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item ${
-                        location.pathname.startsWith("/passport")
-                          ? "bg-slate-50 dark:bg-slate-800/80 font-bold"
-                          : ""
-                      }`}
-                    >
-                      <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
-                        <Compass className="w-4 h-4" />
-                      </div>
-                      <div>
-                        <div className="text-xs font-bold text-slate-900 dark:text-white">
-                          Overview
-                        </div>
-                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                          Travel history & achievements hub
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
+              <Compass className="w-4 h-4" />
+              <span>Passport</span>
+            </Link>
           </nav>
 
           <div className="hidden sm:flex items-center gap-2">
@@ -587,32 +514,20 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Passport Section Accordion */}
+            {/* Passport Section (Direct Mobile Link) */}
             <div className="pb-2">
-              <button
-                onClick={() => setMobilePassportOpen((o) => !o)}
-                className="w-full flex items-center justify-between px-3 py-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+              <Link
+                to="/passport"
+                onClick={() => setMenuOpen(false)}
+                className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                  isPassportActive
+                    ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 font-bold"
+                    : "text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800"
+                }`}
               >
+                <Compass className="w-4 h-4 text-emerald-500" />
                 <span>Passport</span>
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    mobilePassportOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {mobilePassportOpen && (
-                <div className="flex flex-col gap-1 mt-1 pl-2">
-                  <Link
-                    to="/passport"
-                    onClick={() => setMenuOpen(false)}
-                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                  >
-                    <Compass className="w-4 h-4 text-emerald-500" /> Dashboard &
-                    History
-                  </Link>
-                </div>
-              )}
+              </Link>
             </div>
 
             <div className="my-2 border-t border-slate-200 dark:border-slate-800" />

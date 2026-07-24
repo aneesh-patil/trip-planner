@@ -9,9 +9,8 @@ import type { PassportTab } from "./types";
 import { PassportNav } from "./components/PassportNav";
 import { PassportOverview } from "./components/PassportOverview";
 import { PassportJapanMap } from "./components/PassportJapanMap";
-import { PassportCalendar } from "./components/PassportCalendar";
 import { PassportTimeline } from "./components/PassportTimeline";
-import { PassportCollections } from "./components/PassportCollections";
+import { PassportAchievements } from "./components/PassportAchievements";
 import { PassportBadges } from "./components/PassportBadges";
 import { PassportStatistics } from "./components/PassportStatistics";
 
@@ -90,9 +89,8 @@ export default function Passport() {
           <PassportOverview onSelectTab={setActiveTab} />
         )}
         {activeTab === "japan-map" && <PassportJapanMap />}
-        {activeTab === "calendar" && <PassportCalendar />}
         {activeTab === "timeline" && <PassportTimeline />}
-        {activeTab === "collections" && <PassportCollections />}
+        {activeTab === "achievements" && <PassportAchievements />}
         {activeTab === "badges" && <PassportBadges />}
         {activeTab === "statistics" && <PassportStatistics />}
       </main>

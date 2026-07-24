@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import {
   Compass,
@@ -87,7 +86,7 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
 
         {/* Card 3: Achievements */}
         <div
-          onClick={() => onSelectTab("badges")}
+          onClick={() => onSelectTab("achievements")}
           className="cursor-pointer p-5 rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/40 border border-amber-200/80 dark:border-amber-800/60 hover:shadow-md transition-all group"
         >
           <div className="flex items-center justify-between mb-3">
@@ -95,7 +94,7 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
               <Trophy className="w-5 h-5" />
             </div>
             <span className="text-xs font-extrabold text-amber-700 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/60 px-2.5 py-1 rounded-full">
-              Heritage Badges
+              Heritage Goals
             </span>
           </div>
           <div className="text-3xl font-black text-slate-900 dark:text-white">
@@ -105,14 +104,14 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
             </span>
           </div>
           <div className="text-xs font-semibold text-slate-600 dark:text-slate-400 mt-1 flex items-center justify-between">
-            <span>Unlocked Badges</span>
+            <span>Achievements Unlocked</span>
             <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
         </div>
 
-        {/* Card 4: Planned Trips */}
+        {/* Card 4: Timeline */}
         <div
-          onClick={() => onSelectTab("calendar")}
+          onClick={() => onSelectTab("timeline")}
           className="cursor-pointer p-5 rounded-3xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/40 dark:to-pink-950/40 border border-purple-200/80 dark:border-purple-800/60 hover:shadow-md transition-all group"
         >
           <div className="flex items-center justify-between mb-3">
@@ -120,14 +119,14 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
               <Calendar className="w-5 h-5" />
             </div>
             <span className="text-xs font-extrabold text-purple-700 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/60 px-2.5 py-1 rounded-full">
-              Itineraries
+              Timeline Feed
             </span>
           </div>
           <div className="text-3xl font-black text-slate-900 dark:text-white">
             {trips.length}
           </div>
           <div className="text-xs font-semibold text-slate-600 dark:text-slate-400 mt-1 flex items-center justify-between">
-            <span>Planned Itineraries</span>
+            <span>Travel Activity Log</span>
             <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
         </div>
@@ -151,14 +150,14 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
         </button>
 
         <button
-          onClick={() => onSelectTab("collections")}
+          onClick={() => onSelectTab("achievements")}
           className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-left hover:border-emerald-500 transition-all shadow-sm group"
         >
-          <div className="w-10 h-10 rounded-2xl bg-teal-100 dark:bg-teal-950/80 text-teal-600 dark:text-teal-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-            <Sparkles className="w-5 h-5" />
+          <div className="w-10 h-10 rounded-2xl bg-amber-100 dark:bg-amber-950/80 text-amber-600 dark:text-amber-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <Trophy className="w-5 h-5" />
           </div>
           <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
-            Collections Progress
+            Heritage Achievements
           </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400">
             Track your progress across UNESCO World Heritage sites & Japanese
@@ -166,20 +165,20 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
           </p>
         </button>
 
-        <Link
-          to="/destinations"
-          className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-left hover:border-emerald-500 transition-all shadow-sm group block"
+        <button
+          onClick={() => onSelectTab("badges")}
+          className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-left hover:border-emerald-500 transition-all shadow-sm group"
         >
-          <div className="w-10 h-10 rounded-2xl bg-blue-100 dark:bg-blue-950/80 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-            <MapPin className="w-5 h-5" />
+          <div className="w-10 h-10 rounded-2xl bg-purple-100 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <Sparkles className="w-5 h-5" />
           </div>
           <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
-            Discover More Sights
+            Milestone Badges
           </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            Browse Japan sights directory to log new places you have visited.
+            Earn badges as you explore Japan's regions and log new places.
           </p>
-        </Link>
+        </button>
       </div>
     </div>
   );

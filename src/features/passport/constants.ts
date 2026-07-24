@@ -1,10 +1,9 @@
 import {
   Compass,
   Map,
-  Calendar,
   Clock,
-  FolderCheck,
   Trophy,
+  FolderCheck,
   BarChart3,
 } from "lucide-react";
 import type { ComponentType } from "react";
@@ -13,9 +12,8 @@ export interface PassportSectionConfig {
   id:
     | "overview"
     | "japan-map"
-    | "calendar"
     | "timeline"
-    | "collections"
+    | "achievements"
     | "badges"
     | "statistics";
   label: string;
@@ -40,13 +38,6 @@ export const PASSPORT_SECTIONS: readonly PassportSectionConfig[] = [
     icon: Map,
   },
   {
-    id: "calendar",
-    label: "Travel Calendar",
-    shortLabel: "📅 Travel Calendar",
-    description: "Activity log grouped by year and month",
-    icon: Calendar,
-  },
-  {
     id: "timeline",
     label: "Timeline",
     shortLabel: "📜 Timeline",
@@ -54,18 +45,18 @@ export const PASSPORT_SECTIONS: readonly PassportSectionConfig[] = [
     icon: Clock,
   },
   {
-    id: "collections",
-    label: "Collections Progress",
-    shortLabel: "📁 Collections",
-    description: "Unlocked collections & regional completion metrics",
-    icon: FolderCheck,
+    id: "achievements",
+    label: "Achievements",
+    shortLabel: "🏆 Achievements",
+    description: "Unlocked heritage list benchmarks & curated travel goals",
+    icon: Trophy,
   },
   {
     id: "badges",
-    label: "Badges & Achievements",
-    shortLabel: "🏆 Badges",
-    description: "Unlocked travel milestones & heritage badges",
-    icon: Trophy,
+    label: "Badges",
+    shortLabel: "🎖️ Badges",
+    description: "Earned travel milestone & regional exploration badges",
+    icon: FolderCheck,
   },
   {
     id: "statistics",
