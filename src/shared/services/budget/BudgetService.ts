@@ -28,7 +28,10 @@ export function getTransportCost(
   mode: string,
   partySize: number = 2,
 ): number {
-  if (mode === "shinkansen" && dest.transportOptions?.shinkansen) {
+  if (
+    mode === "shinkansen" &&
+    dest.transportOptions?.shinkansen !== undefined
+  ) {
     const mins = dest.transportOptions.shinkansen;
     // Shinkansen per-person one-way = ¥1,200 base + mins * ¥160 (includes reserved seat surcharge)
     const oneWayPerPerson = 1200 + mins * 160;
@@ -36,7 +39,7 @@ export function getTransportCost(
     return Math.floor(roundTripPerPerson * partySize);
   }
 
-  if (mode === "bus" && dest.transportOptions?.bus) {
+  if (mode === "bus" && dest.transportOptions?.bus !== undefined) {
     const mins = dest.transportOptions.bus;
     // Highway Bus per-person one-way = ¥1,000 + mins * ¥16
     const oneWayPerPerson = 1000 + mins * 16;
@@ -44,7 +47,7 @@ export function getTransportCost(
     return Math.floor(roundTripPerPerson * partySize);
   }
 
-  if (mode === "car" && dest.transportOptions?.car) {
+  if (mode === "car" && dest.transportOptions?.car !== undefined) {
     const driveTimeOneWayMin = dest.transportOptions.car;
     const distanceKm = driveTimeOneWayMin * 1.2;
     const tripDurationHours = dest.totalTripHours || 8;
@@ -57,7 +60,7 @@ export function getTransportCost(
     return (rentalFee + tollsRoundTrip + gasRoundTrip) * carsNeeded;
   }
 
-  if (mode === "my_car" && dest.transportOptions?.my_car) {
+  if (mode === "my_car" && dest.transportOptions?.my_car !== undefined) {
     const driveTimeOneWayMin = dest.transportOptions.my_car;
     const distanceKm = driveTimeOneWayMin * 1.2;
     const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
@@ -68,7 +71,7 @@ export function getTransportCost(
     return (tollsRoundTrip + gasRoundTrip) * carsNeeded;
   }
 
-  if (mode === "train" && dest.transportOptions?.train) {
+  if (mode === "train" && dest.transportOptions?.train !== undefined) {
     const mins = dest.transportOptions.train;
     // Trains > 70 mins usually require Limited Express surcharges (e.g. Romancecar, Hitachi, Azusa)
     const isLimitedExpress = mins > 70;
@@ -96,7 +99,9 @@ export function getAdjustedBudget(
   if (
     activeMode !== "all" &&
     activeMode !== "any" &&
-    dest.transportOptions?.[activeMode as keyof typeof dest.transportOptions]
+    dest.transportOptions?.[
+      activeMode as keyof typeof dest.transportOptions
+    ] !== undefined
   ) {
     mode = activeMode;
   } else {
