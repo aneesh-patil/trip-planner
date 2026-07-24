@@ -7,7 +7,6 @@ const CAR_RENTAL_RATES = {
   extraPerHour: 1540,
 } as const;
 const GAS_PRICE_PER_LITER = 175; // ¥175/L current avg
-const TOLL_RATE_PER_KM = 30; // ~¥30/km for NEXCO highways
 
 function getRentalBaseFee(tripDurationHours: number): number {
   if (tripDurationHours <= 6) return CAR_RENTAL_RATES.upTo6h;
@@ -21,7 +20,7 @@ function getRentalBaseFee(tripDurationHours: number): number {
 
 /**
  * Returns the round-trip transport cost for the given party size.
- * This is the single source of truth.
+ * Single source of truth for transport fare calculation across TabiMap.
  */
 export function getTransportCost(
   dest: Destination,
@@ -33,28 +32,28 @@ export function getTransportCost(
     dest.transportOptions?.shinkansen !== undefined
   ) {
     const mins = dest.transportOptions.shinkansen;
-    // Shinkansen per-person one-way = ¥1,200 base + mins * ¥160 (includes reserved seat surcharge)
-    const oneWayPerPerson = 1200 + mins * 160;
+    // Shinkansen base fare + express surcharge: ¥2,200 + mins * ¥62
+    const oneWayPerPerson = Math.round(2200 + mins * 62);
     const roundTripPerPerson = oneWayPerPerson * 2;
     return Math.floor(roundTripPerPerson * partySize);
   }
 
   if (mode === "bus" && dest.transportOptions?.bus !== undefined) {
     const mins = dest.transportOptions.bus;
-    // Highway Bus per-person one-way = ¥1,000 + mins * ¥16
-    const oneWayPerPerson = 1000 + mins * 16;
+    // Highway Bus fare: ¥800 + mins * ¥11
+    const oneWayPerPerson = Math.round(800 + mins * 11);
     const roundTripPerPerson = oneWayPerPerson * 2;
     return Math.floor(roundTripPerPerson * partySize);
   }
 
   if (mode === "car" && dest.transportOptions?.car !== undefined) {
     const driveTimeOneWayMin = dest.transportOptions.car;
-    const distanceKm = driveTimeOneWayMin * 1.2;
+    const distanceKm = driveTimeOneWayMin * 1.1;
     const tripDurationHours = dest.totalTripHours || 8;
     const rentalFee = getRentalBaseFee(tripDurationHours);
-    const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
+    const tollsRoundTrip = Math.floor(distanceKm * 18 * 2);
     const gasRoundTrip = Math.floor(
-      ((distanceKm * 2) / 13) * GAS_PRICE_PER_LITER, // 13 km/L avg rental car
+      ((distanceKm * 2) / 14) * GAS_PRICE_PER_LITER,
     );
     const carsNeeded = Math.ceil(partySize / 4);
     return (rentalFee + tollsRoundTrip + gasRoundTrip) * carsNeeded;
@@ -62,10 +61,10 @@ export function getTransportCost(
 
   if (mode === "my_car" && dest.transportOptions?.my_car !== undefined) {
     const driveTimeOneWayMin = dest.transportOptions.my_car;
-    const distanceKm = driveTimeOneWayMin * 1.2;
-    const tollsRoundTrip = Math.floor(distanceKm * TOLL_RATE_PER_KM * 2);
+    const distanceKm = driveTimeOneWayMin * 1.1;
+    const tollsRoundTrip = Math.floor(distanceKm * 18 * 2);
     const gasRoundTrip = Math.floor(
-      ((distanceKm * 2) / 13) * GAS_PRICE_PER_LITER, // 13 km/L avg car
+      ((distanceKm * 2) / 14) * GAS_PRICE_PER_LITER,
     );
     const carsNeeded = Math.ceil(partySize / 4);
     return (tollsRoundTrip + gasRoundTrip) * carsNeeded;
@@ -73,11 +72,18 @@ export function getTransportCost(
 
   if (mode === "train" && dest.transportOptions?.train !== undefined) {
     const mins = dest.transportOptions.train;
-    // Trains > 70 mins usually require Limited Express surcharges (e.g. Romancecar, Hitachi, Azusa)
-    const isLimitedExpress = mins > 70;
-    const oneWayPerPerson = isLimitedExpress
-      ? 800 + mins * 40
-      : Math.max(400, 150 + mins * 25);
+    // Realistic JR / Private Rail fare curve in Japan based on travel time:
+    // mins <= 25: local metro / short train (¥160 - ¥360)
+    // 25 < mins <= 65: commuter / suburban train (¥360 - ¥890)
+    // mins > 65: regional JR local train / limited express (¥890 + (mins - 65) * 22)
+    let oneWayPerPerson: number;
+    if (mins <= 25) {
+      oneWayPerPerson = Math.round(160 + mins * 8);
+    } else if (mins <= 65) {
+      oneWayPerPerson = Math.round(250 + (mins - 25) * 16);
+    } else {
+      oneWayPerPerson = Math.round(890 + (mins - 65) * 22);
+    }
     const roundTripPerPerson = oneWayPerPerson * 2;
     return Math.floor(roundTripPerPerson * partySize);
   }
