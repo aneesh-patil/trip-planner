@@ -9,6 +9,7 @@ import {
   Trash2,
   Plus,
   History,
+  AlertTriangle,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 
@@ -19,8 +20,6 @@ interface VisitedDateModalProps {
     id: string;
     name: string;
   };
-  onConfirm?: (date: string) => void;
-  initialDate?: string;
 }
 
 type DatePrecision = "exact" | "month" | "year";
@@ -29,9 +28,9 @@ export function VisitedDateModal({
   isOpen,
   onClose,
   destination,
-  onConfirm,
 }: VisitedDateModalProps) {
-  const { getVisitedDates, addVisitedDate, removeVisitedDate } = useTripStore();
+  const { getVisitedDates, addVisitedDate, removeVisitedDate, clearAllVisits } =
+    useTripStore();
 
   const getTodayStr = () => new Date().toISOString().split("T")[0];
   const getCurrentMonthStr = () => new Date().toISOString().substring(0, 7);
@@ -63,12 +62,12 @@ export function VisitedDateModal({
     else if (precision === "year") finalValue = yearVal;
 
     if (!finalValue) return;
+    addVisitedDate(destination.id, finalValue);
+  };
 
-    if (onConfirm) {
-      onConfirm(finalValue);
-    } else {
-      addVisitedDate(destination.id, finalValue);
-    }
+  const handleUnmarkAll = () => {
+    clearAllVisits(destination.id);
+    onClose();
   };
 
   const setPresetDate = (daysAgo: number) => {
@@ -93,21 +92,21 @@ export function VisitedDateModal({
         className="w-full max-w-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl overflow-hidden transition-all animate-in zoom-in-95 duration-200 flex flex-col max-h-[90vh]"
         role="dialog"
         aria-modal="true"
-        aria-labelledby="visited-modal-title"
+        aria-labelledby="visited-history-modal-title"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-800 shrink-0">
           <div>
             <h2
-              id="visited-modal-title"
+              id="visited-history-modal-title"
               className="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2"
             >
               <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-              Visit History & Tracking
+              Visit History & Multi-Date Log
             </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 truncate max-w-xs sm:max-w-md">
-              Log & manage visit dates for{" "}
+              Manage visits for{" "}
               <span className="font-semibold text-slate-700 dark:text-slate-200">
                 {destination.name}
               </span>
@@ -129,17 +128,16 @@ export function VisitedDateModal({
             <div className="flex items-center justify-between mb-2.5">
               <h3 className="text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                 <History className="w-4 h-4 text-emerald-500" />
-                Recorded Visits ({existingDates.length})
+                Logged Visits ({existingDates.length})
               </h3>
             </div>
 
             {existingDates.length === 0 ? (
               <div className="text-center py-4 px-3 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-dashed border-slate-200 dark:border-slate-800 text-xs text-slate-400">
-                No visit dates recorded yet. Use the form below to log your
-                first visit!
+                No visit entries remaining.
               </div>
             ) : (
-              <div className="space-y-1.5 max-h-36 overflow-y-auto pr-1">
+              <div className="space-y-1.5 max-h-40 overflow-y-auto pr-1">
                 {existingDates.map((d) => (
                   <div
                     key={d}
@@ -165,11 +163,11 @@ export function VisitedDateModal({
 
           <hr className="border-slate-100 dark:border-slate-800" />
 
-          {/* Form to Log New Visit */}
+          {/* Form to Log Additional Visit */}
           <form onSubmit={handleAddVisit} className="space-y-4">
             <h3 className="text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
               <Plus className="w-4 h-4 text-emerald-500" />
-              Log Additional Visit
+              Log Another Visit Date
             </h3>
 
             {/* Precision Switcher */}
@@ -260,7 +258,7 @@ export function VisitedDateModal({
               )}
             </div>
 
-            {/* Quick Presets (Only active for Exact Date mode) */}
+            {/* Quick Presets */}
             {precision === "exact" && (
               <div className="flex items-center gap-2">
                 <button
@@ -291,24 +289,36 @@ export function VisitedDateModal({
               </div>
             )}
 
-            {/* Actions */}
-            <div className="flex items-center justify-end gap-2 pt-2">
-              <Button
-                type="button"
-                variant="outline"
-                onClick={onClose}
-                className="rounded-xl text-xs font-bold"
-              >
-                Done
-              </Button>
-              <Button
-                type="submit"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold px-4"
-              >
-                + Add Visit Entry
-              </Button>
-            </div>
+            <Button
+              type="submit"
+              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold py-2.5"
+            >
+              + Add Visit Entry
+            </Button>
           </form>
+
+          <hr className="border-slate-100 dark:border-slate-800" />
+
+          {/* Unmark Sight Completely */}
+          <div className="pt-1 flex items-center justify-between">
+            <button
+              type="button"
+              onClick={handleUnmarkAll}
+              className="text-xs font-semibold text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-1.5"
+            >
+              <AlertTriangle className="w-3.5 h-3.5" />
+              Unmark Destination as Visited
+            </button>
+
+            <Button
+              type="button"
+              variant="outline"
+              onClick={onClose}
+              className="rounded-xl text-xs font-bold"
+            >
+              Done
+            </Button>
+          </div>
         </div>
       </div>
     </div>

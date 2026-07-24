@@ -23,6 +23,7 @@ interface TripStoreContextType {
   getVisitCount: (id: string) => number;
   addVisitedDate: (id: string, date: string) => void;
   removeVisitedDate: (id: string, dateStr: string) => void;
+  clearAllVisits: (id: string) => void;
   setVisitedDate: (id: string, date: string) => void;
 
   visitedPrefectures: string[];
@@ -124,52 +125,41 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
   const isFavorite = (id: string) => favorites.includes(id);
 
-  const toggleVisited = (id: string, date?: string) => {
-    setVisited((prev) => {
-      const isNowVisited = !prev.includes(id);
+  const clearAllVisits = (id: string) => {
+    const remainingVisitedIds = visited.filter((vId) => vId !== id);
+    setVisited(remainingVisitedIds);
 
-      setVisitedDates((prevDates) => {
-        if (isNowVisited) {
-          return {
-            ...prevDates,
-            [id]: date || new Date().toISOString().split("T")[0],
-          };
-        } else {
-          const next = { ...prevDates };
-          delete next[id];
-          return next;
-        }
-      });
-
-      const destination = destinationsIndex.find((d) => d.id === id);
-      if (destination) {
-        let prefId = destination.prefecture;
-        if (prefId === "Hokkaido") prefId = "Hokkaido\x8D";
-
-        if (isNowVisited) {
-          setVisitedPrefectures((prevPrefs) =>
-            prevPrefs.includes(prefId) ? prevPrefs : [...prevPrefs, prefId],
-          );
-        } else {
-          const remainingVisitedIds = prev.filter((vId) => vId !== id);
-          const hasOtherVisitedInPref = remainingVisitedIds.some((vId) => {
-            const otherDest = destinationsIndex.find((d) => d.id === vId);
-            if (!otherDest) return false;
-            let otherPref = otherDest.prefecture;
-            if (otherPref === "Hokkaido") otherPref = "Hokkaido\x8D";
-            return otherPref === prefId;
-          });
-
-          if (!hasOtherVisitedInPref) {
-            setVisitedPrefectures((prevPrefs) =>
-              prevPrefs.filter((p) => p !== prefId),
-            );
-          }
-        }
-      }
-
-      return isNowVisited ? [...prev, id] : prev.filter((vId) => vId !== id);
+    setVisitedDates((prev) => {
+      const next = { ...prev };
+      delete next[id];
+      return next;
     });
+
+    const destination = destinationsIndex.find((d) => d.id === id);
+    if (destination) {
+      let prefId = destination.prefecture;
+      if (prefId === "Hokkaido") prefId = "Hokkaido\x8D";
+      const hasOtherVisitedInPref = remainingVisitedIds.some((vId) => {
+        const otherDest = destinationsIndex.find((d) => d.id === vId);
+        if (!otherDest) return false;
+        let otherPref = otherDest.prefecture;
+        if (otherPref === "Hokkaido") otherPref = "Hokkaido\x8D";
+        return otherPref === prefId;
+      });
+      if (!hasOtherVisitedInPref) {
+        setVisitedPrefectures((prevPrefs) =>
+          prevPrefs.filter((p) => p !== prefId),
+        );
+      }
+    }
+  };
+
+  const toggleVisited = (id: string, date?: string) => {
+    if (visited.includes(id)) {
+      clearAllVisits(id);
+    } else {
+      addVisitedDate(id, date || new Date().toISOString().split("T")[0]);
+    }
   };
 
   const normalizeVisitDates = (
@@ -224,45 +214,17 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   };
 
   const removeVisitedDate = (id: string, dateStr: string) => {
-    setVisitedDates((prev) => {
-      const existing = normalizeVisitDates(prev[id]);
-      const nextDates = existing.filter((d) => d !== dateStr);
+    const existing = getVisitedDates(id);
+    const nextDates = existing.filter((d) => d !== dateStr);
 
-      if (nextDates.length === 0) {
-        // If no visit dates remain, remove destination from visited
-        const nextMap = { ...prev };
-        delete nextMap[id];
-
-        setVisited((prevVisited) => {
-          const remainingVisitedIds = prevVisited.filter((vId) => vId !== id);
-          const destination = destinationsIndex.find((d) => d.id === id);
-          if (destination) {
-            let prefId = destination.prefecture;
-            if (prefId === "Hokkaido") prefId = "Hokkaido\x8D";
-            const hasOtherVisitedInPref = remainingVisitedIds.some((vId) => {
-              const otherDest = destinationsIndex.find((d) => d.id === vId);
-              if (!otherDest) return false;
-              let otherPref = otherDest.prefecture;
-              if (otherPref === "Hokkaido") otherPref = "Hokkaido\x8D";
-              return otherPref === prefId;
-            });
-            if (!hasOtherVisitedInPref) {
-              setVisitedPrefectures((prevPrefs) =>
-                prevPrefs.filter((p) => p !== prefId),
-              );
-            }
-          }
-          return remainingVisitedIds;
-        });
-
-        return nextMap;
-      }
-
-      return {
+    if (nextDates.length === 0) {
+      clearAllVisits(id);
+    } else {
+      setVisitedDates((prev) => ({
         ...prev,
         [id]: nextDates,
-      };
-    });
+      }));
+    }
   };
 
   const setVisitedDate = (id: string, date: string) => {
@@ -384,6 +346,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         getVisitCount,
         addVisitedDate,
         removeVisitedDate,
+        clearAllVisits,
         setVisitedDate,
         visitedPrefectures,
         isPrefectureVisited,

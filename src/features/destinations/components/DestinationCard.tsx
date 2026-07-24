@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ItineraryPickerModal } from "@/features/trips/components/ItineraryPickerModal";
+import { MarkVisitedModal } from "./MarkVisitedModal";
 import { VisitedDateModal } from "./VisitedDateModal";
 import type { Destination } from "@/shared/types/destination";
 import type { Collection } from "@/shared/types/collection";
@@ -51,7 +52,6 @@ export default function DestinationCard({
     isFavorite,
     toggleFavorite,
     isVisited,
-    toggleVisited,
     isComparing,
     toggleCompare,
     compareList,
@@ -61,7 +61,8 @@ export default function DestinationCard({
   const comparing = isComparing(destination.id);
 
   const [pickerOpen, setPickerOpen] = useState(false);
-  const [visitedModalOpen, setVisitedModalOpen] = useState(false);
+  const [markVisitedOpen, setMarkVisitedOpen] = useState(false);
+  const [visitedHistoryOpen, setVisitedHistoryOpen] = useState(false);
 
   const handleAddToItinerary = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -73,9 +74,9 @@ export default function DestinationCard({
     e.preventDefault();
     e.stopPropagation();
     if (visited) {
-      toggleVisited(destination.id);
+      setVisitedHistoryOpen(true);
     } else {
-      setVisitedModalOpen(true);
+      setMarkVisitedOpen(true);
     }
   };
 
@@ -383,11 +384,16 @@ export default function DestinationCard({
         destination={{ id: destination.id, name: destination.name }}
       />
 
-      <VisitedDateModal
-        isOpen={visitedModalOpen}
-        onClose={() => setVisitedModalOpen(false)}
+      <MarkVisitedModal
+        isOpen={markVisitedOpen}
+        onClose={() => setMarkVisitedOpen(false)}
         destination={{ id: destination.id, name: destination.name }}
-        onConfirm={(date) => toggleVisited(destination.id, date)}
+      />
+
+      <VisitedDateModal
+        isOpen={visitedHistoryOpen}
+        onClose={() => setVisitedHistoryOpen(false)}
+        destination={{ id: destination.id, name: destination.name }}
       />
     </Card>
   );

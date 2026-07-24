@@ -14,6 +14,7 @@ import { getValidModes } from "@/shared/services/recommendation/RecommendationSe
 import { calculateScore } from "@/shared/services/recommendation/RecommendationScorer";
 import { createRecommendationMatch } from "@/shared/services/recommendation/RecommendationExplainability";
 import { ItineraryPickerModal } from "@/features/trips/components/ItineraryPickerModal";
+import { MarkVisitedModal } from "./components/MarkVisitedModal";
 import { VisitedDateModal } from "./components/VisitedDateModal";
 import { formatVisitedDate } from "@/shared/utils/date";
 import {
@@ -102,7 +103,6 @@ export default function DestinationDetails() {
     isFavorite,
     toggleFavorite,
     isVisited,
-    toggleVisited,
     getLatestVisitedDate,
     getVisitCount,
     homeStation,
@@ -112,7 +112,8 @@ export default function DestinationDetails() {
   const [destLoading, setDestLoading] = useState(true);
 
   const [pickerOpen, setPickerOpen] = useState(false);
-  const [visitedModalOpen, setVisitedModalOpen] = useState(false);
+  const [markVisitedOpen, setMarkVisitedOpen] = useState(false);
+  const [visitedHistoryOpen, setVisitedHistoryOpen] = useState(false);
 
   const handleAddToItinerary = () => {
     if (!destination) return;
@@ -471,14 +472,14 @@ export default function DestinationDetails() {
             <button
               onClick={() => {
                 if (isVisited(destination.id)) {
-                  toggleVisited(destination.id);
+                  setVisitedHistoryOpen(true);
                 } else {
-                  setVisitedModalOpen(true);
+                  setMarkVisitedOpen(true);
                 }
               }}
               aria-label={
                 isVisited(destination.id)
-                  ? "Mark destination as unvisited"
+                  ? "Manage Visit History"
                   : "Mark destination as visited"
               }
               title={
@@ -1281,11 +1282,16 @@ export default function DestinationDetails() {
             destination={{ id: destination.id, name: destination.name }}
           />
 
-          <VisitedDateModal
-            isOpen={visitedModalOpen}
-            onClose={() => setVisitedModalOpen(false)}
+          <MarkVisitedModal
+            isOpen={markVisitedOpen}
+            onClose={() => setMarkVisitedOpen(false)}
             destination={{ id: destination.id, name: destination.name }}
-            onConfirm={(date) => toggleVisited(destination.id, date)}
+          />
+
+          <VisitedDateModal
+            isOpen={visitedHistoryOpen}
+            onClose={() => setVisitedHistoryOpen(false)}
+            destination={{ id: destination.id, name: destination.name }}
           />
         </>
       )}
