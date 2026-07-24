@@ -29,6 +29,9 @@ const CollectionsDirectory = lazy(
 const CollectionDetails = lazy(
   () => import("./features/collections/CollectionDetails"),
 );
+const Profile = lazy(() => import("./features/profile/Profile"));
+const Settings = lazy(() => import("./features/settings/Settings"));
+const Help = lazy(() => import("./features/help/Help"));
 
 function PageLoader() {
   return (
@@ -84,6 +87,9 @@ function App() {
                       path="/visited-map"
                       element={<Navigate to="/passport" replace />}
                     />
+                    <Route path="/profile" element={<Profile />} />
+                    <Route path="/settings" element={<Settings />} />
+                    <Route path="/help" element={<Help />} />
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/privacy" element={<Privacy />} />
                     <Route path="/cookies" element={<Cookies />} />

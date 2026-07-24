@@ -13,20 +13,21 @@ import {
   CheckCircle2,
   Bookmark,
   ChevronDown,
+  HelpCircle,
+  MessageSquare,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { AuthModal } from "@/shared/components/auth/AuthModal";
-import { ProfileModal } from "@/shared/components/profile/ProfileModal";
-import { PreferencesModal } from "@/shared/components/profile/PreferencesModal";
+import { GlobalSearch } from "@/features/search/GlobalSearch";
+import { FeedbackModal } from "@/shared/components/feedback/FeedbackModal";
 
 export default function Navbar() {
   const location = useLocation();
   const { user, loading, signOut } = useAuth();
   const [menuOpen, setMenuOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
-  const [profileOpen, setProfileOpen] = useState(false);
-  const [preferencesOpen, setPreferencesOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   // Desktop dropdown state
@@ -124,36 +125,24 @@ export default function Navbar() {
 
   const isPassportActive = location.pathname.startsWith("/passport");
 
-  const handlePreferencesClose = () => {
-    sessionStorage.setItem("tabimap_dismissed_preferences_prompt", "true");
-    setPreferencesOpen(false);
-  };
-
-  useEffect(() => {
-    if (!loading && user) {
-      const isSet = Boolean(user.user_metadata?.preferences?.preferences_set);
-      const dismissedThisSession =
-        sessionStorage.getItem("tabimap_dismissed_preferences_prompt") ===
-        "true";
-      if (!isSet && !dismissedThisSession) {
-        setPreferencesOpen(true);
-      }
-    }
-  }, [user, loading]);
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-2 md:gap-4">
+        {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 font-bold text-xl tracking-tight"
+          className="flex items-center gap-2 font-bold text-xl tracking-tight shrink-0"
           onClick={() => setMenuOpen(false)}
         >
           <span className="text-emerald-600 dark:text-emerald-400">Tabi</span>
           <span className="text-slate-800 dark:text-slate-200">Map</span>
         </Link>
-        <div className="flex items-center gap-6">
-          <nav className="hidden md:flex gap-4 items-center">
+
+        {/* Global Search Bar (Center / Desktop & Mobile icon) */}
+        <GlobalSearch />
+
+        <div className="flex items-center gap-4 shrink-0">
+          <nav className="hidden md:flex gap-3 items-center">
             {/* 1. Discover Category */}
             <div
               className="relative group"
@@ -358,40 +347,47 @@ export default function Navbar() {
                       </p>
                     </div>
 
-                    <div className="py-1">
-                      <button
-                        onClick={() => {
-                          setUserMenuOpen(false);
-                          setProfileOpen(true);
-                        }}
-                        className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors text-left"
+                    <div className="py-1 space-y-0.5">
+                      <Link
+                        to="/profile"
+                        onClick={() => setUserMenuOpen(false)}
+                        className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors"
                       >
                         <User className="w-4 h-4 text-slate-500" />
-                        Edit Profile
-                      </button>
+                        Profile
+                      </Link>
+
+                      <Link
+                        to="/settings"
+                        onClick={() => setUserMenuOpen(false)}
+                        className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors"
+                      >
+                        <Sliders className="w-4 h-4 text-slate-500" />
+                        Settings
+                      </Link>
+
+                      <Link
+                        to="/help"
+                        onClick={() => setUserMenuOpen(false)}
+                        className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors"
+                      >
+                        <HelpCircle className="w-4 h-4 text-slate-500" />
+                        Help
+                      </Link>
 
                       <button
                         onClick={() => {
                           setUserMenuOpen(false);
-                          setPreferencesOpen(true);
+                          setFeedbackOpen(true);
                         }}
                         className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors text-left"
                       >
-                        <Sliders className="w-4 h-4 text-slate-500" />
-                        Set Preferences
+                        <MessageSquare className="w-4 h-4 text-slate-500" />
+                        Send Feedback
                       </button>
-
-                      <Link
-                        to="/my-trips"
-                        onClick={() => setUserMenuOpen(false)}
-                        className="w-full flex items-center gap-2.5 px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors text-left"
-                      >
-                        <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                        My Trips (Visited)
-                      </Link>
                     </div>
 
-                    <div className="border-t border-slate-100 dark:border-slate-800 pt-1">
+                    <div className="border-t border-slate-100 dark:border-slate-800 pt-1 mt-1">
                       <button
                         onClick={() => {
                           setUserMenuOpen(false);
@@ -416,19 +412,16 @@ export default function Navbar() {
               </Button>
             )}
           </div>
+
           <AuthModal isOpen={authOpen} onClose={() => setAuthOpen(false)} />
-          <ProfileModal
-            isOpen={profileOpen}
-            onClose={() => setProfileOpen(false)}
-          />
-          <PreferencesModal
-            isOpen={preferencesOpen}
-            onClose={handlePreferencesClose}
+          <FeedbackModal
+            isOpen={feedbackOpen}
+            onClose={() => setFeedbackOpen(false)}
           />
 
           {/* Hamburger button — mobile only */}
           <button
-            className="md:hidden p-2 text-slate-700 dark:text-slate-300 ml-2"
+            className="md:hidden p-2 text-slate-700 dark:text-slate-300 ml-1"
             onClick={() => setMenuOpen((o) => !o)}
             aria-label="Toggle menu"
           >
@@ -441,7 +434,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile slide-down menu with accordions */}
+      {/* Mobile slide-down menu */}
       {menuOpen && (
         <div className="md:hidden fixed inset-x-0 top-16 z-40 bg-background/95 backdrop-blur-md border-b shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-3">
@@ -514,7 +507,7 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Passport Section (Direct Mobile Link) */}
+            {/* Passport Section */}
             <div className="pb-2">
               <Link
                 to="/passport"
@@ -546,24 +539,42 @@ export default function Navbar() {
                       "User"}
                   </p>
                 </div>
+
+                <Link
+                  to="/profile"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <User className="w-5 h-5 text-slate-500" /> Profile
+                </Link>
+
+                <Link
+                  to="/settings"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <Sliders className="w-5 h-5 text-slate-500" /> Settings
+                </Link>
+
+                <Link
+                  to="/help"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <HelpCircle className="w-5 h-5 text-slate-500" /> Help
+                </Link>
+
                 <button
                   onClick={() => {
                     setMenuOpen(false);
-                    setProfileOpen(true);
+                    setFeedbackOpen(true);
                   }}
                   className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-left"
                 >
-                  <User className="w-5 h-5 text-slate-500" /> Edit Profile
+                  <MessageSquare className="w-5 h-5 text-slate-500" /> Send
+                  Feedback
                 </button>
-                <button
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setPreferencesOpen(true);
-                  }}
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-left"
-                >
-                  <Sliders className="w-5 h-5 text-slate-500" /> Set Preferences
-                </button>
+
                 <button
                   onClick={() => {
                     setMenuOpen(false);
