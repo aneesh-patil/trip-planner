@@ -7,14 +7,7 @@ import DestinationCard from "@/features/destinations/components/DestinationCard"
 import TripCard from "@/features/trips/components/TripCard";
 import TripEditor from "@/features/trips/components/TripEditor";
 import TripDetails from "@/features/trips/TripDetails";
-import {
-  Sparkles,
-  Plus,
-  Calendar,
-  Bookmark,
-  ChevronDown,
-  Compass,
-} from "lucide-react";
+import { Sparkles, Plus, Calendar, Bookmark, Compass } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 
 export default function MyTrips() {
@@ -103,47 +96,30 @@ export default function MyTrips() {
           </p>
         </div>
 
-        {/* Header View Selector Dropdown & Toggle Pills */}
+        {/* Header Toggle Pills */}
         <div className="flex items-center gap-3 self-start md:self-auto">
-          {/* Dropdown Selector */}
-          <div className="relative">
-            <select
-              value={activeTab}
-              onChange={(e) =>
-                handleTabChange(e.target.value as "planned" | "bucketlist")
-              }
-              className="appearance-none bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white font-bold text-sm px-4 py-2.5 pr-10 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer"
-            >
-              <option value="planned">🗺️ Itineraries ({trips.length})</option>
-              <option value="bucketlist">
-                🔖 Bucket List ({favorites.length})
-              </option>
-            </select>
-            <ChevronDown className="w-4 h-4 text-slate-400 absolute right-3.5 top-3.5 pointer-events-none" />
-          </div>
-
           {/* Toggle Switcher */}
-          <div className="flex items-center p-1 bg-slate-100 dark:bg-slate-800 rounded-2xl border border-slate-200/60 dark:border-slate-700/60">
+          <div className="flex items-center p-1.5 bg-slate-100 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700/60 shadow-inner">
             <button
               onClick={() => handleTabChange("planned")}
-              className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-extrabold rounded-xl transition-all ${
                 activeTab === "planned"
-                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm"
+                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-md ring-1 ring-black/5 dark:ring-white/10"
                   : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
               }`}
             >
-              <Calendar className="w-3.5 h-3.5" />
+              <Calendar className="w-4 h-4 text-emerald-500" />
               Itineraries ({trips.length})
             </button>
             <button
               onClick={() => handleTabChange("bucketlist")}
-              className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-extrabold rounded-xl transition-all ${
                 activeTab === "bucketlist"
-                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm"
+                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-md ring-1 ring-black/5 dark:ring-white/10"
                   : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
               }`}
             >
-              <Bookmark className="w-3.5 h-3.5" />
+              <Bookmark className="w-4 h-4 text-amber-500" />
               Bucket List ({favorites.length})
             </button>
           </div>

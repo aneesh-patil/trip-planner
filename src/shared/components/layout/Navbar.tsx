@@ -121,42 +121,44 @@ export default function Navbar() {
 
                     {/* My Trips Hover/Click Dropdown Card */}
                     {tripsMenuOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
-                        <Link
-                          to="/my-trips?tab=planned"
-                          onClick={() => setTripsMenuOpen(false)}
-                          className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
-                        >
-                          <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
-                            <Calendar className="w-4 h-4" />
-                          </div>
-                          <div>
-                            <div className="text-xs font-bold text-slate-900 dark:text-white">
-                              Itineraries
+                      <div className="absolute top-full left-0 pt-1.5 w-56 z-50">
+                        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 animate-in fade-in zoom-in-95 duration-150">
+                          <Link
+                            to="/my-trips?tab=planned"
+                            onClick={() => setTripsMenuOpen(false)}
+                            className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                          >
+                            <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
+                              <Calendar className="w-4 h-4" />
                             </div>
-                            <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                              Your trip plans
+                            <div>
+                              <div className="text-xs font-bold text-slate-900 dark:text-white">
+                                Itineraries
+                              </div>
+                              <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                                Your trip plans
+                              </div>
                             </div>
-                          </div>
-                        </Link>
+                          </Link>
 
-                        <Link
-                          to="/my-trips?tab=bucketlist"
-                          onClick={() => setTripsMenuOpen(false)}
-                          className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
-                        >
-                          <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-500 group-hover/item:scale-105 transition-transform">
-                            <Bookmark className="w-4 h-4" />
-                          </div>
-                          <div>
-                            <div className="text-xs font-bold text-slate-900 dark:text-white">
-                              Bucket List
+                          <Link
+                            to="/my-trips?tab=bucketlist"
+                            onClick={() => setTripsMenuOpen(false)}
+                            className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                          >
+                            <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-500 group-hover/item:scale-105 transition-transform">
+                              <Bookmark className="w-4 h-4" />
                             </div>
-                            <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                              Saved sights to visit
+                            <div>
+                              <div className="text-xs font-bold text-slate-900 dark:text-white">
+                                Bucket List
+                              </div>
+                              <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                                Saved sights to visit
+                              </div>
                             </div>
-                          </div>
-                        </Link>
+                          </Link>
+                        </div>
                       </div>
                     )}
                   </div>
