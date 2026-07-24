@@ -53,6 +53,11 @@
     "shinkansen": 45,
     "car": 90
   },
+  "transportFares": {
+    "train": 1980,
+    "shinkansen": 3740,
+    "car": 13500
+  },
   "highlights": ["Sun Beach", "Atami Castle", "Kiunkaku"],
   "description": "Atami is a scenic destination in the Shizuoka region of Japan, offering rich history and cultural attractions.",
   "gallery": [

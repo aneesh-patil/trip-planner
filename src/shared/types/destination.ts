@@ -50,6 +50,14 @@ export interface Destination {
     shinkansen?: number;
     bus?: number;
   };
+  /** Optional: Explicit one-way route fares per person (or per car) */
+  transportFares?: {
+    train?: number;
+    car?: number;
+    my_car?: number;
+    shinkansen?: number;
+    bus?: number;
+  };
   totalTripHours: number;
   walkingMin: number;
   walkingSunMin: number;

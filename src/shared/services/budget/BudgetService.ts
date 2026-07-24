@@ -1,59 +1,99 @@
 import type { Destination } from "@/shared/types/destination";
 
-const CAR_RENTAL_RATES = {
-  upTo6h: 7370,
-  upTo12h: 7920,
-  upTo24h: 10340,
-  extraPerHour: 1540,
+export const TRANSPORT_PRICING_CONFIG = {
+  carRentalRates: {
+    upTo6h: 7370,
+    upTo12h: 7920,
+    upTo24h: 10340,
+    extraPerHour: 1540,
+  },
+  gasPricePerLiter: 175,
+  train: {
+    shortTripMaxMins: 25,
+    shortTripBase: 160,
+    shortTripPerMin: 8,
+    mediumTripMaxMins: 65,
+    mediumTripBase: 250,
+    mediumTripPerMin: 16,
+    longTripBase: 890,
+    longTripPerMin: 22,
+  },
+  shinkansen: {
+    baseFare: 2200,
+    perMinRate: 62,
+  },
+  bus: {
+    baseFare: 800,
+    perMinRate: 11,
+  },
+  car: {
+    circuityMultiplier: 1.1,
+    tollRatePerKm: 18,
+    fuelConsumptionKmPerLiter: 14,
+  },
 } as const;
-const GAS_PRICE_PER_LITER = 175; // ¥175/L current avg
 
 function getRentalBaseFee(tripDurationHours: number): number {
-  if (tripDurationHours <= 6) return CAR_RENTAL_RATES.upTo6h;
-  if (tripDurationHours <= 12) return CAR_RENTAL_RATES.upTo12h;
-  if (tripDurationHours <= 24) return CAR_RENTAL_RATES.upTo24h;
-  return (
-    CAR_RENTAL_RATES.upTo24h +
-    Math.ceil(tripDurationHours - 24) * CAR_RENTAL_RATES.extraPerHour
-  );
+  const rates = TRANSPORT_PRICING_CONFIG.carRentalRates;
+  if (tripDurationHours <= 6) return rates.upTo6h;
+  if (tripDurationHours <= 12) return rates.upTo12h;
+  if (tripDurationHours <= 24) return rates.upTo24h;
+  return rates.upTo24h + Math.ceil(tripDurationHours - 24) * rates.extraPerHour;
 }
 
 /**
  * Returns the round-trip transport cost for the given party size.
- * Single source of truth for transport fare calculation across TabiMap.
+ * Checks explicit route fares (dest.transportFares) first, falling back to
+ * configurable duration-based pricing (TRANSPORT_PRICING_CONFIG).
  */
 export function getTransportCost(
   dest: Destination,
   mode: string,
   partySize: number = 2,
 ): number {
+  // 1. Explicit Route Fare Precedence (if specified in destination JSON)
+  const explicitFare =
+    dest.transportFares?.[mode as keyof typeof dest.transportFares];
+  if (explicitFare !== undefined) {
+    if (mode === "car" || mode === "my_car") {
+      const carsNeeded = Math.ceil(partySize / 4);
+      return explicitFare * carsNeeded;
+    }
+    const roundTripPerPerson = explicitFare * 2;
+    return Math.floor(roundTripPerPerson * partySize);
+  }
+
+  // 2. Duration-based Fallback Pricing Heuristics
+  const cfg = TRANSPORT_PRICING_CONFIG;
+
   if (
     mode === "shinkansen" &&
     dest.transportOptions?.shinkansen !== undefined
   ) {
     const mins = dest.transportOptions.shinkansen;
-    // Shinkansen base fare + express surcharge: ¥2,200 + mins * ¥62
-    const oneWayPerPerson = Math.round(2200 + mins * 62);
-    const roundTripPerPerson = oneWayPerPerson * 2;
-    return Math.floor(roundTripPerPerson * partySize);
+    const oneWayPerPerson = Math.round(
+      cfg.shinkansen.baseFare + mins * cfg.shinkansen.perMinRate,
+    );
+    return Math.floor(oneWayPerPerson * 2 * partySize);
   }
 
   if (mode === "bus" && dest.transportOptions?.bus !== undefined) {
     const mins = dest.transportOptions.bus;
-    // Highway Bus fare: ¥800 + mins * ¥11
-    const oneWayPerPerson = Math.round(800 + mins * 11);
-    const roundTripPerPerson = oneWayPerPerson * 2;
-    return Math.floor(roundTripPerPerson * partySize);
+    const oneWayPerPerson = Math.round(
+      cfg.bus.baseFare + mins * cfg.bus.perMinRate,
+    );
+    return Math.floor(oneWayPerPerson * 2 * partySize);
   }
 
   if (mode === "car" && dest.transportOptions?.car !== undefined) {
     const driveTimeOneWayMin = dest.transportOptions.car;
-    const distanceKm = driveTimeOneWayMin * 1.1;
+    const distanceKm = driveTimeOneWayMin * cfg.car.circuityMultiplier;
     const tripDurationHours = dest.totalTripHours || 8;
     const rentalFee = getRentalBaseFee(tripDurationHours);
-    const tollsRoundTrip = Math.floor(distanceKm * 18 * 2);
+    const tollsRoundTrip = Math.floor(distanceKm * cfg.car.tollRatePerKm * 2);
     const gasRoundTrip = Math.floor(
-      ((distanceKm * 2) / 14) * GAS_PRICE_PER_LITER,
+      ((distanceKm * 2) / cfg.car.fuelConsumptionKmPerLiter) *
+        cfg.gasPricePerLiter,
     );
     const carsNeeded = Math.ceil(partySize / 4);
     return (rentalFee + tollsRoundTrip + gasRoundTrip) * carsNeeded;
@@ -61,10 +101,11 @@ export function getTransportCost(
 
   if (mode === "my_car" && dest.transportOptions?.my_car !== undefined) {
     const driveTimeOneWayMin = dest.transportOptions.my_car;
-    const distanceKm = driveTimeOneWayMin * 1.1;
-    const tollsRoundTrip = Math.floor(distanceKm * 18 * 2);
+    const distanceKm = driveTimeOneWayMin * cfg.car.circuityMultiplier;
+    const tollsRoundTrip = Math.floor(distanceKm * cfg.car.tollRatePerKm * 2);
     const gasRoundTrip = Math.floor(
-      ((distanceKm * 2) / 14) * GAS_PRICE_PER_LITER,
+      ((distanceKm * 2) / cfg.car.fuelConsumptionKmPerLiter) *
+        cfg.gasPricePerLiter,
     );
     const carsNeeded = Math.ceil(partySize / 4);
     return (tollsRoundTrip + gasRoundTrip) * carsNeeded;
@@ -72,20 +113,26 @@ export function getTransportCost(
 
   if (mode === "train" && dest.transportOptions?.train !== undefined) {
     const mins = dest.transportOptions.train;
-    // Realistic JR / Private Rail fare curve in Japan based on travel time:
-    // mins <= 25: local metro / short train (¥160 - ¥360)
-    // 25 < mins <= 65: commuter / suburban train (¥360 - ¥890)
-    // mins > 65: regional JR local train / limited express (¥890 + (mins - 65) * 22)
+    const tCfg = cfg.train;
     let oneWayPerPerson: number;
-    if (mins <= 25) {
-      oneWayPerPerson = Math.round(160 + mins * 8);
-    } else if (mins <= 65) {
-      oneWayPerPerson = Math.round(250 + (mins - 25) * 16);
+
+    if (mins <= tCfg.shortTripMaxMins) {
+      oneWayPerPerson = Math.round(
+        tCfg.shortTripBase + mins * tCfg.shortTripPerMin,
+      );
+    } else if (mins <= tCfg.mediumTripMaxMins) {
+      oneWayPerPerson = Math.round(
+        tCfg.mediumTripBase +
+          (mins - tCfg.shortTripMaxMins) * tCfg.mediumTripPerMin,
+      );
     } else {
-      oneWayPerPerson = Math.round(890 + (mins - 65) * 22);
+      oneWayPerPerson = Math.round(
+        tCfg.longTripBase +
+          (mins - tCfg.mediumTripMaxMins) * tCfg.longTripPerMin,
+      );
     }
-    const roundTripPerPerson = oneWayPerPerson * 2;
-    return Math.floor(roundTripPerPerson * partySize);
+
+    return Math.floor(oneWayPerPerson * 2 * partySize);
   }
 
   return ((dest.budgetBreakdown?.transport || 3000) / 2) * partySize;
