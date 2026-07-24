@@ -30,7 +30,7 @@ interface ActivityEvent {
 }
 
 export function PassportTimelineCalendar() {
-  const { visited, visitedDates, trips } = useTripStore();
+  const { visited, getVisitedDates, trips } = useTripStore();
 
   const [filterType, setFilterType] = useState<"all" | "visited" | "trips">(
     "all",
@@ -46,34 +46,38 @@ export function PassportTimelineCalendar() {
   const allEvents = useMemo(() => {
     const events: ActivityEvent[] = [];
 
-    // Visited destinations
+    // Visited destinations (supports multiple visit dates per sight)
     visited.forEach((vId) => {
       const dest = (destinationsIndex as Destination[]).find(
         (d) => d.id === vId,
       );
       if (dest) {
-        const dateStr = visitedDates[vId] || "";
-        let year = "Undated";
-        let monthKey = "Undated";
+        const dates = getVisitedDates(vId);
+        const datesToProcess = dates.length > 0 ? dates : [""];
 
-        if (/^\d{4}/.test(dateStr)) {
-          year = dateStr.substring(0, 4);
-        }
-        if (/^\d{4}-\d{2}/.test(dateStr)) {
-          monthKey = dateStr.substring(0, 7);
-        }
+        datesToProcess.forEach((dateStr, idx) => {
+          let year = "Undated";
+          let monthKey = "Undated";
 
-        events.push({
-          id: `visited-${vId}`,
-          type: "visited",
-          title: dest.name,
-          dateStr: dateStr,
-          year,
-          monthKey,
-          prefecture: dest.prefecture,
-          heroImage: dest.heroImage,
-          destinationId: dest.id,
-          subtitle: `${dest.prefecture}, Japan`,
+          if (/^\d{4}/.test(dateStr)) {
+            year = dateStr.substring(0, 4);
+          }
+          if (/^\d{4}-\d{2}/.test(dateStr)) {
+            monthKey = dateStr.substring(0, 7);
+          }
+
+          events.push({
+            id: `visited-${vId}-${idx}`,
+            type: "visited",
+            title: dest.name,
+            dateStr: dateStr,
+            year,
+            monthKey,
+            prefecture: dest.prefecture,
+            heroImage: dest.heroImage,
+            destinationId: dest.id,
+            subtitle: `${dest.prefecture}, Japan`,
+          });
         });
       }
     });
@@ -105,7 +109,7 @@ export function PassportTimelineCalendar() {
     });
 
     return events;
-  }, [visited, visitedDates, trips]);
+  }, [visited, getVisitedDates, trips]);
 
   // Filter events
   const filteredEvents = useMemo(() => {

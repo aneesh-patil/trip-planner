@@ -103,7 +103,8 @@ export default function DestinationDetails() {
     toggleFavorite,
     isVisited,
     toggleVisited,
-    getVisitedDate,
+    getLatestVisitedDate,
+    getVisitCount,
     homeStation,
     homeStationCoords,
   } = useTripStore();
@@ -482,7 +483,7 @@ export default function DestinationDetails() {
               }
               title={
                 isVisited(destination.id)
-                  ? `Visited ${formatVisitedDate(getVisitedDate(destination.id)) || ""}`
+                  ? `Visited ${getVisitCount(destination.id)} time${getVisitCount(destination.id) === 1 ? "" : "s"}`
                   : "Mark as Visited"
               }
               className={`inline-flex items-center text-sm font-medium px-3.5 py-2 rounded-xl transition-all active:scale-95 ${
@@ -493,9 +494,11 @@ export default function DestinationDetails() {
             >
               <CheckCircle2 className="w-4 h-4 mr-1.5" />
               {isVisited(destination.id)
-                ? getVisitedDate(destination.id)
-                  ? `Visited ${formatVisitedDate(getVisitedDate(destination.id))}`
-                  : "Visited"
+                ? getVisitCount(destination.id) > 1
+                  ? `Visited ${getVisitCount(destination.id)}x`
+                  : getLatestVisitedDate(destination.id)
+                    ? `Visited ${formatVisitedDate(getLatestVisitedDate(destination.id))}`
+                    : "Visited"
                 : "Mark Visited"}
             </button>
 
