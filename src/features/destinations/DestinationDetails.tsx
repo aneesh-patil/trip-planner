@@ -15,6 +15,7 @@ import { calculateScore } from "@/shared/services/recommendation/RecommendationS
 import { createRecommendationMatch } from "@/shared/services/recommendation/RecommendationExplainability";
 import { ItineraryPickerModal } from "@/features/trips/components/ItineraryPickerModal";
 import { VisitedDateModal } from "./components/VisitedDateModal";
+import { formatVisitedDate } from "@/shared/utils/date";
 import {
   ArrowLeft,
   MapPin,
@@ -481,7 +482,7 @@ export default function DestinationDetails() {
               }
               title={
                 isVisited(destination.id)
-                  ? `Visited ${getVisitedDate(destination.id) || ""}`
+                  ? `Visited ${formatVisitedDate(getVisitedDate(destination.id)) || ""}`
                   : "Mark as Visited"
               }
               className={`inline-flex items-center text-sm font-medium px-3.5 py-2 rounded-xl transition-all active:scale-95 ${
@@ -493,7 +494,7 @@ export default function DestinationDetails() {
               <CheckCircle2 className="w-4 h-4 mr-1.5" />
               {isVisited(destination.id)
                 ? getVisitedDate(destination.id)
-                  ? `Visited ${getVisitedDate(destination.id)}`
+                  ? `Visited ${formatVisitedDate(getVisitedDate(destination.id))}`
                   : "Visited"
                 : "Mark Visited"}
             </button>

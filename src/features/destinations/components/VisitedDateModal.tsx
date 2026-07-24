@@ -14,6 +14,8 @@ interface VisitedDateModalProps {
   initialDate?: string;
 }
 
+type DatePrecision = "exact" | "month" | "year";
+
 export function VisitedDateModal({
   isOpen,
   onClose,
@@ -22,14 +24,33 @@ export function VisitedDateModal({
   initialDate,
 }: VisitedDateModalProps) {
   const getTodayStr = () => new Date().toISOString().split("T")[0];
+  const getCurrentMonthStr = () => new Date().toISOString().substring(0, 7);
+  const getCurrentYearStr = () => String(new Date().getFullYear());
 
-  const [selectedDate, setSelectedDate] = useState<string>(
-    initialDate || getTodayStr(),
-  );
+  const [precision, setPrecision] = useState<DatePrecision>("exact");
+  const [exactDate, setExactDate] = useState<string>(getTodayStr());
+  const [monthYear, setMonthYear] = useState<string>(getCurrentMonthStr());
+  const [yearVal, setYearVal] = useState<string>(getCurrentYearStr());
 
   useEffect(() => {
     if (isOpen) {
-      setSelectedDate(initialDate || getTodayStr());
+      if (initialDate) {
+        if (/^\d{4}$/.test(initialDate)) {
+          setPrecision("year");
+          setYearVal(initialDate);
+        } else if (/^\d{4}-\d{2}$/.test(initialDate)) {
+          setPrecision("month");
+          setMonthYear(initialDate);
+        } else {
+          setPrecision("exact");
+          setExactDate(initialDate);
+        }
+      } else {
+        setPrecision("exact");
+        setExactDate(getTodayStr());
+        setMonthYear(getCurrentMonthStr());
+        setYearVal(getCurrentYearStr());
+      }
     }
   }, [isOpen, initialDate]);
 
@@ -37,16 +58,25 @@ export function VisitedDateModal({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!selectedDate) return;
-    onConfirm(selectedDate);
+    let finalValue = "";
+    if (precision === "exact") finalValue = exactDate;
+    else if (precision === "month") finalValue = monthYear;
+    else if (precision === "year") finalValue = yearVal;
+
+    if (!finalValue) return;
+    onConfirm(finalValue);
     onClose();
   };
 
   const setPresetDate = (daysAgo: number) => {
     const d = new Date();
     d.setDate(d.getDate() - daysAgo);
-    setSelectedDate(d.toISOString().split("T")[0]);
+    setPrecision("exact");
+    setExactDate(d.toISOString().split("T")[0]);
   };
+
+  const currentYearNum = new Date().getFullYear();
+  const yearOptions = Array.from({ length: 75 }, (_, i) => currentYearNum - i);
 
   const modalContent = (
     <div
@@ -92,56 +122,138 @@ export function VisitedDateModal({
 
         {/* Modal Body */}
         <form onSubmit={handleSubmit} className="p-6 space-y-5">
+          {/* Precision Switcher */}
           <div>
             <label className="block text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider mb-2">
-              Date Visited
+              Date Precision
             </label>
-            <div className="relative">
-              <input
-                type="date"
-                value={selectedDate}
-                onChange={(e) => setSelectedDate(e.target.value)}
-                required
-                max={getTodayStr()}
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium"
-              />
-              <CalendarIcon className="w-5 h-5 text-slate-400 absolute right-4 top-3.5 pointer-events-none" />
+            <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200/50 dark:border-slate-700/50">
+              <button
+                type="button"
+                onClick={() => setPrecision("exact")}
+                className={`py-1.5 text-xs font-bold rounded-lg transition-all ${
+                  precision === "exact"
+                    ? "bg-white dark:bg-slate-700 text-emerald-700 dark:text-emerald-400 shadow-sm"
+                    : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                }`}
+              >
+                Exact Date
+              </button>
+              <button
+                type="button"
+                onClick={() => setPrecision("month")}
+                className={`py-1.5 text-xs font-bold rounded-lg transition-all ${
+                  precision === "month"
+                    ? "bg-white dark:bg-slate-700 text-emerald-700 dark:text-emerald-400 shadow-sm"
+                    : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                }`}
+              >
+                Month & Year
+              </button>
+              <button
+                type="button"
+                onClick={() => setPrecision("year")}
+                className={`py-1.5 text-xs font-bold rounded-lg transition-all ${
+                  precision === "year"
+                    ? "bg-white dark:bg-slate-700 text-emerald-700 dark:text-emerald-400 shadow-sm"
+                    : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                }`}
+              >
+                Year Only
+              </button>
             </div>
           </div>
 
-          {/* Quick Presets */}
+          {/* Dynamic Input based on Precision */}
           <div>
-            <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
-              Quick Presets
+            <label className="block text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider mb-2">
+              {precision === "exact" && "Select Exact Date"}
+              {precision === "month" && "Select Month & Year"}
+              {precision === "year" && "Select Year"}
             </label>
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => setPresetDate(0)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
-                  selectedDate === getTodayStr()
-                    ? "bg-emerald-100 text-emerald-800 border-emerald-300 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-800"
-                    : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-transparent hover:bg-slate-200 dark:hover:bg-slate-700"
-                }`}
-              >
-                Today
-              </button>
-              <button
-                type="button"
-                onClick={() => setPresetDate(1)}
-                className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-transparent hover:bg-slate-200 dark:hover:bg-slate-700 transition-all"
-              >
-                Yesterday
-              </button>
-              <button
-                type="button"
-                onClick={() => setPresetDate(7)}
-                className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-transparent hover:bg-slate-200 dark:hover:bg-slate-700 transition-all"
-              >
-                1 Week Ago
-              </button>
-            </div>
+
+            {precision === "exact" && (
+              <div className="relative">
+                <input
+                  type="date"
+                  value={exactDate}
+                  onChange={(e) => setExactDate(e.target.value)}
+                  required
+                  max={getTodayStr()}
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium"
+                />
+                <CalendarIcon className="w-5 h-5 text-slate-400 absolute right-4 top-3.5 pointer-events-none" />
+              </div>
+            )}
+
+            {precision === "month" && (
+              <div className="relative">
+                <input
+                  type="month"
+                  value={monthYear}
+                  onChange={(e) => setMonthYear(e.target.value)}
+                  required
+                  max={getCurrentMonthStr()}
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium"
+                />
+                <CalendarIcon className="w-5 h-5 text-slate-400 absolute right-4 top-3.5 pointer-events-none" />
+              </div>
+            )}
+
+            {precision === "year" && (
+              <div className="relative">
+                <select
+                  value={yearVal}
+                  onChange={(e) => setYearVal(e.target.value)}
+                  required
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium appearance-none"
+                >
+                  {yearOptions.map((y) => (
+                    <option key={y} value={y}>
+                      {y}
+                    </option>
+                  ))}
+                </select>
+                <CalendarIcon className="w-5 h-5 text-slate-400 absolute right-4 top-3.5 pointer-events-none" />
+              </div>
+            )}
           </div>
+
+          {/* Quick Presets (Only active for Exact Date mode) */}
+          {precision === "exact" && (
+            <div>
+              <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
+                Quick Presets
+              </label>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setPresetDate(0)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
+                    exactDate === getTodayStr()
+                      ? "bg-emerald-100 text-emerald-800 border-emerald-300 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-800"
+                      : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-transparent hover:bg-slate-200 dark:hover:bg-slate-700"
+                  }`}
+                >
+                  Today
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPresetDate(1)}
+                  className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-transparent hover:bg-slate-200 dark:hover:bg-slate-700 transition-all"
+                >
+                  Yesterday
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPresetDate(7)}
+                  className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-transparent hover:bg-slate-200 dark:hover:bg-slate-700 transition-all"
+                >
+                  1 Week Ago
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Actions */}
           <div className="flex items-center justify-end gap-2 pt-3 border-t border-slate-100 dark:border-slate-800">
