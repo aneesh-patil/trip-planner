@@ -4,6 +4,7 @@ import { supabase } from "@/lib/supabase";
 import { toast } from "sonner";
 import type { Trip } from "@/shared/types/trip";
 import { SupabaseTripRepository } from "@/shared/services/trips/TripRepository";
+import { generateUUID, isValidUUID } from "@/shared/utils/uuid";
 
 interface UseTripSyncProps {
   user: User | null;
@@ -224,10 +225,20 @@ export function useTripSync({
       if (tripSyncTimeoutRef.current) clearTimeout(tripSyncTimeoutRef.current);
 
       tripSyncTimeoutRef.current = setTimeout(() => {
-        const tripsToSave = trips.map((t) => ({
-          ...t,
-          userId: t.userId || user.id,
-        }));
+        let hasMigratedId = false;
+        const tripsToSave = trips.map((t) => {
+          const validId = isValidUUID(t.id) ? t.id : generateUUID();
+          if (validId !== t.id) hasMigratedId = true;
+          return {
+            ...t,
+            id: validId,
+            userId: t.userId || user.id,
+          };
+        });
+
+        if (hasMigratedId && setTrips) {
+          setTrips(tripsToSave);
+        }
 
         Promise.all(tripsToSave.map((t) => tripRepo.saveTrip(t, user.id)))
           .then(() => {

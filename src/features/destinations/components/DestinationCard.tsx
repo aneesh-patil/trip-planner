@@ -1,3 +1,4 @@
+import { generateUUID } from "@/shared/utils/uuid";
 import { Link } from "react-router-dom";
 import type { Destination } from "@/shared/types/destination";
 import type { Collection } from "@/shared/types/collection";
@@ -78,7 +79,7 @@ export default function DestinationCard({
                   stops: [
                     ...t.stops,
                     {
-                      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+                      id: generateUUID(),
                       name: destination.name,
                       type: "destination",
                       destinationId: destination.id,

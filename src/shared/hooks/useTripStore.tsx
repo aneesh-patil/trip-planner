@@ -6,6 +6,7 @@ import { useTripSync } from "@/shared/hooks/useTripSync";
 import destinationsIndex from "@/shared/data/destinations-index.json";
 import type { Trip, TripStop } from "@/shared/types/trip";
 import * as TripService from "@/shared/services/trips/TripService";
+import { generateUUID } from "@/shared/utils/uuid";
 
 interface TripStoreContextType {
   favorites: string[];
@@ -174,7 +175,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       throw new Error(errors.join(" "));
     }
     const newTrip: Trip = {
-      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      id: generateUUID(),
       userId: user?.id || "guest",
       title,
       startDate,

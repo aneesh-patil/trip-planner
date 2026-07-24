@@ -13,6 +13,7 @@ import { sortCollections } from "@/shared/utils/collections";
 import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
 import { calculateScore } from "@/shared/services/recommendation/RecommendationScorer";
 import { createRecommendationMatch } from "@/shared/services/recommendation/RecommendationExplainability";
+import { generateUUID } from "@/shared/utils/uuid";
 import {
   ArrowLeft,
   MapPin,
@@ -125,7 +126,7 @@ export default function DestinationDetails() {
                   stops: [
                     ...t.stops,
                     {
-                      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+                      id: generateUUID(),
                       name: destination.name,
                       type: "destination",
                       destinationId: destination.id,

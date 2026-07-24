@@ -1,4 +1,5 @@
 import type { Trip, TripStop } from "@/shared/types/trip";
+import { generateUUID } from "@/shared/utils/uuid";
 
 export function validateTrip(
   title: string,
@@ -22,7 +23,7 @@ export function validateTrip(
 export function addStopToTrip(trip: Trip, stop: Omit<TripStop, "id">): Trip {
   const newStop: TripStop = {
     ...stop,
-    id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    id: generateUUID(),
   };
   return {
     ...trip,
@@ -85,7 +86,7 @@ export function duplicateTrip(
     status: trip.status,
     stops: trip.stops.map((stop) => ({
       ...stop,
-      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      id: generateUUID(),
     })),
     journalNotes: trip.journalNotes,
   };
