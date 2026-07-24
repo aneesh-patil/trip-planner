@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useLocation } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
@@ -11,6 +11,7 @@ import { Sparkles, Plus, Calendar, Bookmark, Compass } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 
 export default function MyTrips() {
+  const location = useLocation();
   const {
     favorites,
     trips,
@@ -26,14 +27,17 @@ export default function MyTrips() {
   const paramTab = searchParams.get("tab");
   const paramTripId = searchParams.get("tripId");
 
+  const isBucketListRoute =
+    location.pathname === "/bucket-list" || paramTab === "bucketlist";
+
   const [activeTab, setActiveTab] = useState<"planned" | "bucketlist">(
-    paramTab === "bucketlist" ? "bucketlist" : "planned",
+    isBucketListRoute ? "bucketlist" : "planned",
   );
   const [selectedTripId, setSelectedTripId] = useState<string | null>(null);
   const [isAddingTrip, setIsAddingTrip] = useState(false);
 
   useEffect(() => {
-    if (paramTab === "bucketlist") {
+    if (location.pathname === "/bucket-list" || paramTab === "bucketlist") {
       setActiveTab("bucketlist");
     } else {
       setActiveTab("planned");
@@ -41,7 +45,7 @@ export default function MyTrips() {
     if (paramTripId) {
       setSelectedTripId(paramTripId);
     }
-  }, [paramTab, paramTripId]);
+  }, [location.pathname, paramTab, paramTripId]);
 
   const allDestinations = getDestinationList() as Destination[];
 

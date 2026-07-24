@@ -28,14 +28,22 @@ export default function Navbar() {
   const [profileOpen, setProfileOpen] = useState(false);
   const [preferencesOpen, setPreferencesOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
-  const [tripsMenuOpen, setTripsMenuOpen] = useState(false);
+  // Dropdown states for primary categories
+  const [discoverOpen, setDiscoverOpen] = useState(false);
+  const [planOpen, setPlanOpen] = useState(false);
+  const [passportOpen, setPassportOpen] = useState(false);
+
   const userMenuRef = useRef<HTMLDivElement>(null);
-  const tripsMenuRef = useRef<HTMLDivElement>(null);
+  const discoverRef = useRef<HTMLDivElement>(null);
+  const planRef = useRef<HTMLDivElement>(null);
+  const passportRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMenuOpen(false);
     setUserMenuOpen(false);
-    setTripsMenuOpen(false);
+    setDiscoverOpen(false);
+    setPlanOpen(false);
+    setPassportOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -47,15 +55,34 @@ export default function Navbar() {
         setUserMenuOpen(false);
       }
       if (
-        tripsMenuRef.current &&
-        !tripsMenuRef.current.contains(event.target as Node)
+        discoverRef.current &&
+        !discoverRef.current.contains(event.target as Node)
       ) {
-        setTripsMenuOpen(false);
+        setDiscoverOpen(false);
+      }
+      if (planRef.current && !planRef.current.contains(event.target as Node)) {
+        setPlanOpen(false);
+      }
+      if (
+        passportRef.current &&
+        !passportRef.current.contains(event.target as Node)
+      ) {
+        setPassportOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const isDiscoverActive =
+    location.pathname.startsWith("/destinations") ||
+    location.pathname.startsWith("/collections");
+
+  const isPlanActive =
+    location.pathname.startsWith("/my-trips") ||
+    location.pathname.startsWith("/bucket-list");
+
+  const isPassportActive = location.pathname.startsWith("/passport");
 
   const handlePreferencesClose = () => {
     sessionStorage.setItem("tabimap_dismissed_preferences_prompt", "true");
@@ -74,12 +101,6 @@ export default function Navbar() {
     }
   }, [user, loading]);
 
-  const navItems = [
-    { name: "Destinations", path: "/destinations", icon: Map },
-    { name: "Passport", path: "/passport", icon: Compass },
-    { name: "My Trips", path: "/my-trips", icon: Calendar },
-  ];
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -92,94 +113,177 @@ export default function Navbar() {
           <span className="text-slate-800 dark:text-slate-200">Map</span>
         </Link>
         <div className="flex items-center gap-6">
-          <nav className="hidden md:flex gap-6 items-center">
-            {navItems.map((item) => {
-              if (item.name === "My Trips") {
-                const isTripsActive = location.pathname.startsWith("/my-trips");
-                return (
-                  <div
-                    key={item.name}
-                    className="relative group"
-                    ref={tripsMenuRef}
-                    onMouseEnter={() => setTripsMenuOpen(true)}
-                    onMouseLeave={() => setTripsMenuOpen(false)}
-                  >
-                    <button
-                      onClick={() => setTripsMenuOpen((o) => !o)}
-                      className={`flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-emerald-600 focus:outline-none ${
-                        isTripsActive
-                          ? "text-emerald-600 font-bold"
-                          : "text-muted-foreground"
-                      }`}
+          <nav className="hidden md:flex gap-4 items-center">
+            {/* 1. Discover Category */}
+            <div
+              className="relative group"
+              ref={discoverRef}
+              onMouseEnter={() => setDiscoverOpen(true)}
+              onMouseLeave={() => setDiscoverOpen(false)}
+            >
+              <button
+                onClick={() => setDiscoverOpen((o) => !o)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
+                  isDiscoverActive
+                    ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
+                    : "text-slate-600 dark:text-slate-300 hover:text-emerald-600"
+                }`}
+              >
+                <Map className="w-4 h-4" />
+                <span>Discover</span>
+                <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+              </button>
+
+              {discoverOpen && (
+                <div className="absolute top-full left-0 pt-1.5 w-60 z-50">
+                  <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 animate-in fade-in zoom-in-95 duration-150">
+                    <Link
+                      to="/destinations"
+                      onClick={() => setDiscoverOpen(false)}
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
                     >
-                      <Calendar className="w-4 h-4" />
-                      <span>My Trips</span>
-                      <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
-                    </button>
-
-                    {/* My Trips Hover/Click Dropdown Card */}
-                    {tripsMenuOpen && (
-                      <div className="absolute top-full left-0 pt-1.5 w-56 z-50">
-                        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 animate-in fade-in zoom-in-95 duration-150">
-                          <Link
-                            to="/my-trips?tab=planned"
-                            onClick={() => setTripsMenuOpen(false)}
-                            className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
-                          >
-                            <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
-                              <Calendar className="w-4 h-4" />
-                            </div>
-                            <div>
-                              <div className="text-xs font-bold text-slate-900 dark:text-white">
-                                Itineraries
-                              </div>
-                              <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                                Your trip plans
-                              </div>
-                            </div>
-                          </Link>
-
-                          <Link
-                            to="/my-trips?tab=bucketlist"
-                            onClick={() => setTripsMenuOpen(false)}
-                            className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
-                          >
-                            <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-500 group-hover/item:scale-105 transition-transform">
-                              <Bookmark className="w-4 h-4" />
-                            </div>
-                            <div>
-                              <div className="text-xs font-bold text-slate-900 dark:text-white">
-                                Bucket List
-                              </div>
-                              <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                                Saved sights to visit
-                              </div>
-                            </div>
-                          </Link>
+                      <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
+                        <Map className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 dark:text-white">
+                          Destinations
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          Explore Japan sights
                         </div>
                       </div>
-                    )}
-                  </div>
-                );
-              }
+                    </Link>
 
-              const isActive = location.pathname === item.path;
-              const Icon = item.icon;
-              return (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`flex items-center gap-2 text-sm font-medium transition-colors hover:text-emerald-600 ${
-                    isActive
-                      ? "text-emerald-600 font-bold"
-                      : "text-muted-foreground"
-                  }`}
-                >
-                  <Icon className="w-4 h-4" />
-                  {item.name}
-                </Link>
-              );
-            })}
+                    <Link
+                      to="/collections"
+                      onClick={() => setDiscoverOpen(false)}
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                    >
+                      <div className="p-2 rounded-lg bg-teal-50 dark:bg-teal-950/60 text-teal-600 dark:text-teal-400 group-hover/item:scale-105 transition-transform">
+                        <CheckCircle2 className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 dark:text-white">
+                          Collections
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          Curated travel themes
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* 2. Plan Category */}
+            <div
+              className="relative group"
+              ref={planRef}
+              onMouseEnter={() => setPlanOpen(true)}
+              onMouseLeave={() => setPlanOpen(false)}
+            >
+              <button
+                onClick={() => setPlanOpen((o) => !o)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
+                  isPlanActive
+                    ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
+                    : "text-slate-600 dark:text-slate-300 hover:text-emerald-600"
+                }`}
+              >
+                <Calendar className="w-4 h-4" />
+                <span>Plan</span>
+                <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+              </button>
+
+              {planOpen && (
+                <div className="absolute top-full left-0 pt-1.5 w-60 z-50">
+                  <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 animate-in fade-in zoom-in-95 duration-150">
+                    <Link
+                      to="/my-trips"
+                      onClick={() => setPlanOpen(false)}
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                    >
+                      <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
+                        <Calendar className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 dark:text-white">
+                          My Trips
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          Custom trip itineraries
+                        </div>
+                      </div>
+                    </Link>
+
+                    <Link
+                      to="/bucket-list"
+                      onClick={() => setPlanOpen(false)}
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                    >
+                      <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-500 group-hover/item:scale-105 transition-transform">
+                        <Bookmark className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 dark:text-white">
+                          Bucket List
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          Saved places to visit
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* 3. Passport Category */}
+            <div
+              className="relative group"
+              ref={passportRef}
+              onMouseEnter={() => setPassportOpen(true)}
+              onMouseLeave={() => setPassportOpen(false)}
+            >
+              <Link
+                to="/passport"
+                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
+                  isPassportActive
+                    ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
+                    : "text-slate-600 dark:text-slate-300 hover:text-emerald-600"
+                }`}
+              >
+                <Compass className="w-4 h-4" />
+                <span>Passport</span>
+                <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+              </Link>
+
+              {passportOpen && (
+                <div className="absolute top-full left-0 pt-1.5 w-64 z-50">
+                  <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 animate-in fade-in zoom-in-95 duration-150">
+                    <Link
+                      to="/passport"
+                      onClick={() => setPassportOpen(false)}
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                    >
+                      <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
+                        <Compass className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 dark:text-white">
+                          Dashboard
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          Travel hub & achievements
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           <div className="hidden sm:flex items-center gap-2">
@@ -300,24 +404,69 @@ export default function Navbar() {
       {/* Mobile slide-down menu */}
       {menuOpen && (
         <div className="md:hidden fixed inset-x-0 top-16 z-40 bg-background/95 backdrop-blur-md border-b shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto">
-          <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
-            {navItems.map((item) => {
-              const isActive = location.pathname === item.path;
-              const Icon = item.icon;
-              return (
+          <nav className="container mx-auto px-4 py-4 flex flex-col gap-3">
+            {/* Discover Section */}
+            <div>
+              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                Discover
+              </div>
+              <div className="flex flex-col gap-1 mt-1">
                 <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-colors ${
-                    isActive
-                      ? "bg-emerald-50 text-emerald-600 dark:bg-emerald-900/30"
-                      : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800"
-                  }`}
+                  to="/destinations"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                 >
-                  <Icon className="w-5 h-5" /> {item.name}
+                  <Map className="w-4 h-4 text-emerald-500" /> Destinations
                 </Link>
-              );
-            })}
+                <Link
+                  to="/collections"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-teal-500" /> Collections
+                </Link>
+              </div>
+            </div>
+
+            {/* Plan Section */}
+            <div>
+              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                Plan
+              </div>
+              <div className="flex flex-col gap-1 mt-1">
+                <Link
+                  to="/my-trips"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <Calendar className="w-4 h-4 text-emerald-500" /> My Trips
+                </Link>
+                <Link
+                  to="/bucket-list"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <Bookmark className="w-4 h-4 text-amber-500" /> Bucket List
+                </Link>
+              </div>
+            </div>
+
+            {/* Passport Section */}
+            <div>
+              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                Passport
+              </div>
+              <div className="flex flex-col gap-1 mt-1">
+                <Link
+                  to="/passport"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <Compass className="w-4 h-4 text-emerald-500" /> Dashboard &
+                  History
+                </Link>
+              </div>
+            </div>
 
             <div className="my-2 border-t border-slate-200 dark:border-slate-800" />
 

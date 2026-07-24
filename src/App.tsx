@@ -77,10 +77,9 @@ function App() {
                     />
                     <Route
                       path="/favorites"
-                      element={
-                        <Navigate to="/my-trips?tab=bucketlist" replace />
-                      }
+                      element={<Navigate to="/bucket-list" replace />}
                     />
+                    <Route path="/bucket-list" element={<MyTrips />} />
                     <Route path="/my-trips" element={<MyTrips />} />
                     <Route path="/passport" element={<PrefectureChecklist />} />
                     <Route
