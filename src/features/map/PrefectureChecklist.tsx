@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
+import { PassportTimelineCalendar } from "./components/PassportTimelineCalendar";
 import Japan from "@react-map/japan";
 import {
   Compass,
@@ -291,6 +292,9 @@ export default function PrefectureChecklist() {
           </div>
         </div>
       </div>
+
+      {/* Passport Activity Timeline & Calendar View */}
+      <PassportTimelineCalendar />
 
       {/* Passport Achievements Section (System Light/Dark Tokens) */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 md:p-8 shadow-sm">
