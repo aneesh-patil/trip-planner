@@ -3,6 +3,12 @@ import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
+import fs from "fs";
+
+const pkg = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "./package.json"), "utf-8"),
+);
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -12,7 +18,7 @@ export default defineConfig({
     },
   },
   define: {
-    __APP_VERSION__: JSON.stringify(process.env.npm_package_version || "1.3.0"),
+    __APP_VERSION__: JSON.stringify(pkg.version),
   },
   test: {
     globals: true,
