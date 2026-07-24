@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { addStopToTrip } from "@/shared/services/trips/TripService";
@@ -84,13 +85,20 @@ export function ItineraryPickerModal({
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-slate-950/60 backdrop-blur-sm p-0 sm:p-4">
+  const modalContent = (
+    <div
+      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center bg-slate-950/60 backdrop-blur-sm p-0 sm:p-4"
+      onClick={(e) => {
+        e.stopPropagation();
+        onClose();
+      }}
+    >
       <div
         className="w-full max-w-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-t-3xl sm:rounded-3xl shadow-2xl overflow-hidden transition-all animate-in fade-in zoom-in-95 duration-200 max-h-[85vh] flex flex-col"
         role="dialog"
         aria-modal="true"
         aria-labelledby="itinerary-modal-title"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-800">
@@ -230,4 +238,6 @@ export function ItineraryPickerModal({
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 }
