@@ -110,7 +110,7 @@
   "schemaVersion": 2,
   "status": "verified",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": []
 }

@@ -115,7 +115,7 @@
   },
   "status": "verified",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [
     {
