@@ -1,0 +1,63 @@
+{
+  "id": "marugame-castle",
+  "name": "Marugame Castle",
+  "nameJa": "丸亀城",
+  "prefecture": "Kagawa",
+  "region": "Shikoku",
+  "coordinates": {
+    "lat": 34.2861,
+    "lng": 133.8003
+  },
+  "tags": ["12 Original Keeps", "Top 100 Castle", "Highest Stone Walls"],
+  "rating": 4.6,
+  "ratings": {
+    "overall": 4.6,
+    "scenery": 4.6,
+    "accessibility": 4.3,
+    "crowd": 3.9,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "sortOrder": 9,
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 20,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 240,
+    "bus": 300,
+    "car": 340
+  },
+  "budget": {
+    "low": 3000,
+    "mid": 6000,
+    "high": 12000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Marugame_Castle01s3200.jpg/1280px-Marugame_Castle01s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Marugame_Castle01s3200.jpg/1280px-Marugame_Castle01s3200.jpg"
+  ],
+  "description": "Marugame Castle features Japan's tallest combined stone wall foundations (60 meters high in total), supporting a compact original three-story wooden keep.",
+  "notes": "Famous for its sweeping curve stone wall technique known as Ogura-tsumi.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 3000,
+  "budgetMax": 12000
+}

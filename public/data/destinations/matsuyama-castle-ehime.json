@@ -1,0 +1,68 @@
+{
+  "id": "matsuyama-castle-ehime",
+  "name": "Iyo Matsuyama Castle",
+  "nameJa": "松山城",
+  "prefecture": "Ehime",
+  "region": "Shikoku",
+  "coordinates": {
+    "lat": 33.8456,
+    "lng": 132.7656
+  },
+  "tags": [
+    "12 Original Keeps",
+    "Top 100 Castle",
+    "Ropeway Access",
+    "Hilltop Fortress"
+  ],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 4.9,
+    "accessibility": 4.4,
+    "crowd": 4.2,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "sortOrder": 10,
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 22,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 290,
+    "bus": 350,
+    "car": 400
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Matsuyama_Castle_Keep_2019.jpg/1280px-Matsuyama_Castle_Keep_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Matsuyama_Castle_Keep_2019.jpg/1280px-Matsuyama_Castle_Keep_2019.jpg"
+  ],
+  "description": "Iyo Matsuyama Castle is one of Japan's most complex surviving hilltop castles, accessible via scenic chairlift or ropeway overlooking the Seto Inland Sea.",
+  "notes": "Features 21 historically designated important cultural properties.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 4000,
+  "budgetMax": 16000
+}

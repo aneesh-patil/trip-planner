@@ -1,0 +1,63 @@
+{
+  "id": "uwajima-castle",
+  "name": "Uwajima Castle",
+  "nameJa": "宇和島城",
+  "prefecture": "Ehime",
+  "region": "Shikoku",
+  "coordinates": {
+    "lat": 33.2208,
+    "lng": 132.5653
+  },
+  "tags": ["12 Original Keeps", "Top 100 Castle", "Coastal Hill Castle"],
+  "rating": 4.6,
+  "ratings": {
+    "overall": 4.6,
+    "scenery": 4.6,
+    "accessibility": 4,
+    "crowd": 3.7,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "sortOrder": 11,
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 25,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 340,
+    "bus": 400,
+    "car": 450
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 15000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Uwajima_Castle_Keep_2019.jpg/1280px-Uwajima_Castle_Keep_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Uwajima_Castle_Keep_2019.jpg/1280px-Uwajima_Castle_Keep_2019.jpg"
+  ],
+  "description": "Uwajima Castle, constructed by master castle architect Todo Takatora, stands atop a coastal hill in southern Ehime with its pristine three-story original keep.",
+  "notes": "Preserved by the Date clan who ruled Uwajima domain throughout the Edo period.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 4000,
+  "budgetMax": 15000
+}

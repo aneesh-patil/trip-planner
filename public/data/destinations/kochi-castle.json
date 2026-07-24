@@ -1,0 +1,63 @@
+{
+  "id": "kochi-castle",
+  "name": "Kochi Castle",
+  "nameJa": "高知城",
+  "prefecture": "Kochi",
+  "region": "Shikoku",
+  "coordinates": {
+    "lat": 33.5608,
+    "lng": 133.5314
+  },
+  "tags": ["12 Original Keeps", "Top 100 Castle", "Complete Palace Complex"],
+  "rating": 4.7,
+  "ratings": {
+    "overall": 4.7,
+    "scenery": 4.7,
+    "accessibility": 4.2,
+    "crowd": 4,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "sortOrder": 7,
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 15,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 300,
+    "bus": 360,
+    "car": 420
+  },
+  "budget": {
+    "low": 5000,
+    "mid": 9000,
+    "high": 18000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kochi_Castle_Main_Keep_2019.jpg/1280px-Kochi_Castle_Main_Keep_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kochi_Castle_Main_Keep_2019.jpg/1280px-Kochi_Castle_Main_Keep_2019.jpg"
+  ],
+  "description": "Kochi Castle is unique among Japan's 12 original keep castles for retaining both its main keep and the original feudal palace (Honmaru Goten) intact.",
+  "notes": "Built by Yamauchi Kazutoyo following the Battle of Sekigahara.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 5000,
+  "budgetMax": 18000
+}

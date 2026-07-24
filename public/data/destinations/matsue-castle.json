@@ -1,0 +1,68 @@
+{
+  "id": "matsue-castle",
+  "name": "Matsue Castle",
+  "nameJa": "松江城",
+  "prefecture": "Shimane",
+  "region": "Chugoku",
+  "coordinates": {
+    "lat": 35.4753,
+    "lng": 133.0506
+  },
+  "tags": [
+    "12 Original Keeps",
+    "National Treasure",
+    "Top 100 Castle",
+    "Black Plover Castle"
+  ],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 4.8,
+    "accessibility": 4.3,
+    "crowd": 4.1,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "sortOrder": 6,
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 12,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "shinkansen": 270,
+    "train": 330,
+    "car": 390
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 15000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Matsue_castle02s3200.jpg/1280px-Matsue_castle02s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Matsue_castle02s3200.jpg/1280px-Matsue_castle02s3200.jpg"
+  ],
+  "description": "Matsue Castle, completed in 1611, is one of Japan's five castles designated as National Treasures, featuring striking black wooden siding nicknamed the Black Plover Castle.",
+  "notes": "Surrounded by historic moat boat tours (Horikawa Pleasure Boat).",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 4000,
+  "budgetMax": 15000
+}

@@ -1,0 +1,58 @@
+{
+  "id": "korakuen-okayama",
+  "name": "Korakuen Garden",
+  "nameJa": "後楽園",
+  "prefecture": "Okayama",
+  "region": "Chugoku",
+  "coordinates": {
+    "lat": 34.6672,
+    "lng": 133.9361
+  },
+  "tags": ["Three Great Gardens", "Landscape Garden", "Okayama Castle View"],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 4.9,
+    "accessibility": 4.5,
+    "crowd": 4.3,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-gardens",
+      "sortOrder": 3,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "shinkansen": 210,
+    "train": 240,
+    "car": 300
+  },
+  "budget": {
+    "low": 3000,
+    "mid": 6000,
+    "high": 12000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Okayama_Korakuen07s3200.jpg/1280px-Okayama_Korakuen07s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Okayama_Korakuen07s3200.jpg/1280px-Okayama_Korakuen07s3200.jpg"
+  ],
+  "description": "Korakuen in Okayama is a celebrated landscape garden built by feudal lord Ikeda Tsunamasa in 1700, featuring spacious lawns, ponds, tea trees, and borrowed scenery of Okayama Castle.",
+  "notes": "Located right across the Asahi River from Okayama Castle.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 3000,
+  "budgetMax": 12000
+}

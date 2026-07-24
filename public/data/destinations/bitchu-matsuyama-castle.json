@@ -1,0 +1,68 @@
+{
+  "id": "bitchu-matsuyama-castle",
+  "name": "Bitchu Matsuyama Castle",
+  "nameJa": "備中松山城",
+  "prefecture": "Okayama",
+  "region": "Chugoku",
+  "coordinates": {
+    "lat": 34.8089,
+    "lng": 133.6222
+  },
+  "tags": [
+    "12 Original Keeps",
+    "Top 100 Castle",
+    "Mountain Fortress",
+    "Castle in the Sky"
+  ],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 5,
+    "accessibility": 3.8,
+    "crowd": 3.9,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "sortOrder": 8,
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 18,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "shinkansen": 240,
+    "train": 280,
+    "car": 320
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 7000,
+    "high": 14000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bitchu_Matsuyama_Castle_Keep_2018.jpg/1280px-Bitchu_Matsuyama_Castle_Keep_2018.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bitchu_Matsuyama_Castle_Keep_2018.jpg/1280px-Bitchu_Matsuyama_Castle_Keep_2018.jpg"
+  ],
+  "description": "Bitchu Matsuyama Castle is Japan's highest original mountain castle (430 meters above sea level), celebrated for floating above a sea of clouds on autumn mornings.",
+  "notes": "Built in 1240, the current keep dates to 1683.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 4000,
+  "budgetMax": 14000
+}

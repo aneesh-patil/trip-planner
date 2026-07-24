@@ -1,0 +1,73 @@
+{
+  "id": "himeji-castle",
+  "name": "Himeji Castle (White Heron Castle)",
+  "nameJa": "姫路城",
+  "prefecture": "Hyogo",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 34.8394,
+    "lng": 134.6939
+  },
+  "tags": [
+    "12 Original Keeps",
+    "UNESCO World Heritage",
+    "Top 100 Castle",
+    "National Treasure"
+  ],
+  "rating": 4.9,
+  "ratings": {
+    "overall": 4.9,
+    "scenery": 5,
+    "accessibility": 4.7,
+    "crowd": 4.6,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "sortOrder": 1,
+      "confirmed": true
+    },
+    {
+      "collectionId": "unesco-japan",
+      "sortOrder": 2,
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 1,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "shinkansen": 180,
+    "train": 210,
+    "car": 270
+  },
+  "budget": {
+    "low": 3000,
+    "mid": 6000,
+    "high": 12000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Himeji_Castle_Keep_201505.jpg/1280px-Himeji_Castle_Keep_201505.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Himeji_Castle_Keep_201505.jpg/1280px-Himeji_Castle_Keep_201505.jpg"
+  ],
+  "description": "Himeji Castle is Japan's premier surviving feudal castle complex and a UNESCO World Heritage site, famous for its brilliant white plaster walls resembling a taking-off heron.",
+  "notes": "Completed in 1609, it survived World War II bombings and major earthquakes completely intact.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 3000,
+  "budgetMax": 12000
+}

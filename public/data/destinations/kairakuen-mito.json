@@ -1,0 +1,58 @@
+{
+  "id": "kairakuen-mito",
+  "name": "Kairakuen Garden",
+  "nameJa": "偕楽園",
+  "prefecture": "Ibaraki",
+  "region": "Kanto",
+  "coordinates": {
+    "lat": 36.3745,
+    "lng": 140.4533
+  },
+  "tags": ["Three Great Gardens", "Plum Blossoms", "Historical Park"],
+  "rating": 4.6,
+  "ratings": {
+    "overall": 4.6,
+    "scenery": 4.8,
+    "accessibility": 4.3,
+    "crowd": 4.2,
+    "couple": 4.5,
+    "summer": 4.3,
+    "winter": 4.2,
+    "rain": 3.8,
+    "food": 4.4,
+    "photography": 4.9,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 4.8
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-gardens",
+      "sortOrder": 2,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 75,
+    "bus": 85,
+    "car": 70
+  },
+  "budget": {
+    "low": 2000,
+    "mid": 4000,
+    "high": 8000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kairaku-en_Mito_Ibaraki_pref_Japan01s.jpg/1280px-Kairaku-en_Mito_Ibaraki_pref_Japan01s.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kairaku-en_Mito_Ibaraki_pref_Japan01s.jpg/1280px-Kairaku-en_Mito_Ibaraki_pref_Japan01s.jpg"
+  ],
+  "description": "Kairakuen in Mito is one of Japan's Three Great Gardens, famous for its over 3,000 plum trees of 100 different varieties that bloom brilliantly in early spring.",
+  "notes": "Founded in 1842 by Tokugawa Nariaki, designed as a public park for citizens to relax.",
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 2000,
+  "budgetMax": 8000
+}
