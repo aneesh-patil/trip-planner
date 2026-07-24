@@ -98,24 +98,21 @@ export default function MyTrips() {
               : "Manage your custom travel itineraries and daily route plans."}
           </p>
         </div>
+
+        {activeTab === "planned" && (
+          <Button
+            onClick={() => setIsAddingTrip(true)}
+            className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-bold px-6 shadow-md"
+          >
+            <Plus className="w-4 h-4 mr-1.5" />
+            Plan New Trip
+          </Button>
+        )}
       </div>
 
       {/* Planned Itineraries Sub-Page */}
       {activeTab === "planned" && (
         <div className="space-y-6">
-          <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white">
-              My Travel Itineraries
-            </h2>
-            <Button
-              onClick={() => setIsAddingTrip(true)}
-              className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-bold px-6 shadow-md"
-            >
-              <Plus className="w-4 h-4 mr-1.5" />
-              Plan New Trip
-            </Button>
-          </div>
-
           {trips.length === 0 ? (
             <div className="text-center py-20 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 max-w-2xl mx-auto">
               <Calendar className="w-16 h-16 mx-auto text-slate-300 dark:text-slate-700 mb-6" />
@@ -153,12 +150,6 @@ export default function MyTrips() {
       {/* Bucket List Sub-Page */}
       {activeTab === "bucketlist" && (
         <div className="space-y-6">
-          <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white">
-              My Bucket List ({favoriteDestinations.length})
-            </h2>
-          </div>
-
           {favoriteDestinations.length === 0 ? (
             <div className="text-center py-20 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 max-w-2xl mx-auto">
               <Bookmark className="w-16 h-16 mx-auto text-slate-300 dark:text-slate-700 mb-6" />
