@@ -15873,7 +15873,8 @@
     "notes": "Founded in 1842 by Tokugawa Nariaki, designed as a public park for citizens to relax.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 2000,
-    "budgetMax": 8000
+    "budgetMax": 8000,
+    "budgetRecommended": 5000
   },
   {
     "id": "korakuen-okayama",
@@ -15931,7 +15932,8 @@
     "notes": "Located right across the Asahi River from Okayama Castle.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 3000,
-    "budgetMax": 12000
+    "budgetMax": 12000,
+    "budgetRecommended": 7500
   },
   {
     "id": "himeji-castle",
@@ -16009,7 +16011,8 @@
     "notes": "Completed in 1609, it survived World War II bombings and major earthquakes completely intact.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 3000,
-    "budgetMax": 12000
+    "budgetMax": 12000,
+    "budgetRecommended": 7500
   },
   {
     "id": "hirosaki-castle",
@@ -16077,7 +16080,8 @@
     "notes": "Built in 1611 by the Tsugaru clan.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 4000,
-    "budgetMax": 15000
+    "budgetMax": 15000,
+    "budgetRecommended": 9500
   },
   {
     "id": "matsue-castle",
@@ -16150,7 +16154,8 @@
     "notes": "Surrounded by historic moat boat tours (Horikawa Pleasure Boat).",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 4000,
-    "budgetMax": 15000
+    "budgetMax": 15000,
+    "budgetRecommended": 9500
   },
   {
     "id": "kochi-castle",
@@ -16213,7 +16218,8 @@
     "notes": "Built by Yamauchi Kazutoyo following the Battle of Sekigahara.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 5000,
-    "budgetMax": 18000
+    "budgetMax": 18000,
+    "budgetRecommended": 11500
   },
   {
     "id": "bitchu-matsuyama-castle",
@@ -16281,7 +16287,8 @@
     "notes": "Built in 1240, the current keep dates to 1683.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 4000,
-    "budgetMax": 14000
+    "budgetMax": 14000,
+    "budgetRecommended": 9000
   },
   {
     "id": "marugame-castle",
@@ -16344,7 +16351,8 @@
     "notes": "Famous for its sweeping curve stone wall technique known as Ogura-tsumi.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 3000,
-    "budgetMax": 12000
+    "budgetMax": 12000,
+    "budgetRecommended": 7500
   },
   {
     "id": "matsuyama-castle-ehime",
@@ -16412,7 +16420,8 @@
     "notes": "Features 21 historically designated important cultural properties.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 4000,
-    "budgetMax": 16000
+    "budgetMax": 16000,
+    "budgetRecommended": 10000
   },
   {
     "id": "uwajima-castle",
@@ -16475,7 +16484,8 @@
     "notes": "Preserved by the Date clan who ruled Uwajima domain throughout the Edo period.",
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 4000,
-    "budgetMax": 15000
+    "budgetMax": 15000,
+    "budgetRecommended": 9500
   },
   {
     "id": "hakodate-night-view",
@@ -16537,7 +16547,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kanemori_Red_Brick_Warehouse_Hakodate_Hokkaido_pref_Japan01n.jpg/3840px-Kanemori_Red_Brick_Warehouse_Hakodate_Hokkaido_pref_Japan01n.jpg"
     ],
     "description": "Mount Hakodate offers one of Japan's Three Great Night Views, overlooking a stunning hourglass-shaped peninsula illuminated between Tsugaru Strait and Hakodate Bay.",
-    "notes": "Accessible via the Mount Hakodate Ropeway in just 3 minutes."
+    "notes": "Accessible via the Mount Hakodate Ropeway in just 3 minutes.",
+    "budgetRecommended": 6500
   },
   {
     "id": "kobe-maya-night-view",
@@ -16599,7 +16610,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/View_of_Kikuseidai_from_Mount_Maya_Kobe.jpg/3840px-View_of_Kikuseidai_from_Mount_Maya_Kobe.jpg"
     ],
     "description": "Known as the Ten Million Dollar Night View, Kikuseidai observatory on Mount Maya captures a breathtaking sparkling panorama spanning Kobe, Osaka Bay, and Kansai.",
-    "notes": "Kikuseidai literally means a platform where you can scoop up stars with your hands."
+    "notes": "Kikuseidai literally means a platform where you can scoop up stars with your hands.",
+    "budgetRecommended": 6000
   },
   {
     "id": "gero-onsen",
@@ -16657,7 +16669,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/260125_Gero_Onsen_Gero_Gifu_pref_Japan02s3.jpg/3840px-260125_Gero_Onsen_Gero_Gifu_pref_Japan02s3.jpg"
     ],
     "description": "Gero Onsen is one of Japan's Three Great Hot Springs (Nihon Sanmeisen), famed since the 9th century for its silky alkaline waters known as 'beauty baths'.",
-    "notes": "Situated along the Hida River between Nagoya and Takayama."
+    "notes": "Situated along the Hida River between Nagoya and Takayama.",
+    "budgetRecommended": 15000
   },
   {
     "id": "arima-onsen",
@@ -16719,7 +16732,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/2/2c/170811_Rokko-Arima_Ropeway_Kobe_Japan00n.jpg"
     ],
     "description": "Arima Onsen is Japan's oldest recorded hot spring resort, nestled behind Mount Rokko and famous for its iron-rich golden 'Kinsen' and clear radium 'Ginsen' waters.",
-    "notes": "Favored by Toyotomi Hideyoshi who built private baths here."
+    "notes": "Favored by Toyotomi Hideyoshi who built private baths here.",
+    "budgetRecommended": 18000
   },
   {
     "id": "kinosaki-onsen",
@@ -16777,7 +16791,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kinosaki_Onsen_by_day.jpg/3840px-Kinosaki_Onsen_by_day.jpg"
     ],
     "description": "Kinosaki Onsen is a quintessential hot spring town centered around a willow-lined canal, where visitors stroll between seven distinct public bathhouses in traditional yukata robes.",
-    "notes": "Founded over 1,300 years ago when a stork was observed healing its wounded leg in the thermal springs."
+    "notes": "Founded over 1,300 years ago when a stork was observed healing its wounded leg in the thermal springs.",
+    "budgetRecommended": 17500
   },
   {
     "id": "kyoto-historic",
@@ -16845,7 +16860,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg"
     ],
     "description": "Kyoto, Japan's imperial capital for over a millennium, encompasses 17 UNESCO World Heritage monuments including the wooden balcony of Kiyomizu-dera and the shimmering Golden Pavilion.",
-    "notes": "Home to over 2,000 temples and shrines."
+    "notes": "Home to over 2,000 temples and shrines.",
+    "budgetRecommended": 9000
   },
   {
     "id": "nara-park-todaiji",
@@ -16918,7 +16934,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg"
     ],
     "description": "Nara Park houses the world's largest wooden building (Todai-ji Daibutsuden), sheltering the 15-meter bronze Great Buddha alongside over 1,200 friendly freely roaming sika deer.",
-    "notes": "Nara was Japan's first permanent capital (710–784 AD)."
+    "notes": "Nara was Japan's first permanent capital (710–784 AD).",
+    "budgetRecommended": 5000
   },
   {
     "id": "miyajima-itsukushima",
@@ -16991,7 +17008,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg/3840px-Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg"
     ],
     "description": "Itsukushima Shrine on Miyajima Island is world-renowned for its iconic vermilion O-Torii gate that appears to float magically upon the Seto Inland Sea during high tide.",
-    "notes": "Designated as one of the Three Views of Japan (Nihon Sankei)."
+    "notes": "Designated as one of the Three Views of Japan (Nihon Sankei).",
+    "budgetRecommended": 7500
   },
   {
     "id": "matsushima-bay",
@@ -17049,7 +17067,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/211030_Kameshima_Matsushima_Miyagi_pref_Japan01n.jpg/3840px-211030_Kameshima_Matsushima_Miyagi_pref_Japan01n.jpg"
     ],
     "description": "Matsushima Bay is one of Japan's Three Great Views (Nihon Sankei), celebrated for over 260 pine-clad islands scattered across tranquil coastal waters.",
-    "notes": "Famed poet Matsuo Basho was left speechless by its beauty in Oku no Hosomichi."
+    "notes": "Famed poet Matsuo Basho was left speechless by its beauty in Oku no Hosomichi.",
+    "budgetRecommended": 7500
   },
   {
     "id": "amanohashidate-kyoto",
@@ -17107,7 +17126,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Amanohashidate_aerial_view_2026.jpg/3840px-Amanohashidate_aerial_view_2026.jpg"
     ],
     "description": "Amanohashidate is a natural 3.3-kilometer pine-covered sandbar spanning Miyazu Bay, famed for the Matanozoki upside-down viewing technique making it look like a bridge floating into heaven.",
-    "notes": "Planted with nearly 7,000 pine trees."
+    "notes": "Planted with nearly 7,000 pine trees.",
+    "budgetRecommended": 7500
   },
   {
     "id": "kegon-falls-nikko",
@@ -17169,7 +17189,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/8/8a/Lake_chuzenji_and_kegon_waterfall.jpg"
     ],
     "description": "Kegon Falls is Japan's most famous 97-meter waterfall, carrying the outlet waters of Lake Chuzenji down a dramatic cliff in Nikko National Park.",
-    "notes": "Accessible via an 100-meter underground elevator to the lower observation deck."
+    "notes": "Accessible via an 100-meter underground elevator to the lower observation deck.",
+    "budgetRecommended": 4000
   },
   {
     "id": "nachi-falls-wakayama",
@@ -17236,7 +17257,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/d/d5/Kumano_Kodo_World_heritage_Nachi-no-taki_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E9%82%A3%E6%99%BA%E5%A4%A7%E6%BB%9D10.JPG"
     ],
     "description": "Nachi Falls is Japan's tallest uninterrupted single-drop waterfall (133 meters), framing the three-story red Seiganto-ji pagoda against the sacred Nachi primeval forest.",
-    "notes": "Part of the UNESCO Sacred Sites and Pilgrimage Routes in the Kii Mountain Range."
+    "notes": "Part of the UNESCO Sacred Sites and Pilgrimage Routes in the Kii Mountain Range.",
+    "budgetRecommended": 6500
   },
   {
     "id": "ise-grand-shrine",
@@ -17303,7 +17325,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/8/8d/Naiku_04.jpg"
     ],
     "description": "Ise Grand Shrine is the spiritual heart of Shinto, dedicated to the Sun Goddess Amaterasu and rebuilt every 20 years in accordance with ancient Shikinen Sengu ritual.",
-    "notes": "Home to the Sacred Mirror (Yata no Kagami), one of Japan's Three Imperial Regalia."
+    "notes": "Home to the Sacred Mirror (Yata no Kagami), one of Japan's Three Imperial Regalia.",
+    "budgetRecommended": 7500
   },
   {
     "id": "izumo-taisha",
@@ -17366,7 +17389,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Izumo-taisha14bs4592.jpg/3840px-Izumo-taisha14bs4592.jpg"
     ],
     "description": "Izumo Taisha is one of Japan's oldest Shinto shrines, famed for its massive 5.2-ton straw Shimenawa rope hanging at the Kaguraden hall and its deity of marriage and destiny.",
-    "notes": "In October (Kamiarizuki), all 8 million Shinto gods gather at Izumo Taisha."
+    "notes": "In October (Kamiarizuki), all 8 million Shinto gods gather at Izumo Taisha.",
+    "budgetRecommended": 6500
   },
   {
     "id": "atsuta-shrine-nagoya",
@@ -17424,7 +17448,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/3840px-Atsuta_Shrine.jpg"
     ],
     "description": "Atsuta Shrine in central Nagoya is a sacred ancient Shinto sanctuary surrounded by a tranquil cedar forest, enshrining the legendary Kusanagi-no-Tsurugi sacred sword.",
-    "notes": "Founded nearly 2,000 years ago during the reign of Emperor Keiko."
+    "notes": "Founded nearly 2,000 years ago during the reign of Emperor Keiko.",
+    "budgetRecommended": 4000
   },
   {
     "id": "mount-yoshino-nara",
@@ -17491,7 +17516,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/1/1a/Cherry_blossoms_at_Yoshinoyama_02.jpg"
     ],
     "description": "Mount Yoshino is Japan's most famous cherry blossom mountain, carpeted by over 30,000 Yamazakura trees blooming sequentially across four mountain elevations.",
-    "notes": "Part of the Sacred Sites and Pilgrimage Routes in the Kii Mountain Range UNESCO site."
+    "notes": "Part of the Sacred Sites and Pilgrimage Routes in the Kii Mountain Range UNESCO site.",
+    "budgetRecommended": 7500
   },
   {
     "id": "mount-inasa-nagasaki",
@@ -17553,7 +17579,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mt.Inasa_2010.jpg/800px-Mt.Inasa_2010.jpg"
     ],
     "description": "Mount Inasa in Nagasaki is designated as one of the World's New Three Great Night Views, offering a 360° illuminated bowl view of Nagasaki harbor and surrounding hills.",
-    "notes": "333 meters high, connected by Nagasaki Ropeway."
+    "notes": "333 meters high, connected by Nagasaki Ropeway.",
+    "budgetRecommended": 6500
   },
   {
     "id": "osaka-castle",
@@ -17611,7 +17638,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Osaka_Castle_03bs3200.jpg/800px-Osaka_Castle_03bs3200.jpg"
     ],
     "description": "Osaka Castle is an iconic 16th-century fortress constructed by Toyotomi Hideyoshi, featuring golden roof ornaments, massive stone ramparts, and a lush park surrounded by moats.",
-    "notes": "Reconstructed in 1931 with an elevator-serviced interior museum."
+    "notes": "Reconstructed in 1931 with an elevator-serviced interior museum.",
+    "budgetRecommended": 6500
   },
   {
     "id": "nijo-castle-kyoto",
@@ -17684,7 +17712,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NinomaruPalace.jpg/800px-NinomaruPalace.jpg"
     ],
     "description": "Nijo Castle in Kyoto was the residence of Tokugawa Ieyasu, famous for its Ninomaru Palace featuring squeaking 'nightingale floors' designed to alert guards to intruders.",
-    "notes": "Site where Shogun Tokugawa Yoshinobu returned power to Emperor Meiji in 1867."
+    "notes": "Site where Shogun Tokugawa Yoshinobu returned power to Emperor Meiji in 1867.",
+    "budgetRecommended": 6500
   },
   {
     "id": "kumamoto-castle",
@@ -17742,6 +17771,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kumamoto_Castle_Keep_Tower_20221022-3.jpg/3840px-Kumamoto_Castle_Keep_Tower_20221022-3.jpg"
     ],
     "description": "Kumamoto Castle is one of Japan's most formidable castles, engineered by master builder Kato Kiyomasa with steep curved Musha-gaeshi stone walls designed to prevent ninja scaling.",
-    "notes": "Main keep fully restored following the 2016 Kumamoto earthquakes."
+    "notes": "Main keep fully restored following the 2016 Kumamoto earthquakes.",
+    "budgetRecommended": 8000
   }
 ]

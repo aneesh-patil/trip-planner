@@ -64,5 +64,6 @@
   "notes": "Built in 1611 by the Tsugaru clan.",
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 4000,
-  "budgetMax": 15000
+  "budgetMax": 15000,
+  "budgetRecommended": 9500
 }

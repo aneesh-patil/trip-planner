@@ -114,9 +114,10 @@ export function getAdjustedBudget(
   }
 
   const transportCost = getTransportCost(dest, mode, partySize);
+  const recBudget = dest.budgetRecommended || dest.budgetMin || 5000;
   const otherCostsCouple =
-    dest.budgetRecommended - (dest.budgetBreakdown?.transport || 3000);
-  const otherCosts = (otherCostsCouple / 2) * partySize;
+    recBudget - (dest.budgetBreakdown?.transport || 3000);
+  const otherCosts = Math.max(0, (otherCostsCouple / 2) * partySize);
   return otherCosts + transportCost;
 }
 

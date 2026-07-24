@@ -74,5 +74,6 @@
   "notes": "Completed in 1609, it survived World War II bombings and major earthquakes completely intact.",
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 3000,
-  "budgetMax": 12000
+  "budgetMax": 12000,
+  "budgetRecommended": 7500
 }

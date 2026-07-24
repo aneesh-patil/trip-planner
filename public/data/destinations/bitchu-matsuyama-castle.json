@@ -64,5 +64,6 @@
   "notes": "Built in 1240, the current keep dates to 1683.",
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 4000,
-  "budgetMax": 14000
+  "budgetMax": 14000,
+  "budgetRecommended": 9000
 }

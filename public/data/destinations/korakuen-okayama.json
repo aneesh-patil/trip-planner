@@ -54,5 +54,6 @@
   "notes": "Located right across the Asahi River from Okayama Castle.",
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 3000,
-  "budgetMax": 12000
+  "budgetMax": 12000,
+  "budgetRecommended": 7500
 }

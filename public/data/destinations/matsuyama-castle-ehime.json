@@ -64,5 +64,6 @@
   "notes": "Features 21 historically designated important cultural properties.",
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 4000,
-  "budgetMax": 16000
+  "budgetMax": 16000,
+  "budgetRecommended": 10000
 }

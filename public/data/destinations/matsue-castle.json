@@ -69,5 +69,6 @@
   "notes": "Surrounded by historic moat boat tours (Horikawa Pleasure Boat).",
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 4000,
-  "budgetMax": 15000
+  "budgetMax": 15000,
+  "budgetRecommended": 9500
 }

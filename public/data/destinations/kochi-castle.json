@@ -59,5 +59,6 @@
   "notes": "Built by Yamauchi Kazutoyo following the Battle of Sekigahara.",
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 5000,
-  "budgetMax": 18000
+  "budgetMax": 18000,
+  "budgetRecommended": 11500
 }
