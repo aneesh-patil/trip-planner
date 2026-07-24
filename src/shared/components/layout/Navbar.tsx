@@ -12,6 +12,8 @@ import {
   Sliders,
   LogOut,
   CheckCircle2,
+  Bookmark,
+  ChevronDown,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
 import { useAuth } from "@/shared/hooks/useAuth";
@@ -27,11 +29,14 @@ export default function Navbar() {
   const [profileOpen, setProfileOpen] = useState(false);
   const [preferencesOpen, setPreferencesOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [tripsMenuOpen, setTripsMenuOpen] = useState(false);
   const userMenuRef = useRef<HTMLDivElement>(null);
+  const tripsMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMenuOpen(false);
     setUserMenuOpen(false);
+    setTripsMenuOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -41,6 +46,12 @@ export default function Navbar() {
         !userMenuRef.current.contains(event.target as Node)
       ) {
         setUserMenuOpen(false);
+      }
+      if (
+        tripsMenuRef.current &&
+        !tripsMenuRef.current.contains(event.target as Node)
+      ) {
+        setTripsMenuOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -83,8 +94,75 @@ export default function Navbar() {
           <span className="text-slate-800 dark:text-slate-200">Map</span>
         </Link>
         <div className="flex items-center gap-6">
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-6 items-center">
             {navItems.map((item) => {
+              if (item.name === "My Trips") {
+                const isTripsActive = location.pathname.startsWith("/my-trips");
+                return (
+                  <div
+                    key={item.name}
+                    className="relative group"
+                    ref={tripsMenuRef}
+                    onMouseEnter={() => setTripsMenuOpen(true)}
+                    onMouseLeave={() => setTripsMenuOpen(false)}
+                  >
+                    <button
+                      onClick={() => setTripsMenuOpen((o) => !o)}
+                      className={`flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-emerald-600 focus:outline-none ${
+                        isTripsActive
+                          ? "text-emerald-600 font-bold"
+                          : "text-muted-foreground"
+                      }`}
+                    >
+                      <Calendar className="w-4 h-4" />
+                      <span>My Trips</span>
+                      <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+                    </button>
+
+                    {/* My Trips Hover/Click Dropdown Card */}
+                    {tripsMenuOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
+                        <Link
+                          to="/my-trips?tab=planned"
+                          onClick={() => setTripsMenuOpen(false)}
+                          className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                        >
+                          <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
+                            <Calendar className="w-4 h-4" />
+                          </div>
+                          <div>
+                            <div className="text-xs font-bold text-slate-900 dark:text-white">
+                              Itineraries
+                            </div>
+                            <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                              Your trip plans
+                            </div>
+                          </div>
+                        </Link>
+
+                        <Link
+                          to="/my-trips?tab=bucketlist"
+                          onClick={() => setTripsMenuOpen(false)}
+                          className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                        >
+                          <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-500 group-hover/item:scale-105 transition-transform">
+                            <Bookmark className="w-4 h-4" />
+                          </div>
+                          <div>
+                            <div className="text-xs font-bold text-slate-900 dark:text-white">
+                              Bucket List
+                            </div>
+                            <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                              Saved sights to visit
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
               const isActive = location.pathname === item.path;
               const Icon = item.icon;
               return (
@@ -92,7 +170,9 @@ export default function Navbar() {
                   key={item.name}
                   to={item.path}
                   className={`flex items-center gap-2 text-sm font-medium transition-colors hover:text-emerald-600 ${
-                    isActive ? "text-emerald-600" : "text-muted-foreground"
+                    isActive
+                      ? "text-emerald-600 font-bold"
+                      : "text-muted-foreground"
                   }`}
                 >
                   <Icon className="w-4 h-4" />
