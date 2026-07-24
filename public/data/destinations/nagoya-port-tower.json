@@ -112,5 +112,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Port of Nagoya via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Port%20of%20Nagoya"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

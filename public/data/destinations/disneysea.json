@@ -137,5 +137,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Tokyo DisneySea via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20DisneySea"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

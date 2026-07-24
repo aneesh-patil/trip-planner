@@ -116,5 +116,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Yomiuriland via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Yomiuriland"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

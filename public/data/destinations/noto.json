@@ -113,5 +113,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Noto Peninsula via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Noto%20Peninsula"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

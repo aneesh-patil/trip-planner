@@ -108,5 +108,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Ginza via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Ginza"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

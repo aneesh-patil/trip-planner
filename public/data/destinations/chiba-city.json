@@ -114,5 +114,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Chiba City via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Chiba%20City"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

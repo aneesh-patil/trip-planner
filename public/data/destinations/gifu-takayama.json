@@ -112,5 +112,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Takayama, Gifu via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Takayama%2C%20Gifu"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

@@ -114,5 +114,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Kurobe Gorge via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Kurobe%20Gorge"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

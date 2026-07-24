@@ -93,5 +93,10 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

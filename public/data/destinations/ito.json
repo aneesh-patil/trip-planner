@@ -92,5 +92,10 @@
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
     "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
     "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600"
-  ]
+  ],
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

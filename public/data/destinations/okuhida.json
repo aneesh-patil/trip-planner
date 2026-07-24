@@ -103,5 +103,10 @@
   ],
   "cafes": ["Café de Okuhida", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Okuhida. Known for its onsen and ropeway vibes, it offers a great escape with an overall score of 8.9.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

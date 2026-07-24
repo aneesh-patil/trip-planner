@@ -107,5 +107,10 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Hakkeijima Sea Paradise. Known for its family and entertainment vibes, it offers a great escape with an overall score of 8.4.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

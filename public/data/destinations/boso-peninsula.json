@@ -137,5 +137,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Boso Peninsula via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Boso%20Peninsula"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

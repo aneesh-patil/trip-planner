@@ -107,5 +107,19 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Mito Castle via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Mito%20Castle"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "top-100-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "three-great-gardens",
+      "confirmed": true
+    }
+  ]
 }

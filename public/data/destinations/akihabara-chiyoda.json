@@ -103,5 +103,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Akihabara via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Akihabara"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

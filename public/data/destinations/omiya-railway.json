@@ -131,5 +131,10 @@
     "Station Matcha & Sweets"
   ],
   "notes": "Excellent hot-day option",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

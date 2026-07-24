@@ -137,5 +137,19 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Matsumoto Castle via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Matsumoto%20Castle"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "confirmed": true
+    }
+  ]
 }

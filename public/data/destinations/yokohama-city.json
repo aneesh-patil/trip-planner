@@ -129,5 +129,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Yokohama via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

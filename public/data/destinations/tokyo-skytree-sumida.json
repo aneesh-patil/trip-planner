@@ -106,5 +106,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Tokyo Skytree via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Skytree"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

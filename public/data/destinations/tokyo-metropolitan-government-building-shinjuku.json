@@ -111,5 +111,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Tokyo Metropolitan Government Building via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Metropolitan%20Government%20Building"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

@@ -99,5 +99,15 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Hachiōji Castle via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Hachi%C5%8Dji%20Castle"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "top-100-castles",
+      "confirmed": true
+    }
+  ]
 }

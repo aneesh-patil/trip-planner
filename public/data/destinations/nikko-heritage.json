@@ -124,5 +124,10 @@
   "restaurants": ["Nikko Yuba Maki", "Meiji no Yakata"],
   "cafes": ["Hongu Cafe", "Nikko Coffee"],
   "notes": "Traffic jams to Okunikko are severe in October.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

@@ -107,5 +107,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Ghibli Museum via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Ghibli%20Museum"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

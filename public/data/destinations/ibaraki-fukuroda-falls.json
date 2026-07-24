@@ -111,5 +111,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Fukuroda Falls via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Fukuroda%20Falls"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

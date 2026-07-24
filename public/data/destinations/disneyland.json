@@ -111,5 +111,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Tokyo Disneyland via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Disneyland"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

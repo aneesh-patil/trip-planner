@@ -106,5 +106,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Yokohama Marine Tower via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama%20Marine%20Tower"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

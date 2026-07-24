@@ -112,5 +112,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Abeno Harukas via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Abeno%20Harukas"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": []
 }

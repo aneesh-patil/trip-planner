@@ -99,5 +99,19 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Inuyama Castle via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Inuyama%20Castle"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "top-100-castles",
+      "confirmed": true
+    }
+  ]
 }

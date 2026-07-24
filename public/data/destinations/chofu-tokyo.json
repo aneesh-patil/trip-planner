@@ -99,5 +99,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Chofu via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Chofu"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

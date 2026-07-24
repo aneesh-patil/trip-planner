@@ -113,5 +113,15 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Kenroku-en via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Kenroku-en"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-gardens",
+      "confirmed": true
+    }
+  ]
 }

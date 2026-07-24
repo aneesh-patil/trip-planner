@@ -127,5 +127,10 @@
   "restaurants": ["Ichinoya", "Ogakiku"],
   "cafes": ["Starbucks Kawagoe Kanetsuki Dori", "Glayt"],
   "notes": "Famous for sweet potato snacks and traditional unagi.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

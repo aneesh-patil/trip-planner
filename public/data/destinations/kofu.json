@@ -110,5 +110,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Kofu via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Kofu"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

@@ -109,5 +109,15 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Odawara Castle via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Odawara%20Castle"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "top-100-castles",
+      "confirmed": true
+    }
+  ]
 }

@@ -103,5 +103,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Enoshima via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Enoshima"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

@@ -115,5 +115,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Shizuoka City via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Shizuoka%20City"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

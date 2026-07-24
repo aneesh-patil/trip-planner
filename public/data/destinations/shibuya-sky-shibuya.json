@@ -105,5 +105,10 @@
   "restaurants": ["Paradise Lounge 46F", "Tsurutontan Udon Scramble"],
   "cafes": ["The Roof at Shibuya Sky", "Starbucks Scramble"],
   "notes": "Rooftop deck may close temporarily during heavy rain or strong wind.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

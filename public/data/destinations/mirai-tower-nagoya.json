@@ -112,5 +112,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Nagoya TV Tower via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Nagoya%20TV%20Tower"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

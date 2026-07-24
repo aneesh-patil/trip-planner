@@ -111,5 +111,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Kamikochi via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Kamikochi"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

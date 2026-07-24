@@ -105,5 +105,10 @@
     "Station Matcha & Sweets"
   ],
   "notes": "You will walk barefoot and water goes up to your knees. Wear shorts or pants that can be rolled up.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

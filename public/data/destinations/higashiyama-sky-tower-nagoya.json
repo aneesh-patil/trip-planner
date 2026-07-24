@@ -112,5 +112,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Higashiyama Sky Tower via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Higashiyama%20Sky%20Tower"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

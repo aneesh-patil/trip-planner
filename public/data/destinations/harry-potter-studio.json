@@ -131,5 +131,10 @@
     "Station Matcha & Sweets"
   ],
   "notes": "Book ahead",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

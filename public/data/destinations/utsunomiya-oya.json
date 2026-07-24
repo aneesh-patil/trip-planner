@@ -132,5 +132,10 @@
     "Station Matcha & Sweets"
   ],
   "notes": "Oya museum is very cool in summer",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

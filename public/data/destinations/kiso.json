@@ -113,5 +113,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Kiso Valley via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Kiso%20Valley"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

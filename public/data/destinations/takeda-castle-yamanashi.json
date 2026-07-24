@@ -107,5 +107,15 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Takeda Shrine via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Takeda%20Shrine"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "top-100-castles",
+      "confirmed": true
+    }
+  ]
 }

@@ -102,5 +102,10 @@
   ],
   "cafes": ["Café de Fukui", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "A fantastic trip to Fukui. Known for its dinosaurs and cliffs vibes, it offers a great escape with an overall score of 8.2.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

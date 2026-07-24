@@ -111,5 +111,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Chichibu via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Chichibu"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

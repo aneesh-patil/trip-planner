@@ -107,5 +107,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Oarai, Ibaraki via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Oarai%2C%20Ibaraki"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

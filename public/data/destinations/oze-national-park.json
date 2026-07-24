@@ -113,5 +113,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Oze National Park via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Oze%20National%20Park"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

@@ -107,5 +107,10 @@
     "Station Matcha & Sweets"
   ],
   "notes": "A fantastic trip to Gala Yuzawa. Known for its skiing and snow vibes, it offers a great escape with an overall score of 8.6.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

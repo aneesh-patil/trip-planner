@@ -111,5 +111,15 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Shirakawa-go via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Shirakawa-go"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "unesco-japan",
+      "confirmed": true
+    }
+  ]
 }

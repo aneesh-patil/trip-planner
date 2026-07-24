@@ -107,5 +107,15 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Takatō Castle via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Takat%C5%8D%20Castle"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "top-100-castles",
+      "confirmed": true
+    }
+  ]
 }

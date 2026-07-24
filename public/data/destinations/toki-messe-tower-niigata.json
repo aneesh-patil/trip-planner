@@ -115,5 +115,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Toki Messe via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Toki%20Messe"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

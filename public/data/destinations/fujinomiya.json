@@ -114,5 +114,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Fujinomiya via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Fujinomiya"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

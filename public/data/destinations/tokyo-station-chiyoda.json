@@ -115,5 +115,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Tokyo Station via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Station"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

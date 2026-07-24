@@ -1,3 +1,5 @@
+import type { CollectionMembership } from "./collection";
+
 export interface ItineraryStep {
   time: string;
   activity: string;
@@ -84,4 +86,15 @@ export interface Destination {
   notes: string;
   itinerary?: ItineraryStep[];
   itineraries?: ItineraryPlan[];
+
+  /** Mandatory: Destination content quality status */
+  status: "verified" | "planned";
+
+  /** Mandatory: Travel estimate calibration confidence level */
+  travelEstimate: {
+    confidence: "high" | "medium" | "beta";
+  };
+
+  /** Mandatory: Curated collection memberships */
+  collections: CollectionMembership[];
 }

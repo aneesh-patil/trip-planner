@@ -98,7 +98,12 @@
     "restaurants": ["Akasaka Matsubaya", "Kobe Beef 511"],
     "cafes": ["Aoyama Flower Market Tea House"],
     "notes": "Hie Shrine has a beautiful torii gate tunnel similar to Fushimi Inari in Kyoto.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "akihabara-chiyoda",
@@ -205,7 +210,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Akihabara via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Akihabara"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "asakusa-taito",
@@ -316,7 +326,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Asakusa via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Asakusa"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ashigara",
@@ -426,7 +441,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Ashigara. Known for its hiking and quiet vibes, it offers a great escape with an overall score of 7.8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "atami-resort",
@@ -561,7 +581,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Atami via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Atami"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "boso-peninsula",
@@ -702,7 +727,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Boso Peninsula via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Boso%20Peninsula"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "chiba-city",
@@ -820,7 +850,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Chiba City via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Chiba%20City"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "chofu-tokyo",
@@ -923,7 +958,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Chofu via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Chofu"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "choshi-chiba",
@@ -1026,7 +1066,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Choshi via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Choshi"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "disneyland",
@@ -1141,7 +1186,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tokyo Disneyland via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Disneyland"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "disneysea",
@@ -1282,7 +1332,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tokyo DisneySea via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20DisneySea"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "edogawa-ward",
@@ -1392,7 +1447,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Great sunset views of Mt. Fuji and Tokyo Disneyland from the park.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "enoshima-island",
@@ -1499,7 +1559,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Enoshima via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Enoshima"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "fuji-5-lake",
@@ -1618,7 +1683,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Fuji Five Lakes via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Fuji%20Five%20Lakes"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "fujinomiya",
@@ -1736,7 +1806,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Fujinomiya via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Fujinomiya"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "fukui",
@@ -1842,7 +1917,12 @@
     ],
     "cafes": ["Café de Fukui", "Riverside Roasters", "Station Matcha & Sweets"],
     "notes": "A fantastic trip to Fukui. Known for its dinosaurs and cliffs vibes, it offers a great escape with an overall score of 8.2.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "gala-yuzawa",
@@ -1953,7 +2033,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Gala Yuzawa. Known for its skiing and snow vibes, it offers a great escape with an overall score of 8.6.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ghibli-museum",
@@ -2068,7 +2153,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Ghibli Museum via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ghibli%20Museum"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ginza-urban",
@@ -2180,7 +2270,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Ginza via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ginza"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "hachioji-tokyo",
@@ -2283,7 +2378,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Hachiōji Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Hachi%C5%8Dji%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "hakkeijima",
@@ -2394,7 +2499,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Hakkeijima Sea Paradise. Known for its family and entertainment vibes, it offers a great escape with an overall score of 8.4.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "hakone-onsen",
@@ -2527,7 +2637,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Hakone via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Hakone"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "harry-potter-studio",
@@ -2662,7 +2777,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Book ahead",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ikebukuro-toshima",
@@ -2773,7 +2893,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Ikebukuro via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ikebukuro"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "imperial-palace-chiyoda",
@@ -2882,7 +3007,12 @@
     ],
     "cafes": ["Wadakura Fountain Park Cafe"],
     "notes": "East Gardens are closed on Mondays and Fridays.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "inuyama",
@@ -2991,7 +3121,21 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Inuyama Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Inuyama%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "original-12-castles",
+        "confirmed": true
+      },
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "ito",
@@ -3091,7 +3235,12 @@
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600",
       "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600"
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "izu",
@@ -3209,7 +3358,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Izu Peninsula via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Izu%20Peninsula"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "jogashima",
@@ -3319,7 +3473,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Miura Peninsula & Jogashima. Known for its ocean and scenic vibes, it offers a great escape with an overall score of 8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "joypolis",
@@ -3454,7 +3613,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Combine with Odaiba",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kamakura-history",
@@ -3591,7 +3755,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kamakura via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kamakura"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kanazawa",
@@ -3708,7 +3877,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kenroku-en via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kenroku-en"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "three-great-gardens",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "karuizawa",
@@ -3852,7 +4031,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Karuizawa via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Karuizawa"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kawagoe-edo",
@@ -3983,7 +4167,12 @@
     "restaurants": ["Ichinoya", "Ogakiku"],
     "cafes": ["Starbucks Kawagoe Kanetsuki Dori", "Glayt"],
     "notes": "Famous for sweet potato snacks and traditional unagi.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kawasaki",
@@ -4093,7 +4282,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Kawasaki. Known for its night factory and doraemon vibes, it offers a great escape with an overall score of 7.9.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kinugawa-onsen",
@@ -4211,7 +4405,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kinugawa Onsen via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kinugawa%20Onsen"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kiso",
@@ -4328,7 +4527,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kiso Valley via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kiso%20Valley"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kofu",
@@ -4442,7 +4646,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kofu via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kofu"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "kurobe-gorge",
@@ -4560,7 +4769,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kurobe Gorge via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kurobe%20Gorge"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "lake-hamanako",
@@ -4672,7 +4886,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Lake Hamanako. Known for its eel and cycling vibes, it offers a great escape with an overall score of 8.2.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "lake-sagami",
@@ -4790,7 +5009,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Lake Sagami via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Lake%20Sagami"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "machida-tokyo",
@@ -4887,7 +5111,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "matsumoto",
@@ -5028,7 +5257,21 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Matsumoto Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Matsumoto%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "original-12-castles",
+        "confirmed": true
+      },
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "meguro-ward",
@@ -5139,7 +5382,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Meguro via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Meguro"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "mito",
@@ -5246,7 +5494,12 @@
     ],
     "cafes": ["Café de Mito", "Riverside Roasters", "Station Matcha & Sweets"],
     "notes": "A fantastic trip to Mito. Known for its kairakuen and plum blossoms vibes, it offers a great escape with an overall score of 7.8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "mother-farm-chiba",
@@ -5338,7 +5591,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "mount-fuji",
@@ -5455,7 +5713,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Mount Fuji via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Fuji"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nagano-city",
@@ -5574,7 +5837,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Zenkō-ji via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Zenk%C5%8D-ji"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nagoya",
@@ -5682,7 +5950,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Nagoya Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Nagoya%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "narita",
@@ -5793,7 +6071,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Narita. Known for its temple and eel vibes, it offers a great escape with an overall score of 8.1.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nikko-heritage",
@@ -5921,7 +6204,12 @@
     "restaurants": ["Nikko Yuba Maki", "Meiji no Yakata"],
     "cafes": ["Hongu Cafe", "Nikko Coffee"],
     "notes": "Traffic jams to Okunikko are severe in October.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "noto",
@@ -6038,7 +6326,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Noto Peninsula via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Noto%20Peninsula"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "odaiba-minato",
@@ -6149,7 +6442,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Odaiba via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Odaiba"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "odawara",
@@ -6266,7 +6564,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Odawara Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Odawara%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "okuhida",
@@ -6377,7 +6685,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Okuhida. Known for its onsen and ropeway vibes, it offers a great escape with an overall score of 8.9.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ome-tokyo",
@@ -6473,7 +6786,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "omiya-railway",
@@ -6608,7 +6926,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Excellent hot-day option",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "oze-national-park",
@@ -6725,7 +7048,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Oze National Park via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Oze%20National%20Park"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "sado-island",
@@ -6842,7 +7170,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Sado Island via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Sado%20Island"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "saitama-city",
@@ -6959,7 +7292,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Saitama City via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Saitama%20City"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "shibuya-ward",
@@ -7066,7 +7404,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Shibuya via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Shibuya"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "shinjuku-ward",
@@ -7177,7 +7520,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Shinjuku via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Shinjuku"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "shizuoka",
@@ -7296,7 +7644,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Shizuoka City via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Shizuoka%20City"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "tachikawa-tokyo",
@@ -7399,7 +7752,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tachikawa via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tachikawa"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "takaoka",
@@ -7509,7 +7867,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "A fantastic trip to Takaoka. Known for its great buddha and doraemon vibes, it offers a great escape with an overall score of 7.7.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "teamlab-planets",
@@ -7618,7 +7981,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "You will walk barefoot and water goes up to your knees. Wear shorts or pants that can be rolled up.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "toyama-alpine",
@@ -7735,7 +8103,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tateyama Kurobe Alpine Route via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tateyama%20Kurobe%20Alpine%20Route"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ueno-taito",
@@ -7842,7 +8215,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Ueno via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ueno"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ushiku-daibutsu",
@@ -7960,7 +8338,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Ushiku Daibutsu via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ushiku%20Daibutsu"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "utsunomiya-oya",
@@ -8096,7 +8479,12 @@
       "Station Matcha & Sweets"
     ],
     "notes": "Oya museum is very cool in summer",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "yokohama-city",
@@ -8229,7 +8617,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Yokohama via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "yomiuriland",
@@ -8349,7 +8742,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Yomiuriland via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Yomiuriland"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "zushi",
@@ -8456,7 +8854,12 @@
     ],
     "cafes": ["Café de Zushi", "Riverside Roasters", "Station Matcha & Sweets"],
     "notes": "A fantastic trip to Zushi & Yokosuka. Known for its surfing and cafes vibes, it offers a great escape with an overall score of 8.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "tokyo-okutama",
@@ -8571,7 +8974,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Okutama via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Okutama"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "tokyo-mt-mitake",
@@ -8686,7 +9094,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Mt. Mitake via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mt.%20Mitake"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "tokyo-hinohara",
@@ -8801,7 +9214,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Hinohara via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Hinohara"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "saitama-chichibu",
@@ -8916,7 +9334,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Chichibu via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Chichibu"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "saitama-nagatoro",
@@ -9031,7 +9454,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Nagatoro via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Nagatoro"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "chiba-sawara",
@@ -9139,7 +9567,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "chiba-nokogiriyama",
@@ -9254,7 +9687,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Mount Nokogiri (Chiba) via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Nokogiri%20(Chiba)"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "chiba-yoro-valley",
@@ -9362,7 +9800,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "gunma-kusatsu-onsen",
@@ -9478,7 +9921,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kusatsu Onsen via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kusatsu%20Onsen"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "gunma-ikaho-onsen",
@@ -9587,7 +10035,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "gunma-shima-onsen",
@@ -9702,7 +10155,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Shima Onsen via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Shima%20Onsen"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ibaraki-mount-tsukuba",
@@ -9817,7 +10275,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Mount Tsukuba via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Tsukuba"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ibaraki-fukuroda-falls",
@@ -9932,7 +10395,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Fukuroda Falls via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Fukuroda%20Falls"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "ibaraki-hitachi-seaside-park",
@@ -10047,7 +10515,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Hitachi Seaside Park via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Hitachi%20Seaside%20Park"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nagano-kamikochi",
@@ -10162,7 +10635,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kamikochi via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kamikochi"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "gifu-takayama",
@@ -10278,7 +10756,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Takayama, Gifu via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Takayama%2C%20Gifu"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "gifu-shirakawa-go",
@@ -10393,7 +10876,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Shirakawa-go via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Shirakawa-go"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "unesco-japan",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "gifu-gujo-hachiman",
@@ -10508,7 +11001,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Gujō Hachiman Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Guj%C5%8D%20Hachiman%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "nagano-narai-juku",
@@ -10623,7 +11126,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Narai-juku via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Narai-juku"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nagano-tsumago-juku",
@@ -10738,7 +11246,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tsumago-juku via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tsumago-juku"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "gifu-magome-juku",
@@ -10853,7 +11366,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Magome-juku via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Magome-juku"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nagano-suwa",
@@ -10968,7 +11486,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Lake Suwa via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Lake%20Suwa"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nagano-bessho-onsen",
@@ -11076,7 +11599,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "yamanashi-shosenkyo-gorge",
@@ -11184,7 +11712,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "yamanashi-nishizawa-valley",
@@ -11292,7 +11825,12 @@
           }
         ]
       }
-    ]
+    ],
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "yamanashi-fujiyoshida",
@@ -11407,7 +11945,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Fujiyoshida via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Fujiyoshida"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "tokyo-station-chiyoda",
@@ -11531,7 +12074,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tokyo Station via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Station"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "takanawa-gateway-minato",
@@ -11646,7 +12194,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Takanawa Gateway Station via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Takanawa%20Gateway%20Station"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "tokyo-skytree-sumida",
@@ -11762,7 +12315,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tokyo Skytree via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Skytree"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "tokyo-tower-minato",
@@ -11872,7 +12430,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tokyo Tower via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Tower"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "yokohama-marine-tower",
@@ -11982,7 +12545,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Yokohama Marine Tower via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama%20Marine%20Tower"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "chiba-port-tower",
@@ -12093,7 +12661,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Chiba Port Tower via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Chiba%20Port%20Tower"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "oarai-marine-tower",
@@ -12209,7 +12782,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Oarai, Ibaraki via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Oarai%2C%20Ibaraki"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "art-tower-mito",
@@ -12320,7 +12898,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Art Tower Mito via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Art%20Tower%20Mito"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "mirai-tower-nagoya",
@@ -12436,7 +13019,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Nagoya TV Tower via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Nagoya%20TV%20Tower"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "higashiyama-sky-tower-nagoya",
@@ -12552,7 +13140,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Higashiyama Sky Tower via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Higashiyama%20Sky%20Tower"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "toki-messe-tower-niigata",
@@ -12671,7 +13264,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Toki Messe via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Toki%20Messe"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "nagoya-port-tower",
@@ -12787,7 +13385,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Port of Nagoya via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Port%20of%20Nagoya"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "edo-castle-tokyo",
@@ -12902,7 +13505,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Edo Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Edo%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "kawagoe-castle-saitama",
@@ -13012,7 +13625,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kawagoe Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kawagoe%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "sakura-castle-chiba",
@@ -13128,7 +13751,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Sakura Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Sakura%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "mito-castle-ibaraki",
@@ -13244,7 +13877,21 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Mito Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mito%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      },
+      {
+        "collectionId": "three-great-gardens",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "takeda-castle-yamanashi",
@@ -13360,7 +14007,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Takeda Shrine via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Takeda%20Shrine"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "hikone-castle-shiga",
@@ -13482,7 +14139,21 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Hikone Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Hikone%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "original-12-castles",
+        "confirmed": true
+      },
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "gifu-castle-gifu",
@@ -13598,7 +14269,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Gifu Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Gifu%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "ueda-castle-nagano",
@@ -13714,7 +14395,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Ueda Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ueda%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "takato-castle-nagano",
@@ -13830,7 +14521,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Takatō Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Takat%C5%8D%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "kakegawa-castle-shizuoka",
@@ -13946,7 +14647,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kakegawa Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kakegawa%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "kanazawa-castle-ishikawa",
@@ -14062,7 +14773,17 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Kanazawa Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kanazawa%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "maruoka-castle-fukui",
@@ -14179,7 +14900,21 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Maruoka Castle via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Maruoka%20Castle"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "original-12-castles",
+        "confirmed": true
+      },
+      {
+        "collectionId": "top-100-castles",
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "tokyo-metropolitan-government-building-shinjuku",
@@ -14294,7 +15029,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Tokyo Metropolitan Government Building via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Tokyo%20Metropolitan%20Government%20Building"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "shibuya-sky-shibuya",
@@ -14403,7 +15143,12 @@
     "restaurants": ["Paradise Lounge 46F", "Tsurutontan Udon Scramble"],
     "cafes": ["The Roof at Shibuya Sky", "Starbucks Scramble"],
     "notes": "Rooftop deck may close temporarily during heavy rain or strong wind.",
-    "schemaVersion": 2
+    "schemaVersion": 2,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "roppongi-hills-tokyo-city-view",
@@ -14518,7 +15263,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Roppongi Hills Mori Tower via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Roppongi%20Hills%20Mori%20Tower"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "sunshine-60-observatory-ikebukuro",
@@ -14633,7 +15383,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Sunshine 60 via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Sunshine%2060"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "yokohama-landmark-tower-sky-garden",
@@ -14748,7 +15503,12 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Yokohama Landmark Tower via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Yokohama%20Landmark%20Tower"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": []
   },
   {
     "id": "abeno-harukas-300-osaka",
@@ -14864,6 +15624,11 @@
       "license": "CC-BY-SA / Public Domain",
       "attribution": "Lead photograph of Abeno Harukas via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Abeno%20Harukas"
-    }
+    },
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": []
   }
 ]

@@ -133,5 +133,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Kamakura via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Kamakura"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

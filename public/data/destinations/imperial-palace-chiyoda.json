@@ -101,5 +101,10 @@
   ],
   "cafes": ["Wadakura Fountain Park Cafe"],
   "notes": "East Gardens are closed on Mondays and Fridays.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

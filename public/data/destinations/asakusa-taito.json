@@ -103,5 +103,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Asakusa via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Asakusa"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

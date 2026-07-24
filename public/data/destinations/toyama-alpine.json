@@ -113,5 +113,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Tateyama Kurobe Alpine Route via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tateyama%20Kurobe%20Alpine%20Route"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

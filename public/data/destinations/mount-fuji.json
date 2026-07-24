@@ -113,5 +113,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Mount Fuji via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Mount%20Fuji"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

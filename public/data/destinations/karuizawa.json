@@ -140,5 +140,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Karuizawa via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Karuizawa"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

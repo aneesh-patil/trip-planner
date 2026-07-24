@@ -206,6 +206,133 @@ async function runPipeline() {
     );
   }
 
+  // 3. Stage 2: Collection & Referential Integrity Validation
+  console.log("Stage 2: Collection & Referential Integrity Validation...");
+  let collectionErrors = 0;
+  let collectionWarnings = 0;
+
+  const collectionsFilePath = path.join(
+    __dirname,
+    "../src/shared/data/collections-index.json",
+  );
+  let collectionsList = [];
+  try {
+    collectionsList = JSON.parse(fs.readFileSync(collectionsFilePath, "utf8"));
+  } catch (e) {
+    console.error(
+      `  \x1b[31m❌ Failed to read collections-index.json (${collectionsFilePath}):\x1b[0m`,
+      e.message,
+    );
+    process.exit(1);
+  }
+
+  // Validate Collection Definitions
+  const seenColIds = new Set();
+  const seenColSlugs = new Set();
+  const seenColNames = new Set();
+  const seenColSorts = new Set();
+
+  collectionsList.forEach((col, idx) => {
+    const label = col.name || col.id || `Collection #${idx + 1}`;
+    if (!col.id) {
+      console.error(`  \x1b[31m❌ [${label}] Missing required field 'id'\x1b[0m`);
+      collectionErrors++;
+    } else {
+      if (seenColIds.has(col.id)) {
+        console.error(`  \x1b[31m❌ [${label}] Duplicate Collection ID: '${col.id}'\x1b[0m`);
+        collectionErrors++;
+      }
+      seenColIds.add(col.id);
+    }
+
+    if (!col.slug) {
+      console.error(`  \x1b[31m❌ [${label}] Missing required field 'slug'\x1b[0m`);
+      collectionErrors++;
+    } else {
+      if (seenColSlugs.has(col.slug)) {
+        console.error(`  \x1b[31m❌ [${label}] Duplicate Collection Slug: '${col.slug}'\x1b[0m`);
+        collectionErrors++;
+      }
+      seenColSlugs.add(col.slug);
+    }
+
+    if (col.name) {
+      if (seenColNames.has(col.name)) {
+        console.warn(`  \x1b[33m⚠️  [${label}] Duplicate Collection Name: '${col.name}'\x1b[0m`);
+        collectionWarnings++;
+      }
+      seenColNames.add(col.name);
+    }
+
+    if (col.sortOrder !== undefined) {
+      if (seenColSorts.has(col.sortOrder)) {
+        console.warn(`  \x1b[33m⚠️  [${label}] Duplicate Collection sortOrder: ${col.sortOrder}\x1b[0m`);
+        collectionWarnings++;
+      }
+      seenColSorts.add(col.sortOrder);
+    }
+  });
+
+  // Validate Destination Collection Memberships
+  rawData.forEach((dest, index) => {
+    const label = dest.name || dest.id || `Item #${index + 1}`;
+
+    if (!dest.status) {
+      console.error(`  \x1b[31m❌ [${label}] Missing mandatory field 'status'\x1b[0m`);
+      collectionErrors++;
+    }
+
+    if (!dest.travelEstimate || !dest.travelEstimate.confidence) {
+      console.error(`  \x1b[31m❌ [${label}] Missing mandatory field 'travelEstimate.confidence'\x1b[0m`);
+      collectionErrors++;
+    }
+
+    if (!Array.isArray(dest.collections)) {
+      console.error(`  \x1b[31m❌ [${label}] Missing mandatory array 'collections'\x1b[0m`);
+      collectionErrors++;
+    } else {
+      const destColIds = new Set();
+      dest.collections.forEach((m, mIdx) => {
+        if (!m.collectionId) {
+          console.error(`  \x1b[31m❌ [${label}] Membership #${mIdx + 1} missing 'collectionId'\x1b[0m`);
+          collectionErrors++;
+        } else {
+          // Check referential integrity
+          if (!seenColIds.has(m.collectionId)) {
+            console.error(
+              `  \x1b[31m❌ [${label}] Referenced collectionId '${m.collectionId}' does not exist in collections-index.json\x1b[0m`,
+            );
+            collectionErrors++;
+          }
+          // Check duplicate membership per destination
+          if (destColIds.has(m.collectionId)) {
+            console.error(
+              `  \x1b[31m❌ [${label}] Duplicate collection membership found for '${m.collectionId}'\x1b[0m`,
+            );
+            collectionErrors++;
+          }
+          destColIds.add(m.collectionId);
+        }
+
+        if (m.confirmed === false) {
+          console.warn(`  \x1b[33m⚠️  [${label}] Unconfirmed collection membership for '${m.collectionId}'\x1b[0m`);
+          collectionWarnings++;
+        }
+      });
+    }
+  });
+
+  if (collectionErrors > 0) {
+    console.error(
+      `\n\x1b[31mStage 2 Failed with ${collectionErrors} collection error(s).\x1b[0m`,
+    );
+    process.exit(1);
+  } else {
+    console.log(
+      `\x1b[32m✔ Stage 2 Passed (${collectionsList.length} collections validated, ${collectionWarnings} warning(s)).\x1b[0m\n`,
+    );
+  }
+
   if (isValidateOnly) {
     // Generate Completeness Report for Validate Only mode
     console.log("\x1b[36m=============================================\x1b[0m");
@@ -214,10 +341,12 @@ async function runPipeline() {
     );
     console.log("\x1b[36m=============================================\x1b[0m");
     console.log(`Total Destinations Checked:  ${rawData.length}`);
+    console.log(`Total Collections Checked:   ${collectionsList.length}`);
     console.log(`Duplicate IDs:              ${duplicateIdsCount}`);
     console.log(`Missing Coordinates:        ${missingCoordsCount}`);
     console.log(`Missing Hero Images:        ${missingHeroCount}`);
-    console.log(`Warnings Issued:            ${schemaWarnings}`);
+    console.log(`Schema Warnings Issued:     ${schemaWarnings}`);
+    console.log(`Collection Warnings Issued: ${collectionWarnings}`);
     console.log("\x1b[36m=============================================\x1b[0m");
     console.log(
       "\x1b[32mValidation complete. Exiting (--validate-only).\x1b[0m",
@@ -225,8 +354,8 @@ async function runPipeline() {
     return;
   }
 
-  // 3. Stage 2: Geocoding Validation & Auto-fill
-  console.log("Stage 2: Coordinates & Geocoding...");
+  // 4. Stage 3: Geocoding Validation & Auto-fill
+  console.log("Stage 3: Coordinates & Geocoding...");
   let geocodedCount = 0;
 
   for (const dest of rawData) {

@@ -102,5 +102,10 @@
   "restaurants": ["Park Cafes"],
   "cafes": ["Café de Edogawa", "Riverside Roasters", "Station Matcha & Sweets"],
   "notes": "Great sunset views of Mt. Fuji and Tokyo Disneyland from the park.",
-  "schemaVersion": 2
+  "schemaVersion": 2,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

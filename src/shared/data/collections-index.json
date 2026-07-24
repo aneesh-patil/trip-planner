@@ -1,0 +1,54 @@
+[
+  {
+    "id": "original-12-castles",
+    "slug": "original-12-castles",
+    "name": "Original 12 Surviving Castles",
+    "description": "Japan's 12 surviving wooden keeps that have endured unaltered since the Edo period or earlier.",
+    "category": "Architecture & History",
+    "type": "historical",
+    "icon": "Castle",
+    "badgeColor": "amber",
+    "sortOrder": 1,
+    "officialSource": "Japan Castle Foundation",
+    "sourceUrl": "https://www.japan-castle.or.jp/"
+  },
+  {
+    "id": "unesco-japan",
+    "slug": "unesco-japan",
+    "name": "UNESCO World Heritage Japan",
+    "description": "Cultural and natural sites designated by UNESCO for their outstanding universal value.",
+    "category": "World Heritage",
+    "type": "official",
+    "icon": "Landmark",
+    "badgeColor": "sky",
+    "sortOrder": 2,
+    "officialSource": "UNESCO World Heritage Centre",
+    "sourceUrl": "https://whc.unesco.org/en/statesparties/jp"
+  },
+  {
+    "id": "top-100-castles",
+    "slug": "top-100-castles",
+    "name": "Top 100 Castles of Japan",
+    "description": "Certified premier castles selected by the Japan Castle Foundation for architectural and historical significance.",
+    "category": "Architecture & History",
+    "type": "official",
+    "icon": "ShieldAlert",
+    "badgeColor": "rose",
+    "sortOrder": 3,
+    "officialSource": "Japan Castle Foundation (日本100名城)",
+    "sourceUrl": "https://www.japan-castle.or.jp/100meijo/"
+  },
+  {
+    "id": "three-great-gardens",
+    "slug": "three-great-gardens",
+    "name": "Three Great Gardens of Japan",
+    "description": "Japan's three most celebrated traditional landscape gardens (Kenroku-en, Kairaku-en, Koraku-en).",
+    "category": "Nature & Gardens",
+    "type": "historical",
+    "icon": "Trees",
+    "badgeColor": "emerald",
+    "sortOrder": 4,
+    "officialSource": "Japan National Tourism Organization",
+    "sourceUrl": "https://www.japan.travel/en/guide/gardens/"
+  }
+]

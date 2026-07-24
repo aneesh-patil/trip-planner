@@ -99,5 +99,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Tachikawa via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Tachikawa"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }

@@ -115,5 +115,10 @@
     "license": "CC-BY-SA / Public Domain",
     "attribution": "Lead photograph of Fuji Five Lakes via Wikipedia/Wikimedia Commons",
     "sourceUrl": "https://en.wikipedia.org/wiki/Fuji%20Five%20Lakes"
-  }
+  },
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": []
 }
