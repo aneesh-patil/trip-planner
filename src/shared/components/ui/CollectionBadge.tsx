@@ -46,9 +46,10 @@ export default function CollectionBadge({
 
   return (
     <span
+      aria-label={`Collection: ${collection.name}`}
       className={`inline-flex items-center rounded-full border transition-all ${colorStyle} ${sizeStyle} ${className}`}
     >
-      <Icon className={`${iconSize} shrink-0`} />
+      <Icon className={`${iconSize} shrink-0`} aria-hidden="true" />
       <span className="truncate">{collection.name}</span>
     </span>
   );
