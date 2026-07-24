@@ -19,6 +19,8 @@ export interface Collection {
   description: string;
   category: string;
   type: "official" | "historical" | "curated";
+  /** True for Passport-tracked achievements; false/undefined for browse-only directory collections */
+  isAchievement?: boolean;
   icon: string;
   badgeColor: string;
   sortOrder: number;

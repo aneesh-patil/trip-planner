@@ -74,9 +74,10 @@ function App() {
                       }
                     />
                     <Route path="/my-trips" element={<MyTrips />} />
+                    <Route path="/passport" element={<PrefectureChecklist />} />
                     <Route
                       path="/visited-map"
-                      element={<PrefectureChecklist />}
+                      element={<Navigate to="/passport" replace />}
                     />
                     <Route path="/terms" element={<Terms />} />
                     <Route path="/privacy" element={<Privacy />} />

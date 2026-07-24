@@ -17,7 +17,6 @@ interface TripStoreContextType {
   isVisited: (id: string) => boolean;
 
   visitedPrefectures: string[];
-  toggleVisitedPrefecture: (id: string) => void;
   isPrefectureVisited: (id: string) => boolean;
 
   homeStation: string;
@@ -150,12 +149,6 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
   const isVisited = (id: string) => visited.includes(id);
 
-  const toggleVisitedPrefecture = (id: string) => {
-    setVisitedPrefectures((prev) =>
-      prev.includes(id) ? prev.filter((vId) => vId !== id) : [...prev, id],
-    );
-  };
-
   const isPrefectureVisited = (id: string) => visitedPrefectures.includes(id);
 
   const toggleCompare = (id: string) => {
@@ -258,7 +251,6 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         toggleVisited,
         isVisited,
         visitedPrefectures,
-        toggleVisitedPrefecture,
         isPrefectureVisited,
         compareList,
         toggleCompare,

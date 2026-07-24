@@ -7,7 +7,7 @@ import {
   Menu,
   X,
   LogIn,
-  CheckSquare,
+  Compass,
   User,
   Sliders,
   LogOut,
@@ -66,7 +66,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Destinations", path: "/destinations", icon: Map },
-    { name: "Prefectures", path: "/visited-map", icon: CheckSquare },
+    { name: "Passport", path: "/passport", icon: Compass },
     { name: "Compare", path: "/compare", icon: Settings },
     { name: "My Trips", path: "/my-trips", icon: Calendar },
   ];
