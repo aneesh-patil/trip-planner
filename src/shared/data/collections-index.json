@@ -16,7 +16,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Japan Castle Foundation",
-      "estimatedMembers": 12
+      "estimatedMembers": 12,
+      "reviewIntervalMonths": 24
     }
   },
   {
@@ -32,11 +33,12 @@
     "officialSource": "UNESCO World Heritage Centre",
     "sourceUrl": "https://whc.unesco.org/en/statesparties/jp",
     "metadata": {
-      "authority": "government",
+      "authority": "international",
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "UNESCO World Heritage Centre",
-      "estimatedMembers": 25
+      "estimatedMembers": 25,
+      "reviewIntervalMonths": 12
     }
   },
   {
@@ -56,7 +58,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Agency for Cultural Affairs (国宝)",
-      "estimatedMembers": 220
+      "estimatedMembers": 220,
+      "reviewIntervalMonths": 12
     }
   },
   {
@@ -76,7 +79,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Japan Castle Foundation (日本100名城)",
-      "estimatedMembers": 100
+      "estimatedMembers": 100,
+      "reviewIntervalMonths": 24
     }
   },
   {
@@ -96,7 +100,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "JNTO / Cultural Heritage Tradition",
-      "estimatedMembers": 3
+      "estimatedMembers": 3,
+      "reviewIntervalMonths": 60
     }
   },
   {
@@ -116,7 +121,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Hayashi Gaho (1643) / JNTO",
-      "estimatedMembers": 3
+      "estimatedMembers": 3,
+      "reviewIntervalMonths": 60
     }
   },
   {
@@ -136,7 +142,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "JNTO / Meibaku Tradition",
-      "estimatedMembers": 3
+      "estimatedMembers": 3,
+      "reviewIntervalMonths": 60
     }
   },
   {
@@ -156,7 +163,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Agency for Cultural Affairs / Heritage Tradition",
-      "estimatedMembers": 3
+      "estimatedMembers": 3,
+      "reviewIntervalMonths": 60
     }
   },
   {
@@ -176,7 +184,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Association of Shinto Shrines (神社本庁)",
-      "estimatedMembers": 3
+      "estimatedMembers": 3,
+      "reviewIntervalMonths": 36
     }
   },
   {
@@ -196,7 +205,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Japan Cherry Blossom Association (日本さくらの会)",
-      "estimatedMembers": 3
+      "estimatedMembers": 3,
+      "reviewIntervalMonths": 24
     }
   },
   {
@@ -216,7 +226,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Japan Onsen Association (温泉協会)",
-      "estimatedMembers": 50
+      "estimatedMembers": 50,
+      "reviewIntervalMonths": 24
     }
   },
   {
@@ -236,7 +247,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Agency for Cultural Affairs (重伝統的建造物群保存地区)",
-      "estimatedMembers": 126
+      "estimatedMembers": 126,
+      "reviewIntervalMonths": 12
     }
   },
   {
@@ -256,7 +268,8 @@
       "status": "active",
       "lastVerified": "2026-07",
       "verificationSource": "Night View Convention & Tourism Bureau (夜景サミット)",
-      "estimatedMembers": 20
+      "estimatedMembers": 20,
+      "reviewIntervalMonths": 24
     }
   }
 ]

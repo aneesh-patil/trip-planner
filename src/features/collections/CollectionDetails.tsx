@@ -85,7 +85,7 @@ export default function CollectionDetails() {
         </p>
 
         {/* Progress Tracker */}
-        <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-2xl p-4 max-w-xl">
+        <div className="bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-2xl p-4 max-w-xl mb-6">
           <div className="flex justify-between items-center text-sm font-bold mb-2">
             <span className="text-slate-800 dark:text-slate-200 flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-500" />
@@ -102,6 +102,48 @@ export default function CollectionDetails() {
             />
           </div>
         </div>
+
+        {/* Provenance & Audit Trust Panel */}
+        {collection.metadata && (
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500 dark:text-slate-400 pt-4 border-t border-slate-200 dark:border-slate-800">
+            <div>
+              <span className="text-slate-400 dark:text-slate-500">
+                Authority:
+              </span>{" "}
+              <span className="font-semibold text-slate-700 dark:text-slate-200 capitalize">
+                {collection.metadata.authority.replace("_", " ")}
+              </span>
+            </div>
+            <div>
+              <span className="text-slate-400 dark:text-slate-500">
+                Last Reviewed:
+              </span>{" "}
+              <span className="font-semibold text-slate-700 dark:text-slate-200">
+                {collection.metadata.lastVerified}
+              </span>
+            </div>
+            {collection.metadata.estimatedMembers && (
+              <div>
+                <span className="text-slate-400 dark:text-slate-500">
+                  Catalog Target:
+                </span>{" "}
+                <span className="font-semibold text-slate-700 dark:text-slate-200">
+                  {collection.metadata.estimatedMembers} destinations
+                </span>
+              </div>
+            )}
+            {collection.metadata.reviewIntervalMonths && (
+              <div>
+                <span className="text-slate-400 dark:text-slate-500">
+                  Audit Cycle:
+                </span>{" "}
+                <span className="font-semibold text-slate-700 dark:text-slate-200">
+                  Every {collection.metadata.reviewIntervalMonths} months
+                </span>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Destination Grid & Empty State */}

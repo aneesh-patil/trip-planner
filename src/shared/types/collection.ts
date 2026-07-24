@@ -1,10 +1,15 @@
 export interface CollectionMetadata {
   authority:
-    "government" | "foundation" | "historical_consensus" | "association";
+    | "international"
+    | "government"
+    | "foundation"
+    | "association"
+    | "historical_consensus";
   status: "active" | "review_needed" | "deprecated";
   lastVerified: string;
   verificationSource?: string;
   estimatedMembers?: number;
+  reviewIntervalMonths?: number;
 }
 
 export interface Collection {
