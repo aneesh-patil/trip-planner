@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg",
   "totalTripHours": 3,
   "budgetMin": 3500,
-  "budgetRecommended": 7000,
+  "budgetRecommended": 7750,
   "budgetMax": 12000,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -111,5 +111,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "minato-city"
+  }
 }

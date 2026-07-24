@@ -112,7 +112,12 @@ export default function DestinationCard({
           </div>
         )}
         <div className="absolute top-3 left-3 flex gap-2 flex-wrap z-10 max-w-[80%]">
-          {destination.tags.slice(0, 2).map((tag) => {
+          {destination.kind && (
+            <Badge className="bg-emerald-600/90 text-white font-extrabold capitalize backdrop-blur-md border border-white/20 shadow-md">
+              {destination.kind}
+            </Badge>
+          )}
+          {destination.tags.slice(0, 1).map((tag) => {
             let badgeStyle =
               "bg-slate-900/70 hover:bg-slate-900 text-white backdrop-blur-md border border-white/20";
             if (tag === "12 Original Keeps") {

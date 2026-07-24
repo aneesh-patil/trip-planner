@@ -113,5 +113,7 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hamanako_SA.jpg"
 }

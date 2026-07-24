@@ -8,7 +8,7 @@
     "lat": 34.6873,
     "lng": 135.5262
   },
-  "tags": ["Toyotomi Hideyoshi", "Cherry Blossom Park"],
+  "tags": ["Top 100 Castle", "Toyotomi Hideyoshi", "Cherry Blossom Park"],
   "rating": 4.7,
   "ratings": {
     "overall": 4.7,
@@ -56,11 +56,6 @@
   "description": "Osaka Castle is an iconic 16th-century fortress constructed by Toyotomi Hideyoshi, featuring golden roof ornaments, massive stone ramparts, and a lush park surrounded by moats.",
   "notes": "Reconstructed in 1931 with an elevator-serviced interior museum.",
   "budgetRecommended": 6500,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -72,5 +67,14 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {
+    "parentDestinationId": "osaka-city"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Osaka_Castle_03bs3200.jpg/800px-Osaka_Castle_03bs3200.jpg"
 }

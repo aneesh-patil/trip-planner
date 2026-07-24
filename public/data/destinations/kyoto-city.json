@@ -1,0 +1,90 @@
+{
+  "id": "kyoto-city",
+  "name": "Kyoto City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "aliases": ["Kyoto", "京都", "京都市"],
+  "prefecture": "Kyoto",
+  "region": "Kansai",
+  "categories": ["Cultural Capital", "Historic Hub", "UNESCO", "Temples"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Kyoto%2C_Japan_%2849667780482%29.jpg/3840px-Kyoto%2C_Japan_%2849667780482%29.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Kyoto%2C_Japan_%2849667780482%29.jpg/3840px-Kyoto%2C_Japan_%2849667780482%29.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Kyoto%2C_Japan_%2849667780482%29.jpg/3840px-Kyoto%2C_Japan_%2849667780482%29.jpg"
+  ],
+  "description": "Japan's ancient imperial capital, renowned for thousands of classical Buddhist temples, Shinto shrines, traditional wooden machiya, and zen gardens.",
+  "highlights": [
+    "Kinkaku-ji",
+    "Fushimi Inari Taisha",
+    "Kiyomizu-dera",
+    "Arashiyama Bamboo Grove"
+  ],
+  "totalTripHours": 8,
+  "budgetMin": 5000,
+  "budgetRecommended": 15000,
+  "budgetMax": 35000,
+  "walkingMin": 6000,
+  "walkingSunMin": 2500,
+  "walkingShadeMin": 3500,
+  "indoorPercent": 40,
+  "ratings": {
+    "overall": 9.9,
+    "couple": 9.9,
+    "summer": 9,
+    "winter": 9.3,
+    "rain": 9.2,
+    "food": 9.7,
+    "photography": 10,
+    "relaxation": 9.6,
+    "value": 9.4,
+    "uniqueness": 10
+  },
+  "crowd": {
+    "weekday": 7,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 10,
+    "summer": 7,
+    "autumn": 10,
+    "winter": 8
+  },
+  "bestMonths": [3, 4, 5, 10, 11, 12],
+  "bestSeason": "Spring & Autumn",
+  "weatherDependence": "low",
+  "tags": ["Imperial Capital", "Kyoto City", "UNESCO World Heritage"],
+  "coordinates": {
+    "lat": 35.0116,
+    "lng": 135.7681
+  },
+  "comfort": {
+    "heatTolerance": 7,
+    "rainFriendly": 8,
+    "walkingIntensity": 4
+  },
+  "transportOptions": {
+    "train": 230,
+    "bus": 230
+  },
+  "reservation": "None required",
+  "parking": "Limited city center parking",
+  "restaurants": ["Gion Karyo", "Nishiki Market Stalls"],
+  "cafes": ["Arabica Kyoto Higashiyama"],
+  "notes": "Imperial cultural capital of Japan.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "amanohashidate-kyoto",
+      "kyoto-historic",
+      "nijo-castle-kyoto"
+    ],
+    "nearbyDestinationIds": ["osaka-city", "uji-city", "miyazu-city"],
+    "relatedDestinationIds": ["kanazawa-city", "nara-city"]
+  }
+}

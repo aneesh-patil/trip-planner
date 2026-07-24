@@ -8,7 +8,7 @@
     "lat": 34.2861,
     "lng": 133.8003
   },
-  "tags": ["Highest Stone Walls"],
+  "tags": ["12 Original Keeps", "Top 100 Castle", "Highest Stone Walls"],
   "rating": 4.6,
   "ratings": {
     "overall": 4.6,
@@ -61,11 +61,6 @@
   "budgetMin": 3000,
   "budgetMax": 12000,
   "budgetRecommended": 7500,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -77,5 +72,12 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Marugame_Castle01.jpg"
 }

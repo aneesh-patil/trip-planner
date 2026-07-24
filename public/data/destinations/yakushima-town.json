@@ -1,0 +1,78 @@
+{
+  "id": "yakushima-town",
+  "name": "Yakushima Town",
+  "kind": "town",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Kagoshima",
+  "region": "Kyushu",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/68/Yakushima.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Yakushima.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/6/68/Yakushima.jpg"
+  ],
+  "description": "Subtropical island World Heritage wilderness covered in ancient Yaku cedar forests and mossy gorges.",
+  "highlights": ["Explore Yakushima Town", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Yakushima Town", "Kagoshima Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 30.3444,
+    "lng": 130.5126
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Yakushima Town Specialty Dining"],
+  "cafes": ["Yakushima Town Cafe"],
+  "notes": "Yakushima Town travel hub in Kagoshima Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [],
+    "nearbyDestinationIds": ["fukuoka-city", "kitakyushu-city", "dazaifu-city"]
+  }
+}

@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Tokyo_Skytree_2014_%E2%85%A2.jpg",
   "totalTripHours": 4,
   "budgetMin": 4000,
-  "budgetRecommended": 8500,
+  "budgetRecommended": 9500,
   "budgetMax": 15000,
   "walkingMin": 4500,
   "walkingSunMin": 1500,
@@ -123,5 +123,8 @@
       "sortOrder": 4,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {
+    "parentDestinationId": "sumida-city"
+  }
 }

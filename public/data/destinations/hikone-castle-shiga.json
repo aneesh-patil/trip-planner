@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hikone_Castle_November_2016_-02.jpg",
   "totalTripHours": 4,
   "budgetMin": 3500,
-  "budgetRecommended": 7000,
+  "budgetRecommended": 7750,
   "budgetMax": 12000,
   "walkingMin": 4500,
   "walkingSunMin": 1800,
@@ -40,7 +40,14 @@
   "bestMonths": [3, 4, 5, 10, 11, 12],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": ["Original Keep 1622", "Hikonyan", "Genkyuen Garden"],
+  "tags": [
+    "12 Original Keeps",
+    "National Treasure",
+    "Original Keep 1622",
+    "Hikonyan",
+    "Genkyuen Garden",
+    "Top 100 Castle"
+  ],
   "coordinates": {
     "lat": 35.2764,
     "lng": 136.2518
@@ -130,5 +137,6 @@
       "sortOrder": 3,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

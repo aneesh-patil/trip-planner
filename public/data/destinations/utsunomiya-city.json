@@ -1,0 +1,83 @@
+{
+  "id": "utsunomiya-city",
+  "name": "Utsunomiya City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Tochigi",
+  "region": "Kanto",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Utsunomiya_montage.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Utsunomiya_montage.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/7/7e/Utsunomiya_montage.jpg"
+  ],
+  "description": "Prefectural capital acclaimed as Japan's Gyoza dumpling capital, featuring Oya Stone Underground Quarry.",
+  "highlights": ["Explore Utsunomiya City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Utsunomiya City", "Tochigi Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 36.5551,
+    "lng": 139.8828
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Utsunomiya City Specialty Dining"],
+  "cafes": ["Utsunomiya City Cafe"],
+  "notes": "Utsunomiya City travel hub in Tochigi Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "kegon-falls-nikko",
+      "kinugawa-onsen",
+      "nikko-heritage",
+      "utsunomiya-oya"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  }
+}

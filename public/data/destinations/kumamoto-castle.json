@@ -8,7 +8,7 @@
     "lat": 32.8061,
     "lng": 130.7058
   },
-  "tags": ["Impregnable Stone Walls", "Kato Kiyomasa"],
+  "tags": ["Top 100 Castle", "Impregnable Stone Walls", "Kato Kiyomasa"],
   "rating": 4.8,
   "ratings": {
     "overall": 4.8,
@@ -56,11 +56,6 @@
   "description": "Kumamoto Castle is one of Japan's most formidable castles, engineered by master builder Kato Kiyomasa with steep curved Musha-gaeshi stone walls designed to prevent ninja scaling.",
   "notes": "Main keep fully restored following the 2016 Kumamoto earthquakes.",
   "budgetRecommended": 8000,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -72,5 +67,12 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kumamoto_Castle_Keep_Tower_20221022-3.jpg/3840px-Kumamoto_Castle_Keep_Tower_20221022-3.jpg"
 }

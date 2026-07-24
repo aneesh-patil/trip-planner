@@ -1,0 +1,82 @@
+{
+  "id": "shimonoseki-city",
+  "name": "Shimonoseki City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Yamaguchi",
+  "region": "Chugoku",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Central_Shimonoseki_and_Kanmon_Strait.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Central_Shimonoseki_and_Kanmon_Strait.JPG",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/9/9f/Central_Shimonoseki_and_Kanmon_Strait.JPG"
+  ],
+  "description": "Strait port city at the tip of Honshu, world-famous for Karato Fish Market and fugu blowfish cuisine.",
+  "highlights": ["Explore Shimonoseki City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Shimonoseki City", "Yamaguchi Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 33.9575,
+    "lng": 130.9413
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Shimonoseki City Specialty Dining"],
+  "cafes": ["Shimonoseki City Cafe"],
+  "notes": "Shimonoseki City travel hub in Yamaguchi Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [],
+    "nearbyDestinationIds": [
+      "hiroshima-city",
+      "onomichi-city",
+      "hatsukaichi-city"
+    ]
+  }
+}

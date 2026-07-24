@@ -19,7 +19,7 @@
   ],
   "budgetMin": 3000,
   "budgetMax": 8500,
-  "budgetRecommended": 5500,
+  "budgetRecommended": 5750,
   "budgetBreakdown": {
     "transport": 2500,
     "tickets": 1200,
@@ -116,5 +116,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "chiyoda-city"
+  }
 }

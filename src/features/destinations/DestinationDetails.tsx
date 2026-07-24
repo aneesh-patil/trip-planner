@@ -3,6 +3,7 @@ import { useParams, Link, useLocation } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { getDestination } from "@/shared/services/destination/DestinationService";
+import { DestinationRelationshipService } from "@/shared/services/destination/DestinationRelationshipService";
 import destinationsData from "@/shared/data/destinations-index.json";
 import DestinationCard from "./components/DestinationCard";
 import type { Destination } from "@/shared/types/destination";
@@ -232,6 +233,26 @@ export default function DestinationDetails() {
       .map((item) => item.destination);
   }, [destination]);
 
+  const parentDestination = useMemo(() => {
+    if (!destination) return null;
+    return DestinationRelationshipService.getParentDestination(destination);
+  }, [destination]);
+
+  const featuredChildSights = useMemo(() => {
+    if (!destination) return [];
+    return DestinationRelationshipService.getFeaturedChildDestinations(
+      destination,
+    );
+  }, [destination]);
+
+  const graphNearbyDestinations = useMemo(() => {
+    if (!destination) return [];
+    const graphNearby =
+      DestinationRelationshipService.getNearbyDestinations(destination);
+    if (graphNearby.length > 0) return graphNearby;
+    return nearbyDestinations;
+  }, [destination, nearbyDestinations]);
+
   const activeModes = useMemo(() => {
     if (!destination) return null;
     if (
@@ -423,6 +444,17 @@ export default function DestinationDetails() {
               <MapPin className="w-4 h-4 mr-1 text-emerald-400" />{" "}
               {destination.prefecture}, Japan
             </div>
+
+            {/* "Located In" Parent Container Badge */}
+            {parentDestination && (
+              <Link
+                to={`/destinations/${parentDestination.id}`}
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-white/20 hover:bg-white/30 text-white font-extrabold text-xs backdrop-blur-md transition-all border border-white/30"
+              >
+                <MapPin className="w-3.5 h-3.5 text-emerald-400" />
+                Located In: {parentDestination.name}
+              </Link>
+            )}
 
             {/* + Add to Itinerary Text Button */}
             <button
@@ -1242,14 +1274,46 @@ export default function DestinationDetails() {
           </div>
         </div>
 
+        {/* Top Sights & Attractions (For City / Ward / Town Hubs) */}
+        {featuredChildSights.length > 0 && (
+          <div className="mt-16 pt-12 border-t border-slate-200 dark:border-slate-800 space-y-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="text-xs font-extrabold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                  Featured Sights & Highlights
+                </span>
+                <h3 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2 mt-1">
+                  <MapPin className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                  Top Sights in {destination.name}
+                </h3>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {featuredChildSights.map((dest: Destination) => (
+                <DestinationCard
+                  key={dest.id}
+                  destination={dest}
+                  partySize={partySize}
+                  carMode={navState?.carMode || "none"}
+                  publicModes={
+                    navState?.publicModes || ["train", "shinkansen", "bus"]
+                  }
+                  activeTransportMode="all"
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Nearby Destinations Section */}
-        {nearbyDestinations.length > 0 && (
+        {graphNearbyDestinations.length > 0 && (
           <div className="mt-16 pt-12 border-t border-slate-200 dark:border-slate-800">
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h3 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
                   <MapPin className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
-                  Nearby Destinations
+                  Nearby Destinations & Hubs
                 </h3>
                 <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
                   Other great places to visit close to {destination.name}.
@@ -1257,7 +1321,7 @@ export default function DestinationDetails() {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {nearbyDestinations.map((dest: Destination) => (
+              {graphNearbyDestinations.map((dest: Destination) => (
                 <DestinationCard
                   key={dest.id}
                   destination={dest}

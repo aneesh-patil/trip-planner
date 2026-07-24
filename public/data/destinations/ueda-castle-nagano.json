@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ueda_Castle_Amagafuchi.jpg/3840px-Ueda_Castle_Amagafuchi.jpg",
   "totalTripHours": 3,
   "budgetMin": 2500,
-  "budgetRecommended": 5000,
+  "budgetRecommended": 5750,
   "budgetMax": 9000,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -40,7 +40,12 @@
   "bestMonths": [3, 4, 5, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": ["Sanada Clan", "Cherry Blossoms", "Yagura Turrets"],
+  "tags": [
+    "Sanada Clan",
+    "Top 100 Castle",
+    "Cherry Blossoms",
+    "Yagura Turrets"
+  ],
   "coordinates": {
     "lat": 36.4035,
     "lng": 138.2435
@@ -117,5 +122,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

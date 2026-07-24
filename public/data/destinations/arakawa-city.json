@@ -1,0 +1,83 @@
+{
+  "id": "arakawa-city",
+  "name": "Arakawa City",
+  "kind": "ward",
+  "role": "hub",
+  "importance": "standard",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Travel Hub", "Special Ward"],
+  "heroImage": "https://images.unsplash.com/photo-1528164344705-475426879e0d?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1528164344705-475426879e0d?auto=format&fit=crop&q=80&w=1200",
+  "gallery": [
+    "https://images.unsplash.com/photo-1528164344705-475426879e0d?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Nostalgic shitamachi district serviced by the retro Tokyo Sakura Tram (Arakawa Line).",
+  "highlights": ["Explore Arakawa City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Arakawa City", "Tokyo Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 35.736,
+    "lng": 139.7834
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Arakawa City Specialty Dining"],
+  "cafes": ["Arakawa City Cafe"],
+  "notes": "Arakawa City travel hub in Tokyo Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "akasaka-minato",
+      "akihabara-chiyoda",
+      "asakusa-taito",
+      "chofu-tokyo"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  }
+}

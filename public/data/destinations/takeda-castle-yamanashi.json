@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/KofuTakedaJinja3.jpg",
   "totalTripHours": 3,
   "budgetMin": 2500,
-  "budgetRecommended": 5000,
+  "budgetRecommended": 5750,
   "budgetMax": 9000,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -40,7 +40,7 @@
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "bestSeason": "All Year",
   "weatherDependence": "low",
-  "tags": ["Takeda Shingen", "Moat Ruins", "Treasure Museum"],
+  "tags": ["Takeda Shingen", "Top 100 Castle", "Moat Ruins", "Treasure Museum"],
   "coordinates": {
     "lat": 35.6874,
     "lng": 138.5772
@@ -117,5 +117,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

@@ -1,0 +1,83 @@
+{
+  "id": "fujisawa-city",
+  "name": "Fujisawa City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Kanagawa",
+  "region": "Kanto",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/22/Fujisawa_montage.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Fujisawa_montage.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/2/22/Fujisawa_montage.jpg"
+  ],
+  "description": "Coastal getaway gateway to Enoshima Island, surf beaches, and scenic Enoden coastal railway.",
+  "highlights": ["Explore Fujisawa City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Fujisawa City", "Kanagawa Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 35.3389,
+    "lng": 139.4888
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Fujisawa City Specialty Dining"],
+  "cafes": ["Fujisawa City Cafe"],
+  "notes": "Fujisawa City travel hub in Kanagawa Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "ashigara",
+      "enoshima-island",
+      "hakkeijima",
+      "hakone-onsen"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  }
+}

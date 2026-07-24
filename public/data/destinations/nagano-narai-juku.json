@@ -122,5 +122,8 @@
       "sortOrder": 4,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {
+    "parentDestinationId": "nagano-city"
+  }
 }

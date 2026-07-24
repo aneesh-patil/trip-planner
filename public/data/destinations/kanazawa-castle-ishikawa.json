@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kanazawa-M-5937.jpg",
   "totalTripHours": 4,
   "budgetMin": 3000,
-  "budgetRecommended": 6500,
+  "budgetRecommended": 7000,
   "budgetMax": 11000,
   "walkingMin": 4500,
   "walkingSunMin": 1800,
@@ -40,7 +40,12 @@
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "bestSeason": "All Year",
   "weatherDependence": "low",
-  "tags": ["Maeda Clan", "Hishi Yagura", "Kenrokuen Adjacent"],
+  "tags": [
+    "Maeda Clan",
+    "Hishi Yagura",
+    "Kenrokuen Adjacent",
+    "Top 100 Castle"
+  ],
   "coordinates": {
     "lat": 36.5645,
     "lng": 136.6592
@@ -117,5 +122,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

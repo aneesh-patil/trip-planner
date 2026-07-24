@@ -8,7 +8,7 @@
     "lat": 34.455,
     "lng": 136.7258
   },
-  "tags": ["Three Great Shrines", "Amaterasu Sun Goddess"],
+  "tags": ["Three Great Shrines", "National Treasure", "Amaterasu Sun Goddess"],
   "rating": 4.9,
   "ratings": {
     "overall": 4.9,
@@ -61,11 +61,6 @@
   "description": "Ise Grand Shrine is the spiritual heart of Shinto, dedicated to the Sun Goddess Amaterasu and rebuilt every 20 years in accordance with ancient Shikinen Sengu ritual.",
   "notes": "Home to the Sacred Mirror (Yata no Kagami), one of Japan's Three Imperial Regalia.",
   "budgetRecommended": 7500,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -77,5 +72,12 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Naiku_04.jpg"
 }

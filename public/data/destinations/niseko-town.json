@@ -1,0 +1,78 @@
+{
+  "id": "niseko-town",
+  "name": "Niseko Town",
+  "kind": "town",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Hokkaido",
+  "region": "Hokkaido",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E3%83%8B%E3%82%BB%E3%82%B3%E6%9D%B1%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B42.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E3%83%8B%E3%82%BB%E3%82%B3%E6%9D%B1%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B42.JPG",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E3%83%8B%E3%82%BB%E3%82%B3%E6%9D%B1%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B42.JPG"
+  ],
+  "description": "World-class powder snow winter ski resort town framed by Mount Yotei ('Hokkaido's Mt. Fuji').",
+  "highlights": ["Explore Niseko Town", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Niseko Town", "Hokkaido Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 42.8048,
+    "lng": 140.6874
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Niseko Town Specialty Dining"],
+  "cafes": ["Niseko Town Cafe"],
+  "notes": "Niseko Town travel hub in Hokkaido Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["hakodate-night-view"],
+    "nearbyDestinationIds": ["sapporo-city", "otaru-city", "hakodate-city"]
+  }
+}

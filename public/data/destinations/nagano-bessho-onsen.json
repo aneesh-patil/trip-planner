@@ -19,7 +19,7 @@
   ],
   "budgetMin": 4000,
   "budgetMax": 12500,
-  "budgetRecommended": 8200,
+  "budgetRecommended": 8250,
   "budgetBreakdown": {
     "transport": 3500,
     "tickets": 700,
@@ -109,5 +109,7 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {},
+  "image": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000"
 }

@@ -113,5 +113,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "chuo-city"
+  }
 }

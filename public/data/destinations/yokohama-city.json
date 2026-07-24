@@ -134,5 +134,15 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "relationships": {
+    "featuredDestinationIds": [
+      "yokohama-landmark-tower-sky-garden",
+      "yokohama-marine-tower"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  }
 }

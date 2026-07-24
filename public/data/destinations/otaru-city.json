@@ -1,0 +1,78 @@
+{
+  "id": "otaru-city",
+  "name": "Otaru City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Hokkaido",
+  "region": "Hokkaido",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/08/Otaru_Montage.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Otaru_Montage.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/0/08/Otaru_Montage.jpg"
+  ],
+  "description": "Nostalgic canal port town near Sapporo, famous for stone warehouses, glasscraft shops, and fresh seafood sushi.",
+  "highlights": ["Explore Otaru City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Otaru City", "Hokkaido Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 43.1907,
+    "lng": 140.9947
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Otaru City Specialty Dining"],
+  "cafes": ["Otaru City Cafe"],
+  "notes": "Otaru City travel hub in Hokkaido Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["hakodate-night-view"],
+    "nearbyDestinationIds": ["sapporo-city", "hakodate-city", "asahikawa-city"]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "kochi-city",
+  "name": "Kochi City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Kochi",
+  "region": "Shikoku",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Kochi_montage.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Kochi_montage.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/c/c9/Kochi_montage.jpg"
+  ],
+  "description": "Southern Pacific coastal city featuring original wooden Kochi Castle, Katsurahama Beach, and Hirome Market.",
+  "highlights": ["Explore Kochi City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Kochi City", "Kochi Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 33.5597,
+    "lng": 133.5311
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Kochi City Specialty Dining"],
+  "cafes": ["Kochi City Cafe"],
+  "notes": "Kochi City travel hub in Kochi Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["kochi-castle"],
+    "nearbyDestinationIds": [
+      "takamatsu-city",
+      "matsuyama-city",
+      "tokushima-city"
+    ]
+  }
+}

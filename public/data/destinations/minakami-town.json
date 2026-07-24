@@ -1,0 +1,83 @@
+{
+  "id": "minakami-town",
+  "name": "Minakami Town",
+  "kind": "town",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Gunma",
+  "region": "Kanto",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "gallery": [
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Alpine outdoor adventure resort famous for Tone River white-water rafting, Tanigawadake peak, and thermal baths.",
+  "highlights": ["Explore Minakami Town", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Minakami Town", "Gunma Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 36.6789,
+    "lng": 138.9982
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Minakami Town Specialty Dining"],
+  "cafes": ["Minakami Town Cafe"],
+  "notes": "Minakami Town travel hub in Gunma Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "gunma-ikaho-onsen",
+      "gunma-kusatsu-onsen",
+      "gunma-shima-onsen",
+      "oze-national-park"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  }
+}

@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edo_P_detail.jpg",
   "totalTripHours": 4,
   "budgetMin": 2000,
-  "budgetRecommended": 4500,
+  "budgetRecommended": 5500,
   "budgetMax": 9000,
   "walkingMin": 4500,
   "walkingSunMin": 2000,
@@ -40,7 +40,12 @@
   "bestMonths": [3, 4, 5, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": ["Shogunate Seat", "Fujimi-yagura", "Imperial Gardens"],
+  "tags": [
+    "Shogunate Seat",
+    "Top 100 Castle",
+    "Fujimi-yagura",
+    "Imperial Gardens"
+  ],
   "coordinates": {
     "lat": 35.6852,
     "lng": 139.7528
@@ -116,5 +121,8 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {
+    "parentDestinationId": "chiyoda-city"
+  }
 }

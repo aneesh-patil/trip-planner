@@ -1,0 +1,78 @@
+{
+  "id": "naruto-city",
+  "name": "Naruto City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Tokushima",
+  "region": "Shikoku",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Naruto_montege.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Naruto_montege.JPG",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/c/cb/Naruto_montege.JPG"
+  ],
+  "description": "Strait city famous for Naruto Whirlpools, Otsuka Museum of Art, and Naruto Bridge walk.",
+  "highlights": ["Explore Naruto City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Naruto City", "Tokushima Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 34.1755,
+    "lng": 134.6078
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Naruto City Specialty Dining"],
+  "cafes": ["Naruto City Cafe"],
+  "notes": "Naruto City travel hub in Tokushima Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [],
+    "nearbyDestinationIds": ["takamatsu-city", "matsuyama-city", "kochi-city"]
+  }
+}

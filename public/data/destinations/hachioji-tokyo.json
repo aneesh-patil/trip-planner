@@ -109,5 +109,8 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {
+    "parentDestinationId": "chiyoda-city"
+  }
 }

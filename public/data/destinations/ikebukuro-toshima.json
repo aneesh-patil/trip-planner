@@ -112,5 +112,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "chiyoda-city"
+  }
 }

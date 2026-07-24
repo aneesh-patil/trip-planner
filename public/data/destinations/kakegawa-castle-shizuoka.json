@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Kakegawacastleapril2006.JPG",
   "totalTripHours": 3,
   "budgetMin": 3000,
-  "budgetRecommended": 5500,
+  "budgetRecommended": 6250,
   "budgetMax": 9500,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -40,7 +40,12 @@
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "bestSeason": "All Year",
   "weatherDependence": "low",
-  "tags": ["Authentic Wooden Keep", "Ninomaru Goten", "Green Tea"],
+  "tags": [
+    "Authentic Wooden Keep",
+    "Ninomaru Goten",
+    "Top 100 Castle",
+    "Green Tea"
+  ],
   "coordinates": {
     "lat": 34.7758,
     "lng": 138.0147
@@ -117,5 +122,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

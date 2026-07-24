@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg",
   "totalTripHours": 3,
   "budgetMin": 1500,
-  "budgetRecommended": 3500,
+  "budgetRecommended": 4250,
   "budgetMax": 7000,
   "walkingMin": 3000,
   "walkingSunMin": 1000,
@@ -116,5 +116,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "chiyoda-city"
+  }
 }

@@ -1,0 +1,143 @@
+{
+  "id": "kawagoe-city",
+  "name": "Kawagoe City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Saitama",
+  "region": "Kanto",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "/images/kawagoe_hero.jpg",
+  "image": "https://loremflickr.com/1000/800/japan,kawagoe/all?lock=1002",
+  "gallery": [
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Nostalgic 'Little Edo' castle town featuring Kurazukuri clay warehouse streets, Bell of Time, and Candy Alley.",
+  "highlights": ["Explore Kawagoe City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Kawagoe City", "Saitama Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 35.9251,
+    "lng": 139.4858
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Kawagoe City Specialty Dining"],
+  "cafes": ["Kawagoe City Cafe"],
+  "notes": "Kawagoe City travel hub in Saitama Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "historic-towns-japan",
+      "sortOrder": 1,
+      "confirmed": true
+    }
+  ],
+  "relationships": {
+    "featuredDestinationIds": [
+      "kawagoe-castle-saitama",
+      "kawagoe-edo",
+      "omiya-railway",
+      "saitama-chichibu"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Plan A: Little Edo Walk",
+      "description": "Experience the historic warehouse district and famous candy alley.",
+      "steps": [
+        {
+          "time": "10:30",
+          "activity": "Arrive at Kawagoe Station and take the retro loop bus."
+        },
+        {
+          "time": "11:00",
+          "activity": "Stroll the Kurazukuri Zone (Warehouse District) and photograph the Toki no Kane (Time Bell Tower)."
+        },
+        {
+          "time": "12:30",
+          "activity": "Enjoy local sweet potato treats and traditional eel (unagi) for lunch."
+        },
+        {
+          "time": "14:00",
+          "activity": "Explore Kashiya Yokocho (Candy Alley) for retro Japanese sweets."
+        },
+        {
+          "time": "16:00",
+          "activity": "Visit Kitain Temple, featuring the only remaining buildings of the original Edo Castle."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Shrines & Culture",
+      "description": "A deeper dive into local traditions, focusing on the famous Hikawa Shrine.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Visit Hikawa Shrine. Walk through the tunnel of wind chimes (in summer) or ema."
+        },
+        {
+          "time": "12:00",
+          "activity": "Fish for your fortune using a small fishing rod at the shrine."
+        },
+        {
+          "time": "13:30",
+          "activity": "Lunch at a traditional Japanese restaurant near the Honmaru Goten."
+        },
+        {
+          "time": "15:00",
+          "activity": "Tour Kawagoe Castle Honmaru Goten, the former samurai lord's residence."
+        },
+        {
+          "time": "16:30",
+          "activity": "Relax at a retro coffee shop on Taisho-roman Street."
+        }
+      ]
+    }
+  ]
+}

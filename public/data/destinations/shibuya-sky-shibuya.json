@@ -8,7 +8,7 @@
   "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200",
   "totalTripHours": 3,
   "budgetMin": 3500,
-  "budgetRecommended": 7000,
+  "budgetRecommended": 8250,
   "budgetMax": 13000,
   "walkingMin": 3500,
   "walkingSunMin": 1500,
@@ -116,5 +116,8 @@
       "sortOrder": 3,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {
+    "parentDestinationId": "shibuya-city"
+  }
 }

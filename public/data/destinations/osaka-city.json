@@ -1,0 +1,81 @@
+{
+  "id": "osaka-city",
+  "name": "Osaka City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "aliases": ["Osaka", "大阪", "大阪市"],
+  "prefecture": "Osaka",
+  "region": "Kansai",
+  "categories": ["Urban Hub", "Culinary", "Nightlife", "Modern"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Osaka_Castle_and_Osaka_Business_Park_skyscraper_20260610.jpg/3840px-Osaka_Castle_and_Osaka_Business_Park_skyscraper_20260610.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Osaka_Castle_and_Osaka_Business_Park_skyscraper_20260610.jpg/3840px-Osaka_Castle_and_Osaka_Business_Park_skyscraper_20260610.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Osaka_Castle_and_Osaka_Business_Park_skyscraper_20260610.jpg/3840px-Osaka_Castle_and_Osaka_Business_Park_skyscraper_20260610.jpg"
+  ],
+  "description": "Kansai's vibrant commercial metropolis, famous for neon-lit Dotonbori canals, Osaka Castle, street food culture, and warm hospitality.",
+  "highlights": ["Dotonbori", "Osaka Castle", "Abeno Harukas 300", "Shinsekai"],
+  "totalTripHours": 6,
+  "budgetMin": 4000,
+  "budgetRecommended": 12000,
+  "budgetMax": 30000,
+  "walkingMin": 5000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 3500,
+  "indoorPercent": 70,
+  "ratings": {
+    "overall": 9.7,
+    "couple": 9.5,
+    "summer": 9.2,
+    "winter": 9.4,
+    "rain": 9.6,
+    "food": 10,
+    "photography": 9.6,
+    "relaxation": 9.1,
+    "value": 9.6,
+    "uniqueness": 9.7
+  },
+  "crowd": {
+    "weekday": 6,
+    "weekend": 9,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Osaka City", "Dotonbori", "Kuromon Market", "Takoyaki Capital"],
+  "coordinates": {
+    "lat": 34.6937,
+    "lng": 135.5023
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 190,
+    "bus": 210
+  },
+  "reservation": "None required",
+  "parking": "Paid parking garages",
+  "restaurants": ["Mizuno Okonomiyaki", "Kukuru Takoyaki"],
+  "cafes": ["Guto Cafe Dotonbori"],
+  "notes": "Food capital of Japan (Kuidaore culture).",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["abeno-harukas-300-osaka", "osaka-castle"],
+    "nearbyDestinationIds": ["kyoto-city", "uji-city", "miyazu-city"],
+    "relatedDestinationIds": ["tokyo-city", "fukuoka-city"]
+  }
+}

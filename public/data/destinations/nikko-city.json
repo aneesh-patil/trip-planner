@@ -1,0 +1,138 @@
+{
+  "id": "nikko-city",
+  "name": "Nikko City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Tochigi",
+  "region": "Kanto",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "/images/nikko_hero.jpg",
+  "image": "https://loremflickr.com/1000/800/japan,nikko/all?lock=1003",
+  "gallery": [
+    "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "World Heritage mountain sanctuary featuring ornate Toshogu Shrine, Kegon Falls, and Lake Chuzenji.",
+  "highlights": ["Explore Nikko City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Nikko City", "Tochigi Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 36.75,
+    "lng": 139.5985
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Nikko City Specialty Dining"],
+  "cafes": ["Nikko City Cafe"],
+  "notes": "Nikko City travel hub in Tochigi Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "unesco-japan",
+      "sortOrder": 6,
+      "confirmed": true
+    }
+  ],
+  "relationships": {
+    "featuredDestinationIds": ["kegon-falls-nikko", "nikko-heritage"],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Plan A: World Heritage Sanctuaries",
+      "description": "A focused tour of the elaborately decorated shrines and temples.",
+      "steps": [
+        {
+          "time": "09:30",
+          "activity": "Arrive in Nikko. Photograph the iconic red Shinkyo Bridge."
+        },
+        {
+          "time": "10:30",
+          "activity": "Explore Toshogu Shrine, the incredibly ornate mausoleum of Tokugawa Ieyasu."
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch featuring local Nikko Yuba (tofu skin) delicacies."
+        },
+        {
+          "time": "14:30",
+          "activity": "Visit Rinno-ji Temple and the quiet Futarasan Shrine."
+        },
+        {
+          "time": "16:30",
+          "activity": "Stroll along the Kanmangafuchi Abyss to see the row of stone Jizo statues."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Okunikko Nature Escape",
+      "description": "Skip the shrines and head higher up the mountains for waterfalls and lakes.",
+      "steps": [
+        {
+          "time": "09:00",
+          "activity": "Take the bus up the winding Irohazaka Route to Okunikko."
+        },
+        {
+          "time": "10:30",
+          "activity": "Ride the elevator down to the base of Kegon Falls, one of Japan's top 3 waterfalls."
+        },
+        {
+          "time": "12:00",
+          "activity": "Lunch overlooking the beautiful Lake Chuzenji."
+        },
+        {
+          "time": "13:30",
+          "activity": "Hike the wooden boardwalks of the Senjogahara Marshland."
+        },
+        {
+          "time": "16:00",
+          "activity": "Soak your feet in the public footbaths at Yumoto Onsen before returning."
+        }
+      ]
+    }
+  ]
+}

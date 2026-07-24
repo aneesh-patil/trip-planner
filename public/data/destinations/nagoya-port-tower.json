@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Nagoya_Port_Aichi_pref_Japan01s8.jpg/3840px-Nagoya_Port_Aichi_pref_Japan01s8.jpg",
   "totalTripHours": 3,
   "budgetMin": 2500,
-  "budgetRecommended": 5000,
+  "budgetRecommended": 5500,
   "budgetMax": 8500,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -117,5 +117,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "nagoya-city"
+  }
 }

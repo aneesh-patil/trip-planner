@@ -1,0 +1,111 @@
+{
+  "id": "edogawa-city",
+  "name": "Edogawa City",
+  "kind": "ward",
+  "role": "hub",
+  "importance": "standard",
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Travel Hub", "Special Ward"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kasai_Rinkai_Park_2011--1.JPG/960px-Kasai_Rinkai_Park_2011--1.JPG",
+  "image": "https://loremflickr.com/1000/800/japan,edogawa/all?lock=1028",
+  "gallery": [
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Eastern coastal ward home to Kasai Rinkai Park, Diamond and Flower Ferris Wheel, and Tokyo Bay views.",
+  "highlights": ["Explore Edogawa City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Edogawa City", "Tokyo Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 35.6704,
+    "lng": 139.8681
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Edogawa City Specialty Dining"],
+  "cafes": ["Edogawa City Cafe"],
+  "notes": "Edogawa City travel hub in Tokyo Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "akasaka-minato",
+      "akihabara-chiyoda",
+      "asakusa-taito",
+      "chofu-tokyo"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Edogawa in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary nature attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ]
+}

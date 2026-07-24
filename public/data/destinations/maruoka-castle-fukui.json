@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Maruoka_Castle_20100529-01.jpg",
   "totalTripHours": 3,
   "budgetMin": 3000,
-  "budgetRecommended": 5500,
+  "budgetRecommended": 6250,
   "budgetMax": 9500,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -40,7 +40,13 @@
   "bestMonths": [3, 4, 5, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": ["Oldest Architectural Style", "Stone Shingles", "Mist Castle"],
+  "tags": [
+    "12 Original Keeps",
+    "Oldest Architectural Style",
+    "Stone Shingles",
+    "Mist Castle",
+    "Top 100 Castle"
+  ],
   "coordinates": {
     "lat": 36.1554,
     "lng": 136.2718
@@ -121,5 +127,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

@@ -19,7 +19,7 @@
   ],
   "budgetMin": 5500,
   "budgetMax": 16000,
-  "budgetRecommended": 10500,
+  "budgetRecommended": 10750,
   "budgetBreakdown": {
     "transport": 5000,
     "tickets": 1000,
@@ -126,5 +126,8 @@
       "sortOrder": 7,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {
+    "parentDestinationId": "shirakawa-village"
+  }
 }

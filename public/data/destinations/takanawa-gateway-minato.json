@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Takanawa-Gateway-City---2025-06-18_170.jpg/3840px-Takanawa-Gateway-City---2025-06-18_170.jpg",
   "totalTripHours": 3,
   "budgetMin": 3000,
-  "budgetRecommended": 6000,
+  "budgetRecommended": 6500,
   "budgetMax": 10000,
   "walkingMin": 3000,
   "walkingSunMin": 1200,
@@ -116,5 +116,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "chiyoda-city"
+  }
 }

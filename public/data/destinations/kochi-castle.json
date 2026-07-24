@@ -8,7 +8,7 @@
     "lat": 33.5608,
     "lng": 133.5314
   },
-  "tags": ["Complete Palace Complex"],
+  "tags": ["12 Original Keeps", "Top 100 Castle", "Complete Palace Complex"],
   "rating": 4.7,
   "ratings": {
     "overall": 4.7,
@@ -61,11 +61,6 @@
   "budgetMin": 5000,
   "budgetMax": 18000,
   "budgetRecommended": 11500,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -77,5 +72,12 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kochi_Castle_2025.jpg/1920px-Kochi_Castle_2025.jpg"
 }

@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/3840px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
   "totalTripHours": 4,
   "budgetMin": 5000,
-  "budgetRecommended": 9000,
+  "budgetRecommended": 10000,
   "budgetMax": 15000,
   "walkingMin": 4000,
   "walkingSunMin": 1500,
@@ -121,5 +121,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "chiyoda-city"
+  }
 }

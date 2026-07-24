@@ -41,11 +41,6 @@
       "collectionId": "three-great-waterfalls",
       "sortOrder": 1,
       "confirmed": true
-    },
-    {
-      "collectionId": "national-parks-japan",
-      "sortOrder": 5,
-      "confirmed": true
     }
   ],
   "transportOptions": {
@@ -65,11 +60,6 @@
   "description": "Kegon Falls is Japan's most famous 97-meter waterfall, carrying the outlet waters of Lake Chuzenji down a dramatic cliff in Nikko National Park.",
   "notes": "Accessible via an 100-meter underground elevator to the lower observation deck.",
   "budgetRecommended": 4000,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -81,5 +71,14 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {
+    "parentDestinationId": "nikko-city"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Lake_chuzenji_and_kegon_waterfall.jpg"
 }

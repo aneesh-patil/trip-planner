@@ -112,5 +112,7 @@
   "travelEstimate": {
     "confidence": "beta"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/F8_Tanigawa_79_Gala-Yuzawa_20060115.JPG"
 }

@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sakura_Castle_2.JPG/3840px-Sakura_Castle_2.JPG",
   "totalTripHours": 4,
   "budgetMin": 2500,
-  "budgetRecommended": 5000,
+  "budgetRecommended": 5500,
   "budgetMax": 8500,
   "walkingMin": 4500,
   "walkingSunMin": 2000,
@@ -40,7 +40,12 @@
   "bestMonths": [3, 4, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "medium",
-  "tags": ["Earthen Fortification", "Dry Moats", "National Museum"],
+  "tags": [
+    "Earthen Fortification",
+    "Dry Moats",
+    "Top 100 Castle",
+    "National Museum"
+  ],
   "coordinates": {
     "lat": 35.7208,
     "lng": 140.2185
@@ -117,5 +122,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

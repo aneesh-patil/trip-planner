@@ -1,0 +1,151 @@
+{
+  "id": "matsumoto-city",
+  "name": "Matsumoto City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
+  "gallery": [
+    "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Alpine castle city featuring National Treasure Matsumoto 'Crow' Castle and gateway to Kamikochi.",
+  "highlights": ["Explore Matsumoto City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Matsumoto City", "Nagano Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 36.2381,
+    "lng": 137.972
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Matsumoto City Specialty Dining"],
+  "cafes": ["Matsumoto City Cafe"],
+  "notes": "Matsumoto City travel hub in Nagano Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "japan-top-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 1,
+      "confirmed": true
+    }
+  ],
+  "relationships": {
+    "featuredDestinationIds": [
+      "karuizawa",
+      "kiso",
+      "matsumoto",
+      "nagano-bessho-onsen"
+    ],
+    "nearbyDestinationIds": ["nagoya-city", "shirakawa-village", "nagano-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Plan A: The Black Castle",
+      "description": "Focus on the historic samurai history of Matsumoto.",
+      "steps": [
+        {
+          "time": "11:00",
+          "activity": "Arrive in Matsumoto. Head straight to Matsumoto Castle, one of Japan's oldest."
+        },
+        {
+          "time": "13:00",
+          "activity": "Have Shinshu Soba for lunch, a local specialty."
+        },
+        {
+          "time": "14:30",
+          "activity": "Stroll along Nakamachi-dori, known for its historic black-and-white storehouses."
+        },
+        {
+          "time": "16:00",
+          "activity": "Wander Nawate-dori (Frog Street) for quirky shops and street food."
+        },
+        {
+          "time": "17:30",
+          "activity": "Visit a local sake brewery for tasting before dinner."
+        }
+      ]
+    },
+    {
+      "name": "Plan B: Art & Alps",
+      "description": "A cultural day featuring famous contemporary art and mountain views.",
+      "steps": [
+        {
+          "time": "10:30",
+          "activity": "Visit the Matsumoto City Museum of Art to see the permanent Yayoi Kusama exhibition."
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch at a trendy cafe near the museum district."
+        },
+        {
+          "time": "14:30",
+          "activity": "Take a short bus or taxi ride up to Alps Park."
+        },
+        {
+          "time": "16:00",
+          "activity": "Enjoy panoramic views of the Japan Alps and explore the nature trails."
+        },
+        {
+          "time": "18:00",
+          "activity": "Head back to town for a cozy dinner."
+        }
+      ]
+    }
+  ]
+}

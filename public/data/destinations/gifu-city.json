@@ -1,0 +1,83 @@
+{
+  "id": "gifu-city",
+  "name": "Gifu City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Gifu",
+  "region": "Chubu",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
+  "gallery": [
+    "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Historic river city famous for Oda Nobunaga's Gifu Castle atop Mt. Kinka and Nagara River cormorant fishing.",
+  "highlights": ["Explore Gifu City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Gifu City", "Gifu Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 35.4233,
+    "lng": 136.7607
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Gifu City Specialty Dining"],
+  "cafes": ["Gifu City Cafe"],
+  "notes": "Gifu City travel hub in Gifu Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "gero-onsen",
+      "gifu-castle-gifu",
+      "gifu-gujo-hachiman",
+      "gifu-magome-juku"
+    ],
+    "nearbyDestinationIds": ["nagoya-city", "shirakawa-village", "nagano-city"]
+  }
+}

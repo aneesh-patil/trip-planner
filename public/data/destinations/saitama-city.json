@@ -118,5 +118,17 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "relationships": {
+    "featuredDestinationIds": [
+      "kawagoe-castle-saitama",
+      "kawagoe-edo",
+      "omiya-railway",
+      "saitama-chichibu"
+    ],
+    "nearbyDestinationIds": ["shibuya-city", "hakone-town", "chiba-city"]
+  }
 }

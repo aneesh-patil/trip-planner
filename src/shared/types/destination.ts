@@ -24,9 +24,54 @@ export interface Ratings {
   uniqueness: number;
 }
 
+export type DestinationKind =
+  | "city"
+  | "ward"
+  | "town"
+  | "village"
+  | "district"
+  | "castle"
+  | "palace"
+  | "temple"
+  | "shrine"
+  | "museum"
+  | "park"
+  | "garden"
+  | "mountain"
+  | "lake"
+  | "waterfall"
+  | "island"
+  | "beach"
+  | "shopping"
+  | "market"
+  | "street"
+  | "viewpoint"
+  | "tower"
+  | "bridge"
+  | "station"
+  | "onsen"
+  | "zoo"
+  | "aquarium";
+
+export type DestinationRole = "hub" | "poi";
+
+export type DestinationImportance = "major" | "notable" | "standard";
+
+export interface DestinationRelationships {
+  parentDestinationId?: string;
+  featuredDestinationIds?: string[];
+  nearbyDestinationIds?: string[];
+  relatedDestinationIds?: string[];
+}
+
 export interface Destination {
   id: string;
   name: string;
+  kind?: DestinationKind;
+  role?: DestinationRole;
+  importance?: DestinationImportance;
+  aliases?: string[];
+  relationships?: DestinationRelationships;
   prefecture: string;
   region: string;
   categories: string[];

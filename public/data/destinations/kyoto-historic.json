@@ -8,7 +8,12 @@
     "lat": 34.9949,
     "lng": 135.785
   },
-  "tags": ["UNESCO World Heritage", "Golden Pavilion", "Kiyomizu Stage"],
+  "tags": [
+    "UNESCO World Heritage",
+    "National Treasure",
+    "Golden Pavilion",
+    "Kiyomizu Stage"
+  ],
   "rating": 5,
   "ratings": {
     "overall": 5,
@@ -61,11 +66,6 @@
   "description": "Kyoto, Japan's imperial capital for over a millennium, encompasses 17 UNESCO World Heritage monuments including the wooden balcony of Kiyomizu-dera and the shimmering Golden Pavilion.",
   "notes": "Home to over 2,000 temples and shrines.",
   "budgetRecommended": 9000,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -77,5 +77,14 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {
+    "parentDestinationId": "kyoto-city"
+  },
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg"
 }

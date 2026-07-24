@@ -1,0 +1,113 @@
+{
+  "id": "shibuya-city",
+  "name": "Shibuya City",
+  "kind": "ward",
+  "role": "hub",
+  "importance": "major",
+  "aliases": ["Shibuya", "渋谷", "渋谷区"],
+  "prefecture": "Tokyo",
+  "region": "Kanto",
+  "categories": ["Urban Ward", "Shopping", "Nightlife", "Fashion"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg/3840px-Shibuya_skyline_from_Tokyu_Plaza_in_Omotesando%2C_Harajuku%2C_Tokyo%2C_2024_May.jpg"
+  ],
+  "description": "Tokyo's pulse of youth culture, fashion, technology, and entertainment, featuring Shibuya Scramble Crossing, Meiji Shrine, and Harajuku.",
+  "highlights": [
+    "Shibuya Scramble Crossing",
+    "Shibuya Sky",
+    "Meiji Jingu",
+    "Yoyogi Park"
+  ],
+  "totalTripHours": 5,
+  "budgetMin": 3000,
+  "budgetRecommended": 10000,
+  "budgetMax": 25000,
+  "walkingMin": 4500,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 3000,
+  "indoorPercent": 65,
+  "ratings": {
+    "overall": 9.8,
+    "couple": 9.6,
+    "summer": 9,
+    "winter": 9.3,
+    "rain": 9.5,
+    "food": 9.7,
+    "photography": 9.9,
+    "relaxation": 8.8,
+    "value": 9.3,
+    "uniqueness": 9.9
+  },
+  "crowd": {
+    "weekday": 7,
+    "weekend": 10,
+    "holiday": 10
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Shibuya Ward", "Scramble Crossing", "Harajuku", "Meiji Jingu"],
+  "coordinates": {
+    "lat": 35.658,
+    "lng": 139.7016
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 170
+  },
+  "reservation": "None required",
+  "parking": "Public underground parking",
+  "restaurants": ["Ichiran Shibuya", "Shibuya Sky Lounge"],
+  "cafes": ["Fuglen Tokyo"],
+  "notes": "Special Ward of Tokyo Metropolis.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["shibuya-sky-shibuya", "shibuya-ward"],
+    "nearbyDestinationIds": ["hakone-town", "chiba-city", "saitama-city"],
+    "relatedDestinationIds": ["shinjuku-city", "ginza-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Classic Day Trip",
+      "description": "The most efficient way to see the highlights of Shibuya in one day.",
+      "steps": [
+        {
+          "time": "10:00 AM",
+          "activity": "Arrive at the main station and get oriented."
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Visit the primary city attraction."
+        },
+        {
+          "time": "1:00 PM",
+          "activity": "Grab a delicious regional lunch."
+        },
+        {
+          "time": "2:30 PM",
+          "activity": "Continue exploring the scenic sights."
+        },
+        {
+          "time": "4:30 PM",
+          "activity": "Relax at a local café before heading back."
+        }
+      ]
+    }
+  ]
+}

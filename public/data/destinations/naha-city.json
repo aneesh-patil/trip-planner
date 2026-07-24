@@ -1,0 +1,78 @@
+{
+  "id": "naha-city",
+  "name": "Naha City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Okinawa",
+  "region": "Okinawa",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/67/Naha_montage.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Naha_montage.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/6/67/Naha_montage.jpg"
+  ],
+  "description": "Okinawa's capital and subtropical gateway, featuring Kokusai-dori shopping boulevard and historic Shuri Castle.",
+  "highlights": ["Explore Naha City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Naha City", "Okinawa Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 26.2124,
+    "lng": 127.6809
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Naha City Specialty Dining"],
+  "cafes": ["Naha City Cafe"],
+  "notes": "Naha City travel hub in Okinawa Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [],
+    "nearbyDestinationIds": ["nago-city", "motobu-town", "ishigaki-city"]
+  }
+}

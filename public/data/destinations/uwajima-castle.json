@@ -8,7 +8,7 @@
     "lat": 33.2208,
     "lng": 132.5653
   },
-  "tags": ["Coastal Hill Castle"],
+  "tags": ["12 Original Keeps", "Top 100 Castle", "Coastal Hill Castle"],
   "rating": 4.6,
   "ratings": {
     "overall": 4.6,
@@ -61,11 +61,6 @@
   "budgetMin": 4000,
   "budgetMax": 15000,
   "budgetRecommended": 9500,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -77,5 +72,12 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Uwajima_Castle_Keep_Tower_20170611.jpg/3840px-Uwajima_Castle_Keep_Tower_20170611.jpg"
 }

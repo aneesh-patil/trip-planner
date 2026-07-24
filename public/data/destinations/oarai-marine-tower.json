@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Oarai_Town_Hall.jpg",
   "totalTripHours": 3,
   "budgetMin": 2000,
-  "budgetRecommended": 4500,
+  "budgetRecommended": 5000,
   "budgetMax": 8000,
   "walkingMin": 3000,
   "walkingSunMin": 1200,
@@ -112,5 +112,6 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {}
 }

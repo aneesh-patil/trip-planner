@@ -1,0 +1,106 @@
+{
+  "id": "ito-city",
+  "name": "Ito City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Shizuoka",
+  "region": "Chubu",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "/images/ito_hero.jpg",
+  "image": "/images/ito_hero.jpg",
+  "gallery": [
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Izu Peninsula hot spring resort town featuring Mount Omuro extinct volcano cone and Jogasaki Coast.",
+  "highlights": ["Explore Ito City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Ito City", "Shizuoka Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 34.966,
+    "lng": 139.0962
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Ito City Specialty Dining"],
+  "cafes": ["Ito City Cafe"],
+  "notes": "Ito City travel hub in Shizuoka Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["atami-resort", "fujinomiya", "ito", "izu"],
+    "nearbyDestinationIds": ["nagoya-city", "shirakawa-village", "nagano-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Coastal Drama and Onsen",
+      "description": "Cliffs, ocean views, and relaxing hot springs.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Hike the Jogasaki Coast and cross the Kadowakizaki Suspension Bridge."
+        },
+        {
+          "time": "12:30",
+          "activity": "Seafood lunch featuring fresh local catch."
+        },
+        {
+          "time": "14:00",
+          "activity": "Take the chairlift up Mount Omuro for 360-degree views of Izu and Mt. Fuji."
+        },
+        {
+          "time": "16:00",
+          "activity": "Explore the historic Tokai-kan hostel in central Ito."
+        },
+        {
+          "time": "17:30",
+          "activity": "Unwind in a local hot spring (onsen) before dinner."
+        }
+      ]
+    }
+  ]
+}

@@ -20,22 +20,44 @@ export function getDestinationList(): Partial<Destination>[] {
 export async function getDestination(id: string): Promise<Destination | null> {
   try {
     const response = await fetch(`/data/destinations/${id}.json`);
-    if (!response.ok) throw new Error(`Failed to fetch destination: ${id}`);
-    const dest = await response.json();
-    if (dest.transportOptions?.car && !dest.transportOptions.my_car) {
+    if (response.ok) {
+      const dest = await response.json();
+      if (dest.transportOptions?.car && !dest.transportOptions.my_car) {
+        return {
+          ...dest,
+          transportOptions: {
+            ...dest.transportOptions,
+            my_car: dest.transportOptions.car,
+          },
+        };
+      }
+      return dest;
+    }
+  } catch (error) {
+    // Fallback to index below
+  }
+
+  // Fallback to in-memory destinationsIndex
+  const indexMatch = (destinationsIndex as Destination[]).find(
+    (d) => d.id === id,
+  );
+  if (indexMatch) {
+    if (
+      indexMatch.transportOptions?.car &&
+      !indexMatch.transportOptions.my_car
+    ) {
       return {
-        ...dest,
+        ...indexMatch,
         transportOptions: {
-          ...dest.transportOptions,
-          my_car: dest.transportOptions.car,
+          ...indexMatch.transportOptions,
+          my_car: indexMatch.transportOptions.car,
         },
       };
     }
-    return dest;
-  } catch (error) {
-    console.error("Error fetching destination:", error);
-    return null;
+    return indexMatch;
   }
+
+  return null;
 }
 
 export async function compareDestinations(

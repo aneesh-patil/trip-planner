@@ -1,0 +1,125 @@
+{
+  "id": "inuyama-city",
+  "name": "Inuyama City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Aichi",
+  "region": "Chubu",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Castle_in_Inuyama.JPG",
+  "gallery": [
+    "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Historic castle town featuring National Treasure Inuyama Castle overlooking the Kiso River.",
+  "highlights": ["Explore Inuyama City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Inuyama City", "Aichi Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 35.3842,
+    "lng": 136.9427
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Inuyama City Specialty Dining"],
+  "cafes": ["Inuyama City Cafe"],
+  "notes": "Inuyama City travel hub in Aichi Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "original-12-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "japan-top-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 2,
+      "confirmed": true
+    }
+  ],
+  "relationships": {
+    "featuredDestinationIds": [
+      "atsuta-shrine-nagoya",
+      "higashiyama-sky-tower-nagoya",
+      "inuyama",
+      "mirai-tower-nagoya"
+    ],
+    "nearbyDestinationIds": ["nagoya-city", "shirakawa-village", "nagano-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Castle and River Views",
+      "description": "Historical architecture and traditional river sights.",
+      "steps": [
+        {
+          "time": "09:30",
+          "activity": "Arrive at Inuyama and walk the historic Honmachi-dori Street."
+        },
+        {
+          "time": "10:30",
+          "activity": "Climb Inuyama Castle, a National Treasure, for views of the Kiso River."
+        },
+        {
+          "time": "12:00",
+          "activity": "Enjoy street food snacks or traditional soba for lunch."
+        },
+        {
+          "time": "13:30",
+          "activity": "Stroll through Urakuen Garden and enjoy matcha at the Joan tea house."
+        },
+        {
+          "time": "15:30",
+          "activity": "Take a boat ride on the Kiso River."
+        }
+      ]
+    }
+  ]
+}

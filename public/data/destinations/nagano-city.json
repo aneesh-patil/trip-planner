@@ -116,5 +116,12 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "relationships": {
+    "featuredDestinationIds": ["nagano-narai-juku"],
+    "nearbyDestinationIds": ["nagoya-city", "shirakawa-village", "inuyama-city"]
+  }
 }

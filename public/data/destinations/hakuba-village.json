@@ -1,0 +1,83 @@
+{
+  "id": "hakuba-village",
+  "name": "Hakuba Village",
+  "kind": "village",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Nagano",
+  "region": "Chubu",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "gallery": [
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "World-famous Japan Alps winter ski resort village celebrated for deep powder snow and alpine peaks.",
+  "highlights": ["Explore Hakuba Village", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Hakuba Village", "Nagano Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 36.6982,
+    "lng": 137.8617
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Hakuba Village Specialty Dining"],
+  "cafes": ["Hakuba Village Cafe"],
+  "notes": "Hakuba Village travel hub in Nagano Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": [
+      "karuizawa",
+      "kiso",
+      "matsumoto",
+      "nagano-bessho-onsen"
+    ],
+    "nearbyDestinationIds": ["nagoya-city", "shirakawa-village", "nagano-city"]
+  }
+}

@@ -8,7 +8,12 @@
     "lat": 35.4753,
     "lng": 133.0506
   },
-  "tags": ["Black Plover Castle"],
+  "tags": [
+    "12 Original Keeps",
+    "National Treasure",
+    "Top 100 Castle",
+    "Black Plover Castle"
+  ],
   "rating": 4.8,
   "ratings": {
     "overall": 4.8,
@@ -66,11 +71,6 @@
   "budgetMin": 4000,
   "budgetMax": 15000,
   "budgetRecommended": 9500,
-  "walkingMin": 8000,
-  "walkingSunMin": 4800,
-  "walkingShadeMin": 3200,
-  "indoorPercent": 20,
-  "totalTripHours": 4,
   "crowd": {
     "weekday": 3,
     "weekend": 4,
@@ -82,5 +82,12 @@
     "autumn": 4,
     "winter": 4
   },
-  "bestMonths": [3, 4, 5, 9, 10, 11]
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/080720_Matsue_Castle_Matsue_Shimane_pref_Japan01s.jpg/3840px-080720_Matsue_Castle_Matsue_Shimane_pref_Japan01s.jpg"
 }

@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/TakatoCastle%EF%BC%88%E9%AB%98%E9%81%A0%E5%9F%8E%EF%BC%89.JPG",
   "totalTripHours": 4,
   "budgetMin": 3000,
-  "budgetRecommended": 6000,
+  "budgetRecommended": 6500,
   "budgetMax": 10000,
   "walkingMin": 4500,
   "walkingSunMin": 2000,
@@ -40,7 +40,7 @@
   "bestMonths": [4, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "high",
-  "tags": ["Sakura #1 Spot", "Kohigan Cherry", "Bridge View"],
+  "tags": ["Sakura #1 Spot", "Kohigan Cherry", "Top 100 Castle", "Bridge View"],
   "coordinates": {
     "lat": 35.8335,
     "lng": 138.0628
@@ -122,5 +122,6 @@
       "sortOrder": 2,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

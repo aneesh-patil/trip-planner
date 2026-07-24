@@ -1,0 +1,78 @@
+{
+  "id": "matsuyama-city",
+  "name": "Matsuyama City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "prefecture": "Ehime",
+  "region": "Shikoku",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Matsuyama_montage.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Matsuyama_montage.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/9/9f/Matsuyama_montage.jpg"
+  ],
+  "description": "Largest city in Shikoku, featuring historic Matsuyama Castle atop Mt. Katsuyama and 3,000-year-old Dogo Onsen.",
+  "highlights": ["Explore Matsuyama City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Matsuyama City", "Ehime Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 33.8392,
+    "lng": 132.7656
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Matsuyama City Specialty Dining"],
+  "cafes": ["Matsuyama City Cafe"],
+  "notes": "Matsuyama City travel hub in Ehime Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["matsuyama-castle-ehime", "uwajima-castle"],
+    "nearbyDestinationIds": ["takamatsu-city", "kochi-city", "tokushima-city"]
+  }
+}

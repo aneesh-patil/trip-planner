@@ -1,0 +1,78 @@
+{
+  "id": "otsu-city",
+  "name": "Otsu City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "notable",
+  "prefecture": "Shiga",
+  "region": "Kansai",
+  "categories": ["Travel Hub", "City Hub"],
+  "heroImage": "https://images.unsplash.com/photo-1528164344705-475426879e0d?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1528164344705-475426879e0d?auto=format&fit=crop&q=80&w=1200",
+  "gallery": [
+    "https://images.unsplash.com/photo-1528164344705-475426879e0d?auto=format&fit=crop&q=80&w=1200"
+  ],
+  "description": "Port city on southern tip of Lake Biwa, featuring Ishiyamadera Temple and Enryaku-ji Temple on Mt. Hiei.",
+  "highlights": ["Explore Otsu City", "Local Culture & Cuisine"],
+  "totalTripHours": 6,
+  "budgetMin": 3500,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 50,
+  "ratings": {
+    "overall": 9.5,
+    "couple": 9.3,
+    "summer": 9,
+    "winter": 9.1,
+    "rain": 9.2,
+    "food": 9.6,
+    "photography": 9.5,
+    "relaxation": 9.2,
+    "value": 9.4,
+    "uniqueness": 9.4
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 8,
+    "holiday": 9
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Otsu City", "Shiga Travel", "Regional Hub"],
+  "coordinates": {
+    "lat": 35.0178,
+    "lng": 135.8553
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 8,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200
+  },
+  "reservation": "None required",
+  "parking": "Public parking available",
+  "restaurants": ["Otsu City Specialty Dining"],
+  "cafes": ["Otsu City Cafe"],
+  "notes": "Otsu City travel hub in Shiga Prefecture.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [],
+  "relationships": {
+    "featuredDestinationIds": ["hikone-castle-shiga"],
+    "nearbyDestinationIds": ["kyoto-city", "osaka-city", "uji-city"]
+  }
+}

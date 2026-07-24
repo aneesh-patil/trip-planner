@@ -109,5 +109,7 @@
   "travelEstimate": {
     "confidence": "beta"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {},
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Skyline_of_Fukui_City02.jpg"
 }

@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nagoya_TV_Tower2.jpg/3840px-Nagoya_TV_Tower2.jpg",
   "totalTripHours": 3,
   "budgetMin": 3000,
-  "budgetRecommended": 6000,
+  "budgetRecommended": 7000,
   "budgetMax": 11000,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -117,5 +117,6 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {}
 }

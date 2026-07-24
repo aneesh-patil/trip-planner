@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/TOKI_MESSE.jpg",
   "totalTripHours": 3,
   "budgetMin": 2000,
-  "budgetRecommended": 4500,
+  "budgetRecommended": 5000,
   "budgetMax": 8000,
   "walkingMin": 3000,
   "walkingSunMin": 1000,
@@ -126,5 +126,6 @@
       "sortOrder": 7,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

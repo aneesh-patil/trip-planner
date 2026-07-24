@@ -19,7 +19,7 @@
   ],
   "budgetMin": 4000,
   "budgetMax": 11500,
-  "budgetRecommended": 7800,
+  "budgetRecommended": 7750,
   "budgetBreakdown": {
     "transport": 3800,
     "tickets": 1000,
@@ -122,5 +122,6 @@
       "sortOrder": 3,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mito_castle_sannomaru_karabori.jpg/3840px-Mito_castle_sannomaru_karabori.jpg",
   "totalTripHours": 4,
   "budgetMin": 3000,
-  "budgetRecommended": 5500,
+  "budgetRecommended": 6250,
   "budgetMax": 9500,
   "walkingMin": 4000,
   "walkingSunMin": 1500,
@@ -40,7 +40,7 @@
   "bestMonths": [2, 3, 4, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": ["Mito Tokugawa", "Kodokan School", "Otemon Gate"],
+  "tags": ["Mito Tokugawa", "Kodokan School", "Top 100 Castle", "Otemon Gate"],
   "coordinates": {
     "lat": 36.3768,
     "lng": 140.4782
@@ -117,5 +117,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

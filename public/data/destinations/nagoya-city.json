@@ -1,0 +1,128 @@
+{
+  "id": "nagoya-city",
+  "name": "Nagoya City",
+  "kind": "city",
+  "role": "hub",
+  "importance": "major",
+  "aliases": ["Nagoya", "名古屋", "名古屋市"],
+  "prefecture": "Aichi",
+  "region": "Chubu",
+  "categories": ["City Hub", "Urban", "Culinary", "Historical"],
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg",
+  "gallery": [
+    "https://upload.wikimedia.org/wikipedia/commons/0/0c/Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg"
+  ],
+  "description": "A major economic and cultural metropolis in central Japan, famous for feudal samurai castles, world-class railway heritage, and rich regional culinary delights.",
+  "highlights": [
+    "Nagoya Castle",
+    "Atsuta Shrine",
+    "SCMAGLEV Museum",
+    "Osu Shopping Street"
+  ],
+  "totalTripHours": 6,
+  "budgetMin": 4000,
+  "budgetRecommended": 12000,
+  "budgetMax": 25000,
+  "walkingMin": 4000,
+  "walkingSunMin": 1500,
+  "walkingShadeMin": 2500,
+  "indoorPercent": 60,
+  "ratings": {
+    "overall": 9.4,
+    "couple": 9.2,
+    "summer": 9,
+    "winter": 9.2,
+    "rain": 9.4,
+    "food": 9.8,
+    "photography": 9.4,
+    "relaxation": 9,
+    "value": 9.5,
+    "uniqueness": 9.3
+  },
+  "crowd": {
+    "weekday": 5,
+    "weekend": 7,
+    "holiday": 8
+  },
+  "season": {
+    "spring": 9,
+    "summer": 8,
+    "autumn": 9,
+    "winter": 8
+  },
+  "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "bestSeason": "All Year",
+  "weatherDependence": "low",
+  "tags": ["Nagoya City", "Aichi Hub", "Samurai Heritage", "Nagoya Meshi"],
+  "coordinates": {
+    "lat": 35.1815,
+    "lng": 136.9066
+  },
+  "comfort": {
+    "heatTolerance": 8,
+    "rainFriendly": 9,
+    "walkingIntensity": 3
+  },
+  "transportOptions": {
+    "train": 200,
+    "shinkansen": 10000
+  },
+  "reservation": "None required",
+  "parking": "Paid parking available citywide",
+  "restaurants": ["Hitsumabushi Ya", "Yabaton Miso Katsu"],
+  "cafes": ["Komeda Coffee Nagoya"],
+  "notes": "Central transportation hub connecting Tokyo, Kyoto, and Kanazawa.",
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "japan-top-castles",
+      "confirmed": true
+    }
+  ],
+  "relationships": {
+    "featuredDestinationIds": [
+      "atsuta-shrine-nagoya",
+      "higashiyama-sky-tower-nagoya",
+      "nagoya",
+      "nagoya-port-tower"
+    ],
+    "nearbyDestinationIds": [
+      "shirakawa-village",
+      "nagano-city",
+      "inuyama-city"
+    ],
+    "relatedDestinationIds": ["kyoto-city", "osaka-city"]
+  },
+  "itineraries": [
+    {
+      "name": "Classic Nagoya Core",
+      "description": "The essentials of Nagoya history and cuisine.",
+      "steps": [
+        {
+          "time": "10:00",
+          "activity": "Visit Nagoya Castle and see the golden shachihoko."
+        },
+        {
+          "time": "12:30",
+          "activity": "Lunch: Hitsumabushi (grilled eel over rice) in the Sakae district."
+        },
+        {
+          "time": "14:30",
+          "activity": "Explore Atsuta Jingu, one of Japan's most important shrines."
+        },
+        {
+          "time": "16:00",
+          "activity": "Walk around Osu Kannon shopping arcade and grab street food."
+        },
+        {
+          "time": "18:30",
+          "activity": "Dinner: Miso Katsu (pork cutlet with rich red miso sauce)."
+        }
+      ]
+    }
+  ]
+}

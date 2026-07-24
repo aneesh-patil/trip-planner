@@ -19,7 +19,7 @@
   ],
   "budgetMin": 3000,
   "budgetMax": 9500,
-  "budgetRecommended": 6500,
+  "budgetRecommended": 6250,
   "budgetBreakdown": {
     "transport": 2800,
     "tickets": 1700,
@@ -116,5 +116,6 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {}
 }

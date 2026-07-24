@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kawagoejou.jpg",
   "totalTripHours": 3,
   "budgetMin": 2500,
-  "budgetRecommended": 5000,
+  "budgetRecommended": 5500,
   "budgetMax": 8500,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -40,7 +40,7 @@
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "bestSeason": "All Year",
   "weatherDependence": "low",
-  "tags": ["Honmaru Goten", "Samurai Palace", "Little Edo"],
+  "tags": ["Honmaru Goten", "Samurai Palace", "Top 100 Castle", "Little Edo"],
   "coordinates": {
     "lat": 35.9251,
     "lng": 139.4935
@@ -116,5 +116,6 @@
       "collectionId": "japan-top-castles",
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {}
 }

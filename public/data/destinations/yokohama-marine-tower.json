@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Yokohama_Marine_Tower_Dscn1518a.jpg",
   "totalTripHours": 3,
   "budgetMin": 3000,
-  "budgetRecommended": 6000,
+  "budgetRecommended": 6500,
   "budgetMax": 10000,
   "walkingMin": 4000,
   "walkingSunMin": 1500,
@@ -111,5 +111,8 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [],
+  "relationships": {
+    "parentDestinationId": "yokohama-city"
+  }
 }

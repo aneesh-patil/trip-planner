@@ -1,6 +1,12 @@
 {
   "id": "abeno-harukas-300-osaka",
   "name": "Abeno Harukas 300 (Osaka Skyline)",
+  "kind": "viewpoint",
+  "role": "poi",
+  "importance": "major",
+  "relationships": {
+    "parentDestinationId": "osaka-city"
+  },
   "prefecture": "Osaka",
   "region": "Kansai",
   "categories": ["Observation Deck", "Landmark", "Modern", "Skyscraper"],
@@ -8,7 +14,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
   "totalTripHours": 3,
   "budgetMin": 3500,
-  "budgetRecommended": 7500,
+  "budgetRecommended": 8750,
   "budgetMax": 14000,
   "walkingMin": 3500,
   "walkingSunMin": 1000,

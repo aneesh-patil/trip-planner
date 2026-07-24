@@ -8,7 +8,7 @@
   "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Views_from_Azabudai_Hills_Mori_JP_Tower_13.jpg",
   "totalTripHours": 3,
   "budgetMin": 3500,
-  "budgetRecommended": 7000,
+  "budgetRecommended": 8250,
   "budgetMax": 13000,
   "walkingMin": 3500,
   "walkingSunMin": 1200,
@@ -122,5 +122,8 @@
       "sortOrder": 8,
       "confirmed": true
     }
-  ]
+  ],
+  "relationships": {
+    "parentDestinationId": "minato-city"
+  }
 }
