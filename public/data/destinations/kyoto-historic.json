@@ -8,12 +8,7 @@
     "lat": 34.9949,
     "lng": 135.785
   },
-  "tags": [
-    "UNESCO World Heritage",
-    "National Treasure",
-    "Golden Pavilion",
-    "Kiyomizu Stage"
-  ],
+  "tags": ["UNESCO World Heritage", "Golden Pavilion", "Kiyomizu Stage"],
   "rating": 5,
   "ratings": {
     "overall": 5,

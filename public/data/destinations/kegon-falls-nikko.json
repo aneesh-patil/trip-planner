@@ -41,6 +41,11 @@
       "collectionId": "three-great-waterfalls",
       "sortOrder": 1,
       "confirmed": true
+    },
+    {
+      "collectionId": "national-parks-japan",
+      "sortOrder": 5,
+      "confirmed": true
     }
   ],
   "transportOptions": {

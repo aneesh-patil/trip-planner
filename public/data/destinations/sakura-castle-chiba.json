@@ -40,12 +40,7 @@
   "bestMonths": [3, 4, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "medium",
-  "tags": [
-    "Earthen Fortification",
-    "Dry Moats",
-    "Top 100 Castle",
-    "National Museum"
-  ],
+  "tags": ["Earthen Fortification", "Dry Moats", "National Museum"],
   "coordinates": {
     "lat": 35.7208,
     "lng": 140.2185

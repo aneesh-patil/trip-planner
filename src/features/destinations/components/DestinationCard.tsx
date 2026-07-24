@@ -221,6 +221,7 @@ export default function DestinationCard({
                 key={col.id}
                 to={`/collections/${col.slug}`}
                 onClick={(e) => e.stopPropagation()}
+                className="inline-flex shrink-0 max-w-full"
               >
                 <CollectionBadge collection={col} size="sm" />
               </Link>

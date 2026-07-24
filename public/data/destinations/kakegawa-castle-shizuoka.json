@@ -40,12 +40,7 @@
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "bestSeason": "All Year",
   "weatherDependence": "low",
-  "tags": [
-    "Authentic Wooden Keep",
-    "Ninomaru Goten",
-    "Top 100 Castle",
-    "Green Tea"
-  ],
+  "tags": ["Authentic Wooden Keep", "Ninomaru Goten", "Green Tea"],
   "coordinates": {
     "lat": 34.7758,
     "lng": 138.0147

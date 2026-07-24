@@ -8,12 +8,7 @@
     "lat": 35.0142,
     "lng": 135.7482
   },
-  "tags": [
-    "UNESCO World Heritage",
-    "National Treasure",
-    "Nightingale Floors",
-    "Tokugawa Shogunate"
-  ],
+  "tags": ["UNESCO World Heritage", "Nightingale Floors", "Tokugawa Shogunate"],
   "rating": 4.8,
   "ratings": {
     "overall": 4.8,

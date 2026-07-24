@@ -40,12 +40,7 @@
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "bestSeason": "All Year",
   "weatherDependence": "medium",
-  "tags": [
-    "Oda Nobunaga",
-    "Mountain Fortress",
-    "Mt Kinka Ropeway",
-    "Top 100 Castle"
-  ],
+  "tags": ["Oda Nobunaga", "Mountain Fortress", "Mt Kinka Ropeway"],
   "coordinates": {
     "lat": 35.4339,
     "lng": 136.7821

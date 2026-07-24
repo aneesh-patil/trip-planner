@@ -375,8 +375,8 @@ export default function DestinationDetails() {
           >
             <ArrowLeft className="w-4 h-4 mr-1" /> Back
           </Link>
-          <div className="flex flex-wrap gap-2 mb-3">
-            <Badge className="bg-emerald-600 hover:bg-emerald-500 border-none">
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <Badge className="bg-emerald-600 hover:bg-emerald-500 border-none shrink-0">
               {destination.region}
             </Badge>
             {/* Curated Collection Badges */}
@@ -386,40 +386,24 @@ export default function DestinationDetails() {
                 .filter((c): c is Collection => Boolean(c));
               const sortedCols = sortCollections(activeCols);
               return sortedCols.map((col) => (
-                <Link key={col.id} to={`/collections/${col.slug}`}>
-                  <CollectionBadge collection={col} size="md" />
+                <Link
+                  key={col.id}
+                  to={`/collections/${col.slug}`}
+                  className="inline-flex shrink-0 max-w-full"
+                >
+                  <CollectionBadge collection={col} size="md" variant="solid" />
                 </Link>
               ));
             })()}
             {destination.tags &&
               destination.tags.map((tag) => {
-                if (tag === "12 Original Keeps") {
-                  return (
-                    <Badge
-                      key={tag}
-                      className="bg-amber-500 hover:bg-amber-600 text-white font-bold border-amber-300 shadow-md"
-                    >
-                      🏰 12 Original Keeps
-                    </Badge>
-                  );
-                }
                 if (tag === "World's Tallest Tower") {
                   return (
                     <Badge
                       key={tag}
-                      className="bg-sky-600 hover:bg-sky-700 text-white font-bold border-sky-300 shadow-md"
+                      className="bg-sky-600 hover:bg-sky-700 text-white font-bold border-sky-300 shadow-md shrink-0"
                     >
                       🗼 World's Tallest Tower
-                    </Badge>
-                  );
-                }
-                if (tag === "Top 100 Castle") {
-                  return (
-                    <Badge
-                      key={tag}
-                      className="bg-rose-600 hover:bg-rose-700 text-white font-bold border-rose-300 shadow-md"
-                    >
-                      🏯 Top 100 Castle
                     </Badge>
                   );
                 }
@@ -427,7 +411,7 @@ export default function DestinationDetails() {
                   return (
                     <Badge
                       key={tag}
-                      className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold border-emerald-300 shadow-md"
+                      className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold border-emerald-300 shadow-md shrink-0"
                     >
                       🏙️ Free Observatory
                     </Badge>
@@ -435,15 +419,24 @@ export default function DestinationDetails() {
                 }
                 return null;
               })}
-            {destination.categories.map((cat) => (
-              <Badge
-                key={cat}
-                variant="outline"
-                className="text-white border-white/30 backdrop-blur-md bg-white/10"
-              >
-                {cat}
-              </Badge>
-            ))}
+            {destination.categories
+              .filter((cat) => {
+                const lowerCat = cat.toLowerCase();
+                return (
+                  lowerCat !== "national treasure" &&
+                  lowerCat !== "12 original keeps" &&
+                  lowerCat !== "top 100 castle"
+                );
+              })
+              .map((cat) => (
+                <Badge
+                  key={cat}
+                  variant="outline"
+                  className="text-white border-white/30 backdrop-blur-md bg-white/10 shrink-0"
+                >
+                  {cat}
+                </Badge>
+              ))}
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-2 flex flex-wrap items-baseline gap-3">
             <span>{destination.name}</span>

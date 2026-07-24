@@ -40,7 +40,7 @@
   "bestMonths": [2, 3, 4, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": ["Mito Tokugawa", "Kodokan School", "Top 100 Castle", "Otemon Gate"],
+  "tags": ["Mito Tokugawa", "Kodokan School", "Otemon Gate"],
   "coordinates": {
     "lat": 36.3768,
     "lng": 140.4782

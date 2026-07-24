@@ -8,12 +8,7 @@
     "lat": 34.6889,
     "lng": 135.8398
   },
-  "tags": [
-    "UNESCO World Heritage",
-    "National Treasure",
-    "Great Buddha",
-    "Bow Deer Park"
-  ],
+  "tags": ["UNESCO World Heritage", "Great Buddha", "Bow Deer Park"],
   "rating": 4.9,
   "ratings": {
     "overall": 4.9,

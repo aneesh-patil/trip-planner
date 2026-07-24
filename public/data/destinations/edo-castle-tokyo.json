@@ -40,12 +40,7 @@
   "bestMonths": [3, 4, 5, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": [
-    "Shogunate Seat",
-    "Top 100 Castle",
-    "Fujimi-yagura",
-    "Imperial Gardens"
-  ],
+  "tags": ["Shogunate Seat", "Fujimi-yagura", "Imperial Gardens"],
   "coordinates": {
     "lat": 35.6852,
     "lng": 139.7528

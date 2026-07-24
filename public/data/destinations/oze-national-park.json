@@ -120,5 +120,11 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [
+    {
+      "collectionId": "national-parks-japan",
+      "sortOrder": 5,
+      "confirmed": true
+    }
+  ]
 }

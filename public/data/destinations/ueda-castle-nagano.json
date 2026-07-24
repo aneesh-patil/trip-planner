@@ -40,12 +40,7 @@
   "bestMonths": [3, 4, 5, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": [
-    "Sanada Clan",
-    "Top 100 Castle",
-    "Cherry Blossoms",
-    "Yagura Turrets"
-  ],
+  "tags": ["Sanada Clan", "Cherry Blossoms", "Yagura Turrets"],
   "coordinates": {
     "lat": 36.4035,
     "lng": 138.2435

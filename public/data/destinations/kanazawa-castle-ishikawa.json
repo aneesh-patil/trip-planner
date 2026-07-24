@@ -40,12 +40,7 @@
   "bestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "bestSeason": "All Year",
   "weatherDependence": "low",
-  "tags": [
-    "Maeda Clan",
-    "Hishi Yagura",
-    "Kenrokuen Adjacent",
-    "Top 100 Castle"
-  ],
+  "tags": ["Maeda Clan", "Hishi Yagura", "Kenrokuen Adjacent"],
   "coordinates": {
     "lat": 36.5645,
     "lng": 136.6592

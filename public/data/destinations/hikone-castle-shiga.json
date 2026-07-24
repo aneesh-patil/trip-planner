@@ -40,14 +40,7 @@
   "bestMonths": [3, 4, 5, 10, 11, 12],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": [
-    "12 Original Keeps",
-    "National Treasure",
-    "Original Keep 1622",
-    "Hikonyan",
-    "Genkyuen Garden",
-    "Top 100 Castle"
-  ],
+  "tags": ["Original Keep 1622", "Hikonyan", "Genkyuen Garden"],
   "coordinates": {
     "lat": 35.2764,
     "lng": 136.2518

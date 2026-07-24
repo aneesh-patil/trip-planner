@@ -40,13 +40,7 @@
   "bestMonths": [3, 4, 5, 10, 11],
   "bestSeason": "Spring",
   "weatherDependence": "low",
-  "tags": [
-    "12 Original Keeps",
-    "Oldest Architectural Style",
-    "Stone Shingles",
-    "Mist Castle",
-    "Top 100 Castle"
-  ],
+  "tags": ["Oldest Architectural Style", "Stone Shingles", "Mist Castle"],
   "coordinates": {
     "lat": 36.1554,
     "lng": 136.2718
