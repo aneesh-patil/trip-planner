@@ -235,22 +235,30 @@ async function runPipeline() {
   collectionsList.forEach((col, idx) => {
     const label = col.name || col.id || `Collection #${idx + 1}`;
     if (!col.id) {
-      console.error(`  \x1b[31m❌ [${label}] Missing required field 'id'\x1b[0m`);
+      console.error(
+        `  \x1b[31m❌ [${label}] Missing required field 'id'\x1b[0m`,
+      );
       collectionErrors++;
     } else {
       if (seenColIds.has(col.id)) {
-        console.error(`  \x1b[31m❌ [${label}] Duplicate Collection ID: '${col.id}'\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Duplicate Collection ID: '${col.id}'\x1b[0m`,
+        );
         collectionErrors++;
       }
       seenColIds.add(col.id);
     }
 
     if (!col.slug) {
-      console.error(`  \x1b[31m❌ [${label}] Missing required field 'slug'\x1b[0m`);
+      console.error(
+        `  \x1b[31m❌ [${label}] Missing required field 'slug'\x1b[0m`,
+      );
       collectionErrors++;
     } else {
       if (seenColSlugs.has(col.slug)) {
-        console.error(`  \x1b[31m❌ [${label}] Duplicate Collection Slug: '${col.slug}'\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Duplicate Collection Slug: '${col.slug}'\x1b[0m`,
+        );
         collectionErrors++;
       }
       seenColSlugs.add(col.slug);
@@ -258,7 +266,9 @@ async function runPipeline() {
 
     if (col.name) {
       if (seenColNames.has(col.name)) {
-        console.warn(`  \x1b[33m⚠️  [${label}] Duplicate Collection Name: '${col.name}'\x1b[0m`);
+        console.warn(
+          `  \x1b[33m⚠️  [${label}] Duplicate Collection Name: '${col.name}'\x1b[0m`,
+        );
         collectionWarnings++;
       }
       seenColNames.add(col.name);
@@ -266,26 +276,36 @@ async function runPipeline() {
 
     if (col.sortOrder !== undefined) {
       if (seenColSorts.has(col.sortOrder)) {
-        console.warn(`  \x1b[33m⚠️  [${label}] Duplicate Collection sortOrder: ${col.sortOrder}\x1b[0m`);
+        console.warn(
+          `  \x1b[33m⚠️  [${label}] Duplicate Collection sortOrder: ${col.sortOrder}\x1b[0m`,
+        );
         collectionWarnings++;
       }
       seenColSorts.add(col.sortOrder);
     }
 
     if (!col.metadata) {
-      console.error(`  \x1b[31m❌ [${label}] Missing required object 'metadata'\x1b[0m`);
+      console.error(
+        `  \x1b[31m❌ [${label}] Missing required object 'metadata'\x1b[0m`,
+      );
       collectionErrors++;
     } else {
       if (!col.metadata.authority) {
-        console.error(`  \x1b[31m❌ [${label}] Missing required metadata field 'authority'\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Missing required metadata field 'authority'\x1b[0m`,
+        );
         collectionErrors++;
       }
       if (!col.metadata.status) {
-        console.error(`  \x1b[31m❌ [${label}] Missing required metadata field 'status'\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Missing required metadata field 'status'\x1b[0m`,
+        );
         collectionErrors++;
       }
       if (!col.metadata.lastVerified) {
-        console.error(`  \x1b[31m❌ [${label}] Missing required metadata field 'lastVerified'\x1b[0m`);
+        console.error(
+          `  \x1b[31m❌ [${label}] Missing required metadata field 'lastVerified'\x1b[0m`,
+        );
         collectionErrors++;
       }
     }
@@ -296,23 +316,31 @@ async function runPipeline() {
     const label = dest.name || dest.id || `Item #${index + 1}`;
 
     if (!dest.status) {
-      console.error(`  \x1b[31m❌ [${label}] Missing mandatory field 'status'\x1b[0m`);
+      console.error(
+        `  \x1b[31m❌ [${label}] Missing mandatory field 'status'\x1b[0m`,
+      );
       collectionErrors++;
     }
 
     if (!dest.travelEstimate || !dest.travelEstimate.confidence) {
-      console.error(`  \x1b[31m❌ [${label}] Missing mandatory field 'travelEstimate.confidence'\x1b[0m`);
+      console.error(
+        `  \x1b[31m❌ [${label}] Missing mandatory field 'travelEstimate.confidence'\x1b[0m`,
+      );
       collectionErrors++;
     }
 
     if (!Array.isArray(dest.collections)) {
-      console.error(`  \x1b[31m❌ [${label}] Missing mandatory array 'collections'\x1b[0m`);
+      console.error(
+        `  \x1b[31m❌ [${label}] Missing mandatory array 'collections'\x1b[0m`,
+      );
       collectionErrors++;
     } else {
       const destColIds = new Set();
       dest.collections.forEach((m, mIdx) => {
         if (!m.collectionId) {
-          console.error(`  \x1b[31m❌ [${label}] Membership #${mIdx + 1} missing 'collectionId'\x1b[0m`);
+          console.error(
+            `  \x1b[31m❌ [${label}] Membership #${mIdx + 1} missing 'collectionId'\x1b[0m`,
+          );
           collectionErrors++;
         } else {
           // Check referential integrity
@@ -333,7 +361,9 @@ async function runPipeline() {
         }
 
         if (m.confirmed === false) {
-          console.warn(`  \x1b[33m⚠️  [${label}] Unconfirmed collection membership for '${m.collectionId}'\x1b[0m`);
+          console.warn(
+            `  \x1b[33m⚠️  [${label}] Unconfirmed collection membership for '${m.collectionId}'\x1b[0m`,
+          );
           collectionWarnings++;
         }
       });
