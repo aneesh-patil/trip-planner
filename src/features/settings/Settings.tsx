@@ -41,7 +41,6 @@ export default function Settings() {
   const [baseLocation, setBaseLocation] = useState(
     homeStation || user?.user_metadata?.base_location || "Tokyo Station",
   );
-  const [units, setUnits] = useState(user?.user_metadata?.units || "metric");
   const [carMode, setCarMode] = useState(
     user?.user_metadata?.preferences?.carMode || "none",
   );
@@ -59,7 +58,6 @@ export default function Settings() {
 
   useEffect(() => {
     if (user?.user_metadata) {
-      setUnits(user.user_metadata.units || "metric");
       if (user.user_metadata.preferences) {
         setCarMode(user.user_metadata.preferences.carMode || "none");
         setPublicModes(user.user_metadata.preferences.publicModes || ["train"]);
@@ -77,11 +75,8 @@ export default function Settings() {
         setHomeStation(baseLocation);
       }
 
-      localStorage.setItem("tabimap_units", units);
-
       const { error } = await updateUserProfile({
         base_location: baseLocation,
-        units,
         theme,
         preferences: {
           carMode,
@@ -152,7 +147,6 @@ export default function Settings() {
         carMode,
         publicModes,
         partySize,
-        units,
         theme,
       },
       visitedDestinations: visited,
@@ -256,31 +250,6 @@ export default function Settings() {
                       Used as single source of truth for homepage
                       recommendations and travel time calculations.
                     </p>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">
-                      Measurement Units
-                    </label>
-                    <div className="grid grid-cols-2 gap-3">
-                      {[
-                        { id: "metric", label: "Metric (km, m)" },
-                        { id: "imperial", label: "Imperial (mi, ft)" },
-                      ].map((u) => (
-                        <button
-                          key={u.id}
-                          type="button"
-                          onClick={() => setUnits(u.id)}
-                          className={`p-3 rounded-2xl text-xs font-bold border transition-all ${
-                            units === u.id
-                              ? "bg-emerald-500 text-white border-emerald-500"
-                              : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700"
-                          }`}
-                        >
-                          {u.label}
-                        </button>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>
