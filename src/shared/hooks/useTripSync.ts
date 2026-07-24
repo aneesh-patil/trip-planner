@@ -51,6 +51,9 @@ export function useTripSync({
   const syncTimeoutRef = useRef<number | ReturnType<typeof setTimeout> | null>(
     null,
   );
+  const tripSyncTimeoutRef = useRef<
+    number | ReturnType<typeof setTimeout> | null
+  >(null);
   const prevTripsRef = useRef<Trip[]>(trips);
 
   // Clear data on logout, reset load state on user change
@@ -187,7 +190,9 @@ export function useTripSync({
           .then(({ error }) => {
             if (error) {
               console.error("Failed to sync user data", error);
-              toast.error("Failed to sync profile to cloud. Saved locally.");
+              toast.error("Failed to sync profile to cloud. Saved locally.", {
+                id: "user-data-sync-error",
+              });
             }
           });
       }, 1000);
@@ -198,7 +203,7 @@ export function useTripSync({
     };
   }, [favorites, visited, visitedPrefectures, homeStation, user?.id]);
 
-  // Sync trips back to db when trips state changes
+  // Sync trips back to db when trips state changes (debounced)
   useEffect(() => {
     if (user?.id && isLoadedRef.current) {
       const tripRepo = new SupabaseTripRepository();
@@ -210,17 +215,37 @@ export function useTripSync({
       deletedTrips.forEach((t) => {
         tripRepo.deleteTrip(t.id).catch((err) => {
           console.error("Failed to delete trip from cloud", err);
-          toast.error("Failed to sync trip deletion to cloud.");
+          toast.error("Failed to sync trip deletion to cloud.", {
+            id: "trip-delete-error",
+          });
         });
       });
 
-      // Upsert current trips
-      Promise.all(trips.map((t) => tripRepo.saveTrip(t))).catch((err) => {
-        console.error("Failed to sync trips to cloud", err);
-        toast.error("Failed to sync trips to cloud. Saved locally.");
-      });
+      if (tripSyncTimeoutRef.current) clearTimeout(tripSyncTimeoutRef.current);
+
+      tripSyncTimeoutRef.current = setTimeout(() => {
+        const tripsToSave = trips.map((t) => ({
+          ...t,
+          userId: t.userId || user.id,
+        }));
+
+        Promise.all(tripsToSave.map((t) => tripRepo.saveTrip(t, user.id)))
+          .then(() => {
+            // Trips successfully synced to cloud
+          })
+          .catch((err) => {
+            console.error("Failed to sync trips to cloud", err);
+            toast.error("Failed to sync trips to cloud. Saved locally.", {
+              id: "trip-sync-error",
+            });
+          });
+      }, 1000);
 
       prevTripsRef.current = trips;
     }
+
+    return () => {
+      if (tripSyncTimeoutRef.current) clearTimeout(tripSyncTimeoutRef.current);
+    };
   }, [trips, user?.id]);
 }

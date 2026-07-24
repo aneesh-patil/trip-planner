@@ -3,7 +3,7 @@ import type { Trip } from "@/shared/types/trip";
 
 export interface ITripRepository {
   fetchTrips(userId: string): Promise<Trip[]>;
-  saveTrip(trip: Trip): Promise<void>;
+  saveTrip(trip: Trip, fallbackUserId?: string): Promise<void>;
   deleteTrip(tripId: string): Promise<void>;
 }
 
@@ -35,11 +35,17 @@ export class SupabaseTripRepository implements ITripRepository {
     }));
   }
 
-  async saveTrip(trip: Trip): Promise<void> {
+  async saveTrip(trip: Trip, fallbackUserId?: string): Promise<void> {
     if (!supabase) return;
+    const targetUserId = trip.userId || fallbackUserId;
+    if (!targetUserId) {
+      console.warn("Skipping trip save: No userId provided for trip", trip.id);
+      return;
+    }
+
     const payload = {
       id: trip.id,
-      user_id: trip.userId,
+      user_id: targetUserId,
       title: trip.title,
       start_date: trip.startDate || null,
       end_date: trip.endDate || null,
