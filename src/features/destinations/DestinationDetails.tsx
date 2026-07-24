@@ -13,7 +13,7 @@ import { sortCollections } from "@/shared/utils/collections";
 import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
 import { calculateScore } from "@/shared/services/recommendation/RecommendationScorer";
 import { createRecommendationMatch } from "@/shared/services/recommendation/RecommendationExplainability";
-import { generateUUID } from "@/shared/utils/uuid";
+import { ItineraryPickerModal } from "@/features/trips/components/ItineraryPickerModal";
 import {
   ArrowLeft,
   MapPin,
@@ -103,50 +103,15 @@ export default function DestinationDetails() {
     toggleVisited,
     homeStation,
     homeStationCoords,
-    trips,
-    addTrip,
-    addStopToTrip,
-    setTrips,
   } = useTripStore();
   const [destination, setDestination] = useState<Destination | null>(null);
   const [destLoading, setDestLoading] = useState(true);
 
+  const [pickerOpen, setPickerOpen] = useState(false);
+
   const handleAddToItinerary = () => {
     if (!destination) return;
-    if (trips.length === 0) {
-      addTrip("My Japan Trip");
-      setTimeout(() => {
-        setTrips((prev) => {
-          if (prev.length === 0) return prev;
-          const target = prev[prev.length - 1];
-          return prev.map((t) =>
-            t.id === target.id
-              ? {
-                  ...t,
-                  stops: [
-                    ...t.stops,
-                    {
-                      id: generateUUID(),
-                      name: destination.name,
-                      type: "destination",
-                      destinationId: destination.id,
-                    },
-                  ],
-                }
-              : t,
-          );
-        });
-      }, 50);
-      toast.success(`Created "My Japan Trip" & added ${destination.name}!`);
-    } else {
-      const targetTrip = trips[0];
-      addStopToTrip(targetTrip.id, {
-        name: destination.name,
-        type: "destination",
-        destinationId: destination.id,
-      });
-      toast.success(`Added ${destination.name} to ${targetTrip.title}!`);
-    }
+    setPickerOpen(true);
   };
 
   useEffect(() => {
@@ -462,17 +427,16 @@ export default function DestinationDetails() {
               Add to Itinerary
             </button>
 
-            {/* Get Directions Text Button */}
+            {/* Symbol-Only Get Directions Button */}
             <a
               href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(homeStation)}&destination=${encodeURIComponent(destination.name + ", " + destination.prefecture + ", Japan")}&travelmode=transit`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Get Directions"
               title="Get Directions"
-              className="inline-flex items-center text-sm font-medium px-3.5 py-2 rounded-xl transition-all active:scale-95 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
+              className="p-2.5 rounded-xl transition-all active:scale-95 bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/30"
             >
-              <MapPin className="w-4 h-4 mr-1.5" />
-              Get Directions
+              <MapPin className="w-4.5 h-4.5 text-emerald-400" />
             </a>
 
             {/* Want to Visit / Bucket List Toggle */}
@@ -1287,6 +1251,14 @@ export default function DestinationDetails() {
           </div>
         )}
       </div>
+
+      {destination && (
+        <ItineraryPickerModal
+          isOpen={pickerOpen}
+          onClose={() => setPickerOpen(false)}
+          destination={{ id: destination.id, name: destination.name }}
+        />
+      )}
     </div>
   );
 }

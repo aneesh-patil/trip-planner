@@ -1,5 +1,6 @@
-import { generateUUID } from "@/shared/utils/uuid";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ItineraryPickerModal } from "@/features/trips/components/ItineraryPickerModal";
 import type { Destination } from "@/shared/types/destination";
 import type { Collection } from "@/shared/types/collection";
 import CollectionBadge from "@/shared/components/ui/CollectionBadge";
@@ -27,7 +28,6 @@ import {
   Sun,
   Plus,
 } from "lucide-react";
-import { toast } from "sonner";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { getAdjustedBudget } from "@/shared/utils/utils";
 
@@ -54,52 +54,17 @@ export default function DestinationCard({
     isComparing,
     toggleCompare,
     compareList,
-    trips,
-    addTrip,
-    addStopToTrip,
-    setTrips,
   } = useTripStore();
   const favorite = isFavorite(destination.id);
   const visited = isVisited(destination.id);
   const comparing = isComparing(destination.id);
 
+  const [pickerOpen, setPickerOpen] = useState(false);
+
   const handleAddToItinerary = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    if (trips.length === 0) {
-      addTrip("My Japan Trip");
-      setTimeout(() => {
-        setTrips((prev) => {
-          if (prev.length === 0) return prev;
-          const target = prev[prev.length - 1];
-          return prev.map((t) =>
-            t.id === target.id
-              ? {
-                  ...t,
-                  stops: [
-                    ...t.stops,
-                    {
-                      id: generateUUID(),
-                      name: destination.name,
-                      type: "destination",
-                      destinationId: destination.id,
-                    },
-                  ],
-                }
-              : t,
-          );
-        });
-      }, 50);
-      toast.success(`Created "My Japan Trip" & added ${destination.name}!`);
-    } else {
-      const targetTrip = trips[0];
-      addStopToTrip(targetTrip.id, {
-        name: destination.name,
-        type: "destination",
-        destinationId: destination.id,
-      });
-      toast.success(`Added ${destination.name} to ${targetTrip.title}!`);
-    }
+    setPickerOpen(true);
   };
 
   const linkState =
@@ -399,6 +364,12 @@ export default function DestinationCard({
           </Button>
         </Link>
       </CardFooter>
+
+      <ItineraryPickerModal
+        isOpen={pickerOpen}
+        onClose={() => setPickerOpen(false)}
+        destination={{ id: destination.id, name: destination.name }}
+      />
     </Card>
   );
 }

@@ -33,7 +33,7 @@ interface TripStoreContextType {
 
   trips: Trip[];
   setTrips: (val: Trip[] | ((prev: Trip[]) => Trip[])) => void;
-  addTrip: (title: string, startDate?: string, endDate?: string) => void;
+  addTrip: (title: string, startDate?: string, endDate?: string) => Trip;
   updateTrip: (id: string, updates: Partial<Trip>) => void;
   deleteTrip: (id: string) => void;
   addStopToTrip: (tripId: string, stop: Omit<TripStop, "id">) => void;
@@ -169,7 +169,11 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
   const clearCompare = () => setCompareList([]);
 
   // Trip Management Actions
-  const addTrip = (title: string, startDate?: string, endDate?: string) => {
+  const addTrip = (
+    title: string,
+    startDate?: string,
+    endDate?: string,
+  ): Trip => {
     const errors = TripService.validateTrip(title, startDate, endDate);
     if (errors.length > 0) {
       throw new Error(errors.join(" "));
@@ -186,6 +190,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       updatedAt: new Date().toISOString(),
     };
     setTrips((prev) => [...prev, newTrip]);
+    return newTrip;
   };
 
   const updateTrip = (id: string, updates: Partial<Trip>) => {
