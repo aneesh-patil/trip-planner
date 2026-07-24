@@ -14,8 +14,11 @@ interface TripStoreContextType {
   isFavorite: (id: string) => boolean;
 
   visited: string[];
-  toggleVisited: (id: string) => void;
+  visitedDates: Record<string, string>;
+  toggleVisited: (id: string, date?: string) => void;
   isVisited: (id: string) => boolean;
+  getVisitedDate: (id: string) => string | undefined;
+  setVisitedDate: (id: string, date: string) => void;
 
   visitedPrefectures: string[];
   isPrefectureVisited: (id: string) => boolean;
@@ -68,6 +71,9 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
     "trip-planner-visited-prefs",
     [],
   );
+  const [visitedDates, setVisitedDates] = useLocalStorage<
+    Record<string, string>
+  >("trip-planner-visited-dates", {});
   // Note: compareList is intentionally kept local-only (stored in localStorage, not synced to cloud)
   const [compareList, setCompareList] = useLocalStorage<string[]>(
     "trip-planner-compare",
@@ -113,9 +119,22 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
   const isFavorite = (id: string) => favorites.includes(id);
 
-  const toggleVisited = (id: string) => {
+  const toggleVisited = (id: string, date?: string) => {
     setVisited((prev) => {
       const isNowVisited = !prev.includes(id);
+
+      setVisitedDates((prevDates) => {
+        if (isNowVisited) {
+          return {
+            ...prevDates,
+            [id]: date || new Date().toISOString().split("T")[0],
+          };
+        } else {
+          const next = { ...prevDates };
+          delete next[id];
+          return next;
+        }
+      });
 
       const destination = destinationsIndex.find((d) => d.id === id);
       if (destination) {
@@ -146,6 +165,11 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
 
       return isNowVisited ? [...prev, id] : prev.filter((vId) => vId !== id);
     });
+  };
+
+  const getVisitedDate = (id: string) => visitedDates[id];
+  const setVisitedDate = (id: string, date: string) => {
+    setVisitedDates((prev) => ({ ...prev, [id]: date }));
   };
 
   const isVisited = (id: string) => visited.includes(id);
@@ -254,8 +278,11 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
         toggleFavorite,
         isFavorite,
         visited,
+        visitedDates,
         toggleVisited,
         isVisited,
+        getVisitedDate,
+        setVisitedDate,
         visitedPrefectures,
         isPrefectureVisited,
         compareList,

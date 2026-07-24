@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ItineraryPickerModal } from "@/features/trips/components/ItineraryPickerModal";
+import { VisitedDateModal } from "./VisitedDateModal";
 import type { Destination } from "@/shared/types/destination";
 import type { Collection } from "@/shared/types/collection";
 import CollectionBadge from "@/shared/components/ui/CollectionBadge";
@@ -60,11 +61,22 @@ export default function DestinationCard({
   const comparing = isComparing(destination.id);
 
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [visitedModalOpen, setVisitedModalOpen] = useState(false);
 
   const handleAddToItinerary = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     setPickerOpen(true);
+  };
+
+  const handleVisitedClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (visited) {
+      toggleVisited(destination.id);
+    } else {
+      setVisitedModalOpen(true);
+    }
   };
 
   const linkState =
@@ -145,7 +157,7 @@ export default function DestinationCard({
             />
           </button>
           <button
-            onClick={() => toggleVisited(destination.id)}
+            onClick={handleVisitedClick}
             aria-label={
               visited
                 ? "Mark destination as unvisited"
@@ -369,6 +381,13 @@ export default function DestinationCard({
         isOpen={pickerOpen}
         onClose={() => setPickerOpen(false)}
         destination={{ id: destination.id, name: destination.name }}
+      />
+
+      <VisitedDateModal
+        isOpen={visitedModalOpen}
+        onClose={() => setVisitedModalOpen(false)}
+        destination={{ id: destination.id, name: destination.name }}
+        onConfirm={(date) => toggleVisited(destination.id, date)}
       />
     </Card>
   );

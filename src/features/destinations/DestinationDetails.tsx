@@ -14,6 +14,7 @@ import { getValidModes } from "@/shared/services/recommendation/RecommendationSe
 import { calculateScore } from "@/shared/services/recommendation/RecommendationScorer";
 import { createRecommendationMatch } from "@/shared/services/recommendation/RecommendationExplainability";
 import { ItineraryPickerModal } from "@/features/trips/components/ItineraryPickerModal";
+import { VisitedDateModal } from "./components/VisitedDateModal";
 import {
   ArrowLeft,
   MapPin,
@@ -101,6 +102,7 @@ export default function DestinationDetails() {
     toggleFavorite,
     isVisited,
     toggleVisited,
+    getVisitedDate,
     homeStation,
     homeStationCoords,
   } = useTripStore();
@@ -108,6 +110,7 @@ export default function DestinationDetails() {
   const [destLoading, setDestLoading] = useState(true);
 
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [visitedModalOpen, setVisitedModalOpen] = useState(false);
 
   const handleAddToItinerary = () => {
     if (!destination) return;
@@ -464,13 +467,23 @@ export default function DestinationDetails() {
 
             {/* Visited Toggle */}
             <button
-              onClick={() => toggleVisited(destination.id)}
+              onClick={() => {
+                if (isVisited(destination.id)) {
+                  toggleVisited(destination.id);
+                } else {
+                  setVisitedModalOpen(true);
+                }
+              }}
               aria-label={
                 isVisited(destination.id)
                   ? "Mark destination as unvisited"
                   : "Mark destination as visited"
               }
-              title={isVisited(destination.id) ? "Visited" : "Mark as Visited"}
+              title={
+                isVisited(destination.id)
+                  ? `Visited ${getVisitedDate(destination.id) || ""}`
+                  : "Mark as Visited"
+              }
               className={`inline-flex items-center text-sm font-medium px-3.5 py-2 rounded-xl transition-all active:scale-95 ${
                 isVisited(destination.id)
                   ? "bg-blue-500 text-white hover:bg-blue-600 shadow-md"
@@ -478,7 +491,11 @@ export default function DestinationDetails() {
               }`}
             >
               <CheckCircle2 className="w-4 h-4 mr-1.5" />
-              {isVisited(destination.id) ? "Visited" : "Mark Visited"}
+              {isVisited(destination.id)
+                ? getVisitedDate(destination.id)
+                  ? `Visited ${getVisitedDate(destination.id)}`
+                  : "Visited"
+                : "Mark Visited"}
             </button>
 
             {/* Symbol-Only Share Button */}
@@ -1253,11 +1270,20 @@ export default function DestinationDetails() {
       </div>
 
       {destination && (
-        <ItineraryPickerModal
-          isOpen={pickerOpen}
-          onClose={() => setPickerOpen(false)}
-          destination={{ id: destination.id, name: destination.name }}
-        />
+        <>
+          <ItineraryPickerModal
+            isOpen={pickerOpen}
+            onClose={() => setPickerOpen(false)}
+            destination={{ id: destination.id, name: destination.name }}
+          />
+
+          <VisitedDateModal
+            isOpen={visitedModalOpen}
+            onClose={() => setVisitedModalOpen(false)}
+            destination={{ id: destination.id, name: destination.name }}
+            onConfirm={(date) => toggleVisited(destination.id, date)}
+          />
+        </>
       )}
     </div>
   );
