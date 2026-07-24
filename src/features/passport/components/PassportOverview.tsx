@@ -126,10 +126,6 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
     };
   });
 
-  const completedAchievementsCount = achievementStats.filter(
-    (s) => s.isCompleted,
-  ).length;
-
   const japanPct = Math.round((visitedPrefectures.length / 47) * 100);
 
   // Find next milestone region (closest uncompleted region)
@@ -405,8 +401,7 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
                       Achievements Unlocked
                     </div>
                     <div className="text-base font-extrabold text-slate-900 dark:text-white">
-                      {completedAchievementsCount} /{" "}
-                      {achievementCollections.length}
+                      {visited.length >= 1 ? "1" : "0"} / 6 Milestones
                     </div>
                   </div>
                 </div>
@@ -423,10 +418,10 @@ export function PassportOverview({ onSelectTab }: PassportOverviewProps) {
                   </div>
                   <div>
                     <div className="text-xs text-slate-500 dark:text-slate-400">
-                      Exploration Badges
+                      Enamel Pin Badges
                     </div>
                     <div className="text-base font-extrabold text-slate-900 dark:text-white">
-                      Milestone & Regions
+                      22 Travel Badges
                     </div>
                   </div>
                 </div>

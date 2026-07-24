@@ -1,7 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { useTripStore } from "@/shared/hooks/useTripStore";
+import { useLocalStorage } from "@/shared/hooks/useLocalStorage";
+import { BADGES_CATALOG } from "@/features/passport/data/badges";
+import { BadgeIllustration } from "@/features/passport/components/BadgeIllustration";
 import { Icons } from "@/shared/icons";
+import { Star } from "lucide-react";
 import {
   PageTitle,
   SectionTitle,
@@ -17,6 +22,14 @@ export default function Profile() {
   const { user, updateUserProfile, deleteAccount } = useAuth();
   const { visited, visitedPrefectures, trips } = useTripStore();
   const [activeTab, setActiveTab] = useState<ProfileTab>("overview");
+  const [showcaseBadges] = useLocalStorage<string[]>(
+    "tabimap-showcase-badges",
+    ["rail-traveler", "onsen-lover", "fuji-explorer", "first-step"],
+  );
+
+  const showcaseList = BADGES_CATALOG.filter((b) =>
+    showcaseBadges.includes(b.id),
+  ).slice(0, 4);
 
   const [username, setUsername] = useState(
     user?.user_metadata?.username || user?.user_metadata?.full_name || "",
@@ -123,6 +136,46 @@ export default function Profile() {
               2
             </div>
             <Caption>Achievements</Caption>
+          </div>
+        </div>
+        {/* Showcase Badges Strip */}
+        <div className="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-3">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+              <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+              Showcase Badges
+            </span>
+            <Link
+              to="/passport?tab=badges"
+              className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
+            >
+              Manage Showcase →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {showcaseList.map((badge) => (
+              <Link
+                key={badge.id}
+                to="/passport?tab=badges"
+                className="p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/50 dark:border-slate-700/50 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all group"
+              >
+                <BadgeIllustration
+                  illustrationId={badge.illustrationId}
+                  rarity={badge.rarity}
+                  isUnlocked={true}
+                  size="sm"
+                />
+                <div className="min-w-0">
+                  <div className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                    {badge.name}
+                  </div>
+                  <div className="text-[10px] text-slate-400 font-semibold truncate">
+                    {badge.categoryLabel}
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>

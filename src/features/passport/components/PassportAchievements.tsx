@@ -1,138 +1,108 @@
-import { Link } from "react-router-dom";
 import { useTripStore } from "@/shared/hooks/useTripStore";
-import collectionsIndex from "@/shared/data/collections-index.json";
-import destinationsIndex from "@/shared/data/destinations-index.json";
-import type { Collection } from "@/shared/types/collection";
-import {
-  Trophy,
-  CheckCircle2,
-  Castle,
-  Landmark,
-  Crown,
-  Trees,
-  Flame,
-  Building,
-  Sparkles,
-  Tag,
-} from "lucide-react";
-
-const ICON_MAP: Record<string, React.ElementType> = {
-  Castle,
-  Landmark,
-  Crown,
-  Trees,
-  Flame,
-  Building,
-  Sparkles,
-};
+import { ACHIEVEMENTS_CATALOG } from "../data/achievements";
+import { AchievementEngine } from "../services/AchievementEngine";
+import { Trophy, CheckCircle2, Lock } from "lucide-react";
 
 export function PassportAchievements() {
-  const { visited } = useTripStore();
+  const { visited, visitedPrefectures, trips } = useTripStore();
 
-  const achievementCollections = (collectionsIndex as Collection[]).filter(
-    (c) => c.isAchievement === true,
-  );
+  const evaluationContext = {
+    visited,
+    visitedPrefectures,
+    visitedDates: {},
+    tripsCount: trips.length,
+    completedCollectionIds: [],
+  };
 
-  const achievementStats = achievementCollections.map((col) => {
-    const colDestinations = destinationsIndex.filter((d) =>
-      d.collections?.some((m) => m.collectionId === col.id),
-    );
-    const visitedCount = colDestinations.filter((d) =>
-      visited.includes(d.id),
-    ).length;
-    const totalMembers =
-      col.metadata?.expectedMembers || colDestinations.length;
-    const pct =
-      totalMembers > 0
-        ? Math.min(100, Math.round((visitedCount / totalMembers) * 100))
-        : 0;
-    const isCompleted = visitedCount >= totalMembers && totalMembers > 0;
-    return {
-      collection: col,
-      visitedCount,
-      totalMembers,
-      pct,
-      isCompleted,
-    };
-  });
-
-  const completedAchievementsCount = achievementStats.filter(
-    (s) => s.isCompleted,
+  const achievementStatuses = AchievementEngine.evaluateAll(evaluationContext);
+  const totalUnlocked = Object.values(achievementStatuses).filter(
+    (a) => a.isUnlocked,
   ).length;
 
   return (
-    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 md:p-8 shadow-sm animate-in fade-in duration-200">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100 dark:border-slate-800">
-        <div>
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
-            <Trophy className="w-6 h-6 text-amber-500" />
-            Passport Achievements
+    <div className="space-y-6">
+      {/* Header Banner */}
+      <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="space-y-1">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+            <Trophy className="w-4 h-4" />
+            Major Travel Milestones
+          </div>
+          <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white">
+            Travel Accomplishments & Heritage Goals
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
-            Track progress across official heritage benchmarks & curated
-            Japanese travel lists
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            Permanent milestone awards unlocked as you complete collections and
+            reach travel benchmarks.
           </p>
         </div>
-        <div className="flex items-center gap-2 bg-slate-100 dark:bg-slate-800/80 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700/60 self-start sm:self-auto">
-          <span className="text-xs text-slate-500 dark:text-slate-400 uppercase font-bold tracking-wider">
+
+        <div className="px-4 py-2 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 shrink-0 text-center md:text-right">
+          <div className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
             Unlocked
-          </span>
-          <span className="text-base font-extrabold text-emerald-600 dark:text-emerald-400">
-            {completedAchievementsCount} / {achievementCollections.length}
-          </span>
+          </div>
+          <div className="text-xl font-black text-amber-600 dark:text-amber-400">
+            {totalUnlocked}{" "}
+            <span className="text-xs font-normal text-slate-400">
+              / {ACHIEVEMENTS_CATALOG.length}
+            </span>
+          </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {achievementStats.map(
-          ({ collection, visitedCount, totalMembers, pct, isCompleted }) => {
-            const Icon = ICON_MAP[collection.icon] || Tag;
-            return (
-              <Link
-                key={collection.id}
-                to={`/collections/${collection.slug}`}
-                className="group block p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 hover:bg-slate-100 dark:hover:bg-slate-800 hover:border-amber-500/50 transition-all shadow-sm"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="p-2 rounded-xl bg-white dark:bg-slate-700 text-amber-500 shadow-sm group-hover:scale-110 transition-transform shrink-0">
-                      <Icon className="w-4 h-4" />
-                    </div>
-                    <span className="text-sm font-bold text-slate-900 dark:text-white truncate">
-                      {collection.name}
-                    </span>
-                  </div>
-                  {isCompleted ? (
-                    <span className="inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 shrink-0">
-                      <CheckCircle2 className="w-3.5 h-3.5" /> Done
-                    </span>
-                  ) : (
-                    <span className="text-xs font-extrabold text-slate-500 dark:text-slate-400 shrink-0">
-                      {pct}%
-                    </span>
-                  )}
+      {/* Grid of Milestone Accomplishment Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {ACHIEVEMENTS_CATALOG.map((ach) => {
+          const status = achievementStatuses[ach.id] || { isUnlocked: false };
+
+          return (
+            <div
+              key={ach.id}
+              className={`p-6 rounded-3xl border transition-all ${
+                status.isUnlocked
+                  ? "bg-white dark:bg-slate-900 border-amber-200/80 dark:border-amber-800/60 shadow-sm"
+                  : "bg-slate-50/50 dark:bg-slate-900/40 border-slate-200/50 dark:border-slate-800/50 opacity-75"
+              }`}
+            >
+              <div className="flex items-start gap-4">
+                <div
+                  className={`p-3.5 rounded-2xl shrink-0 ${
+                    status.isUnlocked
+                      ? "bg-gradient-to-br from-amber-500 to-yellow-500 text-white shadow-md shadow-amber-500/20 ring-4 ring-amber-400/20"
+                      : "bg-slate-100 dark:bg-slate-800 text-slate-400"
+                  }`}
+                >
+                  <Trophy className="w-6 h-6" />
                 </div>
 
-                <div className="space-y-1.5 mt-2">
-                  <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400">
-                    <span>Progress</span>
-                    <span className="font-semibold text-slate-700 dark:text-slate-300">
-                      {visitedCount} / {totalMembers}
+                <div className="flex-1 min-w-0 space-y-1">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                      {ach.category}
                     </span>
+                    {status.isUnlocked ? (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-extrabold text-amber-600 dark:text-amber-400">
+                        <CheckCircle2 className="w-3.5 h-3.5" /> Earned
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-400">
+                        <Lock className="w-3.5 h-3.5" /> Locked
+                      </span>
+                    )}
                   </div>
-                  <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
-                    <div
-                      className={`h-full rounded-full transition-all duration-500 ${
-                        isCompleted ? "bg-amber-500 shadow-sm" : "bg-amber-500"
-                      }`}
-                      style={{ width: `${pct}%` }}
-                    />
-                  </div>
+
+                  <h3 className="text-base font-extrabold text-slate-900 dark:text-white pt-1">
+                    {ach.title}
+                  </h3>
+
+                  <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {ach.description}
+                  </p>
                 </div>
-              </Link>
-            );
-          },
-        )}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

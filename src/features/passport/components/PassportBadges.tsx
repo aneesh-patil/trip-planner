@@ -1,297 +1,146 @@
+import { useState } from "react";
 import { useTripStore } from "@/shared/hooks/useTripStore";
-import {
-  Award,
-  CheckCircle2,
-  Lock,
-  Compass,
-  MapPin,
-  Flame,
-  Crown,
-  Sparkles,
-  Mountain,
-  Footprints,
-} from "lucide-react";
-
-interface BadgeDefinition {
-  id: string;
-  name: string;
-  category: "Milestones" | "Regions";
-  description: string;
-  icon: React.ElementType;
-  isUnlocked: boolean;
-  progressText: string;
-}
+import { BADGES_CATALOG } from "../data/badges";
+import { BadgeEngine } from "../services/BadgeEngine";
+import type { Badge, BadgeCategory } from "../types/badge";
+import { BadgeCard } from "./BadgeCard";
+import { BadgeDetailModal } from "./BadgeDetailModal";
+import { Icons } from "@/shared/icons";
+import { useLocalStorage } from "@/shared/hooks/useLocalStorage";
 
 export function PassportBadges() {
-  const { visited, visitedPrefectures } = useTripStore();
+  const { visited, visitedPrefectures, trips } = useTripStore();
+  const [activeCategory, setActiveCategory] = useState<BadgeCategory | "all">(
+    "all",
+  );
+  const [selectedBadge, setSelectedBadge] = useState<Badge | null>(null);
+  const [showcaseBadges, setShowcaseBadges] = useLocalStorage<string[]>(
+    "tabimap-showcase-badges",
+    ["rail-traveler", "onsen-lover", "fuji-explorer", "first-step"],
+  );
 
-  const REGIONS_PREFECTURES: Record<string, string[]> = {
-    Hokkaido: ["Hokkaido"],
-    Tohoku: ["Aomori", "Iwate", "Miyagi", "Akita", "Yamagata", "Fukushima"],
-    Kanto: [
-      "Ibaraki",
-      "Tochigi",
-      "Gunma",
-      "Saitama",
-      "Chiba",
-      "Tokyo",
-      "Kanagawa",
-    ],
-    Chubu: [
-      "Niigata",
-      "Toyama",
-      "Ishikawa",
-      "Fukui",
-      "Yamanashi",
-      "Nagano",
-      "Gifu",
-      "Shizuoka",
-      "Aichi",
-    ],
-    Kansai: ["Mie", "Shiga", "Kyoto", "Osaka", "Hyogo", "Nara", "Wakayama"],
-    Chugoku: ["Tottori", "Shimane", "Okayama", "Hiroshima", "Yamaguchi"],
-    Shikoku: ["Tokushima", "Kagawa", "Ehime", "Kochi"],
-    Kyushu: [
-      "Fukuoka",
-      "Saga",
-      "Nagasaki",
-      "Kumamoto",
-      "Oita",
-      "Miyazaki",
-      "Kagoshima",
-      "Okinawa",
-    ],
+  const evaluationContext = {
+    visited,
+    visitedPrefectures,
+    visitedDates: {},
+    tripsCount: trips.length,
+    completedCollectionIds: [],
   };
 
-  const getRegionCount = (regionName: string) => {
-    const prefList = REGIONS_PREFECTURES[regionName] || [];
-    return prefList.filter((p) => visitedPrefectures.includes(p)).length;
+  const badgeStatuses = BadgeEngine.evaluateAll(evaluationContext);
+  const totalUnlocked = Object.values(badgeStatuses).filter(
+    (b) => b.isUnlocked,
+  ).length;
+
+  const handleToggleFavorite = (badgeId: string) => {
+    setShowcaseBadges((prev) =>
+      prev.includes(badgeId)
+        ? prev.filter((id) => id !== badgeId)
+        : [...prev, badgeId].slice(0, 4),
+    );
   };
 
-  const badges: BadgeDefinition[] = [
-    // Milestones
-    {
-      id: "first-step",
-      name: "First Step",
-      category: "Milestones",
-      description: "Log your first visited destination in Japan",
-      icon: Footprints,
-      isUnlocked: visited.length >= 1,
-      progressText: `${Math.min(visited.length, 1)} / 1`,
-    },
-    {
-      id: "traveler",
-      name: "Traveler",
-      category: "Milestones",
-      description: "Visit 5 different destinations across Japan",
-      icon: Compass,
-      isUnlocked: visited.length >= 5,
-      progressText: `${Math.min(visited.length, 5)} / 5`,
-    },
-    {
-      id: "explorer",
-      name: "Explorer",
-      category: "Milestones",
-      description: "Visit 10 destinations",
-      icon: Sparkles,
-      isUnlocked: visited.length >= 10,
-      progressText: `${Math.min(visited.length, 10)} / 10`,
-    },
-    {
-      id: "voyager",
-      name: "Voyager",
-      category: "Milestones",
-      description: "Visit 25 destinations",
-      icon: Flame,
-      isUnlocked: visited.length >= 25,
-      progressText: `${Math.min(visited.length, 25)} / 25`,
-    },
-    {
-      id: "pref-novice",
-      name: "Prefecture Novice",
-      category: "Milestones",
-      description: "Explore at least 3 prefectures",
-      icon: MapPin,
-      isUnlocked: visitedPrefectures.length >= 3,
-      progressText: `${Math.min(visitedPrefectures.length, 3)} / 3`,
-    },
-    {
-      id: "pref-wanderer",
-      name: "Region Wanderer",
-      category: "Milestones",
-      description: "Explore 10 or more prefectures",
-      icon: Mountain,
-      isUnlocked: visitedPrefectures.length >= 10,
-      progressText: `${Math.min(visitedPrefectures.length, 10)} / 10`,
-    },
-    {
-      id: "pref-halfway",
-      name: "Halfway Across Japan",
-      category: "Milestones",
-      description: "Explore 24 out of 47 prefectures",
-      icon: Award,
-      isUnlocked: visitedPrefectures.length >= 24,
-      progressText: `${Math.min(visitedPrefectures.length, 24)} / 24`,
-    },
-    {
-      id: "pref-master",
-      name: "Japan Master",
-      category: "Milestones",
-      description: "Explore all 47 Japanese prefectures",
-      icon: Crown,
-      isUnlocked: visitedPrefectures.length >= 47,
-      progressText: `${visitedPrefectures.length} / 47`,
-    },
-    // Region Badges
-    {
-      id: "reg-hokkaido",
-      name: "Hokkaido Pioneer",
-      category: "Regions",
-      description: "Explore the northern wilderness of Hokkaido",
-      icon: Award,
-      isUnlocked: getRegionCount("Hokkaido") >= 1,
-      progressText: `${getRegionCount("Hokkaido")} / 1`,
-    },
-    {
-      id: "reg-tohoku",
-      name: "Tohoku Explorer",
-      category: "Regions",
-      description: "Visit prefectures in northern Honshu (Tohoku)",
-      icon: Award,
-      isUnlocked: getRegionCount("Tohoku") >= 6,
-      progressText: `${getRegionCount("Tohoku")} / 6`,
-    },
-    {
-      id: "reg-kanto",
-      name: "Kanto Adventurer",
-      category: "Regions",
-      description: "Explore Greater Tokyo & Kanto region prefectures",
-      icon: Award,
-      isUnlocked: getRegionCount("Kanto") >= 7,
-      progressText: `${getRegionCount("Kanto")} / 7`,
-    },
-    {
-      id: "reg-chubu",
-      name: "Chubu Traveler",
-      category: "Regions",
-      description: "Explore central Japan & Japanese Alps (Chubu)",
-      icon: Award,
-      isUnlocked: getRegionCount("Chubu") >= 9,
-      progressText: `${getRegionCount("Chubu")} / 9`,
-    },
-    {
-      id: "reg-kansai",
-      name: "Kansai Pilgrim",
-      category: "Regions",
-      description: "Explore historic Kyoto, Osaka & Kansai prefectures",
-      icon: Award,
-      isUnlocked: getRegionCount("Kansai") >= 7,
-      progressText: `${getRegionCount("Kansai")} / 7`,
-    },
-    {
-      id: "reg-chugoku",
-      name: "Chugoku Discoverer",
-      category: "Regions",
-      description: "Explore western Honshu (Chugoku region)",
-      icon: Award,
-      isUnlocked: getRegionCount("Chugoku") >= 5,
-      progressText: `${getRegionCount("Chugoku")} / 5`,
-    },
-    {
-      id: "reg-shikoku",
-      name: "Shikoku Wayfarer",
-      category: "Regions",
-      description: "Explore the 4 prefectures of Shikoku island",
-      icon: Award,
-      isUnlocked: getRegionCount("Shikoku") >= 4,
-      progressText: `${getRegionCount("Shikoku")} / 4`,
-    },
-    {
-      id: "reg-kyushu",
-      name: "Kyushu & Okinawa Nomad",
-      category: "Regions",
-      description: "Explore southern tropical islands & Kyushu prefectures",
-      icon: Award,
-      isUnlocked: getRegionCount("Kyushu") >= 8,
-      progressText: `${getRegionCount("Kyushu")} / 8`,
-    },
-  ];
+  const filteredBadges = BADGES_CATALOG.filter((b) => {
+    if (activeCategory === "all") return true;
+    return b.category === activeCategory;
+  });
 
-  const unlockedCount = badges.filter((b) => b.isUnlocked).length;
+  const CategoryIcon = Icons.badges;
 
   return (
-    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 md:p-8 shadow-sm animate-in fade-in duration-200">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100 dark:border-slate-800">
-        <div>
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
-            <Award className="w-6 h-6 text-emerald-500" />
+    <div className="space-y-6">
+      {/* Header Banner */}
+      <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="space-y-1">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+            <CategoryIcon className="w-4 h-4" />
+            Travel Identity & Collector Pins
+          </div>
+          <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white">
             Milestone & Exploration Badges
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
-            Earn unlockable badges as you explore Japan's regions and log
-            visited places
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            Earn unlockable enamel pin badges as you explore Japan's regions and
+            travel styles.
           </p>
         </div>
-        <div className="flex items-center gap-2 bg-slate-100 dark:bg-slate-800/80 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700/60 self-start sm:self-auto">
-          <span className="text-xs text-slate-500 dark:text-slate-400 uppercase font-bold tracking-wider">
+
+        <div className="px-4 py-2 rounded-2xl bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 shrink-0 text-center md:text-right">
+          <div className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
             Badges Earned
-          </span>
-          <span className="text-base font-extrabold text-emerald-600 dark:text-emerald-400">
-            {unlockedCount} / {badges.length}
-          </span>
+          </div>
+          <div className="text-xl font-black text-emerald-700 dark:text-emerald-300">
+            {totalUnlocked}{" "}
+            <span className="text-xs font-normal text-slate-400">
+              / {BADGES_CATALOG.length}
+            </span>
+          </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {badges.map((badge) => {
-          const Icon = badge.icon;
+      {/* Category Filter Tabs */}
+      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+        {[
+          { id: "all", label: "All Badges" },
+          { id: "travel-style", label: "Travel Style" },
+          { id: "interests", label: "Interests" },
+          { id: "regional", label: "Regional Identity" },
+          { id: "experience", label: "Experience" },
+        ].map((cat) => {
+          const isActive = activeCategory === cat.id;
           return (
-            <div
-              key={badge.id}
-              className={`p-4 rounded-2xl border transition-all ${
-                badge.isUnlocked
-                  ? "bg-emerald-50/60 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-800/70 shadow-sm"
-                  : "bg-slate-50/60 dark:bg-slate-800/30 border-slate-200/60 dark:border-slate-800 opacity-65"
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id as any)}
+              className={`px-4 py-2 rounded-2xl text-xs font-bold shrink-0 transition-all ${
+                isActive
+                  ? "bg-emerald-600 text-white shadow-sm"
+                  : "bg-slate-100 dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
               }`}
             >
-              <div className="flex items-center justify-between mb-3">
-                <div
-                  className={`p-2.5 rounded-xl shadow-sm ${
-                    badge.isUnlocked
-                      ? "bg-emerald-500 text-white"
-                      : "bg-slate-200 dark:bg-slate-700 text-slate-400"
-                  }`}
-                >
-                  <Icon className="w-5 h-5" />
-                </div>
-                {badge.isUnlocked ? (
-                  <span className="inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
-                    <CheckCircle2 className="w-3 h-3" /> Unlocked
-                  </span>
-                ) : (
-                  <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
-                    <Lock className="w-3 h-3" /> Locked
-                  </span>
-                )}
-              </div>
-
-              <div className="text-sm font-bold text-slate-900 dark:text-white mb-1">
-                {badge.name}
-              </div>
-              <p className="text-xs text-slate-500 dark:text-slate-400 min-h-[32px] line-clamp-2">
-                {badge.description}
-              </p>
-
-              <div className="mt-3 pt-2 border-t border-slate-200/50 dark:border-slate-700/50 flex justify-between items-center text-[11px]">
-                <span className="text-slate-400 font-medium">Progress</span>
-                <span className="font-bold text-slate-700 dark:text-slate-300">
-                  {badge.progressText}
-                </span>
-              </div>
-            </div>
+              {cat.label}
+            </button>
           );
         })}
       </div>
+
+      {/* Grid of Circular Enamel Pin Badges (NO progress bars) */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {filteredBadges.map((badge) => {
+          const status = badgeStatuses[badge.id] || { isUnlocked: false };
+          const isFav = showcaseBadges.includes(badge.id);
+
+          return (
+            <BadgeCard
+              key={badge.id}
+              badge={badge}
+              isUnlocked={status.isUnlocked}
+              earnedAt={status.earnedAt}
+              isFavorite={isFav}
+              onToggleFavorite={handleToggleFavorite}
+              onClick={(b) => setSelectedBadge(b)}
+            />
+          );
+        })}
+      </div>
+
+      {/* Interactive Badge Detail Modal */}
+      <BadgeDetailModal
+        badge={selectedBadge}
+        isUnlocked={
+          selectedBadge
+            ? badgeStatuses[selectedBadge.id]?.isUnlocked || false
+            : false
+        }
+        earnedAt={
+          selectedBadge ? badgeStatuses[selectedBadge.id]?.earnedAt : undefined
+        }
+        isFavorite={
+          selectedBadge ? showcaseBadges.includes(selectedBadge.id) : false
+        }
+        onToggleFavorite={handleToggleFavorite}
+        onClose={() => setSelectedBadge(null)}
+      />
     </div>
   );
 }
