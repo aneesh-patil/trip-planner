@@ -114,6 +114,31 @@ export default function CollectionDetails() {
                 {collection.metadata.authority.replace("_", " ")}
               </span>
             </div>
+            {(collection.metadata.verificationSource ||
+              collection.officialSource) && (
+              <div>
+                <span className="text-slate-400 dark:text-slate-500">
+                  Source:
+                </span>{" "}
+                {collection.sourceUrl ? (
+                  <a
+                    href={collection.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300 inline-flex items-center"
+                  >
+                    {collection.metadata.verificationSource ||
+                      collection.officialSource}
+                    <ExternalLink className="w-3 h-3 ml-1" />
+                  </a>
+                ) : (
+                  <span className="font-semibold text-slate-700 dark:text-slate-200">
+                    {collection.metadata.verificationSource ||
+                      collection.officialSource}
+                  </span>
+                )}
+              </div>
+            )}
             <div>
               <span className="text-slate-400 dark:text-slate-500">
                 Last Reviewed:
@@ -122,13 +147,13 @@ export default function CollectionDetails() {
                 {collection.metadata.lastVerified}
               </span>
             </div>
-            {collection.metadata.estimatedMembers && (
+            {collection.metadata.expectedMembers && (
               <div>
                 <span className="text-slate-400 dark:text-slate-500">
-                  Catalog Target:
+                  Expected Members:
                 </span>{" "}
                 <span className="font-semibold text-slate-700 dark:text-slate-200">
-                  {collection.metadata.estimatedMembers} destinations
+                  {collection.metadata.expectedMembers} destinations
                 </span>
               </div>
             )}

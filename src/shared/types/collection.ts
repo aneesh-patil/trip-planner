@@ -8,7 +8,7 @@ export interface CollectionMetadata {
   status: "active" | "review_needed" | "deprecated";
   lastVerified: string;
   verificationSource?: string;
-  estimatedMembers?: number;
+  expectedMembers?: number; // Target total catalog size for complete collection (e.g. 12 for Original 12 Castles, 3 for Three Great Gardens)
   reviewIntervalMonths?: number;
 }
 
