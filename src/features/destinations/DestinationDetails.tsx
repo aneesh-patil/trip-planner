@@ -813,7 +813,8 @@ export default function DestinationDetails() {
                         <div className="flex justify-between items-center text-sm">
                           <span className="text-slate-500">👣 Walk</span>
                           <span className="font-semibold text-slate-700 dark:text-slate-300">
-                            ~{(destination.walkingMin / 1000).toFixed(1)}k steps
+                            ~{((destination.walkingMin ?? 0) / 1000).toFixed(1)}
+                            k steps
                           </span>
                         </div>
                       </div>

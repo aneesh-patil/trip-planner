@@ -70,5 +70,22 @@
   ],
   "description": "Nijo Castle in Kyoto was the residence of Tokugawa Ieyasu, famous for its Ninomaru Palace featuring squeaking 'nightingale floors' designed to alert guards to intruders.",
   "notes": "Site where Shogun Tokugawa Yoshinobu returned power to Emperor Meiji in 1867.",
-  "budgetRecommended": 6500
+  "budgetRecommended": 6500,
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

@@ -55,5 +55,22 @@
   ],
   "description": "Kinosaki Onsen is a quintessential hot spring town centered around a willow-lined canal, where visitors stroll between seven distinct public bathhouses in traditional yukata robes.",
   "notes": "Founded over 1,300 years ago when a stork was observed healing its wounded leg in the thermal springs.",
-  "budgetRecommended": 17500
+  "budgetRecommended": 17500,
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

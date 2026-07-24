@@ -55,5 +55,22 @@
   ],
   "description": "Atsuta Shrine in central Nagoya is a sacred ancient Shinto sanctuary surrounded by a tranquil cedar forest, enshrining the legendary Kusanagi-no-Tsurugi sacred sword.",
   "notes": "Founded nearly 2,000 years ago during the reign of Emperor Keiko.",
-  "budgetRecommended": 4000
+  "budgetRecommended": 4000,
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

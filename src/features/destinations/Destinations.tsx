@@ -180,16 +180,17 @@ export default function Destinations() {
     // 5. Filter by Weather
     if (weather === "indoor") {
       result = result.filter(
-        (dest) => dest.indoorPercent >= 50 || dest.ratings.rain >= 8,
+        (dest) =>
+          (dest.indoorPercent ?? 0) >= 50 || (dest.ratings?.rain ?? 0) >= 8,
       );
     } else if (weather === "summer") {
-      result = result.filter((dest) => dest.ratings.summer >= 8);
+      result = result.filter((dest) => (dest.ratings?.summer ?? 0) >= 8);
     } else if (weather === "winter") {
-      result = result.filter((dest) => dest.ratings.winter >= 8);
+      result = result.filter((dest) => (dest.ratings?.winter ?? 0) >= 8);
     }
 
     // 6. Filter by Max Walking
-    result = result.filter((dest) => dest.walkingMin <= maxWalking);
+    result = result.filter((dest) => (dest.walkingMin ?? 0) <= maxWalking);
 
     // 6. Sort
     result = [...result].sort((a, b) => {
@@ -219,16 +220,16 @@ export default function Destinations() {
           };
           return getFastestTime(a) - getFastestTime(b);
         case "walking":
-          return a.walkingMin - b.walkingMin;
+          return (a.walkingMin ?? 0) - (b.walkingMin ?? 0);
         case "couple":
-          return b.ratings.couple - a.ratings.couple;
+          return (b.ratings?.couple ?? 0) - (a.ratings?.couple ?? 0);
         case "summer":
-          return b.ratings.summer - a.ratings.summer;
+          return (b.ratings?.summer ?? 0) - (a.ratings?.summer ?? 0);
         case "winter":
-          return b.ratings.winter - a.ratings.winter;
+          return (b.ratings?.winter ?? 0) - (a.ratings?.winter ?? 0);
         case "overall":
         default:
-          return b.ratings.overall - a.ratings.overall;
+          return (b.ratings?.overall ?? 0) - (a.ratings?.overall ?? 0);
       }
     });
 

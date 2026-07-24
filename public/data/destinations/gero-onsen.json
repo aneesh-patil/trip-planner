@@ -55,5 +55,22 @@
   ],
   "description": "Gero Onsen is one of Japan's Three Great Hot Springs (Nihon Sanmeisen), famed since the 9th century for its silky alkaline waters known as 'beauty baths'.",
   "notes": "Situated along the Hida River between Nagoya and Takayama.",
-  "budgetRecommended": 15000
+  "budgetRecommended": 15000,
+  "walkingMin": 8000,
+  "walkingSunMin": 4800,
+  "walkingShadeMin": 3200,
+  "indoorPercent": 20,
+  "totalTripHours": 4,
+  "crowd": {
+    "weekday": 3,
+    "weekend": 4,
+    "holiday": 5
+  },
+  "season": {
+    "spring": 4,
+    "summer": 4,
+    "autumn": 4,
+    "winter": 4
+  },
+  "bestMonths": [3, 4, 5, 9, 10, 11]
 }

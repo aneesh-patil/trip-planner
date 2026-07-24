@@ -485,6 +485,30 @@ async function runPipeline() {
       d.tags = d.categories || ["Travel"];
       filledFieldsCount++;
     }
+    if (d.walkingMin === undefined || d.walkingMin === null) {
+      d.walkingMin = 8000;
+      filledFieldsCount++;
+    }
+    if (d.walkingSunMin === undefined || d.walkingSunMin === null) {
+      d.walkingSunMin = Math.round(d.walkingMin * 0.6);
+      filledFieldsCount++;
+    }
+    if (d.walkingShadeMin === undefined || d.walkingShadeMin === null) {
+      d.walkingShadeMin = Math.round(d.walkingMin * 0.4);
+      filledFieldsCount++;
+    }
+    if (d.indoorPercent === undefined || d.indoorPercent === null) {
+      d.indoorPercent = 20;
+      filledFieldsCount++;
+    }
+    if (d.totalTripHours === undefined || d.totalTripHours === null) {
+      d.totalTripHours = 4;
+      filledFieldsCount++;
+    }
+    if (!d.bestMonths) {
+      d.bestMonths = [3, 4, 5, 9, 10, 11];
+      filledFieldsCount++;
+    }
   });
   console.log(
     `\x1b[32m✔ Stage 3 Passed (${normalizedBudgets} budgets normalized, ${filledFieldsCount} default fields populated).\x1b[0m\n`,

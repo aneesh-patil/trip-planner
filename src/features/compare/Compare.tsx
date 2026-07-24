@@ -65,7 +65,7 @@ export default function Compare() {
   });
   const minTravelTime = getMin(travelTimes);
 
-  const walking = compareDestinations.map((d) => d.walkingMin);
+  const walking = compareDestinations.map((d) => d.walkingMin ?? 0);
   const minWalking = getMin(walking);
 
   const coupleScores = compareDestinations.map((d) => d.ratings.couple);
@@ -238,12 +238,12 @@ export default function Compare() {
                 <TableCell key={dest.id}>
                   <span
                     className={
-                      dest.walkingMin === minWalking
+                      (dest.walkingMin ?? 0) === minWalking
                         ? "font-bold text-emerald-600 dark:text-emerald-400"
                         : ""
                     }
                   >
-                    {(dest.walkingMin / 1000).toFixed(1)}k steps
+                    {((dest.walkingMin ?? 0) / 1000).toFixed(1)}k steps
                   </span>
                   {dest.walkingMin === minWalking && (
                     <Badge className="ml-2 bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800">
@@ -421,8 +421,8 @@ export default function Compare() {
                     Walking Minutes
                   </p>
                   <p className="font-bold text-slate-900 dark:text-white">
-                    {dest.walkingMin} min
-                    {dest.walkingMin === minWalking && (
+                    {dest.walkingMin ?? 0} min
+                    {(dest.walkingMin ?? 0) === minWalking && (
                       <span className="ml-1 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950 px-1.5 py-0.5 rounded">
                         Min
                       </span>
