@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import {
   Calendar,
   Map,
-  Settings,
   Menu,
   X,
   LogIn,
@@ -78,7 +77,6 @@ export default function Navbar() {
   const navItems = [
     { name: "Destinations", path: "/destinations", icon: Map },
     { name: "Passport", path: "/passport", icon: Compass },
-    { name: "Compare", path: "/compare", icon: Settings },
     { name: "My Trips", path: "/my-trips", icon: Calendar },
   ];
 

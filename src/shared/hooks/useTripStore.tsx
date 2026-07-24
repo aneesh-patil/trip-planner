@@ -240,7 +240,7 @@ export function TripStoreProvider({ children }: { children: ReactNode }) {
       if (prev.includes(id)) {
         return prev.filter((cId) => cId !== id);
       }
-      if (prev.length >= 4) {
+      if (prev.length >= 3) {
         return [...prev.slice(1), id];
       }
       return [...prev, id];

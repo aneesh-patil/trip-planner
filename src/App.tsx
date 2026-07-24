@@ -17,7 +17,6 @@ import { Toaster } from "sonner";
 const DestinationDetails = lazy(
   () => import("./features/destinations/DestinationDetails"),
 );
-const Compare = lazy(() => import("./features/compare/Compare"));
 const PrefectureChecklist = lazy(
   () => import("./features/map/PrefectureChecklist"),
 );
@@ -41,7 +40,13 @@ function PageLoader() {
   );
 }
 
+import { useState } from "react";
+import CompareModal from "./features/compare/components/CompareModal";
+import CompareFloatingBar from "./features/compare/components/CompareFloatingBar";
+
 function App() {
+  const [compareModalOpen, setCompareModalOpen] = useState(false);
+
   return (
     <AuthProvider>
       <TripStoreProvider>
@@ -66,7 +71,10 @@ function App() {
                       path="/collections/:slug"
                       element={<CollectionDetails />}
                     />
-                    <Route path="/compare" element={<Compare />} />
+                    <Route
+                      path="/compare"
+                      element={<Navigate to="/destinations" replace />}
+                    />
                     <Route
                       path="/favorites"
                       element={
@@ -87,6 +95,11 @@ function App() {
               </ErrorBoundary>
             </main>
             <Footer />
+            <CompareFloatingBar onOpenModal={() => setCompareModalOpen(true)} />
+            <CompareModal
+              isOpen={compareModalOpen}
+              onClose={() => setCompareModalOpen(false)}
+            />
           </div>
           <Toaster position="bottom-right" />
         </Router>

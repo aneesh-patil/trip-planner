@@ -22,7 +22,7 @@ export default function MyTrips() {
     reorderTripStops,
   } = useTripStore();
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const paramTab = searchParams.get("tab");
   const paramTripId = searchParams.get("tripId");
 
@@ -69,60 +69,34 @@ export default function MyTrips() {
     );
   }
 
-  const handleTabChange = (tab: "planned" | "bucketlist") => {
-    setActiveTab(tab);
-    if (tab === "bucketlist") {
-      setSearchParams({ tab: "bucketlist" });
-    } else {
-      setSearchParams({});
-    }
-  };
-
   return (
     <div className="container mx-auto px-4 py-12 max-w-7xl space-y-8">
-      {/* Page Header with Dropdown View Selector */}
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-200 dark:border-slate-800 gap-6">
+      {/* Page Header */}
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-slate-200 dark:border-slate-800 gap-4">
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 text-xs font-bold mb-2 border border-emerald-200 dark:border-emerald-800">
-            <Compass className="w-3.5 h-3.5" />
-            <span>Travel Planner</span>
+            {activeTab === "bucketlist" ? (
+              <>
+                <Bookmark className="w-3.5 h-3.5 text-amber-500" />
+                <span>Saved Destinations</span>
+              </>
+            ) : (
+              <>
+                <Compass className="w-3.5 h-3.5" />
+                <span>Travel Planner</span>
+              </>
+            )}
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            My Trips & Bucket List
+            {activeTab === "bucketlist"
+              ? `My Bucket List (${favoriteDestinations.length})`
+              : `My Travel Itineraries (${trips.length})`}
           </h1>
           <p className="text-slate-500 dark:text-slate-400 mt-1.5 text-sm md:text-base max-w-xl">
-            Manage your custom travel itineraries or explore saved bucket list
-            sights across Japan.
+            {activeTab === "bucketlist"
+              ? "Explore saved destinations you would like to visit across Japan."
+              : "Manage your custom travel itineraries and daily route plans."}
           </p>
-        </div>
-
-        {/* Header Toggle Pills */}
-        <div className="flex items-center gap-3 self-start md:self-auto">
-          {/* Toggle Switcher */}
-          <div className="flex items-center p-1.5 bg-slate-100 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700/60 shadow-inner">
-            <button
-              onClick={() => handleTabChange("planned")}
-              className={`flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-extrabold rounded-xl transition-all ${
-                activeTab === "planned"
-                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-md ring-1 ring-black/5 dark:ring-white/10"
-                  : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
-              }`}
-            >
-              <Calendar className="w-4 h-4 text-emerald-500" />
-              Itineraries ({trips.length})
-            </button>
-            <button
-              onClick={() => handleTabChange("bucketlist")}
-              className={`flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-extrabold rounded-xl transition-all ${
-                activeTab === "bucketlist"
-                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-md ring-1 ring-black/5 dark:ring-white/10"
-                  : "text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
-              }`}
-            >
-              <Bookmark className="w-4 h-4 text-amber-500" />
-              Bucket List ({favorites.length})
-            </button>
-          </div>
         </div>
       </div>
 
