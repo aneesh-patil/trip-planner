@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Input } from "@/shared/components/ui/input";
 import { useAuth } from "@/shared/hooks/useAuth";
 import {
@@ -16,17 +16,63 @@ import {
   TrainFront,
   Star,
   Heart,
-  CloudRain,
-  Sparkles,
   Footprints,
   Coins,
   ThermometerSun,
   Snowflake,
+  Filter,
+  ChevronDown,
+  ChevronUp,
+  MapPin,
+  X,
 } from "lucide-react";
+
+const REGION_PREFECTURES_MAP: Record<string, string[]> = {
+  Kanto: [
+    "Tokyo",
+    "Kanagawa",
+    "Saitama",
+    "Chiba",
+    "Ibaraki",
+    "Tochigi",
+    "Gunma",
+  ],
+  Chubu: [
+    "Aichi",
+    "Gifu",
+    "Shizuoka",
+    "Nagano",
+    "Yamanashi",
+    "Niigata",
+    "Ishikawa",
+    "Fukui",
+    "Toyama",
+  ],
+  Kansai: ["Osaka", "Kyoto", "Hyogo", "Nara", "Shiga", "Mie"],
+  Tohoku: ["Miyagi", "Aomori", "Iwate", "Akita", "Yamagata", "Fukushima"],
+  Kyushu: [
+    "Fukuoka",
+    "Nagasaki",
+    "Kumamoto",
+    "Oita",
+    "Miyazaki",
+    "Kagoshima",
+    "Saga",
+  ],
+  Hokkaido: ["Hokkaido"],
+  Chugoku: ["Hiroshima", "Okayama", "Yamaguchi", "Shimane", "Tottori"],
+  Shikoku: ["Ehime", "Kagawa", "Kochi", "Tokushima"],
+};
 
 interface DestinationFiltersProps {
   searchQuery: string;
   setSearchQuery: (val: string) => void;
+  selectedRegions: string[];
+  setSelectedRegions: (val: string[] | ((prev: string[]) => string[])) => void;
+  selectedPrefectures: string[];
+  setSelectedPrefectures: (
+    val: string[] | ((prev: string[]) => string[]),
+  ) => void;
   maxBudget: number;
   setMaxBudget: (val: number) => void;
   sortBy: string;
@@ -45,14 +91,16 @@ interface DestinationFiltersProps {
   setSuitabilities: (val: string[] | ((prev: string[]) => string[])) => void;
   interests: string[];
   setInterests: (val: string[] | ((prev: string[]) => string[])) => void;
-  totalMatches?: number;
-  onSearch?: () => void;
   onReset: () => void;
 }
 
 export default function DestinationFilters({
   searchQuery,
   setSearchQuery,
+  selectedRegions,
+  setSelectedRegions,
+  selectedPrefectures,
+  setSelectedPrefectures,
   maxBudget,
   setMaxBudget,
   sortBy,
@@ -71,11 +119,13 @@ export default function DestinationFilters({
   setSuitabilities,
   interests,
   setInterests,
-  totalMatches,
-  onSearch,
   onReset,
 }: DestinationFiltersProps) {
   const { user } = useAuth();
+  const [expanded, setExpanded] = useState(false);
+  const [regionPopoverOpen, setRegionPopoverOpen] = useState(false);
+  const popoverRef = useRef<HTMLDivElement>(null);
+
   const carOwnership = user?.user_metadata?.preferences?.carOwnership || "all";
   const showRental = carOwnership === "all" || carOwnership === "rental";
   const showMyCar = carOwnership === "all" || carOwnership === "my_car";
@@ -87,269 +137,371 @@ export default function DestinationFilters({
       setCarMode("none");
     }
   }, [showRental, showMyCar, carMode, setCarMode]);
+
+  // Click outside listener for Region/Prefecture Popover
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        popoverRef.current &&
+        !popoverRef.current.contains(event.target as Node)
+      ) {
+        setRegionPopoverOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Region Toggle Handler
+  const toggleRegion = (regionName: string) => {
+    const prefsInRegion = REGION_PREFECTURES_MAP[regionName] || [];
+    const isRegionSelected = selectedRegions.includes(regionName);
+
+    if (isRegionSelected) {
+      setSelectedRegions((prev) => prev.filter((r) => r !== regionName));
+      setSelectedPrefectures((prev) =>
+        prev.filter((p) => !prefsInRegion.includes(p)),
+      );
+    } else {
+      setSelectedRegions((prev) => [...prev, regionName]);
+      setSelectedPrefectures((prev) =>
+        Array.from(new Set([...prev, ...prefsInRegion])),
+      );
+    }
+  };
+
+  // Prefecture Toggle Handler
+  const togglePrefecture = (regionName: string, prefName: string) => {
+    const prefsInRegion = REGION_PREFECTURES_MAP[regionName] || [];
+    const isPrefSelected = selectedPrefectures.includes(prefName);
+
+    let nextPrefs: string[];
+    if (isPrefSelected) {
+      nextPrefs = selectedPrefectures.filter((p) => p !== prefName);
+    } else {
+      nextPrefs = [...selectedPrefectures, prefName];
+    }
+    setSelectedPrefectures(nextPrefs);
+
+    // Sync Region state
+    const allSelected = prefsInRegion.every((p) => nextPrefs.includes(p));
+    if (allSelected) {
+      if (!selectedRegions.includes(regionName)) {
+        setSelectedRegions((prev) => [...prev, regionName]);
+      }
+    } else {
+      if (selectedRegions.includes(regionName)) {
+        setSelectedRegions((prev) => prev.filter((r) => r !== regionName));
+      }
+    }
+  };
+
+  // Active Advanced Filters Count
+  const activeAdvancedCount =
+    (carMode !== "none" ? 1 : 0) +
+    (publicModes.length < 3 ? 1 : 0) +
+    (maxBudget < 100000 ? 1 : 0) +
+    (maxWalking < 25000 ? 1 : 0) +
+    (weather !== "all" ? 1 : 0) +
+    (partySize !== 2 ? 1 : 0) +
+    suitabilities.length +
+    interests.length;
+
+  const totalSelectedGeoCount =
+    selectedRegions.length + selectedPrefectures.length;
+
   return (
-    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm mb-8 space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {/* Search */}
-        <div className="space-y-3">
-          <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-            <Search className="w-4 h-4 mr-1.5 text-emerald-500" /> Search
-          </label>
-          <div className="relative">
-            <Search className="absolute left-4 top-3.5 h-5 w-5 text-slate-400" />
-            <Input
-              type="search"
-              placeholder="Name, region, tags..."
-              className="pl-12 h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus-visible:ring-emerald-500 rounded-xl text-base font-medium"
-              value={searchQuery}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                setSearchQuery(e.target.value)
-              }
-            />
-          </div>
+    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm mb-6 transition-all duration-200">
+      {/* Primary Toolbar Row (Compact) */}
+      <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3">
+        {/* Search Field */}
+        <div className="relative flex-1 min-w-[200px]">
+          <Search className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+          <Input
+            type="search"
+            placeholder="Search destination, keyword..."
+            className="pl-10 pr-8 h-10 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 focus-visible:ring-emerald-500 rounded-xl text-sm font-medium"
+            value={searchQuery}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setSearchQuery(e.target.value)
+            }
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              className="absolute right-2.5 top-2.5 p-0.5 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          )}
         </div>
 
-        {/* Sort By */}
-        <div className="space-y-3">
-          <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-            Sort By
-          </label>
+        {/* Region & Prefecture Multi-Select Dropdown Popover */}
+        <div className="relative" ref={popoverRef}>
+          <button
+            type="button"
+            onClick={() => setRegionPopoverOpen(!regionPopoverOpen)}
+            className={`h-10 px-3.5 rounded-xl border text-sm font-medium flex items-center justify-between gap-2 min-w-[200px] transition-colors ${
+              totalSelectedGeoCount > 0
+                ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300 font-bold"
+                : "border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-emerald-500"
+            }`}
+          >
+            <span className="flex items-center gap-1.5 truncate">
+              <MapPin className="w-4 h-4 text-emerald-500 shrink-0" />
+              {totalSelectedGeoCount === 0
+                ? "All Regions & Prefectures"
+                : `${selectedPrefectures.length} Prefecture${selectedPrefectures.length === 1 ? "" : "s"} selected`}
+            </span>
+            <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+          </button>
+
+          {/* Region / Prefecture Popover Content */}
+          {regionPopoverOpen && (
+            <div className="absolute left-0 mt-2 w-80 md:w-96 max-h-96 overflow-y-auto bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl z-50 p-4 space-y-4">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-800">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Filter by Region / Prefecture
+                </span>
+                {totalSelectedGeoCount > 0 && (
+                  <button
+                    onClick={() => {
+                      setSelectedRegions([]);
+                      setSelectedPrefectures([]);
+                    }}
+                    className="text-xs font-semibold text-rose-500 hover:underline"
+                  >
+                    Clear Selected
+                  </button>
+                )}
+              </div>
+
+              {Object.entries(REGION_PREFECTURES_MAP).map(
+                ([region, prefectures]) => {
+                  const isRegionChecked = selectedRegions.includes(region);
+                  return (
+                    <div key={region} className="space-y-1.5">
+                      <div className="flex items-center justify-between bg-slate-50 dark:bg-slate-900 px-2.5 py-1.5 rounded-lg">
+                        <label className="flex items-center gap-2 cursor-pointer text-xs font-bold text-slate-800 dark:text-slate-200">
+                          <input
+                            type="checkbox"
+                            checked={isRegionChecked}
+                            onChange={() => toggleRegion(region)}
+                            className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 w-3.5 h-3.5"
+                          />
+                          {region} Region
+                        </label>
+                        <span className="text-[10px] text-slate-400 font-medium">
+                          ({prefectures.length} Prefs)
+                        </span>
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-1 pl-4 pt-1">
+                        {prefectures.map((pref) => {
+                          const isPrefChecked =
+                            selectedPrefectures.includes(pref);
+                          return (
+                            <label
+                              key={pref}
+                              className="flex items-center gap-2 cursor-pointer text-xs text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white py-0.5"
+                            >
+                              <input
+                                type="checkbox"
+                                checked={isPrefChecked}
+                                onChange={() => togglePrefecture(region, pref)}
+                                className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 w-3 h-3"
+                              />
+                              <span
+                                className={
+                                  isPrefChecked
+                                    ? "font-bold text-emerald-600 dark:text-emerald-400"
+                                    : ""
+                                }
+                              >
+                                {pref}
+                              </span>
+                            </label>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                },
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Sort By Dropdown */}
+        <div className="w-full lg:w-48">
           <Select
             value={sortBy}
             onValueChange={(val: string | null) => {
               if (val) setSortBy(val);
             }}
           >
-            <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
+            <SelectTrigger className="h-10 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-xs">
               {sortBy === "overall" && (
                 <div className="flex items-center">
-                  <Star className="w-5 h-5 mr-3 text-amber-500" /> Highest Rated
+                  <Star className="w-3.5 h-3.5 mr-2 text-amber-500" /> Highest
+                  Rated
                 </div>
               )}
               {sortBy === "travelTime" && (
                 <div className="flex items-center">
-                  <Clock className="w-5 h-5 mr-3 text-blue-500" /> Fastest
+                  <Clock className="w-3.5 h-3.5 mr-2 text-blue-500" /> Fastest
                   Travel
                 </div>
               )}
               {sortBy === "budget" && (
                 <div className="flex items-center">
-                  <Coins className="w-5 h-5 mr-3 text-emerald-500" /> Lowest
+                  <Coins className="w-3.5 h-3.5 mr-2 text-emerald-500" /> Lowest
                   Budget
                 </div>
               )}
               {sortBy === "walking" && (
                 <div className="flex items-center">
-                  <Footprints className="w-5 h-5 mr-3 text-slate-500" /> Least
-                  Walking
+                  <Footprints className="w-3.5 h-3.5 mr-2 text-slate-500" />{" "}
+                  Least Walking
                 </div>
               )}
               {sortBy === "couple" && (
                 <div className="flex items-center">
-                  <Heart className="w-5 h-5 mr-3 text-rose-500" /> Best for
+                  <Heart className="w-3.5 h-3.5 mr-2 text-rose-500" /> Best for
                   Couples
                 </div>
               )}
               {sortBy === "summer" && (
                 <div className="flex items-center">
-                  <ThermometerSun className="w-5 h-5 mr-3 text-orange-500" />{" "}
+                  <ThermometerSun className="w-3.5 h-3.5 mr-2 text-orange-500" />{" "}
                   Best for Summer
                 </div>
               )}
               {sortBy === "winter" && (
                 <div className="flex items-center">
-                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" /> Best for
-                  Winter
+                  <Snowflake className="w-3.5 h-3.5 mr-2 text-cyan-500" /> Best
+                  for Winter
                 </div>
               )}
             </SelectTrigger>
             <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
               <SelectItem
                 value="overall"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                className="py-2 px-3 text-xs cursor-pointer"
               >
                 <div className="flex items-center">
-                  <Star className="w-4 h-4 mr-3 text-amber-500" />{" "}
-                  <span className="font-medium">Highest Rated</span>
+                  <Star className="w-3.5 h-3.5 mr-2 text-amber-500" /> Highest
+                  Rated
                 </div>
               </SelectItem>
               <SelectItem
                 value="travelTime"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                className="py-2 px-3 text-xs cursor-pointer"
               >
                 <div className="flex items-center">
-                  <Clock className="w-4 h-4 mr-3 text-blue-500" />{" "}
-                  <span className="font-medium">Fastest Travel</span>
+                  <Clock className="w-3.5 h-3.5 mr-2 text-blue-500" /> Fastest
+                  Travel
                 </div>
               </SelectItem>
               <SelectItem
                 value="budget"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                className="py-2 px-3 text-xs cursor-pointer"
               >
                 <div className="flex items-center">
-                  <Coins className="w-4 h-4 mr-3 text-emerald-500" />{" "}
-                  <span className="font-medium">Lowest Budget</span>
+                  <Coins className="w-3.5 h-3.5 mr-2 text-emerald-500" /> Lowest
+                  Budget
                 </div>
               </SelectItem>
               <SelectItem
                 value="walking"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                className="py-2 px-3 text-xs cursor-pointer"
               >
                 <div className="flex items-center">
-                  <Footprints className="w-4 h-4 mr-3 text-slate-500" />{" "}
-                  <span className="font-medium">Least Walking</span>
+                  <Footprints className="w-3.5 h-3.5 mr-2 text-slate-500" />{" "}
+                  Least Walking
                 </div>
               </SelectItem>
               <SelectItem
                 value="couple"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                className="py-2 px-3 text-xs cursor-pointer"
               >
                 <div className="flex items-center">
-                  <Heart className="w-4 h-4 mr-3 text-rose-500" />{" "}
-                  <span className="font-medium">Best for Couples</span>
+                  <Heart className="w-3.5 h-3.5 mr-2 text-rose-500" /> Best for
+                  Couples
                 </div>
               </SelectItem>
               <SelectItem
                 value="summer"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                className="py-2 px-3 text-xs cursor-pointer"
               >
                 <div className="flex items-center">
-                  <ThermometerSun className="w-4 h-4 mr-3 text-orange-500" />{" "}
-                  <span className="font-medium">Best for Summer</span>
+                  <ThermometerSun className="w-3.5 h-3.5 mr-2 text-orange-500" />{" "}
+                  Best for Summer
                 </div>
               </SelectItem>
               <SelectItem
                 value="winter"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
+                className="py-2 px-3 text-xs cursor-pointer"
               >
                 <div className="flex items-center">
-                  <Snowflake className="w-4 h-4 mr-3 text-cyan-500" />{" "}
-                  <span className="font-medium">Best for Winter</span>
+                  <Snowflake className="w-3.5 h-3.5 mr-2 text-cyan-500" /> Best
+                  for Winter
                 </div>
               </SelectItem>
             </SelectContent>
           </Select>
         </div>
 
-        {/* Weather */}
-        <div className="space-y-3">
-          <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-            Weather/Season
-          </label>
-          <Select
-            value={weather}
-            onValueChange={(val: string | null) => {
-              if (val) setWeather(val);
-            }}
-          >
-            <SelectTrigger className="h-12 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-colors rounded-xl font-medium text-base">
-              {weather === "all" && (
-                <div className="flex items-center">
-                  <Sparkles className="w-5 h-5 mr-3 text-slate-400" /> Any
-                  Weather
-                </div>
-              )}
-              {weather === "indoor" && (
-                <div className="flex items-center">
-                  <CloudRain className="w-5 h-5 mr-3 text-blue-400" /> Rainy Day
-                  (Indoor)
-                </div>
-              )}
-              {weather === "summer" && (
-                <div className="flex items-center">
-                  <ThermometerSun className="w-5 h-5 mr-3 text-orange-500" />{" "}
-                  Beat the Heat
-                </div>
-              )}
-              {weather === "winter" && (
-                <div className="flex items-center">
-                  <Snowflake className="w-5 h-5 mr-3 text-cyan-500" /> Winter
-                  Magic
-                </div>
-              )}
-            </SelectTrigger>
-            <SelectContent className="rounded-xl border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
-              <SelectItem
-                value="all"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <Sparkles className="w-4 h-4 mr-3 text-slate-400" />{" "}
-                  <span className="font-medium">Any Weather</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="indoor"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <CloudRain className="w-4 h-4 mr-3 text-blue-400" />{" "}
-                  <span className="font-medium">Rainy Day (Indoor)</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="summer"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <ThermometerSun className="w-4 h-4 mr-3 text-orange-500" />{" "}
-                  <span className="font-medium">Beat the Heat</span>
-                </div>
-              </SelectItem>
-              <SelectItem
-                value="winter"
-                className="py-2.5 px-3 cursor-pointer focus:bg-slate-50 dark:focus:bg-slate-900 rounded-lg"
-              >
-                <div className="flex items-center">
-                  <Snowflake className="w-4 h-4 mr-3 text-cyan-500" />{" "}
-                  <span className="font-medium">Winter Magic</span>
-                </div>
-              </SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-
-        {/* Party Size Stepper */}
-        <div className="space-y-3">
-          <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-            Party Size
-          </label>
-          <div className="flex items-center justify-between h-12 px-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
-            <button
-              onClick={() => setPartySize(Math.max(1, partySize - 1))}
-              className="w-8 h-8 flex items-center justify-center rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 transition-colors text-slate-600 dark:text-slate-400 font-bold"
-            >
-              -
-            </button>
-            <span className="font-semibold text-slate-700 dark:text-slate-200 w-16 text-center text-sm">
-              {partySize} {partySize === 1 ? "Person" : "People"}
+        {/* More Filters Toggle */}
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className={`h-10 px-3.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 transition-colors ${
+            expanded || activeAdvancedCount > 0
+              ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300"
+              : "border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-emerald-500"
+          }`}
+        >
+          <Filter className="w-3.5 h-3.5 text-emerald-500" />
+          <span>Filters</span>
+          {activeAdvancedCount > 0 && (
+            <span className="bg-emerald-500 text-white rounded-full w-4 h-4 text-[10px] flex items-center justify-center">
+              {activeAdvancedCount}
             </span>
-            <button
-              onClick={() => setPartySize(Math.min(10, partySize + 1))}
-              className="w-8 h-8 flex items-center justify-center rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 transition-colors text-slate-600 dark:text-slate-400 font-bold"
-            >
-              +
-            </button>
-          </div>
-        </div>
+          )}
+          {expanded ? (
+            <ChevronUp className="w-3.5 h-3.5" />
+          ) : (
+            <ChevronDown className="w-3.5 h-3.5" />
+          )}
+        </button>
+
+        {/* Quick Reset */}
+        <button
+          onClick={onReset}
+          className="h-10 px-3 text-xs font-semibold text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
+          title="Reset all filters"
+        >
+          Reset
+        </button>
       </div>
 
-      <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-          {/* Transport Options */}
-          <div className="space-y-3 lg:col-span-2">
-            <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-              Transport Mode
-            </label>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex-1">
-                <div className="flex gap-2">
+      {/* Collapsible Advanced Filters Drawer */}
+      {expanded && (
+        <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800 space-y-5 animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Transport Options */}
+            <div className="space-y-2 lg:col-span-2">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300">
+                Transport Mode
+              </label>
+              <div className="flex flex-col sm:flex-row gap-2">
+                <div className="flex gap-1.5 flex-1">
                   <button
                     onClick={() => setCarMode("none")}
-                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                    className={`flex-1 py-2 px-2 rounded-lg border text-xs font-bold transition-colors ${
                       carMode === "none"
                         ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
                     }`}
                   >
                     No Car
@@ -357,10 +509,10 @@ export default function DestinationFilters({
                   {showRental && (
                     <button
                       onClick={() => setCarMode("rental")}
-                      className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                      className={`flex-1 py-2 px-2 rounded-lg border text-xs font-bold transition-colors ${
                         carMode === "rental"
                           ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                          : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                          : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
                       }`}
                     >
                       Rental
@@ -369,19 +521,17 @@ export default function DestinationFilters({
                   {showMyCar && (
                     <button
                       onClick={() => setCarMode("my_car")}
-                      className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold transition-colors ${
+                      className={`flex-1 py-2 px-2 rounded-lg border text-xs font-bold transition-colors ${
                         carMode === "my_car"
                           ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                          : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                          : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
                       }`}
                     >
                       My Car
                     </button>
                   )}
                 </div>
-              </div>
-              <div className="flex-1">
-                <div className="flex gap-2">
+                <div className="flex gap-1.5 flex-1">
                   <button
                     onClick={() =>
                       setPublicModes(
@@ -390,13 +540,13 @@ export default function DestinationFilters({
                           : [...publicModes, "train"],
                       )
                     }
-                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
+                    className={`flex-1 py-2 px-2 rounded-lg border text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
                       publicModes.includes("train")
                         ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
                     }`}
                   >
-                    <Train className="w-3.5 h-3.5" /> Train
+                    <Train className="w-3 h-3" /> Train
                   </button>
                   <button
                     onClick={() =>
@@ -406,13 +556,13 @@ export default function DestinationFilters({
                           : [...publicModes, "shinkansen"],
                       )
                     }
-                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
+                    className={`flex-1 py-2 px-2 rounded-lg border text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
                       publicModes.includes("shinkansen")
                         ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
                     }`}
                   >
-                    <TrainFront className="w-3.5 h-3.5" /> Bullet
+                    <TrainFront className="w-3 h-3" /> Bullet
                   </button>
                   <button
                     onClick={() =>
@@ -422,175 +572,202 @@ export default function DestinationFilters({
                           : [...publicModes, "bus"],
                       )
                     }
-                    className={`flex-1 py-3 px-2 rounded-xl border-2 text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
+                    className={`flex-1 py-2 px-2 rounded-lg border text-xs font-bold flex items-center justify-center gap-1 transition-colors ${
                       publicModes.includes("bus")
                         ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400"
+                        : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
                     }`}
                   >
-                    <Bus className="w-3.5 h-3.5" /> Bus
+                    <Bus className="w-3 h-3" /> Bus
                   </button>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Budget Slider */}
-          <div className="space-y-4 lg:col-span-1">
-            <div className="flex justify-between items-center">
-              <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-                Max Budget
+            {/* Weather / Season */}
+            <div className="space-y-2 lg:col-span-1">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300">
+                Weather/Season
               </label>
-              <span className="text-sm font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400 px-2 py-1 rounded-md">
-                ¥{maxBudget.toLocaleString()}
-              </span>
+              <Select
+                value={weather}
+                onValueChange={(val: string | null) => {
+                  if (val) setWeather(val);
+                }}
+              >
+                <SelectTrigger className="h-9 bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-lg text-xs font-medium">
+                  {weather === "all" && "Any Weather"}
+                  {weather === "indoor" && "Rainy Day (Indoor)"}
+                  {weather === "summer" && "Beat the Heat"}
+                  {weather === "winter" && "Winter Magic"}
+                </SelectTrigger>
+                <SelectContent className="rounded-lg border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-950 p-1">
+                  <SelectItem value="all" className="py-1.5 px-2.5 text-xs">
+                    Any Weather
+                  </SelectItem>
+                  <SelectItem value="indoor" className="py-1.5 px-2.5 text-xs">
+                    Rainy Day (Indoor)
+                  </SelectItem>
+                  <SelectItem value="summer" className="py-1.5 px-2.5 text-xs">
+                    Beat the Heat
+                  </SelectItem>
+                  <SelectItem value="winter" className="py-1.5 px-2.5 text-xs">
+                    Winter Magic
+                  </SelectItem>
+                </SelectContent>
+              </Select>
             </div>
-            <Slider
-              value={[maxBudget]}
-              max={100000}
-              step={5000}
-              onValueChange={(val: number | readonly number[]) =>
-                setMaxBudget(Array.isArray(val) ? val[0] : val)
-              }
-              className="w-full"
-            />
-            <div className="flex justify-between text-xs text-slate-400 font-medium">
-              <span>¥0</span>
-              <span>¥100k+</span>
-            </div>
-          </div>
 
-          {/* Walking Slider */}
-          <div className="space-y-4 lg:col-span-1">
-            <div className="flex justify-between items-center">
-              <label className="text-sm font-bold flex items-center text-slate-700 dark:text-slate-300">
-                Max Walking
+            {/* Party Size Stepper */}
+            <div className="space-y-2 lg:col-span-1">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300">
+                Party Size
               </label>
-              <span className="text-sm font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400 px-2 py-1 rounded-md">
-                {maxWalking >= 25000
-                  ? "Any amount"
-                  : `${(maxWalking / 1000).toFixed(1)}k steps`}
-              </span>
-            </div>
-            <Slider
-              value={[maxWalking]}
-              min={2000}
-              max={25000}
-              step={1000}
-              onValueChange={(val: number | readonly number[]) =>
-                setMaxWalking(Array.isArray(val) ? val[0] : val)
-              }
-              className="w-full"
-            />
-            <div className="flex justify-between text-xs text-slate-400 font-medium">
-              <span>2k steps</span>
-              <span>25k+</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Suitability & Interests Checkboxes */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full pt-6 border-t border-slate-100 dark:border-slate-800">
-          <div className="space-y-3">
-            <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
-              Suitability
-            </label>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { id: "solo", label: "Solo Friendly" },
-                { id: "couple", label: "Couple Friendly" },
-                { id: "family", label: "Family Friendly" },
-                { id: "accessible", label: "Accessible (Low Intensity)" },
-              ].map((s) => {
-                const active = suitabilities.includes(s.id);
-                return (
-                  <button
-                    key={s.id}
-                    type="button"
-                    onClick={() =>
-                      setSuitabilities((prev) =>
-                        prev.includes(s.id)
-                          ? prev.filter((x) => x !== s.id)
-                          : [...prev, s.id],
-                      )
-                    }
-                    className={`py-2 px-3.5 rounded-xl border text-xs font-bold transition-all ${
-                      active
-                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900"
-                    }`}
-                  >
-                    {active ? "✓ " : ""}
-                    {s.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="space-y-3">
-            <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
-              Interests
-            </label>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { id: "nature", label: "Nature" },
-                { id: "history", label: "History" },
-                { id: "food", label: "Food" },
-                { id: "hiking", label: "Hiking" },
-                { id: "photography", label: "Photography" },
-              ].map((interest) => {
-                const active = interests.includes(interest.id);
-                return (
-                  <button
-                    key={interest.id}
-                    type="button"
-                    onClick={() =>
-                      setInterests((prev) =>
-                        prev.includes(interest.id)
-                          ? prev.filter((x) => x !== interest.id)
-                          : [...prev, interest.id],
-                      )
-                    }
-                    className={`py-2 px-3.5 rounded-xl border text-xs font-bold transition-all ${
-                      active
-                        ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400"
-                        : "border-slate-200 text-slate-600 hover:border-emerald-200 dark:border-slate-700 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900"
-                    }`}
-                  >
-                    {active ? "✓ " : ""}
-                    {interest.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        {/* Action Bar: Reset & Primary Search CTA */}
-        <div className="w-full flex flex-col sm:flex-row items-center justify-end gap-3 shrink-0 mt-6 pt-4 border-t border-slate-100 dark:border-slate-800">
-          <button
-            onClick={onReset}
-            className="w-full sm:w-auto px-5 py-2.5 text-sm font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 rounded-xl transition-colors h-11 flex items-center justify-center"
-          >
-            Reset Filters
-          </button>
-          {onSearch && (
-            <button
-              onClick={onSearch}
-              className="w-full sm:w-auto px-6 py-2.5 text-sm font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 h-11 flex items-center justify-center gap-2 group"
-            >
-              <Search className="w-4 h-4 transition-transform group-hover:scale-110" />
-              <span>Search Destinations</span>
-              {typeof totalMatches === "number" && (
-                <span className="bg-white/20 px-2 py-0.5 rounded-full text-xs font-semibold">
-                  {totalMatches}
+              <div className="flex items-center justify-between h-9 px-2 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+                <button
+                  onClick={() => setPartySize(Math.max(1, partySize - 1))}
+                  className="w-6 h-6 flex items-center justify-center rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 font-bold text-xs"
+                >
+                  -
+                </button>
+                <span className="font-semibold text-xs text-slate-700 dark:text-slate-200">
+                  {partySize} {partySize === 1 ? "Person" : "People"}
                 </span>
-              )}
-            </button>
-          )}
+                <button
+                  onClick={() => setPartySize(Math.min(10, partySize + 1))}
+                  className="w-6 h-6 flex items-center justify-center rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 font-bold text-xs"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Budget & Walking Sliders */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-3 border-t border-slate-100 dark:border-slate-800">
+            <div className="space-y-2">
+              <div className="flex justify-between items-center text-xs">
+                <label className="font-bold text-slate-700 dark:text-slate-300">
+                  Max Budget
+                </label>
+                <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                  ¥{maxBudget.toLocaleString()}
+                </span>
+              </div>
+              <Slider
+                value={[maxBudget]}
+                max={100000}
+                step={5000}
+                onValueChange={(val: number | readonly number[]) =>
+                  setMaxBudget(Array.isArray(val) ? val[0] : val)
+                }
+                className="w-full"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex justify-between items-center text-xs">
+                <label className="font-bold text-slate-700 dark:text-slate-300">
+                  Max Walking
+                </label>
+                <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                  {maxWalking >= 25000
+                    ? "Any amount"
+                    : `${(maxWalking / 1000).toFixed(1)}k steps`}
+                </span>
+              </div>
+              <Slider
+                value={[maxWalking]}
+                min={2000}
+                max={25000}
+                step={1000}
+                onValueChange={(val: number | readonly number[]) =>
+                  setMaxWalking(Array.isArray(val) ? val[0] : val)
+                }
+                className="w-full"
+              />
+            </div>
+          </div>
+
+          {/* Suitability & Interests Checkboxes */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-3 border-t border-slate-100 dark:border-slate-800">
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300">
+                Suitability
+              </label>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  { id: "solo", label: "Solo Friendly" },
+                  { id: "couple", label: "Couple Friendly" },
+                  { id: "family", label: "Family Friendly" },
+                  { id: "accessible", label: "Accessible" },
+                ].map((s) => {
+                  const active = suitabilities.includes(s.id);
+                  return (
+                    <button
+                      key={s.id}
+                      type="button"
+                      onClick={() =>
+                        setSuitabilities((prev) =>
+                          prev.includes(s.id)
+                            ? prev.filter((x) => x !== s.id)
+                            : [...prev, s.id],
+                        )
+                      }
+                      className={`py-1 px-2.5 rounded-lg border text-xs font-medium transition-all ${
+                        active
+                          ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400 font-bold"
+                          : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
+                      }`}
+                    >
+                      {active ? "✓ " : ""}
+                      {s.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300">
+                Interests
+              </label>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  { id: "nature", label: "Nature" },
+                  { id: "history", label: "History" },
+                  { id: "food", label: "Food" },
+                  { id: "hiking", label: "Hiking" },
+                  { id: "photography", label: "Photography" },
+                ].map((interest) => {
+                  const active = interests.includes(interest.id);
+                  return (
+                    <button
+                      key={interest.id}
+                      type="button"
+                      onClick={() =>
+                        setInterests((prev) =>
+                          prev.includes(interest.id)
+                            ? prev.filter((x) => x !== interest.id)
+                            : [...prev, interest.id],
+                        )
+                      }
+                      className={`py-1 px-2.5 rounded-lg border text-xs font-medium transition-all ${
+                        active
+                          ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400 font-bold"
+                          : "border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400"
+                      }`}
+                    >
+                      {active ? "✓ " : ""}
+                      {interest.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

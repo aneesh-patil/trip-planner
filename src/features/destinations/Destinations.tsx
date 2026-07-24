@@ -50,6 +50,8 @@ export default function Destinations() {
   const [currentPage, setCurrentPage] = useState(1);
   const ITEMS_PER_PAGE = 20;
 
+  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  const [selectedPrefectures, setSelectedPrefectures] = useState<string[]>([]);
   const query = searchQuery.toLowerCase().trim();
 
   // Sync preferences on load
@@ -66,6 +68,8 @@ export default function Destinations() {
     setCurrentPage(1);
   }, [
     searchQuery,
+    selectedRegions,
+    selectedPrefectures,
     maxBudget,
     sortBy,
     carMode,
@@ -96,6 +100,15 @@ export default function Destinations() {
       }
       return dest;
     });
+
+    // 0. Filter by Region & Prefecture
+    if (selectedRegions.length > 0 || selectedPrefectures.length > 0) {
+      result = result.filter((dest) => {
+        const matchRegion = selectedRegions.includes(dest.region);
+        const matchPref = selectedPrefectures.includes(dest.prefecture);
+        return matchRegion || matchPref;
+      });
+    }
 
     // 1. Search
     if (query) {
@@ -213,6 +226,8 @@ export default function Destinations() {
 
   const resetFilters = () => {
     setSearchQuery("");
+    setSelectedRegions([]);
+    setSelectedPrefectures([]);
     setMaxBudget(100000);
     setSortBy("overall");
     setCarMode("none");
@@ -224,23 +239,16 @@ export default function Destinations() {
     setInterests([]);
   };
 
-  const handleSearchSubmit = () => {
-    const resultsEl = document.getElementById("results-grid");
-    if (resultsEl) {
-      resultsEl.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
         <div>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
-            Explore Destinations
+            Destinations
           </h1>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl">
-            Find the perfect adventure across Japan. Filter by budget, season,
-            and vibe.
+            Find the perfect adventure across Japan. Filter by region,
+            prefecture, budget, and vibe.
           </p>
           <div className="mt-4">
             <StationInput />
@@ -279,6 +287,10 @@ export default function Destinations() {
       <DestinationFilters
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
+        selectedRegions={selectedRegions}
+        setSelectedRegions={setSelectedRegions}
+        selectedPrefectures={selectedPrefectures}
+        setSelectedPrefectures={setSelectedPrefectures}
         maxBudget={maxBudget}
         setMaxBudget={setMaxBudget}
         sortBy={sortBy}
@@ -297,8 +309,6 @@ export default function Destinations() {
         setSuitabilities={setSuitabilities}
         interests={interests}
         setInterests={setInterests}
-        totalMatches={filteredAndSortedDestinations.length}
-        onSearch={handleSearchSubmit}
         onReset={resetFilters}
       />
 

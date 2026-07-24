@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
-  Compass,
   Calendar,
   Map,
   Settings,
@@ -66,7 +65,6 @@ export default function Navbar() {
   }, [user, loading]);
 
   const navItems = [
-    { name: "Explore", path: "/", icon: Compass },
     { name: "Destinations", path: "/destinations", icon: Map },
     { name: "Prefectures", path: "/visited-map", icon: CheckSquare },
     { name: "Compare", path: "/compare", icon: Settings },
