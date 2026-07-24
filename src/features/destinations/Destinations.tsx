@@ -52,6 +52,7 @@ export default function Destinations() {
 
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
   const [selectedPrefectures, setSelectedPrefectures] = useState<string[]>([]);
+  const [selectedCollections, setSelectedCollections] = useState<string[]>([]);
   const query = searchQuery.toLowerCase().trim();
 
   // Sync preferences on load
@@ -70,6 +71,7 @@ export default function Destinations() {
     searchQuery,
     selectedRegions,
     selectedPrefectures,
+    selectedCollections,
     maxBudget,
     sortBy,
     carMode,
@@ -101,7 +103,17 @@ export default function Destinations() {
       return dest;
     });
 
-    // 0. Filter by Region & Prefecture
+    // 0. Filter by Curated Collections (OR Semantics)
+    if (selectedCollections.length > 0) {
+      result = result.filter((dest) => {
+        if (!dest.collections || dest.collections.length === 0) return false;
+        return dest.collections.some((m) =>
+          selectedCollections.includes(m.collectionId),
+        );
+      });
+    }
+
+    // 0.5. Filter by Region & Prefecture
     if (selectedRegions.length > 0 || selectedPrefectures.length > 0) {
       result = result.filter((dest) => {
         const matchRegion = selectedRegions.includes(dest.region);
@@ -228,6 +240,7 @@ export default function Destinations() {
     setSearchQuery("");
     setSelectedRegions([]);
     setSelectedPrefectures([]);
+    setSelectedCollections([]);
     setMaxBudget(100000);
     setSortBy("overall");
     setCarMode("none");
@@ -248,7 +261,7 @@ export default function Destinations() {
           </h1>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl">
             Find the perfect adventure across Japan. Filter by region,
-            prefecture, budget, and vibe.
+            prefecture, collections, budget, and vibe.
           </p>
           <div className="mt-4">
             <StationInput />
@@ -291,6 +304,8 @@ export default function Destinations() {
         setSelectedRegions={setSelectedRegions}
         selectedPrefectures={selectedPrefectures}
         setSelectedPrefectures={setSelectedPrefectures}
+        selectedCollections={selectedCollections}
+        setSelectedCollections={setSelectedCollections}
         maxBudget={maxBudget}
         setMaxBudget={setMaxBudget}
         sortBy={sortBy}
@@ -396,10 +411,12 @@ export default function Destinations() {
       {filteredAndSortedDestinations.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-slate-500">
           <Frown className="w-12 h-12 mb-4 text-slate-400" />
-          <h3 className="text-xl font-medium text-slate-700 dark:text-slate-300">
-            No destinations found
+          <h3 className="text-xl font-bold text-slate-700 dark:text-slate-300">
+            No destinations match the selected filters.
           </h3>
-          <p>Try adjusting your filters or search query.</p>
+          <p className="text-sm mt-1">
+            Try adjusting your search terms or clearing some filters.
+          </p>
         </div>
       ) : viewMode === "map" ? (
         <DestinationMap

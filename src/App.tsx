@@ -26,6 +26,13 @@ const Privacy = lazy(() => import("./features/legal/Privacy"));
 const Cookies = lazy(() => import("./features/legal/Cookies"));
 const MyTrips = lazy(() => import("./features/profile/MyTrips"));
 
+const CollectionsDirectory = lazy(
+  () => import("./features/collections/CollectionsDirectory"),
+);
+const CollectionDetails = lazy(
+  () => import("./features/collections/CollectionDetails"),
+);
+
 function PageLoader() {
   return (
     <div className="flex items-center justify-center min-h-[60vh]">
@@ -50,6 +57,14 @@ function App() {
                     <Route
                       path="/destinations/:id"
                       element={<DestinationDetails />}
+                    />
+                    <Route
+                      path="/collections"
+                      element={<CollectionsDirectory />}
+                    />
+                    <Route
+                      path="/collections/:slug"
+                      element={<CollectionDetails />}
                     />
                     <Route path="/compare" element={<Compare />} />
                     <Route

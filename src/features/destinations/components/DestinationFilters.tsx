@@ -64,6 +64,9 @@ const REGION_PREFECTURES_MAP: Record<string, string[]> = {
   Shikoku: ["Ehime", "Kagawa", "Kochi", "Tokushima"],
 };
 
+import { getCollections } from "@/shared/data/collections";
+import { Layers } from "lucide-react";
+
 interface DestinationFiltersProps {
   searchQuery: string;
   setSearchQuery: (val: string) => void;
@@ -71,6 +74,10 @@ interface DestinationFiltersProps {
   setSelectedRegions: (val: string[] | ((prev: string[]) => string[])) => void;
   selectedPrefectures: string[];
   setSelectedPrefectures: (
+    val: string[] | ((prev: string[]) => string[]),
+  ) => void;
+  selectedCollections: string[];
+  setSelectedCollections: (
     val: string[] | ((prev: string[]) => string[]),
   ) => void;
   maxBudget: number;
@@ -101,6 +108,8 @@ export default function DestinationFilters({
   setSelectedRegions,
   selectedPrefectures,
   setSelectedPrefectures,
+  selectedCollections,
+  setSelectedCollections,
   maxBudget,
   setMaxBudget,
   sortBy,
@@ -124,7 +133,11 @@ export default function DestinationFilters({
   const { user } = useAuth();
   const [expanded, setExpanded] = useState(false);
   const [regionPopoverOpen, setRegionPopoverOpen] = useState(false);
+  const [collectionPopoverOpen, setCollectionPopoverOpen] = useState(false);
   const popoverRef = useRef<HTMLDivElement>(null);
+  const collectionPopoverRef = useRef<HTMLDivElement>(null);
+
+  const availableCollections = getCollections();
 
   const carOwnership = user?.user_metadata?.preferences?.carOwnership || "all";
   const showRental = carOwnership === "all" || carOwnership === "rental";
@@ -328,6 +341,80 @@ export default function DestinationFilters({
                   );
                 },
               )}
+            </div>
+          )}
+        </div>
+
+        {/* Curated Collections Multi-Select Dropdown Popover */}
+        <div className="relative" ref={collectionPopoverRef}>
+          <button
+            type="button"
+            onClick={() => setCollectionPopoverOpen(!collectionPopoverOpen)}
+            className={`h-10 px-3.5 rounded-xl border text-sm font-medium flex items-center justify-between gap-2 min-w-[180px] transition-colors ${
+              selectedCollections.length > 0
+                ? "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300 font-bold"
+                : "border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-emerald-500"
+            }`}
+          >
+            <span className="flex items-center gap-1.5 truncate">
+              <Layers className="w-4 h-4 text-emerald-500 shrink-0" />
+              {selectedCollections.length === 0
+                ? "All Collections"
+                : `${selectedCollections.length} Collection${selectedCollections.length === 1 ? "" : "s"}`}
+            </span>
+            <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+          </button>
+
+          {/* Collection Popover Content */}
+          {collectionPopoverOpen && (
+            <div className="absolute left-0 mt-2 w-72 max-h-80 overflow-y-auto bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl z-50 p-3.5 space-y-3">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-800">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Filter by Collection (OR)
+                </span>
+                {selectedCollections.length > 0 && (
+                  <button
+                    onClick={() => setSelectedCollections([])}
+                    className="text-xs font-semibold text-rose-500 hover:underline"
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
+
+              <div className="space-y-1.5">
+                {availableCollections.map((col) => {
+                  const isChecked = selectedCollections.includes(col.id);
+                  return (
+                    <label
+                      key={col.id}
+                      className="flex items-center gap-2 cursor-pointer text-xs text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900 p-1.5 rounded-lg transition-colors"
+                    >
+                      <input
+                        type="checkbox"
+                        checked={isChecked}
+                        onChange={() => {
+                          setSelectedCollections((prev) =>
+                            prev.includes(col.id)
+                              ? prev.filter((id) => id !== col.id)
+                              : [...prev, col.id],
+                          );
+                        }}
+                        className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 w-3.5 h-3.5"
+                      />
+                      <span
+                        className={
+                          isChecked
+                            ? "font-bold text-emerald-600 dark:text-emerald-400"
+                            : ""
+                        }
+                      >
+                        {col.name}
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
             </div>
           )}
         </div>

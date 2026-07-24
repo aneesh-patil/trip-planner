@@ -6,6 +6,10 @@ import { getDestination } from "@/shared/services/destination/DestinationService
 import destinationsData from "@/shared/data/destinations-index.json";
 import DestinationCard from "./components/DestinationCard";
 import type { Destination } from "@/shared/types/destination";
+import type { Collection } from "@/shared/types/collection";
+import CollectionBadge from "@/shared/components/ui/CollectionBadge";
+import { getCollectionById } from "@/shared/data/collections";
+import { sortCollections } from "@/shared/utils/collections";
 import { getValidModes } from "@/shared/services/recommendation/RecommendationService";
 import { calculateScore } from "@/shared/services/recommendation/RecommendationScorer";
 import { createRecommendationMatch } from "@/shared/services/recommendation/RecommendationExplainability";
@@ -19,6 +23,7 @@ import {
   Umbrella,
   Camera,
   Coffee,
+  Info,
   Utensils,
   Cloud,
   CloudRain,
@@ -374,6 +379,18 @@ export default function DestinationDetails() {
             <Badge className="bg-emerald-600 hover:bg-emerald-500 border-none">
               {destination.region}
             </Badge>
+            {/* Curated Collection Badges */}
+            {(() => {
+              const activeCols = (destination.collections || [])
+                .map((m) => getCollectionById(m.collectionId))
+                .filter((c): c is Collection => Boolean(c));
+              const sortedCols = sortCollections(activeCols);
+              return sortedCols.map((col) => (
+                <Link key={col.id} to={`/collections/${col.slug}`}>
+                  <CollectionBadge collection={col} size="md" />
+                </Link>
+              ));
+            })()}
             {destination.tags &&
               destination.tags.map((tag) => {
                 if (tag === "12 Original Keeps") {
@@ -586,6 +603,17 @@ export default function DestinationDetails() {
                     wikiSummary?.extract ||
                     destination.notes}
                 </p>
+              )}
+
+              {/* Reassuring Beta Travel Estimate Calibration Notice */}
+              {destination.travelEstimate?.confidence === "beta" && (
+                <div className="bg-amber-500/10 border border-amber-500/30 text-amber-900 dark:text-amber-200 p-3.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 mb-6">
+                  <Info className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                  <span>
+                    Travel estimates for this region are still being refined.
+                    Actual travel times may vary slightly.
+                  </span>
+                </div>
               )}
 
               {/* Blended Wikipedia Context Box when local description is present */}

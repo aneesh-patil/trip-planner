@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import type { Destination } from "@/shared/types/destination";
+import type { Collection } from "@/shared/types/collection";
+import CollectionBadge from "@/shared/components/ui/CollectionBadge";
+import { getCollectionById } from "@/shared/data/collections";
+import { sortCollections } from "@/shared/utils/collections";
 import {
   Card,
   CardContent,
@@ -102,6 +106,14 @@ export default function DestinationCard({
       ? { carMode, publicModes }
       : undefined;
 
+  const activeCollections = (destination.collections || [])
+    .map((m) => getCollectionById(m.collectionId))
+    .filter((c): c is Collection => Boolean(c));
+
+  const sortedCollections = sortCollections(activeCollections);
+  const visibleCollections = sortedCollections.slice(0, 3);
+  const overflowCount = sortedCollections.length - visibleCollections.length;
+
   return (
     <Card className="overflow-hidden flex flex-col h-full group rounded-card shadow-card hover:shadow-hover hover:-translate-y-1 transition-all duration-300 border-slate-200 dark:border-slate-800">
       <div className="relative h-56 overflow-hidden">
@@ -200,6 +212,26 @@ export default function DestinationCard({
             </span>
           </div>
         </div>
+
+        {/* Curated Collection Badges */}
+        {sortedCollections.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-2.5">
+            {visibleCollections.map((col) => (
+              <Link
+                key={col.id}
+                to={`/collections/${col.slug}`}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <CollectionBadge collection={col} size="sm" />
+              </Link>
+            ))}
+            {overflowCount > 0 && (
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
+                +{overflowCount}
+              </span>
+            )}
+          </div>
+        )}
       </CardHeader>
 
       <CardContent className="pb-5 flex-grow">
