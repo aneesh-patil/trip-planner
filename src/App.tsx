@@ -17,9 +17,7 @@ import { Toaster } from "sonner";
 const DestinationDetails = lazy(
   () => import("./features/destinations/DestinationDetails"),
 );
-const PrefectureChecklist = lazy(
-  () => import("./features/map/PrefectureChecklist"),
-);
+const Passport = lazy(() => import("./features/passport/Passport"));
 const Terms = lazy(() => import("./features/legal/Terms"));
 const Privacy = lazy(() => import("./features/legal/Privacy"));
 const Cookies = lazy(() => import("./features/legal/Cookies"));
@@ -81,7 +79,7 @@ function App() {
                     />
                     <Route path="/bucket-list" element={<MyTrips />} />
                     <Route path="/my-trips" element={<MyTrips />} />
-                    <Route path="/passport" element={<PrefectureChecklist />} />
+                    <Route path="/passport" element={<Passport />} />
                     <Route
                       path="/visited-map"
                       element={<Navigate to="/passport" replace />}

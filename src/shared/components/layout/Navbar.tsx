@@ -28,15 +28,31 @@ export default function Navbar() {
   const [profileOpen, setProfileOpen] = useState(false);
   const [preferencesOpen, setPreferencesOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
-  // Dropdown states for primary categories
+
+  // Desktop dropdown state
   const [discoverOpen, setDiscoverOpen] = useState(false);
   const [planOpen, setPlanOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
 
+  // Mobile accordion state
+  const [mobileDiscoverOpen, setMobileDiscoverOpen] = useState(true);
+  const [mobilePlanOpen, setMobilePlanOpen] = useState(true);
+  const [mobilePassportOpen, setMobilePassportOpen] = useState(true);
+
+  // DOM refs for click-outside and focus management
   const userMenuRef = useRef<HTMLDivElement>(null);
   const discoverRef = useRef<HTMLDivElement>(null);
   const planRef = useRef<HTMLDivElement>(null);
   const passportRef = useRef<HTMLDivElement>(null);
+
+  const discoverBtnRef = useRef<HTMLButtonElement>(null);
+  const planBtnRef = useRef<HTMLButtonElement>(null);
+  const passportBtnRef = useRef<HTMLButtonElement>(null);
+
+  // Hover grace window timers (180ms delay)
+  const discoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const planTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const passportTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -73,6 +89,59 @@ export default function Navbar() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // Graceful hover helpers
+  const handleMouseEnterDiscover = () => {
+    if (discoverTimerRef.current) clearTimeout(discoverTimerRef.current);
+    setDiscoverOpen(true);
+  };
+  const handleMouseLeaveDiscover = () => {
+    discoverTimerRef.current = setTimeout(() => {
+      setDiscoverOpen(false);
+    }, 180);
+  };
+
+  const handleMouseEnterPlan = () => {
+    if (planTimerRef.current) clearTimeout(planTimerRef.current);
+    setPlanOpen(true);
+  };
+  const handleMouseLeavePlan = () => {
+    planTimerRef.current = setTimeout(() => {
+      setPlanOpen(false);
+    }, 180);
+  };
+
+  const handleMouseEnterPassport = () => {
+    if (passportTimerRef.current) clearTimeout(passportTimerRef.current);
+    setPassportOpen(true);
+  };
+  const handleMouseLeavePassport = () => {
+    passportTimerRef.current = setTimeout(() => {
+      setPassportOpen(false);
+    }, 180);
+  };
+
+  // Keyboard accessibility
+  const handleKeyDownDiscover = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") {
+      setDiscoverOpen(false);
+      discoverBtnRef.current?.focus();
+    }
+  };
+
+  const handleKeyDownPlan = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") {
+      setPlanOpen(false);
+      planBtnRef.current?.focus();
+    }
+  };
+
+  const handleKeyDownPassport = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") {
+      setPassportOpen(false);
+      passportBtnRef.current?.focus();
+    }
+  };
 
   const isDiscoverActive =
     location.pathname.startsWith("/destinations") ||
@@ -118,11 +187,15 @@ export default function Navbar() {
             <div
               className="relative group"
               ref={discoverRef}
-              onMouseEnter={() => setDiscoverOpen(true)}
-              onMouseLeave={() => setDiscoverOpen(false)}
+              onMouseEnter={handleMouseEnterDiscover}
+              onMouseLeave={handleMouseLeaveDiscover}
+              onKeyDown={handleKeyDownDiscover}
             >
               <button
+                ref={discoverBtnRef}
                 onClick={() => setDiscoverOpen((o) => !o)}
+                aria-expanded={discoverOpen}
+                aria-haspopup="true"
                 className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
                   isDiscoverActive
                     ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
@@ -131,7 +204,11 @@ export default function Navbar() {
               >
                 <Map className="w-4 h-4" />
                 <span>Discover</span>
-                <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+                <ChevronDown
+                  className={`w-3.5 h-3.5 opacity-70 transition-transform duration-200 ${
+                    discoverOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
               {discoverOpen && (
@@ -140,7 +217,11 @@ export default function Navbar() {
                     <Link
                       to="/destinations"
                       onClick={() => setDiscoverOpen(false)}
-                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                      className={`flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item ${
+                        location.pathname.startsWith("/destinations")
+                          ? "bg-slate-50 dark:bg-slate-800/80 font-bold"
+                          : ""
+                      }`}
                     >
                       <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
                         <Map className="w-4 h-4" />
@@ -158,7 +239,11 @@ export default function Navbar() {
                     <Link
                       to="/collections"
                       onClick={() => setDiscoverOpen(false)}
-                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                      className={`flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item ${
+                        location.pathname.startsWith("/collections")
+                          ? "bg-slate-50 dark:bg-slate-800/80 font-bold"
+                          : ""
+                      }`}
                     >
                       <div className="p-2 rounded-lg bg-teal-50 dark:bg-teal-950/60 text-teal-600 dark:text-teal-400 group-hover/item:scale-105 transition-transform">
                         <CheckCircle2 className="w-4 h-4" />
@@ -181,11 +266,15 @@ export default function Navbar() {
             <div
               className="relative group"
               ref={planRef}
-              onMouseEnter={() => setPlanOpen(true)}
-              onMouseLeave={() => setPlanOpen(false)}
+              onMouseEnter={handleMouseEnterPlan}
+              onMouseLeave={handleMouseLeavePlan}
+              onKeyDown={handleKeyDownPlan}
             >
               <button
+                ref={planBtnRef}
                 onClick={() => setPlanOpen((o) => !o)}
+                aria-expanded={planOpen}
+                aria-haspopup="true"
                 className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
                   isPlanActive
                     ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
@@ -194,7 +283,11 @@ export default function Navbar() {
               >
                 <Calendar className="w-4 h-4" />
                 <span>Plan</span>
-                <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+                <ChevronDown
+                  className={`w-3.5 h-3.5 opacity-70 transition-transform duration-200 ${
+                    planOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
               {planOpen && (
@@ -203,7 +296,11 @@ export default function Navbar() {
                     <Link
                       to="/my-trips"
                       onClick={() => setPlanOpen(false)}
-                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                      className={`flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item ${
+                        location.pathname === "/my-trips"
+                          ? "bg-slate-50 dark:bg-slate-800/80 font-bold"
+                          : ""
+                      }`}
                     >
                       <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
                         <Calendar className="w-4 h-4" />
@@ -221,7 +318,11 @@ export default function Navbar() {
                     <Link
                       to="/bucket-list"
                       onClick={() => setPlanOpen(false)}
-                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                      className={`flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item ${
+                        location.pathname === "/bucket-list"
+                          ? "bg-slate-50 dark:bg-slate-800/80 font-bold"
+                          : ""
+                      }`}
                     >
                       <div className="p-2 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-500 group-hover/item:scale-105 transition-transform">
                         <Bookmark className="w-4 h-4" />
@@ -244,11 +345,15 @@ export default function Navbar() {
             <div
               className="relative group"
               ref={passportRef}
-              onMouseEnter={() => setPassportOpen(true)}
-              onMouseLeave={() => setPassportOpen(false)}
+              onMouseEnter={handleMouseEnterPassport}
+              onMouseLeave={handleMouseLeavePassport}
+              onKeyDown={handleKeyDownPassport}
             >
-              <Link
-                to="/passport"
+              <button
+                ref={passportBtnRef}
+                onClick={() => setPassportOpen((o) => !o)}
+                aria-expanded={passportOpen}
+                aria-haspopup="true"
                 className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-all rounded-lg ${
                   isPassportActive
                     ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50/70 dark:bg-emerald-950/40 border-b-2 border-emerald-500"
@@ -257,8 +362,12 @@ export default function Navbar() {
               >
                 <Compass className="w-4 h-4" />
                 <span>Passport</span>
-                <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
-              </Link>
+                <ChevronDown
+                  className={`w-3.5 h-3.5 opacity-70 transition-transform duration-200 ${
+                    passportOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
 
               {passportOpen && (
                 <div className="absolute top-full left-0 pt-1.5 w-64 z-50">
@@ -266,17 +375,21 @@ export default function Navbar() {
                     <Link
                       to="/passport"
                       onClick={() => setPassportOpen(false)}
-                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item"
+                      className={`flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group/item ${
+                        location.pathname.startsWith("/passport")
+                          ? "bg-slate-50 dark:bg-slate-800/80 font-bold"
+                          : ""
+                      }`}
                     >
                       <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover/item:scale-105 transition-transform">
                         <Compass className="w-4 h-4" />
                       </div>
                       <div>
                         <div className="text-xs font-bold text-slate-900 dark:text-white">
-                          Dashboard
+                          Overview
                         </div>
                         <div className="text-[11px] text-slate-500 dark:text-slate-400">
-                          Travel hub & achievements
+                          Travel history & achievements hub
                         </div>
                       </div>
                     </Link>
@@ -401,71 +514,105 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile slide-down menu */}
+      {/* Mobile slide-down menu with accordions */}
       {menuOpen && (
         <div className="md:hidden fixed inset-x-0 top-16 z-40 bg-background/95 backdrop-blur-md border-b shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-3">
-            {/* Discover Section */}
-            <div>
-              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-                Discover
-              </div>
-              <div className="flex flex-col gap-1 mt-1">
-                <Link
-                  to="/destinations"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <Map className="w-4 h-4 text-emerald-500" /> Destinations
-                </Link>
-                <Link
-                  to="/collections"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <CheckCircle2 className="w-4 h-4 text-teal-500" /> Collections
-                </Link>
-              </div>
+            {/* Discover Section Accordion */}
+            <div className="border-b border-slate-100 dark:border-slate-800 pb-2">
+              <button
+                onClick={() => setMobileDiscoverOpen((o) => !o)}
+                className="w-full flex items-center justify-between px-3 py-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+              >
+                <span>Discover</span>
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    mobileDiscoverOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {mobileDiscoverOpen && (
+                <div className="flex flex-col gap-1 mt-1 pl-2">
+                  <Link
+                    to="/destinations"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                  >
+                    <Map className="w-4 h-4 text-emerald-500" /> Destinations
+                  </Link>
+                  <Link
+                    to="/collections"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                  >
+                    <CheckCircle2 className="w-4 h-4 text-teal-500" />{" "}
+                    Collections
+                  </Link>
+                </div>
+              )}
             </div>
 
-            {/* Plan Section */}
-            <div>
-              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-                Plan
-              </div>
-              <div className="flex flex-col gap-1 mt-1">
-                <Link
-                  to="/my-trips"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <Calendar className="w-4 h-4 text-emerald-500" /> My Trips
-                </Link>
-                <Link
-                  to="/bucket-list"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <Bookmark className="w-4 h-4 text-amber-500" /> Bucket List
-                </Link>
-              </div>
+            {/* Plan Section Accordion */}
+            <div className="border-b border-slate-100 dark:border-slate-800 pb-2">
+              <button
+                onClick={() => setMobilePlanOpen((o) => !o)}
+                className="w-full flex items-center justify-between px-3 py-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+              >
+                <span>Plan</span>
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    mobilePlanOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {mobilePlanOpen && (
+                <div className="flex flex-col gap-1 mt-1 pl-2">
+                  <Link
+                    to="/my-trips"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                  >
+                    <Calendar className="w-4 h-4 text-emerald-500" /> My Trips
+                  </Link>
+                  <Link
+                    to="/bucket-list"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                  >
+                    <Bookmark className="w-4 h-4 text-amber-500" /> Bucket List
+                  </Link>
+                </div>
+              )}
             </div>
 
-            {/* Passport Section */}
-            <div>
-              <div className="px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-                Passport
-              </div>
-              <div className="flex flex-col gap-1 mt-1">
-                <Link
-                  to="/passport"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <Compass className="w-4 h-4 text-emerald-500" /> Dashboard &
-                  History
-                </Link>
-              </div>
+            {/* Passport Section Accordion */}
+            <div className="pb-2">
+              <button
+                onClick={() => setMobilePassportOpen((o) => !o)}
+                className="w-full flex items-center justify-between px-3 py-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400"
+              >
+                <span>Passport</span>
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    mobilePassportOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {mobilePassportOpen && (
+                <div className="flex flex-col gap-1 mt-1 pl-2">
+                  <Link
+                    to="/passport"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                  >
+                    <Compass className="w-4 h-4 text-emerald-500" /> Dashboard &
+                    History
+                  </Link>
+                </div>
+              )}
             </div>
 
             <div className="my-2 border-t border-slate-200 dark:border-slate-800" />
