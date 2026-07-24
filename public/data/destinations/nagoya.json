@@ -18,7 +18,8 @@
   "transportOptions": {
     "shinkansen": 90,
     "bus": 300,
-    "car": 240
+    "car": 210,
+    "train": 100
   },
   "walkingMin": 6000,
   "walkingSunMin": 3000,

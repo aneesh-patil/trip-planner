@@ -50,7 +50,8 @@
   },
   "transportOptions": {
     "train": 0,
-    "shinkansen": 0
+    "shinkansen": 0,
+    "car": 0
   },
   "highlights": [
     "Marunouchi Red Brick Building",

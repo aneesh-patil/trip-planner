@@ -49,7 +49,9 @@
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/3840px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
   "transportOptions": {
-    "car": 90
+    "car": 90,
+    "train": 90,
+    "bus": 100
   },
   "highlights": ["Coastal Drive", "Seafood", "Nokogiriyama"],
   "description": "Boso Peninsula is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",

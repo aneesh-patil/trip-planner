@@ -49,7 +49,9 @@
   },
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Matsumoto_Castle_Keep_Tower.jpg/3840px-Matsumoto_Castle_Keep_Tower.jpg",
   "transportOptions": {
-    "car": 210
+    "car": 210,
+    "train": 150,
+    "bus": 180
   },
   "highlights": ["Matsumoto Castle", "Nawate Dori"],
   "description": "Matsumoto is a scenic destination in the Nagano region of Japan, offering rich history and cultural attractions.",

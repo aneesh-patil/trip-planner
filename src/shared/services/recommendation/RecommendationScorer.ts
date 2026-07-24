@@ -47,13 +47,16 @@ export function getValidModes(
   publicModes: string[] = [],
 ): string[] {
   let validModes: string[] = [];
-  if (carMode === "rental" && dest.transportOptions?.car)
+  if (carMode === "rental" && dest.transportOptions?.car !== undefined)
     validModes.push("car");
-  if (carMode === "my_car" && dest.transportOptions?.my_car)
+  if (carMode === "my_car" && dest.transportOptions?.my_car !== undefined)
     validModes.push("my_car");
 
   for (const m of publicModes) {
-    if (dest.transportOptions?.[m as keyof typeof dest.transportOptions]) {
+    if (
+      dest.transportOptions?.[m as keyof typeof dest.transportOptions] !==
+      undefined
+    ) {
       validModes.push(m);
     }
   }

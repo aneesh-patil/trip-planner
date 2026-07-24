@@ -40,7 +40,11 @@ export default function Destinations() {
   const [sortBy, setSortBy] = useState("overall");
   const { user } = useAuth();
   const [carMode, setCarMode] = useState("none");
-  const [publicModes, setPublicModes] = useState<string[]>(["train"]);
+  const [publicModes, setPublicModes] = useState<string[]>([
+    "train",
+    "bus",
+    "shinkansen",
+  ]);
   const [partySize, setPartySize] = useState(2);
   const [weather, setWeather] = useState("all");
   const [maxWalking, setMaxWalking] = useState(25000);
@@ -59,7 +63,13 @@ export default function Destinations() {
   useEffect(() => {
     if (user?.user_metadata?.preferences) {
       setCarMode(user.user_metadata.preferences.carMode || "none");
-      setPublicModes(user.user_metadata.preferences.publicModes || ["train"]);
+      setPublicModes(
+        user.user_metadata.preferences.publicModes || [
+          "train",
+          "bus",
+          "shinkansen",
+        ],
+      );
       setPartySize(user.user_metadata.preferences.partySize || 2);
     }
   }, [user]);
@@ -244,7 +254,7 @@ export default function Destinations() {
     setMaxBudget(100000);
     setSortBy("overall");
     setCarMode("none");
-    setPublicModes(["train"]);
+    setPublicModes(["train", "bus", "shinkansen"]);
     setPartySize(2);
     setWeather("all");
     setMaxWalking(25000);

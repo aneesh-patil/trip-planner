@@ -36,7 +36,9 @@
     "walkingIntensity": 5
   },
   "transportOptions": {
-    "car": 200
+    "car": 200,
+    "train": 150,
+    "bus": 180
   },
   "crowd": {
     "weekday": 3,

@@ -36,7 +36,9 @@
     "walkingIntensity": 5
   },
   "transportOptions": {
-    "car": 280
+    "car": 280,
+    "train": 200,
+    "shinkansen": 150
   },
   "crowd": {
     "weekday": 3,
