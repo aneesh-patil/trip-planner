@@ -116,6 +116,11 @@
     {
       "collectionId": "top-100-castles",
       "confirmed": true
+    },
+    {
+      "collectionId": "three-cherry-blossom-spots",
+      "sortOrder": 2,
+      "confirmed": true
     }
   ]
 }

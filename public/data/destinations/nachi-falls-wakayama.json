@@ -1,0 +1,67 @@
+{
+  "id": "nachi-falls-wakayama",
+  "name": "Nachi Falls & Pagoda",
+  "nameJa": "那智滝",
+  "prefecture": "Wakayama",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 33.6744,
+    "lng": 135.8897
+  },
+  "tags": [
+    "Three Great Waterfalls",
+    "UNESCO World Heritage",
+    "Tallest Single Drop Waterfall"
+  ],
+  "rating": 4.9,
+  "ratings": {
+    "overall": 4.9,
+    "scenery": 5,
+    "accessibility": 4.1,
+    "crowd": 4.2,
+    "couple": 4.8,
+    "summer": 4.7,
+    "winter": 4.5,
+    "rain": 4.4,
+    "food": 4.3,
+    "photography": 5,
+    "relaxation": 4.8,
+    "value": 4.8,
+    "uniqueness": 5
+  },
+  "categories": ["nature", "culture", "sightseeing"],
+  "budgetMin": 3000,
+  "budgetMax": 10000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-waterfalls",
+      "sortOrder": 2,
+      "confirmed": true
+    },
+    {
+      "collectionId": "unesco-japan",
+      "sortOrder": 9,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 270,
+    "bus": 310,
+    "car": 350
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nachi_Waterfall_and_Seiganto-ji_pagoda_2019.jpg/1280px-Nachi_Waterfall_and_Seiganto-ji_pagoda_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nachi_Waterfall_and_Seiganto-ji_pagoda_2019.jpg/1280px-Nachi_Waterfall_and_Seiganto-ji_pagoda_2019.jpg"
+  ],
+  "description": "Nachi Falls is Japan's tallest uninterrupted single-drop waterfall (133 meters), framing the three-story red Seiganto-ji pagoda against the sacred Nachi primeval forest.",
+  "notes": "Part of the UNESCO Sacred Sites and Pilgrimage Routes in the Kii Mountain Range."
+}

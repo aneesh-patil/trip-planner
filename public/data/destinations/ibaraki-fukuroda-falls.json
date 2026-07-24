@@ -116,5 +116,11 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [
+    {
+      "collectionId": "three-great-waterfalls",
+      "sortOrder": 3,
+      "confirmed": true
+    }
+  ]
 }

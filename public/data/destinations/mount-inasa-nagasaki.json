@@ -1,0 +1,62 @@
+{
+  "id": "mount-inasa-nagasaki",
+  "name": "Mount Inasa (Nagasaki Night View)",
+  "nameJa": "稲佐山",
+  "prefecture": "Nagasaki",
+  "region": "Kyushu",
+  "coordinates": {
+    "lat": 32.7525,
+    "lng": 129.8519
+  },
+  "tags": [
+    "Three Great Night Views",
+    "Ten Million Dollar View",
+    "Nagasaki Harbor Panorama"
+  ],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 5,
+    "accessibility": 4.3,
+    "crowd": 4.3,
+    "couple": 4.9,
+    "summer": 4.5,
+    "winter": 4.7,
+    "rain": 3.5,
+    "food": 4.3,
+    "photography": 5,
+    "relaxation": 4.3,
+    "value": 4.7,
+    "uniqueness": 4.9
+  },
+  "categories": ["sightseeing", "nature", "romance"],
+  "budgetMin": 3000,
+  "budgetMax": 10000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "great-night-views",
+      "sortOrder": 9,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "bus": 480,
+    "train": 440,
+    "car": 520
+  },
+  "budget": {
+    "low": 3500,
+    "mid": 7000,
+    "high": 14000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Night_view_from_Mount_Inasa_Nagasaki01s3200.jpg/1280px-Night_view_from_Mount_Inasa_Nagasaki01s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Night_view_from_Mount_Inasa_Nagasaki01s3200.jpg/1280px-Night_view_from_Mount_Inasa_Nagasaki01s3200.jpg"
+  ],
+  "description": "Mount Inasa in Nagasaki is designated as one of the World's New Three Great Night Views, offering a 360° illuminated bowl view of Nagasaki harbor and surrounding hills.",
+  "notes": "333 meters high, connected by Nagasaki Ropeway."
+}

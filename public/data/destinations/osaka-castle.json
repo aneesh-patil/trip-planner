@@ -1,0 +1,58 @@
+{
+  "id": "osaka-castle",
+  "name": "Osaka Castle (Osaka-jo)",
+  "nameJa": "大阪城",
+  "prefecture": "Osaka",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 34.6873,
+    "lng": 135.5262
+  },
+  "tags": ["Top 100 Castle", "Toyotomi Hideyoshi", "Cherry Blossom Park"],
+  "rating": 4.7,
+  "ratings": {
+    "overall": 4.7,
+    "scenery": 4.7,
+    "accessibility": 4.8,
+    "crowd": 4.6,
+    "couple": 4.6,
+    "summer": 4.3,
+    "winter": 4.4,
+    "rain": 4.1,
+    "food": 4.7,
+    "photography": 4.8,
+    "relaxation": 4.4,
+    "value": 4.7,
+    "uniqueness": 4.7
+  },
+  "categories": ["history", "culture", "sightseeing"],
+  "budgetMin": 3000,
+  "budgetMax": 10000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "top-100-castles",
+      "sortOrder": 27,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 160,
+    "bus": 180,
+    "car": 210
+  },
+  "budget": {
+    "low": 3000,
+    "mid": 6000,
+    "high": 12000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Osaka_Castle_Keep_2019.jpg/1280px-Osaka_Castle_Keep_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Osaka_Castle_Keep_2019.jpg/1280px-Osaka_Castle_Keep_2019.jpg"
+  ],
+  "description": "Osaka Castle is an iconic 16th-century fortress constructed by Toyotomi Hideyoshi, featuring golden roof ornaments, massive stone ramparts, and a lush park surrounded by moats.",
+  "notes": "Reconstructed in 1931 with an elevator-serviced interior museum."
+}

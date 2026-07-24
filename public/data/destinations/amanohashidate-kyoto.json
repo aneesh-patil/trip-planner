@@ -1,0 +1,58 @@
+{
+  "id": "amanohashidate-kyoto",
+  "name": "Amanohashidate (Bridge to Heaven)",
+  "nameJa": "天橋立",
+  "prefecture": "Kyoto",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 35.5694,
+    "lng": 135.1919
+  },
+  "tags": ["Three Great Views", "Pine Sandbar", "Miyazu Bay View"],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 5,
+    "accessibility": 4.3,
+    "crowd": 4.1,
+    "couple": 4.8,
+    "summer": 4.7,
+    "winter": 4.5,
+    "rain": 3.7,
+    "food": 4.6,
+    "photography": 4.9,
+    "relaxation": 4.7,
+    "value": 4.6,
+    "uniqueness": 4.9
+  },
+  "categories": ["nature", "sightseeing", "romance"],
+  "budgetMin": 3000,
+  "budgetMax": 12000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-views",
+      "sortOrder": 2,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 160,
+    "bus": 190,
+    "car": 210
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Amanohashidate_view_2019.jpg/1280px-Amanohashidate_view_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Amanohashidate_view_2019.jpg/1280px-Amanohashidate_view_2019.jpg"
+  ],
+  "description": "Amanohashidate is a natural 3.3-kilometer pine-covered sandbar spanning Miyazu Bay, famed for the Matanozoki upside-down viewing technique making it look like a bridge floating into heaven.",
+  "notes": "Planted with nearly 7,000 pine trees."
+}

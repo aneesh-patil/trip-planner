@@ -47,6 +47,11 @@
       "collectionId": "national-treasures",
       "sortOrder": 7,
       "confirmed": true
+    },
+    {
+      "collectionId": "three-great-views",
+      "sortOrder": 3,
+      "confirmed": true
     }
   ],
   "transportOptions": {

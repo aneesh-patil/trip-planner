@@ -1,0 +1,67 @@
+{
+  "id": "mount-yoshino-nara",
+  "name": "Mount Yoshino (Yoshinoyama)",
+  "nameJa": "吉野山",
+  "prefecture": "Nara",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 34.3564,
+    "lng": 135.8711
+  },
+  "tags": [
+    "Three Cherry Blossom Spots",
+    "30,000 Sakura Trees",
+    "UNESCO World Heritage"
+  ],
+  "rating": 4.9,
+  "ratings": {
+    "overall": 4.9,
+    "scenery": 5,
+    "accessibility": 4.2,
+    "crowd": 4.6,
+    "couple": 4.9,
+    "summer": 4.4,
+    "winter": 4.3,
+    "rain": 3.9,
+    "food": 4.5,
+    "photography": 5,
+    "relaxation": 4.6,
+    "value": 4.7,
+    "uniqueness": 5
+  },
+  "categories": ["nature", "seasons", "sightseeing"],
+  "budgetMin": 3000,
+  "budgetMax": 12000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "three-cherry-blossom-spots",
+      "sortOrder": 3,
+      "confirmed": true
+    },
+    {
+      "collectionId": "unesco-japan",
+      "sortOrder": 10,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 190,
+    "bus": 220,
+    "car": 250
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Mount_Yoshino_Cherry_Blossoms_2019.jpg/1280px-Mount_Yoshino_Cherry_Blossoms_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Mount_Yoshino_Cherry_Blossoms_2019.jpg/1280px-Mount_Yoshino_Cherry_Blossoms_2019.jpg"
+  ],
+  "description": "Mount Yoshino is Japan's most famous cherry blossom mountain, carpeted by over 30,000 Yamazakura trees blooming sequentially across four mountain elevations.",
+  "notes": "Part of the Sacred Sites and Pilgrimage Routes in the Kii Mountain Range UNESCO site."
+}

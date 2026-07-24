@@ -107,5 +107,11 @@
   "travelEstimate": {
     "confidence": "beta"
   },
-  "collections": []
+  "collections": [
+    {
+      "collectionId": "three-great-buddhas",
+      "sortOrder": 3,
+      "confirmed": true
+    }
+  ]
 }

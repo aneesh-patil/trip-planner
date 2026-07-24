@@ -39,6 +39,11 @@
       "collectionId": "top-100-castles",
       "sortOrder": 10,
       "confirmed": true
+    },
+    {
+      "collectionId": "three-cherry-blossom-spots",
+      "sortOrder": 1,
+      "confirmed": true
     }
   ],
   "transportOptions": {

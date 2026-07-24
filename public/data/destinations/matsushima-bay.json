@@ -1,0 +1,58 @@
+{
+  "id": "matsushima-bay",
+  "name": "Matsushima Bay",
+  "nameJa": "松島",
+  "prefecture": "Miyagi",
+  "region": "Tohoku",
+  "coordinates": {
+    "lat": 38.3683,
+    "lng": 141.0644
+  },
+  "tags": ["Three Great Views", "Pine Covered Islands", "Coastal Bay"],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 5,
+    "accessibility": 4.5,
+    "crowd": 4.2,
+    "couple": 4.8,
+    "summer": 4.6,
+    "winter": 4.4,
+    "rain": 3.8,
+    "food": 4.7,
+    "photography": 4.9,
+    "relaxation": 4.8,
+    "value": 4.7,
+    "uniqueness": 4.9
+  },
+  "categories": ["nature", "sightseeing", "culture"],
+  "budgetMin": 3000,
+  "budgetMax": 12000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-views",
+      "sortOrder": 1,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 240,
+    "bus": 280,
+    "car": 320
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Matsushima_bay01s3200.jpg/1280px-Matsushima_bay01s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Matsushima_bay01s3200.jpg/1280px-Matsushima_bay01s3200.jpg"
+  ],
+  "description": "Matsushima Bay is one of Japan's Three Great Views (Nihon Sankei), celebrated for over 260 pine-clad islands scattered across tranquil coastal waters.",
+  "notes": "Famed poet Matsuo Basho was left speechless by its beauty in Oku no Hosomichi."
+}

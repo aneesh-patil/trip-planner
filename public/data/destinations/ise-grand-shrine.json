@@ -1,0 +1,63 @@
+{
+  "id": "ise-grand-shrine",
+  "name": "Ise Grand Shrine (Ise Jingu)",
+  "nameJa": "伊勢神宮",
+  "prefecture": "Mie",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 34.455,
+    "lng": 136.7258
+  },
+  "tags": ["Three Great Shrines", "National Treasure", "Amaterasu Sun Goddess"],
+  "rating": 4.9,
+  "ratings": {
+    "overall": 4.9,
+    "scenery": 4.9,
+    "accessibility": 4.5,
+    "crowd": 4.5,
+    "couple": 4.8,
+    "summer": 4.4,
+    "winter": 4.7,
+    "rain": 4.3,
+    "food": 4.9,
+    "photography": 4.7,
+    "relaxation": 4.8,
+    "value": 4.8,
+    "uniqueness": 5
+  },
+  "categories": ["culture", "history", "religion"],
+  "budgetMin": 3000,
+  "budgetMax": 12000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-shrines",
+      "sortOrder": 1,
+      "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 10,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 180,
+    "bus": 210,
+    "car": 240
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Ise-Jingu_Naiku_Uji-bridge01s3200.jpg/1280px-Ise-Jingu_Naiku_Uji-bridge01s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Ise-Jingu_Naiku_Uji-bridge01s3200.jpg/1280px-Ise-Jingu_Naiku_Uji-bridge01s3200.jpg"
+  ],
+  "description": "Ise Grand Shrine is the spiritual heart of Shinto, dedicated to the Sun Goddess Amaterasu and rebuilt every 20 years in accordance with ancient Shikinen Sengu ritual.",
+  "notes": "Home to the Sacred Mirror (Yata no Kagami), one of Japan's Three Imperial Regalia."
+}

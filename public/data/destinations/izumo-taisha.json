@@ -1,0 +1,63 @@
+{
+  "id": "izumo-taisha",
+  "name": "Izumo Taisha Grand Shrine",
+  "nameJa": "出雲大社",
+  "prefecture": "Shimane",
+  "region": "Chugoku",
+  "coordinates": {
+    "lat": 35.4022,
+    "lng": 132.6856
+  },
+  "tags": ["Three Great Shrines", "National Treasure", "Okuninushi Enmusubi"],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 4.8,
+    "accessibility": 4.2,
+    "crowd": 4.1,
+    "couple": 4.9,
+    "summer": 4.3,
+    "winter": 4.6,
+    "rain": 4.2,
+    "food": 4.6,
+    "photography": 4.8,
+    "relaxation": 4.7,
+    "value": 4.7,
+    "uniqueness": 4.9
+  },
+  "categories": ["culture", "history", "religion"],
+  "budgetMin": 3000,
+  "budgetMax": 10000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "three-great-shrines",
+      "sortOrder": 2,
+      "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 11,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 280,
+    "bus": 340,
+    "car": 390
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Izumo_Taisha_Kaguraden_2019.jpg/1280px-Izumo_Taisha_Kaguraden_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Izumo_Taisha_Kaguraden_2019.jpg/1280px-Izumo_Taisha_Kaguraden_2019.jpg"
+  ],
+  "description": "Izumo Taisha is one of Japan's oldest Shinto shrines, famed for its massive 5.2-ton straw Shimenawa rope hanging at the Kaguraden hall and its deity of marriage and destiny.",
+  "notes": "In October (Kamiarizuki), all 8 million Shinto gods gather at Izumo Taisha."
+}

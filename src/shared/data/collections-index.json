@@ -65,6 +65,71 @@
     "sourceUrl": "https://www.japan.travel/en/guide/gardens/"
   },
   {
+    "id": "three-great-views",
+    "slug": "three-great-views",
+    "name": "Three Great Scenic Views of Japan",
+    "description": "Japan's classic three most celebrated scenic vistas (Nihon Sankei: Matsushima, Amanohashidate, Itsukushima).",
+    "category": "Nature & Sightseeing",
+    "type": "historical",
+    "icon": "Trees",
+    "badgeColor": "emerald",
+    "sortOrder": 6,
+    "officialSource": "Japan National Tourism Organization (日本三景)",
+    "sourceUrl": "https://www.japan.travel/en/japan-magazine/nihon-sankei/"
+  },
+  {
+    "id": "three-great-waterfalls",
+    "slug": "three-great-waterfalls",
+    "name": "Three Great Waterfalls of Japan",
+    "description": "Japan's three most majestic natural waterfalls (Nihon Sanmeibaku: Kegon, Nachi, Fukuroda).",
+    "category": "Nature & Waterfalls",
+    "type": "historical",
+    "icon": "Flame",
+    "badgeColor": "sky",
+    "sortOrder": 7,
+    "officialSource": "Japan National Tourism Organization (日本三名瀑)",
+    "sourceUrl": "https://www.japan.travel/en/guide/waterfalls/"
+  },
+  {
+    "id": "three-great-buddhas",
+    "slug": "three-great-buddhas",
+    "name": "Three Great Buddha Statues of Japan",
+    "description": "Japan's three celebrated monumental bronze Buddha statues (Nihon Sandaibutsu: Nara, Kamakura, Takaoka).",
+    "category": "History & Culture",
+    "type": "historical",
+    "icon": "Crown",
+    "badgeColor": "amber",
+    "sortOrder": 8,
+    "officialSource": "Agency for Cultural Affairs (日本三大仏)",
+    "sourceUrl": "https://www.bunka.go.jp/"
+  },
+  {
+    "id": "three-great-shrines",
+    "slug": "three-great-shrines",
+    "name": "Three Great Shrines of Japan",
+    "description": "Japan's three most sacred Shinto shrines deeply connected to imperial history and mythology (Ise, Izumo, Atsuta).",
+    "category": "Religion & History",
+    "type": "official",
+    "icon": "Landmark",
+    "badgeColor": "rose",
+    "sortOrder": 9,
+    "officialSource": "Association of Shinto Shrines (神社本庁)",
+    "sourceUrl": "https://www.jinjahoncho.or.jp/"
+  },
+  {
+    "id": "three-cherry-blossom-spots",
+    "slug": "three-cherry-blossom-spots",
+    "name": "Three Great Cherry Blossom Spots",
+    "description": "Japan's three premier sakura destinations celebrated for overwhelming spring blooms (Nihon San-dai Sakura Meisho).",
+    "category": "Nature & Seasons",
+    "type": "historical",
+    "icon": "Trees",
+    "badgeColor": "rose",
+    "sortOrder": 10,
+    "officialSource": "Japan Cherry Blossom Association (日本さくらの会)",
+    "sourceUrl": "https://www.sakuranokai.or.jp/"
+  },
+  {
     "id": "top-onsen-japan",
     "slug": "top-onsen-japan",
     "name": "Top Hot Springs & Onsen Towns",
@@ -73,7 +138,7 @@
     "type": "official",
     "icon": "Flame",
     "badgeColor": "rose",
-    "sortOrder": 6,
+    "sortOrder": 11,
     "officialSource": "Japan Onsen Association",
     "sourceUrl": "https://www.onsenkyokai.or.jp/"
   },
@@ -86,7 +151,7 @@
     "type": "historical",
     "icon": "Building",
     "badgeColor": "emerald",
-    "sortOrder": 7,
+    "sortOrder": 12,
     "officialSource": "Cultural Properties Preservation District",
     "sourceUrl": "https://www.bunka.go.jp/"
   },
@@ -99,7 +164,7 @@
     "type": "official",
     "icon": "Sparkles",
     "badgeColor": "purple",
-    "sortOrder": 8,
+    "sortOrder": 13,
     "officialSource": "Night View Convention & Tourism Bureau",
     "sourceUrl": "https://yakei-cvb.or.jp/"
   }
