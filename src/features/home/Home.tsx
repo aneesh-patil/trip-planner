@@ -16,6 +16,7 @@ import {
   Snowflake,
   Calendar,
   Dices,
+  MapPin,
 } from "lucide-react";
 import { getDestinationList } from "@/shared/services/destination/DestinationService";
 import type { Destination } from "@/shared/types/destination";
@@ -31,7 +32,6 @@ import { Slider } from "@/shared/components/ui/slider";
 import { useTripStore } from "@/shared/hooks/useTripStore";
 import { useAuth } from "@/shared/hooks/useAuth";
 import { getTabWeatherSummary } from "@/shared/services/weather/WeatherTabService";
-import StationInput from "@/shared/components/StationInput";
 import RouletteModal from "@/features/home/components/RouletteModal";
 
 import { useTripPlannerState } from "@/features/home/hooks/useTripPlannerState";
@@ -41,7 +41,7 @@ import { useTripRecommendations } from "@/features/home/hooks/useTripRecommendat
 export default function Home() {
   const allDestinations = getDestinationList() as Destination[];
 
-  const { isVisited, homeStationCoords } = useTripStore();
+  const { isVisited, homeStationCoords, homeStation } = useTripStore();
   const { user } = useAuth();
 
   const {
@@ -107,8 +107,15 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Contextual Hero */}
             <div className="flex flex-col items-start text-left w-full">
-              <div className="mb-6">
-                <StationInput />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-xs font-bold text-slate-700 dark:text-slate-200 mb-6">
+                <MapPin className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                <span>Base Location: {homeStation || "Tokyo Station"}</span>
+                <Link
+                  to="/settings?section=general&return=/"
+                  className="ml-1 text-emerald-600 dark:text-emerald-400 hover:underline font-extrabold"
+                >
+                  Change
+                </Link>
               </div>
               {currentSituation ? (
                 <div className="mb-10 w-full">

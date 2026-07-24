@@ -1,14 +1,12 @@
 import { useState } from "react";
+import { Icons } from "@/shared/icons";
 import {
-  HelpCircle,
-  BookOpen,
-  Keyboard,
-  History,
-  MessageSquare,
-  ChevronDown,
-  Sparkles,
-  Command,
-} from "lucide-react";
+  PageTitle,
+  SectionTitle,
+  CardTitle,
+  BodyText,
+  Caption,
+} from "@/shared/components/ui/Typography";
 import { FeedbackModal } from "@/shared/components/feedback/FeedbackModal";
 
 type HelpSection = "getting-started" | "faq" | "shortcuts" | "changelog";
@@ -55,29 +53,34 @@ export default function Help() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
 
+  const GettingStartedIcon = Icons.gettingStarted;
+  const FaqIcon = Icons.help;
+  const ShortcutsIcon = Icons.shortcuts;
+  const ChangelogIcon = Icons.timeline;
+  const FeedbackIcon = Icons.feedback;
+  const ChevronIcon = Icons.chevronDown;
+
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-6xl space-y-8 animate-in fade-in duration-200">
       {/* Header */}
       <div className="pb-6 border-b border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">
-            <HelpCircle className="w-4 h-4" />
+            <FaqIcon className="w-4 h-4" />
             Documentation & Support
           </div>
-          <h1 className="text-3xl font-black text-slate-900 dark:text-white">
-            Help Center
-          </h1>
-          <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 mt-1">
+          <PageTitle>Help Center</PageTitle>
+          <BodyText className="mt-1">
             Learn feature workflows, view keyboard shortcuts, check release
             notes, or send feedback.
-          </p>
+          </BodyText>
         </div>
 
         <button
           onClick={() => setFeedbackOpen(true)}
           className="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-all self-start md:self-auto"
         >
-          <MessageSquare className="w-4 h-4" />
+          <FeedbackIcon className="w-4 h-4" />
           Send Feedback
         </button>
       </div>
@@ -88,18 +91,23 @@ export default function Help() {
           {[
             {
               id: "getting-started",
-              label: "🚀 Getting Started",
-              icon: BookOpen,
+              label: "Getting Started",
+              icon: GettingStartedIcon,
+            },
+            { id: "faq", label: "Frequently Asked Questions", icon: FaqIcon },
+            {
+              id: "shortcuts",
+              label: "Keyboard Shortcuts",
+              icon: ShortcutsIcon,
             },
             {
-              id: "faq",
-              label: "❓ Frequently Asked Questions",
-              icon: HelpCircle,
+              id: "changelog",
+              label: "Release Changelog",
+              icon: ChangelogIcon,
             },
-            { id: "shortcuts", label: "⌨️ Keyboard Shortcuts", icon: Keyboard },
-            { id: "changelog", label: "📜 Release Changelog", icon: History },
           ].map((sec) => {
             const isActive = activeSection === sec.id;
+            const IconComp = sec.icon;
             return (
               <button
                 key={sec.id}
@@ -110,6 +118,7 @@ export default function Help() {
                     : "bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                 }`}
               >
+                <IconComp className="w-4 h-4 shrink-0" />
                 <span>{sec.label}</span>
               </button>
             );
@@ -123,12 +132,10 @@ export default function Help() {
             {activeSection === "getting-started" && (
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                    Getting Started with TabiMap
-                  </h3>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <SectionTitle>Getting Started with TabiMap</SectionTitle>
+                  <Caption className="mt-1">
                     3 simple steps to master your travel exploration in Japan.
-                  </p>
+                  </Caption>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
@@ -136,39 +143,33 @@ export default function Help() {
                     <div className="w-8 h-8 rounded-xl bg-emerald-500 text-white font-black text-sm flex items-center justify-center">
                       1
                     </div>
-                    <h4 className="text-sm font-bold text-slate-900 dark:text-white">
-                      Discover & Bookmark
-                    </h4>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <CardTitle>Discover & Bookmark</CardTitle>
+                    <BodyText>
                       Explore Japan sights and curated UNESCO collections.
                       Bookmark places to your Bucket List.
-                    </p>
+                    </BodyText>
                   </div>
 
                   <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 space-y-2">
                     <div className="w-8 h-8 rounded-xl bg-emerald-500 text-white font-black text-sm flex items-center justify-center">
                       2
                     </div>
-                    <h4 className="text-sm font-bold text-slate-900 dark:text-white">
-                      Plan Itineraries
-                    </h4>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <CardTitle>Plan Itineraries</CardTitle>
+                    <BodyText>
                       Build daily travel plans in My Trips. Configure your Base
                       Location in Settings for accurate transit times.
-                    </p>
+                    </BodyText>
                   </div>
 
                   <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 space-y-2">
                     <div className="w-8 h-8 rounded-xl bg-emerald-500 text-white font-black text-sm flex items-center justify-center">
                       3
                     </div>
-                    <h4 className="text-sm font-bold text-slate-900 dark:text-white">
-                      Track Progression
-                    </h4>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <CardTitle>Track Progression</CardTitle>
+                    <BodyText>
                       Log visited spots in Passport. Watch your Japan map light
                       up and earn milestone badges.
-                    </p>
+                    </BodyText>
                   </div>
                 </div>
               </div>
@@ -178,12 +179,10 @@ export default function Help() {
             {activeSection === "faq" && (
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                    Frequently Asked Questions
-                  </h3>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <SectionTitle>Frequently Asked Questions</SectionTitle>
+                  <Caption className="mt-1">
                     Find quick answers to common questions about TabiMap.
-                  </p>
+                  </Caption>
                 </div>
 
                 <div className="space-y-3 pt-2">
@@ -199,7 +198,7 @@ export default function Help() {
                           className="w-full flex items-center justify-between p-4 text-left font-bold text-xs md:text-sm text-slate-900 dark:text-white bg-slate-50/50 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                         >
                           <span>{faq.question}</span>
-                          <ChevronDown
+                          <ChevronIcon
                             className={`w-4 h-4 transition-transform duration-200 ${
                               isOpen
                                 ? "rotate-180 text-emerald-500"
@@ -223,13 +222,10 @@ export default function Help() {
             {activeSection === "shortcuts" && (
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                    <Command className="w-5 h-5 text-emerald-600" />
-                    Keyboard Shortcuts Cheat Sheet
-                  </h3>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <SectionTitle>Keyboard Shortcuts Cheat Sheet</SectionTitle>
+                  <Caption className="mt-1">
                     Speed up your navigation across TabiMap with global hotkeys.
-                  </p>
+                  </Caption>
                 </div>
 
                 <div className="space-y-2 pt-2">
@@ -254,38 +250,34 @@ export default function Help() {
             {activeSection === "changelog" && (
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                    Release History & Changelog
-                  </h3>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <SectionTitle>Release History & Changelog</SectionTitle>
+                  <Caption className="mt-1">
                     Latest features and improvements added to TabiMap.
-                  </p>
+                  </Caption>
                 </div>
 
                 <div className="space-y-4 pt-2">
                   <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-emerald-200/80 dark:border-emerald-800/60 space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-black text-slate-900 dark:text-white flex items-center gap-2">
-                        <Sparkles className="w-4 h-4 text-emerald-500" />{" "}
-                        Version 1.5.0
-                      </span>
-                      <span className="text-[11px] font-bold text-slate-400">
-                        July 2026
-                      </span>
+                      <CardTitle>
+                        Version 1.5.2 — Design System & Product Polish
+                      </CardTitle>
+                      <Caption>July 2026</Caption>
                     </div>
                     <ul className="text-xs text-slate-600 dark:text-slate-300 space-y-1.5 list-disc list-inside">
-                      <li>Global Search & Command Palette (`Cmd+K`).</li>
                       <li>
-                        Full-page user platform hubs (`/profile`, `/settings`,
-                        `/help`).
+                        Centralized Lucide icon registry & zero unicode emojis.
                       </li>
+                      <li>ThemeProvider service with live theme switching.</li>
                       <li>
-                        Redesigned Passport 12-column motivational dashboard.
+                        Single source of truth for Base Location with reusable
+                        StationInput.
                       </li>
+                      <li>Safe return navigation flow (`?return=`).</li>
                       <li>
-                        Consolidated Timeline and explicitly separated
-                        Achievements vs Badges.
+                        Functional JSON data export with `schemaVersion: 1`.
                       </li>
+                      <li>Redesigned Profile Explorer Hub hero header.</li>
                     </ul>
                   </div>
                 </div>

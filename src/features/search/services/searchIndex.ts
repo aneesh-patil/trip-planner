@@ -3,20 +3,9 @@ import collectionsIndex from "@/shared/data/collections-index.json";
 import type { Destination } from "@/shared/types/destination";
 import type { Collection } from "@/shared/types/collection";
 import type { SearchDocument, SearchGroup, SearchDocumentType } from "../types";
-import {
-  Compass,
-  MapPin,
-  Calendar,
-  Bookmark,
-  Sliders,
-  User,
-  HelpCircle,
-  Map,
-  CheckCircle2,
-  FolderCheck,
-} from "lucide-react";
+import { Icons } from "@/shared/icons";
 
-// Static App Actions & Navigation Documents
+// Static App Actions & Navigation Documents using Icons registry
 const STATIC_ACTIONS: SearchDocument[] = [
   {
     id: "action-passport",
@@ -32,7 +21,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
       "history",
       "stats",
     ],
-    icon: Compass,
+    icon: Icons.passport,
     badge: "P",
     category: "Navigation",
   },
@@ -50,7 +39,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
       "theme",
       "config",
     ],
-    icon: Sliders,
+    icon: Icons.settings,
     badge: "S",
     category: "Navigation",
   },
@@ -61,7 +50,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
     type: "navigation",
     url: "/profile",
     keywords: ["profile", "account", "username", "email", "security"],
-    icon: User,
+    icon: Icons.profile,
     badge: "U",
     category: "Navigation",
   },
@@ -72,7 +61,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
     type: "navigation",
     url: "/help",
     keywords: ["help", "faq", "shortcuts", "support", "docs", "guide"],
-    icon: HelpCircle,
+    icon: Icons.help,
     badge: "H",
     category: "Navigation",
   },
@@ -83,7 +72,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
     type: "navigation",
     url: "/bucket-list",
     keywords: ["bucket list", "saved", "favorites", "bookmarks"],
-    icon: Bookmark,
+    icon: Icons.bookmark,
     category: "Navigation",
   },
   {
@@ -93,7 +82,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
     type: "navigation",
     url: "/my-trips",
     keywords: ["trips", "itineraries", "my trips", "plan"],
-    icon: Calendar,
+    icon: Icons.calendar,
     category: "Navigation",
   },
   {
@@ -103,7 +92,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
     type: "navigation",
     url: "/destinations",
     keywords: ["destinations", "sights", "attractions", "places"],
-    icon: Map,
+    icon: Icons.japanMap,
     category: "Navigation",
   },
   {
@@ -113,7 +102,7 @@ const STATIC_ACTIONS: SearchDocument[] = [
     type: "navigation",
     url: "/collections",
     keywords: ["collections", "unesco", "themes", "castles"],
-    icon: FolderCheck,
+    icon: Icons.check,
     category: "Navigation",
   },
 ];
@@ -144,7 +133,7 @@ export function buildSearchIndex(): SearchDocument[] {
         categoryName.toLowerCase(),
         ...(dest.tags || []).map((t) => t.toLowerCase()),
       ],
-      icon: MapPin,
+      icon: Icons.japanMap,
       badge: dest.prefecture,
       category: categoryName,
       metadata: { dest },
@@ -165,7 +154,7 @@ export function buildSearchIndex(): SearchDocument[] {
         (col.description || "").toLowerCase(),
         ...(col.isAchievement ? ["achievement", "heritage"] : []),
       ],
-      icon: CheckCircle2,
+      icon: Icons.check,
       badge: col.isAchievement ? "Achievement" : "Collection",
       category: "Collection",
       metadata: { col },
@@ -193,17 +182,17 @@ export function searchDocuments(query: string): SearchGroup[] {
     return [
       {
         type: "navigation",
-        label: "⚡ Navigation & Actions",
+        label: "Navigation & Actions",
         items: navActions.slice(0, 4),
       },
       {
         type: "destination",
-        label: "🗾 Popular Destinations",
+        label: "Popular Destinations",
         items: popularDestinations,
       },
       {
         type: "collection",
-        label: "📁 Featured Collections",
+        label: "Featured Collections",
         items: popularCollections,
       },
     ];
@@ -259,7 +248,7 @@ export function searchDocuments(query: string): SearchGroup[] {
   if (destinations.length > 0) {
     groups.push({
       type: "destination",
-      label: `🗾 Destinations (${destinations.length})`,
+      label: `Destinations (${destinations.length})`,
       items: destinations.slice(0, 8),
     });
   }
@@ -267,7 +256,7 @@ export function searchDocuments(query: string): SearchGroup[] {
   if (collections.length > 0) {
     groups.push({
       type: "collection",
-      label: `📁 Collections (${collections.length})`,
+      label: `Collections (${collections.length})`,
       items: collections.slice(0, 5),
     });
   }
@@ -275,7 +264,7 @@ export function searchDocuments(query: string): SearchGroup[] {
   if (actions.length > 0) {
     groups.push({
       type: "navigation",
-      label: `⚡ Actions (${actions.length})`,
+      label: `Actions (${actions.length})`,
       items: actions.slice(0, 4),
     });
   }

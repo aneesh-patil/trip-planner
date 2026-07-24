@@ -45,68 +45,74 @@ import { useState } from "react";
 import CompareModal from "./features/compare/components/CompareModal";
 import CompareFloatingBar from "./features/compare/components/CompareFloatingBar";
 
+import { ThemeProvider } from "./shared/context/ThemeContext";
+
 function App() {
   const [compareModalOpen, setCompareModalOpen] = useState(false);
 
   return (
     <AuthProvider>
-      <TripStoreProvider>
-        <Router>
-          <div className="flex flex-col min-h-screen bg-background text-foreground">
-            <Navbar />
-            <main className="flex-grow">
-              <ErrorBoundary>
-                <Suspense fallback={<PageLoader />}>
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/destinations" element={<Destinations />} />
-                    <Route
-                      path="/destinations/:id"
-                      element={<DestinationDetails />}
-                    />
-                    <Route
-                      path="/collections"
-                      element={<CollectionsDirectory />}
-                    />
-                    <Route
-                      path="/collections/:slug"
-                      element={<CollectionDetails />}
-                    />
-                    <Route
-                      path="/compare"
-                      element={<Navigate to="/destinations" replace />}
-                    />
-                    <Route
-                      path="/favorites"
-                      element={<Navigate to="/bucket-list" replace />}
-                    />
-                    <Route path="/bucket-list" element={<MyTrips />} />
-                    <Route path="/my-trips" element={<MyTrips />} />
-                    <Route path="/passport" element={<Passport />} />
-                    <Route
-                      path="/visited-map"
-                      element={<Navigate to="/passport" replace />}
-                    />
-                    <Route path="/profile" element={<Profile />} />
-                    <Route path="/settings" element={<Settings />} />
-                    <Route path="/help" element={<Help />} />
-                    <Route path="/terms" element={<Terms />} />
-                    <Route path="/privacy" element={<Privacy />} />
-                    <Route path="/cookies" element={<Cookies />} />
-                  </Routes>
-                </Suspense>
-              </ErrorBoundary>
-            </main>
-            <Footer />
-            <CompareFloatingBar onOpenModal={() => setCompareModalOpen(true)} />
-            <CompareModal
-              isOpen={compareModalOpen}
-              onClose={() => setCompareModalOpen(false)}
-            />
-          </div>
-          <Toaster position="bottom-right" />
-        </Router>
-      </TripStoreProvider>
+      <ThemeProvider>
+        <TripStoreProvider>
+          <Router>
+            <div className="flex flex-col min-h-screen bg-background text-foreground">
+              <Navbar />
+              <main className="flex-grow">
+                <ErrorBoundary>
+                  <Suspense fallback={<PageLoader />}>
+                    <Routes>
+                      <Route path="/" element={<Home />} />
+                      <Route path="/destinations" element={<Destinations />} />
+                      <Route
+                        path="/destinations/:id"
+                        element={<DestinationDetails />}
+                      />
+                      <Route
+                        path="/collections"
+                        element={<CollectionsDirectory />}
+                      />
+                      <Route
+                        path="/collections/:slug"
+                        element={<CollectionDetails />}
+                      />
+                      <Route
+                        path="/compare"
+                        element={<Navigate to="/destinations" replace />}
+                      />
+                      <Route
+                        path="/favorites"
+                        element={<Navigate to="/bucket-list" replace />}
+                      />
+                      <Route path="/bucket-list" element={<MyTrips />} />
+                      <Route path="/my-trips" element={<MyTrips />} />
+                      <Route path="/passport" element={<Passport />} />
+                      <Route
+                        path="/visited-map"
+                        element={<Navigate to="/passport" replace />}
+                      />
+                      <Route path="/profile" element={<Profile />} />
+                      <Route path="/settings" element={<Settings />} />
+                      <Route path="/help" element={<Help />} />
+                      <Route path="/terms" element={<Terms />} />
+                      <Route path="/privacy" element={<Privacy />} />
+                      <Route path="/cookies" element={<Cookies />} />
+                    </Routes>
+                  </Suspense>
+                </ErrorBoundary>
+              </main>
+              <Footer />
+              <CompareFloatingBar
+                onOpenModal={() => setCompareModalOpen(true)}
+              />
+              <CompareModal
+                isOpen={compareModalOpen}
+                onClose={() => setCompareModalOpen(false)}
+              />
+            </div>
+            <Toaster position="bottom-right" />
+          </Router>
+        </TripStoreProvider>
+      </ThemeProvider>
     </AuthProvider>
   );
 }

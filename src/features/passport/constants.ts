@@ -1,11 +1,4 @@
-import {
-  Compass,
-  Map,
-  Clock,
-  Trophy,
-  FolderCheck,
-  BarChart3,
-} from "lucide-react";
+import { Icons } from "@/shared/icons";
 import type { ComponentType } from "react";
 
 export interface PassportSectionConfig {
@@ -26,43 +19,43 @@ export const PASSPORT_SECTIONS: readonly PassportSectionConfig[] = [
   {
     id: "overview",
     label: "Overview",
-    shortLabel: "🎯 Overview",
+    shortLabel: "Overview",
     description: "Summary overview of travel history & achievements",
-    icon: Compass,
+    icon: Icons.overview,
   },
   {
     id: "japan-map",
     label: "Japan Map",
-    shortLabel: "🗾 Japan Map",
+    shortLabel: "Japan Map",
     description: "Interactive explored prefectures map & region breakdown",
-    icon: Map,
+    icon: Icons.japanMap,
   },
   {
     id: "timeline",
     label: "Timeline",
-    shortLabel: "📜 Timeline",
+    shortLabel: "Timeline",
     description: "Chronological travel activity feed",
-    icon: Clock,
+    icon: Icons.timeline,
   },
   {
     id: "achievements",
     label: "Achievements",
-    shortLabel: "🏆 Achievements",
+    shortLabel: "Achievements",
     description: "Unlocked heritage list benchmarks & curated travel goals",
-    icon: Trophy,
+    icon: Icons.achievements,
   },
   {
     id: "badges",
     label: "Badges",
-    shortLabel: "🎖️ Badges",
+    shortLabel: "Badges",
     description: "Earned travel milestone & regional exploration badges",
-    icon: FolderCheck,
+    icon: Icons.badges,
   },
   {
     id: "statistics",
     label: "Statistics",
-    shortLabel: "📊 Statistics",
+    shortLabel: "Statistics",
     description: "Breakdown of explored places & prefecture stats",
-    icon: BarChart3,
+    icon: Icons.statistics,
   },
 ] as const;

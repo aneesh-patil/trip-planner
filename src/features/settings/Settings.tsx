@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useAuth } from "@/shared/hooks/useAuth";
+import { useTheme } from "@/shared/context/ThemeContext";
+import { useTripStore } from "@/shared/hooks/useTripStore";
+import StationInput from "@/shared/components/StationInput";
 import {
   Sliders,
   MapPin,
@@ -11,20 +15,31 @@ import {
   Loader2,
 } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
+import { toast } from "sonner";
 
 type SettingsSection =
   "general" | "travel" | "appearance" | "accessibility" | "data";
 
 export default function Settings() {
   const { user, updateUserProfile } = useAuth();
-  const [activeSection, setActiveSection] =
-    useState<SettingsSection>("general");
+  const { theme, setTheme } = useTheme();
+  const { homeStation, setHomeStation, visited, visitedPrefectures, trips } =
+    useTripStore();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  const sectionParam = searchParams.get("section") as SettingsSection | null;
+  const returnParam = searchParams.get("return");
+
+  const [activeSection, setActiveSection] = useState<SettingsSection>(
+    sectionParam || "general",
+  );
   const [loading, setLoading] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
 
   // Settings State
   const [baseLocation, setBaseLocation] = useState(
-    user?.user_metadata?.base_location || "Tokyo Station",
+    homeStation || user?.user_metadata?.base_location || "Tokyo Station",
   );
   const [units, setUnits] = useState(user?.user_metadata?.units || "metric");
   const [carMode, setCarMode] = useState(
@@ -36,14 +51,14 @@ export default function Settings() {
   const [partySize, setPartySize] = useState(
     user?.user_metadata?.preferences?.partySize || 2,
   );
-  const [themeMode, setThemeMode] = useState(
-    user?.user_metadata?.theme || "system",
-  );
   const [reducedMotion, setReducedMotion] = useState(false);
 
   useEffect(() => {
+    if (homeStation) setBaseLocation(homeStation);
+  }, [homeStation]);
+
+  useEffect(() => {
     if (user?.user_metadata) {
-      setBaseLocation(user.user_metadata.base_location || "Tokyo Station");
       setUnits(user.user_metadata.units || "metric");
       if (user.user_metadata.preferences) {
         setCarMode(user.user_metadata.preferences.carMode || "none");
@@ -59,10 +74,12 @@ export default function Settings() {
     setSaveSuccess(false);
 
     try {
+      setHomeStation(baseLocation);
+
       const { error } = await updateUserProfile({
         base_location: baseLocation,
         units,
-        theme: themeMode,
+        theme,
         preferences: {
           carMode,
           publicModes,
@@ -73,10 +90,24 @@ export default function Settings() {
 
       if (!error) {
         setSaveSuccess(true);
-        setTimeout(() => setSaveSuccess(false), 3000);
+        toast.success(
+          `Base Location updated to ${baseLocation}. Recommendations refreshed.`,
+        );
+
+        // Safe return flow: validate internal relative URL
+        if (
+          returnParam &&
+          returnParam.startsWith("/") &&
+          !returnParam.startsWith("//")
+        ) {
+          setTimeout(() => navigate(returnParam), 1000);
+        } else {
+          setTimeout(() => setSaveSuccess(false), 3000);
+        }
       }
     } catch (err) {
       console.error(err);
+      toast.error("Failed to save settings");
     } finally {
       setLoading(false);
     }
@@ -86,6 +117,44 @@ export default function Settings() {
     setPublicModes((prev) =>
       prev.includes(mode) ? prev.filter((m) => m !== mode) : [...prev, mode],
     );
+  };
+
+  const handleExportData = () => {
+    const exportData = {
+      app: "TabiMap",
+      version: "1.5.2",
+      schemaVersion: 1,
+      exportedAt: new Date().toISOString(),
+      profile: {
+        username:
+          user?.user_metadata?.username || user?.user_metadata?.full_name || "",
+        email: user?.email || "",
+        home_city: user?.user_metadata?.home_city || "",
+      },
+      preferences: {
+        base_location: homeStation || baseLocation,
+        carMode,
+        publicModes,
+        partySize,
+        units,
+        theme,
+      },
+      visitedDestinations: visited,
+      prefectures: visitedPrefectures,
+      trips,
+    };
+
+    const dataStr =
+      "data:text/json;charset=utf-8," +
+      encodeURIComponent(JSON.stringify(exportData, null, 2));
+    const downloadAnchor = document.createElement("a");
+    downloadAnchor.setAttribute("href", dataStr);
+    downloadAnchor.setAttribute("download", "tabimap_travel_data.json");
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+
+    toast.success("Travel data backup exported successfully");
   };
 
   return (
@@ -100,7 +169,7 @@ export default function Settings() {
           Settings & Preferences
         </h1>
         <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 mt-1">
-          Customize your Base Location, travel preferences, transport defaults,
+          Customize your Base Location, travel preferences, transit defaults,
           and UI accessibility.
         </p>
       </div>
@@ -109,15 +178,11 @@ export default function Settings() {
         {/* Settings Navigation Sidebar */}
         <div className="lg:col-span-3 space-y-1">
           {[
-            {
-              id: "general",
-              label: "⚙️ General & Base Location",
-              icon: MapPin,
-            },
-            { id: "travel", label: "🚘 Travel Preferences", icon: Car },
-            { id: "appearance", label: "🎨 Appearance", icon: Sun },
-            { id: "accessibility", label: "👁️ Accessibility", icon: Eye },
-            { id: "data", label: "💾 Data & Export", icon: Download },
+            { id: "general", label: "General & Base Location", icon: MapPin },
+            { id: "travel", label: "Travel Preferences", icon: Car },
+            { id: "appearance", label: "Appearance", icon: Sun },
+            { id: "accessibility", label: "Accessibility", icon: Eye },
+            { id: "data", label: "Data & Export", icon: Download },
           ].map((sec) => {
             const isActive = activeSection === sec.id;
             return (
@@ -164,22 +229,18 @@ export default function Settings() {
 
                 <div className="space-y-4 pt-2">
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">
+                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
                       Base Location (Home Station / Prefecture)
                     </label>
-                    <div className="relative">
-                      <MapPin className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                      <input
-                        type="text"
-                        value={baseLocation}
-                        onChange={(e) => setBaseLocation(e.target.value)}
-                        placeholder="e.g. Tokyo Station, Shinjuku, Osaka Station"
-                        className="w-full pl-10 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-900 dark:text-white"
-                      />
+
+                    {/* Reusable StationInput Component */}
+                    <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+                      <StationInput />
                     </div>
+
                     <p className="text-[11px] text-slate-400 mt-1">
-                      Used to calculate estimated transit hours when planning
-                      custom itineraries.
+                      Used as single source of truth for homepage
+                      recommendations and travel time calculations.
                     </p>
                   </div>
 
@@ -231,9 +292,9 @@ export default function Settings() {
                     </label>
                     <div className="grid grid-cols-3 gap-3">
                       {[
-                        { id: "none", label: "🚫 Transit Only" },
-                        { id: "rental", label: "🚗 Rental Car" },
-                        { id: "own", label: "🚘 Personal Car" },
+                        { id: "none", label: "Transit Only" },
+                        { id: "rental", label: "Rental Car" },
+                        { id: "own", label: "Personal Car" },
                       ].map((m) => (
                         <button
                           key={m.id}
@@ -257,9 +318,9 @@ export default function Settings() {
                     </label>
                     <div className="grid grid-cols-3 gap-3">
                       {[
-                        { id: "train", label: "🚆 Train / Subway" },
-                        { id: "bus", label: "🚌 Local Bus" },
-                        { id: "express", label: "🚄 Shinkansen" },
+                        { id: "train", label: "Train / Subway" },
+                        { id: "bus", label: "Local Bus" },
+                        { id: "express", label: "Shinkansen" },
                       ].map((tm) => (
                         <button
                           key={tm.id}
@@ -303,23 +364,24 @@ export default function Settings() {
                     Appearance & Theme
                   </h3>
                   <p className="text-xs text-slate-500">
-                    Customize interface visual theme and contrast preferences.
+                    Customize interface visual theme. ThemeProvider applies
+                    changes instantly.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3 pt-2">
                   {[
-                    { id: "system", label: "💻 System Default" },
-                    { id: "light", label: "☀️ Light Mode" },
-                    { id: "dark", label: "🌙 Dark Mode" },
+                    { id: "system", label: "System Default" },
+                    { id: "light", label: "Light Mode" },
+                    { id: "dark", label: "Dark Mode" },
                   ].map((t) => (
                     <button
                       key={t.id}
                       type="button"
-                      onClick={() => setThemeMode(t.id)}
+                      onClick={() => setTheme(t.id as any)}
                       className={`p-4 rounded-2xl text-xs font-bold border transition-all text-center ${
-                        themeMode === t.id
-                          ? "bg-emerald-500 text-white border-emerald-500"
+                        theme === t.id
+                          ? "bg-emerald-500 text-white border-emerald-500 shadow-sm"
                           : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700"
                       }`}
                     >
@@ -375,31 +437,16 @@ export default function Settings() {
 
                 <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 space-y-3">
                   <div className="text-xs font-bold text-slate-900 dark:text-white">
-                    Export Travel History
+                    Export Travel History (JSON Backup)
                   </div>
                   <p className="text-[11px] text-slate-500">
-                    Download a JSON backup of your visited destinations and
-                    saved itineraries.
+                    Download a full JSON backup of your profile details, visited
+                    places, prefectures, and saved trips (`schemaVersion: 1`).
                   </p>
                   <Button
                     type="button"
                     variant="outline"
-                    onClick={() => {
-                      const dataStr =
-                        "data:text/json;charset=utf-8," +
-                        encodeURIComponent(
-                          JSON.stringify(user?.user_metadata || {}),
-                        );
-                      const downloadAnchor = document.createElement("a");
-                      downloadAnchor.setAttribute("href", dataStr);
-                      downloadAnchor.setAttribute(
-                        "download",
-                        "tabimap_user_data.json",
-                      );
-                      document.body.appendChild(downloadAnchor);
-                      downloadAnchor.click();
-                      downloadAnchor.remove();
-                    }}
+                    onClick={handleExportData}
                     className="rounded-xl text-xs font-bold flex items-center gap-2"
                   >
                     <Download className="w-3.5 h-3.5" /> Export Data (JSON)
@@ -412,7 +459,7 @@ export default function Settings() {
               <Button
                 type="submit"
                 disabled={loading}
-                className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
                 Save Settings
