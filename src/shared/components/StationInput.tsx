@@ -52,7 +52,11 @@ const PREFECTURES = [
   "Okinawa",
 ];
 
-export default function StationInput() {
+interface StationInputProps {
+  embedded?: boolean;
+}
+
+export default function StationInput({ embedded = false }: StationInputProps) {
   const {
     homeStation,
     setHomeStation,
@@ -67,13 +71,19 @@ export default function StationInput() {
   >({});
 
   // UI State
-  const [isEditing, setIsEditing] = useState<boolean>(!homeStation);
+  const [isEditing, setIsEditing] = useState<boolean>(embedded || !homeStation);
   const [mode, setMode] = useState<"station" | "zip">("station");
   const [selectedPref, setSelectedPref] = useState<string>("Tokyo");
   const [selectedStation, setSelectedStation] = useState<string>("");
   const [zipCode, setZipCode] = useState<string>("");
   const [isFetchingZip, setIsFetchingZip] = useState(false);
   const [zipError, setZipError] = useState("");
+
+  useEffect(() => {
+    if (embedded) {
+      setIsEditing(true);
+    }
+  }, [embedded]);
 
   useEffect(() => {
     fetch("/data/stations-by-prefecture.json")
@@ -183,7 +193,7 @@ export default function StationInput() {
     return stationsByPref[selectedPref] || [];
   }, [stationsByPref, selectedPref]);
 
-  if (!isEditing && homeStation) {
+  if (!isEditing && homeStation && !embedded) {
     return (
       <div className="flex items-center gap-3 bg-white/70 dark:bg-slate-900/70 p-3 rounded-xl w-fit border border-slate-200 dark:border-slate-700 backdrop-blur-md shadow-sm">
         <MapPin className="w-5 h-5 text-emerald-500 shrink-0" />
@@ -204,20 +214,24 @@ export default function StationInput() {
   }
 
   return (
-    <div className="flex flex-col gap-3 bg-white/70 dark:bg-slate-900/70 p-3 rounded-xl w-fit border border-slate-200 dark:border-slate-700 backdrop-blur-md shadow-sm">
+    <div
+      className={`flex flex-col gap-3 p-3.5 rounded-2xl border border-slate-200/80 dark:border-slate-800 ${embedded ? "bg-slate-50/50 dark:bg-slate-900/40 w-full" : "bg-white/70 dark:bg-slate-900/70 w-fit backdrop-blur-md shadow-sm"}`}
+    >
       <div className="flex items-center gap-3">
         <MapPin className="w-5 h-5 text-emerald-500 shrink-0" />
         <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 shrink-0">
-          Set Base Location:
+          Select Base Station:
         </span>
         <div className="flex bg-slate-200 dark:bg-slate-800 rounded-lg p-0.5 border border-slate-300 dark:border-slate-700">
           <button
+            type="button"
             onClick={() => setMode("station")}
             className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${mode === "station" ? "bg-white dark:bg-slate-950 text-emerald-600 shadow-sm" : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"}`}
           >
             Station
           </button>
           <button
+            type="button"
             onClick={() => setMode("zip")}
             className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${mode === "zip" ? "bg-white dark:bg-slate-950 text-emerald-600 shadow-sm" : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300"}`}
           >
@@ -231,7 +245,7 @@ export default function StationInput() {
           <select
             value={selectedPref}
             onChange={handlePrefChange}
-            className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-2 py-1.5 text-sm font-medium focus:outline-none focus:border-emerald-500 w-full sm:w-32"
+            className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-2 text-sm font-semibold focus:outline-none focus:border-emerald-500 w-full sm:w-36"
           >
             {PREFECTURES.map((p) => (
               <option key={p} value={p}>
@@ -243,7 +257,7 @@ export default function StationInput() {
           <select
             value={selectedStation}
             onChange={handleStationChange}
-            className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-2 py-1.5 text-sm font-medium focus:outline-none focus:border-emerald-500 w-full sm:w-56"
+            className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-2 text-sm font-semibold focus:outline-none focus:border-emerald-500 w-full sm:w-64"
             disabled={stations.length === 0}
           >
             <option value="">-- Select Station --</option>
@@ -262,30 +276,32 @@ export default function StationInput() {
             value={zipCode}
             onChange={handleZipChange}
             onKeyDown={(e) => e.key === "Enter" && handleSet()}
-            className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-1.5 text-sm font-medium focus:outline-none focus:border-emerald-500 w-full sm:w-64"
+            className="bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-sm font-semibold focus:outline-none focus:border-emerald-500 w-full sm:w-64"
           />
           {zipError && <span className="text-xs text-red-500">{zipError}</span>}
         </div>
       )}
       <div className="flex gap-2">
         <button
+          type="button"
           onClick={handleSet}
           disabled={
             (mode === "station" && !selectedStation) ||
             (mode === "zip" && !zipCode) ||
             isFetchingZip
           }
-          className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex-1 flex items-center justify-center gap-2"
+          className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-xs px-4 py-2 rounded-lg transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex-1 flex items-center justify-center gap-2"
         >
           {isFetchingZip && (
             <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
           )}
-          {isFetchingZip ? "Locating..." : "Set"}
+          {isFetchingZip ? "Locating..." : "Set Location"}
         </button>
-        {homeStation && (
+        {homeStation && !embedded && (
           <button
+            type="button"
             onClick={() => setIsEditing(false)}
-            className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium text-sm px-4 py-1.5 rounded-lg transition-colors shadow-sm"
+            className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium text-xs px-4 py-2 rounded-lg transition-colors shadow-sm"
           >
             Cancel
           </button>

@@ -71,10 +71,13 @@ export default function Settings() {
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setSaveSuccess(false);
-
     try {
-      setHomeStation(baseLocation);
+      const locationChanged = baseLocation !== homeStation;
+      if (locationChanged) {
+        setHomeStation(baseLocation);
+      }
+
+      localStorage.setItem("tabimap_units", units);
 
       const { error } = await updateUserProfile({
         base_location: baseLocation,
@@ -90,9 +93,22 @@ export default function Settings() {
 
       if (!error) {
         setSaveSuccess(true);
-        toast.success(
-          `Base Location updated to ${baseLocation}. Recommendations refreshed.`,
-        );
+        if (locationChanged) {
+          toast.success(
+            `Base Location updated to ${baseLocation}. Recommendations refreshed.`,
+          );
+        } else {
+          const sectionToasts: Record<SettingsSection, string> = {
+            general: "General settings updated successfully!",
+            travel: "Travel preferences updated successfully!",
+            appearance: "Appearance & theme updated successfully!",
+            accessibility: "Accessibility options updated successfully!",
+            data: "Data settings updated successfully!",
+          };
+          toast.success(
+            sectionToasts[activeSection] || "Settings saved successfully!",
+          );
+        }
 
         // Safe return flow: validate internal relative URL
         if (
@@ -234,9 +250,7 @@ export default function Settings() {
                     </label>
 
                     {/* Reusable StationInput Component */}
-                    <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
-                      <StationInput />
-                    </div>
+                    <StationInput embedded={true} />
 
                     <p className="text-[11px] text-slate-400 mt-1">
                       Used as single source of truth for homepage
