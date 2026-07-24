@@ -10,7 +10,14 @@
     "badgeColor": "amber",
     "sortOrder": 1,
     "officialSource": "Japan Castle Foundation",
-    "sourceUrl": "https://www.japan-castle.or.jp/"
+    "sourceUrl": "https://www.japan-castle.or.jp/",
+    "metadata": {
+      "authority": "foundation",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Japan Castle Foundation",
+      "estimatedMembers": 12
+    }
   },
   {
     "id": "unesco-japan",
@@ -23,7 +30,14 @@
     "badgeColor": "sky",
     "sortOrder": 2,
     "officialSource": "UNESCO World Heritage Centre",
-    "sourceUrl": "https://whc.unesco.org/en/statesparties/jp"
+    "sourceUrl": "https://whc.unesco.org/en/statesparties/jp",
+    "metadata": {
+      "authority": "government",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "UNESCO World Heritage Centre",
+      "estimatedMembers": 25
+    }
   },
   {
     "id": "national-treasures",
@@ -36,7 +50,14 @@
     "badgeColor": "amber",
     "sortOrder": 3,
     "officialSource": "Agency for Cultural Affairs (国宝)",
-    "sourceUrl": "https://www.bunka.go.jp/seisaku/bunkazai/"
+    "sourceUrl": "https://www.bunka.go.jp/seisaku/bunkazai/",
+    "metadata": {
+      "authority": "government",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Agency for Cultural Affairs (国宝)",
+      "estimatedMembers": 220
+    }
   },
   {
     "id": "top-100-castles",
@@ -49,7 +70,14 @@
     "badgeColor": "rose",
     "sortOrder": 4,
     "officialSource": "Japan Castle Foundation (日本100名城)",
-    "sourceUrl": "https://www.japan-castle.or.jp/100meijo/"
+    "sourceUrl": "https://www.japan-castle.or.jp/100meijo/",
+    "metadata": {
+      "authority": "foundation",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Japan Castle Foundation (日本100名城)",
+      "estimatedMembers": 100
+    }
   },
   {
     "id": "three-great-gardens",
@@ -62,7 +90,14 @@
     "badgeColor": "emerald",
     "sortOrder": 5,
     "officialSource": "Japan National Tourism Organization",
-    "sourceUrl": "https://www.japan.travel/en/guide/gardens/"
+    "sourceUrl": "https://www.japan.travel/en/guide/gardens/",
+    "metadata": {
+      "authority": "historical_consensus",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "JNTO / Cultural Heritage Tradition",
+      "estimatedMembers": 3
+    }
   },
   {
     "id": "three-great-views",
@@ -75,7 +110,14 @@
     "badgeColor": "emerald",
     "sortOrder": 6,
     "officialSource": "Japan National Tourism Organization (日本三景)",
-    "sourceUrl": "https://www.japan.travel/en/japan-magazine/nihon-sankei/"
+    "sourceUrl": "https://www.japan.travel/en/japan-magazine/nihon-sankei/",
+    "metadata": {
+      "authority": "historical_consensus",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Hayashi Gaho (1643) / JNTO",
+      "estimatedMembers": 3
+    }
   },
   {
     "id": "three-great-waterfalls",
@@ -88,7 +130,14 @@
     "badgeColor": "sky",
     "sortOrder": 7,
     "officialSource": "Japan National Tourism Organization (日本三名瀑)",
-    "sourceUrl": "https://www.japan.travel/en/guide/waterfalls/"
+    "sourceUrl": "https://www.japan.travel/en/guide/waterfalls/",
+    "metadata": {
+      "authority": "historical_consensus",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "JNTO / Meibaku Tradition",
+      "estimatedMembers": 3
+    }
   },
   {
     "id": "three-great-buddhas",
@@ -101,7 +150,14 @@
     "badgeColor": "amber",
     "sortOrder": 8,
     "officialSource": "Agency for Cultural Affairs (日本三大仏)",
-    "sourceUrl": "https://www.bunka.go.jp/"
+    "sourceUrl": "https://www.bunka.go.jp/",
+    "metadata": {
+      "authority": "historical_consensus",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Agency for Cultural Affairs / Heritage Tradition",
+      "estimatedMembers": 3
+    }
   },
   {
     "id": "three-great-shrines",
@@ -114,7 +170,14 @@
     "badgeColor": "rose",
     "sortOrder": 9,
     "officialSource": "Association of Shinto Shrines (神社本庁)",
-    "sourceUrl": "https://www.jinjahoncho.or.jp/"
+    "sourceUrl": "https://www.jinjahoncho.or.jp/",
+    "metadata": {
+      "authority": "association",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Association of Shinto Shrines (神社本庁)",
+      "estimatedMembers": 3
+    }
   },
   {
     "id": "three-cherry-blossom-spots",
@@ -127,7 +190,14 @@
     "badgeColor": "rose",
     "sortOrder": 10,
     "officialSource": "Japan Cherry Blossom Association (日本さくらの会)",
-    "sourceUrl": "https://www.sakuranokai.or.jp/"
+    "sourceUrl": "https://www.sakuranokai.or.jp/",
+    "metadata": {
+      "authority": "association",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Japan Cherry Blossom Association (日本さくらの会)",
+      "estimatedMembers": 3
+    }
   },
   {
     "id": "top-onsen-japan",
@@ -140,7 +210,14 @@
     "badgeColor": "rose",
     "sortOrder": 11,
     "officialSource": "Japan Onsen Association",
-    "sourceUrl": "https://www.onsenkyokai.or.jp/"
+    "sourceUrl": "https://www.onsenkyokai.or.jp/",
+    "metadata": {
+      "authority": "association",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Japan Onsen Association (温泉協会)",
+      "estimatedMembers": 50
+    }
   },
   {
     "id": "historic-towns-japan",
@@ -153,7 +230,14 @@
     "badgeColor": "emerald",
     "sortOrder": 12,
     "officialSource": "Cultural Properties Preservation District",
-    "sourceUrl": "https://www.bunka.go.jp/"
+    "sourceUrl": "https://www.bunka.go.jp/",
+    "metadata": {
+      "authority": "government",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Agency for Cultural Affairs (重伝統的建造物群保存地区)",
+      "estimatedMembers": 126
+    }
   },
   {
     "id": "great-night-views",
@@ -166,6 +250,13 @@
     "badgeColor": "purple",
     "sortOrder": 13,
     "officialSource": "Night View Convention & Tourism Bureau",
-    "sourceUrl": "https://yakei-cvb.or.jp/"
+    "sourceUrl": "https://yakei-cvb.or.jp/",
+    "metadata": {
+      "authority": "association",
+      "status": "active",
+      "lastVerified": "2026-07",
+      "verificationSource": "Night View Convention & Tourism Bureau (夜景サミット)",
+      "estimatedMembers": 20
+    }
   }
 ]

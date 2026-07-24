@@ -271,6 +271,24 @@ async function runPipeline() {
       }
       seenColSorts.add(col.sortOrder);
     }
+
+    if (!col.metadata) {
+      console.error(`  \x1b[31m❌ [${label}] Missing required object 'metadata'\x1b[0m`);
+      collectionErrors++;
+    } else {
+      if (!col.metadata.authority) {
+        console.error(`  \x1b[31m❌ [${label}] Missing required metadata field 'authority'\x1b[0m`);
+        collectionErrors++;
+      }
+      if (!col.metadata.status) {
+        console.error(`  \x1b[31m❌ [${label}] Missing required metadata field 'status'\x1b[0m`);
+        collectionErrors++;
+      }
+      if (!col.metadata.lastVerified) {
+        console.error(`  \x1b[31m❌ [${label}] Missing required metadata field 'lastVerified'\x1b[0m`);
+        collectionErrors++;
+      }
+    }
   });
 
   // Validate Destination Collection Memberships
