@@ -120,6 +120,11 @@
     {
       "collectionId": "unesco-japan",
       "confirmed": true
+    },
+    {
+      "collectionId": "historic-towns-japan",
+      "sortOrder": 7,
+      "confirmed": true
     }
   ]
 }

@@ -2642,7 +2642,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "top-onsen-japan",
+        "sortOrder": 2,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "harry-potter-studio",
@@ -3133,6 +3139,11 @@
       },
       {
         "collectionId": "top-100-castles",
+        "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 2,
         "confirmed": true
       }
     ]
@@ -3760,7 +3771,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 9,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "kanazawa",
@@ -4172,7 +4189,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "historic-towns-japan",
+        "sortOrder": 1,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "kawasaki",
@@ -4410,7 +4433,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "top-onsen-japan",
+        "sortOrder": 7,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "kiso",
@@ -5270,6 +5299,11 @@
       {
         "collectionId": "top-100-castles",
         "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 1,
+        "confirmed": true
       }
     ]
   },
@@ -5718,7 +5752,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "unesco-japan",
+        "sortOrder": 7,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "nagano-city",
@@ -6209,7 +6249,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "unesco-japan",
+        "sortOrder": 6,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "noto",
@@ -9572,7 +9618,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "historic-towns-japan",
+        "sortOrder": 5,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "chiba-nokogiriyama",
@@ -9926,7 +9978,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "top-onsen-japan",
+        "sortOrder": 1,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "gunma-ikaho-onsen",
@@ -10040,7 +10098,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "top-onsen-japan",
+        "sortOrder": 6,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "gunma-shima-onsen",
@@ -10761,7 +10825,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "historic-towns-japan",
+        "sortOrder": 6,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "gifu-shirakawa-go",
@@ -10884,6 +10954,11 @@
     "collections": [
       {
         "collectionId": "unesco-japan",
+        "confirmed": true
+      },
+      {
+        "collectionId": "historic-towns-japan",
+        "sortOrder": 7,
         "confirmed": true
       }
     ]
@@ -11131,7 +11206,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "historic-towns-japan",
+        "sortOrder": 4,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "nagano-tsumago-juku",
@@ -11251,7 +11332,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "historic-towns-japan",
+        "sortOrder": 3,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "gifu-magome-juku",
@@ -11371,7 +11458,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "historic-towns-japan",
+        "sortOrder": 2,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "nagano-suwa",
@@ -12320,7 +12413,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 4,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "tokyo-tower-minato",
@@ -13269,7 +13368,13 @@
     "travelEstimate": {
       "confidence": "beta"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 7,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "nagoya-port-tower",
@@ -14147,6 +14252,11 @@
       },
       {
         "collectionId": "top-100-castles",
+        "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 3,
         "confirmed": true
       }
     ]
@@ -15144,7 +15254,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 3,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "roppongi-hills-tokyo-city-view",
@@ -15264,7 +15380,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 8,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "sunshine-60-observatory-ikebukuro",
@@ -15504,7 +15626,13 @@
     "travelEstimate": {
       "confidence": "high"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 6,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "abeno-harukas-300-osaka",
@@ -15625,7 +15753,13 @@
     "travelEstimate": {
       "confidence": "beta"
     },
-    "collections": []
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 5,
+        "confirmed": true
+      }
+    ]
   },
   {
     "id": "kairakuen-mito",
@@ -15794,6 +15928,11 @@
         "collectionId": "top-100-castles",
         "sortOrder": 1,
         "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 4,
+        "confirmed": true
       }
     ],
     "transportOptions": {
@@ -15924,6 +16063,11 @@
       {
         "collectionId": "top-100-castles",
         "sortOrder": 12,
+        "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 8,
         "confirmed": true
       }
     ],
@@ -16271,5 +16415,511 @@
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 4000,
     "budgetMax": 15000
+  },
+  {
+    "id": "hakodate-night-view",
+    "name": "Mount Hakodate Night View",
+    "nameJa": "函館山",
+    "prefecture": "Hokkaido",
+    "region": "Hokkaido",
+    "coordinates": {
+      "lat": 41.7592,
+      "lng": 140.7042
+    },
+    "tags": [
+      "Three Great Night Views",
+      "Ropeway Observatory",
+      "Panoramic Bay View"
+    ],
+    "rating": 4.9,
+    "ratings": {
+      "overall": 4.9,
+      "scenery": 5,
+      "accessibility": 4.4,
+      "crowd": 4.5,
+      "couple": 4.9,
+      "summer": 4.7,
+      "winter": 4.8,
+      "rain": 3.5,
+      "food": 4.3,
+      "photography": 5,
+      "relaxation": 4.2,
+      "value": 4.7,
+      "uniqueness": 4.9
+    },
+    "categories": ["sightseeing", "nature", "romance"],
+    "budgetMin": 3000,
+    "budgetMax": 10000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 1,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "bus": 420,
+      "train": 380,
+      "car": 450
+    },
+    "budget": {
+      "low": 3000,
+      "mid": 6000,
+      "high": 12000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Night_view_from_Mount_Hakodate03s3200.jpg/1280px-Night_view_from_Mount_Hakodate03s3200.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Night_view_from_Mount_Hakodate03s3200.jpg/1280px-Night_view_from_Mount_Hakodate03s3200.jpg"
+    ],
+    "description": "Mount Hakodate offers one of Japan's Three Great Night Views, overlooking a stunning hourglass-shaped peninsula illuminated between Tsugaru Strait and Hakodate Bay.",
+    "notes": "Accessible via the Mount Hakodate Ropeway in just 3 minutes."
+  },
+  {
+    "id": "kobe-maya-night-view",
+    "name": "Mount Maya Kikuseidai (Kobe)",
+    "nameJa": "摩耶山 掬星台",
+    "prefecture": "Hyogo",
+    "region": "Kansai",
+    "coordinates": {
+      "lat": 34.7331,
+      "lng": 135.2056
+    },
+    "tags": [
+      "Three Great Night Views",
+      "Ten Million Dollar View",
+      "Kobe Skyline"
+    ],
+    "rating": 4.9,
+    "ratings": {
+      "overall": 4.9,
+      "scenery": 5,
+      "accessibility": 4.2,
+      "crowd": 4.3,
+      "couple": 4.9,
+      "summer": 4.6,
+      "winter": 4.7,
+      "rain": 3.4,
+      "food": 4.1,
+      "photography": 5,
+      "relaxation": 4.4,
+      "value": 4.8,
+      "uniqueness": 4.9
+    },
+    "categories": ["sightseeing", "nature", "romance"],
+    "budgetMin": 3000,
+    "budgetMax": 9000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": [
+      {
+        "collectionId": "great-night-views",
+        "sortOrder": 2,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "train": 210,
+      "bus": 240,
+      "car": 270
+    },
+    "budget": {
+      "low": 3000,
+      "mid": 5000,
+      "high": 10000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Night_view_from_Mount_Maya01s3200.jpg/1280px-Night_view_from_Mount_Maya01s3200.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Night_view_from_Mount_Maya01s3200.jpg/1280px-Night_view_from_Mount_Maya01s3200.jpg"
+    ],
+    "description": "Known as the Ten Million Dollar Night View, Kikuseidai observatory on Mount Maya captures a breathtaking sparkling panorama spanning Kobe, Osaka Bay, and Kansai.",
+    "notes": "Kikuseidai literally means a platform where you can scoop up stars with your hands."
+  },
+  {
+    "id": "gero-onsen",
+    "name": "Gero Onsen",
+    "nameJa": "下呂温泉",
+    "prefecture": "Gifu",
+    "region": "Chubu",
+    "coordinates": {
+      "lat": 35.8089,
+      "lng": 137.2439
+    },
+    "tags": ["Three Famous Springs", "Top Onsen Town", "Thermal Baths"],
+    "rating": 4.8,
+    "ratings": {
+      "overall": 4.8,
+      "scenery": 4.7,
+      "accessibility": 4.4,
+      "crowd": 4,
+      "couple": 4.8,
+      "summer": 4.2,
+      "winter": 4.9,
+      "rain": 4.5,
+      "food": 4.7,
+      "photography": 4.6,
+      "relaxation": 5,
+      "value": 4.6,
+      "uniqueness": 4.8
+    },
+    "categories": ["onsen", "relaxation", "culture"],
+    "budgetMin": 5000,
+    "budgetMax": 25000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "high"
+    },
+    "collections": [
+      {
+        "collectionId": "top-onsen-japan",
+        "sortOrder": 3,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "train": 120,
+      "bus": 150,
+      "car": 140
+    },
+    "budget": {
+      "low": 6000,
+      "mid": 12000,
+      "high": 28000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gero_Onsen_Gifu_pref_Japan01n.jpg/1280px-Gero_Onsen_Gifu_pref_Japan01n.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gero_Onsen_Gifu_pref_Japan01n.jpg/1280px-Gero_Onsen_Gifu_pref_Japan01n.jpg"
+    ],
+    "description": "Gero Onsen is one of Japan's Three Great Hot Springs (Nihon Sanmeisen), famed since the 9th century for its silky alkaline waters known as 'beauty baths'.",
+    "notes": "Situated along the Hida River between Nagoya and Takayama."
+  },
+  {
+    "id": "arima-onsen",
+    "name": "Arima Onsen",
+    "nameJa": "有馬温泉",
+    "prefecture": "Hyogo",
+    "region": "Kansai",
+    "coordinates": {
+      "lat": 34.7972,
+      "lng": 135.2472
+    },
+    "tags": [
+      "Three Famous Springs",
+      "Kintan & Gintan Baths",
+      "Historic Ryokan"
+    ],
+    "rating": 4.8,
+    "ratings": {
+      "overall": 4.8,
+      "scenery": 4.7,
+      "accessibility": 4.6,
+      "crowd": 4.3,
+      "couple": 4.8,
+      "summer": 4.3,
+      "winter": 4.9,
+      "rain": 4.4,
+      "food": 4.8,
+      "photography": 4.6,
+      "relaxation": 5,
+      "value": 4.5,
+      "uniqueness": 4.9
+    },
+    "categories": ["onsen", "relaxation", "culture"],
+    "budgetMin": 6000,
+    "budgetMax": 30000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": [
+      {
+        "collectionId": "top-onsen-japan",
+        "sortOrder": 4,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "train": 190,
+      "bus": 210,
+      "car": 240
+    },
+    "budget": {
+      "low": 7000,
+      "mid": 15000,
+      "high": 32000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Arima_Onsen_Kobe_Japan01s3200.jpg/1280px-Arima_Onsen_Kobe_Japan01s3200.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Arima_Onsen_Kobe_Japan01s3200.jpg/1280px-Arima_Onsen_Kobe_Japan01s3200.jpg"
+    ],
+    "description": "Arima Onsen is Japan's oldest recorded hot spring resort, nestled behind Mount Rokko and famous for its iron-rich golden 'Kinsen' and clear radium 'Ginsen' waters.",
+    "notes": "Favored by Toyotomi Hideyoshi who built private baths here."
+  },
+  {
+    "id": "kinosaki-onsen",
+    "name": "Kinosaki Onsen",
+    "nameJa": "城崎温泉",
+    "prefecture": "Hyogo",
+    "region": "Kansai",
+    "coordinates": {
+      "lat": 35.6264,
+      "lng": 134.8144
+    },
+    "tags": ["Willow Canal", "7 Public Bathhouses", "Yukata Stroll"],
+    "rating": 4.9,
+    "ratings": {
+      "overall": 4.9,
+      "scenery": 4.9,
+      "accessibility": 4.2,
+      "crowd": 4.2,
+      "couple": 4.9,
+      "summer": 4.5,
+      "winter": 4.9,
+      "rain": 4.6,
+      "food": 4.9,
+      "photography": 4.9,
+      "relaxation": 5,
+      "value": 4.6,
+      "uniqueness": 4.9
+    },
+    "categories": ["onsen", "relaxation", "culture"],
+    "budgetMin": 7000,
+    "budgetMax": 28000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": [
+      {
+        "collectionId": "top-onsen-japan",
+        "sortOrder": 5,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "train": 240,
+      "bus": 280,
+      "car": 320
+    },
+    "budget": {
+      "low": 8000,
+      "mid": 16000,
+      "high": 30000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kinosaki_Onsen_canal_2019.jpg/1280px-Kinosaki_Onsen_canal_2019.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kinosaki_Onsen_canal_2019.jpg/1280px-Kinosaki_Onsen_canal_2019.jpg"
+    ],
+    "description": "Kinosaki Onsen is a quintessential hot spring town centered around a willow-lined canal, where visitors stroll between seven distinct public bathhouses in traditional yukata robes.",
+    "notes": "Founded over 1,300 years ago when a stork was observed healing its wounded leg in the thermal springs."
+  },
+  {
+    "id": "kyoto-historic",
+    "name": "Historic Kyoto (Kiyomizu-dera & Kinkaku-ji)",
+    "nameJa": "古都京都の文化財",
+    "prefecture": "Kyoto",
+    "region": "Kansai",
+    "coordinates": {
+      "lat": 34.9949,
+      "lng": 135.785
+    },
+    "tags": [
+      "UNESCO World Heritage",
+      "National Treasure",
+      "Golden Pavilion",
+      "Kiyomizu Stage"
+    ],
+    "rating": 5,
+    "ratings": {
+      "overall": 5,
+      "scenery": 5,
+      "accessibility": 4.7,
+      "crowd": 4.7,
+      "couple": 4.9,
+      "summer": 4.5,
+      "winter": 4.7,
+      "rain": 4.4,
+      "food": 4.9,
+      "photography": 5,
+      "relaxation": 4.5,
+      "value": 4.8,
+      "uniqueness": 5
+    },
+    "categories": ["culture", "history", "sightseeing"],
+    "budgetMin": 3000,
+    "budgetMax": 15000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": [
+      {
+        "collectionId": "unesco-japan",
+        "sortOrder": 3,
+        "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 5,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "shinkansen": 140,
+      "train": 170,
+      "car": 240
+    },
+    "budget": {
+      "low": 4000,
+      "mid": 8000,
+      "high": 18000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kiyomizu-dera_in_Kyoto-r.jpg/1280px-Kiyomizu-dera_in_Kyoto-r.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kiyomizu-dera_in_Kyoto-r.jpg/1280px-Kiyomizu-dera_in_Kyoto-r.jpg"
+    ],
+    "description": "Kyoto, Japan's imperial capital for over a millennium, encompasses 17 UNESCO World Heritage monuments including the wooden balcony of Kiyomizu-dera and the shimmering Golden Pavilion.",
+    "notes": "Home to over 2,000 temples and shrines."
+  },
+  {
+    "id": "nara-park-todaiji",
+    "name": "Historic Nara (Todai-ji Great Buddha)",
+    "nameJa": "古都奈良の文化財",
+    "prefecture": "Nara",
+    "region": "Kansai",
+    "coordinates": {
+      "lat": 34.6889,
+      "lng": 135.8398
+    },
+    "tags": [
+      "UNESCO World Heritage",
+      "National Treasure",
+      "Great Buddha",
+      "Bow Deer Park"
+    ],
+    "rating": 4.9,
+    "ratings": {
+      "overall": 4.9,
+      "scenery": 4.9,
+      "accessibility": 4.6,
+      "crowd": 4.5,
+      "couple": 4.8,
+      "summer": 4.4,
+      "winter": 4.6,
+      "rain": 4.2,
+      "food": 4.6,
+      "photography": 4.9,
+      "relaxation": 4.7,
+      "value": 4.8,
+      "uniqueness": 5
+    },
+    "categories": ["culture", "history", "sightseeing"],
+    "budgetMin": 2000,
+    "budgetMax": 8000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": [
+      {
+        "collectionId": "unesco-japan",
+        "sortOrder": 4,
+        "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 6,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "train": 170,
+      "bus": 200,
+      "car": 240
+    },
+    "budget": {
+      "low": 3000,
+      "mid": 6000,
+      "high": 12000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg/1280px-Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg/1280px-Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg"
+    ],
+    "description": "Nara Park houses the world's largest wooden building (Todai-ji Daibutsuden), sheltering the 15-meter bronze Great Buddha alongside over 1,200 friendly freely roaming sika deer.",
+    "notes": "Nara was Japan's first permanent capital (710–784 AD)."
+  },
+  {
+    "id": "miyajima-itsukushima",
+    "name": "Itsukushima Shrine (Miyajima Island)",
+    "nameJa": "厳島神社",
+    "prefecture": "Hiroshima",
+    "region": "Chugoku",
+    "coordinates": {
+      "lat": 34.2958,
+      "lng": 132.3197
+    },
+    "tags": [
+      "UNESCO World Heritage",
+      "National Treasure",
+      "Floating Torii Gate",
+      "Three Views of Japan"
+    ],
+    "rating": 5,
+    "ratings": {
+      "overall": 5,
+      "scenery": 5,
+      "accessibility": 4.3,
+      "crowd": 4.4,
+      "couple": 5,
+      "summer": 4.6,
+      "winter": 4.7,
+      "rain": 4.3,
+      "food": 4.8,
+      "photography": 5,
+      "relaxation": 4.7,
+      "value": 4.8,
+      "uniqueness": 5
+    },
+    "categories": ["culture", "history", "sightseeing"],
+    "budgetMin": 3000,
+    "budgetMax": 12000,
+    "status": "verified",
+    "travelEstimate": {
+      "confidence": "beta"
+    },
+    "collections": [
+      {
+        "collectionId": "unesco-japan",
+        "sortOrder": 5,
+        "confirmed": true
+      },
+      {
+        "collectionId": "national-treasures",
+        "sortOrder": 7,
+        "confirmed": true
+      }
+    ],
+    "transportOptions": {
+      "shinkansen": 240,
+      "train": 280,
+      "car": 330
+    },
+    "budget": {
+      "low": 4000,
+      "mid": 8000,
+      "high": 16000
+    },
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Itsukushima_Torii_Gate_2019.jpg/1280px-Itsukushima_Torii_Gate_2019.jpg",
+    "galleryImages": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Itsukushima_Torii_Gate_2019.jpg/1280px-Itsukushima_Torii_Gate_2019.jpg"
+    ],
+    "description": "Itsukushima Shrine on Miyajima Island is world-renowned for its iconic vermilion O-Torii gate that appears to float magically upon the Seto Inland Sea during high tide.",
+    "notes": "Designated as one of the Three Views of Japan (Nihon Sankei)."
   }
 ]

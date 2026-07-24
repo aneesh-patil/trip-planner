@@ -1,0 +1,68 @@
+{
+  "id": "nara-park-todaiji",
+  "name": "Historic Nara (Todai-ji Great Buddha)",
+  "nameJa": "古都奈良の文化財",
+  "prefecture": "Nara",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 34.6889,
+    "lng": 135.8398
+  },
+  "tags": [
+    "UNESCO World Heritage",
+    "National Treasure",
+    "Great Buddha",
+    "Bow Deer Park"
+  ],
+  "rating": 4.9,
+  "ratings": {
+    "overall": 4.9,
+    "scenery": 4.9,
+    "accessibility": 4.6,
+    "crowd": 4.5,
+    "couple": 4.8,
+    "summer": 4.4,
+    "winter": 4.6,
+    "rain": 4.2,
+    "food": 4.6,
+    "photography": 4.9,
+    "relaxation": 4.7,
+    "value": 4.8,
+    "uniqueness": 5
+  },
+  "categories": ["culture", "history", "sightseeing"],
+  "budgetMin": 2000,
+  "budgetMax": 8000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "unesco-japan",
+      "sortOrder": 4,
+      "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 6,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 170,
+    "bus": 200,
+    "car": 240
+  },
+  "budget": {
+    "low": 3000,
+    "mid": 6000,
+    "high": 12000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg/1280px-Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg/1280px-Todai-ji_Daibutsuden_in_Nara_Japan01s3200.jpg"
+  ],
+  "description": "Nara Park houses the world's largest wooden building (Todai-ji Daibutsuden), sheltering the 15-meter bronze Great Buddha alongside over 1,200 friendly freely roaming sika deer.",
+  "notes": "Nara was Japan's first permanent capital (710–784 AD)."
+}

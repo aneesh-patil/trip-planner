@@ -1,0 +1,62 @@
+{
+  "id": "hakodate-night-view",
+  "name": "Mount Hakodate Night View",
+  "nameJa": "函館山",
+  "prefecture": "Hokkaido",
+  "region": "Hokkaido",
+  "coordinates": {
+    "lat": 41.7592,
+    "lng": 140.7042
+  },
+  "tags": [
+    "Three Great Night Views",
+    "Ropeway Observatory",
+    "Panoramic Bay View"
+  ],
+  "rating": 4.9,
+  "ratings": {
+    "overall": 4.9,
+    "scenery": 5,
+    "accessibility": 4.4,
+    "crowd": 4.5,
+    "couple": 4.9,
+    "summer": 4.7,
+    "winter": 4.8,
+    "rain": 3.5,
+    "food": 4.3,
+    "photography": 5,
+    "relaxation": 4.2,
+    "value": 4.7,
+    "uniqueness": 4.9
+  },
+  "categories": ["sightseeing", "nature", "romance"],
+  "budgetMin": 3000,
+  "budgetMax": 10000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "great-night-views",
+      "sortOrder": 1,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "bus": 420,
+    "train": 380,
+    "car": 450
+  },
+  "budget": {
+    "low": 3000,
+    "mid": 6000,
+    "high": 12000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Night_view_from_Mount_Hakodate03s3200.jpg/1280px-Night_view_from_Mount_Hakodate03s3200.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Night_view_from_Mount_Hakodate03s3200.jpg/1280px-Night_view_from_Mount_Hakodate03s3200.jpg"
+  ],
+  "description": "Mount Hakodate offers one of Japan's Three Great Night Views, overlooking a stunning hourglass-shaped peninsula illuminated between Tsugaru Strait and Hakodate Bay.",
+  "notes": "Accessible via the Mount Hakodate Ropeway in just 3 minutes."
+}

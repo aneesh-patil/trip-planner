@@ -1,0 +1,68 @@
+{
+  "id": "miyajima-itsukushima",
+  "name": "Itsukushima Shrine (Miyajima Island)",
+  "nameJa": "厳島神社",
+  "prefecture": "Hiroshima",
+  "region": "Chugoku",
+  "coordinates": {
+    "lat": 34.2958,
+    "lng": 132.3197
+  },
+  "tags": [
+    "UNESCO World Heritage",
+    "National Treasure",
+    "Floating Torii Gate",
+    "Three Views of Japan"
+  ],
+  "rating": 5,
+  "ratings": {
+    "overall": 5,
+    "scenery": 5,
+    "accessibility": 4.3,
+    "crowd": 4.4,
+    "couple": 5,
+    "summer": 4.6,
+    "winter": 4.7,
+    "rain": 4.3,
+    "food": 4.8,
+    "photography": 5,
+    "relaxation": 4.7,
+    "value": 4.8,
+    "uniqueness": 5
+  },
+  "categories": ["culture", "history", "sightseeing"],
+  "budgetMin": 3000,
+  "budgetMax": 12000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "unesco-japan",
+      "sortOrder": 5,
+      "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 7,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "shinkansen": 240,
+    "train": 280,
+    "car": 330
+  },
+  "budget": {
+    "low": 4000,
+    "mid": 8000,
+    "high": 16000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Itsukushima_Torii_Gate_2019.jpg/1280px-Itsukushima_Torii_Gate_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Itsukushima_Torii_Gate_2019.jpg/1280px-Itsukushima_Torii_Gate_2019.jpg"
+  ],
+  "description": "Itsukushima Shrine on Miyajima Island is world-renowned for its iconic vermilion O-Torii gate that appears to float magically upon the Seto Inland Sea during high tide.",
+  "notes": "Designated as one of the Three Views of Japan (Nihon Sankei)."
+}

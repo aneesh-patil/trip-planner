@@ -26,6 +26,19 @@
     "sourceUrl": "https://whc.unesco.org/en/statesparties/jp"
   },
   {
+    "id": "national-treasures",
+    "slug": "national-treasures",
+    "name": "National Treasures of Japan",
+    "description": "Japan's finest cultural properties of exceptional historical and artistic significance designated by the Agency for Cultural Affairs.",
+    "category": "Architecture & History",
+    "type": "official",
+    "icon": "Crown",
+    "badgeColor": "amber",
+    "sortOrder": 3,
+    "officialSource": "Agency for Cultural Affairs (国宝)",
+    "sourceUrl": "https://www.bunka.go.jp/seisaku/bunkazai/"
+  },
+  {
     "id": "top-100-castles",
     "slug": "top-100-castles",
     "name": "Top 100 Castles of Japan",
@@ -34,7 +47,7 @@
     "type": "official",
     "icon": "ShieldAlert",
     "badgeColor": "rose",
-    "sortOrder": 3,
+    "sortOrder": 4,
     "officialSource": "Japan Castle Foundation (日本100名城)",
     "sourceUrl": "https://www.japan-castle.or.jp/100meijo/"
   },
@@ -47,8 +60,47 @@
     "type": "historical",
     "icon": "Trees",
     "badgeColor": "emerald",
-    "sortOrder": 4,
+    "sortOrder": 5,
     "officialSource": "Japan National Tourism Organization",
     "sourceUrl": "https://www.japan.travel/en/guide/gardens/"
+  },
+  {
+    "id": "top-onsen-japan",
+    "slug": "top-onsen-japan",
+    "name": "Top Hot Springs & Onsen Towns",
+    "description": "Premier traditional hot spring resorts celebrated for healing thermal waters, ryokan hospitality, and historic bathhouse culture.",
+    "category": "Onsen & Relaxation",
+    "type": "official",
+    "icon": "Flame",
+    "badgeColor": "rose",
+    "sortOrder": 6,
+    "officialSource": "Japan Onsen Association",
+    "sourceUrl": "https://www.onsenkyokai.or.jp/"
+  },
+  {
+    "id": "historic-towns-japan",
+    "slug": "historic-towns-japan",
+    "name": "Preserved Historic Towns",
+    "description": "Exceptionally preserved Edo-period post towns, merchant quarters, and castle towns retaining authentic traditional wooden architecture.",
+    "category": "History & Culture",
+    "type": "historical",
+    "icon": "Building",
+    "badgeColor": "emerald",
+    "sortOrder": 7,
+    "officialSource": "Cultural Properties Preservation District",
+    "sourceUrl": "https://www.bunka.go.jp/"
+  },
+  {
+    "id": "great-night-views",
+    "slug": "great-night-views",
+    "name": "Japan's Great Night Views & Observatories",
+    "description": "Japan's most famous panoramic night views and sky deck observatories overlooking illuminated cityscapes and harbors.",
+    "category": "Sightseeing & Views",
+    "type": "official",
+    "icon": "Sparkles",
+    "badgeColor": "purple",
+    "sortOrder": 8,
+    "officialSource": "Night View Convention & Tourism Bureau",
+    "sourceUrl": "https://yakei-cvb.or.jp/"
   }
 ]

@@ -110,5 +110,11 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [
+    {
+      "collectionId": "top-onsen-japan",
+      "sortOrder": 6,
+      "confirmed": true
+    }
+  ]
 }

@@ -116,5 +116,11 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [
+    {
+      "collectionId": "historic-towns-japan",
+      "sortOrder": 3,
+      "confirmed": true
+    }
+  ]
 }

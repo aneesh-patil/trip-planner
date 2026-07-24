@@ -47,7 +47,13 @@
     "winter": 60
   },
   "bestMonths": [4, 10, 11],
-  "tags": ["National Treasure", "Riverside", "Traditional"],
+  "tags": [
+    "12 Original Keeps",
+    "National Treasure",
+    "Riverside",
+    "Traditional",
+    "Top 100 Castle"
+  ],
   "highlights": ["Inuyama Castle", "Urakuen Garden", "Honmachi-dori Street"],
   "coordinates": {
     "lat": 35.3853,
@@ -111,6 +117,11 @@
     },
     {
       "collectionId": "top-100-castles",
+      "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 2,
       "confirmed": true
     }
   ]

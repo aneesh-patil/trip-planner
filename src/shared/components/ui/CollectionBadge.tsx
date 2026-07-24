@@ -1,4 +1,14 @@
-import { Castle, Landmark, ShieldAlert, Trees, Tag } from "lucide-react";
+import {
+  Castle,
+  Landmark,
+  ShieldAlert,
+  Trees,
+  Crown,
+  Flame,
+  Building,
+  Sparkles,
+  Tag,
+} from "lucide-react";
 import type { Collection } from "@/shared/types/collection";
 
 const ICON_MAP: Record<string, React.ElementType> = {
@@ -6,6 +16,10 @@ const ICON_MAP: Record<string, React.ElementType> = {
   Landmark,
   ShieldAlert,
   Trees,
+  Crown,
+  Flame,
+  Building,
+  Sparkles,
 };
 
 const COLOR_CLASSES: Record<string, string> = {

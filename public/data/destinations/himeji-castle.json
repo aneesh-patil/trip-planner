@@ -49,6 +49,11 @@
       "collectionId": "top-100-castles",
       "sortOrder": 1,
       "confirmed": true
+    },
+    {
+      "collectionId": "national-treasures",
+      "sortOrder": 4,
+      "confirmed": true
     }
   ],
   "transportOptions": {

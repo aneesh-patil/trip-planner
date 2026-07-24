@@ -118,5 +118,11 @@
   "travelEstimate": {
     "confidence": "high"
   },
-  "collections": []
+  "collections": [
+    {
+      "collectionId": "unesco-japan",
+      "sortOrder": 7,
+      "confirmed": true
+    }
+  ]
 }

@@ -1,0 +1,58 @@
+{
+  "id": "kinosaki-onsen",
+  "name": "Kinosaki Onsen",
+  "nameJa": "城崎温泉",
+  "prefecture": "Hyogo",
+  "region": "Kansai",
+  "coordinates": {
+    "lat": 35.6264,
+    "lng": 134.8144
+  },
+  "tags": ["Willow Canal", "7 Public Bathhouses", "Yukata Stroll"],
+  "rating": 4.9,
+  "ratings": {
+    "overall": 4.9,
+    "scenery": 4.9,
+    "accessibility": 4.2,
+    "crowd": 4.2,
+    "couple": 4.9,
+    "summer": 4.5,
+    "winter": 4.9,
+    "rain": 4.6,
+    "food": 4.9,
+    "photography": 4.9,
+    "relaxation": 5,
+    "value": 4.6,
+    "uniqueness": 4.9
+  },
+  "categories": ["onsen", "relaxation", "culture"],
+  "budgetMin": 7000,
+  "budgetMax": 28000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "beta"
+  },
+  "collections": [
+    {
+      "collectionId": "top-onsen-japan",
+      "sortOrder": 5,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 240,
+    "bus": 280,
+    "car": 320
+  },
+  "budget": {
+    "low": 8000,
+    "mid": 16000,
+    "high": 30000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kinosaki_Onsen_canal_2019.jpg/1280px-Kinosaki_Onsen_canal_2019.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Kinosaki_Onsen_canal_2019.jpg/1280px-Kinosaki_Onsen_canal_2019.jpg"
+  ],
+  "description": "Kinosaki Onsen is a quintessential hot spring town centered around a willow-lined canal, where visitors stroll between seven distinct public bathhouses in traditional yukata robes.",
+  "notes": "Founded over 1,300 years ago when a stork was observed healing its wounded leg in the thermal springs."
+}

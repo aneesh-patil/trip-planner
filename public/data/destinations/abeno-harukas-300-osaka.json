@@ -117,5 +117,11 @@
   "travelEstimate": {
     "confidence": "beta"
   },
-  "collections": []
+  "collections": [
+    {
+      "collectionId": "great-night-views",
+      "sortOrder": 5,
+      "confirmed": true
+    }
+  ]
 }

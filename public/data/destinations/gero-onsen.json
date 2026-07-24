@@ -1,0 +1,58 @@
+{
+  "id": "gero-onsen",
+  "name": "Gero Onsen",
+  "nameJa": "下呂温泉",
+  "prefecture": "Gifu",
+  "region": "Chubu",
+  "coordinates": {
+    "lat": 35.8089,
+    "lng": 137.2439
+  },
+  "tags": ["Three Famous Springs", "Top Onsen Town", "Thermal Baths"],
+  "rating": 4.8,
+  "ratings": {
+    "overall": 4.8,
+    "scenery": 4.7,
+    "accessibility": 4.4,
+    "crowd": 4,
+    "couple": 4.8,
+    "summer": 4.2,
+    "winter": 4.9,
+    "rain": 4.5,
+    "food": 4.7,
+    "photography": 4.6,
+    "relaxation": 5,
+    "value": 4.6,
+    "uniqueness": 4.8
+  },
+  "categories": ["onsen", "relaxation", "culture"],
+  "budgetMin": 5000,
+  "budgetMax": 25000,
+  "status": "verified",
+  "travelEstimate": {
+    "confidence": "high"
+  },
+  "collections": [
+    {
+      "collectionId": "top-onsen-japan",
+      "sortOrder": 3,
+      "confirmed": true
+    }
+  ],
+  "transportOptions": {
+    "train": 120,
+    "bus": 150,
+    "car": 140
+  },
+  "budget": {
+    "low": 6000,
+    "mid": 12000,
+    "high": 28000
+  },
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gero_Onsen_Gifu_pref_Japan01n.jpg/1280px-Gero_Onsen_Gifu_pref_Japan01n.jpg",
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gero_Onsen_Gifu_pref_Japan01n.jpg/1280px-Gero_Onsen_Gifu_pref_Japan01n.jpg"
+  ],
+  "description": "Gero Onsen is one of Japan's Three Great Hot Springs (Nihon Sanmeisen), famed since the 9th century for its silky alkaline waters known as 'beauty baths'.",
+  "notes": "Situated along the Hida River between Nagoya and Takayama."
+}
