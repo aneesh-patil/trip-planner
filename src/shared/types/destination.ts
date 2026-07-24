@@ -50,13 +50,17 @@ export interface Destination {
     shinkansen?: number;
     bus?: number;
   };
-  /** Optional: Explicit one-way route fares per person (or per car) */
+  /**
+   * Optional: Explicit route fares for exact budget overrides.
+   * - train, bus, shinkansen: One-way ticket fare per person (JPY).
+   * - car, my_car: Round-trip total estimated vehicle cost per car (rental + gas + tolls, JPY).
+   */
   transportFares?: {
     train?: number;
-    car?: number;
-    my_car?: number;
     shinkansen?: number;
     bus?: number;
+    car?: number;
+    my_car?: number;
   };
   totalTripHours: number;
   walkingMin: number;

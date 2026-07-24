@@ -56,9 +56,13 @@ export function getTransportCost(
     dest.transportFares?.[mode as keyof typeof dest.transportFares];
   if (explicitFare !== undefined) {
     if (mode === "car" || mode === "my_car") {
+      // For driving modes, explicitFare represents total round-trip vehicle cost per car (tolls + gas + rental).
+      // Scale by vehicles needed for party size (4 seats per car).
       const carsNeeded = Math.ceil(partySize / 4);
       return explicitFare * carsNeeded;
     }
+    // For transit modes (train, bus, shinkansen), explicitFare represents one-way ticket fare per person.
+    // Scale to round-trip (x2) across partySize.
     const roundTripPerPerson = explicitFare * 2;
     return Math.floor(roundTripPerPerson * partySize);
   }
