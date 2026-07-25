@@ -66,9 +66,9 @@
   "restaurants": ["Otaru City Specialty Dining"],
   "cafes": ["Otaru City Cafe"],
   "notes": "Otaru City travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

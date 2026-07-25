@@ -28,7 +28,7 @@
   "categories": ["history", "culture", "sightseeing"],
   "budgetMin": 4000,
   "budgetMax": 12000,
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
     "confidence": "beta"
   },

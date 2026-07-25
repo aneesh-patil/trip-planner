@@ -66,9 +66,9 @@
   "restaurants": ["Naha City Specialty Dining"],
   "cafes": ["Naha City Cafe"],
   "notes": "Naha City travel hub in Okinawa Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

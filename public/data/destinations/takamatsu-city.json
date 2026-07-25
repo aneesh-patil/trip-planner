@@ -66,9 +66,9 @@
   "restaurants": ["Takamatsu City Specialty Dining"],
   "cafes": ["Takamatsu City Cafe"],
   "notes": "Takamatsu City travel hub in Kagawa Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

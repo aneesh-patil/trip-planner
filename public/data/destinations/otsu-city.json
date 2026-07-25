@@ -66,9 +66,9 @@
   "restaurants": ["Otsu City Specialty Dining"],
   "cafes": ["Otsu City Cafe"],
   "notes": "Otsu City travel hub in Shiga Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

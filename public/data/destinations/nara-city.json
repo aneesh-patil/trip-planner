@@ -66,9 +66,9 @@
   "restaurants": ["Nara City Specialty Dining"],
   "cafes": ["Nara City Cafe"],
   "notes": "Nara City travel hub in Nara Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

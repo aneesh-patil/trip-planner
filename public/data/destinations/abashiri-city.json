@@ -66,9 +66,9 @@
   "restaurants": ["Abashiri City Specialty Dining"],
   "cafes": ["Abashiri City Cafe"],
   "notes": "Abashiri City travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

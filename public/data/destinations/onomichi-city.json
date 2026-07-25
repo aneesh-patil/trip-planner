@@ -66,9 +66,9 @@
   "restaurants": ["Onomichi City Specialty Dining"],
   "cafes": ["Onomichi City Cafe"],
   "notes": "Onomichi City travel hub in Hiroshima Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

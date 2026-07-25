@@ -66,9 +66,9 @@
   "restaurants": ["Naruto City Specialty Dining"],
   "cafes": ["Naruto City Cafe"],
   "notes": "Naruto City travel hub in Tokushima Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

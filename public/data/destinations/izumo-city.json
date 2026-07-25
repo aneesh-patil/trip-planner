@@ -66,9 +66,9 @@
   "restaurants": ["Izumo City Specialty Dining"],
   "cafes": ["Izumo City Cafe"],
   "notes": "Izumo City travel hub in Shimane Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

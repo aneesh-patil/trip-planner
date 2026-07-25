@@ -66,9 +66,9 @@
   "restaurants": ["Himeji City Specialty Dining"],
   "cafes": ["Himeji City Cafe"],
   "notes": "Himeji City travel hub in Hyogo Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

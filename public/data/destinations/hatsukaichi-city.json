@@ -66,9 +66,9 @@
   "restaurants": ["Hatsukaichi City Specialty Dining"],
   "cafes": ["Hatsukaichi City Cafe"],
   "notes": "Hatsukaichi City travel hub in Hiroshima Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

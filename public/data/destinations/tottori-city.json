@@ -66,9 +66,9 @@
   "restaurants": ["Tottori City Specialty Dining"],
   "cafes": ["Tottori City Cafe"],
   "notes": "Tottori City travel hub in Tottori Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

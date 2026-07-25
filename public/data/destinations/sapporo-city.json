@@ -66,9 +66,9 @@
   "restaurants": ["Sapporo City Specialty Dining"],
   "cafes": ["Sapporo City Cafe"],
   "notes": "Sapporo City travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

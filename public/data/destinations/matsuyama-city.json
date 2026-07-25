@@ -66,9 +66,9 @@
   "restaurants": ["Matsuyama City Specialty Dining"],
   "cafes": ["Matsuyama City Cafe"],
   "notes": "Matsuyama City travel hub in Ehime Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

@@ -66,9 +66,9 @@
   "restaurants": ["Takachiho Town Specialty Dining"],
   "cafes": ["Takachiho Town Cafe"],
   "notes": "Takachiho Town travel hub in Miyazaki Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

@@ -66,9 +66,9 @@
   "restaurants": ["Miyazaki City Specialty Dining"],
   "cafes": ["Miyazaki City Cafe"],
   "notes": "Miyazaki City travel hub in Miyazaki Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

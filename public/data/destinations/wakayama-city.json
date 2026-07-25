@@ -66,9 +66,9 @@
   "restaurants": ["Wakayama City Specialty Dining"],
   "cafes": ["Wakayama City Cafe"],
   "notes": "Wakayama City travel hub in Wakayama Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

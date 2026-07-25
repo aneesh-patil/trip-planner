@@ -66,9 +66,9 @@
   "restaurants": ["Ikaruga Town Specialty Dining"],
   "cafes": ["Ikaruga Town Cafe"],
   "notes": "Ikaruga Town travel hub in Nara Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

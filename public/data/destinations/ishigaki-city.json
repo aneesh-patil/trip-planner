@@ -66,9 +66,9 @@
   "restaurants": ["Ishigaki City Specialty Dining"],
   "cafes": ["Ishigaki City Cafe"],
   "notes": "Ishigaki City travel hub in Okinawa Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

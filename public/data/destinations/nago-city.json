@@ -66,9 +66,9 @@
   "restaurants": ["Nago City Specialty Dining"],
   "cafes": ["Nago City Cafe"],
   "notes": "Nago City travel hub in Okinawa Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

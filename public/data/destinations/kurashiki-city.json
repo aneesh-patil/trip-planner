@@ -66,9 +66,9 @@
   "restaurants": ["Kurashiki City Specialty Dining"],
   "cafes": ["Kurashiki City Cafe"],
   "notes": "Kurashiki City travel hub in Okayama Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

@@ -66,9 +66,9 @@
   "restaurants": ["Sakai City Specialty Dining"],
   "cafes": ["Sakai City Cafe"],
   "notes": "Sakai City travel hub in Osaka Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

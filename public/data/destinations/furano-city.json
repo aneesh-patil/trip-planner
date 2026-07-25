@@ -66,9 +66,9 @@
   "restaurants": ["Furano City Specialty Dining"],
   "cafes": ["Furano City Cafe"],
   "notes": "Furano City travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

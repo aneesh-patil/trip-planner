@@ -68,9 +68,9 @@
   "restaurants": ["Mizuno Okonomiyaki", "Kukuru Takoyaki"],
   "cafes": ["Guto Cafe Dotonbori"],
   "notes": "Food capital of Japan (Kuidaore culture).",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

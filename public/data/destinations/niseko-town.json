@@ -66,9 +66,9 @@
   "restaurants": ["Niseko Town Specialty Dining"],
   "cafes": ["Niseko Town Cafe"],
   "notes": "Niseko Town travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

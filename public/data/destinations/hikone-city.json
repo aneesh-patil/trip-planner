@@ -66,9 +66,9 @@
   "restaurants": ["Hikone City Specialty Dining"],
   "cafes": ["Hikone City Cafe"],
   "notes": "Hikone City travel hub in Shiga Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

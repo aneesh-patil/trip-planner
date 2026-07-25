@@ -66,9 +66,9 @@
   "restaurants": ["Miyakojima City Specialty Dining"],
   "cafes": ["Miyakojima City Cafe"],
   "notes": "Miyakojima City travel hub in Okinawa Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

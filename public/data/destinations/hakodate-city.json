@@ -66,9 +66,9 @@
   "restaurants": ["Hakodate City Specialty Dining"],
   "cafes": ["Hakodate City Cafe"],
   "notes": "Hakodate City travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

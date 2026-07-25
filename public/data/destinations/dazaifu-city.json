@@ -66,9 +66,9 @@
   "restaurants": ["Dazaifu City Specialty Dining"],
   "cafes": ["Dazaifu City Cafe"],
   "notes": "Dazaifu City travel hub in Fukuoka Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

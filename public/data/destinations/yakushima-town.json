@@ -66,9 +66,9 @@
   "restaurants": ["Yakushima Town Specialty Dining"],
   "cafes": ["Yakushima Town Cafe"],
   "notes": "Yakushima Town travel hub in Kagoshima Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

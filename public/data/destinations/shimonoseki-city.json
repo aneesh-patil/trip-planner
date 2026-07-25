@@ -66,9 +66,9 @@
   "restaurants": ["Shimonoseki City Specialty Dining"],
   "cafes": ["Shimonoseki City Cafe"],
   "notes": "Shimonoseki City travel hub in Yamaguchi Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

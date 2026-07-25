@@ -66,9 +66,9 @@
   "restaurants": ["Nagasaki City Specialty Dining"],
   "cafes": ["Nagasaki City Cafe"],
   "notes": "Nagasaki City travel hub in Nagasaki Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

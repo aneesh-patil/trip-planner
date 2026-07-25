@@ -32,7 +32,7 @@
   "categories": ["nature", "seasons", "sightseeing"],
   "budgetMin": 3000,
   "budgetMax": 12000,
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
     "confidence": "beta"
   },

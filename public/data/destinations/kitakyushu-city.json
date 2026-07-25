@@ -66,9 +66,9 @@
   "restaurants": ["Kitakyushu City Specialty Dining"],
   "cafes": ["Kitakyushu City Cafe"],
   "notes": "Kitakyushu City travel hub in Fukuoka Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

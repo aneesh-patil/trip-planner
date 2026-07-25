@@ -66,9 +66,9 @@
   "restaurants": ["Koya Town Specialty Dining"],
   "cafes": ["Koya Town Cafe"],
   "notes": "Koya Town travel hub in Wakayama Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

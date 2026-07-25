@@ -66,9 +66,9 @@
   "restaurants": ["Kumamoto City Specialty Dining"],
   "cafes": ["Kumamoto City Cafe"],
   "notes": "Kumamoto City travel hub in Kumamoto Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

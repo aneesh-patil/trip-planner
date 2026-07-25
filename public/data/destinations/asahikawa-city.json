@@ -66,9 +66,9 @@
   "restaurants": ["Asahikawa City Specialty Dining"],
   "cafes": ["Asahikawa City Cafe"],
   "notes": "Asahikawa City travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

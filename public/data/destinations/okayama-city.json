@@ -66,9 +66,9 @@
   "restaurants": ["Okayama City Specialty Dining"],
   "cafes": ["Okayama City Cafe"],
   "notes": "Okayama City travel hub in Okayama Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

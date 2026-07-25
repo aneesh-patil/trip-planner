@@ -73,9 +73,9 @@
   "restaurants": ["Gion Karyo", "Nishiki Market Stalls"],
   "cafes": ["Arabica Kyoto Higashiyama"],
   "notes": "Imperial cultural capital of Japan.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

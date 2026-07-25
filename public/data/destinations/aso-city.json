@@ -66,9 +66,9 @@
   "restaurants": ["Aso City Specialty Dining"],
   "cafes": ["Aso City Cafe"],
   "notes": "Aso City travel hub in Kumamoto Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

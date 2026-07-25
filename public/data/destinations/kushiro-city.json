@@ -66,9 +66,9 @@
   "restaurants": ["Kushiro City Specialty Dining"],
   "cafes": ["Kushiro City Cafe"],
   "notes": "Kushiro City travel hub in Hokkaido Prefecture.",
-  "status": "verified",
+  "status": "beta",
   "travelEstimate": {
-    "confidence": "high"
+    "confidence": "beta"
   },
   "collections": [],
   "relationships": {

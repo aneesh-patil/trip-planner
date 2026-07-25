@@ -202,9 +202,9 @@
     "restaurants": ["Gion Karyo", "Nishiki Market Stalls"],
     "cafes": ["Arabica Kyoto Higashiyama"],
     "notes": "Imperial cultural capital of Japan.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -292,9 +292,9 @@
     "restaurants": ["Mizuno Okonomiyaki", "Kukuru Takoyaki"],
     "cafes": ["Guto Cafe Dotonbori"],
     "notes": "Food capital of Japan (Kuidaore culture).",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -773,7 +773,7 @@
       "attribution": "Lead photograph of Abeno Harukas via Wikipedia/Wikimedia Commons",
       "sourceUrl": "https://en.wikipedia.org/wiki/Abeno%20Harukas"
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -1039,7 +1039,7 @@
     "categories": ["nature", "sightseeing", "romance"],
     "budgetMin": 3000,
     "budgetMax": 12000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -1123,7 +1123,7 @@
     "categories": ["onsen", "relaxation", "culture"],
     "budgetMin": 6000,
     "budgetMax": 30000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -1640,7 +1640,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -5012,7 +5012,7 @@
     "categories": ["sightseeing", "nature", "romance"],
     "budgetMin": 3000,
     "budgetMax": 10000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -5503,7 +5503,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -5598,7 +5598,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -6298,7 +6298,7 @@
     "categories": ["culture", "history", "religion"],
     "budgetMin": 3000,
     "budgetMax": 12000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -6505,7 +6505,7 @@
     "categories": ["culture", "history", "religion"],
     "budgetMin": 3000,
     "budgetMax": 10000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -7519,7 +7519,7 @@
     "categories": ["onsen", "relaxation", "culture"],
     "budgetMin": 7000,
     "budgetMax": 28000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -7857,7 +7857,7 @@
     "categories": ["sightseeing", "nature", "romance"],
     "budgetMin": 3000,
     "budgetMax": 9000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -7934,7 +7934,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -8017,7 +8017,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -8098,7 +8098,7 @@
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 4000,
     "budgetMax": 12000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -8306,7 +8306,7 @@
     "categories": ["culture", "history", "sightseeing"],
     "budgetMin": 3000,
     "budgetMax": 15000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -8737,7 +8737,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -8957,7 +8957,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -9048,7 +9048,7 @@
     "categories": ["nature", "sightseeing", "culture"],
     "budgetMin": 3000,
     "budgetMax": 12000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -9128,7 +9128,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -9468,7 +9468,7 @@
     "categories": ["culture", "history", "sightseeing"],
     "budgetMin": 3000,
     "budgetMax": 12000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -9790,7 +9790,7 @@
     "categories": ["sightseeing", "nature", "romance"],
     "budgetMin": 3000,
     "budgetMax": 10000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -9872,7 +9872,7 @@
     "categories": ["nature", "seasons", "sightseeing"],
     "budgetMin": 3000,
     "budgetMax": 12000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -9959,7 +9959,7 @@
     "categories": ["nature", "culture", "sightseeing"],
     "budgetMin": 3000,
     "budgetMax": 10000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -10919,7 +10919,7 @@
     "categories": ["culture", "history", "sightseeing"],
     "budgetMin": 2000,
     "budgetMax": 8000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -11014,7 +11014,7 @@
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 3000,
     "budgetMax": 10000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -11963,7 +11963,7 @@
     "categories": ["history", "culture", "sightseeing"],
     "budgetMin": 3000,
     "budgetMax": 10000,
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -15420,7 +15420,7 @@
       "value": 4.7,
       "uniqueness": 4.8
     },
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
       "confidence": "beta"
     },
@@ -22425,9 +22425,9 @@
     "restaurants": ["Uji City Specialty Dining"],
     "cafes": ["Uji City Cafe"],
     "notes": "Uji City travel hub in Kyoto Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -22507,9 +22507,9 @@
     "restaurants": ["Miyazu City Specialty Dining"],
     "cafes": ["Miyazu City Cafe"],
     "notes": "Miyazu City travel hub in Kyoto Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -22589,9 +22589,9 @@
     "restaurants": ["Sakai City Specialty Dining"],
     "cafes": ["Sakai City Cafe"],
     "notes": "Sakai City travel hub in Osaka Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -22667,9 +22667,9 @@
     "restaurants": ["Kobe City Specialty Dining"],
     "cafes": ["Kobe City Cafe"],
     "notes": "Kobe City travel hub in Hyogo Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -22745,9 +22745,9 @@
     "restaurants": ["Himeji City Specialty Dining"],
     "cafes": ["Himeji City Cafe"],
     "notes": "Himeji City travel hub in Hyogo Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -22823,9 +22823,9 @@
     "restaurants": ["Nara City Specialty Dining"],
     "cafes": ["Nara City Cafe"],
     "notes": "Nara City travel hub in Nara Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -22901,9 +22901,9 @@
     "restaurants": ["Ikaruga Town Specialty Dining"],
     "cafes": ["Ikaruga Town Cafe"],
     "notes": "Ikaruga Town travel hub in Nara Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -22979,9 +22979,9 @@
     "restaurants": ["Otsu City Specialty Dining"],
     "cafes": ["Otsu City Cafe"],
     "notes": "Otsu City travel hub in Shiga Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23057,9 +23057,9 @@
     "restaurants": ["Hikone City Specialty Dining"],
     "cafes": ["Hikone City Cafe"],
     "notes": "Hikone City travel hub in Shiga Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23135,9 +23135,9 @@
     "restaurants": ["Wakayama City Specialty Dining"],
     "cafes": ["Wakayama City Cafe"],
     "notes": "Wakayama City travel hub in Wakayama Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23213,9 +23213,9 @@
     "restaurants": ["Shirahama Town Specialty Dining"],
     "cafes": ["Shirahama Town Cafe"],
     "notes": "Shirahama Town travel hub in Wakayama Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23291,9 +23291,9 @@
     "restaurants": ["Koya Town Specialty Dining"],
     "cafes": ["Koya Town Cafe"],
     "notes": "Koya Town travel hub in Wakayama Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23369,9 +23369,9 @@
     "restaurants": ["Hiroshima City Specialty Dining"],
     "cafes": ["Hiroshima City Cafe"],
     "notes": "Hiroshima City travel hub in Hiroshima Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23451,9 +23451,9 @@
     "restaurants": ["Onomichi City Specialty Dining"],
     "cafes": ["Onomichi City Cafe"],
     "notes": "Onomichi City travel hub in Hiroshima Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23533,9 +23533,9 @@
     "restaurants": ["Hatsukaichi City Specialty Dining"],
     "cafes": ["Hatsukaichi City Cafe"],
     "notes": "Hatsukaichi City travel hub in Hiroshima Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23615,9 +23615,9 @@
     "restaurants": ["Okayama City Specialty Dining"],
     "cafes": ["Okayama City Cafe"],
     "notes": "Okayama City travel hub in Okayama Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23697,9 +23697,9 @@
     "restaurants": ["Kurashiki City Specialty Dining"],
     "cafes": ["Kurashiki City Cafe"],
     "notes": "Kurashiki City travel hub in Okayama Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23779,9 +23779,9 @@
     "restaurants": ["Matsue City Specialty Dining"],
     "cafes": ["Matsue City Cafe"],
     "notes": "Matsue City travel hub in Shimane Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23861,9 +23861,9 @@
     "restaurants": ["Izumo City Specialty Dining"],
     "cafes": ["Izumo City Cafe"],
     "notes": "Izumo City travel hub in Shimane Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -23943,9 +23943,9 @@
     "restaurants": ["Tottori City Specialty Dining"],
     "cafes": ["Tottori City Cafe"],
     "notes": "Tottori City travel hub in Tottori Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24025,9 +24025,9 @@
     "restaurants": ["Shimonoseki City Specialty Dining"],
     "cafes": ["Shimonoseki City Cafe"],
     "notes": "Shimonoseki City travel hub in Yamaguchi Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24107,9 +24107,9 @@
     "restaurants": ["Takamatsu City Specialty Dining"],
     "cafes": ["Takamatsu City Cafe"],
     "notes": "Takamatsu City travel hub in Kagawa Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24185,9 +24185,9 @@
     "restaurants": ["Matsuyama City Specialty Dining"],
     "cafes": ["Matsuyama City Cafe"],
     "notes": "Matsuyama City travel hub in Ehime Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24263,9 +24263,9 @@
     "restaurants": ["Kochi City Specialty Dining"],
     "cafes": ["Kochi City Cafe"],
     "notes": "Kochi City travel hub in Kochi Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24345,9 +24345,9 @@
     "restaurants": ["Tokushima City Specialty Dining"],
     "cafes": ["Tokushima City Cafe"],
     "notes": "Tokushima City travel hub in Tokushima Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24423,9 +24423,9 @@
     "restaurants": ["Naruto City Specialty Dining"],
     "cafes": ["Naruto City Cafe"],
     "notes": "Naruto City travel hub in Tokushima Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24501,9 +24501,9 @@
     "restaurants": ["Fukuoka City Specialty Dining"],
     "cafes": ["Fukuoka City Cafe"],
     "notes": "Fukuoka City travel hub in Fukuoka Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24583,9 +24583,9 @@
     "restaurants": ["Kitakyushu City Specialty Dining"],
     "cafes": ["Kitakyushu City Cafe"],
     "notes": "Kitakyushu City travel hub in Fukuoka Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24661,9 +24661,9 @@
     "restaurants": ["Dazaifu City Specialty Dining"],
     "cafes": ["Dazaifu City Cafe"],
     "notes": "Dazaifu City travel hub in Fukuoka Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24743,9 +24743,9 @@
     "restaurants": ["Nagasaki City Specialty Dining"],
     "cafes": ["Nagasaki City Cafe"],
     "notes": "Nagasaki City travel hub in Nagasaki Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24825,9 +24825,9 @@
     "restaurants": ["Kumamoto City Specialty Dining"],
     "cafes": ["Kumamoto City Cafe"],
     "notes": "Kumamoto City travel hub in Kumamoto Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24907,9 +24907,9 @@
     "restaurants": ["Aso City Specialty Dining"],
     "cafes": ["Aso City Cafe"],
     "notes": "Aso City travel hub in Kumamoto Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -24989,9 +24989,9 @@
     "restaurants": ["Beppu City Specialty Dining"],
     "cafes": ["Beppu City Cafe"],
     "notes": "Beppu City travel hub in Oita Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25071,9 +25071,9 @@
     "restaurants": ["Yufu City Specialty Dining"],
     "cafes": ["Yufu City Cafe"],
     "notes": "Yufu City travel hub in Oita Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25153,9 +25153,9 @@
     "restaurants": ["Miyazaki City Specialty Dining"],
     "cafes": ["Miyazaki City Cafe"],
     "notes": "Miyazaki City travel hub in Miyazaki Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25235,9 +25235,9 @@
     "restaurants": ["Takachiho Town Specialty Dining"],
     "cafes": ["Takachiho Town Cafe"],
     "notes": "Takachiho Town travel hub in Miyazaki Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25317,9 +25317,9 @@
     "restaurants": ["Kagoshima City Specialty Dining"],
     "cafes": ["Kagoshima City Cafe"],
     "notes": "Kagoshima City travel hub in Kagoshima Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25399,9 +25399,9 @@
     "restaurants": ["Yakushima Town Specialty Dining"],
     "cafes": ["Yakushima Town Cafe"],
     "notes": "Yakushima Town travel hub in Kagoshima Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25481,9 +25481,9 @@
     "restaurants": ["Sapporo City Specialty Dining"],
     "cafes": ["Sapporo City Cafe"],
     "notes": "Sapporo City travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25559,9 +25559,9 @@
     "restaurants": ["Otaru City Specialty Dining"],
     "cafes": ["Otaru City Cafe"],
     "notes": "Otaru City travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25641,9 +25641,9 @@
     "restaurants": ["Hakodate City Specialty Dining"],
     "cafes": ["Hakodate City Cafe"],
     "notes": "Hakodate City travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25719,9 +25719,9 @@
     "restaurants": ["Asahikawa City Specialty Dining"],
     "cafes": ["Asahikawa City Cafe"],
     "notes": "Asahikawa City travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25797,9 +25797,9 @@
     "restaurants": ["Furano City Specialty Dining"],
     "cafes": ["Furano City Cafe"],
     "notes": "Furano City travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25875,9 +25875,9 @@
     "restaurants": ["Biei Town Specialty Dining"],
     "cafes": ["Biei Town Cafe"],
     "notes": "Biei Town travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -25953,9 +25953,9 @@
     "restaurants": ["Niseko Town Specialty Dining"],
     "cafes": ["Niseko Town Cafe"],
     "notes": "Niseko Town travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -26031,9 +26031,9 @@
     "restaurants": ["Kushiro City Specialty Dining"],
     "cafes": ["Kushiro City Cafe"],
     "notes": "Kushiro City travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -26109,9 +26109,9 @@
     "restaurants": ["Abashiri City Specialty Dining"],
     "cafes": ["Abashiri City Cafe"],
     "notes": "Abashiri City travel hub in Hokkaido Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -26187,9 +26187,9 @@
     "restaurants": ["Naha City Specialty Dining"],
     "cafes": ["Naha City Cafe"],
     "notes": "Naha City travel hub in Okinawa Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -26265,9 +26265,9 @@
     "restaurants": ["Nago City Specialty Dining"],
     "cafes": ["Nago City Cafe"],
     "notes": "Nago City travel hub in Okinawa Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -26343,9 +26343,9 @@
     "restaurants": ["Motobu Town Specialty Dining"],
     "cafes": ["Motobu Town Cafe"],
     "notes": "Motobu Town travel hub in Okinawa Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -26421,9 +26421,9 @@
     "restaurants": ["Ishigaki City Specialty Dining"],
     "cafes": ["Ishigaki City Cafe"],
     "notes": "Ishigaki City travel hub in Okinawa Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
@@ -26499,9 +26499,9 @@
     "restaurants": ["Miyakojima City Specialty Dining"],
     "cafes": ["Miyakojima City Cafe"],
     "notes": "Miyakojima City travel hub in Okinawa Prefecture.",
-    "status": "verified",
+    "status": "beta",
     "travelEstimate": {
-      "confidence": "high"
+      "confidence": "beta"
     },
     "collections": [],
     "relationships": {
