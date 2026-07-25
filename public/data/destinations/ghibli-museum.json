@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Theme Park", "Museum", "Art"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/3840px-Ghibli_Museum_2024.JPG",
   "totalTripHours": 6,
   "budgetMin": 6900,
   "budgetRecommended": 10900,
@@ -47,14 +47,16 @@
     "rainFriendly": 9,
     "walkingIntensity": 5
   },
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/3840px-Ghibli_Museum_2024.JPG",
   "transportOptions": {
     "train": 50
   },
   "highlights": ["Giant Robot Soldier", "Catbus Room", "Exclusive Short Films"],
   "description": "Ghibli Museum is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ghibli_Museum_2024.JPG/3840px-Ghibli_Museum_2024.JPG",
+    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 1000,

@@ -49,7 +49,7 @@
     "mid": 5000,
     "high": 10000
   },
-  "heroImage": "https://images.unsplash.com/photo-1576675784201-0e169823bb03?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/3840px-Atsuta_Shrine.jpg",
   "galleryImages": [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/3840px-Atsuta_Shrine.jpg"
   ],
@@ -76,8 +76,5 @@
   "relationships": {
     "parentDestinationId": "nagoya-city"
   },
-  "image": "https://images.unsplash.com/photo-1576675784201-0e169823bb03?auto=format&fit=crop&q=80&w=1200",
-  "gallery": [
-    "https://images.unsplash.com/photo-1576675784201-0e169823bb03?auto=format&fit=crop&q=80&w=1200"
-  ]
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/3840px-Atsuta_Shrine.jpg"
 }

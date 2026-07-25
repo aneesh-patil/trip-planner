@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["History", "City"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Day2-2_%2840909714314%29.jpg/3840px-Day2-2_%2840909714314%29.jpg",
   "totalTripHours": 5,
   "budgetMin": 6500,
   "budgetRecommended": 10500,
@@ -47,14 +47,16 @@
     "rainFriendly": 2,
     "walkingIntensity": 7
   },
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Day2-2_%2840909714314%29.jpg/3840px-Day2-2_%2840909714314%29.jpg",
   "transportOptions": {
     "train": 50
   },
   "highlights": ["Senso-ji Temple", "Kaminarimon Gate", "Sumida River Cruise"],
   "description": "Asakusa is a district in Taitō, Tokyo, Japan. It is known for Sensō-ji, a Buddhist temple dedicated to the bodhisattva Kannon. There are several other temples in Asakusa, as well as various festivals, such as Sanja Matsuri.",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Day2-2_%2840909714314%29.jpg/3840px-Day2-2_%2840909714314%29.jpg",
+    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 1000,

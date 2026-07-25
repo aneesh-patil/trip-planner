@@ -22,7 +22,7 @@
     "lat": 35.4981,
     "lng": 138.7567
   },
-  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
   "prefecture": "Yamanashi",
   "budgetMin": 8000,
   "budgetMax": 16000,
@@ -59,7 +59,9 @@
   "description": "Discover Fuji Five Lakes, a prominent destination in Shizuoka. With its rich mix of fuji views, fuji-q, cycling, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
+    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
+    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 4400,
@@ -107,7 +109,7 @@
   ],
   "notes": "A fantastic trip to Fuji Five Lakes. Known for its fuji views and fuji-q vibes, it offers a great escape with an overall score of 9.",
   "schemaVersion": 2,
-  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fuji_Five_Lakes_and_Mount_Fuji.jpg",
   "imageMetadata": {
     "source": "Wikimedia Commons / Wikipedia",
     "license": "CC-BY-SA / Public Domain",

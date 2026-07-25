@@ -4,8 +4,8 @@
   "prefecture": "Kanagawa",
   "region": "Kanto",
   "categories": ["Observation Deck", "Landmark", "Port", "Modern"],
-  "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
   "totalTripHours": 3,
   "budgetMin": 3000,
   "budgetRecommended": 7000,
@@ -66,7 +66,9 @@
   ],
   "description": "Ascend to the 69th floor (273m) in just 40 seconds aboard Japan's fastest elevator for 360-degree panoramas of Yokohama Bay Bridge, Minato Mirai, and Mt. Fuji.",
   "gallery": [
-    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 600,

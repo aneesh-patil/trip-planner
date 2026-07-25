@@ -22,7 +22,7 @@
     "lat": 37.2167,
     "lng": 136.9667
   },
-  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
   "prefecture": "Ishikawa",
   "budgetMin": 8000,
   "budgetMax": 16000,
@@ -59,7 +59,9 @@
   "description": "Discover Noto Peninsula, a prominent destination in Shizuoka. With its rich mix of scenic drive, seafood, rugged, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600",
+    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 4400,
@@ -107,7 +109,7 @@
   ],
   "notes": "A fantastic trip to Noto Peninsula. Known for its scenic drive and seafood vibes, it offers a great escape with an overall score of 8.6.",
   "schemaVersion": 2,
-  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Noto_Peninsula_Ishikawa_Japan_SRTM.jpg",
   "imageMetadata": {
     "source": "Wikimedia Commons / Wikipedia",
     "license": "CC-BY-SA / Public Domain",

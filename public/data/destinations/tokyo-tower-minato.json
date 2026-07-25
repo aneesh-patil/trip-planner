@@ -4,8 +4,8 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Tower", "Landmark", "History", "Entertainment"],
-  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg",
   "totalTripHours": 3,
   "budgetMin": 3500,
   "budgetRecommended": 7750,
@@ -61,7 +61,9 @@
   ],
   "description": "Built in 1958 and standing 332.9 meters tall, Tokyo Tower is the beloved red-and-white lattice symbol of post-war Tokyo, offering glass-floor lookouts and romantic night views.",
   "gallery": [
-    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 400,

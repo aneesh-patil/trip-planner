@@ -4,8 +4,8 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["City", "Architecture", "Technology"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Takanawa-Gateway-City---2025-06-18_170.jpg/3840px-Takanawa-Gateway-City---2025-06-18_170.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Takanawa-Gateway-City---2025-06-18_170.jpg/3840px-Takanawa-Gateway-City---2025-06-18_170.jpg",
   "totalTripHours": 3,
   "budgetMin": 3000,
   "budgetRecommended": 6500,
@@ -64,7 +64,9 @@
   ],
   "description": "Designed by world-renowned architect Kengo Kuma, Takanawa Gateway is the newest station on Tokyos iconic Yamanote Line, featuring a dramatic paper-origami glass roof, AI-powered unmanned stores, and futuristic urban planning.",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Takanawa-Gateway-City---2025-06-18_170.jpg/3840px-Takanawa-Gateway-City---2025-06-18_170.jpg",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 400,

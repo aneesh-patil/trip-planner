@@ -7,10 +7,10 @@
   "prefecture": "Tokushima",
   "region": "Shikoku",
   "categories": ["Travel Hub", "City Hub"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Naruto_montege.JPG",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Naruto_montege.JPG",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/c/cb/Naruto_montege.JPG"
   ],
   "description": "Strait city famous for Naruto Whirlpools, Otsuka Museum of Art, and Naruto Bridge walk.",
   "highlights": ["Explore Naruto City", "Local Culture & Cuisine"],

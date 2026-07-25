@@ -22,7 +22,7 @@
     "lat": 35.29,
     "lng": 139.63
   },
-  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
   "prefecture": "Kanagawa",
   "budgetMin": 3000,
   "budgetMax": 11000,
@@ -58,7 +58,9 @@
   "description": "Discover Zushi & Yokosuka, a prominent destination in Kanagawa. With its rich mix of surfing, cafes, sunset, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
+    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 2400,
@@ -108,5 +110,5 @@
   },
   "collections": [],
   "relationships": {},
-  "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG"
 }

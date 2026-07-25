@@ -7,10 +7,10 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Travel Hub", "Special Ward"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kasai_Rinkai_Park_2011--1.JPG/960px-Kasai_Rinkai_Park_2011--1.JPG",
+  "image": "https://loremflickr.com/1000/800/japan,edogawa/all?lock=1028",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
   ],
   "description": "Eastern coastal ward home to Kasai Rinkai Park, Diamond and Flower Ferris Wheel, and Tokyo Bay views.",
   "highlights": ["Explore Edogawa City", "Local Culture & Cuisine"],

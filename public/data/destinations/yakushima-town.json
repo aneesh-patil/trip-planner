@@ -7,10 +7,10 @@
   "prefecture": "Kagoshima",
   "region": "Kyushu",
   "categories": ["Travel Hub", "City Hub"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/6/68/Yakushima.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Yakushima.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/6/68/Yakushima.jpg"
   ],
   "description": "Subtropical island World Heritage wilderness covered in ancient Yaku cedar forests and mossy gorges.",
   "highlights": ["Explore Yakushima Town", "Local Culture & Cuisine"],

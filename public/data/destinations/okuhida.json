@@ -22,7 +22,7 @@
     "lat": 36.2667,
     "lng": 137.55
   },
-  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
   "prefecture": "Gifu",
   "budgetMin": 15000,
   "budgetMax": 23000,
@@ -59,7 +59,9 @@
   "description": "Discover Okuhida, a prominent destination in Shizuoka. With its rich mix of onsen, ropeway, alps, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 7200,
@@ -109,5 +111,5 @@
   },
   "collections": [],
   "relationships": {},
-  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Takayama%27s_Early_Winter_Welcome_%28NE%29.jpg"
 }

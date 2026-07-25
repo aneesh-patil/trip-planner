@@ -22,7 +22,7 @@
     "lat": 36.8167,
     "lng": 139.7167
   },
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
   "prefecture": "Tochigi",
   "budgetMin": 13400,
   "budgetMax": 21400,
@@ -59,7 +59,9 @@
   "description": "Discover Kinugawa Onsen, a prominent destination in Kanagawa. With its rich mix of onsen, edo wonderland, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
+    "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 5200,
@@ -107,7 +109,7 @@
   ],
   "notes": "A fantastic trip to Kinugawa Onsen. Known for its onsen and edo wonderland vibes, it offers a great escape with an overall score of 8.",
   "schemaVersion": 2,
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kinugawa_Onsen_03.JPG",
   "imageMetadata": {
     "source": "Wikimedia Commons / Wikipedia",
     "license": "CC-BY-SA / Public Domain",

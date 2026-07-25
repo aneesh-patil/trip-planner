@@ -7,10 +7,10 @@
   "prefecture": "Nagasaki",
   "region": "Kyushu",
   "categories": ["Travel Hub", "City Hub"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Nagasaki_City_View_from_Glover_Garden%2C_Nagasaki_2014.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Nagasaki_City_View_from_Glover_Garden%2C_Nagasaki_2014.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/a/a1/Nagasaki_City_View_from_Glover_Garden%2C_Nagasaki_2014.jpg"
   ],
   "description": "Historic international port city featuring Glover Garden, Dejima Dutch trading post, and Peace Park.",
   "highlights": ["Explore Nagasaki City", "Local Culture & Cuisine"],

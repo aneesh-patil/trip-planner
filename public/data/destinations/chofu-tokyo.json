@@ -4,9 +4,11 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Culture", "Nature", "Food"],
-  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
   "gallery": [
-    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"
   ],
   "description": "Leafy suburban Tokyo town famous for Jindaiji Temple, hand-made Soba noodles, and GeGeGe no Kitaro anime heritage.",
   "highlights": [
@@ -91,7 +93,7 @@
       ]
     }
   ],
-  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cyofushiyakusyo.jpg",
   "imageMetadata": {
     "source": "Wikimedia Commons / Wikipedia",
     "license": "CC-BY-SA / Public Domain",

@@ -4,7 +4,7 @@
   "prefecture": "Kanagawa",
   "region": "Kanto",
   "categories": ["City", "Food", "Shopping"],
-  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Minato_Mirai.jpg/3840px-Minato_Mirai.jpg",
   "totalTripHours": 8,
   "budgetMin": 8000,
   "budgetRecommended": 12000,
@@ -47,14 +47,16 @@
     "rainFriendly": 7,
     "walkingIntensity": 8
   },
-  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Minato_Mirai.jpg/3840px-Minato_Mirai.jpg",
   "transportOptions": {
     "train": 30
   },
   "highlights": ["Chinatown", "Red Brick Warehouse", "Cup Noodle Museum"],
   "description": "Yokohama is a scenic destination in the Kanagawa region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Minato_Mirai.jpg/3840px-Minato_Mirai.jpg",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 3000,

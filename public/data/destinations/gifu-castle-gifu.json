@@ -4,8 +4,8 @@
   "prefecture": "Gifu",
   "region": "Chubu",
   "categories": ["Castle", "History", "Mountain", "Landmark"],
-  "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
-  "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
   "totalTripHours": 4,
   "budgetMin": 3000,
   "budgetRecommended": 6500,
@@ -67,7 +67,9 @@
   ],
   "description": "Perched 329 meters atop Mt. Kinka, Gifu Castle was Oda Nobunaga's formidable mountain stronghold, offering panoramic views over the Nagara River and Nobi Plain.",
   "gallery": [
-    "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
+    "https://upload.wikimedia.org/wikipedia/commons/0/01/Gifu_Castle.jpg",
+    "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
+    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
   ],
   "budgetBreakdown": {
     "transport": 1200,

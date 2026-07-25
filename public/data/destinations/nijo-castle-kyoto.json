@@ -64,7 +64,7 @@
     "mid": 7000,
     "high": 14000
   },
-  "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NinomaruPalace.jpg/800px-NinomaruPalace.jpg",
   "galleryImages": [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NinomaruPalace.jpg/800px-NinomaruPalace.jpg"
   ],
@@ -91,8 +91,5 @@
   "relationships": {
     "parentDestinationId": "kyoto-city"
   },
-  "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
-  "gallery": [
-    "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
-  ]
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NinomaruPalace.jpg/800px-NinomaruPalace.jpg"
 }
