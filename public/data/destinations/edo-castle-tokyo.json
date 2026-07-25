@@ -4,8 +4,8 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Castle", "History", "Landmark", "Park"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edo_P_detail.jpg",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edo_P_detail.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
   "totalTripHours": 4,
   "budgetMin": 2000,
   "budgetRecommended": 5500,
@@ -66,9 +66,7 @@
   ],
   "description": "The historic seat of the Tokugawa Shogunate and current Imperial Palace, featuring massive cyclopean stone ramparts, historic watchtowers, and the Imperial Palace East Gardens.",
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/5/5f/Edo_P_detail.jpg",
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
-    "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+    "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
   ],
   "budgetBreakdown": {
     "transport": 400,

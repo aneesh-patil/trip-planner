@@ -4,7 +4,7 @@
   "prefecture": "Chiba",
   "region": "Kanto",
   "categories": ["Coast", "Nature", "Drive"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/3840px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "totalTripHours": 12,
   "budgetMin": 12000,
   "budgetRecommended": 16000,
@@ -47,7 +47,7 @@
     "rainFriendly": 2,
     "walkingIntensity": 5
   },
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/3840px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "transportOptions": {
     "car": 90,
     "train": 90,
@@ -56,9 +56,7 @@
   "highlights": ["Coastal Drive", "Seafood", "Nokogiriyama"],
   "description": "Boso Peninsula is a scenic destination in the Chiba region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg/3840px-B%C5%8Ds%C5%8D_Peninsula_by_Sentinel-2%2C_2018-10-30.jpg",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600",
-    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
   ],
   "budgetBreakdown": {
     "transport": 7000,

@@ -4,11 +4,9 @@
   "prefecture": "Chiba",
   "region": "Kanto",
   "categories": ["Nature", "Food", "Ocean"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
-    "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=600"
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
   ],
   "description": "Easternmost coastal cape of the Kanto region, renowned for first sunrises, Inubosaki Lighthouse, and fresh seafood markets.",
   "highlights": [
@@ -93,7 +91,7 @@
       ]
     }
   ],
-  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Choshi_Montage_2.jpg",
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "imageMetadata": {
     "source": "Wikimedia Commons / Wikipedia",
     "license": "CC-BY-SA / Public Domain",

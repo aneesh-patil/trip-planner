@@ -4,7 +4,7 @@
   "prefecture": "Kanagawa",
   "region": "Kanto",
   "categories": ["Sea", "Coast", "History", "Nature"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "totalTripHours": 8,
   "budgetMin": 8000,
   "budgetRecommended": 12000,
@@ -47,16 +47,14 @@
     "rainFriendly": 1,
     "walkingIntensity": 12
   },
-  "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "transportOptions": {
     "train": 60
   },
   "highlights": ["Enoshima Shrine", "Iwaya Caves", "Enoshima Sea Candle"],
   "description": "A delightfully pleasant island just off the coast, full of shrines, coastal cliffs, and sweeping views of Mt. Fuji.",
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/8/83/EnoshimaAeralPhoto1988JP14.jpg",
-    "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
-    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
   ],
   "budgetBreakdown": {
     "transport": 3000,

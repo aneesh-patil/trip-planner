@@ -22,7 +22,7 @@
     "lat": 35.14,
     "lng": 139.62
   },
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "prefecture": "Kanagawa",
   "budgetMin": 2000,
   "budgetMax": 10000,
@@ -59,9 +59,7 @@
   "description": "Discover Miura Peninsula & Jogashima, a prominent destination in Kanagawa. With its rich mix of ocean, scenic, hiking, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg",
-    "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600",
-    "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600"
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
   ],
   "budgetBreakdown": {
     "transport": 2000,
@@ -117,5 +115,5 @@
   "relationships": {
     "parentDestinationId": "hakone-town"
   },
-  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miura_Peninsula_Kanagawa_Japan_SRTM.jpg"
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
 }

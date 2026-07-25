@@ -22,7 +22,7 @@
     "lat": 35.9825,
     "lng": 140.2208
   },
-  "heroImage": "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1576675784201-0e169823bb03?auto=format&fit=crop&q=80&w=1200",
   "prefecture": "Ibaraki",
   "budgetMin": 3500,
   "budgetMax": 11500,
@@ -58,9 +58,7 @@
   "description": "Discover Ushiku Daibutsu, a prominent destination in Kanagawa. With its rich mix of giant statue, record breaking, it's a highly recommended spot for a 8-hour getaway.",
   "bestMonths": [3, 4, 5, 9, 10, 11],
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
-    "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=600",
-    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600"
+    "https://images.unsplash.com/photo-1576675784201-0e169823bb03?auto=format&fit=crop&q=80&w=1200"
   ],
   "budgetBreakdown": {
     "transport": 2600,
@@ -108,7 +106,7 @@
   ],
   "notes": "A fantastic trip to Ushiku Daibutsu. Known for its giant statue and record breaking vibes, it offers a great escape with an overall score of 7.6.",
   "schemaVersion": 2,
-  "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Ushiku.jpg",
+  "image": "https://images.unsplash.com/photo-1576675784201-0e169823bb03?auto=format&fit=crop&q=80&w=1200",
   "imageMetadata": {
     "source": "Wikimedia Commons / Wikipedia",
     "license": "CC-BY-SA / Public Domain",

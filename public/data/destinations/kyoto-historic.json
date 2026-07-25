@@ -59,7 +59,7 @@
     "mid": 8000,
     "high": 18000
   },
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
   "galleryImages": [
     "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg"
   ],
@@ -86,5 +86,8 @@
   "relationships": {
     "parentDestinationId": "kyoto-city"
   },
-  "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg"
+  "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+  "gallery": [
+    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+  ]
 }

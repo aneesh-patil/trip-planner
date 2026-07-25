@@ -4,11 +4,9 @@
   "prefecture": "Chiba",
   "region": "Kanto",
   "categories": ["History", "Hiking", "Nature"],
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "gallery": [
-    "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600",
-    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600"
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
   ],
   "description": "A saw-toothed mountain showcasing Nihon-ji temple, a massive 31-meter tall stone carving of Buddha, and the dizzying 'View of Hell' cliff overlook.",
   "highlights": [
@@ -105,7 +103,7 @@
       ]
     }
   ],
-  "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_port_of_Kanaya.jpg",
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "imageMetadata": {
     "source": "Wikimedia Commons / Wikipedia",
     "license": "CC-BY-SA / Public Domain",
