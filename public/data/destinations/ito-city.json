@@ -7,8 +7,8 @@
   "prefecture": "Shizuoka",
   "region": "Chubu",
   "categories": ["Travel Hub", "City Hub"],
-  "heroImage": "/images/ito_hero.jpg",
-  "image": "/images/ito_hero.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+  "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
   "gallery": [
     "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
   ],

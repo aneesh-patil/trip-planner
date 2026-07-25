@@ -4,7 +4,7 @@
   "prefecture": "Tokyo",
   "region": "Kanto",
   "categories": ["Theme Park", "Indoor"],
-  "heroImage": "/images/harry-potter-studio.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
   "totalTripHours": 8,
   "budgetMin": 17900,
   "budgetRecommended": 21900,
@@ -47,16 +47,14 @@
     "rainFriendly": 9.5,
     "walkingIntensity": 6
   },
-  "image": "https://loremflickr.com/1000/800/japan,harry/all?lock=1008",
+  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
   "transportOptions": {
     "train": 45
   },
   "highlights": ["Great Hall", "Diagon Alley"],
   "description": "Harry Potter Studio is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
   "gallery": [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
+    "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
   ],
   "budgetBreakdown": {
     "transport": 1000,

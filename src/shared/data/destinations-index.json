@@ -5068,7 +5068,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Theme Park", "Indoor"],
-    "heroImage": "/images/harry-potter-studio.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "totalTripHours": 8,
     "budgetMin": 17900,
     "budgetRecommended": 21900,
@@ -5111,16 +5111,14 @@
       "rainFriendly": 9.5,
       "walkingIntensity": 6
     },
-    "image": "https://loremflickr.com/1000/800/japan,harry/all?lock=1008",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "transportOptions": {
       "train": 45
     },
     "highlights": ["Great Hall", "Diagon Alley"],
     "description": "Harry Potter Studio is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
-      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 1000,
@@ -6685,7 +6683,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Indoor Park", "Gaming"],
-    "heroImage": "/images/joypolis.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "totalTripHours": 8,
     "budgetMin": 16000,
     "budgetRecommended": 20000,
@@ -6728,16 +6726,14 @@
       "rainFriendly": 9,
       "walkingIntensity": 4
     },
-    "image": "https://loremflickr.com/1000/800/japan,joypolis/all?lock=1014",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "transportOptions": {
       "train": 90
     },
     "highlights": ["Halfpipe Tokyo", "VR Attractions"],
     "description": "Joypolis Odaiba is a scenic destination in the Tokyo region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
-      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600",
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600"
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 1000,
@@ -11045,7 +11041,7 @@
       "mid": 7000,
       "high": 14000
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NinomaruPalace.jpg/800px-NinomaruPalace.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
     "galleryImages": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NinomaruPalace.jpg/800px-NinomaruPalace.jpg"
     ],
@@ -11072,7 +11068,10 @@
     "relationships": {
       "parentDestinationId": "kyoto-city"
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NinomaruPalace.jpg/800px-NinomaruPalace.jpg"
+    "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
+    "gallery": [
+      "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
+    ]
   },
   {
     "id": "noto",
@@ -11798,7 +11797,7 @@
     "prefecture": "Saitama",
     "region": "Kanto",
     "categories": ["Museum", "Indoor"],
-    "heroImage": "/images/omiya-railway.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "totalTripHours": 8,
     "budgetMin": 9700,
     "budgetRecommended": 13700,
@@ -11841,16 +11840,14 @@
       "rainFriendly": 9.5,
       "walkingIntensity": 4
     },
-    "image": "https://loremflickr.com/1000/800/japan,omiya/all?lock=1013",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "transportOptions": {
       "train": 100
     },
     "highlights": ["Train Simulators", "Historic Cars"],
     "description": "Ōmiya is one of ten wards of the city of Saitama, in Saitama Prefecture, Japan, and is located in the northeastern part of the city. As of 1 March 2021, the ward had an estimated population of 119,298 and a population density of 9,300 persons per km2. Its total area was 12.80 square kilometres (4.94 sq mi). Although Urawa-ku is the governmental center of Saitama City, Ōmiya-ku is the most active commercial and business centre in both Saitama City and Saitama Prefecture thanks to its transport infrastructure, especially railways connected at Ōmiya Station.",
     "gallery": [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600",
-      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600"
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 3000,
@@ -13279,7 +13276,7 @@
       "lat": 36.7417,
       "lng": 137.015
     },
-    "heroImage": "/images/takaoka_hero.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "prefecture": "Toyama",
     "budgetMin": 5000,
     "budgetMax": 13000,
@@ -13316,9 +13313,7 @@
     "description": "Discover Takaoka, a prominent destination in Shizuoka. With its rich mix of great buddha, doraemon, crafts, it's a highly recommended spot for a 8-hour getaway.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://images.unsplash.com/photo-1513681424911-396eb093ec89?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600",
-      "https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=600"
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 3200,
@@ -13378,7 +13373,7 @@
       }
     ],
     "relationships": {},
-    "image": "/images/takaoka_hero.jpg"
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
   },
   {
     "id": "takato-castle-nagano",
@@ -15257,7 +15252,7 @@
     "prefecture": "Tochigi",
     "region": "Kanto",
     "categories": ["History", "Food"],
-    "heroImage": "/images/utsunomiya-oya.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "totalTripHours": 10,
     "budgetMin": 9600,
     "budgetRecommended": 13600,
@@ -15300,7 +15295,7 @@
       "rainFriendly": 8,
       "walkingIntensity": 5
     },
-    "image": "https://loremflickr.com/1000/800/japan,utsunomiya/all?lock=1010",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "transportOptions": {
       "train": 100,
       "car": 150
@@ -15308,9 +15303,7 @@
     "highlights": ["Oya History Museum", "Utsunomiya Gyoza"],
     "description": "Utsunomiya & Oya is a scenic destination in the Tochigi region of Japan, offering rich history and cultural attractions.",
     "gallery": [
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600",
-      "https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?q=80&w=600",
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600"
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 3000,
@@ -15981,8 +15974,8 @@
     "prefecture": "Kanagawa",
     "region": "Kanto",
     "categories": ["Observation Deck", "Landmark", "Port", "Modern"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
+    "heroImage": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&q=80&w=1200",
     "totalTripHours": 3,
     "budgetMin": 3000,
     "budgetRecommended": 7000,
@@ -16043,9 +16036,7 @@
     ],
     "description": "Ascend to the 69th floor (273m) in just 40 seconds aboard Japan's fastest elevator for 360-degree panoramas of Yokohama Bay Bridge, Minato Mirai, and Mt. Fuji.",
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/Yokohama_Landmark_Tower_201507.JPG",
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=600",
-      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600"
+      "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 600,
@@ -16228,7 +16219,7 @@
     "prefecture": "Tokyo",
     "region": "Kanto",
     "categories": ["Theme Park"],
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Yomiuriland-20100411.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&q=80&w=1200",
     "totalTripHours": 8,
     "budgetMin": 9000,
     "budgetRecommended": 13000,
@@ -16271,7 +16262,7 @@
       "rainFriendly": 2,
       "walkingIntensity": 8
     },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Yomiuriland-20100411.jpg",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&q=80&w=1200",
     "transportOptions": {
       "train": 60,
       "car": 60
@@ -16283,9 +16274,7 @@
     ],
     "description": "Yomiuriland is an amusement park in Inagi, Tokyo and Tama-ku, Kawasaki, Kanagawa Prefecture, Japan that first opened on 19 March 1964. It is situated on hillsides, and features rides such as roller coasters and water flumes. It is home to Yomiuri Giants Stadium, one of the training fields for the Yomiuri Giants baseball team, and was the primary training ground before Tokyo Dome was completed. It is operated and run by Yomiuriland Co., Ltd., a wholly owned subsidiary of The Yomiuri Shimbun Holdings.",
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Yomiuriland-20100411.jpg",
-      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 1000,
@@ -16374,7 +16363,7 @@
       "lat": 35.29,
       "lng": 139.63
     },
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",
     "prefecture": "Kanagawa",
     "budgetMin": 3000,
     "budgetMax": 11000,
@@ -16410,9 +16399,7 @@
     "description": "Discover Zushi & Yokosuka, a prominent destination in Kanagawa. With its rich mix of surfing, cafes, sunset, it's a highly recommended spot for a 8-hour getaway.",
     "bestMonths": [3, 4, 5, 9, 10, 11],
     "gallery": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG",
-      "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600",
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
     ],
     "budgetBreakdown": {
       "transport": 2400,
@@ -16462,7 +16449,7 @@
     },
     "collections": [],
     "relationships": {},
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Zushi_City_Hall_20110223.JPG"
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
   },
   {
     "id": "chiyoda-city",
@@ -19475,10 +19462,10 @@
     "prefecture": "Saitama",
     "region": "Kanto",
     "categories": ["Travel Hub", "City Hub"],
-    "heroImage": "/images/kawagoe_hero.jpg",
-    "image": "https://loremflickr.com/1000/800/japan,kawagoe/all?lock=1002",
+    "heroImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
     "gallery": [
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
     ],
     "description": "Nostalgic 'Little Edo' castle town featuring Kurazukuri clay warehouse streets, Bell of Time, and Candy Alley.",
     "highlights": ["Explore Kawagoe City", "Local Culture & Cuisine"],
@@ -20089,8 +20076,8 @@
     "prefecture": "Tochigi",
     "region": "Kanto",
     "categories": ["Travel Hub", "City Hub"],
-    "heroImage": "/images/nikko_hero.jpg",
-    "image": "https://loremflickr.com/1000/800/japan,nikko/all?lock=1003",
+    "heroImage": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200",
     "gallery": [
       "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&q=80&w=1200"
     ],
@@ -21397,8 +21384,8 @@
     "prefecture": "Shizuoka",
     "region": "Chubu",
     "categories": ["Travel Hub", "City Hub"],
-    "heroImage": "/images/ito_hero.jpg",
-    "image": "/images/ito_hero.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200",
     "gallery": [
       "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200"
     ],
