@@ -272,6 +272,51 @@ describe("RecommendationService Unit Tests", () => {
     expect(matchesTripDuration(15, "weekend")).toBe(true);
   });
 
+  it("filters known infeasible day trips while retaining unknown travel", () => {
+    const probe = (
+      id: string,
+      prefecture: string,
+      recommendedVisitHours: { min: number; max: number },
+    ) =>
+      ({
+        ...mockDestinations[1],
+        id,
+        prefecture,
+        recommendedVisitHours,
+        transportOptions: { train: 90 },
+      }) as Destination;
+
+    const results = getRecommendations(
+      [
+        probe("tokyo-half-day-feasible", "Kanagawa", { min: 3, max: 4 }),
+        probe("matsumoto-castle-nagano", "Nagano", { min: 4, max: 5 }),
+        probe("takato-castle-nagano", "Nagano", { min: 4, max: 5 }),
+        probe("arakurayama-sengen-park-yamanashi", "Yamanashi", {
+          min: 3,
+          max: 4,
+        }),
+        probe("unknown-origin-corridor", "Mie", { min: 3, max: 4 }),
+      ],
+      {
+        budget: 100000,
+        budgetTier: "standard",
+        carMode: "none",
+        publicModes: ["train"],
+        partySize: 2,
+        visitedIds: [],
+        homeStationCoords: homeCoords,
+        tripDuration: "halfDay",
+      },
+    );
+
+    const ids = results.map((result) => result.id);
+    expect(ids).toContain("tokyo-half-day-feasible");
+    expect(ids).toContain("unknown-origin-corridor");
+    expect(ids).not.toContain("matsumoto-castle-nagano");
+    expect(ids).not.toContain("takato-castle-nagano");
+    expect(ids).not.toContain("arakurayama-sengen-park-yamanashi");
+  });
+
   it("correctly identifies valid transport modes with getValidModes", () => {
     const dest = mockDestinations[2]; // Mount Fuji (bus & shinkansen)
     const validModes = getValidModes(

@@ -4,7 +4,9 @@ import {
   formatTripDurationLabel,
   getBand,
   getDerivedTripDurationHours,
+  getDayTripAvailableTimeHours,
   getVisitBand,
+  matchesDayTripDuration,
   matchesVisitDuration,
 } from "./TripDurationService";
 import type { Destination } from "@/shared/types/destination";
@@ -19,6 +21,8 @@ const destination = {
   transportOptions: { train: 40, shinkansen: 240 },
   travelBuffers: { ferryMinutes: 20 },
 } as unknown as Destination;
+
+const TOKYO = { lat: 35.6812, lng: 139.7671 };
 
 describe("TripDurationService", () => {
   it("classifies duration bands correctly", () => {
@@ -216,6 +220,64 @@ describe("TripDurationService", () => {
     expect(getVisitBand(dest)).toBe("halfDay");
     expect(matchesVisitDuration(dest, "halfDay")).toBe(true);
     expect(matchesVisitDuration(dest, "shortOuting")).toBe(false);
+  });
+
+  it("enforces known day-trip totals without fabricating unknown travel", () => {
+    const feasible = {
+      ...destination,
+      id: "tokyo-half-day-feasible",
+      prefecture: "Kanagawa",
+      recommendedVisitHours: { min: 3, max: 4 },
+    };
+    const matsumoto = {
+      ...destination,
+      id: "matsumoto-castle-nagano",
+      prefecture: "Nagano",
+      recommendedVisitHours: { min: 4, max: 5 },
+    };
+    const takato = {
+      ...destination,
+      id: "takato-castle-nagano",
+      prefecture: "Nagano",
+      recommendedVisitHours: { min: 4, max: 5 },
+    };
+    const arakurayama = {
+      ...destination,
+      id: "arakurayama-sengen-park-yamanashi",
+      prefecture: "Yamanashi",
+      recommendedVisitHours: { min: 3, max: 4 },
+    };
+    const unknown = {
+      ...destination,
+      id: "unknown-origin-corridor",
+      prefecture: "Mie",
+      recommendedVisitHours: { min: 3, max: 4 },
+    };
+    const context = { homeStationCoords: TOKYO } as const;
+    const modes = ["train", "shinkansen"];
+
+    expect(getDayTripAvailableTimeHours("shortOuting")).toBe(4);
+    expect(getDayTripAvailableTimeHours("halfDay")).toBe(7.5);
+    expect(getDayTripAvailableTimeHours("fullDay")).toBe(14);
+    expect(getDayTripAvailableTimeHours("any")).toBeUndefined();
+
+    expect(matchesDayTripDuration(feasible, context, modes, "halfDay")).toBe(
+      true,
+    );
+    expect(matchesDayTripDuration(matsumoto, context, modes, "halfDay")).toBe(
+      false,
+    );
+    expect(matchesDayTripDuration(takato, context, modes, "halfDay")).toBe(
+      false,
+    );
+    expect(matchesDayTripDuration(arakurayama, context, modes, "halfDay")).toBe(
+      false,
+    );
+
+    expect(estimateTripDuration(unknown, context, modes)).toBeNull();
+    expect(matchesDayTripDuration(unknown, context, modes, "halfDay")).toBe(
+      true,
+    );
   });
 
   it("changes only the total duration when origin travel changes", () => {

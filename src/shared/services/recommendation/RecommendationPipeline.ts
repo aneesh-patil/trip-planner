@@ -2,7 +2,7 @@ import type { Destination } from "@/shared/types/destination";
 import { getEstimatedBudgetRange } from "@/shared/services/budget/BudgetService";
 import { getDistance } from "@/shared/utils/distance";
 import type { RecommendationContext } from "./RecommendationContext";
-import { matchesVisitDuration } from "./TripDurationService";
+import { matchesDayTripDuration } from "./TripDurationService";
 import { createRecommendationMatch } from "./RecommendationExplainability";
 import {
   calculateConfidence,
@@ -177,9 +177,9 @@ export function runRecommendationPipeline(
       return false;
     }
 
-    // Weekend mode: skip duration-band match; use evaluateWeekendCandidate.
-    // Day-trip mode uses pure visit-duration matching (origin must not change
-    // the time-at-destination classification).
+    // Weekend mode: skip day-trip duration matching; use
+    // evaluateWeekendCandidate. Day trips keep the visit-duration band and
+    // add a total-feasibility ceiling when canonical origin travel is known.
     if (isWeekend) {
       const eval_ = evaluateWeekendCandidate(
         destination,
@@ -191,7 +191,14 @@ export function runRecommendationPipeline(
       weekendEvalCache.set(destination.id, eval_);
       if (!eval_.eligible) return false;
     } else {
-      if (!matchesVisitDuration(destination, context.tripDuration ?? "any"))
+      if (
+        !matchesDayTripDuration(
+          destination,
+          context,
+          modes,
+          context.tripDuration ?? "any",
+        )
+      )
         return false;
     }
 

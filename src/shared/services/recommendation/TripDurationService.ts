@@ -55,6 +55,60 @@ export function matchesVisitDuration(
   return band === requested;
 }
 
+/**
+ * Maximum feasible total time for a day-trip duration control. The existing
+ * visit-duration band remains the primary classification; these ceilings only
+ * reject known origin-aware totals that cannot fit the selected outing.
+ */
+export function getDayTripAvailableTimeHours(
+  requested: TripDuration,
+): number | undefined {
+  switch (requested) {
+    case "shortOuting":
+      return 4;
+    case "halfDay":
+      return 7.5;
+    case "fullDay":
+      return 14;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Applies the canonical visit band plus a total-feasibility ceiling for a
+ * day trip. Missing origin-aware travel stays neutral: it must not be turned
+ * into a fabricated duration or an automatic exclusion.
+ */
+export function matchesDayTripDuration(
+  destination: Destination,
+  context: TripDurationContext | RecommendationContext,
+  modes: string[],
+  requested: TripDuration,
+): boolean {
+  if (!matchesVisitDuration(destination, requested)) return false;
+
+  const availableTimeHours = getDayTripAvailableTimeHours(requested);
+  if (availableTimeHours === undefined || !context.homeStationCoords) {
+    return true;
+  }
+
+  const estimate = estimateTripDuration(
+    destination,
+    {
+      homeStationCoords: context.homeStationCoords,
+      ferryTemporal: context.ferryTemporal,
+      availableTimeHours,
+    },
+    modes,
+  );
+
+  // No canonical origin-aware estimate means feasibility remains unknown
+  // rather than becoming a false negative.
+  if (!estimate || estimate.bestTravelMinutes === undefined) return true;
+  return !estimate.isImpossible;
+}
+
 export function formatTripDurationLabel(
   estimate: TripDurationEstimate,
   locale: "en" | "ja",

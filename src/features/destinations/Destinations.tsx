@@ -52,7 +52,7 @@ import {
 } from "@/shared/types/planner";
 import {
   getBestOneWayTravelMinutes,
-  matchesVisitDuration,
+  matchesDayTripDuration,
 } from "@/shared/services/recommendation/TripDurationService";
 import {
   evaluateWeekendTravelFit,
@@ -824,23 +824,21 @@ export default function Destinations() {
     ) {
       const hasOrigin = homeStationCoords || homeStationTransportZoneId;
       result = result.filter((dest) => {
-        // Time at destination: use pure visit-duration matching.
-        // Origin travel is evaluated separately for reachability;
-        // when no origin is set, browsing stays neutral (no mode gate).
-        if (!matchesVisitDuration(dest, tripDuration)) return false;
-        if (!hasOrigin) return true;
-        const modes = getValidModes(
-          dest,
-          carMode,
-          effectivePublicModes,
-          homeStationCoords ?? undefined,
-          budgetTier,
-          homeStationTransportZoneId,
-          ferryTemporal,
-        );
-        if (modes.length === 0) return false;
+        const modes = hasOrigin
+          ? getValidModes(
+              dest,
+              carMode,
+              effectivePublicModes,
+              homeStationCoords ?? undefined,
+              budgetTier,
+              homeStationTransportZoneId,
+              ferryTemporal,
+            )
+          : [];
+        if (hasOrigin && modes.length === 0) return false;
         // Canonical trip-date transport eligibility (same authority as Home).
         if (
+          hasOrigin &&
           travelDates &&
           !isTripDatesTransportEligible(
             dest,
@@ -851,7 +849,12 @@ export default function Destinations() {
         ) {
           return false;
         }
-        return true;
+        return matchesDayTripDuration(
+          dest,
+          catalogContext,
+          modes,
+          tripDuration,
+        );
       });
     }
 
