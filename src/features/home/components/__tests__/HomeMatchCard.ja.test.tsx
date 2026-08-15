@@ -70,7 +70,7 @@ afterEach(async () => {
   await i18n.changeLanguage("en");
 });
 
-describe("HomeMatchCard Japanese busy-period rendering", () => {
+describe("HomeMatchCard Japanese busy-period presentation", () => {
   async function renderCard(cardDestination: Destination, travelDate: string) {
     await i18n.changeLanguage("ja");
     host = document.createElement("div");
@@ -100,21 +100,15 @@ describe("HomeMatchCard Japanese busy-period rendering", () => {
     ).toBeNull();
   });
 
-  it("renders Japanese advisory, evidence, source, and date text for a peak season", async () => {
+  it("does not render a visible peak-season busy cue on destination cards", async () => {
     const card = await renderCard(
       { ...destination, id: "shinjuku-gyo-en" },
       "2026-03-20",
     );
 
-    const cue = card.querySelector<HTMLElement>(
-      '[aria-label*="混雑する可能性があります"]',
-    );
-    expect(cue).not.toBeNull();
-    expect(cue?.getAttribute("aria-label")).toContain("根拠");
-    expect(cue?.getAttribute("aria-label")).toContain("情報源");
-    expect(cue?.getAttribute("aria-label")).toContain("3月");
-    expect(cue?.getAttribute("aria-label")).not.toMatch(
-      /Source|Evidence|Cabinet Office/,
-    );
+    expect(
+      card.querySelector('[aria-label*="混雑する可能性があります"]'),
+    ).toBeNull();
+    expect(card.textContent).not.toContain("混雑する可能性があります");
   });
 });

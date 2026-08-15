@@ -437,15 +437,6 @@
     "viewAllLongerJourney": "View all longer-journey destinations",
     "previousRail": "Scroll left",
     "nextRail": "Scroll right",
-    "busyPeriod": {
-      "advisory": "May be busier",
-      "nationalHoliday": "national holiday",
-      "weekend": "weekend",
-      "peakSeason": "peak season",
-      "localEvent": "local event",
-      "evidenceLabel": "Evidence",
-      "sourceLabel": "Source"
-    },
     "viewAllTopMatches": "View all top matches",
     "viewAllBucketList": "View all saved destinations",
     "collectionTitles": {
